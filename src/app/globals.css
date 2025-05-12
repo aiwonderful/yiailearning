@@ -1,0 +1,161 @@
+/* postcss-ignore */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-rgb: 243, 156, 18; /* 橙色 #F39C12 */
+  --secondary-rgb: 44, 62, 80; /* 深蓝灰 #2C3E50 */
+  --accent-rgb: 194, 208, 169; /* 浅绿色 #c2d0a9 */
+  
+  --background-rgb: 255, 255, 255;
+  --card-rgb: 255, 255, 255;
+  --muted-rgb: 242, 242, 242;
+  --subtle-rgb: 229, 231, 235;
+  
+  --text-rgb: 51, 51, 51;
+  --text-secondary-rgb: 102, 102, 102;
+}
+
+[data-theme="dark"] {
+  --primary-rgb: 243, 156, 18; /* 保持橙色 #F39C12 */
+  --secondary-rgb: 204, 204, 204; 
+  --accent-rgb: 194, 208, 169; /* 保持浅绿色 #c2d0a9 */
+  
+  --background-rgb: 18, 18, 18;
+  --card-rgb: 30, 30, 30;
+  --muted-rgb: 40, 40, 40;
+  --subtle-rgb: 50, 50, 50;
+  
+  --text-rgb: 229, 229, 229;
+  --text-secondary-rgb: 178, 178, 178;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text transition-colors duration-300 font-normal;
+    /* TEMPORARY TEST: Apply pen cursor directly */
+    cursor: url('/cursors/pen.png'), auto !important;
+  }
+  
+  /* 更好的排版 */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-primary;
+  }
+  
+  h1 {
+    @apply text-4xl mb-6 tracking-tight;
+  }
+  
+  h2 {
+    @apply text-3xl mb-5 tracking-tight;
+  }
+  
+  h3 {
+    @apply text-2xl mb-4;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
+  
+  a {
+    @apply text-primary hover:underline transition-all duration-200;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-card border border-subtle rounded-xl shadow-sm overflow-hidden transition-all duration-300;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-all duration-300 shadow-sm;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:brightness-105 active:brightness-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-muted text-secondary hover:brightness-95 active:brightness-90;
+  }
+  
+  /* 动画过渡效果 */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+  
+  .hover-card {
+    @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+  }
+}
+
+@layer utilities {
+  .text-text {
+    color: rgb(var(--text-rgb));
+  }
+
+  .text-primary {
+    color: rgb(var(--primary-rgb));
+  }
+  
+  .text-secondary {
+    color: rgb(var(--text-secondary-rgb));
+  }
+  
+  .bg-primary {
+    background-color: rgb(var(--primary-rgb));
+  }
+  
+  .bg-secondary {
+    background-color: rgb(var(--secondary-rgb));
+  }
+  
+  .bg-accent {
+    background-color: rgb(var(--accent-rgb));
+  }
+  
+  .bg-background {
+    background-color: rgb(var(--background-rgb));
+  }
+  
+  .bg-card {
+    background-color: rgb(var(--card-rgb));
+  }
+  
+  .bg-muted {
+    background-color: rgb(var(--muted-rgb));
+  }
+  
+  .border-subtle {
+    border-color: rgb(var(--subtle-rgb));
+  }
+  
+  /* 文本修饰 */
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}
+
+/* Custom Cursors - Temporarily commented out for direct body test
+html body.cursor-pen {
+  cursor: url('/cursors/pen.png'), auto !important; 
+}
+html body.cursor-lightbulb {
+  cursor: url('/cursors/lightbulb.png'), auto !important; 
+}
+*/
+
+/* Ensure high contrast for accessibility on custom cursors if needed */
+/* You might need to adjust hotspot of cursor in .cur files or via CSS if it's off */ 
