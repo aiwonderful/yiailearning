@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    optimizeCss: true,
-  },
+  // experimental: {
+  //   optimizeCss: true,
+  // },
   // CDN配置
   assetPrefix: process.env.NODE_ENV === 'production' && process.env.CDN_URL 
     ? process.env.CDN_URL 
