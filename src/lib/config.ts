@@ -8,17 +8,17 @@ export const siteConfig = {
   
   // Social media links
   social: {
-    github: 'https://github.com/yourusername',
-    twitter: 'https://twitter.com/yourusername',
-    youtube: 'https://youtube.com/@yourchannel',
+    github: 'https://github.com/aiwonderful',
+    twitter: 'https://x.com/Yestar2023Liu',
+    youtube: 'https://www.youtube.com/@AI-Innovate-Hub',
     // Add more social links as needed
   },
 
   // Navigation links
   navigation: [
     { name: '首页', href: '/' },
-    { name: '学习路线', href: '/roadmap' },
-    { name: '资源', href: '/resources' },
+    // { name: '学习路线', href: '/roadmap' }, // 暂时隐藏，待完善后恢复
+    // { name: '资源', href: '/resources' }, // 暂时隐藏，待完善后恢复
     { name: '博客', href: '/posts' },
   ],
 

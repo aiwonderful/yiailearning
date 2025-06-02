@@ -10,6 +10,7 @@
 
 ## 特性
 
+### 基础功能
 - ✅ 基于Next.js的静态生成（SSG），提高网站性能和SEO
 - ✅ Markdown文章支持，自动渲染标题、目录、代码高亮
 - ✅ 美观的暗色主题设计，带有mint green强调色
@@ -20,6 +21,29 @@
 - ✅ 社交媒体链接
 - ✅ 文章目录自动生成
 - ✅ 可配置的站点信息
+
+### SEO优化
+- ✅ 动态Sitemap和Robots.txt
+- ✅ 结构化数据（BlogPosting Schema）
+- ✅ 面包屑导航（Breadcrumb Schema）
+- ✅ 作者信息Schema标记
+- ✅ FAQ结构化数据支持
+- ✅ Open Graph和Twitter Cards
+- ✅ 完整的元数据优化
+
+### 性能与监控
+- ✅ 图片优化（WebP/AVIF）
+- ✅ CDN支持和自定义加载器
+- ✅ 实时性能监控（Core Web Vitals）
+- ✅ 自动化SEO检查工具
+- ✅ 性能审计脚本
+- ✅ 图片验证和优化建议
+
+### 分析与追踪
+- ✅ Google Analytics集成
+- ✅ 自定义事件追踪
+- ✅ 性能指标收集
+- ✅ 用户行为分析
 
 ## 项目架构
 
@@ -150,9 +174,138 @@ title: '文章标题'
 date: '2023-10-10'
 summary: '文章摘要'
 tags: ['标签1', '标签2']
+# coverImage: '/images/posts/your-cover-image.jpg'  # 已移除封面图功能
 ---
 
 文章内容...
+```
+
+### ~~封面图片管理~~ (已移除)
+
+~~封面图功能已移除，博客现在使用简洁的无图片卡片设计。~~
+
+## SEO和性能优化
+
+### 环境变量配置
+
+创建 `.env.local` 文件并配置以下变量：
+
+```bash
+# Google Analytics
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+
+# Site URL (生产环境)
+NEXT_PUBLIC_SITE_URL=https://yourdomain.com
+
+# Search Console验证码
+NEXT_PUBLIC_GOOGLE_VERIFICATION=your-google-verification-code
+```
+
+### SEO功能
+
+- **动态Sitemap**：自动生成sitemap.xml
+- **Robots.txt**：搜索引擎爬虫指南
+- **结构化数据**：Schema.org标记用于文章
+- **Open Graph**：社交媒体分享优化
+- **元数据优化**：页面标题、描述、关键词
+
+### 性能优化
+
+- **图片优化**：WebP/AVIF格式支持
+- **CDN支持**：可配置CDN加速
+- **缓存策略**：静态资源长期缓存
+- **代码分割**：Next.js自动代码分割
+- **CSS优化**：实验性CSS优化
+- **性能监控**：Core Web Vitals实时追踪
+
+## 开发脚本
+
+```bash
+# 开发服务器
+npm run dev
+
+# 构建项目
+npm run build
+
+# 启动生产服务器
+npm start
+
+# 运行SEO检查
+npm run seo:check
+
+# 构建前SEO验证
+npm run seo:build
+
+# 性能审计
+npm run perf:audit
+
+# 图片验证
+npm run validate:images
+
+# 完整优化构建
+npm run optimize:build
+```
+
+## 高级功能
+
+### 面包屑导航
+自动生成的面包屑导航，支持结构化数据：
+
+```tsx
+import Breadcrumb from '../components/Breadcrumb';
+
+const breadcrumbItems = [
+  { name: '文章', href: '/posts' },
+  { name: '文章标题', href: '/posts/slug', current: true }
+];
+
+<Breadcrumb items={breadcrumbItems} />
+```
+
+### 作者信息Schema
+支持丰富的作者信息结构化数据：
+
+```tsx
+import { AuthorCard } from '../components/AuthorSchema';
+
+const authorInfo = {
+  name: "Yi Learning",
+  description: "专注AI学习分享的博主",
+  jobTitle: "AI学习博主",
+  sameAs: ["https://github.com/username"]
+};
+
+<AuthorCard author={authorInfo} />
+```
+
+### FAQ结构化数据
+为常见问题添加Schema标记：
+
+```tsx
+import { FAQSection } from '../components/FAQSchema';
+
+const faqs = [
+  {
+    question: "如何开始学习AI？",
+    answer: "建议从Python基础开始..."
+  }
+];
+
+<FAQSection faqs={faqs} />
+```
+
+### 性能监控
+自动收集Core Web Vitals指标：
+- First Contentful Paint (FCP)
+- Largest Contentful Paint (LCP)  
+- First Input Delay (FID)
+- Cumulative Layout Shift (CLS)
+
+### CDN配置
+设置环境变量启用CDN加速：
+
+```env
+CDN_URL=https://cdn.yourdomain.com
 ```
 
 ## 部署

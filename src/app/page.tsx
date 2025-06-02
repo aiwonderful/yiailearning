@@ -26,12 +26,13 @@ export default async function HomePage() {
             >
               浏览所有文章
             </Link>
-            <Link 
+            {/* 学习路线页面待完善，暂时隐藏 */}
+            {/* <Link 
               href="/roadmap" 
               className="btn btn-secondary"
             >
               查看学习路线
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
@@ -71,8 +72,12 @@ export default async function HomePage() {
               作为非科班出身的学习者，我深知在AI领域起步时面临的挑战。这个博客旨在为其他类似背景的学习者提供一个更加友好、实用的学习参考，希望能够帮助更多人顺利进入这个领域。
             </p>
             <p className="mt-6">
-              <Link href="/roadmap" className="btn btn-primary">
+              {/* 学习路线页面待完善，暂时隐藏 */}
+              {/* <Link href="/roadmap" className="btn btn-primary">
                 查看我的学习路线 →
+              </Link> */}
+              <Link href="/posts" className="btn btn-primary">
+                开始阅读博客 →
               </Link>
             </p>
           </div>

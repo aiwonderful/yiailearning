@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI学习之路 | Yi Learning Journey</title>
+    
+    <!-- TailwindCSS 3.0+ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Framer Motion -->
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.umd.js"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .glow-yellow {
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+        
+        .gradient-border {
+            background: linear-gradient(45deg, rgba(255, 215, 0, 0.3), rgba(255, 215, 0, 0.1));
+            padding: 1px;
+        }
+        
+        .gradient-border > div {
+            background: #000;
+        }
+        
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .bento-card {
+            background: rgba(10, 10, 10, 0.9);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .bento-card:hover {
+            border-color: rgba(255, 215, 0, 0.5);
+            transform: translateY(-5px);
+        }
+        
+        .hero-number {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        .line-chart {
+            stroke: #FFD700;
+            stroke-width: 2;
+            fill: none;
+        }
+        
+        .chart-point {
+            fill: #FFD700;
+            stroke: #000;
+            stroke-width: 2;
+        }
+    </style>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative px-4">
+        <div class="text-center max-w-6xl mx-auto">
+            <div class="mb-8">
+                <span class="text-yellow-400 text-lg font-medium tracking-wider uppercase">
+                    Learning Journey
+                </span>
+            </div>
+            
+            <h1 class="text-8xl md:text-9xl font-black mb-6 leading-none">
+                <span class="hero-number">AI</span>
+                <br>
+                <span class="text-white">学习之路</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                从零开始的<span class="text-yellow-400 font-semibold">人工智能</span>学习经验分享
+                <br>
+                <span class="text-sm text-gray-500">A Non-CS Mom's Journey into Artificial Intelligence</span>
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-8 mb-16">
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-yellow-400 hero-number">3+</div>
+                    <div class="text-sm text-gray-400">深度文章 Articles</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-yellow-400 hero-number">500+</div>
+                    <div class="text-sm text-gray-400">学习小时 Hours</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-yellow-400 hero-number">10+</div>
+                    <div class="text-sm text-gray-400">推荐工具 Tools</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 scroll-indicator">
+            <i class="fas fa-chevron-down text-yellow-400 text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Learning Path Visualization -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black mb-4">
+                    学习路径
+                    <br>
+                    <span class="text-yellow-400 text-3xl font-normal">Learning Pathway</span>
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bento-card rounded-2xl p-8 text-center group">
+                    <div class="text-6xl font-black text-yellow-400 mb-4">01</div>
+                    <i class="fab fa-python text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Python基础</h3>
+                    <p class="text-gray-400 text-sm">Programming Foundation</p>
+                </div>
+                
+                <div class="bento-card rounded-2xl p-8 text-center group">
+                    <div class="text-6xl font-black text-yellow-400 mb-4">02</div>
+                    <i class="fas fa-calculator text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">数学基础</h3>
+                    <p class="text-gray-400 text-sm">Mathematical Foundation</p>
+                </div>
+                
+                <div class="bento-card rounded-2xl p-8 text-center group">
+                    <div class="text-6xl font-black text-yellow-400 mb-4">03</div>
+                    <i class="fas fa-brain text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">机器学习</h3>
+                    <p class="text-gray-400 text-sm">Machine Learning</p>
+                </div>
+                
+                <div class="bento-card rounded-2xl p-8 text-center group">
+                    <div class="text-6xl font-black text-yellow-400 mb-4">04</div>
+                    <i class="fas fa-network-wired text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">深度学习</h3>
+                    <p class="text-gray-400 text-sm">Deep Learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles Bento Grid -->
+    <section class="py-20 px-4 bg-gray-900 bg-opacity-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black mb-4">
+                    精选文章
+                    <br>
+                    <span class="text-yellow-400 text-3xl font-normal">Featured Articles</span>
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Large Featured Article -->
+                <div class="md:col-span-2 lg:row-span-2 bento-card rounded-2xl p-8 relative overflow-hidden">
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-bold">
+                            FEATURED
+                        </span>
+                    </div>
+                    <div class="mb-6">
+                        <i class="fas fa-mobile-alt text-4xl text-yellow-400 mb-4"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 leading-tight">
+                        从焦虑到掌控：iPhone快捷指令助力高效复盘
+                    </h3>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                        Anxiety to Control: Efficient Review with iPhone Shortcuts
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex gap-2">
+                            <span class="bg-gray-800 text-yellow-400 px-2 py-1 rounded text-xs">复盘</span>
+                            <span class="bg-gray-800 text-yellow-400 px-2 py-1 rounded text-xs">效率</span>
+                        </div>
+                        <i class="fas fa-arrow-right text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <!-- AI Learning Article -->
+                <div class="bento-card rounded-2xl p-6">
+                    <div class="text-4xl font-black text-yellow-400 mb-4">AI</div>
+                    <h3 class="text-xl font-bold mb-2">从零开始的AI学习之路</h3>
+                    <p class="text-gray-400 text-sm mb-4">Zero to AI Journey</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">非科班入门</span>
+                        <i class="fas fa-external-link-alt text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Tools Article -->
+                <div class="bento-card rounded-2xl p-6">
+                    <div class="text-4xl font-black text-yellow-400 mb-4">10+</div>
+                    <h3 class="text-xl font-bold mb-2">AI工具推荐</h3>
+                    <p class="text-gray-400 text-sm mb-4">Essential Tools</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">初学者必备</span>
+                        <i class="fas fa-tools text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <!-- SEO Stats -->
+                <div class="md:col-span-2 bento-card rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-bold">SEO优化成果</h3>
+                        <i class="fas fa-chart-line text-yellow-400 text-2xl"></i>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-3xl font-bold text-yellow-400">95%</div>
+                            <div class="text-xs text-gray-400">性能评分 Performance</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-yellow-400">100%</div>
+                            <div class="text-xs text-gray-400">SEO评分 SEO Score</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-yellow-400">11</div>
+                            <div class="text-xs text-gray-400">优化项目 Optimizations</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Progress Chart -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black mb-4">
+                    学习进展
+                    <br>
+                    <span class="text-yellow-400 text-3xl font-normal">Learning Progress</span>
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Chart Container -->
+                <div class="bento-card rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-chart-area text-yellow-400 mr-3"></i>
+                        技能成长曲线
+                        <span class="text-sm text-gray-400 ml-2">Skill Growth</span>
+                    </h3>
+                    <canvas id="skillChart" width="400" height="300"></canvas>
+                </div>
+                
+                <!-- Tools Ecosystem -->
+                <div class="bento-card rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-cogs text-yellow-400 mr-3"></i>
+                        工具生态系统
+                        <span class="text-sm text-gray-400 ml-2">Tool Ecosystem</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-3 bg-gray-800 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fab fa-google text-yellow-400 mr-3"></i>
+                                <span class="font-medium">Google Colab</span>
+                            </div>
+                            <div class="w-20 bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-800 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fab fa-python text-yellow-400 mr-3"></i>
+                                <span class="font-medium">TensorFlow</span>
+                            </div>
+                            <div class="w-20 bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-800 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-database text-yellow-400 mr-3"></i>
+                                <span class="font-medium">Kaggle</span>
+                            </div>
+                            <div class="w-20 bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-800 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-fire text-yellow-400 mr-3"></i>
+                                <span class="font-medium">PyTorch</span>
+                            </div>
+                            <div class="w-20 bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/About Section -->
+    <section class="py-20 px-4 bg-yellow-400 text-black">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-5xl md:text-6xl font-black mb-8">
+                开始你的AI之旅
+                <br>
+                <span class="text-3xl font-normal">Start Your AI Journey</span>
+            </h2>
+            
+            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">
+                加入我们的学习社区，一起探索人工智能的无限可能
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <button class="bg-black text-yellow-400 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-900 transition-colors flex items-center">
+                    <i class="fas fa-rocket mr-2"></i>
+                    开始学习
+                </button>
+                <button class="border-2 border-black text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-black hover:text-yellow-400 transition-colors flex items-center">
+                    <i class="fab fa-github mr-2"></i>
+                    查看代码
+                </button>
+            </div>
+            
+            <div class="flex justify-center gap-8 mt-12">
+                <a href="#" class="text-black hover:text-gray-700 transition-colors">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="#" class="text-black hover:text-gray-700 transition-colors">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+                <a href="#" class="text-black hover:text-gray-700 transition-colors">
+                    <i class="fab fa-youtube text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Chart.js Configuration
+        const ctx = document.getElementById('skillChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Python基础', '数学基础', '机器学习', '深度学习', '项目实战'],
+                datasets: [{
+                    label: '学习进度',
+                    data: [90, 75, 80, 65, 70],
+                    borderColor: '#FFD700',
+                    backgroundColor: 'rgba(255, 215, 0, 0.1)',
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#FFD700',
+                            font: {
+                                family: 'Inter',
+                                weight: 'bold'
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        grid: {
+                            color: 'rgba(255, 215, 0, 0.1)'
+                        },
+                        ticks: {
+                            color: '#FFD700'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 215, 0, 0.1)'
+                        },
+                        ticks: {
+                            color: '#FFD700',
+                            maxRotation: 45
+                        }
+                    }
+                }
+            }
+        });
+
+        // Smooth Scrolling and Animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Apply animation to all cards
+            document.querySelectorAll('.bento-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.6s ease';
+                observer.observe(card);
+            });
+
+            // Parallax effect for hero numbers
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const heroNumbers = document.querySelectorAll('.hero-number');
+                heroNumbers.forEach(number => {
+                    const rate = scrolled * -0.5;
+                    number.style.transform = `translateY(${rate}px)`;
+                });
+            });
+
+            // Hover effects for bento cards
+            document.querySelectorAll('.bento-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                    this.style.boxShadow = '0 20px 40px rgba(255, 215, 0, 0.2)';
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

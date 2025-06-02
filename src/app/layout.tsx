@@ -6,10 +6,65 @@ import { siteConfig } from '../lib/config';
 import { fontClasses } from '../lib/fonts';
 import ThemeToggle from '../components/ThemeToggle';
 import CustomCursorManager from '../components/CustomCursorManager';
+import Analytics from '../components/Analytics';
+import Performance from '../components/Performance';
 
 export const metadata: Metadata = {
-  title: siteConfig.title,
+  title: {
+    default: siteConfig.title,
+    template: `%s | ${siteConfig.title}`
+  },
   description: siteConfig.description,
+  keywords: ['AI学习', '人工智能', '机器学习', '深度学习', '编程教程', '数据科学', 'Python', 'TensorFlow', 'PyTorch'],
+  authors: [{ name: 'Yi Learning' }],
+  creator: 'Yi Learning',
+  publisher: 'Yi Learning Blog',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL(siteConfig.url),
+  openGraph: {
+    type: 'website',
+    locale: 'zh_CN',
+    url: siteConfig.url,
+    title: siteConfig.title,
+    description: siteConfig.description,
+    siteName: siteConfig.title,
+    images: [{
+      url: '/og-image.jpg',
+      width: 1200,
+      height: 630,
+      alt: siteConfig.title,
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: ['/og-image.jpg'],
+    creator: '@yourusername',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code',
+    yandex: 'your-yandex-verification-code',
+    yahoo: 'your-yahoo-verification-code',
+  },
+  alternates: {
+    canonical: siteConfig.url,
+  },
 };
 
 const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -38,6 +93,8 @@ export default function RootLayout({
   return (
     <html lang={siteConfig.language} suppressHydrationWarning>
       <body className={fontClasses}>
+        <Analytics />
+        <Performance />
         <CustomCursorManager />
         <header className="sticky top-0 bg-background/95 backdrop-blur-sm border-b border-subtle z-50">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">

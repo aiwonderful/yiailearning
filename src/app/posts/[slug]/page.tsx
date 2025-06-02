@@ -1,12 +1,62 @@
 import Link from 'next/link';
 import { getPostSlugs, getPostBySlug } from '../../../lib/posts';
 import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
+import { siteConfig } from '../../../lib/config';
+import Breadcrumb from '../../../components/Breadcrumb';
+import { AuthorCard } from '../../../components/AuthorSchema';
 
 type Heading = {
   id: string;
   text: string;
   level: number;
 };
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  try {
+    const post = await getPostBySlug(params.slug);
+    const url = `${siteConfig.url}/posts/${params.slug}`;
+    
+    return {
+      title: post.meta.title,
+      description: post.meta.excerpt || post.meta.summary || siteConfig.description,
+      keywords: post.meta.tags?.join(', '),
+      authors: [{ name: 'Yi Learning' }],
+      openGraph: {
+        title: post.meta.title,
+        description: post.meta.excerpt || post.meta.summary || siteConfig.description,
+        url: url,
+        siteName: siteConfig.title,
+        images: [
+          {
+            url: '/og-image.jpg',
+            width: 1200,
+            height: 630,
+            alt: post.meta.title,
+          }
+        ],
+        locale: 'zh_CN',
+        type: 'article',
+        publishedTime: post.meta.date,
+        tags: post.meta.tags,
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: post.meta.title,
+        description: post.meta.excerpt || post.meta.summary || siteConfig.description,
+        images: ['/og-image.jpg'],
+      },
+      alternates: {
+        canonical: url,
+      },
+    };
+  } catch (error) {
+    return {
+      title: 'Post Not Found',
+      description: 'The requested post could not be found.',
+    };
+  }
+}
 
 // 从HTML内容中提取目录
 function extractTableOfContents(content: string): Heading[] {
@@ -35,22 +85,35 @@ export default async function Post({ params }: { params: { slug: string } }) {
     const post = await getPostBySlug(params.slug);
     const toc = extractTableOfContents(post.content);
 
+    // 面包屑导航数据
+    const breadcrumbItems = [
+      { name: '文章', href: '/posts' },
+      { name: post.meta.title, href: `/posts/${params.slug}`, current: true }
+    ];
+
+    // 作者信息
+    const authorInfo = {
+      name: "Yi Learning",
+      description: "专注AI学习分享的博主，致力于帮助更多人进入人工智能领域",
+      url: siteConfig.url,
+      image: "/author-avatar.jpg",
+      jobTitle: "AI学习博主",
+      sameAs: [
+        "https://github.com/yourusername",
+        "https://twitter.com/yourusername"
+      ]
+    };
+
     return (
       <div className="max-w-5xl mx-auto">
+        {/* 面包屑导航 */}
+        <Breadcrumb items={breadcrumbItems} />
+        
         <div className="flex flex-col md:flex-row gap-8">
           {/* 主内容区 */}
           <div className="md:w-3/4">
             <article className="card p-8">
               <header className="mb-10">
-                <Link 
-                  href="/posts" 
-                  className="inline-flex items-center text-sm text-secondary hover:text-primary mb-6 transition-colors duration-200"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                  返回文章列表
-                </Link>
                 <h1 className="text-3xl font-bold mb-4 text-primary">{post.meta.title}</h1>
                 <div className="flex flex-wrap items-center mb-4">
                   <p className="text-secondary">
@@ -81,7 +144,47 @@ export default async function Post({ params }: { params: { slug: string } }) {
                 dangerouslySetInnerHTML={{ __html: post.content }} 
               />
 
+              {/* 结构化数据 */}
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "headline": post.meta.title,
+                    "description": post.meta.excerpt || post.meta.summary,
+                    "image": `${siteConfig.url}/og-image.jpg`,
+                    "datePublished": post.meta.date,
+                    "dateModified": post.meta.date,
+                    "author": {
+                      "@type": "Person",
+                      "name": "Yi Learning"
+                    },
+                    "publisher": {
+                      "@type": "Organization",
+                      "name": siteConfig.title,
+                      "logo": {
+                        "@type": "ImageObject",
+                        "url": `${siteConfig.url}/logo.png`
+                      }
+                    },
+                    "mainEntityOfPage": {
+                      "@type": "WebPage",
+                      "@id": `${siteConfig.url}/posts/${params.slug}`
+                    },
+                    "keywords": post.meta.tags?.join(', '),
+                    "articleSection": "AI学习",
+                    "inLanguage": "zh-CN"
+                  })
+                }}
+              />
+
+              {/* 作者信息 */}
               <div className="mt-10 pt-8 border-t border-subtle">
+                <AuthorCard author={authorInfo} />
+              </div>
+
+              <div className="mt-6 pt-6 border-t border-subtle">
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-secondary">分享这篇文章</span>
                   <div className="flex space-x-4">

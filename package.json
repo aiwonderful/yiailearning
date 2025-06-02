@@ -6,9 +6,17 @@
     "dev": "next dev",
     "build": "node scripts/build-search.js && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seo:check": "node scripts/seo-checker.js",
+    "seo:build": "npm run seo:check && npm run build",
+    "perf:audit": "npm run build && node scripts/performance-audit.js",
+    "validate:images": "node scripts/validate-images.js",
+    "optimize:build": "npm run validate:images && npm run seo:check && npm run build",
+    "sections:show": "node scripts/toggle-sections.js show",
+    "sections:hide": "node scripts/toggle-sections.js hide"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "fuse.js": "^7.1.0",
     "gray-matter": "^4.0.3",
     "next": "^14.0.3",

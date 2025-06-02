@@ -3,6 +3,21 @@ import PageTitle from '../../components/PageTitle';
 export default function RoadmapPage() {
   return (
     <div className="max-w-4xl mx-auto">
+      {/* 开发中提示 */}
+      <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-8 dark:bg-amber-900/20 dark:border-amber-800">
+        <div className="flex items-center">
+          <svg className="w-5 h-5 text-amber-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd"/>
+          </svg>
+          <span className="text-amber-800 font-medium dark:text-amber-200">
+            内容完善中
+          </span>
+        </div>
+        <p className="text-amber-700 text-sm mt-2 dark:text-amber-300">
+          学习路线内容正在精心整理中，预计将包含详细的学习计划、时间安排和实战项目。敬请期待！
+        </p>
+      </div>
+
       <div className="mb-12">
         <PageTitle>AI学习路线</PageTitle>
         <p className="text-secondary leading-relaxed max-w-2xl">
