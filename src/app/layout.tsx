@@ -2,12 +2,18 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Suspense } from 'react';
 import { siteConfig } from '../lib/config';
 import { fontClasses } from '../lib/fonts';
 import ThemeToggle from '../components/ThemeToggle';
 import CustomCursorManager from '../components/CustomCursorManager';
 import Analytics from '../components/Analytics';
 import Performance from '../components/Performance';
+import { PerformanceMonitor } from '../components/PerformanceMonitor';
+import { Loading } from '../components/Loading';
+import { ServiceWorkerStatus, OfflineBanner } from '../components/ServiceWorkerStatus';
+import { WebAnalytics } from '../components/WebAnalytics';
+import { MonitoringDashboard } from '../components/MonitoringDashboard';
 
 export const metadata: Metadata = {
   title: {
@@ -93,8 +99,12 @@ export default function RootLayout({
   return (
     <html lang={siteConfig.language} suppressHydrationWarning>
       <body className={fontClasses}>
+        {/* 性能监控 */}
+        <PerformanceMonitor />
         <Analytics />
-        <Performance />
+        <Suspense fallback={<Loading />}>
+          <Performance />
+        </Suspense>
         <CustomCursorManager />
         <header className="sticky top-0 bg-background/95 backdrop-blur-sm border-b border-subtle z-50">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
@@ -196,6 +206,16 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+
+        {/* Service Worker 状态和离线支持 */}
+        <OfflineBanner />
+        <ServiceWorkerStatus />
+
+        {/* Web分析 */}
+        <WebAnalytics />
+
+        {/* 监控仪表板 */}
+        <MonitoringDashboard />
       </body>
     </html>
   );

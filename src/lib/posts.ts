@@ -9,24 +9,9 @@ import toc from 'remark-toc';
 import { rehype } from 'rehype';
 import rehypeSlug from 'rehype-slug';
 import rehypePrism from 'rehype-prism-plus';
+import { PostMeta, PostSummary, PostError } from '@/types';
 
 const postsDirectory = path.join(process.cwd(), 'src/data/posts');
-
-// 定义 PostMeta 类型，确保 title 和 date 是必须的
-interface PostMeta {
-  title: string;
-  date: string;
-  tags?: string[];
-  excerpt?: string;
-  summary?: string; // 兼容旧的 summary 字段
-  [key: string]: any; // 允许其他任意字段
-}
-
-// 定义 Post 类型给 getAllPosts 返回值使用
-interface PostSummary {
-  slug: string;
-  meta: PostMeta;
-}
 
 // 获取所有文章的 slug（文件名）
 export async function getPostSlugs() {
@@ -69,11 +54,21 @@ export async function getPostBySlug(slug: string) {
       meta: data as PostMeta,
       content: finalContent.toString(),
     };
-  } catch (error: any) {
-    console.error(`[调试 getPostBySlug] 处理 slug "${slug}" 时出错:`, error.message); // 日志 7
+  } catch (error) {
+    console.error(`[调试 getPostBySlug] 处理 slug "${slug}" 时出错:`, error instanceof Error ? error.message : 'Unknown error'); // 日志 7
     console.error(`[调试 getPostBySlug] 完整错误对象:`, error); // 日志 7.1
-    // 重新抛出错误，以便 page.tsx 中的 catch 块可以捕获它并调用 notFound()
-    throw error; 
+
+    // 转换为PostError并重新抛出
+    const postError = new PostError(
+      `Failed to process post ${slug}: ${error instanceof Error ? error.message : 'Unknown error'}`,
+      error instanceof Error && 'code' in error && (error as any).code === 'ENOENT' ? 'not_found' : 'processing_error',
+      {
+        slug,
+        originalError: error instanceof Error ? error : undefined,
+      }
+    );
+
+    throw postError;
   }
 }
 

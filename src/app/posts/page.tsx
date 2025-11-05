@@ -2,7 +2,13 @@ import Link from 'next/link';
 import { getAllPosts } from '../../lib/posts';
 import SearchablePosts from './SearchablePosts';
 import PageTitle from '../../components/PageTitle';
-import React, { Suspense } from 'react';
+import React, { Suspense, lazy } from 'react';
+import { Loading } from '@/components/Loading';
+
+// 动态导入组件以实现代码分割
+const PerformanceStats = lazy(() =>
+  import('../../components/PerformanceMonitor').then(mod => ({ default: mod.PerformanceStats }))
+);
 
 export default async function BlogIndexPage() {
   const posts = await getAllPosts();
@@ -16,9 +22,16 @@ export default async function BlogIndexPage() {
         </p>
       </div>
 
-      <Suspense fallback={<div className="text-center py-10">加载中...</div>}> 
+      <Suspense fallback={<div className="text-center py-10">加载中...</div>}>
         <SearchablePosts initialPosts={posts} />
       </Suspense>
+
+      {/* 性能监控面板 - 懒加载 */}
+      <div className="mt-12">
+        <Suspense fallback={<div className="h-32 bg-white dark:bg-gray-800 rounded-lg animate-pulse" />}>
+          <PerformanceStats className="max-w-md" />
+        </Suspense>
+      </div>
     </div>
   );
 } 
