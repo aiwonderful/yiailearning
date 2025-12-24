@@ -13,7 +13,9 @@
       "Bash(git add package-lock.json package.json tsconfig.json)",
       "Bash(git add public/search/search-data.json src/app/layout.tsx src/app/posts/page.tsx src/components/Performance.tsx src/lib/markdown.ts src/lib/posts.ts)",
       "Bash(git add check-app-permissions.js)",
-      "Bash(git add -u)"
+      "Bash(git add -u)",
+      "Bash(git commit -m \"$(cat <<''EOF''\n✨ feat: 完整飞书博客同步功能\n\n🎯 新增功能:\n- 📝 飞书文档自动同步到博客\n- 🔄 支持API和RSS两种同步方式\n- ⚡ 并行同步，速度提升3倍\n- 🔍 智能变更检测，只同步更新的文档\n- 📁 文件夹级别批量管理\n- 🎛️ 完整的文档管理命令 (add/list/disable/enable/remove)\n- 🤖 GitHub Actions自动同步工作流\n- 📊 实时同步统计和监控\n- 🔒 安全的环境变量配置\n- 🧪 完整的测试覆盖\n\n📚 文档:\n- 飞书同步博客详细指南 (超2万字完整教程)\n- 30秒快速上手指南\n- 完整配置指南\n- 最佳实践和FAQ\n\n🛠️ 技术实现:\n- Node.js + axios API调用\n- XML2JS RSS解析\n- 飞书开放平台 API v2\n- 并发控制与错误处理\n- 变更检测算法\n\n📦 新增文件:\n- 同步脚本: scripts/sync-feishu.js, scripts/sync-feishu-rss.js\n- 批量管理: scripts/batch-sync.js, scripts/manage-docs.js\n- GitHub Actions: .github/workflows/sync-feishu.yml\n- 测试脚本: test-*.js\n- 配置模板: .env.feishu.example\n\n🎨 项目增强:\n- 无障碍访问支持 (Accessibility)\n- 性能监控 (Performance Monitor)\n- 错误边界 (Error Boundary)\n- 单元测试 (Jest)\n- 代码质量 (ESLint, Prettier)\n- 监控仪表板 (Monitoring Dashboard)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push origin master)"
     ],
     "deny": [],
     "ask": []

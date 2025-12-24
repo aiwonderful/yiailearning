@@ -52,7 +52,7 @@ export function RelatedPosts({
               </h4>
 
               <div className="grid gap-3">
-                {posts.map((post) => (
+                {posts.map((post: any) => (
                   <RelatedPostCard
                     key={post.slug}
                     post={post}

@@ -37,7 +37,7 @@ export function WebAnalytics() {
   return (
     <>
       <Analytics
-        beforeSend={(event) => {
+        beforeSend={(event: any) => {
           // 过滤敏感信息
           if (event.data?.url?.includes('/api/')) {
             return null;

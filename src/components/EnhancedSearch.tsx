@@ -53,8 +53,8 @@ export function EnhancedSearch({
     const suggestions: SearchSuggestion[] = [];
 
     // 1. 搜索历史 (最近5个)
+    const recentHistory = enableHistory ? searchHistory.slice(0, 5) : [];
     if (enableHistory && query === '') {
-      const recentHistory = searchHistory.slice(0, 5);
       recentHistory.forEach(text => {
         suggestions.push({ text, type: 'recent' });
       });
@@ -241,9 +241,8 @@ export function EnhancedSearch({
             <button
               key={`${suggestion.type}-${suggestion.text}`}
               onClick={() => handleSuggestionClick(suggestion)}
-              className={`w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 flex items-center gap-3 ${
-                index === selectedIndex ? 'bg-blue-50 dark:bg-blue-900/50' : ''
-              }`}
+              className={`w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 flex items-center gap-3 ${index === selectedIndex ? 'bg-blue-50 dark:bg-blue-900/50' : ''
+                }`}
             >
               <span className="text-gray-400 dark:text-gray-500">
                 {getSuggestionIcon(suggestion.type)}

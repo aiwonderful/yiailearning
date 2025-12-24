@@ -21,8 +21,8 @@ function calculateTagSimilarity(tags1: string[] = [], tags2: string[] = []): num
   const set1 = new Set(tags1.map(tag => tag.toLowerCase()));
   const set2 = new Set(tags2.map(tag => tag.toLowerCase()));
 
-  const intersection = new Set([...set1].filter(x => set2.has(x)));
-  const union = new Set([...set1, ...set2]);
+  const intersection = new Set(Array.from(set1).filter(x => set2.has(x)));
+  const union = new Set([...Array.from(set1), ...Array.from(set2)]);
 
   return union.size === 0 ? 0 : intersection.size / union.size;
 }
@@ -40,8 +40,8 @@ function calculateTextSimilarity(text1: string, text2: string): number {
   const set1 = new Set(words1);
   const set2 = new Set(words2);
 
-  const intersection = new Set([...set1].filter(x => set2.has(x)));
-  const union = new Set([...set1, ...set2]);
+  const intersection = new Set(Array.from(set1).filter(x => set2.has(x)));
+  const union = new Set([...Array.from(set1), ...Array.from(set2)]);
 
   return union.size === 0 ? 0 : intersection.size / union.size;
 }

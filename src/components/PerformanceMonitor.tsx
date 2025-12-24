@@ -108,7 +108,7 @@ export function PerformanceStats({ className = '' }: PerformanceStatsProps) {
 
       const metrics = {
         TTFB: navigation.responseStart - navigation.requestStart,
-        FCP: navigation.loadEventStart - navigation.navigationStart,
+        FCP: navigation.loadEventStart,
         DOM: navigation.domContentLoadedEventEnd - navigation.domContentLoadedEventStart,
         Load: navigation.loadEventEnd - navigation.loadEventStart,
       };
@@ -144,13 +144,12 @@ export function PerformanceStats({ className = '' }: PerformanceStatsProps) {
                 {value.toFixed(0)}ms
               </span>
               <span
-                className={`px-1.5 py-0.5 rounded text-xs ${
-                  getRating(name, value) === 'good'
+                className={`px-1.5 py-0.5 rounded text-xs ${getRating(name, value) === 'good'
                     ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
                     : getRating(name, value) === 'needs-improvement'
-                    ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200'
-                    : 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'
-                }`}
+                      ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200'
+                      : 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'
+                  }`}
               >
                 {getRating(name, value)}
               </span>

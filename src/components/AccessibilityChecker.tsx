@@ -116,26 +116,24 @@ export function AccessibilityChecker() {
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-2xl font-bold">{report.score}/100</span>
                   <span
-                    className={`px-3 py-1 rounded text-sm font-medium ${
-                      report.score >= 90
+                    className={`px-3 py-1 rounded text-sm font-medium ${report.score >= 90
                         ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
                         : report.score >= 70
-                        ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200'
-                        : 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'
-                    }`}
+                          ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200'
+                          : 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'
+                      }`}
                   >
                     {report.score >= 90 ? '优秀' : report.score >= 70 ? '良好' : '需改进'}
                   </span>
                 </div>
                 <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                   <div
-                    className={`h-2 rounded-full transition-all ${
-                      report.score >= 90
+                    className={`h-2 rounded-full transition-all ${report.score >= 90
                         ? 'bg-green-600'
                         : report.score >= 70
-                        ? 'bg-yellow-600'
-                        : 'bg-red-600'
-                    }`}
+                          ? 'bg-yellow-600'
+                          : 'bg-red-600'
+                      }`}
                     style={{ width: `${report.score}%` }}
                   />
                 </div>
@@ -186,23 +184,21 @@ export function AccessibilityChecker() {
                     {report.issues.map((issue, index) => (
                       <div
                         key={index}
-                        className={`p-3 rounded border-l-4 ${
-                          issue.type === 'error'
+                        className={`p-3 rounded border-l-4 ${issue.type === 'error'
                             ? 'border-red-500 bg-red-50 dark:bg-red-900/20'
                             : issue.type === 'warning'
-                            ? 'border-yellow-500 bg-yellow-50 dark:bg-yellow-900/20'
-                            : 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
-                        }`}
+                              ? 'border-yellow-500 bg-yellow-50 dark:bg-yellow-900/20'
+                              : 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
+                          }`}
                       >
                         <div className="flex items-start gap-2">
                           <span
-                            className={`flex-shrink-0 mt-0.5 ${
-                              issue.type === 'error'
+                            className={`flex-shrink-0 mt-0.5 ${issue.type === 'error'
                                 ? 'text-red-600'
                                 : issue.type === 'warning'
-                                ? 'text-yellow-600'
-                                : 'text-blue-600'
-                            }`}
+                                  ? 'text-yellow-600'
+                                  : 'text-blue-600'
+                              }`}
                             aria-hidden="true"
                           >
                             {issue.type === 'error' ? (
@@ -238,13 +234,12 @@ export function AccessibilityChecker() {
                                 WCAG {issue.wcagLevel}
                               </span>
                               <span
-                                className={`ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs ${
-                                  issue.type === 'error'
+                                className={`ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs ${issue.type === 'error'
                                     ? 'bg-red-200 dark:bg-red-800 text-red-700 dark:text-red-200'
                                     : issue.type === 'warning'
-                                    ? 'bg-yellow-200 dark:bg-yellow-800 text-yellow-700 dark:text-yellow-200'
-                                    : 'bg-blue-200 dark:bg-blue-800 text-blue-700 dark:text-blue-200'
-                                }`}
+                                      ? 'bg-yellow-200 dark:bg-yellow-800 text-yellow-700 dark:text-yellow-200'
+                                      : 'bg-blue-200 dark:bg-blue-800 text-blue-700 dark:text-blue-200'
+                                  }`}
                               >
                                 {issue.type === 'error' ? '错误' : issue.type === 'warning' ? '警告' : '信息'}
                               </span>
@@ -267,7 +262,7 @@ export function AccessibilityChecker() {
             </>
           ) : (
             <div className="text-center py-8 text-gray-500">
-              点击"重新检查"开始分析
+              点击&quot;重新检查&quot;开始分析
             </div>
           )}
         </div>

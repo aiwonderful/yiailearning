@@ -5,50 +5,55 @@ import PostCard from '../components/PostCard';
 
 export default async function HomePage() {
   const allPosts = await getAllPosts();
-  const featuredPosts = allPosts.slice(0, 3); // 取最新的3篇文章作为特色文章
-  
+  const featuredPosts = allPosts.slice(0, 3);
+
   return (
-    <div className="max-w-6xl mx-auto">
-      {/* 首页横幅 */}
-      <div className="relative card overflow-hidden mb-16">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/5 z-0"></div>
-        <div className="relative z-10 p-8 md:p-12 flex flex-col items-start">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary">
-            AI学习笔记
+    <div className="max-w-5xl mx-auto space-y-24">
+      {/* Hero Section */}
+      <section className="text-center py-20 md:py-32 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent -z-10" />
+        <div className="relative z-10 space-y-8 max-w-3xl mx-auto px-4">
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
+            AI 学习笔记
           </h1>
-          <p className="text-xl md:text-2xl text-secondary mb-6 max-w-2xl leading-relaxed">
-            分享我的AI学习经验与笔记，希望能帮助到更多非科班转行的朋友。
+          <p className="text-xl md:text-2xl text-secondary leading-relaxed font-light">
+            探索人工智能的无限可能。分享非科班视角的学习心得，从基础理论到实战应用的完整记录。
           </p>
-          <div className="flex flex-wrap gap-4 mt-2">
-            <Link 
-              href="/posts" 
-              className="btn btn-primary"
+          <div className="flex flex-wrap justify-center gap-4 pt-4">
+            <Link
+              href="/posts"
+              className="btn btn-primary text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-primary/25 hover:-translate-y-1 transition-all duration-300"
             >
-              浏览所有文章
+              开始阅读
             </Link>
-            {/* 学习路线页面待完善，暂时隐藏 */}
-            {/* <Link 
-              href="/roadmap" 
-              className="btn btn-secondary"
+            <a
+              href="https://github.com/yestar2023-alt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary text-lg px-8 py-3 rounded-full bg-white border border-subtle hover:bg-muted transition-all duration-300"
             >
-              查看学习路线
-            </Link> */}
+              GitHub
+            </a>
           </div>
         </div>
-      </div>
-      
-      {/* 最新文章 */}
-      <div className="mb-16">
-        <div className="flex justify-between items-center mb-8">
-          <h2 className="text-2xl font-bold text-primary">最新文章</h2>
-          <Link href="/posts" className="text-primary hover:underline hover:opacity-90 transition-opacity">
-            查看全部 →
+      </section>
+
+      {/* Latest Posts */}
+      <section>
+        <div className="flex justify-between items-end mb-12 px-4">
+          <div>
+            <h2 className="text-3xl font-bold text-primary mb-2">最新文章</h2>
+            <p className="text-secondary">记录学习路上的点点滴滴</p>
+          </div>
+          <Link href="/posts" className="text-primary font-medium hover:text-primary/80 transition-colors flex items-center gap-1 group">
+            查看全部
+            <span className="group-hover:translate-x-1 transition-transform">→</span>
           </Link>
         </div>
-        
-        <div className="space-y-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
           {featuredPosts.map((post) => (
-            <PostCard 
+            <PostCard
               key={post.slug}
               slug={post.slug}
               title={post.meta.title}
@@ -58,56 +63,48 @@ export default async function HomePage() {
             />
           ))}
         </div>
-      </div>
-      
-      {/* 关于我 */}
-      <div className="card p-8 md:p-10">
-        <h2 className="text-2xl font-bold mb-6 text-primary">关于本站</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="col-span-2">
-            <p className="text-secondary mb-4 leading-relaxed">
-              我是一位非计算机专业出身的AI学习者，在自学人工智能的过程中整理了这些笔记和资源。从基础的Python编程到深度学习模型实现，这里记录了我的学习历程和心得体会。
+      </section>
+
+      {/* About Section */}
+      <section className="bg-muted/50 rounded-3xl p-8 md:p-16 text-center md:text-left">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-primary">关于本站</h2>
+            <p className="text-secondary text-lg leading-relaxed">
+              我是一个非科班出身的 AI 爱好者，主要专注于 Cursor 等 AI 编程工具以及 Agent 网站开发。这里记录了我在 Vibe Coding 路上的探索与实践。
             </p>
-            <p className="text-secondary mb-4 leading-relaxed">
-              作为非科班出身的学习者，我深知在AI领域起步时面临的挑战。这个博客旨在为其他类似背景的学习者提供一个更加友好、实用的学习参考，希望能够帮助更多人顺利进入这个领域。
+            <p className="text-secondary text-lg leading-relaxed">
+              无论你是想了解如何用 AI 工具提升开发效率，还是对 AI Agent 应用感兴趣，希望这些心得能给你一些启发。让我们一起拥抱 AI 时代的新型开发方式！
             </p>
-            <p className="mt-6">
-              {/* 学习路线页面待完善，暂时隐藏 */}
-              {/* <Link href="/roadmap" className="btn btn-primary">
-                查看我的学习路线 →
-              </Link> */}
-              <Link href="/posts" className="btn btn-primary">
-                开始阅读博客 →
+            <div className="pt-4">
+              <Link href="/about" className="text-primary font-medium hover:underline underline-offset-4">
+                了解更多关于我的故事 →
               </Link>
-            </p>
+            </div>
           </div>
-          <div className="bg-muted rounded-lg p-6 border border-subtle">
-            <h3 className="font-semibold mb-4">学习要点</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <span className="text-primary mr-2">✓</span>
-                <span className="text-secondary text-sm">循序渐进，打好基础</span>
+          <div className="bg-white p-8 rounded-2xl shadow-sm border border-subtle/50">
+            <h3 className="font-semibold text-xl mb-6 text-primary">内容方向</h3>
+            <ul className="space-y-4 text-secondary">
+              <li className="flex items-center gap-3">
+                <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm font-bold">🎨</span>
+                <span>Vibe Coding 实践与心得</span>
               </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">✓</span>
-                <span className="text-secondary text-sm">理论结合实践，多做项目</span>
+              <li className="flex items-center gap-3">
+                <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm font-bold">🤖</span>
+                <span>AI Agent 开发与应用</span>
               </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">✓</span>
-                <span className="text-secondary text-sm">持续学习，跟进最新技术</span>
+              <li className="flex items-center gap-3">
+                <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm font-bold">🛠️</span>
+                <span>Cursor 等 AI 工具使用技巧</span>
               </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">✓</span>
-                <span className="text-secondary text-sm">加入社区，互相学习交流</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">✓</span>
-                <span className="text-secondary text-sm">保持好奇心和耐心</span>
+              <li className="flex items-center gap-3">
+                <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm font-bold">💡</span>
+                <span>非科班学习 AI 开发的经验</span>
               </li>
             </ul>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
-} 
+}

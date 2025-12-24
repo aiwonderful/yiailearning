@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode, Suspense, lazy } from 'react';
+import { ReactNode, Suspense, lazy, useState, useEffect } from 'react';
 import { Loading } from '@/components/Loading';
 
 /**
@@ -227,7 +227,7 @@ export function BatchLazyLoad({
       const content = item.loader();
       return (
         <div key={item.key} className="lazy-load-item">
-          {renderItem(content, item.key)}
+          {renderItem(content as any, item.key)}
         </div>
       );
     });

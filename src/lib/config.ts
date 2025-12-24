@@ -5,7 +5,7 @@ export const siteConfig = {
   description: '一个探索人工智能学习路径、工具和资源的博客',
   language: 'zh',
   url: 'https://yourdomain.com', // 替换为你的域名
-  
+
   // Social media links
   social: {
     github: 'https://github.com/aiwonderful',
@@ -17,6 +17,7 @@ export const siteConfig = {
   // Navigation links
   navigation: [
     { name: '首页', href: '/' },
+    { name: 'Vibe Coding', href: '/vibe-coding' },
     // { name: '学习路线', href: '/roadmap' }, // 暂时隐藏，待完善后恢复
     // { name: '资源', href: '/resources' }, // 暂时隐藏，待完善后恢复
     { name: '博客', href: '/posts' },

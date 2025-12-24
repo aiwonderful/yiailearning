@@ -93,9 +93,8 @@ export function ReadingTimeAnimated({
 
   return (
     <div
-      className={`transition-all duration-500 ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
-      } ${className}`}
+      className={`transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
+        } ${className}`}
     >
       <ReadingTime content={content} showIcon showWordCount />
     </div>
@@ -108,7 +107,7 @@ interface ReadingStatsProps {
   className?: string;
 }
 
-export function ReadingStats({ content, className = '' }: ReadingStatsProps) {
+export function ReadingStats({ content, className = '', locale = 'zh-CN' }: ReadingStatsProps & { locale?: 'zh-CN' | 'en' }) {
   const readingTime = calculateReadingTime(content);
 
   const stats = [

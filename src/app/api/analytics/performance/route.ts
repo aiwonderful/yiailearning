@@ -11,6 +11,9 @@ interface PerformanceMetric {
   id: string;
   delta: number;
   rating?: 'good' | 'needs-improvement' | 'poor';
+  timestamp?: number;
+  url?: string;
+  userAgent?: string;
 }
 
 // 存储性能数据的内存缓存（生产环境应使用数据库或监控服务）

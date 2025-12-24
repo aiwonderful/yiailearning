@@ -20,10 +20,10 @@ Sentry.init({
 
   // 集成
   integrations: [
-    new Sentry.BrowserTracing({
-      routingInstrumentation: Sentry.nextRouterInstrumentation,
-    }),
-    new Sentry.Replay(),
+    // new Sentry.BrowserTracing({
+    //   routingInstrumentation: Sentry.nextRouterInstrumentation,
+    // }),
+    // new Sentry.Replay(),
   ],
 
   // 过滤和清洗敏感信息
@@ -46,7 +46,7 @@ Sentry.init({
       // 移除密码和令牌
       if (event.request.data) {
         try {
-          const data = JSON.parse(event.request.data);
+          const data = JSON.parse(event.request.data as string);
           delete data.password;
           delete data.token;
           delete data.apiKey;

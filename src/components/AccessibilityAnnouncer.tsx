@@ -130,13 +130,15 @@ export function FocusIndicator({ children, className = '' }: FocusIndicatorProps
  */
 export function AccessibilityStatus() {
   const [focusVisible, setFocusVisible] = useState(false);
-  const [announce] = useAccessibilityAnnouncer();
+  const announce = useAccessibilityAnnouncer();
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Tab') {
         setFocusVisible(true);
-        announce('键盘导航已启用', 'polite');
+        if (announce) {
+          announce('键盘导航已启用', 'polite');
+        }
       }
     };
 

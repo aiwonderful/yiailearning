@@ -51,6 +51,7 @@ describe('reading-time utilities', () => {
   describe('formatReadingTime', () => {
     it('formats reading time with minutes', () => {
       const result = formatReadingTime({
+        text: '',
         words: 500,
         minutes: 2,
         seconds: 30,
@@ -62,6 +63,7 @@ describe('reading-time utilities', () => {
 
     it('formats reading time with seconds', () => {
       const result = formatReadingTime({
+        text: '',
         words: 50,
         minutes: 0,
         seconds: 30,
@@ -74,6 +76,7 @@ describe('reading-time utilities', () => {
     it('formats fast reading time', () => {
       const result = formatReadingTime(
         {
+          text: '',
           words: 1000,
           minutes: 5,
           seconds: 0,
@@ -87,6 +90,7 @@ describe('reading-time utilities', () => {
     it('formats slow reading time', () => {
       const result = formatReadingTime(
         {
+          text: '',
           words: 1000,
           minutes: 5,
           seconds: 0,
@@ -99,6 +103,7 @@ describe('reading-time utilities', () => {
 
     it('returns dash for zero time', () => {
       const result = formatReadingTime({
+        text: '',
         words: 0,
         minutes: 0,
         seconds: 0,

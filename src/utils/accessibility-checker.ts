@@ -191,6 +191,7 @@ export function checkFormAccessibility(form: HTMLFormElement): AccessibilityIssu
   const inputs = form.querySelectorAll('input, select, textarea');
 
   inputs.forEach((input) => {
+    const formControl = input as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
     const id = input.id;
     const label = form.querySelector(`label[for="${id}"]`);
     const ariaLabel = input.getAttribute('aria-label');
@@ -209,7 +210,7 @@ export function checkFormAccessibility(form: HTMLFormElement): AccessibilityIssu
     }
 
     // 缺少描述
-    if (input.hasAttribute('aria-required') || input.required) {
+    if (input.hasAttribute('aria-required') || formControl.required) {
       const description = form.querySelector(`#${id}-description`);
       if (!description && !input.getAttribute('aria-describedby')) {
         issues.push({
@@ -407,7 +408,7 @@ export function performAccessibilityAudit(document: Document): AccessibilityRepo
 
   // 表单检查
   const forms = document.querySelectorAll('form');
-  checks.forms = forms.flatMap((form) => checkFormAccessibility(form as HTMLFormElement));
+  checks.forms = Array.from(forms).flatMap((form) => checkFormAccessibility(form as HTMLFormElement));
 
   // 交互元素检查
   const interactiveElements = document.querySelectorAll('[onclick], [onkeydown]');
