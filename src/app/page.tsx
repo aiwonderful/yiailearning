@@ -30,7 +30,7 @@ export default async function HomePage() {
               href="https://github.com/yestar2023-alt"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-secondary text-lg px-8 py-3 rounded-full bg-white border border-subtle hover:bg-muted transition-all duration-300"
+              className="btn btn-secondary text-lg px-8 py-3 rounded-full bg-white dark:bg-gray-800 border border-subtle dark:border-gray-700 hover:bg-muted dark:hover:bg-gray-700 text-gray-900 dark:text-white transition-all duration-300"
             >
               GitHub
             </a>
@@ -82,7 +82,7 @@ export default async function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-subtle/50">
+          <div className="bg-white dark:bg-card-dark p-8 rounded-2xl shadow-sm border border-subtle/50 dark:border-gray-700">
             <h3 className="font-semibold text-xl mb-6 text-primary">内容方向</h3>
             <ul className="space-y-4 text-secondary">
               <li className="flex items-center gap-3">
