@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { generatePaginationLinks } from '@/lib/pagination';
 
 interface PaginationProps {
@@ -24,7 +24,6 @@ export function Pagination({
   onPageChange,
 }: PaginationProps) {
   const router = useRouter();
-  const searchParams = useSearchParams();
 
   // 如果只有一页或没有数据，不显示分页
   if (totalPages <= 1) {
@@ -54,7 +53,7 @@ export function Pagination({
     <div className={`flex flex-col sm:flex-row items-center justify-between gap-4 ${className}`}>
       {/* 分页信息 */}
       {showInfo && (
-        <div className="text-sm text-gray-700 dark:text-gray-300">
+        <div className="text-sm text-secondary dark:text-muted">
           第 {startItem}-{endItem} 条，共 {totalPages} 页
         </div>
       )}
@@ -67,8 +66,8 @@ export function Pagination({
           disabled={currentPage === 1}
           className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
             currentPage === 1
-              ? 'text-gray-400 dark:text-gray-600 cursor-not-allowed'
-              : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+              ? 'cursor-not-allowed text-subtle/70 dark:text-muted/60'
+              : 'text-secondary hover:bg-background-light dark:text-muted dark:hover:bg-white/5'
           }`}
           aria-label="上一页"
         >
@@ -85,7 +84,7 @@ export function Pagination({
               return (
                 <span
                   key={`ellipsis-${index}`}
-                  className="px-3 py-2 text-gray-500 dark:text-gray-400"
+                  className="px-3 py-2 text-subtle dark:text-muted"
                 >
                   ...
                 </span>
@@ -99,8 +98,8 @@ export function Pagination({
                 onClick={() => handlePageClick(link.page, link.url)}
                 className={`min-w-[2.5rem] px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   link.isActive
-                    ? 'bg-blue-600 text-white'
-                    : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                    ? 'bg-primary text-white shadow-md shadow-primary/15'
+                    : 'text-secondary hover:bg-background-light dark:text-muted dark:hover:bg-white/5'
                 }`}
                 aria-label={`第 ${link.page} 页`}
                 aria-current={link.isActive ? 'page' : undefined}
@@ -117,8 +116,8 @@ export function Pagination({
           disabled={currentPage === totalPages}
           className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
             currentPage === totalPages
-              ? 'text-gray-400 dark:text-gray-600 cursor-not-allowed'
-              : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+              ? 'cursor-not-allowed text-subtle/70 dark:text-muted/60'
+              : 'text-secondary hover:bg-background-light dark:text-muted dark:hover:bg-white/5'
           }`}
           aria-label="下一页"
         >
@@ -130,7 +129,7 @@ export function Pagination({
 
       {/* 跳转到指定页 */}
       <div className="flex items-center gap-2">
-        <label htmlFor="page-input" className="text-sm text-gray-700 dark:text-gray-300">
+        <label htmlFor="page-input" className="text-sm text-secondary dark:text-muted">
           跳转到
         </label>
         <input
@@ -138,7 +137,7 @@ export function Pagination({
           type="number"
           min={1}
           max={totalPages}
-          className="w-16 px-2 py-1 text-sm border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-16 rounded-lg border border-subtle/80 bg-card-light/90 px-2 py-1 text-sm text-text-light focus:border-primary/35 focus:outline-none focus:ring-2 focus:ring-primary/20 dark:border-white/10 dark:bg-card-dark dark:text-text-dark dark:focus:border-primary/30"
           onKeyDown={(e) => {
             if (e.key === 'Enter') {
               const value = parseInt((e.target as HTMLInputElement).value, 10);
@@ -149,7 +148,7 @@ export function Pagination({
             }
           }}
         />
-        <span className="text-sm text-gray-700 dark:text-gray-300">页</span>
+        <span className="text-sm text-secondary dark:text-muted">页</span>
       </div>
     </div>
   );
@@ -174,19 +173,19 @@ export function PaginationSimple({
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600"
+        className="rounded-lg border border-subtle/80 bg-card-light/90 px-4 py-2 text-sm font-medium text-secondary transition-colors hover:bg-background-light disabled:cursor-not-allowed disabled:opacity-50 dark:border-white/10 dark:bg-card-dark dark:text-muted dark:hover:bg-white/5"
       >
         上一页
       </button>
 
-      <span className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+      <span className="px-4 py-2 text-sm font-medium text-secondary dark:text-muted">
         {currentPage} / {totalPages}
       </span>
 
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600"
+        className="rounded-lg border border-subtle/80 bg-card-light/90 px-4 py-2 text-sm font-medium text-secondary transition-colors hover:bg-background-light disabled:cursor-not-allowed disabled:opacity-50 dark:border-white/10 dark:bg-card-dark dark:text-muted dark:hover:bg-white/5"
       >
         下一页
       </button>
@@ -241,13 +240,13 @@ export function InfiniteScrollPagination({
       {/* 加载状态 */}
       {isLoading && (
         <div className="flex justify-center py-4">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+          <div className="h-8 w-8 animate-spin rounded-full border-b-2 border-primary"></div>
         </div>
       )}
 
       {/* 没有更多数据 */}
       {!hasMore && (
-        <div className="text-center py-4 text-gray-600 dark:text-gray-400">
+        <div className="py-4 text-center text-secondary dark:text-muted">
           已加载全部内容
         </div>
       )}

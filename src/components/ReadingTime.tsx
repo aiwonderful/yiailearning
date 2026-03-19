@@ -49,14 +49,14 @@ export function ReadingTime({
         </span>
 
         {showWordCount && (
-          <span className="text-gray-500 dark:text-gray-400">
+          <span className="text-subtle dark:text-muted">
             ({readingTime.words} {locale === 'zh-CN' ? '字' : 'words'})
           </span>
         )}
       </div>
 
       {isQuick && (
-        <span className="ml-2 px-2 py-0.5 text-xs font-medium bg-green-100 text-green-800 rounded-full dark:bg-green-900 dark:text-green-200">
+        <span className="ml-2 rounded-full border border-primary/20 bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary dark:border-primary/25 dark:bg-primary/15 dark:text-primary-light">
           {locale === 'zh-CN' ? '快读' : 'Quick'}
         </span>
       )}
@@ -72,7 +72,7 @@ export function ReadingTimeCompact({
   const readingTime = calculateReadingTime(content);
 
   return (
-    <div className={`flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400 ${className}`}>
+    <div className={`flex items-center gap-1 text-sm text-secondary dark:text-muted ${className}`}>
       <ClockIcon className="w-4 h-4" />
       <span>{readingTime.text}</span>
     </div>
@@ -133,16 +133,16 @@ export function ReadingStats({ content, className = '', locale = 'zh-CN' }: Read
       {stats.map((stat, index) => (
         <div
           key={index}
-          className="text-center p-3 bg-gray-50 dark:bg-gray-800 rounded-lg"
+          className="rounded-2xl border border-subtle/70 bg-background-light/80 p-3 text-center dark:border-white/10 dark:bg-card-dark/80"
         >
-          <div className="text-2xl font-bold text-gray-900 dark:text-white">
+          <div className="text-2xl font-bold text-text-light dark:text-text-dark">
             {stat.value}
           </div>
-          <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+          <div className="mt-1 text-sm text-secondary dark:text-muted">
             {stat.label}
           </div>
           {stat.unit && (
-            <div className="text-xs text-gray-500 dark:text-gray-500">
+            <div className="text-xs text-subtle dark:text-muted">
               {stat.unit}
             </div>
           )}
@@ -182,9 +182,9 @@ export function ReadingProgress({ content, className = '' }: ReadingProgressProp
   return (
     <div className={className}>
       {/* 阅读进度条 */}
-      <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 dark:bg-gray-800 z-50">
+      <div className="fixed left-0 top-0 z-50 h-1 w-full bg-background-light dark:bg-card-dark">
         <div
-          className="h-full bg-gradient-to-r from-blue-500 to-green-500 transition-all duration-150"
+          className="h-full bg-gradient-to-r from-primary via-primary-light to-accent transition-all duration-150"
           style={{ width: `${scrollProgress}%` }}
         />
       </div>

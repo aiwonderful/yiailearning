@@ -40,14 +40,14 @@ export function RelatedPosts({
   if (variant === 'by-tags' && typeof relatedPosts === 'object') {
     return (
       <div className={className}>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+        <h3 className="mb-4 text-lg font-semibold text-text-light dark:text-text-dark">
           相关文章
         </h3>
 
         <div className="space-y-6">
           {Object.entries(relatedPosts).map(([tag, posts]) => (
             <div key={tag} className="space-y-3">
-              <h4 className="text-sm font-medium text-blue-600 dark:text-blue-400">
+              <h4 className="text-sm font-medium text-primary dark:text-primary-light">
                 标签: {tag}
               </h4>
 
@@ -73,7 +73,7 @@ export function RelatedPosts({
 
     return (
       <div className={className}>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+        <h3 className="mb-4 text-lg font-semibold text-text-light dark:text-text-dark">
           {title}
         </h3>
 
@@ -112,13 +112,13 @@ function RelatedPostCard({ post, showReason }: RelatedPostCardProps) {
     <article className="group">
       <Link
         href={`/posts/${post.slug}`}
-        className="block p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md hover:border-blue-300 dark:hover:border-blue-600 transition-all"
+        className="block rounded-[1.25rem] border border-subtle/80 bg-card-light/90 p-4 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/25 hover:shadow-lg dark:border-white/10 dark:bg-card-dark/85 dark:hover:border-accent/35"
       >
         <div className="flex items-start gap-4">
           {/* 缩略图占位 */}
-          <div className="w-16 h-16 bg-gray-200 dark:bg-gray-700 rounded-lg flex-shrink-0 flex items-center justify-center">
+          <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/10 via-background-light to-accent-soft/80 text-primary dark:from-primary/20 dark:via-card-dark dark:to-accent/15 dark:text-primary-light">
             <svg
-              className="w-8 h-8 text-gray-400 dark:text-gray-500"
+              className="h-8 w-8"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -134,12 +134,12 @@ function RelatedPostCard({ post, showReason }: RelatedPostCardProps) {
 
           <div className="flex-1 min-w-0">
             {/* 文章标题 */}
-            <h4 className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
+            <h4 className="line-clamp-2 text-sm font-semibold text-text-light transition-colors group-hover:text-primary dark:text-text-dark dark:group-hover:text-primary-light">
               {post.title}
             </h4>
 
             {/* 文章摘要 */}
-            <p className="mt-1 text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
+            <p className="mt-1 line-clamp-2 text-sm leading-6 text-secondary dark:text-muted">
               {post.summary || post.excerpt}
             </p>
 
@@ -150,7 +150,7 @@ function RelatedPostCard({ post, showReason }: RelatedPostCardProps) {
                   {post.tags.slice(0, 2).map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 py-0.5 text-xs bg-gray-100 text-gray-700 rounded dark:bg-gray-700 dark:text-gray-300"
+                      className="rounded-full border border-primary/20 bg-primary/10 px-2.5 py-1 text-xs text-primary dark:border-primary/25 dark:bg-primary/15 dark:text-primary-light"
                     >
                       {tag}
                     </span>
@@ -159,7 +159,7 @@ function RelatedPostCard({ post, showReason }: RelatedPostCardProps) {
               )}
 
               {/* 相似度或日期 */}
-              <div className="text-xs text-gray-500 dark:text-gray-400">
+              <div className="text-xs text-subtle dark:text-muted">
                 {post.similarity ? (
                   <span className="inline-flex items-center gap-1">
                     <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -180,7 +180,7 @@ function RelatedPostCard({ post, showReason }: RelatedPostCardProps) {
             {/* 推荐原因 */}
             {showReason && post.reason && post.similarity && (
               <div className="mt-2">
-                <span className="inline-flex items-center px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded dark:bg-blue-900 dark:text-blue-200">
+                <span className="inline-flex items-center rounded-full border border-primary/15 bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary dark:border-primary/25 dark:bg-primary/15 dark:text-primary-light">
                   {post.reason}
                 </span>
               </div>
@@ -214,28 +214,28 @@ export function RelatedPostsHorizontal({
 
   return (
     <div className={className}>
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+      <h3 className="mb-4 text-lg font-semibold text-text-light dark:text-text-dark">
         相关文章
       </h3>
 
-      <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-600">
+      <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-primary/30 dark:scrollbar-thumb-accent/30">
         {relatedPosts.map((post) => (
           <article
             key={post.slug}
-            className="flex-shrink-0 w-64 p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg"
+            className="w-64 flex-shrink-0 rounded-[1.25rem] border border-subtle/80 bg-card-light/90 p-4 shadow-soft dark:border-white/10 dark:bg-card-dark/85"
           >
             <Link href={`/posts/${post.slug}`}>
-              <h4 className="text-sm font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors line-clamp-2">
+              <h4 className="line-clamp-2 text-sm font-semibold text-text-light transition-colors hover:text-primary dark:text-text-dark dark:hover:text-primary-light">
                 {post.title}
               </h4>
-              <p className="mt-2 text-xs text-gray-600 dark:text-gray-400 line-clamp-3">
+              <p className="mt-2 line-clamp-3 text-xs leading-6 text-secondary dark:text-muted">
                 {post.summary || post.excerpt}
               </p>
               <div className="mt-2 flex items-center gap-1">
                 {post.tags?.slice(0, 2).map((tag) => (
                   <span
                     key={tag}
-                    className="px-1.5 py-0.5 text-xs bg-gray-100 text-gray-700 rounded dark:bg-gray-700 dark:text-gray-300"
+                    className="rounded-full border border-primary/20 bg-primary/10 px-2 py-1 text-xs text-primary dark:border-primary/25 dark:bg-primary/15 dark:text-primary-light"
                   >
                     {tag}
                   </span>

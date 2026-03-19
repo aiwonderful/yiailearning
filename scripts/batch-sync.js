@@ -8,8 +8,11 @@
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
+const matter = require('gray-matter');
 require('dotenv').config({ path: path.join(__dirname, '../.env.local') });
 const DocManager = require('./manage-docs');
+const { generatePostFile } = require('./feishu-sync-utils');
+const { printDraftPosts } = require('./list-drafts');
 
 class BatchSync {
   constructor() {
@@ -19,6 +22,20 @@ class BatchSync {
     this.postsDir = path.join(__dirname, '../src/data/posts');
     this.token = null;
     this.tokenExpiry = null;
+  }
+
+  getExistingFrontmatter(postPath) {
+    if (!fs.existsSync(postPath)) {
+      return {};
+    }
+
+    try {
+      const existingContent = fs.readFileSync(postPath, 'utf8');
+      return matter(existingContent).data || {};
+    } catch (error) {
+      console.warn(`⚠️ 读取现有 frontmatter 失败: ${path.basename(postPath)}`);
+      return {};
+    }
   }
 
   async getAccessToken() {
@@ -41,9 +58,25 @@ class BatchSync {
     }
   }
 
-  async getDocumentContent(docId) {
+  async getDocumentContent(docId, docType = 'docx') {
     const token = await this.getAccessToken();
     try {
+      if (docType === 'docx') {
+        const response = await axios.get(
+          `https://open.feishu.cn/open-apis/docx/v1/documents/${docId}/blocks`,
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+            params: {
+              page_size: 500,
+            },
+          }
+        );
+
+        return this.parseDocxBlocks(response.data.data?.items || []);
+      }
+
       const response = await axios.get(
         `https://open.feishu.cn/open-apis/doc/v2/doc/content?doc_id=${docId}&lang=zh-CN`,
         {
@@ -58,6 +91,102 @@ class BatchSync {
       console.error(`❌ 获取文档 ${docId} 失败:`, error.response?.data || error.message);
       throw error;
     }
+  }
+
+  parseDocxBlocks(blocks) {
+    let markdown = '';
+    let metadata = {
+      title: '',
+      date: new Date(),
+      tags: [],
+    };
+
+    blocks.forEach((block, index) => {
+      const blockType = block.block_type;
+
+      if (blockType === 1) {
+        return;
+      }
+
+      if (blockType === 2) {
+        const text = this.extractTextFromBlock(block.text);
+        if (text) {
+          if (!metadata.title && index < 10 && text.length < 100) {
+            metadata.title = text;
+          }
+          markdown += `${text}\n\n`;
+        }
+      }
+
+      if (blockType >= 3 && blockType <= 11) {
+        const text = this.extractTextFromBlock(block.heading);
+        if (text) {
+          const level = blockType - 2;
+          const prefix = '#'.repeat(Math.min(level, 6));
+          if (!metadata.title) {
+            metadata.title = text;
+          }
+          markdown += `${prefix} ${text}\n\n`;
+        }
+      }
+
+      if (blockType === 12) {
+        const text = this.extractTextFromBlock(block.bullet);
+        if (text) {
+          markdown += `- ${text}\n`;
+        }
+      }
+
+      if (blockType === 13) {
+        const text = this.extractTextFromBlock(block.ordered);
+        if (text) {
+          markdown += `1. ${text}\n`;
+        }
+      }
+
+      if (blockType === 14) {
+        const codeBlock = block.code;
+        if (codeBlock) {
+          const language = codeBlock.language || '';
+          const text = this.extractTextFromBlock(codeBlock);
+          markdown += `\`\`\`${language}\n${text}\n\`\`\`\n\n`;
+        }
+      }
+
+      if (blockType === 15) {
+        const text = this.extractTextFromBlock(block.quote);
+        if (text) {
+          markdown += `> ${text}\n\n`;
+        }
+      }
+
+      if (blockType === 27) {
+        const imageToken = block.image?.token;
+        if (imageToken) {
+          markdown += `![图片](${imageToken})\n\n`;
+        }
+      }
+    });
+
+    return {
+      content: markdown.trim(),
+      metadata,
+    };
+  }
+
+  extractTextFromBlock(blockContent) {
+    if (!blockContent) return '';
+
+    const elements = blockContent.elements || [];
+    let text = '';
+
+    elements.forEach((element) => {
+      if (element.text_run) {
+        text += element.text_run.content || '';
+      }
+    });
+
+    return text.trim();
   }
 
   parseDocument(content) {
@@ -109,34 +238,32 @@ class BatchSync {
     };
   }
 
-  generateFrontmatter(docData, doc, slug) {
-    const { content, metadata } = docData;
-    const title = doc.title || metadata.title || '未命名文档';
-    const date = doc.lastSync ? new Date(doc.lastSync).toISOString().split('T')[0] : new Date().toISOString().split('T')[0];
-
-    return `---
-title: '${title.replace(/'/g, "\\'")}'
-date: '${date}'
-summary: '${content.substring(0, 150).replace(/\n/g, ' ')}'
-tags: ['飞书同步', '${doc.folder}', ...${JSON.stringify(doc.tags)}]
----
-
-${content}
-`;
-  }
-
   async syncDoc(doc, force = false) {
     try {
-      const docData = await this.getDocumentContent(doc.id);
-      const frontmatter = this.generateFrontmatter(docData, doc, doc.slug);
-
       const postPath = path.join(this.postsDir, `${doc.slug}.md`);
+      const existingMeta = this.getExistingFrontmatter(postPath);
+      const docData = await this.getDocumentContent(doc.id, doc.type || 'docx');
+      const frontmatter = generatePostFile(
+        {
+          ...docData,
+          metadata: {
+            ...docData.metadata,
+            title: doc.title || docData.metadata.title,
+            tags: [...(doc.tags || []), ...(docData.metadata.tags || [])],
+          },
+        },
+        existingMeta,
+        {
+          fallbackTitle: doc.title || '未命名文档',
+          extraTags: [doc.folder],
+        }
+      );
 
       // 检查文件是否已存在
       if (fs.existsSync(postPath) && !force) {
         // 读取现有文件比较内容
         const existingContent = fs.readFileSync(postPath, 'utf8');
-        if (existingContent.includes(frontmatter.substring(0, 50))) {
+        if (existingContent === frontmatter) {
           console.log(`⏭️ ${doc.title}: 内容未变更，跳过`);
           return { status: 'skipped', doc };
         }
@@ -235,6 +362,7 @@ ${content}
 
     // 导出环境变量
     this.docManager.exportEnv();
+    printDraftPosts();
 
     return results;
   }
@@ -258,14 +386,13 @@ ${content}
 
       const items = response.data.items || [];
       const newDocIds = items
-        .filter(item => item.type === 'doc')
-        .map(item => item.token)
-        .filter(id => !this.docManager.config.docs.find(doc => doc.id === id));
+        .filter(item => item.type === 'doc' || item.type === 'docx')
+        .filter(item => !this.docManager.config.docs.find(doc => doc.id === item.token));
 
       if (newDocIds.length > 0) {
         console.log(`\n🆕 发现 ${newDocIds.length} 篇新文档:`);
-        newDocIds.forEach((id, index) => {
-          console.log(`   ${index + 1}. ${id.substring(0, 16)}...`);
+        newDocIds.forEach((item, index) => {
+          console.log(`   ${index + 1}. ${(item.name || item.title || item.token).substring(0, 40)}`);
         });
 
         // 询问是否添加
@@ -282,8 +409,9 @@ ${content}
         rl.close();
 
         if (answer.toLowerCase() === 'y' || answer.toLowerCase() === 'yes') {
-          newDocIds.forEach((docId, index) => {
-            this.docManager.addDoc(docId, `新文档 ${index + 1}`, ['飞书同步'], 'auto-discovered');
+          newDocIds.forEach((item, index) => {
+            const title = item.name || item.title || `新文档 ${index + 1}`;
+            this.docManager.addDoc(item.token, title, ['飞书同步'], 'auto-discovered', item.type || 'docx');
           });
           console.log('\n✅ 已添加所有新文档');
         } else {

@@ -189,11 +189,11 @@ export function EnhancedSearch({
   const getSuggestionColor = (type: SearchSuggestion['type']) => {
     switch (type) {
       case 'recent':
-        return 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300';
+        return 'border border-subtle/70 bg-background-light text-secondary dark:border-white/10 dark:bg-card-dark dark:text-muted';
       case 'popular':
-        return 'bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300';
+        return 'border border-primary/15 bg-primary/10 text-primary dark:border-primary/25 dark:bg-primary/15 dark:text-primary-light';
       case 'tag':
-        return 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300';
+        return 'border border-primary/20 bg-primary/10 text-primary dark:border-primary/25 dark:bg-primary/15 dark:text-primary-light';
     }
   };
 
@@ -208,12 +208,12 @@ export function EnhancedSearch({
           onKeyDown={handleKeyDown}
           onFocus={() => setIsOpen(true)}
           placeholder={placeholder}
-          className="w-full px-4 py-3 pl-12 pr-12 text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:placeholder-gray-400"
+          className="w-full rounded-[1.2rem] border border-subtle/80 bg-card-light/90 px-4 py-3 pl-12 pr-12 text-text-light shadow-soft transition-colors placeholder:text-subtle focus:border-primary/35 focus:outline-none focus:ring-2 focus:ring-primary/20 dark:border-white/10 dark:bg-card-dark/85 dark:text-text-dark dark:placeholder:text-muted dark:focus:border-primary/30 dark:focus:ring-primary/15"
           autoComplete="off"
         />
 
         {/* 搜索图标 */}
-        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-subtle dark:text-muted">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
@@ -223,7 +223,7 @@ export function EnhancedSearch({
         {query && (
           <button
             onClick={clearSearch}
-            className="absolute right-12 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+            className="absolute right-12 top-1/2 -translate-y-1/2 text-subtle transition-colors hover:text-primary dark:text-muted dark:hover:text-primary-light"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -236,22 +236,22 @@ export function EnhancedSearch({
 
       {/* 搜索建议下拉框 */}
       {isOpen && suggestions.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-xl z-50 max-h-96 overflow-y-auto">
+        <div className="absolute left-0 right-0 top-full z-50 mt-3 max-h-96 overflow-y-auto rounded-[1.4rem] border border-subtle/80 bg-card-light/95 shadow-2xl backdrop-blur-sm dark:border-white/10 dark:bg-card-dark/95">
           {suggestions.map((suggestion, index) => (
             <button
               key={`${suggestion.type}-${suggestion.text}`}
               onClick={() => handleSuggestionClick(suggestion)}
-              className={`w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 flex items-center gap-3 ${index === selectedIndex ? 'bg-blue-50 dark:bg-blue-900/50' : ''
+              className={`flex w-full items-center gap-3 px-4 py-3 text-left transition-colors hover:bg-background-light/90 dark:hover:bg-white/5 ${index === selectedIndex ? 'bg-primary/8 dark:bg-primary/10' : ''
                 }`}
             >
-              <span className="text-gray-400 dark:text-gray-500">
+              <span className="text-subtle dark:text-muted">
                 {getSuggestionIcon(suggestion.type)}
               </span>
-              <span className="flex-1 text-gray-900 dark:text-gray-100">
+              <span className="flex-1 text-text-light dark:text-text-dark">
                 {suggestion.text}
               </span>
               {suggestion.count && (
-                <span className="text-xs text-gray-500 dark:text-gray-400">
+                <span className="text-xs text-subtle dark:text-muted">
                   {suggestion.count}
                 </span>
               )}
@@ -264,8 +264,8 @@ export function EnhancedSearch({
           ))}
 
           {/* 底部提示 */}
-          <div className="px-4 py-2 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50">
-            <p className="text-xs text-gray-500 dark:text-gray-400">
+          <div className="border-t border-subtle/70 bg-background-light/80 px-4 py-2 dark:border-white/10 dark:bg-white/5">
+            <p className="text-xs text-subtle dark:text-muted">
               使用 ↑↓ 键导航，Enter 键选择，ESC 键关闭
             </p>
           </div>
@@ -337,35 +337,35 @@ export function AdvancedSearch() {
       {/* 搜索结果 */}
       {isLoading && (
         <div className="text-center py-12">
-          <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-          <p className="mt-2 text-gray-600 dark:text-gray-400">搜索中...</p>
+          <div className="inline-block h-8 w-8 animate-spin rounded-full border-b-2 border-primary"></div>
+          <p className="mt-2 text-secondary dark:text-muted">搜索中...</p>
         </div>
       )}
 
       {searchResults.length > 0 && (
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-gray-400">
+          <p className="text-sm text-secondary dark:text-muted">
             找到 {searchResults.length} 篇相关文章
           </p>
 
           {searchResults.map(result => (
             <article
               key={result.slug}
-              className="p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md transition-shadow"
+              className="rounded-[1.4rem] border border-subtle/80 bg-card-light/90 p-6 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/25 hover:shadow-lg dark:border-white/10 dark:bg-card-dark/85"
             >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                <a href={`/posts/${result.slug}`} className="hover:text-blue-600 dark:hover:text-blue-400">
+              <h3 className="mb-2 text-xl font-semibold text-text-light dark:text-text-dark">
+                <a href={`/posts/${result.slug}`} className="transition-colors hover:text-primary dark:hover:text-primary-light">
                   {result.title}
                 </a>
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-3">
+              <p className="mb-3 text-secondary dark:text-muted">
                 {result.summary}
               </p>
               <div className="flex flex-wrap gap-2">
                 {result.tags.map(tag => (
                   <span
                     key={tag}
-                    className="px-3 py-1 text-xs bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900 dark:text-blue-200"
+                    className="rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs text-primary dark:border-primary/25 dark:bg-primary/15 dark:text-primary-light"
                   >
                     {tag}
                   </span>

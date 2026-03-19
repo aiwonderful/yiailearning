@@ -12,12 +12,15 @@ export function WebAnalytics() {
   useEffect(() => {
     // 页面访问统计
     if (typeof window !== 'undefined') {
-      // 记录页面浏览量
-      console.log('[Analytics] Page view:', window.location.pathname);
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[Analytics] Page view:', window.location.pathname);
+      }
 
       // 记录性能指标
       const reportWebVitals = (metric: any) => {
-        console.log('[Analytics] Web Vital:', metric);
+        if (process.env.NODE_ENV === 'development') {
+          console.log('[Analytics] Web Vital:', metric);
+        }
       };
 
       // 监控性能
@@ -116,7 +119,9 @@ export function usePerformanceMonitor() {
       tcp: navigation.connectEnd - navigation.connectStart,
     };
 
-    console.log(`[Performance] ${pageName}:`, metrics);
+    if (process.env.NODE_ENV === 'development') {
+      console.log(`[Performance] ${pageName}:`, metrics);
+    }
 
     // 可以发送到分析服务
     if (process.env.NODE_ENV === 'production') {
@@ -138,7 +143,9 @@ export function usePerformanceMonitor() {
     return {
       end: () => {
         const duration = performance.now() - startTime;
-        console.log(`[Component] ${componentName}: ${duration.toFixed(2)}ms`);
+        if (process.env.NODE_ENV === 'development') {
+          console.log(`[Component] ${componentName}: ${duration.toFixed(2)}ms`);
+        }
         return duration;
       },
     };

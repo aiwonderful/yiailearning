@@ -135,7 +135,7 @@ export function getReadingTimeColorClass(
   if (readingTime.minutes <= 2) {
     return 'text-green-600 dark:text-green-400'; // 快读
   } else if (readingTime.minutes <= 5) {
-    return 'text-blue-600 dark:text-blue-400'; // 中等
+    return 'text-primary dark:text-primary-light'; // 中等
   } else if (readingTime.minutes <= 10) {
     return 'text-orange-600 dark:text-orange-400'; // 较长
   } else {

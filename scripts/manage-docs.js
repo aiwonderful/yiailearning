@@ -60,7 +60,7 @@ class DocManager {
   /**
    * 添加文档
    */
-  addDoc(docId, title, tags = [], folder = 'default') {
+  addDoc(docId, title, tags = [], folder = 'default', type = 'docx') {
     // 检查是否已存在
     const existing = this.config.docs.find(doc => doc.id === docId);
     if (existing) {
@@ -73,6 +73,7 @@ class DocManager {
       id: docId,
       title: title || docId.substring(0, 8),
       slug,
+      type,
       tags,
       folder,
       enabled: true,
@@ -195,12 +196,17 @@ class DocManager {
    * 生成文件 slug
    */
   generateSlug(title) {
-    return title
+    const slug = title
+      .normalize('NFKC')
+      .trim()
       .toLowerCase()
-      .replace(/[^\w\s-]/g, '') // 移除非字母数字
+      .replace(/[<>:"/\\|?*]/g, '') // 移除文件名非法字符
       .replace(/\s+/g, '-') // 空格转横线
       .replace(/-+/g, '-') // 多个横线合并
-      .trim();
+      .replace(/^-|-$/g, '')
+      .slice(0, 80);
+
+    return slug || `doc-${Date.now()}`;
   }
 
   /**

@@ -16,12 +16,12 @@ export function Loading({ message = '加载中...', className, size = 'medium' }
   return (
     <div className={`flex flex-col items-center justify-center p-8 ${className}`}>
       <div className="relative">
-        <div className={`${sizeClasses[size]} border-2 border-gray-200 dark:border-gray-700 rounded-full animate-spin`}>
-          <div className={`${sizeClasses[size]} border-2 border-blue-600 dark:border-blue-400 border-t-transparent rounded-full animate-spin`}></div>
+        <div className={`${sizeClasses[size]} animate-spin rounded-full border-2 border-subtle/50 dark:border-white/10`}>
+          <div className={`${sizeClasses[size]} animate-spin rounded-full border-2 border-primary border-t-transparent dark:border-primary-light`}></div>
         </div>
       </div>
       {message && (
-        <p className={`mt-4 text-gray-600 dark:text-gray-400 ${textSizeClasses[size]}`}>
+        <p className={`mt-4 text-secondary dark:text-muted ${textSizeClasses[size]}`}>
           {message}
         </p>
       )}
@@ -32,17 +32,17 @@ export function Loading({ message = '加载中...', className, size = 'medium' }
 // 骨架屏组件
 export function SkeletonCard() {
   return (
-    <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-6 animate-pulse">
-      <div className="h-4 bg-gray-300 dark:bg-gray-600 rounded w-3/4 mb-4"></div>
-      <div className="h-3 bg-gray-300 dark:bg-gray-600 rounded w-1/2 mb-2"></div>
+    <div className="animate-pulse rounded-[1.25rem] border border-subtle/80 bg-card-light/70 p-6 shadow-soft dark:border-white/10 dark:bg-card-dark/75">
+      <div className="mb-4 h-4 w-3/4 rounded bg-subtle/30 dark:bg-white/10"></div>
+      <div className="mb-2 h-3 w-1/2 rounded bg-subtle/25 dark:bg-white/10"></div>
       <div className="space-y-2">
-        <div className="h-3 bg-gray-300 dark:bg-gray-600 rounded"></div>
-        <div className="h-3 bg-gray-300 dark:bg-gray-600 rounded w-5/6"></div>
-        <div className="h-3 bg-gray-300 dark:bg-gray-600 rounded w-4/6"></div>
+        <div className="h-3 rounded bg-subtle/25 dark:bg-white/10"></div>
+        <div className="h-3 w-5/6 rounded bg-subtle/25 dark:bg-white/10"></div>
+        <div className="h-3 w-4/6 rounded bg-subtle/25 dark:bg-white/10"></div>
       </div>
       <div className="flex gap-2 mt-4">
-        <div className="h-6 bg-gray-300 dark:bg-gray-600 rounded w-16"></div>
-        <div className="h-6 bg-gray-300 dark:bg-gray-600 rounded w-20"></div>
+        <div className="h-6 w-16 rounded-full bg-accent-soft/80 dark:bg-accent/15"></div>
+        <div className="h-6 w-20 rounded-full bg-primary/12 dark:bg-primary/18"></div>
       </div>
     </div>
   );

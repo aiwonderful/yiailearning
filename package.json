@@ -30,6 +30,7 @@
     "sync:feishu": "node scripts/sync-feishu.js",
     "sync:feishu:rss": "node scripts/sync-feishu-rss.js",
     "sync:feishu:schedule": "node -e 'require(\"node-cron\").schedule(\"0 */6 * * *\", () => { require(\"./scripts/sync-feishu.js\") })'",
+    "sync:publish": "node scripts/sync-feishu.js && node scripts/build-search.js",
     "sync:all": "node scripts/batch-sync.js all",
     "sync:force": "node scripts/batch-sync.js force",
     "sync:discover": "node scripts/batch-sync.js discover",
@@ -38,7 +39,8 @@
     "docs:remove": "node scripts/manage-docs.js remove",
     "docs:enable": "node scripts/manage-docs.js enable",
     "docs:disable": "node scripts/manage-docs.js disable",
-    "docs:export": "node scripts/manage-docs.js export"
+    "docs:export": "node scripts/manage-docs.js export",
+    "drafts:list": "node scripts/list-drafts.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

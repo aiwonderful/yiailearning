@@ -1,8 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Suspense } from 'react';
+import { FaGithub, FaXTwitter, FaYoutube } from 'react-icons/fa6';
 import { siteConfig } from '../lib/config';
 import { fontClasses } from '../lib/fonts';
 import ThemeToggle from '../components/ThemeToggle';
@@ -14,6 +14,8 @@ import { Loading } from '../components/Loading';
 import { ServiceWorkerStatus, OfflineBanner } from '../components/ServiceWorkerStatus';
 import { WebAnalytics } from '../components/WebAnalytics';
 import { MonitoringDashboard } from '../components/MonitoringDashboard';
+
+const debugPanelsEnabled = siteConfig.features.debugPanels;
 
 export const metadata: Metadata = {
   title: {
@@ -39,7 +41,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     siteName: siteConfig.title,
     images: [{
-      url: '/og-image.jpg',
+      url: siteConfig.logo.url,
       width: 1200,
       height: 630,
       alt: siteConfig.title,
@@ -49,8 +51,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.title,
     description: siteConfig.description,
-    images: ['/og-image.jpg'],
-    creator: '@yourusername',
+    images: [siteConfig.logo.url],
+    creator: siteConfig.social.twitterHandle,
   },
   robots: {
     index: true,
@@ -64,9 +66,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
+    google: siteConfig.seo.googleVerification,
   },
   alternates: {
     canonical: siteConfig.url,
@@ -91,17 +91,18 @@ export default function RootLayout({
         <Suspense fallback={<Loading />}>
           <Performance />
         </Suspense>
-        <CustomCursorManager />
+        {debugPanelsEnabled && <CustomCursorManager />}
 
-        <nav className="bg-card-light/90 dark:bg-card-dark/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 dark:border-gray-800 transition-colors duration-300">
+        <nav className="glass sticky top-0 z-50 transition-colors duration-300 relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16 items-center">
               <div className="flex-shrink-0 flex items-center gap-2">
-                <Link href="/" className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-md">
-                    YI
+                <Link href="/" className="flex items-center gap-2 group/logo">
+                  <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary via-primary-light to-accent flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-primary/20 group-hover/logo:shadow-glow group-hover/logo:scale-110 group-hover/logo:rotate-3 transition-all duration-300 relative overflow-hidden">
+                    <span className="relative z-10">YI</span>
+                    <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent opacity-0 group-hover/logo:opacity-100 transition-opacity" />
                   </div>
-                  <span className="font-bold text-xl tracking-tight text-gray-900 dark:text-white">AI学习之路</span>
+                  <span className="font-bold text-xl tracking-tight text-text-main-light dark:text-text-main-dark">AI学习之路</span>
                 </Link>
               </div>
               <div className="hidden md:flex space-x-8 items-center">
@@ -109,16 +110,14 @@ export default function RootLayout({
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-gray-500 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors font-medium"
+                    className="text-secondary hover:text-primary dark:text-muted dark:hover:text-primary transition-colors font-medium relative group/nav"
                   >
                     {item.name}
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 ease-out group-hover/nav:w-full" />
                   </Link>
                 ))}
               </div>
-              <div className="flex items-center space-x-4">
-                <button className="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white transition-colors">
-                  <span className="material-icons">language</span>
-                </button>
+              <div className="flex items-center space-x-3">
                 <ThemeToggle />
               </div>
             </div>
@@ -129,18 +128,18 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer className="bg-gray-100 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-12">
+        <footer className="bg-muted/50 dark:bg-muted/30 border-t border-subtle dark:border-white/10 mt-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               <div>
-                <h4 className="text-lg font-bold text-primary mb-4">AI学习之路</h4>
-                <p className="text-sm text-text-sub-light dark:text-text-sub-dark leading-relaxed max-w-xs">
+                <h4 className="text-lg font-bold text-text-main-light dark:text-text-main-dark mb-4">AI学习之路</h4>
+                <p className="text-sm text-secondary leading-relaxed max-w-xs">
                   {siteConfig.description}
                 </p>
               </div>
               <div>
-                <h4 className="text-lg font-bold text-primary mb-4">快速链接</h4>
-                <ul className="space-y-2 text-sm text-text-sub-light dark:text-text-sub-dark">
+                                <h4 className="text-lg font-bold text-text-main-light dark:text-text-main-dark mb-4">快速链接</h4>
+                <ul className="space-y-2 text-sm text-secondary">
                   {siteConfig.navigation.map((item) => (
                     <li key={`footer-${item.name}`}>
                       <Link href={item.href} className="hover:text-primary transition-colors">
@@ -151,28 +150,28 @@ export default function RootLayout({
                 </ul>
               </div>
               <div>
-                <h4 className="text-lg font-bold text-primary mb-4">保持联系</h4>
+                <h4 className="text-lg font-bold text-text-main-light dark:text-text-main-dark mb-4">保持联系</h4>
                 <div className="flex space-x-4">
                   {siteConfig.social.github && (
-                    <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-                      <i className="fab fa-github text-xl"></i>
+                    <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary dark:hover:text-primary-light transition-colors hover:scale-110 transform" aria-label="GitHub">
+                      <FaGithub className="text-xl" />
                     </a>
                   )}
                   {siteConfig.social.twitter && (
-                    <a href={siteConfig.social.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
-                      <i className="fab fa-twitter text-xl"></i>
+                    <a href={siteConfig.social.twitter} target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-accent transition-colors hover:scale-110 transform" aria-label="X">
+                      <FaXTwitter className="text-xl" />
                     </a>
                   )}
                   {siteConfig.social.youtube && (
-                    <a href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-red-500 transition-colors">
-                      <i className="fab fa-youtube text-xl"></i>
+                    <a href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary-light transition-colors hover:scale-110 transform" aria-label="YouTube">
+                      <FaYoutube className="text-xl" />
                     </a>
                   )}
                 </div>
               </div>
             </div>
-            <div className="border-t border-gray-200 dark:border-gray-700 pt-8 text-center">
-              <p className="text-xs text-gray-500 dark:text-gray-400">
+            <div className="border-t border-subtle dark:border-white/10 pt-8 text-center">
+              <p className="text-xs text-secondary">
                 {siteConfig.copyright}
               </p>
             </div>
@@ -180,14 +179,14 @@ export default function RootLayout({
         </footer>
 
         {/* Service Worker 状态和离线支持 */}
-        <OfflineBanner />
-        <ServiceWorkerStatus />
+        {debugPanelsEnabled && <OfflineBanner />}
+        {debugPanelsEnabled && <ServiceWorkerStatus />}
 
         {/* Web分析 */}
         <WebAnalytics />
 
         {/* 监控仪表板 */}
-        <MonitoringDashboard />
+        {debugPanelsEnabled && <MonitoringDashboard />}
       </body>
     </html>
   );

@@ -61,7 +61,7 @@ export function ServiceWorkerStatus({
             />
             {isRegistered && (
               <svg
-                className="w-4 h-4 text-blue-500"
+                className="w-4 h-4 text-primary"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
@@ -120,7 +120,7 @@ export function ServiceWorkerStatus({
               {cacheSize !== null && (
                 <div className="flex items-center justify-between">
                   <span className="text-gray-600 dark:text-gray-400">缓存大小:</span>
-                  <span className="text-blue-600 dark:text-blue-400 font-medium">
+                  <span className="text-primary dark:text-primary-light font-medium">
                     {formatCacheSize(cacheSize)}
                   </span>
                 </div>
@@ -141,7 +141,7 @@ export function ServiceWorkerStatus({
               <button
                 onClick={updateCache}
                 disabled={!isRegistered}
-                className="flex-1 px-3 py-1.5 bg-blue-500 hover:bg-blue-600 disabled:bg-gray-300 disabled:cursor-not-allowed text-white text-xs rounded transition-colors"
+                className="flex-1 px-3 py-1.5 bg-primary hover:bg-primary-hover disabled:bg-gray-300 disabled:cursor-not-allowed text-white text-xs rounded transition-colors"
               >
                 更新缓存
               </button>

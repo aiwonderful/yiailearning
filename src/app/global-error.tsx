@@ -2,7 +2,6 @@
 
 import * as Sentry from '@sentry/nextjs';
 import { useEffect } from 'react';
-import { ErrorBoundary } from '@/components/ErrorBoundary';
 
 export default function GlobalError({
   error,
@@ -19,11 +18,11 @@ export default function GlobalError({
   return (
     <html>
       <body>
-        <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900">
-          <div className="max-w-md w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-            <div className="flex items-center justify-center w-16 h-16 mx-auto bg-red-100 dark:bg-red-900/20 rounded-full mb-4">
+        <div className="flex min-h-screen items-center justify-center bg-background-light px-6 dark:bg-background-dark">
+          <div className="w-full max-w-md rounded-[1.75rem] border border-subtle/80 bg-card-light/95 p-7 shadow-2xl backdrop-blur-sm dark:border-white/10 dark:bg-card-dark/92">
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 dark:bg-primary/15">
               <svg
-                className="w-8 h-8 text-red-600 dark:text-red-400"
+                className="h-8 w-8 text-primary dark:text-primary-light"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -38,25 +37,25 @@ export default function GlobalError({
               </svg>
             </div>
 
-            <h2 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-2">
+            <h2 className="mb-2 text-center text-2xl font-bold text-text-light dark:text-text-dark">
               出现错误
             </h2>
 
-            <p className="text-center text-gray-600 dark:text-gray-400 mb-6">
+            <p className="mb-6 text-center text-secondary dark:text-muted">
               抱歉，页面遇到了意外错误。我们已经记录了这个问题。
             </p>
 
             <div className="space-y-3">
               <button
                 onClick={reset}
-                className="w-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                className="w-full rounded-xl bg-primary px-4 py-2 text-white transition-colors hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-primary/25 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark"
               >
                 重试
               </button>
 
               <a
                 href="/"
-                className="block w-full px-4 py-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-900 dark:text-gray-100 text-center rounded transition-colors"
+                className="block w-full rounded-xl border border-subtle/80 bg-background-light/85 px-4 py-2 text-center text-secondary transition-colors hover:border-accent/20 hover:text-accent dark:border-white/10 dark:bg-white/5 dark:text-muted dark:hover:text-accent-light"
               >
                 返回首页
               </a>
@@ -64,10 +63,10 @@ export default function GlobalError({
 
             {process.env.NODE_ENV === 'development' && (
               <details className="mt-6">
-                <summary className="cursor-pointer text-sm text-gray-500 hover:text-gray-700">
+                <summary className="cursor-pointer text-sm text-subtle transition-colors hover:text-primary dark:text-muted dark:hover:text-primary-light">
                   错误详情 (开发模式)
                 </summary>
-                <pre className="mt-2 text-xs bg-gray-100 dark:bg-gray-900 p-3 rounded overflow-auto text-red-600 dark:text-red-400">
+                <pre className="mt-2 overflow-auto rounded-2xl bg-background-light/90 p-3 text-xs text-primary dark:bg-black/30 dark:text-primary-light">
                   {error.message}
                   {error.stack && `\n\n${error.stack}`}
                 </pre>

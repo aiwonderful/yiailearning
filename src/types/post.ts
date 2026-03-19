@@ -5,10 +5,14 @@ export interface PostMeta {
   tags?: string[];
   excerpt?: string;
   summary?: string; // 兼容旧的summary字段
+  description?: string;
   coverImage?: string;
   author?: string;
   category?: string;
+  slug?: string;
   readTime?: number;
+  draft?: boolean;
+  published?: boolean;
   difficulty?: 'beginner' | 'intermediate' | 'advanced';
   keywords?: string;
   [key: string]: unknown; // 允许其他任意字段

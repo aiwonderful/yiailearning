@@ -8,7 +8,15 @@ export interface SiteConfig {
     github?: string;
     twitter?: string;
     youtube?: string;
+    wechat?: string;
     [key: string]: string | undefined;
+  };
+  wechat?: {
+    enabled?: boolean;
+    title?: string;
+    accountName?: string;
+    description?: string;
+    qrImage?: string;
   };
   navigation: Array<{
     name: string;
