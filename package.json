@@ -34,6 +34,7 @@
     "sync:all": "node scripts/batch-sync.js all",
     "sync:force": "node scripts/batch-sync.js force",
     "sync:discover": "node scripts/batch-sync.js discover",
+    "publish:post": "node scripts/publish-post.js",
     "docs:add": "node scripts/manage-docs.js add",
     "docs:list": "node scripts/manage-docs.js list",
     "docs:remove": "node scripts/manage-docs.js remove",
