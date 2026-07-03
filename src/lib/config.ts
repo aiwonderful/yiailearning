@@ -14,15 +14,15 @@ const wechatDescription =
 // Site configuration
 export const siteConfig = {
   // Basic site info
-  title: 'AI学习之路',
-  description: '记录 AI 工具、Vibe Coding 和非科班学习者的实践经验与学习心得。',
+  title: '小亦的 AI 学习实验室',
+  description: '记录 AI 工具、Vibe Coding、Loop Engineering 学习和个人知识库搭建实践。',
   language: 'zh-CN',
   url: siteUrl,
 
   author: {
-    name: 'Yi Learning',
-    title: 'AI 学习记录者',
-    description: '专注于 AI 工具应用与开发实践，分享学习过程中的经验与思考。',
+    name: '小亦',
+    title: 'AI 学习者 / Loop Engineering 实践者',
+    description: '把感兴趣的课题整理成资料、项目和个人心得，用 AI 帮自己持续学习、持续发布。',
     image: '/logo.png',
     sameAs: [socialLinks.github, socialLinks.twitter, socialLinks.youtube],
   },
@@ -45,10 +45,11 @@ export const siteConfig = {
   // Navigation links
   navigation: [
     { name: '首页', href: '/' },
+    { name: 'Loop Engineering', href: '/loop-engineer' },
     { name: 'Vibe Coding', href: '/vibe-coding' },
+    { name: '资料库', href: '/resources' },
     { name: '关于', href: '/about' },
     // { name: '学习路线', href: '/roadmap' }, // 暂时隐藏，待完善后恢复
-    // { name: '资源', href: '/resources' }, // 暂时隐藏，待完善后恢复
     { name: '博客', href: '/posts' },
   ],
 

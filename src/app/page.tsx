@@ -3,93 +3,175 @@ import { getAllPosts } from '../lib/posts';
 import PostCard from '../components/PostCard';
 import AiNetworkIllustration from '../components/AiNetworkIllustration';
 
+const focusAreas = [
+  {
+    label: 'AI Workflow',
+    title: 'AI 工作流与工具实践',
+    description: '关注 Cursor、Codex、自动化工具和真实使用场景，把复杂工具拆成普通人能跟上的方法。',
+  },
+  {
+    label: 'Agent Loop',
+    title: 'Loop Engineering 与 Agent 协作',
+    description: '研究如何让 AI 不只是回答问题，而是参与可验证、可复盘、可持续的任务循环。',
+  },
+  {
+    label: 'Knowledge Lab',
+    title: '个人知识库与学习资料',
+    description: '把 AI 学习、内容创作、资料整理和个人项目连接起来，形成长期可回看的学习资产。',
+  },
+];
+
+const featuredEntries = [
+  {
+    title: 'Loop Engineering 学习指南',
+    description: '从 Prompt 到可运行的 Agent 循环，系统理解目标、状态、验证和停止条件。',
+    href: '/loop-engineer',
+  },
+  {
+    title: '资料库',
+    description: '集中放置 AI 工具、学习路线、实践资料和可复用的内容索引。',
+    href: '/resources',
+  },
+  {
+    title: 'Vibe Coding',
+    description: '记录用 AI 辅助开发、快速验证想法和搭建可展示作品的实践。',
+    href: '/vibe-coding',
+  },
+];
+
 export default async function HomePage() {
   const allPosts = await getAllPosts();
   const featuredPost = allPosts[0];
-  const recentPosts = allPosts.slice(1, 4);
+  const recentPosts = allPosts.slice(0, 3);
   const tagCount = new Set(allPosts.flatMap((post) => post.meta.tags || [])).size;
 
   return (
-    <div className="max-w-6xl mx-auto space-y-24">
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 rounded-[2.5rem] overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.03] via-transparent to-accent/[0.03]" />
-          <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute bottom-0 right-0 w-80 h-80 bg-accent/8 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
-        </div>
-        <div className="grid gap-8 rounded-[2.5rem] border border-subtle/60 bg-card-light/70 p-8 shadow-soft backdrop-blur-xl dark:border-white/5 dark:bg-card-dark/70 lg:grid-cols-[1.2fr_0.8fr] lg:p-14 animate-fade-in">
-          <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary animate-slide-up" style={{animationDelay: '0.1s'}}>
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-              </span>
-              持续更新中
+    <div className="space-y-24">
+      <section className="grid items-center gap-10 overflow-hidden rounded-[1.75rem] border border-[#DCE4DD] bg-[#F8F7F2] p-7 shadow-soft md:p-12 lg:grid-cols-[1.08fr_0.92fr]">
+        <div className="space-y-8">
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#7D8F81]/25 bg-[#7D8F81]/10 px-4 py-1.5 text-sm font-semibold text-[#4D6254]">
+            <span className="h-2 w-2 rounded-full bg-[#C26A4A]" />
+            Xiaoyi&apos;s learning lab
+          </div>
+
+          <div className="space-y-5">
+            <h1 className="max-w-4xl text-balance font-serif text-4xl font-black leading-tight text-[#20242A] md:text-6xl">
+              我是小亦，记录 AI 工具、Agent 工作流和个人知识管理的真实实践。
+            </h1>
+            <p className="max-w-2xl text-lg leading-8 text-[#59616B]">
+              这里是我的公开学习实验室：不追逐宏大叙事，只记录我如何使用 AI、理解新工具、搭建工作流，并把学习过程变成可复用的经验。
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            <Link href="/loop-engineer" className="btn btn-primary px-6 py-3 text-base">
+              学习 Loop Engineering
+              <span aria-hidden="true">→</span>
+            </Link>
+            <Link href="/resources" className="btn btn-secondary px-6 py-3 text-base">
+              查看资料库
+            </Link>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-3">
+            <div className="rounded-xl border border-[#6E7F91]/15 bg-[#6E7F91]/8 p-4">
+              <div className="text-sm text-[#59616B]">已发布内容</div>
+              <div className="mt-2 text-3xl font-black text-[#3F566E]">{allPosts.length}</div>
             </div>
-            <div className="space-y-5">
-              <h1 className="max-w-3xl text-5xl font-extrabold tracking-tight text-gradient md:text-7xl">
-                AI 学习笔记
-              </h1>
-              <p className="max-w-2xl text-lg leading-8 text-secondary md:text-xl">
-                这里记录我用 AI 工具学习、做项目、整理方法的过程。目标很简单：内容能快速发布，页面也要清爽耐看。
-              </p>
+            <div className="rounded-xl border border-[#7D8F81]/20 bg-[#7D8F81]/10 p-4">
+              <div className="text-sm text-[#59616B]">覆盖标签</div>
+              <div className="mt-2 text-3xl font-black text-[#20242A]">{tagCount}</div>
             </div>
-            <div className="flex flex-wrap gap-4">
-              <Link href="/posts" className="btn btn-primary px-6 py-3 text-base group/btn">
-                <span>去看最新文章</span>
-                <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-              <Link href="/about" className="btn btn-secondary px-6 py-3 text-base">
-                了解本站
-              </Link>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-3">
-              <div className="card p-5 group/stat cursor-default">
-                <div className="text-sm text-secondary transition-colors group-hover/stat:text-primary">已发布文章</div>
-                <div className="mt-2 text-3xl font-bold text-gradient">{allPosts.length}</div>
-              </div>
-              <div className="card p-5 group/stat cursor-default">
-                <div className="text-sm text-secondary transition-colors group-hover/stat:text-primary">覆盖标签</div>
-                <div className="mt-2 text-3xl font-bold text-gradient">{tagCount}</div>
-              </div>
-              <div className="card p-5 group/stat cursor-default">
-                <div className="text-sm text-secondary transition-colors group-hover/stat:text-primary">最近更新</div>
-                <div className="mt-2 text-lg font-semibold text-primary">
-                  {featuredPost
-                    ? new Date(featuredPost.meta.date).toLocaleDateString('zh-CN', {
-                        month: 'long',
-                        day: 'numeric',
-                      })
-                    : '暂无'}
-                </div>
+            <div className="rounded-xl border border-[#C26A4A]/15 bg-[#C26A4A]/8 p-4">
+              <div className="text-sm text-[#59616B]">最近更新</div>
+              <div className="mt-2 text-lg font-bold text-[#9C563F]">
+                {featuredPost
+                  ? new Date(featuredPost.meta.date).toLocaleDateString('zh-CN', {
+                      month: 'long',
+                      day: 'numeric',
+                    })
+                  : '暂无'}
               </div>
             </div>
           </div>
+        </div>
 
-          {/* AI 神经网络插图 */}
-          <div className="card relative overflow-hidden min-h-[480px]">
-            <AiNetworkIllustration />
+        <div className="relative min-h-[420px] overflow-hidden rounded-[1.25rem] border border-[#DCE4DD] bg-[#ECEFE8]">
+          <AiNetworkIllustration />
+          <div className="absolute left-5 top-5 rounded-full bg-[#20242A] px-4 py-2 text-sm font-bold text-[#F8F7F2] shadow-soft">
+            Xiaoyi Learning Lab
+          </div>
+          <div className="absolute bottom-5 right-5 max-w-[260px] rounded-xl border border-[#DCE4DD] bg-[#F8F7F2]/95 p-4 text-sm leading-6 text-[#59616B] shadow-soft">
+            AI 工具实践 / Agent 协作 / 个人知识库 / 真实项目记录
           </div>
         </div>
       </section>
 
-      <section className="animate-slide-up">
-        <div className="mb-12 flex flex-col gap-5 px-4 md:flex-row md:items-end md:justify-between">
+      <section className="grid gap-10 lg:grid-cols-[0.36fr_1fr]">
+        <div className="lg:sticky lg:top-24 lg:self-start">
+          <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#4D6254]">Focus Areas</div>
+          <h2 className="mt-3 font-serif text-3xl font-black leading-tight text-[#20242A] md:text-4xl">
+            我长期关注的三个方向
+          </h2>
+          <p className="mt-5 leading-8 text-[#59616B]">
+            这些内容面向同样想用 AI 提升学习、创作和开发效率的人。重点不是炫技，而是把真实过程讲清楚。
+          </p>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-3">
+          {focusAreas.map((area, index) => (
+            <article key={area.title} className="relative overflow-hidden rounded-xl border border-subtle/70 bg-card-light p-6 shadow-soft dark:border-white/10 dark:bg-card-dark">
+              <span className="absolute right-4 top-2 font-serif text-6xl font-black text-primary/10">
+                0{index + 1}
+              </span>
+              <div className="relative">
+                <span className="inline-flex rounded-full bg-[#7D8F81]/12 px-3 py-1 text-xs font-bold text-[#4D6254]">
+                  {area.label}
+                </span>
+                <h3 className="mt-5 text-xl font-bold text-primary">{area.title}</h3>
+                <p className="mt-4 leading-7 text-secondary">{area.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="rounded-[1.75rem] bg-[#20242A] px-7 py-10 text-[#F8F7F2] shadow-soft md:px-10">
+        <div className="mb-8 max-w-2xl">
+          <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#B9C3AC]">Start Here</div>
+          <h2 className="mt-3 font-serif text-3xl font-black leading-tight md:text-4xl">
+            可以从这些入口开始了解我在研究什么
+          </h2>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-3">
+          {featuredEntries.map((entry) => (
+            <Link
+              key={entry.href}
+              href={entry.href}
+              className="rounded-xl border border-[#F8F7F2]/10 bg-[#F8F7F2]/6 p-5 transition-colors hover:border-[#B9C3AC]/45 hover:bg-[#F8F7F2]/10"
+            >
+              <h3 className="font-bold text-[#F8F7F2]">{entry.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-[#D9DED7]">{entry.description}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <div className="mb-8 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 className="mb-3 text-3xl font-bold text-primary">最新文章</h2>
-            <p className="text-secondary">探索 AI 工具、学习方法和实践经验</p>
+            <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#4D6254]">Latest Notes</div>
+            <h2 className="mt-3 font-serif text-3xl font-black text-[#20242A] md:text-4xl">最近更新</h2>
+            <p className="mt-3 text-secondary">我最近公开记录的 AI 学习、工具使用和项目实践。</p>
           </div>
-          <Link href="/posts" className="group flex items-center gap-2 font-medium text-primary transition-colors hover:text-primary-hover px-4 py-2 rounded-full border border-primary/20 bg-primary/5 hover:bg-primary/10">
+          <Link href="/posts" className="btn btn-secondary">
             查看全部文章
-            <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
+            <span aria-hidden="true">→</span>
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {recentPosts.map((post) => (
             <PostCard
               key={post.slug}
@@ -103,75 +185,36 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* 关于区域 */}
-      <section className="animate-slide-up"
-      >
-        <div className="rounded-3xl border border-subtle/60 bg-gradient-to-br from-card-light/80 to-muted/30 p-8 dark:border-white/10 dark:from-card-dark/80 dark:to-muted/20 md:p-12"
-        >
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-primary"
-              >关于本站
-              </h2>
-              <p className="text-secondary text-lg leading-relaxed"
-              >
-                这里是一个 AI 学习者的知识库，记录使用 Cursor、各类 AI 工具进行开发和学习的心得与实践案例。
-              </p>
-              <p className="text-secondary leading-relaxed"
-              >
-                内容包括 Vibe Coding、AI Agent 开发、工具技巧等，希望能为你的 AI 学习之旅提供参考。
-              </p>
-              <div className="pt-2">
-                <Link href="/about" className="btn btn-secondary inline-flex"
-                >
-                  了解更多
-                  <svg className="ml-1 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-            <div className="card p-8"
-            >
-              <h3 className="font-semibold text-xl mb-6 text-primary"
-              >内容方向
-              </h3>
-              <ul className="space-y-4 text-secondary"
-              >
-                <li className="flex items-center gap-3 group/item"
-                >
-                  <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm font-bold group-hover/item:bg-primary/20 transition-colors"
-                  >01
-                  </span>
-                  <span>Vibe Coding 实践与心得</span>
-                </li>
-                <li className="flex items-center gap-3 group/item"
-                >
-                  <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm font-bold group-hover/item:bg-primary/20 transition-colors"
-                  >02
-                  </span>
-                  <span>AI Agent 开发与应用</span>
-                </li>
-                <li className="flex items-center gap-3 group/item"
-                >
-                  <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm font-bold group-hover/item:bg-primary/20 transition-colors"
-                  >03
-                  </span>
-                  <span>Cursor 等 AI 工具使用技巧</span>
-                </li>
-                <li className="flex items-center gap-3 group/item"
-                >
-                  <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm font-bold group-hover/item:bg-primary/20 transition-colors"
-                  >04
-                  </span>
-                  <span>非科班学习 AI 开发的经验</span>
-                </li>
-              </ul>
-            </div>
+      {featuredPost && (
+        <section className="grid gap-8 rounded-[1.75rem] border border-[#DCE4DD] bg-[#ECEFE8] p-7 md:p-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div>
+            <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#9C563F]">Featured Note</div>
+            <h2 className="mt-3 font-serif text-3xl font-black leading-tight text-[#20242A] md:text-4xl">
+              当前推荐阅读
+            </h2>
+            <p className="mt-5 leading-8 text-[#59616B]">
+              如果你是第一次来到这里，可以先读这篇文章，再继续浏览资料库和专题页面。
+            </p>
           </div>
-        </div>
-      </section>
+
+          <Link href={`/posts/${featuredPost.slug}`} className="rounded-xl bg-[#F8F7F2] p-6 shadow-soft transition-transform hover:-translate-y-1">
+            <div className="text-sm font-semibold text-[#4D6254]">
+              {new Date(featuredPost.meta.date).toLocaleDateString('zh-CN', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
+            </div>
+            <h3 className="mt-4 text-2xl font-bold leading-snug text-[#20242A]">{featuredPost.meta.title}</h3>
+            {featuredPost.meta.excerpt && (
+              <p className="mt-4 leading-7 text-[#59616B]">{featuredPost.meta.excerpt}</p>
+            )}
+            <span className="mt-6 inline-flex font-semibold text-primary">
+              开始阅读 <span aria-hidden="true">→</span>
+            </span>
+          </Link>
+        </section>
+      )}
     </div>
   );
 }

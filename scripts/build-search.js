@@ -21,7 +21,10 @@ async function main() {
       fs.mkdirSync(searchDataOutputDirectory, { recursive: true });
     }
 
-    const filenames = fs.readdirSync(postsDirectory).filter(file => file.endsWith('.md'));
+    const filenames = fs
+      .readdirSync(postsDirectory)
+      .filter(file => file.endsWith('.md'))
+      .filter(file => !file.startsWith('_'));
     const allPostsData = []; // Array to hold all post data for Fuse.js
 
     for (const filename of filenames) {
@@ -29,6 +32,10 @@ async function main() {
       const fullPath = path.join(postsDirectory, filename);
       const fileContents = fs.readFileSync(fullPath, 'utf8');
       const { data, content: markdownContent } = matter(fileContents);
+
+      if (data.draft === true || data.published === false) {
+        continue;
+      }
 
       if (!data.title || !data.date) {
         console.warn(`警告: 文件 ${filename} 缺少 'title' 或 'date' frontmatter，将跳过。`);

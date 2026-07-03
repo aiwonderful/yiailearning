@@ -1,6 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(request: NextRequest) {
+    if (process.env.ENABLE_VIDEO_PROXY !== 'true') {
+        return NextResponse.json({ error: 'Not Found' }, { status: 404 });
+    }
+
     const searchParams = request.nextUrl.searchParams;
     const url = searchParams.get('url');
 
