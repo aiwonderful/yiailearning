@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getPostSlugs, getPostBySlug } from '../../../lib/posts';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
@@ -114,40 +115,74 @@ export default async function Post({ params }: { params: { slug: string } }) {
           {/* 主内容区 */}
           <div className="md:w-3/4">
             <article className="card overflow-hidden">
-              <header className="border-b border-subtle/80 bg-[linear-gradient(135deg,rgba(99,102,241,0.08),rgba(6,182,212,0.06))] px-5 py-8 dark:border-white/10 dark:bg-[linear-gradient(135deg,rgba(99,102,241,0.12),rgba(6,182,212,0.10))] md:px-8 md:py-10">
-                <div className="mb-4 inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1 text-sm font-medium text-primary">
-                  深度阅读
-                </div>
-                <div className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-subtle dark:text-muted">
-                  AI 学习札记
-                </div>
-                <h1 className="mb-4 text-3xl font-bold leading-tight text-primary md:text-5xl">{post.meta.title}</h1>
-                {postSummary && (
-                  <p className="mb-5 max-w-3xl text-base leading-8 text-secondary md:text-lg">
-                    {postSummary}
-                  </p>
-                )}
-                <div className="flex flex-wrap items-center gap-3">
-                  <p className="rounded-full border border-subtle/70 bg-card-light/75 px-4 py-2 text-sm text-secondary dark:border-white/10 dark:bg-card-dark/75">
-                    {new Date(post.meta.date).toLocaleDateString('zh-CN', { 
-                      year: 'numeric', 
-                      month: 'long', 
-                      day: 'numeric' 
-                    })}
-                  </p>
-                  {post.meta.tags && post.meta.tags.length > 0 && (
-                    <div className="flex flex-wrap gap-2">
-                      {post.meta.tags.map(tag => (
-                        <Link 
-                          key={tag} 
-                          href={`/posts?tag=${tag}`}
-                          className="rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary transition-colors hover:bg-primary/15"
-                        >
-                          {tag}
-                        </Link>
-                      ))}
+              <header className="relative overflow-hidden border-b border-[#E7D8C8] bg-[#FFFDF8] px-5 py-8 dark:border-white/10 md:px-8 md:py-10">
+                <div className="absolute -right-20 -top-24 h-56 w-56 rounded-full bg-[#F4A261]/12" />
+                <div className="absolute -bottom-24 left-12 h-52 w-52 rounded-full bg-[#7D8F81]/10" />
+
+                <div className="relative grid gap-8 lg:grid-cols-[1fr_220px] lg:items-start">
+                  <div>
+                    <div className="mb-5 flex flex-wrap items-center gap-3">
+                      <div className="relative h-14 w-14 overflow-hidden rounded-full border-2 border-[#F3A164]/35 bg-[#FFF7EB] shadow-soft">
+                        <Image
+                          src="/brand/xiaoyi-avatar-v2.png"
+                          alt="小亦头像"
+                          width={320}
+                          height={320}
+                          className="h-full w-full object-cover"
+                        />
+                      </div>
+                      <div>
+                        <div className="text-xs font-bold uppercase tracking-[0.22em] text-[#A65A2A]">
+                          Xiaoyi Note
+                        </div>
+                        <div className="mt-1 text-sm font-semibold text-[#59616B]">
+                          小亦的 AI 学习札记
+                        </div>
+                      </div>
                     </div>
-                  )}
+
+                    <h1 className="mb-4 font-serif text-3xl font-black leading-tight text-[#20242A] md:text-5xl">
+                      {post.meta.title}
+                    </h1>
+                    {postSummary && (
+                      <p className="mb-5 max-w-3xl text-base leading-8 text-[#59616B] md:text-lg">
+                        {postSummary}
+                      </p>
+                    )}
+                    <div className="flex flex-wrap items-center gap-3">
+                      <p className="rounded-full border border-[#E7D8C8] bg-[#F8F7F2]/80 px-4 py-2 text-sm text-[#59616B]">
+                        {new Date(post.meta.date).toLocaleDateString('zh-CN', {
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric'
+                        })}
+                      </p>
+                      {post.meta.tags && post.meta.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-2">
+                          {post.meta.tags.map(tag => (
+                            <Link
+                              key={tag}
+                              href={`/posts?tag=${tag}`}
+                              className="rounded-full border border-[#F3A164]/25 bg-[#FFF7EB] px-3 py-1 text-xs font-semibold text-[#A65A2A] transition-colors hover:border-[#F3A164]/45 hover:bg-[#F4A261]/12"
+                            >
+                              {tag}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="hidden rounded-[1.5rem] border border-[#E7D8C8] bg-[#F8F7F2]/88 p-5 shadow-soft lg:block">
+                    <div className="text-xs font-bold uppercase tracking-[0.18em] text-[#A65A2A]">
+                      Reading Card
+                    </div>
+                    <div className="mt-4 space-y-3 text-sm leading-6 text-[#59616B]">
+                      <p>主题来自真实实践。</p>
+                      <p>先记录判断，再补工具和方法。</p>
+                    </div>
+                    <div className="mt-5 h-2 w-20 rounded-full bg-[#F4A261]" />
+                  </div>
                 </div>
               </header>
 

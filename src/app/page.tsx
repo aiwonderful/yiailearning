@@ -1,7 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getAllPosts } from '../lib/posts';
 import PostCard from '../components/PostCard';
-import AiNetworkIllustration from '../components/AiNetworkIllustration';
+import { siteConfig } from '../lib/config';
 
 const focusAreas = [
   {
@@ -39,6 +40,27 @@ const featuredEntries = [
   },
 ];
 
+const heroNotes = [
+  {
+    label: 'Agent Loop',
+    title: 'Loop Engineering',
+    description: '把目标、状态、验证和停止条件整理成可运行的闭环。',
+    href: '/loop-engineer',
+  },
+  {
+    label: 'Knowledge Base',
+    title: '资料库',
+    description: '把感兴趣的课题先变成资料包，再慢慢沉淀成文章。',
+    href: '/resources',
+  },
+  {
+    label: 'Build Log',
+    title: 'Vibe Coding',
+    description: '记录 AI 辅助开发中的真实尝试、卡点和复盘。',
+    href: '/vibe-coding',
+  },
+];
+
 export default async function HomePage() {
   const allPosts = await getAllPosts();
   const featuredPost = allPosts[0];
@@ -47,62 +69,137 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-24">
-      <section className="grid items-center gap-10 overflow-hidden rounded-[1.75rem] border border-[#DCE4DD] bg-[#F8F7F2] p-7 shadow-soft md:p-12 lg:grid-cols-[1.08fr_0.92fr]">
-        <div className="space-y-8">
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#7D8F81]/25 bg-[#7D8F81]/10 px-4 py-1.5 text-sm font-semibold text-[#4D6254]">
-            <span className="h-2 w-2 rounded-full bg-[#C26A4A]" />
-            Xiaoyi&apos;s learning lab
-          </div>
+      <section className="overflow-hidden rounded-[1.75rem] border border-[#DCE4DD] bg-[#F8F7F2] p-5 shadow-soft md:p-8 lg:p-10">
+        <div className="mb-10 flex flex-col gap-5 rounded-2xl border border-[#E7D8C8] bg-[#FFFDF8]/85 px-4 py-4 md:flex-row md:items-center md:justify-between md:px-5">
+          <Link href="/" className="flex min-w-0 items-center gap-3">
+            <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border-2 border-[#F3A164]/35 bg-[#FFF7EB] shadow-soft">
+              <Image
+                src="/brand/xiaoyi-avatar-v2.png"
+                alt="小亦头像"
+                width={320}
+                height={320}
+                priority
+                className="h-full w-full object-cover"
+              />
+            </span>
+            <span className="min-w-0">
+              <span className="block text-xs font-bold uppercase tracking-[0.16em] text-[#A65A2A]">Xiaoyi</span>
+              <span className="block truncate font-serif text-xl font-black text-[#20242A]">小亦的 AI 学习实验室</span>
+            </span>
+          </Link>
 
-          <div className="space-y-5">
-            <h1 className="max-w-4xl text-balance font-serif text-4xl font-black leading-tight text-[#20242A] md:text-6xl">
-              我是小亦，记录 AI 工具、Agent 工作流和个人知识管理的真实实践。
-            </h1>
-            <p className="max-w-2xl text-lg leading-8 text-[#59616B]">
-              这里是我的公开学习实验室：不追逐宏大叙事，只记录我如何使用 AI、理解新工具、搭建工作流，并把学习过程变成可复用的经验。
-            </p>
-          </div>
+          <nav aria-label="首页导航" className="flex gap-2 overflow-x-auto md:justify-end">
+            {siteConfig.navigation.map((item) => (
+              <Link
+                key={`hero-${item.name}`}
+                href={item.href}
+                className="shrink-0 rounded-full px-3 py-2 text-sm font-semibold text-[#59616B] transition-colors hover:bg-[#F4A261]/12 hover:text-[#A65A2A]"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
-          <div className="flex flex-wrap gap-3">
-            <Link href="/loop-engineer" className="btn btn-primary px-6 py-3 text-base">
-              学习 Loop Engineering
-              <span aria-hidden="true">→</span>
-            </Link>
-            <Link href="/resources" className="btn btn-secondary px-6 py-3 text-base">
-              查看资料库
-            </Link>
-          </div>
-
-          <div className="grid gap-3 sm:grid-cols-3">
-            <div className="rounded-xl border border-[#6E7F91]/15 bg-[#6E7F91]/8 p-4">
-              <div className="text-sm text-[#59616B]">已发布内容</div>
-              <div className="mt-2 text-3xl font-black text-[#3F566E]">{allPosts.length}</div>
+        <div className="grid items-center gap-10 lg:grid-cols-[1.08fr_0.92fr]">
+          <div className="space-y-8">
+            <div className="max-w-xl text-sm leading-6 text-[#59616B]">
+              <span className="font-semibold text-[#20242A]">用真实项目记录 AI 工具、Agent 工作流和知识管理。</span>
+              <span className="ml-2 text-[#A65A2A]">持续更新</span>
             </div>
-            <div className="rounded-xl border border-[#7D8F81]/20 bg-[#7D8F81]/10 p-4">
-              <div className="text-sm text-[#59616B]">覆盖标签</div>
-              <div className="mt-2 text-3xl font-black text-[#20242A]">{tagCount}</div>
+
+            <div className="space-y-5">
+              <h1 className="max-w-4xl text-balance font-serif text-4xl font-black leading-tight text-[#20242A] md:text-6xl">
+                我是小亦，记录 AI 工具、Agent 工作流和个人知识管理的真实实践。
+              </h1>
+              <p className="max-w-2xl text-lg leading-8 text-[#59616B]">
+                这里是我的公开学习实验室：不追逐宏大叙事，只记录我如何使用 AI、理解新工具、搭建工作流，并把学习过程变成可复用的经验。
+              </p>
             </div>
-            <div className="rounded-xl border border-[#C26A4A]/15 bg-[#C26A4A]/8 p-4">
-              <div className="text-sm text-[#59616B]">最近更新</div>
-              <div className="mt-2 text-lg font-bold text-[#9C563F]">
-                {featuredPost
-                  ? new Date(featuredPost.meta.date).toLocaleDateString('zh-CN', {
-                      month: 'long',
-                      day: 'numeric',
-                    })
-                  : '暂无'}
+
+            <div className="flex flex-wrap gap-3">
+              <Link href="/loop-engineer" className="btn btn-primary px-6 py-3 text-base">
+                学习 Loop Engineering
+                <span aria-hidden="true">→</span>
+              </Link>
+              <Link href="/resources" className="btn btn-secondary px-6 py-3 text-base">
+                查看资料库
+              </Link>
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-3">
+              <div className="rounded-xl border border-[#6E7F91]/15 bg-[#6E7F91]/8 p-4">
+                <div className="text-sm text-[#59616B]">已发布内容</div>
+                <div className="mt-2 text-3xl font-black text-[#3F566E]">{allPosts.length}</div>
+              </div>
+              <div className="rounded-xl border border-[#7D8F81]/20 bg-[#7D8F81]/10 p-4">
+                <div className="text-sm text-[#59616B]">覆盖标签</div>
+                <div className="mt-2 text-3xl font-black text-[#20242A]">{tagCount}</div>
+              </div>
+              <div className="rounded-xl border border-[#C26A4A]/15 bg-[#C26A4A]/8 p-4">
+                <div className="text-sm text-[#59616B]">最近更新</div>
+                <div className="mt-2 text-lg font-bold text-[#9C563F]">
+                  {featuredPost
+                    ? new Date(featuredPost.meta.date).toLocaleDateString('zh-CN', {
+                        month: 'long',
+                        day: 'numeric',
+                      })
+                    : '暂无'}
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="relative min-h-[420px] overflow-hidden rounded-[1.25rem] border border-[#DCE4DD] bg-[#ECEFE8]">
-          <AiNetworkIllustration />
-          <div className="absolute left-5 top-5 rounded-full bg-[#20242A] px-4 py-2 text-sm font-bold text-[#F8F7F2] shadow-soft">
-            Xiaoyi Learning Lab
-          </div>
-          <div className="absolute bottom-5 right-5 max-w-[260px] rounded-xl border border-[#DCE4DD] bg-[#F8F7F2]/95 p-4 text-sm leading-6 text-[#59616B] shadow-soft">
-            AI 工具实践 / Agent 协作 / 个人知识库 / 真实项目记录
+          <div className="relative min-h-[420px] overflow-hidden rounded-[1.25rem] border border-[#E7D8C8] bg-[#FFFDF8] p-5">
+            <div className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-[#F4A261]/15" />
+            <div className="absolute -bottom-20 left-12 h-52 w-52 rounded-full bg-[#7D8F81]/12" />
+
+            <div className="relative flex h-full min-h-[380px] flex-col justify-between">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <div className="text-xs font-bold uppercase tracking-[0.22em] text-[#A65A2A]">
+                    Xiaoyi Desk
+                  </div>
+                  <h2 className="mt-3 max-w-sm font-serif text-3xl font-black leading-tight text-[#20242A]">
+                    今天把一个课题整理成可以继续推进的材料。
+                  </h2>
+                </div>
+                <div className="hidden h-20 w-20 shrink-0 overflow-hidden rounded-full border-2 border-[#F3A164]/35 bg-[#FFF7EB] shadow-soft sm:block">
+                  <Image
+                    src="/brand/xiaoyi-avatar-v2.png"
+                    alt="小亦头像"
+                    width={320}
+                    height={320}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </div>
+
+              <div className="mt-8 space-y-3">
+                {heroNotes.map((note, index) => (
+                  <Link
+                    key={note.href}
+                    href={note.href}
+                    className="group grid grid-cols-[42px_1fr] gap-4 rounded-2xl border border-[#E7D8C8] bg-[#F8F7F2]/88 p-4 shadow-soft transition-colors hover:border-[#F3A164]/55 hover:bg-[#FFF7EB]"
+                  >
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#20242A] font-serif text-lg font-black text-[#FFFDF8]">
+                      {index + 1}
+                    </span>
+                    <span>
+                      <span className="block text-xs font-bold uppercase tracking-[0.16em] text-[#A65A2A]">
+                        {note.label}
+                      </span>
+                      <span className="mt-1 block text-lg font-bold text-[#20242A]">{note.title}</span>
+                      <span className="mt-1 block text-sm leading-6 text-[#59616B]">{note.description}</span>
+                    </span>
+                  </Link>
+                ))}
+              </div>
+
+              <div className="mt-6 rounded-2xl border border-[#7D8F81]/20 bg-[#7D8F81]/10 p-4 text-sm leading-6 text-[#4D6254]">
+                这里不是展示“AI 很厉害”，而是记录我怎样把 AI 用进学习、写作、开发和个人知识库。
+              </div>
+            </div>
           </div>
         </div>
       </section>
