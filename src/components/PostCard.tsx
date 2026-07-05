@@ -43,13 +43,6 @@ export default function PostCard({
       {/* 封面插图区域 */}
       <div className="relative h-36 overflow-hidden rounded-t-[1.5rem] border-b border-subtle/50 dark:border-white/5">
         <PostCardIllustration tag={leadTag} title={title} />
-
-        {/* 标签徽章 - 悬浮在插图上 */}
-        <div className="absolute top-4 right-4 z-10">
-          <span className="rounded-full border border-primary/30 bg-white/90 dark:bg-card-dark/90 backdrop-blur-sm px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-primary shadow-sm">
-            {leadTag}
-          </span>
-        </div>
       </div>
 
       {/* 内容区域 */}

@@ -13,35 +13,37 @@ const coverThemes = [
     accent: '#F4A261',
     ink: '#20242A',
     soft: '#FFFDF8',
+    muted: '#7D8F81',
   },
   {
     bg: 'from-[#F8F7F2] via-[#EEF4EA] to-[#FFF7EB]',
     accent: '#7D8F81',
     ink: '#20242A',
     soft: '#FFFDF8',
+    muted: '#C26A4A',
   },
   {
     bg: 'from-[#FFFDF8] via-[#F3ECE4] to-[#EAF0E8]',
     accent: '#C26A4A',
     ink: '#20242A',
     soft: '#FFFDF8',
+    muted: '#F4A261',
   },
 ];
 
 export default function PostCardIllustration({ tag, title }: PostCardIllustrationProps) {
   const seed = title.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
   const theme = coverThemes[seed % coverThemes.length];
-  const shortTitle = title.length > 22 ? `${title.slice(0, 22)}...` : title;
 
   return (
-    <div className={`relative h-full w-full overflow-hidden bg-gradient-to-br ${theme.bg}`}>
+    <div className={`relative h-full w-full overflow-hidden bg-gradient-to-br ${theme.bg} p-4`}>
       <div
-        className="absolute -right-8 -top-8 h-28 w-28 rounded-full opacity-20"
+        className="absolute -right-9 -top-10 h-28 w-28 rounded-full opacity-[0.18]"
         style={{ backgroundColor: theme.accent }}
       />
       <div
-        className="absolute -bottom-10 left-8 h-24 w-24 rounded-full opacity-15"
-        style={{ backgroundColor: theme.accent }}
+        className="absolute -bottom-12 left-5 h-28 w-28 rounded-full opacity-[0.16]"
+        style={{ backgroundColor: theme.muted }}
       />
 
       <svg
@@ -75,32 +77,37 @@ export default function PostCardIllustration({ tag, title }: PostCardIllustratio
         />
       </svg>
 
-      <div className="absolute left-5 top-5 flex items-center gap-3">
-        <div className="relative h-14 w-14 overflow-hidden rounded-full border-2 border-white bg-[#FFF7EB] shadow-soft">
-          <Image
-            src="/brand/xiaoyi-avatar-v2.png"
-            alt=""
-            width={320}
-            height={320}
-            className="h-full w-full object-cover"
-          />
-        </div>
-        <div className="rounded-2xl border border-white/80 bg-white/75 px-3 py-2 shadow-sm backdrop-blur">
-          <div className="text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: theme.accent }}>
-            Xiaoyi Note
+      <div className="relative z-10 flex h-full min-h-0 flex-col justify-between">
+        <div className="flex min-w-0 items-center gap-3">
+          <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border-2 border-[#FFFDF8] bg-[#FFF7EB] shadow-soft">
+            <Image
+              src="/brand/xiaoyi-avatar-v2.png"
+              alt=""
+              width={320}
+              height={320}
+              className="h-full w-full object-cover"
+            />
           </div>
-          <div className="mt-0.5 text-xs font-semibold text-[#59616B]">{tag}</div>
+          <div className="min-w-0 rounded-full border border-[#E7D8C8] bg-[#FFFDF8]/90 px-4 py-2 shadow-sm">
+            <div className="truncate text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: theme.accent }}>
+              Xiaoyi Note
+            </div>
+            <div className="mt-0.5 max-w-[11rem] truncate text-xs font-semibold text-[#59616B]">
+              {tag}
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div className="absolute bottom-4 right-4 w-[58%] rounded-2xl border border-white/80 bg-white/82 p-4 shadow-soft backdrop-blur">
-        <div className="mb-2 flex gap-1">
-          <span className="h-1.5 w-8 rounded-full" style={{ backgroundColor: theme.accent }} />
-          <span className="h-1.5 w-3 rounded-full bg-[#20242A]/18" />
-          <span className="h-1.5 w-3 rounded-full bg-[#20242A]/12" />
-        </div>
-        <div className="line-clamp-2 text-sm font-bold leading-5 text-[#20242A]">
-          {shortTitle}
+        <div className="grid grid-cols-[8px_1fr] overflow-hidden rounded-2xl border border-[#E7D8C8] bg-[#FFFDF8]/[0.92] shadow-soft">
+          <div style={{ backgroundColor: theme.accent }} />
+          <div className="min-w-0 px-4 py-3">
+            <div className="text-xs font-bold tracking-[0.18em] text-[#A65A2A]">
+              小亦的学习卡片
+            </div>
+            <div className="mt-1 truncate text-sm font-semibold text-[#20242A]">
+              AI 工具 · Agent 工作流 · 真实项目记录
+            </div>
+          </div>
         </div>
       </div>
     </div>
