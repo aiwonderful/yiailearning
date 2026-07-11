@@ -9,6 +9,12 @@ export const metadata: Metadata = {
 export default function VibeCodingPage() {
     const websites = [
         {
+            title: 'Try Seedance 2 AI',
+            description: 'A live Seedance 2.0 AI video generation website I built for text-to-video and image-to-video creation.',
+            url: 'https://tryseedance2ai.com',
+            tags: ['AI Video', 'Seedance 2.0', 'Live Site'],
+        },
+        {
             title: 'Blade of Glorp',
             description: 'A distinctive web experience showcasing unique aesthetics and interactive elements.',
             url: 'https://bladeofglorp.com',

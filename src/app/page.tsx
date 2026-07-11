@@ -61,6 +61,16 @@ const heroNotes = [
   },
 ];
 
+const builtProjects = [
+  {
+    title: 'Try Seedance 2 AI',
+    domain: 'tryseedance2ai.com',
+    description: '我做的 Seedance 2.0 AI 视频生成网站，支持从文字或图片开始生成视频。',
+    href: 'https://tryseedance2ai.com',
+    tags: ['AI Video', 'Seedance 2.0', 'Website'],
+  },
+];
+
 export default async function HomePage() {
   const allPosts = await getAllPosts();
   const featuredPost = allPosts[0];
@@ -251,6 +261,54 @@ export default async function HomePage() {
               <h3 className="font-bold text-[#F8F7F2]">{entry.title}</h3>
               <p className="mt-3 text-sm leading-7 text-[#D9DED7]">{entry.description}</p>
             </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="grid gap-8 rounded-[1.75rem] border border-[#E7D8C8] bg-[#FFFDF8] p-7 shadow-soft md:p-10 lg:grid-cols-[0.38fr_1fr]">
+        <div>
+          <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#A65A2A]">Built By Xiaoyi</div>
+          <h2 className="mt-3 font-serif text-3xl font-black leading-tight text-[#20242A] md:text-4xl">
+            我做的网站
+          </h2>
+          <p className="mt-5 leading-8 text-[#59616B]">
+            这里会放我用 AI 辅助开发、部署并持续迭代的真实项目。不是概念展示，而是已经上线、可以访问的作品。
+          </p>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-2">
+          {builtProjects.map((project) => (
+            <a
+              key={project.href}
+              href={project.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative overflow-hidden rounded-2xl border border-[#E7D8C8] bg-[#F8F7F2] p-6 shadow-soft transition-transform hover:-translate-y-1"
+            >
+              <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-[#F4A261]/15" />
+              <div className="relative">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <span className="rounded-full bg-[#7D8F81]/12 px-3 py-1 text-xs font-bold text-[#4D6254]">
+                    Live Website
+                  </span>
+                  <span className="text-sm font-semibold text-[#A65A2A] group-hover:underline">
+                    访问网站 →
+                  </span>
+                </div>
+                <h3 className="mt-5 font-serif text-2xl font-black leading-tight text-[#20242A]">
+                  {project.title}
+                </h3>
+                <p className="mt-2 text-sm font-semibold text-[#6E7F91]">{project.domain}</p>
+                <p className="mt-4 leading-7 text-[#59616B]">{project.description}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <span key={tag} className="rounded-full border border-[#E7D8C8] bg-[#FFFDF8] px-3 py-1 text-xs font-semibold text-[#59616B]">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </a>
           ))}
         </div>
       </section>
