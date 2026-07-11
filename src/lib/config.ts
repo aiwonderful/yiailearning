@@ -46,7 +46,7 @@ export const siteConfig = {
   navigation: [
     { name: '首页', href: '/' },
     { name: 'Loop Engineering', href: '/loop-engineer' },
-    { name: 'Vibe Coding', href: '/vibe-coding' },
+    { name: '我的作品', href: '/vibe-coding' },
     { name: '资料库', href: '/resources' },
     { name: '关于', href: '/about' },
     // { name: '学习路线', href: '/roadmap' }, // 暂时隐藏，待完善后恢复
