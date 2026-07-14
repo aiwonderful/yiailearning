@@ -32,8 +32,8 @@ export function middleware(request: NextRequest) {
       "media-src 'self'",
       // 对象：不允许
       "object-src 'none'",
-      // 框架：不允许
-      "frame-src 'none'",
+      // 框架：只允许隐私增强模式的 YouTube 视频嵌入
+      "frame-src 'self' https://www.youtube-nocookie.com",
       // 基础URI：只允许同源
       "base-uri 'self'",
       // 表单：只允许同源
