@@ -15,6 +15,7 @@ export interface PostMeta {
   published?: boolean;
   difficulty?: 'beginner' | 'intermediate' | 'advanced';
   keywords?: string;
+  youtubeVideoId?: string;
   [key: string]: unknown; // 允许其他任意字段
 }
 

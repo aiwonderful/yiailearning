@@ -89,6 +89,10 @@ export default async function Post({ params }: { params: { slug: string } }) {
     const toc = extractTableOfContents(post.content);
     const postUrl = `${siteConfig.url}/posts/${params.slug}`;
     const postSummary = post.meta.excerpt || post.meta.summary || post.meta.description;
+    const youtubeVideoId =
+      typeof post.meta.youtubeVideoId === 'string' && /^[A-Za-z0-9_-]{11}$/.test(post.meta.youtubeVideoId)
+        ? post.meta.youtubeVideoId
+        : null;
 
     // 面包屑导航数据
     const breadcrumbItems = [
@@ -185,6 +189,21 @@ export default async function Post({ params }: { params: { slug: string } }) {
                   </div>
                 </div>
               </header>
+
+              {youtubeVideoId && (
+                <div className="border-b border-[#E7D8C8] bg-[#FFFDF8] px-5 py-7 dark:border-white/10 md:px-8 md:py-8">
+                  <div className="aspect-video overflow-hidden rounded-[1.5rem] border border-[#E7D8C8] bg-black shadow-soft dark:border-white/10">
+                    <iframe
+                      className="h-full w-full"
+                      src={`https://www.youtube-nocookie.com/embed/${youtubeVideoId}`}
+                      title={`${post.meta.title}视频`}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+              )}
 
               <div 
                 className="article-prose px-5 py-8 md:px-8 md:py-10"
