@@ -67,7 +67,25 @@ const builtProjects = [
     domain: 'tryseedance2ai.com',
     description: '我做的 Seedance 2.0 AI 视频生成网站，支持从文字或图片开始生成视频。',
     href: 'https://tryseedance2ai.com',
+    type: 'Live Website',
+    action: '访问网站',
     tags: ['AI Video', 'Seedance 2.0', 'Website'],
+  },
+  {
+    title: '情侣超甜头像',
+    domain: '微信小程序',
+    description: '已经上架的情侣头像小程序，整理适合恋爱氛围、日常表达和社交展示的头像内容。',
+    type: 'Mini Program',
+    action: '微信内搜索',
+    tags: ['情侣头像', '微信小程序', '内容工具'],
+  },
+  {
+    title: '早睡打卡鸭',
+    domain: '微信小程序',
+    description: '用轻量打卡方式陪伴早睡习惯养成，把每天的小目标变成更容易坚持的记录。',
+    type: 'Mini Program',
+    action: '微信内搜索',
+    tags: ['习惯打卡', '早睡计划', '微信小程序'],
   },
 ];
 
@@ -269,31 +287,40 @@ export default async function HomePage() {
         <div>
           <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#A65A2A]">Built By Xiaoyi</div>
           <h2 className="mt-3 font-serif text-3xl font-black leading-tight text-[#20242A] md:text-4xl">
-            我做的网站
+            我做的作品
           </h2>
           <p className="mt-5 leading-8 text-[#59616B]">
-            这里会放我用 AI 辅助开发、部署并持续迭代的真实项目。不是概念展示，而是已经上线、可以访问的作品。
+            这里会放我用 AI 辅助开发、部署并持续迭代的真实项目。包括已经上线的网站，也包括已经上架的微信小程序。
           </p>
+          <Link href="/vibe-coding" className="mt-6 inline-flex font-semibold text-primary hover:text-primary-hover">
+            查看完整作品集 <span aria-hidden="true">→</span>
+          </Link>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2">
+        <div className="grid gap-5 md:grid-cols-3">
           {builtProjects.map((project) => (
-            <a
-              key={project.href}
-              href={project.href}
-              target="_blank"
-              rel="noopener noreferrer"
+            <article
+              key={project.title}
               className="group relative overflow-hidden rounded-2xl border border-[#E7D8C8] bg-[#F8F7F2] p-6 shadow-soft transition-transform hover:-translate-y-1"
             >
               <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-[#F4A261]/15" />
               <div className="relative">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <span className="rounded-full bg-[#7D8F81]/12 px-3 py-1 text-xs font-bold text-[#4D6254]">
-                    Live Website
+                    {project.type}
                   </span>
-                  <span className="text-sm font-semibold text-[#A65A2A] group-hover:underline">
-                    访问网站 →
-                  </span>
+                  {project.href ? (
+                    <a
+                      href={project.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-semibold text-[#A65A2A] group-hover:underline"
+                    >
+                      {project.action} →
+                    </a>
+                  ) : (
+                    <span className="text-sm font-semibold text-[#A65A2A]">{project.action}</span>
+                  )}
                 </div>
                 <h3 className="mt-5 font-serif text-2xl font-black leading-tight text-[#20242A]">
                   {project.title}
@@ -308,7 +335,7 @@ export default async function HomePage() {
                   ))}
                 </div>
               </div>
-            </a>
+            </article>
           ))}
         </div>
       </section>
