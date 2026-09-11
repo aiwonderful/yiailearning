@@ -14,6 +14,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const staticUrls = [
     {
+      url: `${siteConfig.url}/gpt-6-cases`,
+      lastModified: new Date('2026-09-11'),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
       url: siteConfig.url,
       lastModified: new Date(),
       changeFrequency: 'daily' as const,

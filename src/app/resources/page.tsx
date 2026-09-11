@@ -42,6 +42,13 @@ export default function ResourcesPage() {
         </div>
       </section>
 
+      <Link href="/gpt-6-cases" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] md:p-10">
+        <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]"><span>新专题 · GPT-6 Astra</span><span>20 个案例 / 10 条实践</span></div>
+        <h2 className="mt-5 text-2xl font-semibold leading-relaxed md:text-3xl">从一次演示，到你的下一次实践。</h2>
+        <p className="mt-4 max-w-3xl text-base leading-8 text-[#d4d9cc]">从网页、3D 与视频，到音乐、办公和机器人。按场景阅读案例，展开输入与流程，查看原始来源，把值得借鉴的做法带走。</p>
+        <span className="mt-6 inline-block border-b border-[#d6b47b] pb-1 text-base text-[#e9bf78]">阅读 GPT-6 案例集 →</span>
+      </Link>
+
       <section className="grid gap-5 md:grid-cols-3">
         {resourceTypes.map((type, index) => (
           <article key={type.title} className="relative overflow-hidden rounded-xl border border-subtle/70 bg-card-light p-6 shadow-soft dark:border-white/10 dark:bg-card-dark">

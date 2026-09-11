@@ -1,0 +1,1366 @@
+{
+  "schema_version": "1.0",
+  "topic": "GPT-6 Astra 案例与最佳实践",
+  "cutoff_at": "2026-09-08T21:52:13+08:00",
+  "scope": {
+    "audience": [
+      "普通用户与内容创作者",
+      "开发者"
+    ],
+    "included": [
+      "GPT-6 Astra / Astra 原作者案例",
+      "官方基线与官方用法建议"
+    ],
+    "excluded": [
+      "未确认预览模型",
+      "只含转述而无原始模型证据的作品",
+      "把能力介绍充当已复现案例"
+    ],
+    "version": "gpt-6-astra；社区案例具体 API snapshot 多数未公开",
+    "edition": "扩充版：20 个原始来源案例；没有独立复现全部生成过程。"
+  },
+  "sources": [
+    {
+      "id": "official-model",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "kind": "official",
+      "note": "模型身份与模态边界；应用工具能力不可直接等同于模型原生输出。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": null
+    },
+    {
+      "id": "official-guide",
+      "url": "https://developers.openai.com/api/docs/guides/latest-model",
+      "kind": "official",
+      "note": "已打开官方 GPT-6 Astra 指南并用文档工具读取正文；用于提示方式、上下文指令与测试范围建议。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": null
+    },
+    {
+      "id": "official-launch",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "kind": "official",
+      "note": "发布页列出办公、浏览器、工程与科学场景；示范片段为剪辑摘录，厂商评测不能代替本期社区案例复现。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": null
+    },
+    {
+      "id": "discovery",
+      "url": "https://github.com/magiccreator-ai/awesome-gpt-6-astra",
+      "kind": "secondary",
+      "note": "发现原帖与作品的目录；不作为案例身份或效果的最终证据。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": null
+    },
+    {
+      "id": "globe-post",
+      "url": "https://hqman.me/blog/gpt-6-astra-3d-globe-dashboard/",
+      "kind": "primary",
+      "note": "作者明确 GPT-6 Astra；给出完整提示词位置、静态页面约束和产物说明。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": "2026-09-05"
+    },
+    {
+      "id": "globe-demo",
+      "url": "https://hqman.me/demo/gpt-6-astra-3d-globe/",
+      "kind": "artifact",
+      "note": "Chrome 已显示地球画面与 GPT-6 ASTRA 标记。抽屉初始为 collapsed；点击后 expanded 并出现表格，再次点击恢复 collapsed。未测试拖动、缩放、真实数据或移动端。",
+      "access": "interactive",
+      "checked_at": "2026-09-08",
+      "published_at": null
+    },
+    {
+      "id": "holo-post",
+      "url": "https://x.com/everettfish0408/status/2096765359282061544",
+      "kind": "primary",
+      "note": "已在 Chrome 点开中文原文：作者介绍 GPT 6 Astra 与 Blender 的卡片工作流，并链接开源仓库。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": "2026-09-07"
+    },
+    {
+      "id": "holo-repo",
+      "url": "https://github.com/EverettFish/holo-card-studio",
+      "kind": "artifact",
+      "note": "已读 README：分层图片、Blender 工程、Three.js 页面和参数配置；注明教程来自小红书 @乌托邦的香蕉。未运行脚本。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": null
+    },
+    {
+      "id": "bubble-post",
+      "url": "https://x.com/crtvTeknologist/status/2096980188126986533",
+      "kind": "primary",
+      "note": "原作者写明 ThreeJS + Astra，提供演示地址；同一作者回复提供源码。未播放验证完整游戏。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": "2026-09-07"
+    },
+    {
+      "id": "bubble-repo",
+      "url": "https://github.com/finktheartist/bubble-wrap-simulator",
+      "kind": "artifact",
+      "note": "README 给出 Node 22.13+ 与本地命令，并说明当前部分模型材料更新晚于演示视频。未安装运行。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": null
+    },
+    {
+      "id": "jelly-post",
+      "url": "https://x.com/scottstts/status/2096364764054131119",
+      "kind": "primary",
+      "note": "原作者写明 Astra、Three.js，链接源码与在线版；引用前作提及 WebGPU。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": "2026-09-06"
+    },
+    {
+      "id": "jelly-repo",
+      "url": "https://github.com/scottstts/Jelly-Baby",
+      "kind": "artifact",
+      "note": "已读 README 与目录：含源代码与桌面/触摸操作说明。未运行、未检查所有依赖。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": null
+    },
+    {
+      "id": "forest-post",
+      "url": "https://x.com/LexnLin/status/2096263046918197609",
+      "kind": "primary",
+      "note": "原作者明确 GPT 6 Astra、约五小时、Three.js 与自定义 shaders；提供在线链接。数字为作者报告。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": "2026-09-05"
+    },
+    {
+      "id": "forest-prompt",
+      "url": "https://x.com/LexnLin/status/2096340631425867793",
+      "kind": "primary",
+      "note": "在原帖回复读到作者链接的提示词片段：GPT 6 Astra xhigh、/unlazy 和长时间构建要求。只读到片段，未核验完整 Skill。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": "2026-09-06"
+    },
+    {
+      "id": "forest-correction",
+      "url": "https://x.com/LexnLin/status/2096330479226241515",
+      "kind": "primary",
+      "note": "在原帖回复读到作者承认部分树纹理可能不对；这是作者自述，未做纹理准确性测量。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": "2026-09-06"
+    },
+    {
+      "id": "forest-demo",
+      "url": "https://verdant-forest.lexn8.chatgpt.site",
+      "kind": "artifact",
+      "note": "本轮网页抓取超时，不能据此判定网站本身失效；未进行浏览器游玩。",
+      "access": "inaccessible",
+      "checked_at": "2026-09-08",
+      "published_at": null
+    },
+    {
+      "id": "palace-post",
+      "url": "https://x.com/sharifshameem/status/2095653641164329143",
+      "kind": "primary",
+      "note": "原作者明确 GPT-6 Astra 与 Blender；本期只采用创作信息，不采用帖中的建筑历史陈述。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": "2026-09-04"
+    },
+    {
+      "id": "palace-process",
+      "url": "https://x.com/sharifshameem/status/2095688352075075878",
+      "kind": "primary",
+      "note": "已在 Chrome 展开 Show more：搜集参考、场景迭代、渲染中间帧并比较；作者修正天空颜色与穿模，主要运行在夜间。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": "2026-09-04"
+    },
+    {
+      "id": "palace-render",
+      "url": "https://x.com/sharifshameem/status/2095689055753400487",
+      "kind": "primary",
+      "note": "作者说明全部建模和渲染在 Blender 完成，没有调用视频生成模型；未独立核实工程文件。",
+      "access": "read",
+      "checked_at": "2026-09-08",
+      "published_at": "2026-09-04"
+    },
+    {
+      "id": "final-cut-prep-original",
+      "url": "https://x.com/davis7/status/2095742249275699415",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。作者用 GPT-6 Astra 处理刚拍摄的视频，要求导入、调色、同步，为后续剪辑做准备。另在回复中称演示反应片段与字幕也由 Astra 剪辑。"
+    },
+    {
+      "id": "listing-film-original",
+      "url": "https://x.com/realYunfanYe/status/2095612137582526615",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。作者把 Zillow 房源照片交给 GPT-6 Astra，展示三维住宅宣传视频，同时明确承认有细节错误。"
+    },
+    {
+      "id": "kicad-layout-original",
+      "url": "https://x.com/ChihYang04/status/2095637507337826741",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。作者发布 GPT-6 Astra 在 KiCad 中执行 PCB layout 的短片。案例价值是进入工程软件操作流程，证据深度仍停留在展示。"
+    },
+    {
+      "id": "clips55-edit-original",
+      "url": "https://x.com/0xTykoo/status/2096183262255386833",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。作者在 Codex 中使用 Astra Ultra，提供 55 段视频和 4 首备选音乐，让系统依照大致风格完成选择与剪辑。"
+    },
+    {
+      "id": "canva-portrait-original",
+      "url": "https://x.com/iam_zachi/status/2095992132620136677",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。作者要求 GPT-6 Astra 在 Canva 中画自己，并补充说浏览器工具中途出故障后改用 computer use。"
+    },
+    {
+      "id": "tcell-video-original",
+      "url": "https://x.com/DeryaTR_/status/2095659170661904804",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。作者要求 GPT-6 Astra 制作约五分钟的 T 细胞科普片，并描述了 Remotion、Imagegen 与旁白工具的协作。"
+    },
+    {
+      "id": "godot-effort-original",
+      "url": "https://x.com/AiBattle_/status/2095994051354919049",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。作者对比 GPT-6 Astra 两个推理档位制作 Sonic 风格 Godot 游戏，主帖和后续复测报告的时间、额度存在波动。"
+    },
+    {
+      "id": "steam-train-original",
+      "url": "https://x.com/tomkrcha/status/2095756085890310311",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。作者给 GPT-6 Astra 一张旧蒸汽火车图，要求在 Blender 重建；后续说明主要通过 Python 代码创建模型。"
+    },
+    {
+      "id": "adam-cad-original",
+      "url": "https://x.com/adamdotnew/status/2096053889141489669",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。Adam 官方账号展示 GPT-6 Astra 机械 CAD 工作，并在回复中称整个装配体由一次提示生成。"
+    },
+    {
+      "id": "robot-control-original",
+      "url": "https://x.com/chooi_jeq/status/2096064315115839904",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。研究者报告 GPT-6 Astra 机器人控制实验，并在回复区给出较难精细任务的低成功表现与控制接口说明。"
+    },
+    {
+      "id": "ableton-music-original",
+      "url": "https://x.com/skirano/status/2095595942544089525",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。作者在 GPT-6 早期测试线程中称，通过 MCP 接入 Ableton，从合成器乐器到声部和编排制作音乐。"
+    },
+    {
+      "id": "ableton-thread",
+      "url": "https://x.com/skirano/status/2095595932335170031",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "同一线程首帖明确作者获得 GPT-6 早期访问；本轮滚动读取。"
+    },
+    {
+      "id": "signaldesk-app-original",
+      "url": "https://kingy.ai/blog/astra-vs-sol-working-app-test/",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。作者让 Astra 与 Sol 分别根据相同虚构数据构建 SignalDesk，并检查搜索、筛选、比较与状态保存。"
+    },
+    {
+      "id": "research-workbook-original",
+      "url": "https://kingy.ai/blog/astra-vs-sol-research-spreadsheet-test/",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。作者用 Astra 与 Sol 制作带来源表和公式计算器的 XLSX，比较来源追溯、公式和缺失条件的处理。"
+    },
+    {
+      "id": "arc-harness-original",
+      "url": "https://arcprize.org/blog/astra",
+      "kind": "primary",
+      "checked_at": "2026-09-08",
+      "access": "read",
+      "published_at": null,
+      "note": "本轮读取原始页面/作者原帖及必要回复。ARC Prize 比较 Astra 在标准框架与保留推理状态的 Provider Adapter 下完成陌生交互任务的表现。"
+    }
+  ],
+  "cases": [
+    {
+      "id": "globe-dashboard",
+      "title": "一张参考图变成可交互的地球仪表盘",
+      "status": "approved",
+      "category": "网页与交互",
+      "author": "Kai Wang / AI Kai",
+      "summary": "作者用 GPT-6 Astra 重建物流仪表盘，公开提示词并提供在线作品。本轮确认页面能显示地球，活动抽屉可展开与收起；生成过程及作者所称的一次提示完成未独立复现。",
+      "source_ids": [
+        "globe-post",
+        "globe-demo"
+      ],
+      "identity_evidence": {
+        "source_id": "globe-post",
+        "claim": "作者原文写明 GPT-6 Astra，在线产物也有同名模型标记；具体 API snapshot 未公开。"
+      },
+      "input": {
+        "prompt_status": "full",
+        "description": "原文公开完整英文提示词，本集提供链接而不复制全文。输入为参考截图；要求静态页面、Three.js/React/Tailwind、无需 npm、地球可交互，底部抽屉默认收起。"
+      },
+      "workflow": [
+        "作者提供参考图，并明确视觉、技术和初始交互状态要求。",
+        "提示词要求使用 Chrome 与原图比较；是否完整执行该过程仅有作者说明。",
+        "作者发布静态页面；本轮只验证其中的抽屉状态切换。"
+      ],
+      "result": {
+        "description": "本轮观察到带地球和航线的页面；活动抽屉展开后出现运输表格，再点收起。页面业务数字是演示内容，不能作真实物流运营证据。",
+        "attribution": "mixed",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "partial",
+        "steps": [
+          "编辑建议：用自己的参考图列出布局与默认状态要求，要求交付静态页面。",
+          "用浏览器检查第一次打开是否遮挡主体，再测试展开、收起、拖动与缩放。",
+          "分别记录生成过程与成品验收；不要把“打开别人的作品”记录为自己复现了生成。"
+        ]
+      },
+      "limitations": [
+        "原始截图与完整生成日志未在本轮取得，不能评价像素一致性或一次生成成功率。",
+        "本轮没有测试地球拖动、移动端和后台功能；时间与成本未知。"
+      ],
+      "practice_ids": [
+        "p-artifact-contract",
+        "p-visual-loop"
+      ]
+    },
+    {
+      "id": "holo-card",
+      "title": "把卡片制作流程封装成可复用 Skill",
+      "status": "approved",
+      "category": "设计与流程封装",
+      "author": "EverettFish",
+      "summary": "作者围绕 Astra、图像素材与 Blender 封装了全息卡片工作流，仓库提供可编辑工程和网页输出路径。这是从一次效果到可重复生产的样本；本轮读过原帖和 README，未运行生成。",
+      "source_ids": [
+        "holo-post",
+        "holo-repo"
+      ],
+      "identity_evidence": {
+        "source_id": "holo-post",
+        "claim": "原帖直接讨论 GPT 6 Astra 并链接对应仓库；仓库通用 Codex Skill 本身没有固定具体模型快照。"
+      },
+      "input": {
+        "prompt_status": "partial",
+        "description": "README 有使用示例；原案例完整素材、模型设置及生成对话未公开。输入可为描述或参考图。"
+      },
+      "workflow": [
+        "仓库流程将视觉素材分为背景、主体、线稿和文字等层。",
+        "构造 Blender 卡片及可调整材质，再生成交互网页。",
+        "交付工程、图片与配置文件，便于换主体或参数后再次制作。"
+      ],
+      "result": {
+        "description": "原作者展示卡片效果，仓库说明产物包括 Blender 工程、Three.js 页面与配置。本轮未执行工具链，不能证明一键成功或两端视觉完全一致。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "documented",
+        "steps": [
+          "按仓库环境说明准备 Python、Node 与 Blender 工具链；先读脚本行为和依赖要求。",
+          "用一张自有参考图做单卡，验收前后面、文字、透明层边缘与旋转效果。",
+          "再只替换主体与卡面文案，验证第二张卡是否能复用流程。以上为编辑设计的复用测试。"
+        ]
+      },
+      "limitations": [
+        "图像生成属于应用/工具链，不能据此声称 GPT-6 原生输出图片。",
+        "仓库注明实现教程来自小红书 @乌托邦的香蕉，引用时保留贡献来源；未核验原教程内容。",
+        "完整复现成本与耗时未知。"
+      ],
+      "practice_ids": [
+        "p-reusable-assets",
+        "p-role-boundaries"
+      ]
+    },
+    {
+      "id": "bubble-wrap",
+      "title": "把具体玩法做成有源码的浏览器小游戏",
+      "status": "approved",
+      "category": "游戏与源码交付",
+      "author": "FinkTheArtist",
+      "summary": "作者把在气泡膜房间里发射火箭的想法做成 Three.js 项目，原帖归属 Astra，回复链接公开源码。源码 README 给出本地启动路径；本轮没有安装依赖或运行游戏。",
+      "source_ids": [
+        "bubble-post",
+        "bubble-repo"
+      ],
+      "identity_evidence": {
+        "source_id": "bubble-post",
+        "claim": "原作者直接署名 ThreeJS + Astra；按本期官方基线将 Astra 作为 GPT-6 Astra 别名，具体推理档位与快照未知。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "公开了玩法描述；没有拿到完整原始提示词、设置或生成记录。"
+      },
+      "workflow": [
+        "原帖给出玩法目标与 Astra、Three.js 的工具归属。",
+        "仓库描述 React、Three.js、Rapier、Blender 和 Web Audio 的组成；完整创建顺序未知。",
+        "作者发布演示与源码，README 另行说明当前素材已在演示之后更新。"
+      ],
+      "result": {
+        "description": "存在可检查源码及本地启动说明。当前 README 包含后续素材更新，因此不能将现在整个代码库或全部功能都归因于发布时那一次 Astra 运行。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "documented",
+        "steps": [
+          "作者文档路径：Node 22.13+，克隆仓库，执行 npm ci，再执行 npm run dev:standalone。",
+          "编辑验收：进场、首次操作、重置及触摸控制；记录浏览器和测试 commit。",
+          "比较视频时先对齐源码版本；本轮未运行上述命令。"
+        ]
+      },
+      "limitations": [
+        "前后版本不同；完整模型贡献比例未知。",
+        "没有独立游戏测试、性能数据、创建用时或成本。"
+      ],
+      "practice_ids": [
+        "p-artifact-contract",
+        "p-versioned-evaluation"
+      ]
+    },
+    {
+      "id": "jelly-baby",
+      "title": "从弹性材质实验扩展到可玩的桌面小世界",
+      "status": "approved",
+      "category": "游戏与交互原型",
+      "author": "Scott",
+      "summary": "作者先展示 Astra 制作的弹性果冻，再发布 Jelly Baby 游戏、在线地址和代码。本例适合观察如何把一个可感知的交互效果扩展为小产品，但没有公开完整生成过程。",
+      "source_ids": [
+        "jelly-post",
+        "jelly-repo"
+      ],
+      "identity_evidence": {
+        "source_id": "jelly-post",
+        "claim": "作者在原帖及引用前作中将作品归属 Astra 和 Three.js；前作还提及 WebGPU，具体快照与档位未知。"
+      },
+      "input": {
+        "prompt_status": "partial",
+        "description": "前作只公开“有弹性、可口的果冻”这一任务描述；成品游戏的完整提示词和设置未获取。"
+      },
+      "workflow": [
+        "作者先展示果冻效果实验。",
+        "后续原帖宣布扩展为 Jelly Baby 游戏，并链接源码与在线版。",
+        "README 描述移动、跳跃、拉伸、抛出和触摸操作；内部实现过程未完整披露。"
+      ],
+      "result": {
+        "description": "原帖与源码形成对应关系，README 给出具体交互规则。本轮未打开游戏游玩，不能确认不同设备的手感和性能。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "先打开作者在线版 jelly.scottsun.io，检查当前浏览器兼容情况。",
+          "按 README 体验移动、跳跃、拉伸与重置，手机另测触摸输入。",
+          "编辑建议：复作时先验收一个“拉伸—松手—回弹”循环，再决定是否扩展场景。"
+        ]
+      },
+      "limitations": [
+        "WebGPU 出现在前作说明中；当前成品的精确兼容要求须检查源码/运行页面，不能直接沿用。",
+        "缺少完整提示词、成本和性能基线，不作为同类模型横向优劣证据。"
+      ],
+      "practice_ids": [
+        "p-artifact-contract",
+        "p-versioned-evaluation"
+      ]
+    },
+    {
+      "id": "verdant-forest",
+      "title": "长时间构建的森林场景，以及暴露的纹理问题",
+      "status": "approved",
+      "category": "长任务与局限",
+      "author": "Leon Lin",
+      "summary": "作者报告让 GPT-6 Astra 用约五小时制作 Three.js 森林，并在后续回复提供提示词线索。本例同时保留作者对部分树纹理问题的回应，适合讨论长任务验收而非只展示复杂度。",
+      "source_ids": [
+        "forest-post",
+        "forest-prompt",
+        "forest-correction",
+        "forest-demo"
+      ],
+      "identity_evidence": {
+        "source_id": "forest-post",
+        "claim": "主帖明确 GPT 6 Astra；作者回复中可读到 xhigh 设置与 /unlazy 提示词片段，未获取完整 Skill。"
+      },
+      "input": {
+        "prompt_status": "partial",
+        "description": "可见目标为高细节森林，提示词片段包含 xhigh、/unlazy 及长时间构建要求；完整提示词与该 Skill 未核验。"
+      },
+      "workflow": [
+        "作者给出高细节森林任务，并报告约五小时运行。",
+        "作者说明使用 Three.js 和自定义 shaders。",
+        "作者发布结果及提示词线索，随后回应部分树纹理可能出错。"
+      ],
+      "result": {
+        "description": "约五小时和对象数量来自作者自述；本轮只采用时间用于说明任务尺度，不把对象数量视为质量评分。在线版网页抓取超时，没有实际游玩。",
+        "attribution": "author_claim",
+        "metrics": [
+          {
+            "name": "作者报告构建时间",
+            "value": "约 5 小时",
+            "conditions": "作者单次任务描述；计时方式、硬件、人工时间与完整日志未公开，本轮未独立测量。",
+            "source_id": "forest-post"
+          }
+        ]
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "编辑建议：将同类任务拆成可检查的场景范围、材质与交互要求。",
+          "保存若干中间版本，检查近景纹理、穿模和浏览器错误，再决定是否继续增加细节。",
+          "记录实际运行时间和人工纠正次数；不要把作者提示词中的最低时长直接当成功秘诀。"
+        ]
+      },
+      "limitations": [
+        "作者承认纹理可能有误；本轮未独立检查该纹理。",
+        "无对照实验，不能推导运行更久必然更好；未复现在线版或 shaders。",
+        "抓取超时是本轮访问限制，不等于作品失效。"
+      ],
+      "practice_ids": [
+        "p-versioned-evaluation",
+        "p-long-task"
+      ]
+    },
+    {
+      "id": "palace-blender",
+      "title": "搜集参考、渲染比对并修正建筑场景",
+      "status": "approved",
+      "category": "3D 与专业软件",
+      "author": "Sharif Shameem",
+      "summary": "作者称 GPT-6 Astra 在 Blender 重建旧金山艺术宫，并补充搜集参考、生成中间帧与人工修正的过程。本例提供比“全自动视频”更具体的工作流证据；工程和生成日志未取得。",
+      "source_ids": [
+        "palace-post",
+        "palace-process",
+        "palace-render"
+      ],
+      "identity_evidence": {
+        "source_id": "palace-post",
+        "claim": "主帖明确 GPT-6 Astra；后续原作者说明 Blender 完成建模与渲染。具体运行快照未知。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "已知任务是建筑重建；作者说系统搜集参考照片与尺寸资料。完整任务提示词、参考集合与 Blender 工程未获取。"
+      },
+      "workflow": [
+        "作者称系统搜集建筑照片和尺寸资料。",
+        "在 Blender 中迭代场景、渲染中间帧，并和参考资料比较。",
+        "作者在中间结果出现时修正天空颜色与小范围穿模；主要运行在夜间。",
+        "作者说明视频由 Blender 渲染，没有调用视频生成模型。"
+      ],
+      "result": {
+        "description": "原作者发布视频和过程解释。本轮核验正文及作者回复，未检查视频全部帧或 Blender 文件；“无视频模型”保留为作者声明。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "编辑建议：选取参考可查的建筑，整理整体图、细节图与尺寸出处。",
+          "先完成粗模并渲染固定机位，再逐项比对结构、材质、天空和穿模。",
+          "交付可编辑工程与最终渲染，并记录人工纠正；这是重构方案，不是原作者完整提示词。"
+        ]
+      },
+      "limitations": [
+        "中间有人参与纠正，不应描述为完全无人干预。",
+        "没有工程或对照实验，不能验证建筑尺寸准确性，也不能说明 GPT-6 相对其他模型提高多少。",
+        "主帖含建筑历史叙述，本集未核验，未将其当作历史事实转述。"
+      ],
+      "practice_ids": [
+        "p-visual-loop",
+        "p-role-boundaries"
+      ]
+    },
+    {
+      "id": "final-cut-prep",
+      "title": "在 Final Cut 中整理素材、调色与同步",
+      "status": "approved",
+      "category": "视频与剪辑",
+      "author": "Ben Davis",
+      "summary": "作者用 GPT-6 Astra 处理刚拍摄的视频，要求导入、调色、同步，为后续剪辑做准备。另在回复中称演示反应片段与字幕也由 Astra 剪辑。",
+      "source_ids": [
+        "final-cut-prep-original"
+      ],
+      "identity_evidence": {
+        "source_id": "final-cut-prep-original",
+        "claim": "原作者正文或同一线程明确 GPT-6 Astra / Astra；具体 API 快照未公开，评测设置以本案例正文为准。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "输入是作者刚录制的素材；主帖说明任务范围，未公开完整提示词、素材与自动化配置。"
+      },
+      "workflow": [
+        "把已有录像交给 Astra，指定 Final Cut。",
+        "作者描述导入、调色和片段同步，并与剪辑师观察过程。"
+      ],
+      "result": {
+        "description": "原帖附过程反应视频；这支持一段剪辑准备流程的作者报告，不等于本轮验证了完整成片质量。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "编辑建议：使用素材副本，先选少量带独立音轨的片段。",
+          "验收素材是否完整导入、声画是否同步、调色是否一致，保存可继续编辑的工程。"
+        ]
+      },
+      "limitations": [
+        "没有取得工程，无法复核同步误差或色彩参数。",
+        "配置方式、时长和总成本未确认；原作者感叹不作为效果指标。"
+      ],
+      "practice_ids": [
+        "p-editable-production"
+      ],
+      "editorial_takeaway": "优先自动化重复的前期整理，并把可继续编辑的工程作为交付。"
+    },
+    {
+      "id": "listing-film",
+      "title": "从房源照片重建住宅并制作宣传片",
+      "status": "approved",
+      "category": "视频与空间重建",
+      "author": "Yunfan Ye",
+      "summary": "作者把 Zillow 房源照片交给 GPT-6 Astra，展示三维住宅宣传视频，同时明确承认有细节错误。",
+      "source_ids": [
+        "listing-film-original"
+      ],
+      "identity_evidence": {
+        "source_id": "listing-film-original",
+        "claim": "原作者正文或同一线程明确 GPT-6 Astra / Astra；具体 API 快照未公开，评测设置以本案例正文为准。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "房源照片；作者回复称照片较模糊。完整提示词和重建设置未提供。"
+      },
+      "workflow": [
+        "依据房源图片构建三维住宅。",
+        "制作宣传视频；作者称首次尝试完成，仍有错误。"
+      ],
+      "result": {
+        "description": "原作者展示视觉结果，不能据此把重建图当作准确户型、实际装修或真实房屋条件。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "编辑建议：准备多视角图片，区分实拍信息与未拍到的区域。",
+          "逐项核对门窗、房间连接和家具；不确定区域明确标出，合格后再做镜头运动。"
+        ]
+      },
+      "limitations": [
+        "没有取得源工程或完整输入，未核验几何准确性。",
+        "不能将作者“再润色会更好”的预期当作已经完成的修复。"
+      ],
+      "practice_ids": [],
+      "editorial_takeaway": "空间营销案例要把视觉吸引力与事实准确性分开验收。"
+    },
+    {
+      "id": "kicad-layout",
+      "title": "在 KiCad 中执行 PCB 布线",
+      "status": "approved",
+      "category": "硬件与专业软件",
+      "author": "Kai Yang",
+      "summary": "作者发布 GPT-6 Astra 在 KiCad 中执行 PCB layout 的短片。案例价值是进入工程软件操作流程，证据深度仍停留在展示。",
+      "source_ids": [
+        "kicad-layout-original"
+      ],
+      "identity_evidence": {
+        "source_id": "kicad-layout-original",
+        "claim": "原作者正文或同一线程明确 GPT-6 Astra / Astra；具体 API 快照未公开，评测设置以本案例正文为准。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "原帖没有交代电路原理图、板级约束或完整提示词。"
+      },
+      "workflow": [
+        "原帖明确工具为 KiCad，任务为 PCB layout。",
+        "公开短片记录该操作；具体布线算法和人工参与未知。"
+      ],
+      "result": {
+        "description": "尚无本轮可检查的板文件、设计规则检查结果或打样数据，不能把布线画面等同于可生产电路板。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "编辑建议：用已审查的示例电路和明确的板尺寸/间距约束试做。",
+          "检查网络连接与 DRC，再由工程人员核对电气、封装和制造条件。"
+        ]
+      },
+      "limitations": [
+        "未确认 DRC、信号完整性和实物测试是否通过。",
+        "原帖关联网站不是本例工程文件或复现证据。"
+      ],
+      "practice_ids": [],
+      "editorial_takeaway": "工程案例按设计文件与检查结果评价，不只看软件里是否出现了线条。"
+    },
+    {
+      "id": "clips55-edit",
+      "title": "从 55 段素材中选片、配乐并剪辑",
+      "status": "approved",
+      "category": "视频与剪辑",
+      "author": "Tykoo",
+      "summary": "作者在 Codex 中使用 Astra Ultra，提供 55 段视频和 4 首备选音乐，让系统依照大致风格完成选择与剪辑。",
+      "source_ids": [
+        "clips55-edit-original"
+      ],
+      "identity_evidence": {
+        "source_id": "clips55-edit-original",
+        "claim": "原作者正文或同一线程明确 GPT-6 Astra / Astra；具体 API 快照未公开，评测设置以本案例正文为准。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "作者提供的素材文件夹、备选音乐与风格说明；这不是从零生成全部视频素材。完整提示词未公开。"
+      },
+      "workflow": [
+        "提供现成视频和音乐素材。",
+        "让 Astra 按风格选择片段和音乐，完成剪辑与效果处理。",
+        "作者评价卡点、模板效果与抠像超出其预期。"
+      ],
+      "result": {
+        "description": "原帖展示成片，但审美评价属于作者自述。本轮没有对照原素材检查遗漏、同步或画质。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "编辑建议：给素材命名，写明片长、节奏、必须保留和必须排除的片段。",
+          "检查音画节拍、字幕、镜头连贯性和输出规格；同时保留项目文件与选片清单。"
+        ]
+      },
+      "limitations": [
+        "具体剪辑软件或渲染工具未确认。",
+        "Ultra 是作者使用的产品设置，不能直接转写成 API reasoning 参数；没有完整费用。"
+      ],
+      "practice_ids": [
+        "p-editable-production"
+      ],
+      "editorial_takeaway": "先组织输入素材，再把“选择哪些素材”和“如何剪”一起写进任务。"
+    },
+    {
+      "id": "canva-portrait",
+      "title": "在 Canva 中绘制肖像，遇到工具故障后切换操作方式",
+      "status": "approved",
+      "category": "设计与软件操作",
+      "author": "Zachi",
+      "summary": "作者要求 GPT-6 Astra 在 Canva 中画自己，并补充说浏览器工具中途出故障后改用 computer use。",
+      "source_ids": [
+        "canva-portrait-original"
+      ],
+      "identity_evidence": {
+        "source_id": "canva-portrait-original",
+        "claim": "原作者正文或同一线程明确 GPT-6 Astra / Astra；具体 API 快照未公开，评测设置以本案例正文为准。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "公开任务为绘制肖像；完整参考图、提示词和可编辑设计链接未取得。"
+      },
+      "workflow": [
+        "指定 Canva 与肖像任务。",
+        "作者报告执行中从浏览器工具切换至 computer use。",
+        "作者发布画面及用时/额度自述。"
+      ],
+      "result": {
+        "description": "可作为工具切换和原生应用操作的展示；本轮未打开 Canva 工程或测试编辑性。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "编辑建议：用自己的照片指定画布、风格和交付格式。",
+          "让系统在切换工具前保留已有工作；完成后检查图层是否可编辑和照片特征是否对应。"
+        ]
+      },
+      "limitations": [
+        "作者报告约一小时与订阅周额度占用，不能换算成普遍成本。",
+        "切换机制、故障原因和输出图层结构未独立核验。"
+      ],
+      "practice_ids": [],
+      "editorial_takeaway": "保存阶段状态，避免工具失败后从头重做；切换工具成功只属于本例报告。"
+    },
+    {
+      "id": "tcell-video",
+      "title": "用 Remotion 与图像工具制作 T 细胞科普视频",
+      "status": "approved",
+      "category": "教育与视频",
+      "author": "Derya Unutmaz",
+      "summary": "作者要求 GPT-6 Astra 制作约五分钟的 T 细胞科普片，并描述了 Remotion、Imagegen 与旁白工具的协作。",
+      "source_ids": [
+        "tcell-video-original"
+      ],
+      "identity_evidence": {
+        "source_id": "tcell-video-original",
+        "claim": "原作者正文或同一线程明确 GPT-6 Astra / Astra；具体 API 快照未公开，评测设置以本案例正文为准。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "原帖公开简短目标及 Remotion 要求；作者回复称未提供自己的研究资料，完整过程未知。"
+      },
+      "workflow": [
+        "确定科普主题与时长，要求使用 Remotion。",
+        "作者称 Astra 生成脚本、安排视觉，使用 Imagegen，并建议 HeyGen 旁白。",
+        "组装教学视频；作者作为领域研究者给出正面评价。"
+      ],
+      "result": {
+        "description": "这是制作流程案例；作者专业认可不替代逐项事实审查，本集未验证科学准确性。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "编辑建议：先提供课程范围与可靠参考材料。",
+          "对脚本中的概念和图示逐项核验，再生成动画、旁白与字幕，最后检查同步。"
+        ]
+      },
+      "limitations": [
+        "未取得完整脚本、渲染工程或工具调用记录。",
+        "原帖对成本的估计不完整，不作为制作预算；本条不用于医疗建议。"
+      ],
+      "practice_ids": [],
+      "editorial_takeaway": "教育视频应把学科核验放在渲染前；多工具生成过程保留分工。"
+    },
+    {
+      "id": "godot-effort",
+      "title": "同类 Godot 任务比较 Max 与 Medium",
+      "status": "approved",
+      "category": "对比与使用成本",
+      "author": "AiBattle",
+      "summary": "作者对比 GPT-6 Astra 两个推理档位制作 Sonic 风格 Godot 游戏，主帖和后续复测报告的时间、额度存在波动。",
+      "source_ids": [
+        "godot-effort-original"
+      ],
+      "identity_evidence": {
+        "source_id": "godot-effort-original",
+        "claim": "原作者正文或同一线程明确 GPT-6 Astra / Astra；具体 API 快照未公开，评测设置以本案例正文为准。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "简单 3D 游戏任务；本轮读到作者称使用相同提示词复测，但没有取得完整提示词正文。"
+      },
+      "workflow": [
+        "分别以 Max 与 Medium 运行游戏任务。",
+        "作者记录时间与订阅额度变化。",
+        "在被质疑后另做一次 Max 运行，并说明任务从空目录开始。"
+      ],
+      "result": {
+        "description": "主帖报告 Max 53 分钟、Medium 25 分钟；后续 Max 报告为 46 分钟。都是作者记录，不能据此建立稳定速度排名。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "编辑建议：固定输入、起始目录、工具和验收标准，分别运行两档。",
+          "记录完整用时、实际输出质量与重复运行差异；订阅额度只作账户观测，不作 API 费用。"
+        ]
+      },
+      "limitations": [
+        "没有独立评分、完整日志或严格重复实验。",
+        "已有代码库与空目录工作量不同；不能把本例时间推广到其他任务。"
+      ],
+      "practice_ids": [
+        "p-comparable-evaluations"
+      ],
+      "editorial_takeaway": "档位选择要结合质量与任务条件，不能仅按一次运行的时间或额度决定。"
+    },
+    {
+      "id": "steam-train",
+      "title": "把旧火车图纸转换为可编辑的 Blender 模型",
+      "status": "approved",
+      "category": "3D 与专业软件",
+      "author": "Tom Krcha",
+      "summary": "作者给 GPT-6 Astra 一张旧蒸汽火车图，要求在 Blender 重建；后续说明主要通过 Python 代码创建模型。",
+      "source_ids": [
+        "steam-train-original"
+      ],
+      "identity_evidence": {
+        "source_id": "steam-train-original",
+        "claim": "原作者正文或同一线程明确 GPT-6 Astra / Astra；具体 API 快照未公开，评测设置以本案例正文为准。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "旧火车参考图；完整提示词、尺寸约束及源工程未提供。"
+      },
+      "workflow": [
+        "提供参考图，要求在 Blender 重建。",
+        "作者说明以 Python 脚本生成几何对象。",
+        "后续请求分离零件，并展示另一个仍需修正头部形状的火车例子。"
+      ],
+      "result": {
+        "description": "作者称生成大量可编辑对象；本轮未清点对象、检查拓扑或打开工程。数量不作为模型准确性的评分。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "编辑建议：明确希望得到独立零件还是整体模型，指定比例与细节层级。",
+          "检查正侧视轮廓、轮轴、零件命名和可编辑性，再做渲染。"
+        ]
+      },
+      "limitations": [
+        "单视图存在背面和尺寸歧义；未取得源文件。",
+        "另一辆火车需要修形，说明复杂曲面不应只凭总体观感验收。"
+      ],
+      "practice_ids": [],
+      "editorial_takeaway": "可编辑性应成为建模交付要求；代码生成模型与界面点击是不同工作方式。"
+    },
+    {
+      "id": "adam-cad",
+      "title": "通过 Adam 产品生成机械装配体",
+      "status": "approved",
+      "category": "硬件与专业软件",
+      "author": "Adam",
+      "summary": "Adam 官方账号展示 GPT-6 Astra 机械 CAD 工作，并在回复中称整个装配体由一次提示生成。",
+      "source_ids": [
+        "adam-cad-original"
+      ],
+      "identity_evidence": {
+        "source_id": "adam-cad-original",
+        "claim": "原作者正文或同一线程明确 GPT-6 Astra / Astra；具体 API 快照未公开，评测设置以本案例正文为准。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "具体机械任务、约束和原始提示词未公开；产品账号提供自家入口。"
+      },
+      "workflow": [
+        "通过 Adam 的产品流程进行机械设计。",
+        "作者声称 Astra 一次提示生成整个装配体；其余内部操作未披露。"
+      ],
+      "result": {
+        "description": "这是一则产品方展示。主帖的领先性宣传没有在本例提供独立测评支持，不纳入结论。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "编辑建议：选择尺寸和装配约束明确的小结构试做。",
+          "验收零件尺寸、约束、干涉与文件可编辑性，保存设计历史以便人工调整。"
+        ]
+      },
+      "limitations": [
+        "没有下载到 CAD 文件，也没有验证制造可行性。",
+        "产品层、模型层和人工贡献未拆解；不能推断任何 Astra 接口都有相同能力。"
+      ],
+      "practice_ids": [],
+      "editorial_takeaway": "使用专业产品的案例，要说明宿主能力和模型能力分别贡献什么。"
+    },
+    {
+      "id": "robot-control",
+      "title": "机器人操作对比：普通任务进步，精细任务仍困难",
+      "status": "approved",
+      "category": "研究评测与局限",
+      "author": "Jay Chooi",
+      "summary": "研究者报告 GPT-6 Astra 机器人控制实验，并在回复区给出较难精细任务的低成功表现与控制接口说明。",
+      "source_ids": [
+        "robot-control-original"
+      ],
+      "identity_evidence": {
+        "source_id": "robot-control-original",
+        "claim": "原作者正文或同一线程明确 GPT-6 Astra / Astra；具体 API 快照未公开，评测设置以本案例正文为准。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "机械臂操作任务；模型提供末端执行器位姿，由 IK 求解器转换为关节指令。完整任务集合本轮未获得。"
+      },
+      "workflow": [
+        "通过末端位姿与 IK 求解器控制机械臂。",
+        "分别比较较容易与较精细的任务。",
+        "作者链接其轨迹与录像资料；本轮访问该地址跳转到机构首页，未读取完整记录。"
+      ],
+      "result": {
+        "description": "作者主帖报告 Astra 95%、对照模型 40%；精细任务则二者均为 2/20。必须保留任务差异，不能将 95% 当作通用机器人可靠性。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "编辑建议：先检查公开任务定义和轨迹，无法取得时只保留作者自述级别。",
+          "复现实验需在合适的仿真或研究环境固定机械臂、求解器、起始位置、成功判据和试次。"
+        ]
+      },
+      "limitations": [
+        "未独立测量成功率；完整轨迹在本轮未获取。",
+        "作者关于未来实时控制的预测不作为本案例成果；没有实际运行机器人。"
+      ],
+      "practice_ids": [
+        "p-comparable-evaluations"
+      ],
+      "editorial_takeaway": "同时收录成功与高难任务失败，按任务条件解释指标。"
+    },
+    {
+      "id": "ableton-music",
+      "title": "通过 MCP 在 Ableton 中编曲与创建合成器声部",
+      "status": "approved",
+      "category": "音乐与工具协作",
+      "author": "Pietro Schirano",
+      "summary": "作者在 GPT-6 早期测试线程中称，通过 MCP 接入 Ableton，从合成器乐器到声部和编排制作音乐。",
+      "source_ids": [
+        "ableton-music-original",
+        "ableton-thread"
+      ],
+      "identity_evidence": {
+        "source_id": "ableton-thread",
+        "claim": "线程首帖明确 GPT-6 早期访问，后续第 6/6 条为 Ableton；后续回复称 Astra。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "Ableton 环境与 MCP 连接；风格提示词和具体插件配置未公开。"
+      },
+      "workflow": [
+        "将 Ableton 通过 MCP 提供给模型。",
+        "作者称系统创建合成器乐器、各声部与编排。",
+        "在测试线程中发布音乐演示。"
+      ],
+      "result": {
+        "description": "本例支持外部音乐软件协作的作者报告，不是 GPT-6 原生输出音频的证据。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "not_tested",
+        "steps": [
+          "编辑建议：先指定节拍、段落和配器目标，在空白工程中测试。",
+          "验收声部可编辑性、段落完整性和导出声音；记录插件和预设依赖。"
+        ]
+      },
+      "limitations": [
+        "未取得 Ableton 工程或完整试听验证；不能证明版权状态或通用作曲质量。",
+        "作者获得早期访问，不能据此保证当前所有账户都有相同入口。"
+      ],
+      "practice_ids": [
+        "p-editable-production"
+      ],
+      "editorial_takeaway": "以可编辑工程评估音乐自动化，而不仅是最终音频。"
+    },
+    {
+      "id": "signaldesk-app",
+      "title": "用相同需求与数据构建可筛选、可比较的本地应用",
+      "status": "approved",
+      "category": "网页与应用评测",
+      "author": "Kingy AI",
+      "summary": "作者让 Astra 与 Sol 分别根据相同虚构数据构建 SignalDesk，并检查搜索、筛选、比较与状态保存。",
+      "source_ids": [
+        "signaldesk-app-original"
+      ],
+      "identity_evidence": {
+        "source_id": "signaldesk-app-original",
+        "claim": "原作者正文或同一线程明确 GPT-6 Astra / Astra；具体 API 快照未公开，评测设置以本案例正文为准。"
+      },
+      "input": {
+        "prompt_status": "full",
+        "description": "公开的需求、虚构记录与相同提示词；两次运行均记录 xhigh，时间分开。"
+      },
+      "workflow": [
+        "提供一致的本地需求与数据。",
+        "模型制作应用并自查，作者按固定行为清单检查。"
+      ],
+      "result": {
+        "description": "作者报告两者最终都通过固定功能检查。视觉偏好与功能是否正确属于不同结果，本轮未重新运行。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "documented",
+        "steps": [
+          "沿原文取需求和源文件，按复现指南通过本地 HTTP 服务访问。",
+          "编辑建议：固定浏览器状态并检查检索、空状态、比较和刷新后状态恢复。"
+        ]
+      },
+      "limitations": [
+        "单次、不同时间运行不能给出普遍模型排名。",
+        "源码包链接已定位，但网页工具不能解析 ZIP；本轮未下载执行。"
+      ],
+      "practice_ids": [
+        "p-comparable-evaluations"
+      ],
+      "editorial_takeaway": "先确定功能验收，再单独讨论视觉偏好。"
+    },
+    {
+      "id": "research-workbook",
+      "title": "把资料研究做成带来源和缺项提示的工作簿",
+      "status": "approved",
+      "category": "办公与研究",
+      "author": "Kingy AI",
+      "summary": "作者用 Astra 与 Sol 制作带来源表和公式计算器的 XLSX，比较来源追溯、公式和缺失条件的处理。",
+      "source_ids": [
+        "research-workbook-original"
+      ],
+      "identity_evidence": {
+        "source_id": "research-workbook-original",
+        "claim": "原作者正文或同一线程明确 GPT-6 Astra / Astra；具体 API 快照未公开，评测设置以本案例正文为准。"
+      },
+      "input": {
+        "prompt_status": "full",
+        "description": "相同研究 brief 与提示词、虚构工作量；分别检索资料，语料并非完全冻结一致。"
+      },
+      "workflow": [
+        "检索官方材料并组织工作簿。",
+        "生成公式与来源表，再用表格运行时检查计算。",
+        "作者后续检查缺失费率时的诊断表现。"
+      ],
+      "result": {
+        "description": "作者报告 Astra 对缺失费率有明确提示。原文也披露旧检查记录的不一致，保留为评估局限。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "documented",
+        "steps": [
+          "按原文取得样本 XLSX 和复现资料。",
+          "编辑建议：在副本中修改输入、删除一项必要数据，检查是否重算并明确说明缺项。"
+        ]
+      },
+      "limitations": [
+        "未在本轮打开 XLSX 或运行公式；原文也未证明原生 Excel 交互。",
+        "历史示例费率不是当前报价；一次比较不足以得出研究能力总体排名。"
+      ],
+      "practice_ids": [
+        "p-explicit-gaps"
+      ],
+      "editorial_takeaway": "让缺失信息显性出现，防止完整的表格掩盖不完整的依据。"
+    },
+    {
+      "id": "arc-harness",
+      "title": "同一模型在不同执行框架下表现差异明显",
+      "status": "approved",
+      "category": "研究评测与局限",
+      "author": "ARC Prize / Greg Kamradt",
+      "summary": "ARC Prize 比较 Astra 在标准框架与保留推理状态的 Provider Adapter 下完成陌生交互任务的表现。",
+      "source_ids": [
+        "arc-harness-original"
+      ],
+      "identity_evidence": {
+        "source_id": "arc-harness-original",
+        "claim": "原作者正文或同一线程明确 GPT-6 Astra / Astra；具体 API 快照未公开，评测设置以本案例正文为准。"
+      },
+      "input": {
+        "prompt_status": "not_available",
+        "description": "ARC-AGI-3 半私有测试环境；不同推理档位与执行框架。"
+      },
+      "workflow": [
+        "模型探索环境并建立规则和状态记录。",
+        "在不同框架中运行，比较任务结果与行动效率。"
+      ],
+      "result": {
+        "description": "原文显示执行框架会显著影响表现。因此不能把某个框架的结果直接归因于脱离工具的裸模型。",
+        "attribution": "author_claim",
+        "metrics": []
+      },
+      "reproduction": {
+        "level": "documented",
+        "steps": [
+          "编辑建议：阅读评测方方法和公开回放。",
+          "自己的对比保持任务、工具、推理设置一致，分别记录模型与执行框架版本。"
+        ]
+      },
+      "limitations": [
+        "本轮只阅读报告，未重新运行基准。",
+        "测试集成绩不等于所有工作任务能力；报告中的研究设置不作为公开 API 参数支持清单。"
+      ],
+      "practice_ids": [
+        "p-comparable-evaluations"
+      ],
+      "editorial_takeaway": "比较完整执行条件，避免只比较模型名称。"
+    }
+  ],
+  "practices": [
+    {
+      "id": "p-artifact-contract",
+      "title": "把成果写成可打开、可检查的交付物",
+      "basis": "cross_case_pattern",
+      "case_ids": [
+        "globe-dashboard",
+        "bubble-wrap",
+        "jelly-baby"
+      ],
+      "source_ids": [],
+      "action": "在任务中写清要交付的文件/网页、核心交互和初始状态；保留作品或源码入口。",
+      "when": "网页、游戏和可视化原型。",
+      "acceptance": "打开交付物，按任务要求实际完成一次核心操作；把未测试项目单列。",
+      "boundary": "本组案例有作品入口这一共性，不能证明加一句交付要求就会提高成功率。"
+    },
+    {
+      "id": "p-visual-loop",
+      "title": "用参考与中间结果做视觉检查",
+      "basis": "cross_case_pattern",
+      "case_ids": [
+        "globe-dashboard",
+        "palace-blender"
+      ],
+      "source_ids": [],
+      "action": "给出可比较的参考；生成中间画面后逐项对照，再修正。",
+      "when": "有视觉目标的界面、建筑和 3D 场景。",
+      "acceptance": "在相同尺寸或机位检查布局、结构、遮挡和局部缺陷。",
+      "boundary": "仪表盘的验证要求见作者提示词，建筑的迭代过程见作者自述；没有受控比较，不声称效果提升比例。"
+    },
+    {
+      "id": "p-reusable-assets",
+      "title": "保存工程、配置和可替换输入",
+      "basis": "single_case_lesson",
+      "case_ids": [
+        "holo-card"
+      ],
+      "source_ids": [],
+      "action": "将输入素材、配置和制作步骤分开，交付工程而不仅是效果图。",
+      "when": "需要连续制作同类型内容。",
+      "acceptance": "更换一个主体与文案，检查第二次产出是否仍能通过验收。",
+      "boundary": "第二次生成测试是编辑建议，本轮未执行；不是已经证明的一键稳定生产。"
+    },
+    {
+      "id": "p-role-boundaries",
+      "title": "写清模型、外部工具和人工分别做什么",
+      "basis": "cross_case_pattern",
+      "case_ids": [
+        "holo-card",
+        "palace-blender"
+      ],
+      "source_ids": [
+        "official-model"
+      ],
+      "action": "记录素材来源、应用工具、建模/渲染工具及人工修正，避免归因混淆。",
+      "when": "多工具工作流、教程与能力介绍。",
+      "acceptance": "读者能指出哪一步由哪个工具完成，哪些步骤依赖人。",
+      "boundary": "来源不公开的步骤保持未知；宿主产品功能不能自动归因给模型原生能力。"
+    },
+    {
+      "id": "p-versioned-evaluation",
+      "title": "对齐作品版本，按实际使用环境验收",
+      "basis": "cross_case_pattern",
+      "case_ids": [
+        "bubble-wrap",
+        "jelly-baby",
+        "verdant-forest"
+      ],
+      "source_ids": [],
+      "action": "分别记录原帖日期、当前产物版本、浏览器条件和已执行的检查。",
+      "when": "快速更新的游戏、网页、工具教程。",
+      "acceptance": "同一个版本完成核心功能、兼容性和错误检查；记录失败。",
+      "boundary": "三个案例提供版本或验证边界，不构成现成统一测评；尚未执行的检查不能写成已通过。"
+    },
+    {
+      "id": "p-long-task",
+      "title": "用阶段成果管理长任务",
+      "basis": "hypothesis",
+      "case_ids": [
+        "verdant-forest"
+      ],
+      "source_ids": [],
+      "action": "给长任务设置可交付的阶段目标与验收点，用成果决定是否继续投入。",
+      "when": "复杂场景或需要多轮改进的任务。",
+      "acceptance": "每阶段都有可查看产物、剩余问题与继续条件。",
+      "boundary": "本例不足以证明阶段管理效果；此条为编辑提出的测试方案，不能称官方或实测结论。"
+    },
+    {
+      "id": "p-official-prompt",
+      "title": "约束沟通、持续推进与测试范围",
+      "basis": "official_guidance",
+      "case_ids": [],
+      "source_ids": [
+        "official-guide"
+      ],
+      "action": "官方指南建议明确持续完成任务的期望、指令冲突处理、输出风格和与改动相称的验证范围。",
+      "when": "使用 GPT-6 Astra 执行长任务或维护有 Skill/AGENTS.md 的项目。",
+      "acceptance": "在自己的一组代表性任务上检查是否仍过早停下、误读指令或过度测试。",
+      "boundary": "这是官方建议，本期没有进行行为 A/B 测试；不能写成已证明的效率提升。"
+    },
+    {
+      "id": "p-explicit-gaps",
+      "title": "资料缺口显式保留，计算结果随输入更新",
+      "basis": "single_case_lesson",
+      "case_ids": [
+        "research-workbook"
+      ],
+      "source_ids": [],
+      "action": "为缺失的资料或费率保留明确状态；区分有来源的值、假设和公式，不用猜测填满表格。",
+      "when": "研究表格、成本估算和可更新的信息对照。",
+      "acceptance": "检查每项关键数据的来源和日期；改变一个输入，确认相关结果更新，缺失输入仍有提示。",
+      "boundary": "这是来自单篇作者测试的经验，本文未运行原工作簿；修改输入的检查是建议的验收步骤。"
+    },
+    {
+      "id": "p-comparable-evaluations",
+      "title": "固定任务与运行条件，保留复测和失败",
+      "basis": "cross_case_pattern",
+      "case_ids": [
+        "godot-effort",
+        "robot-control",
+        "signaldesk-app",
+        "arc-harness"
+      ],
+      "source_ids": [],
+      "action": "对比前记录输入、任务难度、工具、推理档位、上下文传递与验收项目；把复测结果及困难任务单列。",
+      "when": "比较模型、档位或智能体运行方式。",
+      "acceptance": "读者能判断两组结果哪些条件相同、哪些不同；失败、作者纠正和样本量不被摘要省略。",
+      "boundary": "这些来源的任务和测量方法不同，不能合并成总排名，也不能将作者展示视作本次独立复现。"
+    },
+    {
+      "id": "p-editable-production",
+      "title": "把素材整理与制作分阶段，保留可编辑工程",
+      "basis": "cross_case_pattern",
+      "case_ids": [
+        "final-cut-prep",
+        "clips55-edit",
+        "ableton-music"
+      ],
+      "source_ids": [],
+      "action": "列出已有素材、需要生成的内容和目标工程；分别检查素材导入、同步或编排，以及最终导出。",
+      "when": "剪辑、音乐编排和已有素材的再制作。",
+      "acceptance": "在目标软件中检查素材引用、时间线或轨道，并尝试替换一项素材后导出。",
+      "boundary": "分阶段验收与替换测试是编辑建议；案例作者并未都公开完整工程，不能据此承诺流程可稳定复用。"
+    }
+  ]
+}
