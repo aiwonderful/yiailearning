@@ -45,6 +45,7 @@ export const siteConfig = {
   // Navigation links
   navigation: [
     { name: '首页', href: '/' },
+    { name: 'AI变现榜单', href: '/ai-money' },
     { name: 'Loop Engineering', href: '/loop-engineer' },
     { name: '我的作品', href: '/vibe-coding' },
     { name: '资料库', href: '/resources' },
