@@ -11,7 +11,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'AI变现榜单',
-  description: '收录真实 AI 变现案例。先看成绩、经历和关键问题；完整答案可领取生财有术 3 天体验卡查看。',
+  description: '收录从零起步、经历试错后跑出结果的 AI 变现实战复盘；完整过程可领取生财有术 3 天体验卡查看。',
   alternates: { canonical: '/ai-money' },
 };
 
@@ -39,11 +39,11 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
             AI变现榜单
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-[#356158]">
-            收录真实 AI 变现案例。先看成绩、经历和关键问题；想看完整答案，再扫码进入生财有术继续研究。
+            收录从零起步、经历试错后跑出结果的 AI 变现实战复盘。先看他们怎么开始、卡在哪里、结果如何；完整过程在生财有术。
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <ExperienceCardCTA label="免费领 3 天体验卡，查看完整答案" placement="hero" />
-            <span className="text-sm text-[#356158]">扫码领取后，可查看原帖全文与更多实操案例。</span>
+            <ExperienceCardCTA label="免费领 3 天体验卡，看完整复盘" placement="hero" />
+            <span className="text-sm text-[#356158]">扫码后可解锁原帖全文与更多实战复盘。</span>
           </div>
         </div>
       </section>

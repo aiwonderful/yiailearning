@@ -80,7 +80,7 @@ export default function ExperienceCardCTA({
               <h2 id="experience-card-title" className="mt-2 font-serif text-2xl font-black text-[#20242A]">
                 扫码免费领 3 天体验卡
               </h2>
-              <p className="mt-2 text-sm leading-6 text-[#59616B]">领取后可在生财有术查看原帖全文和完整答案。</p>
+              <p className="mt-2 text-sm leading-6 text-[#59616B]">领取后可在生财有术查看原帖全文、完整复盘和更多实操案例。</p>
             </div>
             <div className="mt-5 overflow-hidden rounded-2xl border border-[#B7DED6] bg-white p-2">
               <Image
