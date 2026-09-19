@@ -49,7 +49,7 @@ export default function AiMoneyCasePage({ params }: CasePageProps) {
             {item.questions.map((question, index) => <li key={question} className="rounded-xl border border-[#DCE4DD] bg-white px-4 py-3 text-[#35424B]"><span className="mr-3 font-black text-[#067C6A]">{String(index + 1).padStart(2, '0')}</span>{question}</li>)}
           </ol>
         </section>
-        {item.quotes.length > 0 && <section className="mt-9"><h2 className="text-2xl font-black text-[#20242A]">原作者观点</h2><div className="mt-4 space-y-3">{item.quotes.map((quote) => <blockquote key={quote} className="border-l-4 border-[#18B39A] bg-[#EAF7F3] px-5 py-4 leading-7 text-[#356158]">“{quote}”</blockquote>)}</div></section>}
+        {item.quotes.length > 0 && <section className="mt-9"><h2 className="text-2xl font-black text-[#20242A]">原作者原话</h2><div className="mt-4 space-y-3">{item.quotes.map((quote) => <blockquote key={quote} className="border-l-4 border-[#18B39A] bg-[#EAF7F3] px-5 py-4 leading-7 text-[#356158]">“{quote}”</blockquote>)}</div></section>}
         <div className="mt-10 rounded-2xl border border-[#B7DED6] bg-[#EAF7F3] p-6">
           <h2 className="text-xl font-black text-[#163832]">答案在完整案例里</h2>
           <p className="mt-2 leading-7 text-[#356158]">领取生财体验卡后，可继续查看完整内容与更多实操项目。</p>
