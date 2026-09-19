@@ -43,7 +43,7 @@ export default function AiMoneyCasePage({ params }: CasePageProps) {
           {item.resultPeriod && <p className="mt-4 border-t border-white/15 pt-3 text-sm text-[#D6E9E4]">{item.resultPeriod}</p>}
         </div>
         <section className="mt-9">
-          <h2 className="text-2xl font-black text-[#20242A]">脱敏摘要</h2>
+          <h2 className="text-2xl font-black text-[#20242A]">这篇讲了什么</h2>
           <p className="mt-4 text-lg leading-8 text-[#59616B]">{item.summary}</p>
         </section>
         <section className="mt-9">
@@ -54,9 +54,10 @@ export default function AiMoneyCasePage({ params }: CasePageProps) {
         </section>
         {item.quotes.length > 0 && <section className="mt-9"><h2 className="text-2xl font-black text-[#20242A]">原作者原话</h2><div className="mt-4 space-y-3">{item.quotes.map((quote) => <blockquote key={quote} className="border-l-4 border-[#18B39A] bg-[#EAF7F3] px-5 py-4 leading-7 text-[#356158]">“{quote}”</blockquote>)}</div></section>}
         <div className="mt-10 rounded-2xl border border-[#B7DED6] bg-[#EAF7F3] p-6">
-          <h2 className="text-xl font-black text-[#163832]">答案在完整案例里</h2>
-          <p className="mt-2 leading-7 text-[#356158]">领取生财体验卡后，可继续查看完整内容与更多实操项目。</p>
-          <ExperienceCardCTA placement="detail" className="mt-5" />
+          <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#067C6A]">Full Case in Shengcai</p>
+          <h2 className="mt-2 text-xl font-black text-[#163832]">想看这 {item.questions.length} 个问题的完整答案？</h2>
+          <p className="mt-2 leading-7 text-[#356158]">扫码免费领 3 天体验卡，到生财有术查看原帖全文与实操细节。</p>
+          <ExperienceCardCTA label="扫码领 3 天体验卡，看完整答案" placement="detail" className="mt-5" />
         </div>
       </div>
     </article>

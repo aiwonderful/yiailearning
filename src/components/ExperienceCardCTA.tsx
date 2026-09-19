@@ -78,8 +78,9 @@ export default function ExperienceCardCTA({
             <div className="pr-8">
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#067C6A]">Shengcai Experience</p>
               <h2 id="experience-card-title" className="mt-2 font-serif text-2xl font-black text-[#20242A]">
-                免费领取生财 3 天体验卡
+                扫码免费领 3 天体验卡
               </h2>
+              <p className="mt-2 text-sm leading-6 text-[#59616B]">领取后可在生财有术查看原帖全文和完整答案。</p>
             </div>
             <div className="mt-5 overflow-hidden rounded-2xl border border-[#B7DED6] bg-white p-2">
               <Image
@@ -92,7 +93,7 @@ export default function ExperienceCardCTA({
             </div>
             <div className="mt-5 space-y-2 text-sm leading-6 text-[#59616B]">
               <p><span className="font-bold text-[#20242A]">电脑端：</span>打开微信扫码领取。</p>
-              <p><span className="font-bold text-[#20242A]">手机端：</span>长按保存上方图片，打开微信扫一扫，从相册选择图片。</p>
+              <p><span className="font-bold text-[#20242A]">手机端：</span>长按保存上方图片，再打开微信扫一扫，从相册选择图片。</p>
               <p className="pt-1 text-xs text-[#7B858F]">体验卡权益以生财有术实际页面为准。</p>
             </div>
           </div>

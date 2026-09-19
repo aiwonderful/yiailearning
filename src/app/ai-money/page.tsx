@@ -11,7 +11,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'AI变现榜单',
-  description: '收录真实 AI 变现案例的脱敏解读。想了解完整方法，可领取生财有术 3 天体验卡。',
+  description: '收录真实 AI 变现案例。先看成绩、经历和关键问题；完整答案可领取生财有术 3 天体验卡查看。',
   alternates: { canonical: '/ai-money' },
 };
 
@@ -39,11 +39,11 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
             AI变现榜单
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-[#356158]">
-            收录真实 AI 变现案例的脱敏解读。先看结果、背景和关键问题；完整方法与原始案例，留在生财有术里继续研究。
+            收录真实 AI 变现案例。先看成绩、经历和关键问题；想看完整答案，再扫码进入生财有术继续研究。
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <ExperienceCardCTA placement="hero" />
-            <span className="text-sm text-[#356158]">电脑扫码；手机长按保存二维码后，用微信扫一扫。</span>
+            <ExperienceCardCTA label="免费领 3 天体验卡，查看完整答案" placement="hero" />
+            <span className="text-sm text-[#356158]">扫码领取后，可查看原帖全文与更多实操案例。</span>
           </div>
         </div>
       </section>
@@ -92,7 +92,7 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
               <p className="mt-2 text-sm font-semibold text-[#067C6A]">作者 {item.author}</p>
               <p className="mt-4 flex-1 leading-7 text-[#59616B]">{item.summary}</p>
               <Link href={`/ai-money/${item.slug}`} className="mt-6 inline-flex font-bold text-[#067C6A] hover:text-[#056B5C]">
-                查看案例解读 <span aria-hidden="true">→</span>
+                看这篇讲了什么 <span aria-hidden="true">→</span>
               </Link>
             </article>
           ))}
@@ -102,7 +102,7 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#067C6A]">Editorial Review</p>
           <h2 className="mt-3 font-serif text-3xl font-black text-[#20242A]">首批案例正在审核整理</h2>
           <p className="mx-auto mt-4 max-w-xl leading-7 text-[#59616B]">
-            我们只会发布经过脱敏、事实复核并符合公开展示边界的案例解读。完整内容可先通过体验卡进入生财有术查看。
+            我们只会发布经过事实复核、适合公开阅读的案例。想看完整内容，可先领取体验卡进入生财有术查看。
           </p>
           <ExperienceCardCTA placement="list" className="mt-7" />
         </section>
@@ -112,10 +112,10 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
         <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#A9DDD1]">Continue Learning</p>
         <div className="mt-3 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <h2 className="font-serif text-3xl font-black">想看具体方法和完整案例？</h2>
-            <p className="mt-3 max-w-2xl leading-7 text-[#D6E9E4]">领取体验卡后，在生财有术中继续查看原始内容与更多项目机会。</p>
+            <h2 className="font-serif text-3xl font-black">先免费体验 3 天，再决定要不要加入</h2>
+            <p className="mt-3 max-w-2xl leading-7 text-[#D6E9E4]">原帖全文和更多实操案例都在生财有术里，扫码即可领取体验卡。</p>
           </div>
-          <ExperienceCardCTA placement="footer" className="shrink-0 bg-[#F4C971] text-[#163832] shadow-none hover:bg-[#F7D98F]" />
+          <ExperienceCardCTA label="扫码领 3 天体验卡" placement="footer" className="shrink-0 bg-[#F4C971] text-[#163832] shadow-none hover:bg-[#F7D98F]" />
         </div>
       </section>
     </div>
