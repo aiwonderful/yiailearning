@@ -89,6 +89,7 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
               <h2 className="mt-5 text-2xl font-black leading-tight text-[#20242A]">
                 <Link href={`/ai-money/${item.slug}`} className="transition hover:text-[#067C6A]">{item.title}</Link>
               </h2>
+              <p className="mt-2 text-sm font-semibold text-[#067C6A]">作者 {item.author}</p>
               <p className="mt-4 flex-1 leading-7 text-[#59616B]">{item.summary}</p>
               <Link href={`/ai-money/${item.slug}`} className="mt-6 inline-flex font-bold text-[#067C6A] hover:text-[#056B5C]">
                 查看案例解读 <span aria-hidden="true">→</span>
