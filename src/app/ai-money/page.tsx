@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import AiMoneyPageView from '@/components/AiMoneyPageView';
-import ExperienceCardCTA from '@/components/ExperienceCardCTA';
+import ExperienceCardQR from '@/components/ExperienceCardQR';
 import {
   aiMoneyTopicOptions,
   getAiMoneyTopicLabel,
@@ -33,18 +33,18 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
       <section className="relative overflow-hidden rounded-[2rem] border border-[#B7DED6] bg-[#EAF7F3] px-6 py-10 shadow-soft md:px-10 md:py-14">
         <div className="absolute -right-20 -top-24 h-72 w-72 rounded-full bg-[#18B39A]/15 blur-3xl" />
         <div className="absolute -bottom-24 left-1/4 h-52 w-52 rounded-full bg-[#F4A261]/15 blur-3xl" />
-        <div className="relative max-w-3xl">
-          <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#067C6A]">AI Money Cases</p>
-          <h1 className="mt-4 font-serif text-4xl font-black leading-tight text-[#163832] md:text-6xl">
-            AI变现榜单
-          </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-8 text-[#356158]">
-            收录从零起步、经历试错后跑出结果的 AI 变现实战复盘。先看他们怎么开始、卡在哪里、结果如何；完整过程在生财有术。
-          </p>
-          <div className="mt-8 flex flex-wrap items-center gap-4">
-            <ExperienceCardCTA label="免费领 3 天体验卡，看完整复盘" placement="hero" />
-            <span className="text-sm text-[#356158]">扫码后可解锁原帖全文与更多实战复盘。</span>
+        <div className="relative grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_22rem]">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#067C6A]">AI Money Cases</p>
+            <h1 className="mt-4 font-serif text-4xl font-black leading-tight text-[#163832] md:text-6xl">
+              AI变现榜单
+            </h1>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-[#356158]">
+              收录从零起步、经历试错后跑出结果的 AI 变现实战复盘。先看他们怎么开始、卡在哪里、结果如何；完整过程在生财有术。
+            </p>
+            <p className="mt-6 text-sm font-bold text-[#067C6A]">扫码免费体验 3 天，解锁原帖全文与更多实战复盘。</p>
           </div>
+          <ExperienceCardQR className="justify-self-center md:justify-self-end" />
         </div>
       </section>
 
@@ -104,7 +104,7 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
           <p className="mx-auto mt-4 max-w-xl leading-7 text-[#59616B]">
             我们只会发布经过事实复核、适合公开阅读的案例。想看完整内容，可先领取体验卡进入生财有术查看。
           </p>
-          <ExperienceCardCTA placement="list" className="mt-7" />
+          <ExperienceCardQR className="mx-auto mt-7 text-left" />
         </section>
       )}
 
@@ -115,7 +115,7 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
             <h2 className="font-serif text-3xl font-black">先免费体验 3 天，再决定要不要加入</h2>
             <p className="mt-3 max-w-2xl leading-7 text-[#D6E9E4]">原帖全文和更多实操案例都在生财有术里，扫码即可领取体验卡。</p>
           </div>
-          <ExperienceCardCTA label="扫码领 3 天体验卡" placement="footer" className="shrink-0 bg-[#F4C971] text-[#163832] shadow-none hover:bg-[#F7D98F]" />
+          <ExperienceCardQR variant="dark" className="shrink-0" />
         </div>
       </section>
     </div>

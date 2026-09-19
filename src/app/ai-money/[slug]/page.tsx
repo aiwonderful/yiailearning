@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AiMoneyPageView from '@/components/AiMoneyPageView';
-import ExperienceCardCTA from '@/components/ExperienceCardCTA';
+import ExperienceCardQR from '@/components/ExperienceCardQR';
 import { getAiMoneyCaseBySlug, getAiMoneyTopicLabel, getPublishedAiMoneyCases } from '@/data/ai-money';
 
 type CasePageProps = { params: { slug: string } };
@@ -57,7 +57,7 @@ export default function AiMoneyCasePage({ params }: CasePageProps) {
           <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#067C6A]">Full Case in Shengcai</p>
           <h2 className="mt-2 text-xl font-black text-[#163832]">想看这篇完整复盘和 {item.questions.length} 个问题的答案？</h2>
           <p className="mt-2 leading-7 text-[#356158]">{item.ctaCopy} 扫码免费领 3 天体验卡，即可查看原帖全文。</p>
-          <ExperienceCardCTA label="扫码领 3 天体验卡，解锁完整复盘" placement="detail" className="mt-5" />
+          <ExperienceCardQR className="mt-5" />
         </div>
       </div>
     </article>
