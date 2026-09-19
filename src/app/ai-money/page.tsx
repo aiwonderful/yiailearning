@@ -33,8 +33,8 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
       <section className="relative overflow-hidden rounded-[2rem] border border-[#B7DED6] bg-[#EAF7F3] px-6 py-10 shadow-soft md:px-10 md:py-14">
         <div className="absolute -right-20 -top-24 h-72 w-72 rounded-full bg-[#18B39A]/15 blur-3xl" />
         <div className="absolute -bottom-24 left-1/4 h-52 w-52 rounded-full bg-[#F4A261]/15 blur-3xl" />
-        <div className="relative grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_22rem]">
-          <div>
+        <div className="relative text-center">
+          <div className="mx-auto max-w-3xl">
             <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#067C6A]">AI Money Cases</p>
             <h1 className="mt-4 font-serif text-4xl font-black leading-tight text-[#163832] md:text-6xl">
               AI变现榜单
@@ -44,7 +44,7 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
             </p>
             <p className="mt-6 text-sm font-bold text-[#067C6A]">扫码免费体验 3 天，解锁原帖全文与更多实战复盘。</p>
           </div>
-          <ExperienceCardQR className="justify-self-center md:justify-self-end" />
+          <ExperienceCardQR className="mt-8" />
         </div>
       </section>
 
@@ -110,8 +110,8 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
 
       <section className="rounded-[1.75rem] bg-[#163832] px-7 py-9 text-[#F8FCFA] md:px-10">
         <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#A9DDD1]">Continue Learning</p>
-        <div className="mt-3 flex flex-col justify-between gap-6 md:flex-row md:items-end">
-          <div>
+        <div className="mt-3 flex flex-col items-center gap-6 text-center">
+          <div className="max-w-2xl">
             <h2 className="font-serif text-3xl font-black">先免费体验 3 天，再决定要不要加入</h2>
             <p className="mt-3 max-w-2xl leading-7 text-[#D6E9E4]">原帖全文和更多实操案例都在生财有术里，扫码即可领取体验卡。</p>
           </div>

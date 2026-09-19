@@ -11,7 +11,7 @@ export default function ExperienceCardQR({ className = '', variant = 'light' }: 
   return (
     <section
       aria-label="生财有术 3 天体验卡二维码"
-      className={`flex w-full max-w-[22rem] flex-col rounded-2xl border p-4 ${isDark ? 'border-white/20 bg-white/10 text-white' : 'border-[#B7DED6] bg-white/85 text-[#163832]'} ${className}`}
+      className={`mx-auto flex w-full max-w-[22rem] flex-col rounded-2xl border p-4 ${isDark ? 'border-white/20 bg-white/10 text-white' : 'border-[#B7DED6] bg-white/85 text-[#163832]'} ${className}`}
     >
       <div className="mx-auto w-full max-w-[15rem] overflow-hidden rounded-xl bg-white shadow-sm">
         <Image
