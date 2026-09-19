@@ -84,10 +84,10 @@ export default function ExperienceCardCTA({
             </div>
             <div className="mt-5 overflow-hidden rounded-2xl border border-[#B7DED6] bg-white p-2">
               <Image
-                src="/images/shengcai/experience-card-qr-crop.jpg"
-                alt="扫码领取生财有术 3 天体验卡"
-                width={380}
-                height={380}
+                src="/images/shengcai/experience-card-poster.jpg"
+                alt="生财有术 3 天体验卡完整海报，含领取二维码"
+                width={1163}
+                height={1985}
                 className="h-auto w-full rounded-xl"
               />
             </div>
