@@ -3,7 +3,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AiMoneyPageView from '@/components/AiMoneyPageView';
 import ExperienceCardQR from '@/components/ExperienceCardQR';
-import { getAiMoneyCaseBySlug, getAiMoneyTopicLabel, getPublishedAiMoneyCases } from '@/data/ai-money';
+import CaseAuthor from '@/components/CaseAuthor';
+import { getAiMoneyCaseBySlug, getAiMoneyTopicLabel, getPublishedAiMoneyCases, formatAiMoneyDate } from '@/data/ai-money';
 
 type CasePageProps = { params: { slug: string } };
 
@@ -34,7 +35,10 @@ export default function AiMoneyCasePage({ params }: CasePageProps) {
           {item.topics.map((topic) => <span key={topic} className="rounded-full bg-[#EAF7F3] px-3 py-1 text-xs font-bold text-[#067C6A]">{getAiMoneyTopicLabel(topic)}</span>)}
         </div>
         <h1 className="mt-5 font-serif text-4xl font-black leading-tight text-[#20242A] md:text-5xl">{item.title}</h1>
-        <p className="mt-3 text-sm font-bold text-[#067C6A]">作者 {item.author}</p>
+        <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-[#356158]">
+          <CaseAuthor name={item.author} avatar={item.authorAvatar} />
+          <time dateTime={item.publishedAt} className="text-xs tabular-nums">原帖发布于 {formatAiMoneyDate(item.publishedAt)}</time>
+        </div>
         <div className="mt-7 rounded-2xl bg-[#163832] p-5 text-[#F8FCFA]">
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#A9DDD1]">作者拿到的成绩</p>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">

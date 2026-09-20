@@ -1,3 +1,5 @@
+import recentCases from './ai-money-recent.json';
+
 export const aiMoneyTopicOptions = [
   { value: 'content', label: 'AI内容与流量' },
   { value: 'service', label: 'AI工具与服务' },
@@ -14,6 +16,7 @@ export type AiMoneyCase = {
   status: 'draft' | 'in_review' | 'published' | 'hidden';
   title: string;
   author: string;
+  authorAvatar?: string;
   topics: AiMoneyTopic[];
   rank: number;
   publishedAt: string;
@@ -37,12 +40,13 @@ const aiMoneyCases: AiMoneyCase[] = [
     author: '空鸣',
     topics: ['content'],
     rank: 1,
-    publishedAt: '2026-09-01',
+    publishedAt: '2026-08-31T03:49:36.000Z',
+    authorAvatar: 'https://search01.shengcaiyoushu.com/upload/avatar/FlmE6KQ3-lukHQVstwnQFNCmMb3T',
     resultLabel: '单月最高变现 6000+',
     resultPeriod: '下班后兼职，一年实操复盘',
     results: [
       { value: '6000+', label: '月最高兼职收入' },
-      { value: '700+', label: '航海期首篇稿费' },
+      { value: '700+', label: '航海期两篇短篇稿费' },
     ],
     summary: '空鸣是一名职场人，下班后拿出每周约 4 小时做 AI 小说。航海期间，她用两篇短篇拿到 700+ 稿费，也把一本长篇做到首月 3000+。市场变化后，她一度连续多篇不过稿；摸索一年后，重新稳定每月写几篇，兼职收入做到 2000 至 6000 元。',
     ctaCopy: '她把从首个结果、连续不过稿到重新跑通的完整复盘，写进了生财精华帖。',
@@ -66,7 +70,8 @@ const aiMoneyCases: AiMoneyCase[] = [
     author: '绿子',
     topics: ['service'],
     rank: 2,
-    publishedAt: '2026-08-10',
+    publishedAt: '2026-07-21T09:19:08.000Z',
+    authorAvatar: 'https://search01.shengcaiyoushu.com/upload/avatar/FmZWGiu-XIuVP8wO8aCG7IRO5Old',
     resultLabel: '团队月销售额 20万+',
     resultPeriod: '从职场转向 AI 业务的一年',
     results: [
@@ -96,11 +101,12 @@ const aiMoneyCases: AiMoneyCase[] = [
     author: 'Logan',
     topics: ['product'],
     rank: 3,
-    publishedAt: '2026-08-28',
+    publishedAt: '2026-08-27T06:30:38.000Z',
+    authorAvatar: 'https://search01.shengcaiyoushu.com/upload/avatar/FqdCmOJoaRck2bSy2zZdPft9_xW7',
     resultLabel: '2 周变现接近 2 万',
     resultPeriod: '项目上线后的两周验证期',
     results: [
-      { value: '2万', label: '两周项目收入' },
+      { value: '近2万元', label: '两周项目收入' },
       { value: '8000元', label: '单笔服务收入' },
     ],
     summary: 'Logan 做过产品，却一直卡在“想把一个想法做成产品、却不会写代码”。他从自己真实的社交展示困扰出发，做了一款只解决一个问题的轻量工具。上线两周，项目收入接近 2 万元；从有人咨询到真正付费，他也不断调整产品是否足够简单、交付是否能接住。',
@@ -126,7 +132,8 @@ const aiMoneyCases: AiMoneyCase[] = [
     author: '年轻人',
     topics: ['service', 'automation'],
     rank: 4,
-    publishedAt: '2026-07-25',
+    publishedAt: '2026-07-13T10:58:51.000Z',
+    authorAvatar: 'https://search01.shengcaiyoushu.com/upload/avatar/FtZA1PgybKKIWWog8AsXn2HKJf1D',
     resultLabel: '25 天变现 5100 元',
     resultPeriod: '25 天内完成首批客户交付',
     results: [
@@ -156,7 +163,8 @@ const aiMoneyCases: AiMoneyCase[] = [
     author: '尹星河',
     topics: ['content', 'product', 'automation'],
     rank: 5,
-    publishedAt: '2026-07-10',
+    publishedAt: '2026-06-25T14:07:06.000Z',
+    authorAvatar: 'https://search01.shengcaiyoushu.com/upload/avatar/FqTYfWfedJOuVOdMt07pZTQfe55J',
     resultLabel: '上线十余天充值 1万+',
     resultPeriod: '两周开发，十余天首轮付费',
     results: [
@@ -182,9 +190,13 @@ const aiMoneyCases: AiMoneyCase[] = [
 ];
 
 export function getPublishedAiMoneyCases() {
-  return aiMoneyCases
+  return [...aiMoneyCases, ...(recentCases as AiMoneyCase[])]
     .filter((item) => item.status === 'published')
-    .sort((a, b) => a.rank - b.rank || Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
+    .sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt) || a.slug.localeCompare(b.slug));
+}
+
+export function formatAiMoneyDate(publishedAt: string) {
+  return new Intl.DateTimeFormat('zh-CN', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(publishedAt));
 }
 
 export function getAiMoneyCaseBySlug(slug: string) {

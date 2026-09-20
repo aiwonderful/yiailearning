@@ -2,10 +2,12 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import AiMoneyPageView from '@/components/AiMoneyPageView';
 import ExperienceCardQR from '@/components/ExperienceCardQR';
+import CaseAuthor from '@/components/CaseAuthor';
 import {
   aiMoneyTopicOptions,
   getAiMoneyTopicLabel,
   getPublishedAiMoneyCases,
+  formatAiMoneyDate,
   type AiMoneyTopic,
 } from '@/data/ai-money';
 
@@ -50,7 +52,7 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
       <section className="flex flex-col justify-between gap-5 rounded-2xl border border-subtle/80 bg-card-light/85 p-5 shadow-soft dark:border-white/10 dark:bg-card-dark/85 md:flex-row md:items-center">
         <div>
           <p className="text-sm font-bold text-[#163832] dark:text-white">按你关心的方向筛选</p>
-          <p className="mt-1 text-sm text-secondary">{visibleCases.length} 篇案例 · 按精选顺序展示</p>
+          <p className="mt-1 text-sm text-secondary">{visibleCases.length} 篇案例 · 按原帖发布时间从新到旧</p>
         </div>
         <div className="flex flex-wrap gap-2" aria-label="案例主题筛选">
           <Link
@@ -82,7 +84,11 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
                 <span className={`pt-1 font-mono text-xl font-bold tabular-nums ${index < 3 ? 'text-[#067C6A]' : 'text-[#6B7971]'}`}>{String(index + 1).padStart(2, '0')}</span>
                 <div className="min-w-0">
                   <h2 className="text-lg font-bold leading-7 text-[#202F28] group-hover:text-[#067C6A]">{item.title}</h2>
-                  <div className="mt-2 flex flex-wrap items-center gap-2 text-sm text-[#53665C]"><span className="mr-1 font-semibold">{item.author}</span>{item.topics.map((topic) => <span key={topic} className="rounded-md bg-[#EAF2EC] px-2 py-0.5 text-xs text-[#356158]">{getAiMoneyTopicLabel(topic)}</span>)}</div>
+                  <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-[#53665C]">
+                    <CaseAuthor name={item.author} avatar={item.authorAvatar} />
+                    <time dateTime={item.publishedAt} className="text-xs tabular-nums">原帖 {formatAiMoneyDate(item.publishedAt)}</time>
+                    {item.topics.map((topic) => <span key={topic} className="rounded-md bg-[#EAF2EC] px-2 py-0.5 text-xs text-[#356158]">{getAiMoneyTopicLabel(topic)}</span>)}
+                  </div>
                   <p className="mt-2 line-clamp-2 text-base leading-7 text-[#59675F]">{item.summary}</p>
                 </div>
                 <div className="col-start-2 flex items-center justify-between gap-3 border-t border-[#DCE8DF] pt-3 md:col-start-3 md:row-start-1 md:flex-col md:items-end md:justify-center md:border-l md:border-t-0 md:pl-4 md:pt-0 md:text-right">
