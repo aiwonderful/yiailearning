@@ -1,5 +1,35 @@
 [
   {
+    "slug": "ai-commerce-team-efficiency",
+    "status": "published",
+    "title": "一天看几百条视频仍选不出品，他用 AI 改造了电商团队",
+    "author": "Mr.Zhao",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FrWoSlRRSsYwsnE5IJF3ZZWsYxzl",
+    "topics": [
+      "automation"
+    ],
+    "rank": 31,
+    "publishedAt": "2026-09-14T02:56:06.000Z",
+    "resultLabel": "5倍以上 · 作者自述素材分析效率",
+    "results": [
+      {
+        "value": "5倍以上",
+        "label": "作者自述素材分析效率，非收入增幅"
+      }
+    ],
+    "summary": "迪伟做过互联网产品经理，后来从事电商。过去一天看几百条视频，也未必能找到合适的商品；利润空间变小后，人效成了现实难题。今年，他尝试用 AI 改造原有业务，素材分析效率据其自述达到人工的五倍以上。复盘中，他同时展示了测试成功和失败的产品，以及团队仍需面对的判断。",
+    "ctaCopy": "他把电商团队改造前后的变化、真实测试中的成败，以及哪些事情仍需要人来判断，写进了生财精华帖。",
+    "questions": [
+      "业务已经跑过，为什么重新开始时还要改造团队？",
+      "让 AI 做了更多工作后，人的时间用在了哪里？",
+      "一次测品失败，怎样判断问题到底出在哪里？",
+      "这类改造适合什么业务，又需要哪些前提？"
+    ],
+    "quotes": [
+      "并不是多招一个人，马上就能多出一份有效产出。"
+    ]
+  },
+  {
     "slug": "ai-digital-products-monthly-profit",
     "status": "published",
     "title": "做虚拟资料一年，单月到手利润接近 10 万",
