@@ -1,4 +1,35 @@
 [
+{
+  "slug": "ai-video-editing-commission",
+  "status": "published",
+  "title": "B站好物单月佣金 5 位数，他把一条视频剪辑从 20 小时压到 30 分钟",
+  "author": "Mia 米娅",
+  "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FrS3vjecq1u4shsD0Ydt99Aki6IR",
+  "topics": [
+    "content",
+    "automation"
+  ],
+  "rank": 32,
+  "publishedAt": "2026-09-22T03:32:29.000Z",
+  "resultLabel": "5 位数 · 单月商单和佣金",
+  "results": [
+    {
+      "value": "5 位数",
+      "label": "单月商单和佣金，原文未拆分"
+    }
+  ],
+  "summary": "Mia 米娅分享了一位 B 站好物创作者的复盘：过去一条十分钟视频，从录音到导出，剪辑常常要花二十小时；后来他把重复环节交给 AI，自己只做最后三十分钟终审。矩阵账号覆盖数码、家电家居，也与多个品牌合作，单月商单和佣金达到五位数。",
+  "ctaCopy": "这篇精华帖写下了他如何从剪辑瓶颈走到稳定交付，也保留了自动化之后仍要人工检查的部分。",
+  "questions": [
+    "一条视频为什么会把前面的选题和文案都卡住？",
+    "重复剪辑交给 AI 后，最后还需要人工确认什么？",
+    "带货视频的效率提升，怎样才不会牺牲内容质量？",
+    "从单条视频到矩阵账号，哪些经验值得继续观察？"
+  ],
+  "quotes": [
+    "我不需要更努力地剪，我需要让会写代码的 AI，把剪辑这件事整个替我做掉。"
+  ]
+},
   {
     "slug": "ai-commerce-team-efficiency",
     "status": "published",
