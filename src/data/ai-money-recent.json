@@ -31,6 +31,35 @@
   ]
 },
   {
+    "slug": "enterprise-ai-course-delivery",
+    "status": "published",
+    "title": "做了十几年 ToB 服务后，他把一门课程开发从 3 人月缩到 3 天",
+    "author": "安与宁",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FrDIgDmgA6LFFhIOLPFrMooHWUdC",
+    "topics": [
+      "service",
+      "automation"
+    ],
+    "rank": 33,
+    "publishedAt": "2026-09-21T08:05:12.000Z",
+    "resultLabel": "3 天 · 单门课程开发周期",
+    "results": [
+      {
+        "value": "3 天",
+        "label": "单门课程的开发周期；此前传统方式至少 3 人月（作者自述）"
+      }
+    ],
+    "summary": "安与宁长期做 ToB 服务，历经云计算、政务和学校客户项目。开始尝试企业 AI 服务时，他仍担心客户预期、交付成本和团队承载。四月接下教育客户后，项目经历多轮调整；到八月，一门课程从传统方式至少需要三人月，变为三天完成。之后，他在外贸客户服务中也遇到效果不稳定的情况。",
+    "ctaCopy": "他把首个教育客户从磨合到交付的经历，以及外贸客户服务中仍不稳定的结果，写进了这篇生财精华帖。",
+    "questions": [
+      "有多年 ToB 服务经验，为什么转向企业 AI 项目时仍要重新摸索？",
+      "首个教育客户的项目，前后经历了哪些变化才看到效果？",
+      "课程开发周期缩短后，怎样判断交付质量是否过关？",
+      "外贸客户的询盘效果不稳定时，这类服务该如何评估？"
+    ],
+    "quotes": []
+  },
+  {
     "slug": "ai-commerce-team-efficiency",
     "status": "published",
     "title": "一天看几百条视频仍选不出品，他用 AI 改造了电商团队",
