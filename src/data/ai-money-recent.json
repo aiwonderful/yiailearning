@@ -1005,5 +1005,38 @@
       "使用 AI 协助内容生产时，哪些判断仍需要自己负责？"
     ],
     "quotes": []
+  },
+  {
+    "slug": "ai-game-steam-revenue",
+    "status": "published",
+    "title": "两个月用 AI 做出三款 Steam 游戏，第三款卖出 2500 多份",
+    "author": "小灰",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fp-NMGYB58NxKMbYJViFhwLA7F-k",
+    "topics": [
+      "product",
+      "automation"
+    ],
+    "rank": 40,
+    "publishedAt": "2026-09-20T05:41:06.000Z",
+    "resultLabel": "2500 多份 · 第三款游戏销量；净营收约 3369 美元",
+    "results": [
+      {
+        "value": "2500 多份",
+        "label": "第三款游戏销量"
+      },
+      {
+        "value": "3369 美元",
+        "label": "Steam 净营收"
+      }
+    ],
+    "summary": "程序员小灰想验证 AI 能否做出可商业化的游戏，用两个月做了三款并上架 Steam。前两款反响平平，第三款放置游戏《无为修仙传》卖出 2500 多份，净营收约 3369 美元。成绩还称不上爆款，却让他看到个人开发走向真实收入的可能；后续仍要持续投入时间迭代。",
+    "ctaCopy": "小灰把从方向选择、游戏反馈，到成本和投入取舍的探索过程，写进了生财精华帖。",
+    "questions": [
+      "前两次反响一般后，他为什么继续尝试？",
+      "第三款游戏表现不同后，他如何看待 AI 在开发中的边界？",
+      "销量之外，上架平台和持续维护还带来哪些投入？",
+      "一款游戏有了早期销量，怎样判断它能否持续？"
+    ],
+    "quotes": []
   }
 ]
