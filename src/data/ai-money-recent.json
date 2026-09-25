@@ -937,5 +937,39 @@
     "quotes": [
       "AI 降低了视频制作门槛，但图书带货依旧离不开选品、内容、耐心。"
     ]
+  },
+  {
+    "slug": "ai-game-guide-site-first-ad-revenue",
+    "status": "published",
+    "title": "他用 AI 做出 160 页游戏攻略站，9 天广告收入 1.37 美元",
+    "author": "林广恩",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fgbjt2o88_NyoJGT_wqFPXkfbSGC",
+    "topics": [
+      "content",
+      "overseas"
+    ],
+    "rank": 38,
+    "publishedAt": "2026-09-11T15:27:24.000Z",
+    "resultLabel": "1.37 美元 · 9 天广告收入（早期样本）",
+    "resultPeriod": "2026 年 8 月 23 日至 31 日",
+    "results": [
+      {
+        "value": "1.37 美元",
+        "label": "广告上线约 9 天累计收入；早期小样本"
+      },
+      {
+        "value": "160 页",
+        "label": "攻略站页面，覆盖四种语言"
+      }
+    ],
+    "summary": "林广恩用 Fields of Mistria 做了第一座游戏攻略站 MistriaFans，逐步扩展到四种语言、160 个页面。广告上线后，9 天获得 1,082 次展示、收入 1.37 美元。数据仍是小样本，不能说明稳定盈利；但网站已有可核对的广告收入，他也开始根据搜索和广告数据调整方向。",
+    "ctaCopy": "他把游戏攻略站从初次上线、出现搜索流量，到获得第一笔广告收入的复盘，以及仍待验证的问题，写进了生财精华帖。",
+    "questions": [
+      "做出一批页面之后，怎样判断游戏攻略站是否真的开始获得搜索流量？",
+      "网站有了展示和点击，距离广告变现还有多远？",
+      "第一笔广告收入出现后，怎样看待样本量很小的早期数据？",
+      "哪些信号能帮助内容站决定继续投入还是调整方向？"
+    ],
+    "quotes": []
   }
 ]
