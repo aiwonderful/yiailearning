@@ -971,5 +971,39 @@
       "哪些信号能帮助内容站决定继续投入还是调整方向？"
     ],
     "quotes": []
+  },
+  {
+    "slug": "ai-wechat-sticker-traffic-income",
+    "status": "published",
+    "title": "公众号贴图单日获 380 万阅读、流量主收入 2585 元",
+    "author": "新天",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fs2-9C2UrgAWXefqqjGXHRS-PlhL",
+    "topics": [
+      "content",
+      "automation"
+    ],
+    "rank": 39,
+    "publishedAt": "2026-09-23T12:27:33.000Z",
+    "resultLabel": "2585.83 元 · 单日流量主收入",
+    "resultPeriod": "两篇贴图同日的阶段性结果",
+    "results": [
+      {
+        "value": "2585.83元",
+        "label": "单日公众号流量主收入，非日常收入"
+      },
+      {
+        "value": "380.2万",
+        "label": "两篇公众号贴图同日阅读量"
+      }
+    ],
+    "summary": "新天有多年外贸经历，离职后重新做公众号，逐渐转向贴图内容。半年摸索中，两篇贴图曾在同一天获得 380.2 万阅读，流量主收入 2585.83 元。他把 AI 和 Skill 用于内容提效，同时强调选题与成稿仍需自己把关；这只是单日结果，不代表稳定日收入。",
+    "ctaCopy": "他把从外贸工作转向公众号、内容方向调整和爆发数据出现后的复盘，写进了这篇生财精华帖。",
+    "questions": [
+      "离开熟悉的外贸工作后，他为什么重新开始做公众号？",
+      "从长文章转向贴图内容的过程中，项目经历了哪些变化？",
+      "单日阅读和收入达到峰值，能否说明内容项目已经稳定？",
+      "使用 AI 协助内容生产时，哪些判断仍需要自己负责？"
+    ],
+    "quotes": []
   }
 ]
