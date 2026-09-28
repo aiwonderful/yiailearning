@@ -1066,5 +1066,71 @@
       "小程序开始有人付费后，下一步增长会遇到什么问题？"
     ],
     "quotes": []
+  },
+  {
+    "slug": "ai-service-business-halfyear-100k-profit",
+    "status": "published",
+    "title": "若宇入圈半年，用 AI 相关业务实现 10 万元净利润",
+    "author": "若宇",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FtbKj83XCzoIeoIUl6nlobzFW7wu",
+    "topics": [
+      "service",
+      "automation"
+    ],
+    "rank": 42,
+    "publishedAt": "2026-09-26T10:34:40.000Z",
+    "resultLabel": "半年净利润超 10 万元",
+    "results": [
+      {
+        "value": "10 万元以上",
+        "label": "半年 AI 相关业务实际净利润"
+      },
+      {
+        "value": "22,000 元",
+        "label": "AI 获客系统合同总额已全额收款"
+      }
+    ],
+    "summary": "刚退伍时，若宇和战友合伙投资亏了 4 万多，后来做过健身教练、跑过外卖。接触 AI 后，他从体验服务、内容尝试和小额脚本订单做起，逐步接到企业客户；其中一笔美业获客系统合同收齐 2.2 万元。入圈半年，他的 AI 相关业务净利润超过 10 万元，也开始独立开发小程序。",
+    "ctaCopy": "若宇把从合伙亏损、跑外卖到逐步接下企业 AI 项目的经历，以及多种业务尝试中的得失，写进了这篇半年复盘。",
+    "questions": [
+      "没有技术背景时，若宇是怎样从零散的小需求开始接单的？",
+      "一笔最初从培训咨询开始的沟通，后来为什么转成企业项目？",
+      "半年净利润的口径如何核算，不同业务带来了哪些变化？",
+      "从零散订单到复购与转介绍，他经历了什么转折？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-subject-cards-wechat-20-day-revenue",
+    "status": "published",
+    "title": "AI 学科知识卡片结合公众号，20 天变现超 1 万元",
+    "author": "心海的猫",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FrElAOQMxqQh6wLRodmteprxQid3",
+    "topics": [
+      "product",
+      "content"
+    ],
+    "rank": 43,
+    "publishedAt": "2026-09-25T14:41:12.000Z",
+    "resultLabel": "20 天累计变现超 1 万元",
+    "results": [
+      {
+        "value": "1 万元以上",
+        "label": "20 天累计变现收入（店铺销售+私域）"
+      },
+      {
+        "value": "883 人",
+        "label": "公众号新增关注"
+      }
+    ],
+    "summary": "此前经历两次产品下架后，心海的猫重新围绕学科资料寻找方向。8 月，她尝试用 AI 制作初中英语知识卡片并在店铺销售，也把实操经历写进公众号。20 天内，公众号新增 883 位关注，店铺销售与私域服务累计变现超过 1 万元。她从这次尝试中看到，内容和产品可以共同积累。",
+    "ctaCopy": "她记录了平台规则变化后的重新选择，以及知识卡片逐步出单、公众号带来咨询和后续服务成交的过程。",
+    "questions": [
+      "产品接连下架后，她为什么把重点转回学科资料？",
+      "新一轮产品尝试开始后，最早的反馈和收入是怎样出现的？",
+      "公众号内容怎样连接到商品、教程和陪跑需求？",
+      "这次 20 天变现包含哪些收入，统计口径是什么？"
+    ],
+    "quotes": []
   }
 ]
