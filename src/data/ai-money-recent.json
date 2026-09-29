@@ -1132,5 +1132,34 @@
       "这次 20 天变现包含哪些收入，统计口径是什么？"
     ],
     "quotes": []
+  },
+  {
+    "slug": "ai-coding-gym-miniapp-first-project",
+    "status": "published",
+    "title": "00 后用 AI 编程完成首个商业小程序，商定开发费 7000 元",
+    "author": "不知名的上仙",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FieEMYwI6fKsetUqhCZaNSiRDgDz",
+    "topics": [
+      "service",
+      "product"
+    ],
+    "rank": 44,
+    "publishedAt": "2026-09-26T09:55:34.000Z",
+    "resultLabel": "7000 元 · 双方最初商定的开发技术费",
+    "results": [
+      {
+        "value": "7000 元",
+        "label": "双方最初商定的项目开发技术费；原文未说明是否已收款"
+      }
+    ],
+    "summary": "00 后的“不知名的上仙”参加 AI 编程航海后，先尝试内容和知识产品，却没有取得明显收入。后来，他接下健身房小程序定制项目，面对需求遗漏和备案延期等波折。项目经过调整后最终上线，双方最初商定的开发技术费为 7000 元；原帖没有说明这笔费用是否已收款。",
+    "ctaCopy": "他记录了从第一次把 AI 编程用于真实商业项目，到应对交付波折并让小程序上线的经历。",
+    "questions": [
+      "没有商业开发案例时，他如何争取到第一个真实项目？",
+      "项目中途发现需求遗漏后，交付遇到了哪些考验？",
+      "产品完成开发后，为什么还不能马上上线？",
+      "从练习项目到真实交付，他对 AI 编程的认识发生了什么变化？"
+    ],
+    "quotes": []
   }
 ]
