@@ -1161,5 +1161,65 @@
       "从练习项目到真实交付，他对 AI 编程的认识发生了什么变化？"
     ],
     "quotes": []
+  },
+  {
+    "slug": "ai-original-ppt-store-monthly-50k",
+    "status": "published",
+    "title": "五家店铺被封后转向 AI 原创，单店单月收入 5 万",
+    "author": "尹星河",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FqTYfWfedJOuVOdMt07pZTQfe55J",
+    "topics": [
+      "product",
+      "automation"
+    ],
+    "rank": 45,
+    "publishedAt": "2026-09-29T11:24:20.000Z",
+    "resultLabel": "5 万元 · 单店单月收入（原文未说明利润口径）",
+    "results": [
+      {
+        "value": "5 万元",
+        "label": "开学季单店单月收入，原文未说明是否扣除成本"
+      }
+    ],
+    "summary": "尹星河团队做小红书虚拟产品两年多，五家经营多年的店铺因平台治理接连被封，原有业务突然中断。团队调整方向，开始尝试用 AI 做原创产品。经过两个多月重建，赶上开学季后，单个店铺单月收入达到 5 万元。原帖没有说明这笔收入是否扣除了成本。",
+    "ctaCopy": "这篇复盘记录了团队从原有业务受挫、重新调整，到 AI PPT 产品出现销售结果的经历。",
+    "questions": [
+      "五家店铺接连被封后，团队如何决定下一步方向？",
+      "转向原创产品后，团队如何面对市场需求与成本压力？",
+      "开学季带来的销售结果，之后能否延续？",
+      "从店铺销售到定制需求，团队的业务发生了哪些变化？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-one-person-company-first-year-six-figures",
+    "status": "published",
+    "title": "文科生毕业一年，靠 AI 相关业务累计变现六位数",
+    "author": "乔川",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FtAyAb2MvWI7YQuVQzyv6BRFfdhr",
+    "topics": [
+      "service",
+      "automation"
+    ],
+    "rank": 46,
+    "publishedAt": "2026-09-28T05:31:37.000Z",
+    "resultLabel": "六位数 · 毕业一年 AI 相关业务累计变现",
+    "results": [
+      {
+        "value": "六位数",
+        "label": "毕业一年 AI 相关业务累计变现；原文未拆分收入与利润"
+      }
+    ],
+    "summary": "乔川是 02 年文科生，刚接触 AI 时曾因缺乏判断而在建模比赛中失利。毕业后，他先在已有业务中承担操盘工作，随后转向 AI 定制服务与自营产品。一年间，他从不会写代码走到 AI 相关业务累计变现六位数，也开始经营自己的 AI 一人公司。",
+    "ctaCopy": "他把从学生时期的 AI 失利，到尝试操盘、定制服务和经营自营盘的成长过程，写进这篇长复盘。",
+    "questions": [
+      "没有技术背景时，他怎样找到 AI 与真实业务的连接点？",
+      "从承担一个业务环节到提供定制服务，过程中遇到了什么转折？",
+      "一年累计变现六位数，包含了哪些不同阶段的业务？",
+      "当服务经验逐渐变多后，他为什么开始尝试经营自营产品？"
+    ],
+    "quotes": [
+      "AI 把我的能力放大了，也把我的无知一起放大了。"
+    ]
   }
 ]
