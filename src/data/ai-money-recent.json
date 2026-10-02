@@ -1254,5 +1254,38 @@
       "广告客户愿意继续购买，说明这个小站提供了什么价值？"
     ],
     "quotes": []
+  },
+  {
+    "slug": "college-student-ai-matlab-codex-400k-revenue",
+    "status": "published",
+    "title": "休学做 AI+MATLAB 服务、毕业试 Codex 教学，累计收入约 40 万",
+    "author": "都督",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FnpFdotD0Yz_lYQIgfdovow2IGvW",
+    "topics": [
+      "service",
+      "product"
+    ],
+    "rank": 48,
+    "publishedAt": "2026-09-30T12:13:58.000Z",
+    "resultLabel": "约 40 万元 · 多段 AI 相关业务累计收入",
+    "results": [
+      {
+        "value": "约 40 万元",
+        "label": "AI+MATLAB 服务、产品尝试和 Codex 教学等业务累计收入（作者自述，非利润）"
+      },
+      {
+        "value": "约 1 万元",
+        "label": "Codex 一对一教学收入，毕业后暑假阶段性测试"
+      }
+    ],
+    "summary": "都督从 2023 年接触 AI，后来休学做 AI 编程与 MATLAB 服务，并组建工作室；复学后，他又尝试把服务经验做成产品。毕业后，他用一个暑假测试 Codex 一对一教学，收入约 1 万元。几段经历合计约 40 万元收入，但产品尝试尚未带来收入，他开始重新审视业务方向与长期积累。",
+    "ctaCopy": "他记录了从 AI+MATLAB 服务、复学尝试产品到 Codex 教学的经历，也复盘了短期收入与长期积累之间的取舍。",
+    "questions": [
+      "休学做服务、复学做产品，再到 Codex 教学，他每次转向的原因是什么？",
+      "AI 帮人提高效率后，客户真正愿意为什么结果付费？",
+      "把服务经验做成产品时，哪些期待没有变成收入？",
+      "从眼前收入到长期积累，他开始怎样重新看待一门生意的价值？"
+    ],
+    "quotes": []
   }
 ]
