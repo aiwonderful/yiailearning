@@ -1,5 +1,41 @@
 [
 {
+  "slug": "ai-wechat-sticker-first-ad-revenue",
+  "status": "published",
+  "title": "公众号贴图号开局 3 天，单篇阅读 12.9 万、单日广告收入 124.76 元",
+  "author": "若宇",
+  "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FtbKj83XCzoIeoIUl6nlobzFW7wu",
+  "topics": [
+    "content",
+    "automation"
+  ],
+  "rank": 42,
+  "publishedAt": "2026-10-01T20:14:27.000Z",
+  "resultLabel": "12.9万 · 单篇阅读；124.76元 · 单日广告收入",
+  "results": [
+    {
+      "value": "129,050",
+      "label": "开航第 3 天单篇阅读量"
+    },
+    {
+      "value": "124.76元",
+      "label": "单日流量主广告收入"
+    }
+  ],
+  "summary": "若宇此前做过 YouTube 短视频并开通过创收，但第一次尝试公众号图文时，对平台仍是新手。参加航海第 3 天，一篇内容达到 12.9 万阅读，一周内又有 7 篇过万，单日广告收入超过 100 元。随后账号收到不良信息提醒，推荐流量骤降；他重新审视内容质量，也把纯自动化调整为 AI 辅助、人工把关。",
+  "ctaCopy": "他把从快速起量、账号告警到重新检查内容质量的经历，以及 AI 辅助创作中仍需人工判断的部分，写进了生财精华帖。",
+  "questions": [
+    "没有公众号经验，第一次尝试后多久看到阅读和收入结果？",
+    "单篇冲到十万阅读后，账号遇到了什么变化？",
+    "流量突然下滑时，他怎样重新审视内容质量？",
+    "把 AI 用在内容生产中，哪些判断仍然交给人？",
+    "一次爆款里的偶然和可复用经验，应该如何区分？"
+  ],
+  "quotes": [
+    "我把流水线搭得再顺畅，如果产出来的全是让读者感到被糊弄的套路废话，那这件事从一开始就是错的。"
+  ]
+},
+{
   "slug": "ai-video-editing-commission",
   "status": "published",
   "title": "B站好物单月佣金 5 位数，他把一条视频剪辑从 20 小时压到 30 分钟",
