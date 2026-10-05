@@ -1,5 +1,64 @@
 [
 {
+  "slug": "ai-saas-first-batch-orders",
+  "status": "published",
+  "title": "做过六七个 AI 站后，他终于为一款 SaaS 跑出首批订单",
+  "author": "亿豪",
+  "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FlnA3fst2OvSlQ5jRZlYoA01fX5F",
+  "topics": [
+    "product",
+    "service"
+  ],
+  "rank": 49,
+  "publishedAt": "2026-10-03T15:08:10.000Z",
+  "resultLabel": "首批订单 · 一款 AI SaaS 的真实成交",
+  "results": [
+    {
+      "value": "首批订单",
+      "label": "聚焦一款 AI SaaS 持续推进约 3 个月后获得的成交；原文未披露数量与金额"
+    }
+  ],
+  "summary": "亿豪做过多个项目，也陆续上线六七个 AI 站点，却一直没有把一个产品推进到真实成交。学习 AI 编程课程后，他把精力重新放到一款 SaaS 上，持续打磨约三个月，终于跑出首批订单。这次反馈让他看到，产品上线只是开始；在复盘中，他也把后续关注点放到用户反馈与实际付费上。",
+  "ctaCopy": "他把从反复启动到聚焦一款产品、终于跑出首批订单的经历，写进了生财精华帖。",
+  "questions": [
+    "连续做过多个产品，却迟迟没有成交，卡点可能在哪？",
+    "从产品上线到首批付费订单，最难熬的阶段是什么？",
+    "第一批用户出现后，怎样判断产品是否真的解决了需求？",
+    "一个 AI 产品还在早期时，除了访问量还能看什么反馈？",
+    "什么时候该继续打磨，什么时候该重新选择方向？"
+  ],
+  "quotes": []
+},
+{
+  "slug": "ai-self-media-two-accounts-sponsorship-200k",
+  "status": "published",
+  "title": "从知识付费和电商转向 AI 自媒体，她的两个账号单月商单收入 20 万+",
+  "author": "年轻朋友阿甜",
+  "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FitYRlrLrsFh8sGuFf1MbpXOAKk_",
+  "topics": [
+    "content"
+  ],
+  "rank": 50,
+  "publishedAt": "2026-10-03T01:18:35.000Z",
+  "resultLabel": "20万+ · 9 月两账号商单收入",
+  "results": [
+    {
+      "value": "20万+",
+      "label": "2026 年 9 月两个 AI 自媒体账号的商单收入；含未结算合作，不代表利润"
+    }
+  ],
+  "summary": "阿甜做过自媒体、知识付费和义乌电商，也曾在 AI 内容方向摸索。重新找准内容主线后，她把过往经验带进 AI 自媒体，两个账号逐渐获得品牌关注。2026 年 9 月，两账号商单收入超过 20 万元，仍有合作未结算。这次增长远超她此前多年的自媒体收入，也让她回头梳理转型过程。",
+  "ctaCopy": "她把从早期自媒体尝试、几次转向到 AI 内容商单增长的经历，写进了生财精华帖。",
+  "questions": [
+    "过去积累的自媒体经验，怎样接上新的 AI 内容方向？",
+    "两个账号分别经历了怎样的转型，才开始获得品牌关注？",
+    "品牌合作从询问到商单收入，中间发生了什么变化？",
+    "单月收入里还有未结算合作时，应该怎样理解这组成绩？",
+    "一次高收入月份，能说明这个方向已经稳定了吗？"
+  ],
+  "quotes": []
+},
+{
   "slug": "ai-wechat-sticker-first-ad-revenue",
   "status": "published",
   "title": "公众号贴图号开局 3 天，单篇阅读 12.9 万、单日广告收入 124.76 元",
