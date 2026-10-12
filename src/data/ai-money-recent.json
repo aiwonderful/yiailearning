@@ -1,4 +1,71 @@
 [
+  {
+    "slug": "ai-knowledge-drawing-workbench-renewals",
+    "status": "published",
+    "title": "聚焦知识手绘后，他的 AI 教辅工作台已有 185 人续费",
+    "author": "泽言",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FiAigUo_uWGfGv_I9M_BmS93SUWU",
+    "topics": [
+      "product",
+      "service"
+    ],
+    "rank": 51,
+    "publishedAt": "2026-10-09T08:15:01.000Z",
+    "resultLabel": "约 1,200 人使用 · 185 人续费",
+    "results": [
+      {
+        "value": "约 1,200 人",
+        "label": "知识手绘工作台使用人数，作者自述约数"
+      },
+      {
+        "value": "185 人",
+        "label": "作者在帖子摘要披露的续费人数"
+      }
+    ],
+    "summary": "泽言起初做了一款功能繁多的 AI 教辅工具，用户常常不清楚该如何使用。他回看使用反馈后，逐步收窄方向，留下知识手绘这个需求，并持续打磨产品体验。到发帖时，工作台约有 1,200 名使用者，185 人续费；这些数据让他看到了垂直工具的付费需求。",
+    "ctaCopy": "他把从功能繁多、用户反馈不佳到聚焦一个具体需求，并获得续费反馈的产品经历，写进了生财精华帖。",
+    "questions": [
+      "功能越做越多，用户却不清楚怎么用，产品该如何调整？",
+      "一个 AI 工具先做全能平台，还是先解决一个明确需求？",
+      "用户愿意续费，能说明产品价值已经验证到什么程度？",
+      "使用体验不稳定时，怎样判断应该继续优化还是换方向？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "x-ai-content-account-six-figure-revenue",
+    "status": "published",
+    "title": "从技术分享转向 AI 内容，他的 X 账号半年涨至 5.1 万粉并实现六位数收入",
+    "author": "黄小木",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FqzzTJAhbIqE4gs3KqkkJ8eOOFCL",
+    "topics": [
+      "content"
+    ],
+    "rank": 52,
+    "publishedAt": "2026-10-04T07:46:03.000Z",
+    "resultLabel": "约 5.1 万粉 · 半年直接及间接盈利数十万元",
+    "resultPeriod": "X 账号经营约半年",
+    "results": [
+      {
+        "value": "约 5.1 万",
+        "label": "半年账号粉丝数，作者自述"
+      },
+      {
+        "value": "数十万元",
+        "label": "半年直接及间接盈利，原文未拆分各项金额"
+      }
+    ],
+    "summary": "黄小木做 X 时，先把账号增长到万粉，再把内容方向转向自己熟悉的技术与 AI 入门分享。持续经营半年后，账号达到约 5.1 万粉；平台收益、商单、社群和咨询等直接及间接盈利达到数十万元。增长加快后，他也感受到流量带来的压力，并开始考虑多平台发展。",
+    "ctaCopy": "他把从账号起步、转向 AI 内容，到平台收益、商单和社群咨询逐步形成收入的经历，写进了生财精华帖。",
+    "questions": [
+      "做 X 账号从流量增长到收入增长，之间经历了什么变化？",
+      "粉丝增长很快时，为什么流量未必越多越好？",
+      "平台收益、商单、社群和咨询，如何形成组合收入？",
+      "从技术经验切入 AI 内容，怎样找到能持续输出的方向？",
+      "账号半年做出结果后，继续深耕还是多平台发展？"
+    ],
+    "quotes": []
+  },
 {
   "slug": "ai-saas-first-batch-orders",
   "status": "published",
