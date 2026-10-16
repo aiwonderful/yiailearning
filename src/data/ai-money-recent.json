@@ -1,5 +1,36 @@
 [
   {
+    "slug": "ai-writing-to-ai-service-three-months-300k",
+    "status": "published",
+    "title": "蛋挞从 AI 写作转向 AI 服务，三个月变现 30 万+",
+    "author": "蛋挞",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fv0qW4hQXCCGXySQbeAsKSl86u3a",
+    "topics": [
+      "service",
+      "product"
+    ],
+    "rank": 54,
+    "publishedAt": "2026-10-13T05:52:43.000Z",
+    "resultLabel": "AI 写作转向 AI 服务，三个月变现 30 万+",
+    "resultPeriod": "转型后的三个月，原帖口径",
+    "results": [
+      {
+        "value": "30 万+",
+        "label": "三个月变现，原帖口径"
+      }
+    ],
+    "summary": "蛋挞靠 AI 写作接单起步，却长期卡在月营收 1—2 万；平台规则变化后，开始探索软件服务。转型初期，咨询和成交都不稳定；后来找到业务增长的关键堵点，订单从几百元逐步升到五位数。原帖称，转型后的三个月变现超过 30 万元。",
+    "ctaCopy": "蛋挞写下了从 AI 写作旧业务遇到变化，到尝试软件服务、重新面对获客和交付压力的经历。",
+    "questions": [
+      "原有业务受平台规则影响时，怎样重新判断方向？",
+      "从写作服务转向软件服务，客户需求和交付有哪些变化？",
+      "订单金额变大后，个人交付最容易卡在哪些地方？",
+      "三个月变现超过 30 万，应该怎样看清数字背后的口径？",
+      "老业务积累的能力，能否帮助新服务缩短摸索时间？"
+    ],
+    "quotes": []
+  },
+  {
     "slug": "ai-knowledge-drawing-workbench-renewals",
     "status": "published",
     "title": "聚焦知识手绘后，他的 AI 教辅工作台已有 185 人续费",
@@ -31,6 +62,78 @@
       "使用体验不稳定时，怎样判断应该继续优化还是换方向？"
     ],
     "quotes": []
+  },
+  {
+    "slug": "ai-wechat-sticker-multi-account-revenue-10232",
+    "status": "published",
+    "title": "反复违规之后，Jade.S_苏苏的三个公众号9月合计收益 10,232 元",
+    "author": "Jade.S_苏苏",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FjSl7H_CKf4aeC0ymSth6jXN8dmI",
+    "topics": [
+      "content"
+    ],
+    "rank": 52,
+    "publishedAt": "2026-10-09T03:09:29.000Z",
+    "resultLabel": "三个公众号账号9月合计收益 10,232 元",
+    "resultPeriod": "公众号贴图项目阶段复盘",
+    "results": [
+      {
+        "value": "10,232 元",
+        "label": "9月三个公众号账号合计收益"
+      },
+      {
+        "value": "16 篇",
+        "label": "9月阅读量超过 10 万的内容篇数"
+      }
+    ],
+    "summary": "Jade.S_苏苏此前试过多个内容方向，却一直没拿到满意结果。转向公众号贴图后，她先迎来流量，随后又因内容规则问题反复违规、注销账号。经历几轮摸索，到 9 月，三个账号合计收益达到 10,232 元，16 篇内容阅读量超过 10 万。",
+    "ctaCopy": "她记录了从首次起量、接连违规到三个账号跑出月度收益的过程，也复盘了内容方向几次调整的经历。",
+    "questions": [
+      "反复违规之后，创作者怎样判断方向是否值得继续？",
+      "阅读量达到十万，和实际收益之间为什么有时差别很大？",
+      "同时经营多个账号，会遇到哪些超出内容创作本身的难题？",
+      "一次流量高峰，足以证明项目能稳定赚钱吗？"
+    ],
+    "quotes": [
+      "流量起落本就是常态，想都是问题，做才有答案。"
+    ]
+  },
+  {
+    "slug": "xiaohongshu-virtual-goods-sales-tracking",
+    "status": "published",
+    "title": "从人工选品到 Codex 监控系统，他的小红书虚拟商品项目累计收益达六位数",
+    "author": "锦城随笔¹",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fon3QqwMxJ6TDVYSawgYR2pjPHqj",
+    "topics": [
+      "product",
+      "automation"
+    ],
+    "rank": 49,
+    "publishedAt": "2026-10-06T07:43:39.000Z",
+    "resultLabel": "累计收益六位数；平台调整后月收益约1万元",
+    "resultPeriod": "小红书虚拟商品项目复盘，金额沿用原文收益口径",
+    "results": [
+      {
+        "value": "六位数",
+        "label": "职场类商品项目累计收益，原文未说明是否为净利润"
+      },
+      {
+        "value": "约1万元",
+        "label": "平台调整后店铺月收益，原文未拆分成本"
+      }
+    ],
+    "summary": "锦城随笔在小红书做虚拟商品时，店铺规模扩张后，原先的经营方式遇到信息过载与趋势判断难题。他后来借助AI把日常数据观察需求，逐步转化为两套自用工具。此前的职场类商品项目累计收益达到六位数；但平台调整后，店铺月收益从约4万元降至约1万元，他也把重心转向更审慎的经营、内容质量和合规。",
+    "ctaCopy": "他记录了经营虚拟商品期间的变化、项目起伏与工具迭代，也分享了对数据边界和内容合规的反思。",
+    "questions": [
+      "商品累计销量很高时，怎样判断它最近是否还在持续增长？",
+      "平台调整导致店铺收益下滑时，经营者怎样重新审视方向？",
+      "长期观察数据之后，哪些经营判断仍需要自己完成？",
+      "怎样避免只看历史销量，忽略需求变化的时间窗口？",
+      "做虚拟商品项目时，如何同时关注经营表现与内容合规？"
+    ],
+    "quotes": [
+      "我更愿意自己留一批商品长期看。"
+    ]
   },
   {
     "slug": "x-ai-content-account-six-figure-revenue",
@@ -66,132 +169,514 @@
     ],
     "quotes": []
   },
-{
-  "slug": "ai-saas-first-batch-orders",
-  "status": "published",
-  "title": "做过六七个 AI 站后，他终于为一款 SaaS 跑出首批订单",
-  "author": "亿豪",
-  "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FlnA3fst2OvSlQ5jRZlYoA01fX5F",
-  "topics": [
-    "product",
-    "service"
-  ],
-  "rank": 49,
-  "publishedAt": "2026-10-03T15:08:10.000Z",
-  "resultLabel": "首批订单 · 一款 AI SaaS 的真实成交",
-  "results": [
-    {
-      "value": "首批订单",
-      "label": "聚焦一款 AI SaaS 持续推进约 3 个月后获得的成交；原文未披露数量与金额"
-    }
-  ],
-  "summary": "亿豪做过多个项目，也陆续上线六七个 AI 站点，却一直没有把一个产品推进到真实成交。学习 AI 编程课程后，他把精力重新放到一款 SaaS 上，持续打磨约三个月，终于跑出首批订单。这次反馈让他看到，产品上线只是开始；在复盘中，他也把后续关注点放到用户反馈与实际付费上。",
-  "ctaCopy": "他把从反复启动到聚焦一款产品、终于跑出首批订单的经历，写进了生财精华帖。",
-  "questions": [
-    "连续做过多个产品，却迟迟没有成交，卡点可能在哪？",
-    "从产品上线到首批付费订单，最难熬的阶段是什么？",
-    "第一批用户出现后，怎样判断产品是否真的解决了需求？",
-    "一个 AI 产品还在早期时，除了访问量还能看什么反馈？",
-    "什么时候该继续打磨，什么时候该重新选择方向？"
-  ],
-  "quotes": []
-},
-{
-  "slug": "ai-self-media-two-accounts-sponsorship-200k",
-  "status": "published",
-  "title": "从知识付费和电商转向 AI 自媒体，她的两个账号单月商单收入 20 万+",
-  "author": "年轻朋友阿甜",
-  "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FitYRlrLrsFh8sGuFf1MbpXOAKk_",
-  "topics": [
-    "content"
-  ],
-  "rank": 50,
-  "publishedAt": "2026-10-03T01:18:35.000Z",
-  "resultLabel": "20万+ · 9 月两账号商单收入",
-  "results": [
-    {
-      "value": "20万+",
-      "label": "2026 年 9 月两个 AI 自媒体账号的商单收入；含未结算合作，不代表利润"
-    }
-  ],
-  "summary": "阿甜做过自媒体、知识付费和义乌电商，也曾在 AI 内容方向摸索。重新找准内容主线后，她把过往经验带进 AI 自媒体，两个账号逐渐获得品牌关注。2026 年 9 月，两账号商单收入超过 20 万元，仍有合作未结算。这次增长远超她此前多年的自媒体收入，也让她回头梳理转型过程。",
-  "ctaCopy": "她把从早期自媒体尝试、几次转向到 AI 内容商单增长的经历，写进了生财精华帖。",
-  "questions": [
-    "过去积累的自媒体经验，怎样接上新的 AI 内容方向？",
-    "两个账号分别经历了怎样的转型，才开始获得品牌关注？",
-    "品牌合作从询问到商单收入，中间发生了什么变化？",
-    "单月收入里还有未结算合作时，应该怎样理解这组成绩？",
-    "一次高收入月份，能说明这个方向已经稳定了吗？"
-  ],
-  "quotes": []
-},
-{
-  "slug": "ai-wechat-sticker-first-ad-revenue",
-  "status": "published",
-  "title": "公众号贴图号开局 3 天，单篇阅读 12.9 万、单日广告收入 124.76 元",
-  "author": "若宇",
-  "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FtbKj83XCzoIeoIUl6nlobzFW7wu",
-  "topics": [
-    "content",
-    "automation"
-  ],
-  "rank": 42,
-  "publishedAt": "2026-10-01T20:14:27.000Z",
-  "resultLabel": "12.9万 · 单篇阅读；124.76元 · 单日广告收入",
-  "results": [
-    {
-      "value": "129,050",
-      "label": "开航第 3 天单篇阅读量"
-    },
-    {
-      "value": "124.76元",
-      "label": "单日流量主广告收入"
-    }
-  ],
-  "summary": "若宇此前做过 YouTube 短视频并开通过创收，但第一次尝试公众号图文时，对平台仍是新手。参加航海第 3 天，一篇内容达到 12.9 万阅读，一周内又有 7 篇过万，单日广告收入超过 100 元。随后账号收到不良信息提醒，推荐流量骤降；他重新审视内容质量，也把纯自动化调整为 AI 辅助、人工把关。",
-  "ctaCopy": "他把从快速起量、账号告警到重新检查内容质量的经历，以及 AI 辅助创作中仍需人工判断的部分，写进了生财精华帖。",
-  "questions": [
-    "没有公众号经验，第一次尝试后多久看到阅读和收入结果？",
-    "单篇冲到十万阅读后，账号遇到了什么变化？",
-    "流量突然下滑时，他怎样重新审视内容质量？",
-    "把 AI 用在内容生产中，哪些判断仍然交给人？",
-    "一次爆款里的偶然和可复用经验，应该如何区分？"
-  ],
-  "quotes": [
-    "我把流水线搭得再顺畅，如果产出来的全是让读者感到被糊弄的套路废话，那这件事从一开始就是错的。"
-  ]
-},
-{
-  "slug": "ai-video-editing-commission",
-  "status": "published",
-  "title": "B站好物单月佣金 5 位数，他把一条视频剪辑从 20 小时压到 30 分钟",
-  "author": "Mia 米娅",
-  "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FrS3vjecq1u4shsD0Ydt99Aki6IR",
-  "topics": [
-    "content",
-    "automation"
-  ],
-  "rank": 32,
-  "publishedAt": "2026-09-22T03:32:29.000Z",
-  "resultLabel": "5 位数 · 单月商单和佣金",
-  "results": [
-    {
-      "value": "5 位数",
-      "label": "单月商单和佣金，原文未拆分"
-    }
-  ],
-  "summary": "Mia 米娅分享了一位 B 站好物创作者的复盘：过去一条十分钟视频，从录音到导出，剪辑常常要花二十小时；后来他把重复环节交给 AI，自己只做最后三十分钟终审。矩阵账号覆盖数码、家电家居，也与多个品牌合作，单月商单和佣金达到五位数。",
-  "ctaCopy": "这篇精华帖写下了他如何从剪辑瓶颈走到稳定交付，也保留了自动化之后仍要人工检查的部分。",
-  "questions": [
-    "一条视频为什么会把前面的选题和文案都卡住？",
-    "重复剪辑交给 AI 后，最后还需要人工确认什么？",
-    "带货视频的效率提升，怎样才不会牺牲内容质量？",
-    "从单条视频到矩阵账号，哪些经验值得继续观察？"
-  ],
-  "quotes": [
-    "我不需要更努力地剪，我需要让会写代码的 AI，把剪辑这件事整个替我做掉。"
-  ]
-},
+  {
+    "slug": "ai-saas-first-batch-orders",
+    "status": "published",
+    "title": "做过六七个 AI 站后，他终于为一款 SaaS 跑出首批订单",
+    "author": "亿豪",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FlnA3fst2OvSlQ5jRZlYoA01fX5F",
+    "topics": [
+      "product",
+      "service"
+    ],
+    "rank": 49,
+    "publishedAt": "2026-10-03T15:08:10.000Z",
+    "resultLabel": "首批订单 · 一款 AI SaaS 的真实成交",
+    "results": [
+      {
+        "value": "首批订单",
+        "label": "聚焦一款 AI SaaS 持续推进约 3 个月后获得的成交；原文未披露数量与金额"
+      }
+    ],
+    "summary": "亿豪做过多个项目，也陆续上线六七个 AI 站点，却一直没有把一个产品推进到真实成交。学习 AI 编程课程后，他把精力重新放到一款 SaaS 上，持续打磨约三个月，终于跑出首批订单。这次反馈让他看到，产品上线只是开始；在复盘中，他也把后续关注点放到用户反馈与实际付费上。",
+    "ctaCopy": "他把从反复启动到聚焦一款产品、终于跑出首批订单的经历，写进了生财精华帖。",
+    "questions": [
+      "连续做过多个产品，却迟迟没有成交，卡点可能在哪？",
+      "从产品上线到首批付费订单，最难熬的阶段是什么？",
+      "第一批用户出现后，怎样判断产品是否真的解决了需求？",
+      "一个 AI 产品还在早期时，除了访问量还能看什么反馈？",
+      "什么时候该继续打磨，什么时候该重新选择方向？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-self-media-two-accounts-sponsorship-200k",
+    "status": "published",
+    "title": "从知识付费和电商转向 AI 自媒体，她的两个账号单月商单收入 20 万+",
+    "author": "年轻朋友阿甜",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FitYRlrLrsFh8sGuFf1MbpXOAKk_",
+    "topics": [
+      "content"
+    ],
+    "rank": 50,
+    "publishedAt": "2026-10-03T01:18:35.000Z",
+    "resultLabel": "20万+ · 9 月两账号商单收入",
+    "results": [
+      {
+        "value": "20万+",
+        "label": "2026 年 9 月两个 AI 自媒体账号的商单收入；含未结算合作，不代表利润"
+      }
+    ],
+    "summary": "阿甜做过自媒体、知识付费和义乌电商，也曾在 AI 内容方向摸索。重新找准内容主线后，她把过往经验带进 AI 自媒体，两个账号逐渐获得品牌关注。2026 年 9 月，两账号商单收入超过 20 万元，仍有合作未结算。这次增长远超她此前多年的自媒体收入，也让她回头梳理转型过程。",
+    "ctaCopy": "她把从早期自媒体尝试、几次转向到 AI 内容商单增长的经历，写进了生财精华帖。",
+    "questions": [
+      "过去积累的自媒体经验，怎样接上新的 AI 内容方向？",
+      "两个账号分别经历了怎样的转型，才开始获得品牌关注？",
+      "品牌合作从询问到商单收入，中间发生了什么变化？",
+      "单月收入里还有未结算合作时，应该怎样理解这组成绩？",
+      "一次高收入月份，能说明这个方向已经稳定了吗？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-bead-patterns-halfmonth-income-6000",
+    "status": "published",
+    "title": "星从教辅尝试转向拼豆图纸，半月收入超过 6,000 元",
+    "author": "星",
+    "topics": [
+      "product",
+      "content"
+    ],
+    "rank": 53,
+    "publishedAt": "2026-10-02T17:42:56.000Z",
+    "resultLabel": "拼豆图纸半月收入超过 6,000 元",
+    "resultPeriod": "9月12日至月底",
+    "results": [
+      {
+        "value": "6,000+ 元",
+        "label": "拼豆图纸累计收入，原文口径"
+      },
+      {
+        "value": "1,273.91 元",
+        "label": "9月15日单日图纸收入"
+      }
+    ],
+    "summary": "星起初花了三个月做教辅资料，销售额约 1,000 元。后来她出于兴趣尝试拼豆图纸，半个月收入超过 6,000 元；账号受限后，收入回落但仍有进账。她也观察到，前期发布的图纸在流量下降后仍带来购买。",
+    "ctaCopy": "她记录了从教辅尝试、拼豆图纸获得正反馈，到账号受限后观察收入变化的经历，也谈了 AI 生成内容的检查边界。",
+    "questions": [
+      "投入几个月却只获得少量销售额时，怎样决定是否调整方向？",
+      "一个兴趣尝试开始有人付费，哪些信号值得继续观察？",
+      "平台流量受限后，之前发布的内容还能带来多少后续购买？",
+      "AI 生成的图解用于付费产品时，哪些质量问题容易被忽略？"
+    ],
+    "quotes": [
+      "这是一段让我愿意继续投入的正反馈，但还不能说明长期收入已经稳定。"
+    ]
+  },
+  {
+    "slug": "ai-wechat-sticker-first-ad-revenue",
+    "status": "published",
+    "title": "公众号贴图号开局 3 天，单篇阅读 12.9 万、单日广告收入 124.76 元",
+    "author": "若宇",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FtbKj83XCzoIeoIUl6nlobzFW7wu",
+    "topics": [
+      "content",
+      "automation"
+    ],
+    "rank": 42,
+    "publishedAt": "2026-10-01T20:14:27.000Z",
+    "resultLabel": "12.9万 · 单篇阅读；124.76元 · 单日广告收入",
+    "results": [
+      {
+        "value": "129,050",
+        "label": "开航第 3 天单篇阅读量"
+      },
+      {
+        "value": "124.76元",
+        "label": "单日流量主广告收入"
+      }
+    ],
+    "summary": "若宇此前做过 YouTube 短视频并开通过创收，但第一次尝试公众号图文时，对平台仍是新手。参加航海第 3 天，一篇内容达到 12.9 万阅读，一周内又有 7 篇过万，单日广告收入超过 100 元。随后账号收到不良信息提醒，推荐流量骤降；他重新审视内容质量，也把纯自动化调整为 AI 辅助、人工把关。",
+    "ctaCopy": "他把从快速起量、账号告警到重新检查内容质量的经历，以及 AI 辅助创作中仍需人工判断的部分，写进了生财精华帖。",
+    "questions": [
+      "没有公众号经验，第一次尝试后多久看到阅读和收入结果？",
+      "单篇冲到十万阅读后，账号遇到了什么变化？",
+      "流量突然下滑时，他怎样重新审视内容质量？",
+      "把 AI 用在内容生产中，哪些判断仍然交给人？",
+      "一次爆款里的偶然和可复用经验，应该如何区分？"
+    ],
+    "quotes": [
+      "我把流水线搭得再顺畅，如果产出来的全是让读者感到被糊弄的套路废话，那这件事从一开始就是错的。"
+    ]
+  },
+  {
+    "slug": "college-student-ai-matlab-codex-400k-revenue",
+    "status": "published",
+    "title": "休学做 AI+MATLAB 服务、毕业试 Codex 教学，累计收入约 40 万",
+    "author": "都督",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FnpFdotD0Yz_lYQIgfdovow2IGvW",
+    "topics": [
+      "service",
+      "product"
+    ],
+    "rank": 48,
+    "publishedAt": "2026-09-30T12:13:58.000Z",
+    "resultLabel": "约 40 万元 · 多段 AI 相关业务累计收入",
+    "results": [
+      {
+        "value": "约 40 万元",
+        "label": "AI+MATLAB 服务、产品尝试和 Codex 教学等业务累计收入（作者自述，非利润）"
+      },
+      {
+        "value": "约 1 万元",
+        "label": "Codex 一对一教学收入，毕业后暑假阶段性测试"
+      }
+    ],
+    "summary": "都督从 2023 年接触 AI，后来休学做 AI 编程与 MATLAB 服务，并组建工作室；复学后，他又尝试把服务经验做成产品。毕业后，他用一个暑假测试 Codex 一对一教学，收入约 1 万元。几段经历合计约 40 万元收入，但产品尝试尚未带来收入，他开始重新审视业务方向与长期积累。",
+    "ctaCopy": "他记录了从 AI+MATLAB 服务、复学尝试产品到 Codex 教学的经历，也复盘了短期收入与长期积累之间的取舍。",
+    "questions": [
+      "休学做服务、复学做产品，再到 Codex 教学，他每次转向的原因是什么？",
+      "AI 帮人提高效率后，客户真正愿意为什么结果付费？",
+      "把服务经验做成产品时，哪些期待没有变成收入？",
+      "从眼前收入到长期积累，他开始怎样重新看待一门生意的价值？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-twitter-plugin-demo-three-day-revenue",
+    "status": "published",
+    "title": "阿乐发出 AI 插件演示，三天新增 600 位微信好友、变现 1 万元",
+    "author": "阿乐",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FhoA8GSODU6jTQ_FBloWaCw-l1Yy",
+    "topics": [
+      "content",
+      "product"
+    ],
+    "rank": 55,
+    "publishedAt": "2026-09-30T03:25:31.000Z",
+    "resultLabel": "一条插件演示内容带来 600 位微信好友和 1 万元变现",
+    "resultPeriod": "发布后 3 天，原帖口径",
+    "results": [
+      {
+        "value": "600 人",
+        "label": "三天内新增微信好友"
+      },
+      {
+        "value": "1 万元",
+        "label": "三天变现，原帖口径"
+      }
+    ],
+    "summary": "阿乐在杭州做 AI 获客，早期做 AI 出图时曾靠内容成交代理，但仍在摸索怎样稳定找到客户。后来，他把自己做的采集插件录成演示视频发到 X，没有投流、买粉或依赖社群；三天内有 600 人加微信，并带来 1 万元变现。",
+    "ctaCopy": "他复盘了一条插件演示内容带来的新增微信好友与变现，也记录了自己从起号到扩大影响力的阶段经历。",
+    "questions": [
+      "一条产品演示内容，怎样从展示功能变成真实客户？",
+      "产品展示获得咨询后，怎样判断对方是否有真实需求？",
+      "同一条内容放到不同平台，成交结果为什么可能不同？",
+      "三天内的集中变现，能说明获客方式可以长期复制吗？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-original-ppt-store-monthly-50k",
+    "status": "published",
+    "title": "五家店铺被封后转向 AI 原创，单店单月收入 5 万",
+    "author": "尹星河",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FqTYfWfedJOuVOdMt07pZTQfe55J",
+    "topics": [
+      "product",
+      "automation"
+    ],
+    "rank": 45,
+    "publishedAt": "2026-09-29T11:24:20.000Z",
+    "resultLabel": "5 万元 · 单店单月收入（原文未说明利润口径）",
+    "results": [
+      {
+        "value": "5 万元",
+        "label": "开学季单店单月收入，原文未说明是否扣除成本"
+      }
+    ],
+    "summary": "尹星河团队做小红书虚拟产品两年多，五家经营多年的店铺因平台治理接连被封，原有业务突然中断。团队调整方向，开始尝试用 AI 做原创产品。经过两个多月重建，赶上开学季后，单个店铺单月收入达到 5 万元。原帖没有说明这笔收入是否扣除了成本。",
+    "ctaCopy": "这篇复盘记录了团队从原有业务受挫、重新调整，到 AI PPT 产品出现销售结果的经历。",
+    "questions": [
+      "五家店铺接连被封后，团队如何决定下一步方向？",
+      "转向原创产品后，团队如何面对市场需求与成本压力？",
+      "开学季带来的销售结果，之后能否延续？",
+      "从店铺销售到定制需求，团队的业务发生了哪些变化？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-one-person-company-first-year-six-figures",
+    "status": "published",
+    "title": "文科生毕业一年，靠 AI 相关业务累计变现六位数",
+    "author": "乔川",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FtAyAb2MvWI7YQuVQzyv6BRFfdhr",
+    "topics": [
+      "service",
+      "automation"
+    ],
+    "rank": 46,
+    "publishedAt": "2026-09-28T05:31:37.000Z",
+    "resultLabel": "六位数 · 毕业一年 AI 相关业务累计变现",
+    "results": [
+      {
+        "value": "六位数",
+        "label": "毕业一年 AI 相关业务累计变现；原文未拆分收入与利润"
+      }
+    ],
+    "summary": "乔川是 02 年文科生，刚接触 AI 时曾因缺乏判断而在建模比赛中失利。毕业后，他先在已有业务中承担操盘工作，随后转向 AI 定制服务与自营产品。一年间，他从不会写代码走到 AI 相关业务累计变现六位数，也开始经营自己的 AI 一人公司。",
+    "ctaCopy": "他把从学生时期的 AI 失利，到尝试操盘、定制服务和经营自营盘的成长过程，写进这篇长复盘。",
+    "questions": [
+      "没有技术背景时，他怎样找到 AI 与真实业务的连接点？",
+      "从承担一个业务环节到提供定制服务，过程中遇到了什么转折？",
+      "一年累计变现六位数，包含了哪些不同阶段的业务？",
+      "当服务经验逐渐变多后，他为什么开始尝试经营自营产品？"
+    ],
+    "quotes": [
+      "AI 把我的能力放大了，也把我的无知一起放大了。"
+    ]
+  },
+  {
+    "slug": "ai-router-directory-ad-revenue-five-figures",
+    "status": "published",
+    "title": "不做中转站，AI 导航累计广告收入 5 位数，首页位涨到 2000 元/月",
+    "author": "A   😇路途",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FnS3UIlHSY9p8e0tELxg7Zijdn87",
+    "topics": [
+      "product",
+      "service"
+    ],
+    "rank": 47,
+    "publishedAt": "2026-09-27T09:38:59.000Z",
+    "resultLabel": "5 位数 · 首页广告位累计收入",
+    "results": [
+      {
+        "value": "5 位数",
+        "label": "截至原帖发布时，首页广告位累计收入（作者自述，非利润）"
+      },
+      {
+        "value": "399 → 2000 元/月",
+        "label": "同一首页广告位的月报价变化；涨价后仍有客户购买"
+      }
+    ],
+    "summary": "路途发现，AI 用户需要的不只是中转服务本身，也需要挑选服务商的信息。他没有亲自经营中转站，而是做了一组相关导航网站，通过首页广告位获得收入。首个广告位月价 399 元，后来涨至 2000 元仍有客户购买，广告位累计收入达到五位数。",
+    "ctaCopy": "他复盘了从看见 AI 用户需求，到导航网站获得首批广告客户、广告位价格逐步上涨的商业过程。",
+    "questions": [
+      "AI 用户的哪些需求，让导航站有了商业空间？",
+      "不经营中转服务的导航站，为什么能吸引商家付费推广？",
+      "从首次定价到涨价，作者观察到了哪些市场反馈？",
+      "广告客户愿意继续购买，说明这个小站提供了什么价值？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-service-business-halfyear-100k-profit",
+    "status": "published",
+    "title": "若宇入圈半年，用 AI 相关业务实现 10 万元净利润",
+    "author": "若宇",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FtbKj83XCzoIeoIUl6nlobzFW7wu",
+    "topics": [
+      "service",
+      "automation"
+    ],
+    "rank": 42,
+    "publishedAt": "2026-09-26T10:34:40.000Z",
+    "resultLabel": "半年净利润超 10 万元",
+    "results": [
+      {
+        "value": "10 万元以上",
+        "label": "半年 AI 相关业务实际净利润"
+      },
+      {
+        "value": "22,000 元",
+        "label": "AI 获客系统合同总额已全额收款"
+      }
+    ],
+    "summary": "刚退伍时，若宇和战友合伙投资亏了 4 万多，后来做过健身教练、跑过外卖。接触 AI 后，他从体验服务、内容尝试和小额脚本订单做起，逐步接到企业客户；其中一笔美业获客系统合同收齐 2.2 万元。入圈半年，他的 AI 相关业务净利润超过 10 万元，也开始独立开发小程序。",
+    "ctaCopy": "若宇把从合伙亏损、跑外卖到逐步接下企业 AI 项目的经历，以及多种业务尝试中的得失，写进了这篇半年复盘。",
+    "questions": [
+      "没有技术背景时，若宇是怎样从零散的小需求开始接单的？",
+      "一笔最初从培训咨询开始的沟通，后来为什么转成企业项目？",
+      "半年净利润的口径如何核算，不同业务带来了哪些变化？",
+      "从零散订单到复购与转介绍，他经历了什么转折？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-coding-gym-miniapp-first-project",
+    "status": "published",
+    "title": "00 后用 AI 编程完成首个商业小程序，商定开发费 7000 元",
+    "author": "不知名的上仙",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FieEMYwI6fKsetUqhCZaNSiRDgDz",
+    "topics": [
+      "service",
+      "product"
+    ],
+    "rank": 44,
+    "publishedAt": "2026-09-26T09:55:34.000Z",
+    "resultLabel": "7000 元 · 双方最初商定的开发技术费",
+    "results": [
+      {
+        "value": "7000 元",
+        "label": "双方最初商定的项目开发技术费；原文未说明是否已收款"
+      }
+    ],
+    "summary": "00 后的“不知名的上仙”参加 AI 编程航海后，先尝试内容和知识产品，却没有取得明显收入。后来，他接下健身房小程序定制项目，面对需求遗漏和备案延期等波折。项目经过调整后最终上线，双方最初商定的开发技术费为 7000 元；原帖没有说明这笔费用是否已收款。",
+    "ctaCopy": "他记录了从第一次把 AI 编程用于真实商业项目，到应对交付波折并让小程序上线的经历。",
+    "questions": [
+      "没有商业开发案例时，他如何争取到第一个真实项目？",
+      "项目中途发现需求遗漏后，交付遇到了哪些考验？",
+      "产品完成开发后，为什么还不能马上上线？",
+      "从练习项目到真实交付，他对 AI 编程的认识发生了什么变化？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-subject-cards-wechat-20-day-revenue",
+    "status": "published",
+    "title": "AI 学科知识卡片结合公众号，20 天变现超 1 万元",
+    "author": "心海的猫",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FrElAOQMxqQh6wLRodmteprxQid3",
+    "topics": [
+      "product",
+      "content"
+    ],
+    "rank": 43,
+    "publishedAt": "2026-09-25T14:41:12.000Z",
+    "resultLabel": "20 天累计变现超 1 万元",
+    "results": [
+      {
+        "value": "1 万元以上",
+        "label": "20 天累计变现收入（店铺销售+私域）"
+      },
+      {
+        "value": "883 人",
+        "label": "公众号新增关注"
+      }
+    ],
+    "summary": "此前经历两次产品下架后，心海的猫重新围绕学科资料寻找方向。8 月，她尝试用 AI 制作初中英语知识卡片并在店铺销售，也把实操经历写进公众号。20 天内，公众号新增 883 位关注，店铺销售与私域服务累计变现超过 1 万元。她从这次尝试中看到，内容和产品可以共同积累。",
+    "ctaCopy": "她记录了平台规则变化后的重新选择，以及知识卡片逐步出单、公众号带来咨询和后续服务成交的过程。",
+    "questions": [
+      "产品接连下架后，她为什么把重点转回学科资料？",
+      "新一轮产品尝试开始后，最早的反馈和收入是怎样出现的？",
+      "公众号内容怎样连接到商品、教程和陪跑需求？",
+      "这次 20 天变现包含哪些收入，统计口径是什么？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-wechat-sticker-traffic-income",
+    "status": "published",
+    "title": "公众号贴图单日获 380 万阅读、流量主收入 2585 元",
+    "author": "新天",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fs2-9C2UrgAWXefqqjGXHRS-PlhL",
+    "topics": [
+      "content",
+      "automation"
+    ],
+    "rank": 39,
+    "publishedAt": "2026-09-23T12:27:33.000Z",
+    "resultLabel": "2585.83 元 · 单日流量主收入",
+    "resultPeriod": "两篇贴图同日的阶段性结果",
+    "results": [
+      {
+        "value": "2585.83元",
+        "label": "单日公众号流量主收入，非日常收入"
+      },
+      {
+        "value": "380.2万",
+        "label": "两篇公众号贴图同日阅读量"
+      }
+    ],
+    "summary": "新天有多年外贸经历，离职后重新做公众号，逐渐转向贴图内容。半年摸索中，两篇贴图曾在同一天获得 380.2 万阅读，流量主收入 2585.83 元。他把 AI 和 Skill 用于内容提效，同时强调选题与成稿仍需自己把关；这只是单日结果，不代表稳定日收入。",
+    "ctaCopy": "他把从外贸工作转向公众号、内容方向调整和爆发数据出现后的复盘，写进了这篇生财精华帖。",
+    "questions": [
+      "离开熟悉的外贸工作后，他为什么重新开始做公众号？",
+      "从长文章转向贴图内容的过程中，项目经历了哪些变化？",
+      "单日阅读和收入达到峰值，能否说明内容项目已经稳定？",
+      "使用 AI 协助内容生产时，哪些判断仍需要自己负责？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-comic-desktop-software-custom-order-30000",
+    "status": "published",
+    "title": "不期而遇把朋友的“换个壳”请求，做成 3 万元 AI 软件定制项目",
+    "author": "不期而遇",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fvn8UUb7CzR-kauyBQZ9FxQxnKaF",
+    "topics": [
+      "service",
+      "product"
+    ],
+    "rank": 56,
+    "publishedAt": "2026-09-22T08:29:27.000Z",
+    "resultLabel": "AI 漫剧软件定制项目报价 3 万元",
+    "resultPeriod": "单笔定制项目，原帖报价口径",
+    "results": [
+      {
+        "value": "3 万元",
+        "label": "AI 漫剧软件定制项目报价，非利润口径"
+      }
+    ],
+    "summary": "不期而遇原本只是在学习 AI 编程，朋友先请他给现有软件改名换样式。到客户现场后，他发现真正的麻烦在多个工作环节之间反复切换，于是重新梳理需求，做成一款 AI 漫剧制作软件。经历理解偏差和交付返工后，他谈成了报价 3 万元的定制项目。",
+    "ctaCopy": "他复盘了从朋友的小请求、进入真实业务场景，到完成一笔 AI 漫剧软件定制项目的经历，也写下交付中的返工和合作边界。",
+    "questions": [
+      "最初只是改个样式的请求，为什么后来变成软件定制项目？",
+      "客户自己也说不清需求时，怎样避免把产品做偏？",
+      "AI 编程做成产品后，开发者还要承担哪些交付责任？",
+      "熟人合作时，报价、范围和验收为何要提前确认？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-video-editing-commission",
+    "status": "published",
+    "title": "B站好物单月佣金 5 位数，他把一条视频剪辑从 20 小时压到 30 分钟",
+    "author": "Mia 米娅",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FrS3vjecq1u4shsD0Ydt99Aki6IR",
+    "topics": [
+      "content",
+      "automation"
+    ],
+    "rank": 32,
+    "publishedAt": "2026-09-22T03:32:29.000Z",
+    "resultLabel": "5 位数 · 单月商单和佣金",
+    "results": [
+      {
+        "value": "5 位数",
+        "label": "单月商单和佣金，原文未拆分"
+      }
+    ],
+    "summary": "Mia 米娅分享了一位 B 站好物创作者的复盘：过去一条十分钟视频，从录音到导出，剪辑常常要花二十小时；后来他把重复环节交给 AI，自己只做最后三十分钟终审。矩阵账号覆盖数码、家电家居，也与多个品牌合作，单月商单和佣金达到五位数。",
+    "ctaCopy": "这篇精华帖写下了他如何从剪辑瓶颈走到稳定交付，也保留了自动化之后仍要人工检查的部分。",
+    "questions": [
+      "一条视频为什么会把前面的选题和文案都卡住？",
+      "重复剪辑交给 AI 后，最后还需要人工确认什么？",
+      "带货视频的效率提升，怎样才不会牺牲内容质量？",
+      "从单条视频到矩阵账号，哪些经验值得继续观察？"
+    ],
+    "quotes": [
+      "我不需要更努力地剪，我需要让会写代码的 AI，把剪辑这件事整个替我做掉。"
+    ]
+  },
+  {
+    "slug": "ai-timetable-wallpaper-miniapp",
+    "status": "published",
+    "title": "小学老师把课表需求做成小程序，累计变现一千多元",
+    "author": "黄小鱼🐠（路演记录者）",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FpcKdL9db8CrHrpSMYu9bXu-Tm5d",
+    "topics": [
+      "product"
+    ],
+    "rank": 41,
+    "publishedAt": "2026-09-21T13:33:46.000Z",
+    "resultLabel": "1000 多元 · 项目累计变现",
+    "results": [
+      {
+        "value": "1000 多元",
+        "label": "课表壁纸小程序累计变现，开放日路演记录"
+      }
+    ],
+    "summary": "在亦仁开放日的 AI 项目路演上，一线小学老师艺文分享了自己的课表壁纸小程序。她注意到老师们制作桌面课表不方便，便把这个需求做成产品；上台时，项目累计变现已超过一千元。起步规模虽小，现场讨论也把产品还能服务哪些人、如何继续成长摆到了台面上。",
+    "ctaCopy": "黄小鱼记录了艺文从教师日常需求找到产品方向、跑出第一笔收入的过程，以及路演现场对产品后续空间的讨论。",
+    "questions": [
+      "一线老师怎样从日常困扰里找到值得做的产品？",
+      "产品刚跑通第一笔收入，如何判断需求是否真实？",
+      "核心用户已经明确后，要不要继续扩展服务人群？",
+      "小程序开始有人付费后，下一步增长会遇到什么问题？"
+    ],
+    "quotes": []
+  },
   {
     "slug": "enterprise-ai-course-delivery",
     "status": "published",
@@ -222,34 +707,37 @@
     "quotes": []
   },
   {
-    "slug": "ai-commerce-team-efficiency",
+    "slug": "ai-game-steam-revenue",
     "status": "published",
-    "title": "一天看几百条视频仍选不出品，他用 AI 改造了电商团队",
-    "author": "Mr.Zhao",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FrWoSlRRSsYwsnE5IJF3ZZWsYxzl",
+    "title": "两个月用 AI 做出三款 Steam 游戏，第三款卖出 2500 多份",
+    "author": "小灰",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fp-NMGYB58NxKMbYJViFhwLA7F-k",
     "topics": [
+      "product",
       "automation"
     ],
-    "rank": 31,
-    "publishedAt": "2026-09-14T02:56:06.000Z",
-    "resultLabel": "5倍以上 · 作者自述素材分析效率",
+    "rank": 40,
+    "publishedAt": "2026-09-20T05:41:06.000Z",
+    "resultLabel": "2500 多份 · 第三款游戏销量；净营收约 3369 美元",
     "results": [
       {
-        "value": "5倍以上",
-        "label": "作者自述素材分析效率，非收入增幅"
+        "value": "2500 多份",
+        "label": "第三款游戏销量"
+      },
+      {
+        "value": "3369 美元",
+        "label": "Steam 净营收"
       }
     ],
-    "summary": "迪伟做过互联网产品经理，后来从事电商。过去一天看几百条视频，也未必能找到合适的商品；利润空间变小后，人效成了现实难题。今年，他尝试用 AI 改造原有业务，素材分析效率据其自述达到人工的五倍以上。复盘中，他同时展示了测试成功和失败的产品，以及团队仍需面对的判断。",
-    "ctaCopy": "他把电商团队改造前后的变化、真实测试中的成败，以及哪些事情仍需要人来判断，写进了生财精华帖。",
+    "summary": "程序员小灰想验证 AI 能否做出可商业化的游戏，用两个月做了三款并上架 Steam。前两款反响平平，第三款放置游戏《无为修仙传》卖出 2500 多份，净营收约 3369 美元。成绩还称不上爆款，却让他看到个人开发走向真实收入的可能；后续仍要持续投入时间迭代。",
+    "ctaCopy": "小灰把从方向选择、游戏反馈，到成本和投入取舍的探索过程，写进了生财精华帖。",
     "questions": [
-      "业务已经跑过，为什么重新开始时还要改造团队？",
-      "让 AI 做了更多工作后，人的时间用在了哪里？",
-      "一次测品失败，怎样判断问题到底出在哪里？",
-      "这类改造适合什么业务，又需要哪些前提？"
+      "前两次反响一般后，他为什么继续尝试？",
+      "第三款游戏表现不同后，他如何看待 AI 在开发中的边界？",
+      "销量之外，上架平台和持续维护还带来哪些投入？",
+      "一款游戏有了早期销量，怎样判断它能否持续？"
     ],
-    "quotes": [
-      "并不是多招一个人，马上就能多出一份有效产出。"
-    ]
+    "quotes": []
   },
   {
     "slug": "ai-digital-products-monthly-profit",
@@ -427,6 +915,35 @@
     "quotes": []
   },
   {
+    "slug": "x-ai-media-54k-followers",
+    "status": "published",
+    "title": "做 X AI 自媒体 8 个月积累 5.4 万关注，开始承接品牌与 AI 产品合作",
+    "author": "逸尘",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fmt_OCqyAhwZ4gDUGSPAdU5JiLE-",
+    "topics": [
+      "content",
+      "overseas"
+    ],
+    "rank": 34,
+    "publishedAt": "2026-09-15T07:11:29.000Z",
+    "resultLabel": "8个月积累 5.4 万关注",
+    "results": [
+      {
+        "value": "5.4万",
+        "label": "X AI 垂类关注数（作者自述）"
+      }
+    ],
+    "summary": "逸尘从大学期间接触 AI 产品、视频和内容项目，后来把精力聚焦到 X 的 AI 自媒体。八个月里，账号积累 5.4 万关注；他也开始承接海外品牌商单和 AI 产品合作。回看这段经历时，他提到前期做过不同方向的尝试，过去的项目积累逐渐汇聚到这一账号。",
+    "ctaCopy": "他把从多个 AI 项目转向 X 垂类内容、账号增长和早期商业合作的经历，写进了这篇生财精华帖。",
+    "questions": [
+      "从多个 AI 项目转向一个内容账号，他做了怎样的选择？",
+      "一个 AI 垂类账号在八个月里积累了哪些变化？",
+      "账号增长之后，他开始尝试哪些商业合作？",
+      "长期做内容时，过往项目经验怎样发挥作用？"
+    ],
+    "quotes": []
+  },
+  {
     "slug": "ai-video-revenue-recovery",
     "status": "published",
     "title": "十几个账号收益归零后，他重新做到万余美元收益",
@@ -452,6 +969,102 @@
       "播放量很高，为什么最终收益可能并不理想？",
       "遭遇挫折后，怎样判断是否值得继续做下去？",
       "多个账号一起运营，真实成本要考虑哪些部分？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-commerce-team-efficiency",
+    "status": "published",
+    "title": "一天看几百条视频仍选不出品，他用 AI 改造了电商团队",
+    "author": "Mr.Zhao",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FrWoSlRRSsYwsnE5IJF3ZZWsYxzl",
+    "topics": [
+      "automation"
+    ],
+    "rank": 31,
+    "publishedAt": "2026-09-14T02:56:06.000Z",
+    "resultLabel": "5倍以上 · 作者自述素材分析效率",
+    "results": [
+      {
+        "value": "5倍以上",
+        "label": "作者自述素材分析效率，非收入增幅"
+      }
+    ],
+    "summary": "迪伟做过互联网产品经理，后来从事电商。过去一天看几百条视频，也未必能找到合适的商品；利润空间变小后，人效成了现实难题。今年，他尝试用 AI 改造原有业务，素材分析效率据其自述达到人工的五倍以上。复盘中，他同时展示了测试成功和失败的产品，以及团队仍需面对的判断。",
+    "ctaCopy": "他把电商团队改造前后的变化、真实测试中的成败，以及哪些事情仍需要人来判断，写进了生财精华帖。",
+    "questions": [
+      "业务已经跑过，为什么重新开始时还要改造团队？",
+      "让 AI 做了更多工作后，人的时间用在了哪里？",
+      "一次测品失败，怎样判断问题到底出在哪里？",
+      "这类改造适合什么业务，又需要哪些前提？"
+    ],
+    "quotes": [
+      "并不是多招一个人，马上就能多出一份有效产出。"
+    ]
+  },
+  {
+    "slug": "xiaohongshu-ai-account-first-ads",
+    "status": "published",
+    "title": "从新号做到 6824 粉，她在小红书累计接到 6 个广告",
+    "author": "Alisa",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FpRIlJC_-27fCpqqnuMj6wamTYis",
+    "topics": [
+      "content"
+    ],
+    "rank": 35,
+    "publishedAt": "2026-09-12T08:55:53.000Z",
+    "resultLabel": "6个广告 · 累计变现 1596（原文未注明单位）",
+    "results": [
+      {
+        "value": "6824",
+        "label": "账号粉丝数"
+      },
+      {
+        "value": "1596",
+        "label": "累计变现，原文未注明单位"
+      }
+    ],
+    "summary": "刚毕业不久、没有小红书经验的 Alisa，从新注册账号开始尝试。内容方向调整期间，她经历过流量停滞和粉丝画像不匹配；账号做到 6824 粉后，累计接到 6 个广告、变现 1596（原文未注明单位）。她也把 AI 用在内容复盘中，记录了普通人从新号起步、逐渐找到商业机会的过程。",
+    "ctaCopy": "她把从新账号起步、转型时遇到的流量与粉丝画像问题，以及第一批广告合作的经历，写进了生财精华帖。",
+    "questions": [
+      "没有平台经验的新账号，怎样逐渐找到适合自己的内容方向？",
+      "账号有了流量却接不到广告，可能卡在什么地方？",
+      "转型期间数据不稳定时，她经历了哪些变化？",
+      "AI 参与内容复盘后，哪些判断仍需要自己做？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-game-guide-site-first-ad-revenue",
+    "status": "published",
+    "title": "他用 AI 做出 160 页游戏攻略站，9 天广告收入 1.37 美元",
+    "author": "林广恩",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fgbjt2o88_NyoJGT_wqFPXkfbSGC",
+    "topics": [
+      "content",
+      "overseas"
+    ],
+    "rank": 38,
+    "publishedAt": "2026-09-11T15:27:24.000Z",
+    "resultLabel": "1.37 美元 · 9 天广告收入（早期样本）",
+    "resultPeriod": "2026 年 8 月 23 日至 31 日",
+    "results": [
+      {
+        "value": "1.37 美元",
+        "label": "广告上线约 9 天累计收入；早期小样本"
+      },
+      {
+        "value": "160 页",
+        "label": "攻略站页面，覆盖四种语言"
+      }
+    ],
+    "summary": "林广恩用 Fields of Mistria 做了第一座游戏攻略站 MistriaFans，逐步扩展到四种语言、160 个页面。广告上线后，9 天获得 1,082 次展示、收入 1.37 美元。数据仍是小样本，不能说明稳定盈利；但网站已有可核对的广告收入，他也开始根据搜索和广告数据调整方向。",
+    "ctaCopy": "他把游戏攻略站从初次上线、出现搜索流量，到获得第一笔广告收入的复盘，以及仍待验证的问题，写进了生财精华帖。",
+    "questions": [
+      "做出一批页面之后，怎样判断游戏攻略站是否真的开始获得搜索流量？",
+      "网站有了展示和点击，距离广告变现还有多远？",
+      "第一笔广告收入出现后，怎样看待样本量很小的早期数据？",
+      "哪些信号能帮助内容站决定继续投入还是调整方向？"
     ],
     "quotes": []
   },
@@ -571,6 +1184,64 @@
     "quotes": []
   },
   {
+    "slug": "career-content-side-income",
+    "status": "published",
+    "title": "7 年产品经理，把职场经验做成内容，4 个月变现 2 万",
+    "author": "夏树",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fj8KOKnwShlyqjwD-Onm-X-HN4Yp",
+    "topics": [
+      "content",
+      "product"
+    ],
+    "rank": 28,
+    "publishedAt": "2026-09-09T03:25:07.000Z",
+    "resultLabel": "2万元 · 4 个月累计变现",
+    "results": [
+      {
+        "value": "2万元",
+        "label": "4 个月累计变现"
+      }
+    ],
+    "summary": "夏树做了七年产品经理，却没有独立跑过一门小生意。他从熟悉的职场经验出发，借助 AI 做内容，四个月积累四千多粉丝，累计变现两万元。过程中既有很快出现的爆款，也有随后回落的数据。这篇复盘记录的是一个职场人怎样第一次接触真实客户和成交。",
+    "ctaCopy": "他把从工作经验到内容与产品，以及第一次完成成交的经历，写进了生财精华帖。",
+    "questions": [
+      "职场经验里，哪些内容可能被别人需要？",
+      "刚开始就出现爆款，为什么后面仍会遇到瓶颈？",
+      "粉丝只有几千，能支撑一门小生意吗？",
+      "擅长完成工作，和独立做成项目之间差在哪里？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ai-career-writing-first-results",
+    "status": "published",
+    "title": "两个月做 AI 职场内容，一个账号跑通流量主",
+    "author": "豚小祖",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fm9uTNdoC6xW7sOYp3TJoWqw4efD",
+    "topics": [
+      "content",
+      "automation"
+    ],
+    "rank": 30,
+    "publishedAt": "2026-09-07T16:20:51.000Z",
+    "resultLabel": "1.1万 · 已跑通账号最高单篇阅读",
+    "results": [
+      {
+        "value": "1.1万",
+        "label": "已跑通账号最高单篇阅读"
+      }
+    ],
+    "summary": "豚小祖开始用 AI 写职场内容时，最初的文章很模板化，缺少真实表达。两个月里，他反复调整，逐渐把内容生产稳定下来，目前一个账号跑通了流量主，最高单篇阅读约一万一千，近期稳定在一千以上。这篇复盘既写已有结果，也写了模仿形式却写不出好内容的卡点。",
+    "ctaCopy": "他把内容从模板化到逐渐稳定，以及两个月里反复调整的过程，写进了生财精华帖。",
+    "questions": [
+      "AI 写出的文章完整，为什么读起来还是很生硬？",
+      "找到参考内容之后，为什么仍需要不断调整？",
+      "单篇高阅读和持续产出，分别需要解决什么问题？",
+      "一个账号初步跑通后，怎样判断能否继续扩展？"
+    ],
+    "quotes": []
+  },
+  {
     "slug": "digital-products-selection-review",
     "status": "published",
     "title": "虚拟资料月入约 5 万后，他用 AI 改善自己的选品判断",
@@ -627,6 +1298,37 @@
       "一次有效反馈之后，怎样判断究竟是什么发生了变化？"
     ],
     "quotes": []
+  },
+  {
+    "slug": "ai-solo-business-knowledge-product",
+    "status": "published",
+    "title": "AI 辅助的一人公司知识产品，以 699 元客单价卖出 500 多份",
+    "author": "叁斤",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FrYNcCbpk5bifMppfnM644T5unUL",
+    "topics": [
+      "product",
+      "automation"
+    ],
+    "rank": 36,
+    "publishedAt": "2026-09-02T08:34:57.000Z",
+    "resultLabel": "500多份 · 客单价 699 元",
+    "results": [
+      {
+        "value": "500多份",
+        "label": "知识产品销量，客单价 699 元"
+      }
+    ],
+    "summary": "叁斤做一人公司第三年，曾靠私教和企业项目获得收入，却发现重交付把时间排得很满。后来，他把多年积累整理成知识产品，并借助 AI 做需求研究、辅助产品制作；一款产品用约六个月卖出五百多份，客单价 699 元。业务重心也逐渐转向可复用的产品。",
+    "ctaCopy": "他把从重交付转向可复用产品、尝试将 AI 融入需求研究和产品制作，再到持续销售的经历，写进了这篇精华帖。",
+    "questions": [
+      "服务收入不错，为什么他决定调整一人公司的业务结构？",
+      "知识产品从想法走到持续销售，过程中出现了哪些取舍？",
+      "AI 进入需求研究和产品制作后，工作方式发生了什么变化？",
+      "产品销量起来之后，怎样避免交付重新变成时间负担？"
+    ],
+    "quotes": [
+      "公司的锚点不是时间，是产品。"
+    ]
   },
   {
     "slug": "ai-client-project-delivery",
@@ -773,6 +1475,69 @@
     "quotes": []
   },
   {
+    "slug": "ai-book-video-affiliate-commission",
+    "status": "published",
+    "title": "AI 图书带货航海 20 天，两平台拿到 5909+ 元佣金",
+    "author": "！",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FuPQxm7PoCaow2a8UZO0ylRd170U",
+    "topics": [
+      "content",
+      "automation"
+    ],
+    "rank": 37,
+    "publishedAt": "2026-08-27T11:39:58.000Z",
+    "resultLabel": "航海 20 天佣金 5909+ 元",
+    "results": [
+      {
+        "value": "5909+元",
+        "label": "视频号与抖音佣金合计，航海期约 20 天"
+      },
+      {
+        "value": "约481万",
+        "label": "两平台公开账号播放量合计"
+      }
+    ],
+    "summary": "正文署名佬海的作者有多年电商运营经验，却是在参加 AI 图书带货航海后，开始摸索视频号与抖音。约 20 天里，两平台公开数据合计约 481 万播放、148 笔成交，佣金超过 5909 元。流量带来阶段性反馈后，他也在复盘中谈到起步期的持续创作与转化问题。",
+    "ctaCopy": "他把 AI 图书带货航海期间两平台的播放、成交与佣金数据，以及起步阶段遇到的转化问题，写进了生财精华帖。",
+    "questions": [
+      "刚进入视频号图书带货时，他经历了怎样的起步阶段？",
+      "播放量起来之后，成交和佣金表现如何？",
+      "新人在短期测试中，怎样看待流量与转化的差距？",
+      "航海周期结束后，哪些问题还需要继续验证？"
+    ],
+    "quotes": [
+      "AI 降低了视频制作门槛，但图书带货依旧离不开选品、内容、耐心。"
+    ]
+  },
+  {
+    "slug": "first-knowledge-product-income",
+    "status": "published",
+    "title": "国企上班族第一次跑通副业，从首单 10 元到月累计约 1000 元",
+    "author": "李彦鹏",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FjqYMSA2Lt4ifKgZEs6kgIpOh_Iw",
+    "topics": [
+      "product"
+    ],
+    "rank": 29,
+    "publishedAt": "2026-08-26T15:22:43.000Z",
+    "resultLabel": "约1000元 · 一个月累计收入",
+    "results": [
+      {
+        "value": "约1000元",
+        "label": "一个月累计收入"
+      }
+    ],
+    "summary": "李彦鹏在国企工作，面对行业变化和家庭压力，开始尝试知识库产品副业。一个月里，他从第一单十元，走到累计收入约一千元，还因为客户提出新需求拿到定制订单。结果并不大，却让他第一次接触了真实成交，也开始重新思考产品是否还有继续做深的空间。",
+    "ctaCopy": "他把从首单到客户反馈，再到发现新产品方向的过程，写进了生财精华帖。",
+    "questions": [
+      "第一次做副业，怎样看待金额很小的第一单？",
+      "资料和用户真正愿意买的产品，差在哪里？",
+      "客户提出的新需求，什么时候值得认真投入？",
+      "刚跑通一个小项目，就适合立刻扩大规模吗？"
+    ],
+    "quotes": []
+  },
+  {
     "slug": "ai-knowledge-business-income",
     "status": "published",
     "title": "两个月改造自己的业务，月入 7 万背后的 AI 员工实践",
@@ -886,675 +1651,5 @@
       "项目开始增长后，哪些工作反而会成为瓶颈？"
     ],
     "quotes": []
-  },
-  {
-    "slug": "career-content-side-income",
-    "status": "published",
-    "title": "7 年产品经理，把职场经验做成内容，4 个月变现 2 万",
-    "author": "夏树",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fj8KOKnwShlyqjwD-Onm-X-HN4Yp",
-    "topics": [
-      "content",
-      "product"
-    ],
-    "rank": 28,
-    "publishedAt": "2026-09-09T03:25:07.000Z",
-    "resultLabel": "2万元 · 4 个月累计变现",
-    "results": [
-      {
-        "value": "2万元",
-        "label": "4 个月累计变现"
-      }
-    ],
-    "summary": "夏树做了七年产品经理，却没有独立跑过一门小生意。他从熟悉的职场经验出发，借助 AI 做内容，四个月积累四千多粉丝，累计变现两万元。过程中既有很快出现的爆款，也有随后回落的数据。这篇复盘记录的是一个职场人怎样第一次接触真实客户和成交。",
-    "ctaCopy": "他把从工作经验到内容与产品，以及第一次完成成交的经历，写进了生财精华帖。",
-    "questions": [
-      "职场经验里，哪些内容可能被别人需要？",
-      "刚开始就出现爆款，为什么后面仍会遇到瓶颈？",
-      "粉丝只有几千，能支撑一门小生意吗？",
-      "擅长完成工作，和独立做成项目之间差在哪里？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "first-knowledge-product-income",
-    "status": "published",
-    "title": "国企上班族第一次跑通副业，从首单 10 元到月累计约 1000 元",
-    "author": "李彦鹏",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FjqYMSA2Lt4ifKgZEs6kgIpOh_Iw",
-    "topics": [
-      "product"
-    ],
-    "rank": 29,
-    "publishedAt": "2026-08-26T15:22:43.000Z",
-    "resultLabel": "约1000元 · 一个月累计收入",
-    "results": [
-      {
-        "value": "约1000元",
-        "label": "一个月累计收入"
-      }
-    ],
-    "summary": "李彦鹏在国企工作，面对行业变化和家庭压力，开始尝试知识库产品副业。一个月里，他从第一单十元，走到累计收入约一千元，还因为客户提出新需求拿到定制订单。结果并不大，却让他第一次接触了真实成交，也开始重新思考产品是否还有继续做深的空间。",
-    "ctaCopy": "他把从首单到客户反馈，再到发现新产品方向的过程，写进了生财精华帖。",
-    "questions": [
-      "第一次做副业，怎样看待金额很小的第一单？",
-      "资料和用户真正愿意买的产品，差在哪里？",
-      "客户提出的新需求，什么时候值得认真投入？",
-      "刚跑通一个小项目，就适合立刻扩大规模吗？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "ai-career-writing-first-results",
-    "status": "published",
-    "title": "两个月做 AI 职场内容，一个账号跑通流量主",
-    "author": "豚小祖",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fm9uTNdoC6xW7sOYp3TJoWqw4efD",
-    "topics": [
-      "content",
-      "automation"
-    ],
-    "rank": 30,
-    "publishedAt": "2026-09-07T16:20:51.000Z",
-    "resultLabel": "1.1万 · 已跑通账号最高单篇阅读",
-    "results": [
-      {
-        "value": "1.1万",
-        "label": "已跑通账号最高单篇阅读"
-      }
-    ],
-    "summary": "豚小祖开始用 AI 写职场内容时，最初的文章很模板化，缺少真实表达。两个月里，他反复调整，逐渐把内容生产稳定下来，目前一个账号跑通了流量主，最高单篇阅读约一万一千，近期稳定在一千以上。这篇复盘既写已有结果，也写了模仿形式却写不出好内容的卡点。",
-    "ctaCopy": "他把内容从模板化到逐渐稳定，以及两个月里反复调整的过程，写进了生财精华帖。",
-    "questions": [
-      "AI 写出的文章完整，为什么读起来还是很生硬？",
-      "找到参考内容之后，为什么仍需要不断调整？",
-      "单篇高阅读和持续产出，分别需要解决什么问题？",
-      "一个账号初步跑通后，怎样判断能否继续扩展？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "x-ai-media-54k-followers",
-    "status": "published",
-    "title": "做 X AI 自媒体 8 个月积累 5.4 万关注，开始承接品牌与 AI 产品合作",
-    "author": "逸尘",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fmt_OCqyAhwZ4gDUGSPAdU5JiLE-",
-    "topics": [
-      "content",
-      "overseas"
-    ],
-    "rank": 34,
-    "publishedAt": "2026-09-15T07:11:29.000Z",
-    "resultLabel": "8个月积累 5.4 万关注",
-    "results": [
-      {
-        "value": "5.4万",
-        "label": "X AI 垂类关注数（作者自述）"
-      }
-    ],
-    "summary": "逸尘从大学期间接触 AI 产品、视频和内容项目，后来把精力聚焦到 X 的 AI 自媒体。八个月里，账号积累 5.4 万关注；他也开始承接海外品牌商单和 AI 产品合作。回看这段经历时，他提到前期做过不同方向的尝试，过去的项目积累逐渐汇聚到这一账号。",
-    "ctaCopy": "他把从多个 AI 项目转向 X 垂类内容、账号增长和早期商业合作的经历，写进了这篇生财精华帖。",
-    "questions": [
-      "从多个 AI 项目转向一个内容账号，他做了怎样的选择？",
-      "一个 AI 垂类账号在八个月里积累了哪些变化？",
-      "账号增长之后，他开始尝试哪些商业合作？",
-      "长期做内容时，过往项目经验怎样发挥作用？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "xiaohongshu-ai-account-first-ads",
-    "status": "published",
-    "title": "从新号做到 6824 粉，她在小红书累计接到 6 个广告",
-    "author": "Alisa",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FpRIlJC_-27fCpqqnuMj6wamTYis",
-    "topics": [
-      "content"
-    ],
-    "rank": 35,
-    "publishedAt": "2026-09-12T08:55:53.000Z",
-    "resultLabel": "6个广告 · 累计变现 1596（原文未注明单位）",
-    "results": [
-      {
-        "value": "6824",
-        "label": "账号粉丝数"
-      },
-      {
-        "value": "1596",
-        "label": "累计变现，原文未注明单位"
-      }
-    ],
-    "summary": "刚毕业不久、没有小红书经验的 Alisa，从新注册账号开始尝试。内容方向调整期间，她经历过流量停滞和粉丝画像不匹配；账号做到 6824 粉后，累计接到 6 个广告、变现 1596（原文未注明单位）。她也把 AI 用在内容复盘中，记录了普通人从新号起步、逐渐找到商业机会的过程。",
-    "ctaCopy": "她把从新账号起步、转型时遇到的流量与粉丝画像问题，以及第一批广告合作的经历，写进了生财精华帖。",
-    "questions": [
-      "没有平台经验的新账号，怎样逐渐找到适合自己的内容方向？",
-      "账号有了流量却接不到广告，可能卡在什么地方？",
-      "转型期间数据不稳定时，她经历了哪些变化？",
-      "AI 参与内容复盘后，哪些判断仍需要自己做？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "ai-solo-business-knowledge-product",
-    "status": "published",
-    "title": "AI 辅助的一人公司知识产品，以 699 元客单价卖出 500 多份",
-    "author": "叁斤",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FrYNcCbpk5bifMppfnM644T5unUL",
-    "topics": [
-      "product",
-      "automation"
-    ],
-    "rank": 36,
-    "publishedAt": "2026-09-02T08:34:57.000Z",
-    "resultLabel": "500多份 · 客单价 699 元",
-    "results": [
-      {
-        "value": "500多份",
-        "label": "知识产品销量，客单价 699 元"
-      }
-    ],
-    "summary": "叁斤做一人公司第三年，曾靠私教和企业项目获得收入，却发现重交付把时间排得很满。后来，他把多年积累整理成知识产品，并借助 AI 做需求研究、辅助产品制作；一款产品用约六个月卖出五百多份，客单价 699 元。业务重心也逐渐转向可复用的产品。",
-    "ctaCopy": "他把从重交付转向可复用产品、尝试将 AI 融入需求研究和产品制作，再到持续销售的经历，写进了这篇精华帖。",
-    "questions": [
-      "服务收入不错，为什么他决定调整一人公司的业务结构？",
-      "知识产品从想法走到持续销售，过程中出现了哪些取舍？",
-      "AI 进入需求研究和产品制作后，工作方式发生了什么变化？",
-      "产品销量起来之后，怎样避免交付重新变成时间负担？"
-    ],
-    "quotes": [
-      "公司的锚点不是时间，是产品。"
-    ]
-  },
-  {
-    "slug": "ai-book-video-affiliate-commission",
-    "status": "published",
-    "title": "AI 图书带货航海 20 天，两平台拿到 5909+ 元佣金",
-    "author": "！",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FuPQxm7PoCaow2a8UZO0ylRd170U",
-    "topics": [
-      "content",
-      "automation"
-    ],
-    "rank": 37,
-    "publishedAt": "2026-08-27T11:39:58.000Z",
-    "resultLabel": "航海 20 天佣金 5909+ 元",
-    "results": [
-      {
-        "value": "5909+元",
-        "label": "视频号与抖音佣金合计，航海期约 20 天"
-      },
-      {
-        "value": "约481万",
-        "label": "两平台公开账号播放量合计"
-      }
-    ],
-    "summary": "正文署名佬海的作者有多年电商运营经验，却是在参加 AI 图书带货航海后，开始摸索视频号与抖音。约 20 天里，两平台公开数据合计约 481 万播放、148 笔成交，佣金超过 5909 元。流量带来阶段性反馈后，他也在复盘中谈到起步期的持续创作与转化问题。",
-    "ctaCopy": "他把 AI 图书带货航海期间两平台的播放、成交与佣金数据，以及起步阶段遇到的转化问题，写进了生财精华帖。",
-    "questions": [
-      "刚进入视频号图书带货时，他经历了怎样的起步阶段？",
-      "播放量起来之后，成交和佣金表现如何？",
-      "新人在短期测试中，怎样看待流量与转化的差距？",
-      "航海周期结束后，哪些问题还需要继续验证？"
-    ],
-    "quotes": [
-      "AI 降低了视频制作门槛，但图书带货依旧离不开选品、内容、耐心。"
-    ]
-  },
-  {
-    "slug": "ai-game-guide-site-first-ad-revenue",
-    "status": "published",
-    "title": "他用 AI 做出 160 页游戏攻略站，9 天广告收入 1.37 美元",
-    "author": "林广恩",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fgbjt2o88_NyoJGT_wqFPXkfbSGC",
-    "topics": [
-      "content",
-      "overseas"
-    ],
-    "rank": 38,
-    "publishedAt": "2026-09-11T15:27:24.000Z",
-    "resultLabel": "1.37 美元 · 9 天广告收入（早期样本）",
-    "resultPeriod": "2026 年 8 月 23 日至 31 日",
-    "results": [
-      {
-        "value": "1.37 美元",
-        "label": "广告上线约 9 天累计收入；早期小样本"
-      },
-      {
-        "value": "160 页",
-        "label": "攻略站页面，覆盖四种语言"
-      }
-    ],
-    "summary": "林广恩用 Fields of Mistria 做了第一座游戏攻略站 MistriaFans，逐步扩展到四种语言、160 个页面。广告上线后，9 天获得 1,082 次展示、收入 1.37 美元。数据仍是小样本，不能说明稳定盈利；但网站已有可核对的广告收入，他也开始根据搜索和广告数据调整方向。",
-    "ctaCopy": "他把游戏攻略站从初次上线、出现搜索流量，到获得第一笔广告收入的复盘，以及仍待验证的问题，写进了生财精华帖。",
-    "questions": [
-      "做出一批页面之后，怎样判断游戏攻略站是否真的开始获得搜索流量？",
-      "网站有了展示和点击，距离广告变现还有多远？",
-      "第一笔广告收入出现后，怎样看待样本量很小的早期数据？",
-      "哪些信号能帮助内容站决定继续投入还是调整方向？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "ai-wechat-sticker-traffic-income",
-    "status": "published",
-    "title": "公众号贴图单日获 380 万阅读、流量主收入 2585 元",
-    "author": "新天",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fs2-9C2UrgAWXefqqjGXHRS-PlhL",
-    "topics": [
-      "content",
-      "automation"
-    ],
-    "rank": 39,
-    "publishedAt": "2026-09-23T12:27:33.000Z",
-    "resultLabel": "2585.83 元 · 单日流量主收入",
-    "resultPeriod": "两篇贴图同日的阶段性结果",
-    "results": [
-      {
-        "value": "2585.83元",
-        "label": "单日公众号流量主收入，非日常收入"
-      },
-      {
-        "value": "380.2万",
-        "label": "两篇公众号贴图同日阅读量"
-      }
-    ],
-    "summary": "新天有多年外贸经历，离职后重新做公众号，逐渐转向贴图内容。半年摸索中，两篇贴图曾在同一天获得 380.2 万阅读，流量主收入 2585.83 元。他把 AI 和 Skill 用于内容提效，同时强调选题与成稿仍需自己把关；这只是单日结果，不代表稳定日收入。",
-    "ctaCopy": "他把从外贸工作转向公众号、内容方向调整和爆发数据出现后的复盘，写进了这篇生财精华帖。",
-    "questions": [
-      "离开熟悉的外贸工作后，他为什么重新开始做公众号？",
-      "从长文章转向贴图内容的过程中，项目经历了哪些变化？",
-      "单日阅读和收入达到峰值，能否说明内容项目已经稳定？",
-      "使用 AI 协助内容生产时，哪些判断仍需要自己负责？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "ai-game-steam-revenue",
-    "status": "published",
-    "title": "两个月用 AI 做出三款 Steam 游戏，第三款卖出 2500 多份",
-    "author": "小灰",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fp-NMGYB58NxKMbYJViFhwLA7F-k",
-    "topics": [
-      "product",
-      "automation"
-    ],
-    "rank": 40,
-    "publishedAt": "2026-09-20T05:41:06.000Z",
-    "resultLabel": "2500 多份 · 第三款游戏销量；净营收约 3369 美元",
-    "results": [
-      {
-        "value": "2500 多份",
-        "label": "第三款游戏销量"
-      },
-      {
-        "value": "3369 美元",
-        "label": "Steam 净营收"
-      }
-    ],
-    "summary": "程序员小灰想验证 AI 能否做出可商业化的游戏，用两个月做了三款并上架 Steam。前两款反响平平，第三款放置游戏《无为修仙传》卖出 2500 多份，净营收约 3369 美元。成绩还称不上爆款，却让他看到个人开发走向真实收入的可能；后续仍要持续投入时间迭代。",
-    "ctaCopy": "小灰把从方向选择、游戏反馈，到成本和投入取舍的探索过程，写进了生财精华帖。",
-    "questions": [
-      "前两次反响一般后，他为什么继续尝试？",
-      "第三款游戏表现不同后，他如何看待 AI 在开发中的边界？",
-      "销量之外，上架平台和持续维护还带来哪些投入？",
-      "一款游戏有了早期销量，怎样判断它能否持续？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "ai-timetable-wallpaper-miniapp",
-    "status": "published",
-    "title": "小学老师把课表需求做成小程序，累计变现一千多元",
-    "author": "黄小鱼🐠（路演记录者）",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FpcKdL9db8CrHrpSMYu9bXu-Tm5d",
-    "topics": [
-      "product"
-    ],
-    "rank": 41,
-    "publishedAt": "2026-09-21T13:33:46.000Z",
-    "resultLabel": "1000 多元 · 项目累计变现",
-    "results": [
-      {
-        "value": "1000 多元",
-        "label": "课表壁纸小程序累计变现，开放日路演记录"
-      }
-    ],
-    "summary": "在亦仁开放日的 AI 项目路演上，一线小学老师艺文分享了自己的课表壁纸小程序。她注意到老师们制作桌面课表不方便，便把这个需求做成产品；上台时，项目累计变现已超过一千元。起步规模虽小，现场讨论也把产品还能服务哪些人、如何继续成长摆到了台面上。",
-    "ctaCopy": "黄小鱼记录了艺文从教师日常需求找到产品方向、跑出第一笔收入的过程，以及路演现场对产品后续空间的讨论。",
-    "questions": [
-      "一线老师怎样从日常困扰里找到值得做的产品？",
-      "产品刚跑通第一笔收入，如何判断需求是否真实？",
-      "核心用户已经明确后，要不要继续扩展服务人群？",
-      "小程序开始有人付费后，下一步增长会遇到什么问题？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "ai-service-business-halfyear-100k-profit",
-    "status": "published",
-    "title": "若宇入圈半年，用 AI 相关业务实现 10 万元净利润",
-    "author": "若宇",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FtbKj83XCzoIeoIUl6nlobzFW7wu",
-    "topics": [
-      "service",
-      "automation"
-    ],
-    "rank": 42,
-    "publishedAt": "2026-09-26T10:34:40.000Z",
-    "resultLabel": "半年净利润超 10 万元",
-    "results": [
-      {
-        "value": "10 万元以上",
-        "label": "半年 AI 相关业务实际净利润"
-      },
-      {
-        "value": "22,000 元",
-        "label": "AI 获客系统合同总额已全额收款"
-      }
-    ],
-    "summary": "刚退伍时，若宇和战友合伙投资亏了 4 万多，后来做过健身教练、跑过外卖。接触 AI 后，他从体验服务、内容尝试和小额脚本订单做起，逐步接到企业客户；其中一笔美业获客系统合同收齐 2.2 万元。入圈半年，他的 AI 相关业务净利润超过 10 万元，也开始独立开发小程序。",
-    "ctaCopy": "若宇把从合伙亏损、跑外卖到逐步接下企业 AI 项目的经历，以及多种业务尝试中的得失，写进了这篇半年复盘。",
-    "questions": [
-      "没有技术背景时，若宇是怎样从零散的小需求开始接单的？",
-      "一笔最初从培训咨询开始的沟通，后来为什么转成企业项目？",
-      "半年净利润的口径如何核算，不同业务带来了哪些变化？",
-      "从零散订单到复购与转介绍，他经历了什么转折？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "ai-subject-cards-wechat-20-day-revenue",
-    "status": "published",
-    "title": "AI 学科知识卡片结合公众号，20 天变现超 1 万元",
-    "author": "心海的猫",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FrElAOQMxqQh6wLRodmteprxQid3",
-    "topics": [
-      "product",
-      "content"
-    ],
-    "rank": 43,
-    "publishedAt": "2026-09-25T14:41:12.000Z",
-    "resultLabel": "20 天累计变现超 1 万元",
-    "results": [
-      {
-        "value": "1 万元以上",
-        "label": "20 天累计变现收入（店铺销售+私域）"
-      },
-      {
-        "value": "883 人",
-        "label": "公众号新增关注"
-      }
-    ],
-    "summary": "此前经历两次产品下架后，心海的猫重新围绕学科资料寻找方向。8 月，她尝试用 AI 制作初中英语知识卡片并在店铺销售，也把实操经历写进公众号。20 天内，公众号新增 883 位关注，店铺销售与私域服务累计变现超过 1 万元。她从这次尝试中看到，内容和产品可以共同积累。",
-    "ctaCopy": "她记录了平台规则变化后的重新选择，以及知识卡片逐步出单、公众号带来咨询和后续服务成交的过程。",
-    "questions": [
-      "产品接连下架后，她为什么把重点转回学科资料？",
-      "新一轮产品尝试开始后，最早的反馈和收入是怎样出现的？",
-      "公众号内容怎样连接到商品、教程和陪跑需求？",
-      "这次 20 天变现包含哪些收入，统计口径是什么？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "ai-coding-gym-miniapp-first-project",
-    "status": "published",
-    "title": "00 后用 AI 编程完成首个商业小程序，商定开发费 7000 元",
-    "author": "不知名的上仙",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FieEMYwI6fKsetUqhCZaNSiRDgDz",
-    "topics": [
-      "service",
-      "product"
-    ],
-    "rank": 44,
-    "publishedAt": "2026-09-26T09:55:34.000Z",
-    "resultLabel": "7000 元 · 双方最初商定的开发技术费",
-    "results": [
-      {
-        "value": "7000 元",
-        "label": "双方最初商定的项目开发技术费；原文未说明是否已收款"
-      }
-    ],
-    "summary": "00 后的“不知名的上仙”参加 AI 编程航海后，先尝试内容和知识产品，却没有取得明显收入。后来，他接下健身房小程序定制项目，面对需求遗漏和备案延期等波折。项目经过调整后最终上线，双方最初商定的开发技术费为 7000 元；原帖没有说明这笔费用是否已收款。",
-    "ctaCopy": "他记录了从第一次把 AI 编程用于真实商业项目，到应对交付波折并让小程序上线的经历。",
-    "questions": [
-      "没有商业开发案例时，他如何争取到第一个真实项目？",
-      "项目中途发现需求遗漏后，交付遇到了哪些考验？",
-      "产品完成开发后，为什么还不能马上上线？",
-      "从练习项目到真实交付，他对 AI 编程的认识发生了什么变化？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "ai-original-ppt-store-monthly-50k",
-    "status": "published",
-    "title": "五家店铺被封后转向 AI 原创，单店单月收入 5 万",
-    "author": "尹星河",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FqTYfWfedJOuVOdMt07pZTQfe55J",
-    "topics": [
-      "product",
-      "automation"
-    ],
-    "rank": 45,
-    "publishedAt": "2026-09-29T11:24:20.000Z",
-    "resultLabel": "5 万元 · 单店单月收入（原文未说明利润口径）",
-    "results": [
-      {
-        "value": "5 万元",
-        "label": "开学季单店单月收入，原文未说明是否扣除成本"
-      }
-    ],
-    "summary": "尹星河团队做小红书虚拟产品两年多，五家经营多年的店铺因平台治理接连被封，原有业务突然中断。团队调整方向，开始尝试用 AI 做原创产品。经过两个多月重建，赶上开学季后，单个店铺单月收入达到 5 万元。原帖没有说明这笔收入是否扣除了成本。",
-    "ctaCopy": "这篇复盘记录了团队从原有业务受挫、重新调整，到 AI PPT 产品出现销售结果的经历。",
-    "questions": [
-      "五家店铺接连被封后，团队如何决定下一步方向？",
-      "转向原创产品后，团队如何面对市场需求与成本压力？",
-      "开学季带来的销售结果，之后能否延续？",
-      "从店铺销售到定制需求，团队的业务发生了哪些变化？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "ai-one-person-company-first-year-six-figures",
-    "status": "published",
-    "title": "文科生毕业一年，靠 AI 相关业务累计变现六位数",
-    "author": "乔川",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FtAyAb2MvWI7YQuVQzyv6BRFfdhr",
-    "topics": [
-      "service",
-      "automation"
-    ],
-    "rank": 46,
-    "publishedAt": "2026-09-28T05:31:37.000Z",
-    "resultLabel": "六位数 · 毕业一年 AI 相关业务累计变现",
-    "results": [
-      {
-        "value": "六位数",
-        "label": "毕业一年 AI 相关业务累计变现；原文未拆分收入与利润"
-      }
-    ],
-    "summary": "乔川是 02 年文科生，刚接触 AI 时曾因缺乏判断而在建模比赛中失利。毕业后，他先在已有业务中承担操盘工作，随后转向 AI 定制服务与自营产品。一年间，他从不会写代码走到 AI 相关业务累计变现六位数，也开始经营自己的 AI 一人公司。",
-    "ctaCopy": "他把从学生时期的 AI 失利，到尝试操盘、定制服务和经营自营盘的成长过程，写进这篇长复盘。",
-    "questions": [
-      "没有技术背景时，他怎样找到 AI 与真实业务的连接点？",
-      "从承担一个业务环节到提供定制服务，过程中遇到了什么转折？",
-      "一年累计变现六位数，包含了哪些不同阶段的业务？",
-      "当服务经验逐渐变多后，他为什么开始尝试经营自营产品？"
-    ],
-    "quotes": [
-      "AI 把我的能力放大了，也把我的无知一起放大了。"
-    ]
-  },
-  {
-    "slug": "ai-router-directory-ad-revenue-five-figures",
-    "status": "published",
-    "title": "不做中转站，AI 导航累计广告收入 5 位数，首页位涨到 2000 元/月",
-    "author": "A   😇路途",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FnS3UIlHSY9p8e0tELxg7Zijdn87",
-    "topics": [
-      "product",
-      "service"
-    ],
-    "rank": 47,
-    "publishedAt": "2026-09-27T09:38:59.000Z",
-    "resultLabel": "5 位数 · 首页广告位累计收入",
-    "results": [
-      {
-        "value": "5 位数",
-        "label": "截至原帖发布时，首页广告位累计收入（作者自述，非利润）"
-      },
-      {
-        "value": "399 → 2000 元/月",
-        "label": "同一首页广告位的月报价变化；涨价后仍有客户购买"
-      }
-    ],
-    "summary": "路途发现，AI 用户需要的不只是中转服务本身，也需要挑选服务商的信息。他没有亲自经营中转站，而是做了一组相关导航网站，通过首页广告位获得收入。首个广告位月价 399 元，后来涨至 2000 元仍有客户购买，广告位累计收入达到五位数。",
-    "ctaCopy": "他复盘了从看见 AI 用户需求，到导航网站获得首批广告客户、广告位价格逐步上涨的商业过程。",
-    "questions": [
-      "AI 用户的哪些需求，让导航站有了商业空间？",
-      "不经营中转服务的导航站，为什么能吸引商家付费推广？",
-      "从首次定价到涨价，作者观察到了哪些市场反馈？",
-      "广告客户愿意继续购买，说明这个小站提供了什么价值？"
-    ],
-    "quotes": []
-  },
-  {
-    "slug": "college-student-ai-matlab-codex-400k-revenue",
-    "status": "published",
-    "title": "休学做 AI+MATLAB 服务、毕业试 Codex 教学，累计收入约 40 万",
-    "author": "都督",
-    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FnpFdotD0Yz_lYQIgfdovow2IGvW",
-    "topics": [
-      "service",
-      "product"
-    ],
-    "rank": 48,
-    "publishedAt": "2026-09-30T12:13:58.000Z",
-    "resultLabel": "约 40 万元 · 多段 AI 相关业务累计收入",
-    "results": [
-      {
-        "value": "约 40 万元",
-        "label": "AI+MATLAB 服务、产品尝试和 Codex 教学等业务累计收入（作者自述，非利润）"
-      },
-      {
-        "value": "约 1 万元",
-        "label": "Codex 一对一教学收入，毕业后暑假阶段性测试"
-      }
-    ],
-    "summary": "都督从 2023 年接触 AI，后来休学做 AI 编程与 MATLAB 服务，并组建工作室；复学后，他又尝试把服务经验做成产品。毕业后，他用一个暑假测试 Codex 一对一教学，收入约 1 万元。几段经历合计约 40 万元收入，但产品尝试尚未带来收入，他开始重新审视业务方向与长期积累。",
-    "ctaCopy": "他记录了从 AI+MATLAB 服务、复学尝试产品到 Codex 教学的经历，也复盘了短期收入与长期积累之间的取舍。",
-    "questions": [
-      "休学做服务、复学做产品，再到 Codex 教学，他每次转向的原因是什么？",
-      "AI 帮人提高效率后，客户真正愿意为什么结果付费？",
-      "把服务经验做成产品时，哪些期待没有变成收入？",
-      "从眼前收入到长期积累，他开始怎样重新看待一门生意的价值？"
-    ],
-    "quotes": []
-  },
-{
-  "slug": "xiaohongshu-virtual-goods-sales-tracking",
-  "status": "published",
-  "title": "从人工选品到 Codex 监控系统，他的小红书虚拟商品项目累计收益达六位数",
-  "author": "锦城随笔¹",
-  "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fon3QqwMxJ6TDVYSawgYR2pjPHqj",
-  "topics": [
-    "product",
-    "automation"
-  ],
-  "rank": 49,
-  "publishedAt": "2026-10-06T07:43:39.000Z",
-  "resultLabel": "累计收益六位数；平台调整后月收益约1万元",
-  "resultPeriod": "小红书虚拟商品项目复盘，金额沿用原文收益口径",
-  "results": [
-    {
-      "value": "六位数",
-      "label": "职场类商品项目累计收益，原文未说明是否为净利润"
-    },
-    {
-      "value": "约1万元",
-      "label": "平台调整后店铺月收益，原文未拆分成本"
-    }
-  ],
-  "summary": "锦城随笔在小红书做虚拟商品时，店铺规模扩张后，原先的经营方式遇到信息过载与趋势判断难题。他后来借助AI把日常数据观察需求，逐步转化为两套自用工具。此前的职场类商品项目累计收益达到六位数；但平台调整后，店铺月收益从约4万元降至约1万元，他也把重心转向更审慎的经营、内容质量和合规。",
-  "ctaCopy": "他记录了经营虚拟商品期间的变化、项目起伏与工具迭代，也分享了对数据边界和内容合规的反思。",
-  "questions": [
-    "商品累计销量很高时，怎样判断它最近是否还在持续增长？",
-    "平台调整导致店铺收益下滑时，经营者怎样重新审视方向？",
-    "长期观察数据之后，哪些经营判断仍需要自己完成？",
-    "怎样避免只看历史销量，忽略需求变化的时间窗口？",
-    "做虚拟商品项目时，如何同时关注经营表现与内容合规？"
-  ],
-  "quotes": [
-    "我更愿意自己留一批商品长期看。"
-  ]
-},
-{
-  "slug": "ai-wechat-sticker-multi-account-revenue-10232",
-  "status": "published",
-  "title": "反复违规之后，Jade.S_苏苏的三个公众号9月合计收益 10,232 元",
-  "author": "Jade.S_苏苏",
-  "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FjSl7H_CKf4aeC0ymSth6jXN8dmI",
-  "topics": [
-    "content"
-  ],
-  "rank": 52,
-  "publishedAt": "2026-10-09T03:09:29.000Z",
-  "resultLabel": "三个公众号账号9月合计收益 10,232 元",
-  "resultPeriod": "公众号贴图项目阶段复盘",
-  "results": [
-    {
-      "value": "10,232 元",
-      "label": "9月三个公众号账号合计收益"
-    },
-    {
-      "value": "16 篇",
-      "label": "9月阅读量超过 10 万的内容篇数"
-    }
-  ],
-  "summary": "Jade.S_苏苏此前试过多个内容方向，却一直没拿到满意结果。转向公众号贴图后，她先迎来流量，随后又因内容规则问题反复违规、注销账号。经历几轮摸索，到 9 月，三个账号合计收益达到 10,232 元，16 篇内容阅读量超过 10 万。",
-  "ctaCopy": "她记录了从首次起量、接连违规到三个账号跑出月度收益的过程，也复盘了内容方向几次调整的经历。",
-  "questions": [
-    "反复违规之后，创作者怎样判断方向是否值得继续？",
-    "阅读量达到十万，和实际收益之间为什么有时差别很大？",
-    "同时经营多个账号，会遇到哪些超出内容创作本身的难题？",
-    "一次流量高峰，足以证明项目能稳定赚钱吗？"
-  ],
-  "quotes": [
-    "流量起落本就是常态，想都是问题，做才有答案。"
-  ]
-},
-{
-  "slug": "ai-bead-patterns-halfmonth-income-6000",
-  "status": "published",
-  "title": "星从教辅尝试转向拼豆图纸，半月收入超过 6,000 元",
-  "author": "星",
-  "topics": [
-    "product",
-    "content"
-  ],
-  "rank": 53,
-  "publishedAt": "2026-10-02T17:42:56.000Z",
-  "resultLabel": "拼豆图纸半月收入超过 6,000 元",
-  "resultPeriod": "9月12日至月底",
-  "results": [
-    {
-      "value": "6,000+ 元",
-      "label": "拼豆图纸累计收入，原文口径"
-    },
-    {
-      "value": "1,273.91 元",
-      "label": "9月15日单日图纸收入"
-    }
-  ],
-  "summary": "星起初花了三个月做教辅资料，销售额约 1,000 元。后来她出于兴趣尝试拼豆图纸，半个月收入超过 6,000 元；账号受限后，收入回落但仍有进账。她也观察到，前期发布的图纸在流量下降后仍带来购买。",
-  "ctaCopy": "她记录了从教辅尝试、拼豆图纸获得正反馈，到账号受限后观察收入变化的经历，也谈了 AI 生成内容的检查边界。",
-  "questions": [
-    "投入几个月却只获得少量销售额时，怎样决定是否调整方向？",
-    "一个兴趣尝试开始有人付费，哪些信号值得继续观察？",
-    "平台流量受限后，之前发布的内容还能带来多少后续购买？",
-    "AI 生成的图解用于付费产品时，哪些质量问题容易被忽略？"
-  ],
-  "quotes": [
-    "这是一段让我愿意继续投入的正反馈，但还不能说明长期收入已经稳定。"
-  ]
-}
+  }
 ]
