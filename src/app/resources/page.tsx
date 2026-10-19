@@ -49,6 +49,17 @@ export default function ResourcesPage() {
         <span className="mt-6 inline-block border-b border-[#d6b47b] pb-1 text-base text-[#e9bf78]">阅读 GPT-6 案例集 →</span>
       </Link>
 
+      <section className="grid gap-6 rounded-[1.75rem] border border-primary/20 bg-card-light p-7 shadow-soft dark:bg-card-dark md:grid-cols-[1fr_auto] md:items-center md:p-10">
+        <div>
+          <div className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Featured Guide</div>
+          <h2 className="mt-3 font-serif text-3xl font-black text-text-main-light dark:text-text-main-dark">Grok Bot 学习手册</h2>
+          <p className="mt-4 max-w-2xl leading-8 text-secondary dark:text-muted">
+            从创建 Bot、写清任务开始，跟着真实案例练习内容协作与 AI 编程。17 个章节配有笔记、进度记录和情景测验。
+          </p>
+        </div>
+        <Link href="/grok-bot-guide" className="btn btn-primary">开始学习 →</Link>
+      </section>
+
       <section className="grid gap-5 md:grid-cols-3">
         {resourceTypes.map((type, index) => (
           <article key={type.title} className="relative overflow-hidden rounded-xl border border-subtle/70 bg-card-light p-6 shadow-soft dark:border-white/10 dark:bg-card-dark">
