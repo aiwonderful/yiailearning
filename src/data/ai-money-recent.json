@@ -1,5 +1,108 @@
 [
   {
+    "slug": "ai-enterprise-training-from-free-to-five-figures",
+    "status": "published",
+    "title": "从免费课到数万元订单：飞掌柜的 AI 企业培训实战",
+    "author": "飞掌柜",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FsV2_nPxnEBWy1LHJTH1aJFwUrBq",
+    "topics": [
+      "service"
+    ],
+    "rank": 63,
+    "publishedAt": "2026-10-12T13:26:19.000Z",
+    "resultLabel": "服务过50+家B端机构，培训订单从数百元到数万元",
+    "resultPeriod": "AI企业培训实战复盘",
+    "results": [
+      {
+        "value": "50+家",
+        "label": "作者披露的B端服务机构数量"
+      },
+      {
+        "value": "数百元—数万元",
+        "label": "AI企业培训订单金额范围，作者自述"
+      }
+    ],
+    "summary": "飞掌柜看到 AI 企业培训机会后，围绕职场提效打磨线上与线下课程，并持续进入企业现场。几个月实战下来，他服务过50多家机构，培训订单从数百元到数万元；一次现场交付获得认可后，又谈成了长期合作。",
+    "ctaCopy": "他复盘了从课程打磨、客户现场交付到获得长期合作的经历，也披露了 AI 企业培训订单从免费起步、逐渐走向数万元的过程。",
+    "questions": [
+      "AI 企业培训怎样从讲工具走到解决企业问题？",
+      "缺少典型案例时，客户为什么愿意给第一次机会？",
+      "培训结束后，怎样继续为企业提供价值？",
+      "讲师如何从免费课程逐步接到付费订单？",
+      "企业客户更看重讲师的哪些能力和证明？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "fde-first-ai-workbench-deposit-3000",
+    "status": "published",
+    "title": "小满团队拿下首个 AI 工作台项目，收到 3000 元定金",
+    "author": "小满",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FpeGaRwPl2kaj4aEW4sqLUnrRszf",
+    "topics": [
+      "service",
+      "product"
+    ],
+    "rank": 64,
+    "publishedAt": "2026-10-10T08:06:47.000Z",
+    "resultLabel": "AI 工作台项目收到 3000 元定金，合同总额为五位数",
+    "resultPeriod": "团队初次参与AI项目交付",
+    "results": [
+      {
+        "value": "3000元",
+        "label": "疗愈工作台项目已收到的定金"
+      },
+      {
+        "value": "五位数",
+        "label": "该项目合同总额，仍在开发中"
+      }
+    ],
+    "summary": "小满会用一些 AI，却还没有独立交付客户项目。和三位伙伴组队后，她两天内接触跨境公司、护肤品牌和疗愈师；前两个仍在沟通，疗愈工作台项目三天后收到3000元定金，合同总价为五位数。项目尚在开发，她也开始正视需求细化和交付边界。",
+    "ctaCopy": "她复盘了团队接触三类客户后的选择、第一次收到定金的经历，以及项目启动后重新厘清需求与交付范围的过程。",
+    "questions": [
+      "第一次面对企业客户，团队怎样分工合作？",
+      "还没有独立交付经验，怎样建立客户信任？",
+      "收到定金后，如何把项目需求与交付边界说清楚？",
+      "早期项目的合同金额和实际收入应该怎样区分？",
+      "如何判断一次客户尝试是否值得继续投入？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "fde-200k-then-shift-to-light-delivery",
+    "status": "published",
+    "title": "两个月靠 FDE 赚到20万元后，苍述转向轻交付",
+    "author": "苍述",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FsLEpvxcIOAyvdKBBN9oMF4mgiWP",
+    "topics": [
+      "service"
+    ],
+    "rank": 65,
+    "publishedAt": "2026-09-24T07:18:39.000Z",
+    "resultLabel": "两个月靠FDE赚到20万元，随后调整业务方向",
+    "resultPeriod": "FDE项目阶段复盘",
+    "results": [
+      {
+        "value": "20万元",
+        "label": "作者称两个月靠FDE赚到，原文未细分利润口径"
+      },
+      {
+        "value": "60+个",
+        "label": "作者走访与接触的真实项目数量"
+      }
+    ],
+    "summary": "苍述两个月靠 FDE 赚到20万元，走访60多个项目后却开始反思重定制交付的成本与风险。看见合同金额未必覆盖人力和履约投入，他决定把重心转向轻量服务与标准化培训。这篇复盘讲的是拿到结果之后，如何重新计算这门生意。",
+    "ctaCopy": "他写下两个月做 FDE 获得收入后的转向，也复盘了重交付的成本、风险和服务产品化之间的取舍。",
+    "questions": [
+      "FDE项目的合同金额，为什么不等于最后赚到的钱？",
+      "接触复杂企业项目后，怎样判断交付成本和风险？",
+      "为什么作者在拿到短期结果后选择调整方向？",
+      "企业AI服务如何从高度定制走向可复用？",
+      "怎样看待FDE项目背后的人员投入与利润空间？"
+    ],
+    "quotes": []
+  },
+  {
     "slug": "ai-writing-to-ai-service-three-months-300k",
     "status": "published",
     "title": "蛋挞从 AI 写作转向 AI 服务，三个月变现 30 万+",
