@@ -1889,5 +1889,70 @@
     "quotes": [
       "有用户和有付费用户，差别很大"
     ]
+  },
+  {
+    "slug": "ai-agent-project-workbench-1000-paid-users",
+    "status": "published",
+    "title": "把项目经验做成 AI Agent，他的工具约三个月获得1000+付费用户",
+    "author": "辰风",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Ft7WivzY8Frm3ZnTcOYODvSM0JMf",
+    "topics": [
+      "product",
+      "automation"
+    ],
+    "rank": 68,
+    "publishedAt": "2026-10-20T16:11:31.000Z",
+    "resultLabel": "Agent 工具约三个月获得1000+付费用户",
+    "resultPeriod": "约三个月，原帖口径",
+    "results": [
+      {
+        "value": "1,000+",
+        "label": "Agent工具付费用户数，作者自述"
+      }
+    ],
+    "summary": "辰风从贴图内容项目起步，后来把积累下来的经验延伸为 AI 工具。团队发现，用户需要的不只是生成内容，还希望把项目经验和可继续使用的支持放在一起。约三个月，这类 Agent 工具获得1000多位付费用户；他也开始尝试把项目能力沉淀成产品与服务。",
+    "ctaCopy": "他回顾了贴图项目之外的新尝试，也记录了把经验延伸为 AI 产品后，用户反馈与业务方向发生的变化。",
+    "questions": [
+      "一个 AI 工具怎样从单点功能走向完整的用户体验？",
+      "项目经验变成产品后，用户愿意为什么结果付费？",
+      "内容项目的经验如何转化为新的业务机会？",
+      "约三个月积累1000多位付费用户，过程中有哪些关键转折？"
+    ],
+    "quotes": []
+  },
+  {
+    "slug": "ceo-copilot-ai-services-500k-revenue",
+    "status": "published",
+    "title": "5个多月服务16家企业，她的 AI 定制服务营收超过50万元",
+    "author": "袁欣就是圆心",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FhbuA-RmRVa2ehVDISjaMb4LuuAC",
+    "topics": [
+      "service",
+      "product"
+    ],
+    "rank": 67,
+    "publishedAt": "2026-09-29T14:01:30.000Z",
+    "resultLabel": "5个多月累计营收超过50万元，为16家企业提供定制AI服务",
+    "resultPeriod": "2026年3月起五个多月，作者原文口径",
+    "results": [
+      {
+        "value": "50万元+",
+        "label": "AI定制服务累计营收，作者自述"
+      },
+      {
+        "value": "16家",
+        "label": "接受定制AI服务的企业数量，作者自述"
+      }
+    ],
+    "summary": "袁欣从今年3月开始为专家型客户提供定制 AI 服务。五个多月里，她的团队为16家企业提供服务，累计营收超过50万元。起步时，客户会把产品和通用聊天工具比较；随着合作推进，客户参与度与交付反馈逐渐积累，转介绍成为主要来源，业务也忙到接不过来。",
+    "ctaCopy": "她回顾了为专家型客户提供 AI 定制服务的五个多月，也谈到客户关系、交付结果与转介绍之间的真实经历。",
+    "questions": [
+      "企业为什么会把定制 AI 服务与通用聊天工具作比较？",
+      "专家型客户在合作中最看重哪些变化？",
+      "怎样判断企业项目带来的营收与实际利润？",
+      "客户参与度和交付结果，会如何影响后续合作？",
+      "服务从少量客户走向转介绍后，团队面临什么新挑战？"
+    ],
+    "quotes": []
   }
 ]
