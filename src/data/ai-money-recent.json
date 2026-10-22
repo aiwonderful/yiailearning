@@ -1853,5 +1853,41 @@
       "月入万刀是已实现成绩还是仍在追求的目标？"
     ],
     "quotes": []
+  },
+  {
+    "slug": "ai-drawing-to-enterprise-ai-services",
+    "status": "published",
+    "title": "AI 绘画小程序累计5万用户后，他转向企业服务",
+    "author": "一登Eden",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Ft7nZ2jaRtB6Jj2zDjdLkNK1rumt",
+    "topics": [
+      "product",
+      "service"
+    ],
+    "rank": 66,
+    "publishedAt": "2026-10-11T18:22:12.000Z",
+    "resultLabel": "AI 绘画小程序累计5万用户、2000+付费用户，后转向企业服务",
+    "resultPeriod": "AI 绘画产品与企业服务阶段经历，作者自述",
+    "results": [
+      {
+        "value": "5万+",
+        "label": "AI 绘画小程序累计用户数，作者自述"
+      },
+      {
+        "value": "2,000+",
+        "label": "AI 绘画小程序付费用户数，作者自述"
+      }
+    ],
+    "summary": "一登先做 AI 绘画小程序，产品累计获得5万用户，其中2000多人付费。随后，他把业务重心转向企业服务，接触100多家企业、深度服务10多家，行业覆盖20多个领域。这段经历记录了他从面向个人的 AI 产品，走向企业项目的转折与经营思考。",
+    "ctaCopy": "他复盘了从 AI 绘画产品转向企业服务的经历，也分享了接触不同企业项目后，对客户需求和交付价值的重新认识。",
+    "questions": [
+      "一款 AI 产品从用户增长走到付费，过程中有哪些变化？",
+      "做过个人产品后，为什么会把重心转向企业服务？",
+      "服务企业客户时，怎样判断一个需求是否值得继续？",
+      "AI 项目从初次尝试到长期合作，会遇到哪些新问题？"
+    ],
+    "quotes": [
+      "有用户和有付费用户，差别很大"
+    ]
   }
 ]
