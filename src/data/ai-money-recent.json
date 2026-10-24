@@ -1954,5 +1954,40 @@
       "服务从少量客户走向转介绍后，团队面临什么新挑战？"
     ],
     "quotes": []
+  },
+  {
+    "slug": "duyi-ai-company-training-productization",
+    "status": "published",
+    "title": "从求职课到企业 AI 培训：杜一的产品化尝试",
+    "author": "杜一",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FqBlHg9nifltSH7wSkegAwR8cAw8",
+    "topics": [
+      "service",
+      "product"
+    ],
+    "rank": 69,
+    "publishedAt": "2026-10-21T14:02:30.000Z",
+    "resultLabel": "企业 AI 培训单场收费 2万至3万元",
+    "resultPeriod": "原帖所述企业培训案例",
+    "results": [
+      {
+        "value": "2万至3万元",
+        "label": "企业 AI 培训单场收费，作者自述"
+      },
+      {
+        "value": "100多位",
+        "label": "两期 AI 训练营用户合计，作者自述"
+      }
+    ],
+    "summary": "杜一长期做新媒体运营和企业培训，积累了工作经验，却一度不知道如何把经验做成面向个人的产品。过去一年，他尝试求职课程、专栏和 AI 训练营；持续分享 AI 实践后，老客户带着企业需求找来，单场 AI 培训收费达到2万至3万元。",
+    "ctaCopy": "他回顾了从个人产品尝试到企业 AI 培训的经历，也写下训练营交付和客户需求变化中的得失。",
+    "questions": [
+      "有工作经验的人，怎样判断自己的能力能不能成为付费产品？",
+      "从求职课程、专栏到 AI 训练营，他的产品经历发生了哪些变化？",
+      "客户愿意为企业 AI 培训付费时，真正想解决的是什么？",
+      "单场收费提高后，个人服务者会遇到哪些新的时间限制？",
+      "早期尝试不顺时，怎样判断继续打磨还是调整产品方向？"
+    ],
+    "quotes": []
   }
 ]
