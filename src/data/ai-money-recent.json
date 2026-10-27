@@ -2019,5 +2019,37 @@
       "服务合作和更深度参与之间，怎样找到适合自己的边界？"
     ],
     "quotes": []
+  },
+  {
+    "slug": "vibe-coded-mini-program-66k-users-173-net",
+    "status": "published",
+    "title": "6.68万用户、账面剩173元：AI小程序增长后的商业化复盘",
+    "author": "山芋（leo）",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FmoK5sLDIvm6UGl8SkWFJ3hjtvhR",
+    "topics": ["product"],
+    "rank": 71,
+    "publishedAt": "2026-10-25T02:50:13.000Z",
+    "resultLabel": "6.68万累计用户；账面结余173.03元",
+    "results": [{"value": "6.68万", "label": "截至10月23日累计用户"}, {"value": "173.03元", "label": "扣除已知云开发支出后的账面结余，未计时间成本"}],
+    "summary": "山芋（Leo）没有编程基础，借助 AI 做出一款演唱会座位视角小程序。上线后累计用户达到 6.68 万，但广告收入为 511.43 元，扣除已知云开发支出后账面剩 173.03 元。面对持续维护和成本压力，他选择暂停迭代，并重新审视需求、付费意愿与商业模式。",
+    "ctaCopy": "山芋（Leo）记录了从做出小程序、意外迎来增长，到广告收入难以覆盖已知成本并暂停迭代的完整复盘。",
+    "questions": ["有真实需求，为什么不一定能变成收入？", "用户增长到几万后，哪些成本可能跟着变化？", "只靠广告变现时，如何判断收入能否覆盖运营成本？", "产品已有用户却选择暂停，背后要衡量什么？"],
+    "quotes": []
+  },
+  {
+    "slug": "ai-workbench-five-clients-25k-collected",
+    "status": "published",
+    "title": "从9.9元资料到 AI 工作台定制：5 个付费客户累计收款约 2.5 万元",
+    "author": "Goldrush",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fs8E2h6y_ozCRgC8YxUWvFcEY3zq",
+    "topics": ["service", "product"],
+    "rank": 72,
+    "publishedAt": "2026-10-24T11:43:43.000Z",
+    "resultLabel": "5个付费客户累计收款约2.5万元",
+    "results": [{"value": "约2.5万元", "label": "5个付费客户累计收款，截至10月22日"}, {"value": "8900元", "label": "牙科外贸工作台累计项目款，原文口径"}],
+    "summary": "不会编程的 Goldrush（文中自称阿龙）转向 AI 企业服务。9 月开始接触定制项目，到 10 月 22 日已有 5 个付费客户，累计收款约 2.5 万元；其中一套牙科外贸工作台累计项目款 8900 元。这段经历呈现了他从低价资料尝试到项目服务的变化，以及合作交付后的实际结果。",
+    "ctaCopy": "Goldrush（文中称阿龙）复盘了从资料内容尝试到 AI 工作台项目成交的经历，也记录了合作交付和客户需求变化中的真实情况。",
+    "questions": ["不会开发，如何参与 AI 企业服务项目？", "资料或教程带来咨询后，哪些需求会转成付费项目？", "客户定制从测试到扩展，如何确认项目边界？", "内容带来大量咨询时，怎样分辨兴趣和付费意愿？"],
+    "quotes": []
   }
 ]
