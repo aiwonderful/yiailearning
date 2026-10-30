@@ -2051,5 +2051,53 @@
     "ctaCopy": "Goldrush（文中称阿龙）复盘了从资料内容尝试到 AI 工作台项目成交的经历，也记录了合作交付和客户需求变化中的真实情况。",
     "questions": ["不会开发，如何参与 AI 企业服务项目？", "资料或教程带来咨询后，哪些需求会转成付费项目？", "客户定制从测试到扩展，如何确认项目边界？", "内容带来大量咨询时，怎样分辨兴趣和付费意愿？"],
     "quotes": []
+  },
+  {
+    "slug": "ai-material-store-monthly-gmv-280k",
+    "status": "published",
+    "title": "AI 做素材、付费投放放大：电商店铺月成交额 28 万元+，净利润 3 万元+",
+    "author": "楚鱼",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/Fqkr9qqjRQ9bWzVMZS1Y4ccuqkQF",
+    "topics": ["other"],
+    "rank": 73,
+    "publishedAt": "2026-10-28T10:02:43.000Z",
+    "resultLabel": "月成交额 28 万元+；月净利润 3 万元+，作者自述",
+    "results": [{"value": "28 万元+", "label": "当月店铺成交额（GMV）"}, {"value": "3 万元+", "label": "同月净利润，作者自述口径"}],
+    "summary": "楚鱼先在电商店铺做铺货，平台规则变化后转向付费投放。他把 AI 用在商品图和短视频素材制作上，同一款商品换不同使用场景去做内容。现在做到月成交额 28 万元+、月净利润 3 万元+，也讲了自己降低投产目标却拿不到量的教训。",
+    "ctaCopy": "楚鱼把从铺货转付费投放的过程、素材与商品的匹配思路，以及投放放大时踩过的坑，写进了生财精华帖。",
+    "questions": ["平台规则改变后，原来的打法为什么很快失效？", "同样一款商品，为什么要换不同使用场景去打？", "投放跑不动时，先怀疑出价还是先怀疑素材？", "什么时候适合提高投产目标，什么时候不该动？", "多店经营时，怎样避免自己和自己抢生意？"],
+    "quotes": ["产品不是你有什么就卖什么，是客户缺什么你给什么。", "先搞懂客户，再搞对产品，最后才是搞平台。"]
+  },
+  {
+    "slug": "cps-video-workflow-eight-days-320k-gmv",
+    "status": "published",
+    "title": "从每天 1—2 条到 8 条：他把 AI 剪辑沉淀成工作流，8 天做出 32 万元成交额",
+    "author": "宋知远",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FtOXmLR_jDe7AIQXvOo9t0wk6jHa",
+    "topics": ["content", "automation"],
+    "rank": 74,
+    "publishedAt": "2026-10-27T07:15:03.000Z",
+    "resultLabel": "8 天 32 万元成交额；同期佣金 2300 元",
+    "results": [{"value": "32 万元", "label": "8 天累计成交额（GMV）"}, {"value": "2300 元", "label": "同期佣金收入"}],
+    "summary": "宋知远做过两年剪辑，参加 CPS 航海时把重复的制作环节交给 AI，先跑通一条再逐步固定规则。日产量从 1—2 条提到 8 条，账号从 1 个增加到 5 个。最近 8 天做出 32 万元成交额、2300 元佣金，他也说明提效只解决了制作这一环。",
+    "ctaCopy": "宋知远把工作流怎么搭、哪些环节必须人工核对，以及提效后仍受哪些环节限制，写进了生财精华帖。",
+    "questions": ["每天只能做一两条时，该先解决产量还是先解决选题？", "把重复环节交给 AI 后，哪些判断必须自己保留？", "一条视频改到满意再发，和先发布拿反馈，怎么平衡？", "产量提高之后，为什么成交额不一定跟着涨？"],
+    "quotes": ["先完成再完美。", "好不容易做出来一条视频，10 个播放也是播放，万一就有人下单了。"]
+  },
+  {
+    "slug": "ai-workbench-ip-service-six-figure-profit",
+    "status": "published",
+    "title": "把自用的 AI 工作台做成服务：9 月服务周期利润约六位数",
+    "author": "亦恒",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FjGdtUYOvpyKTf-r4KhQz9vlufmW",
+    "topics": ["service", "automation"],
+    "rank": 75,
+    "publishedAt": "2026-10-25T12:24:53.000Z",
+    "resultLabel": "9 月一个服务周期利润约六位数，作者自述",
+    "results": [{"value": "约六位数", "label": "9 月服务周期利润，作者自述口径"}],
+    "summary": "亦恒先做个人 IP 内容，后来把选题、咨询和交付串成一套 AI 工作台。他判断的不是 AI 写稿快了多少，而是一段工作能否少返工、更稳地接住真实需求。9 月一个服务周期里，他做到的利润约六位数，也强调自己用得顺和交给客户稳定使用是两回事。",
+    "ctaCopy": "亦恒把这套工作台怎么从一个具体场景搭起、人和 AI 怎么分工，以及怎样走向客户交付，写进了生财精华帖。",
+    "questions": ["每一段都用上 AI，为什么整体工作反而还在重复？", "内容、咨询和交付断开时，应该先补哪一段？", "哪些判断必须留给人，不能交给 AI？", "自己用着顺手，和交给客户能稳定使用，差在哪里？"],
+    "quotes": ["这叫生成提速，不叫工作提效。", "IP 是业务的放大器。"]
   }
 ]
