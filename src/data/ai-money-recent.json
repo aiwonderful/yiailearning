@@ -2099,5 +2099,37 @@
     "ctaCopy": "亦恒把这套工作台怎么从一个具体场景搭起、人和 AI 怎么分工，以及怎样走向客户交付，写进了生财精华帖。",
     "questions": ["每一段都用上 AI，为什么整体工作反而还在重复？", "内容、咨询和交付断开时，应该先补哪一段？", "哪些判断必须留给人，不能交给 AI？", "自己用着顺手，和交给客户能稳定使用，差在哪里？"],
     "quotes": ["这叫生成提速，不叫工作提效。", "IP 是业务的放大器。"]
+  },
+  {
+    "slug": "youtube-real-vlog-25-videos-million-views",
+    "status": "published",
+    "title": "英语不好、没拍过长视频：她用 25 条真人视频做到 100 万播放",
+    "author": "车纯纯",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FsXRAAJ9aKPgjtKqRi8k_jAg13Pz",
+    "topics": ["overseas", "content"],
+    "rank": 76,
+    "publishedAt": "2026-10-29T04:31:57.000Z",
+    "resultLabel": "25 条视频累计 100 万+ 播放；广告收入 2418.62 美元",
+    "results": [{"value": "100 万+", "label": "25 条视频累计播放"}, {"value": "2418.62 美元", "label": "YouTube 广告收入，作者自述"}],
+    "summary": "车纯纯先做 AI 短片，23 条视频拿到 8000 多万播放，因为同质化开始考虑转型。她英语不好，也没拍过长视频，却把方向换到英文真人记录，25 条视频做到 100 万播放、广告收入 2418.62 美元，还接到了品牌合作。",
+    "ctaCopy": "车纯纯把自己为什么离开已经跑出播放的赛道、怎样从零做英文真人内容，以及选题上的几次碰壁，写进了生财精华帖。",
+    "questions": ["已经跑出播放量的赛道，为什么会突然放弃？", "英语不好，能不能做面向英文观众的内容？", "有了一万粉以后，为什么拍自己的内容反而没流量？", "真人内容和 AI 内容，最难拉开差距的地方在哪里？"],
+    "quotes": ["差别不在于制作水平，而在于选题。"]
+  },
+  {
+    "slug": "ai-ppt-freelance-first-10k-student",
+    "status": "published",
+    "title": "07 年大一学生用 AI 接 PPT 单：累计变现破万，单日收入破千",
+    "author": "小鱼Fre.d",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FjmHo46CD80n0AaUwPWm43Baq4cd",
+    "topics": ["service"],
+    "rank": 77,
+    "publishedAt": "2026-10-25T08:46:14.000Z",
+    "resultLabel": "累计变现破万；单日收入破千，作者自述",
+    "results": [{"value": "1 万元+", "label": "截至原文所述累计变现，作者自述"}, {"value": "1000 元+", "label": "单日收入，作者自述"}],
+    "summary": "小鱼 Fred 是 07 年出生的大一学生。从今年 4 月起，他用 AI 接 PPT 美化订单，把交付结果做到客户能直接修改。几个月下来累计变现破万，也出现过单日收入破千，他把自己正在用的整套流程和工具一起公开了。",
+    "ctaCopy": "小鱼 Fred 把从需求确认、样稿、终稿到售后的完整流程，以及他判断能不能接单的方法，写进了生财精华帖。",
+    "questions": ["客户为什么愿意花钱找人做 PPT？", "没接过单，怎么判断自己能不能接第一单？", "样稿阶段最该和客户确认清楚什么？", "客户说“可以了”，为什么不能当成验收通过？"],
+    "quotes": ["样稿没明确通过，别闷头把整套终稿做完！", "客户付款，不等于写手收入。"]
   }
 ]
