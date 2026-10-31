@@ -288,7 +288,7 @@
   }
 
   .article-prose img {
-    @apply rounded-[1.5rem] border border-subtle/80 shadow-soft dark:border-white/10;
+    @apply mx-auto block max-w-full rounded-[1.5rem] border border-subtle/80 shadow-soft dark:border-white/10;
   }
 
   .article-prose figure {
