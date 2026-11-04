@@ -2131,5 +2131,53 @@
     "ctaCopy": "小鱼 Fred 把从需求确认、样稿、终稿到售后的完整流程，以及他判断能不能接单的方法，写进了生财精华帖。",
     "questions": ["客户为什么愿意花钱找人做 PPT？", "没接过单，怎么判断自己能不能接第一单？", "样稿阶段最该和客户确认清楚什么？", "客户说“可以了”，为什么不能当成验收通过？"],
     "quotes": ["样稿没明确通过，别闷头把整套终稿做完！", "客户付款，不等于写手收入。"]
+  },
+  {
+    "slug": "xiaohongshu-single-product-store-113k-year",
+    "status": "published",
+    "title": "一个商品、一家新店：她用 AI 工作台把小红书单店做到年提现 11.3 万元",
+    "author": "冬青",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FnEg-JxgmkCpq_AEEwkTx3Q9QGwB",
+    "topics": ["product", "content"],
+    "rank": 78,
+    "publishedAt": "2026-11-03T03:53:13.000Z",
+    "resultLabel": "单店全年提现 113,198 元；7 月单月近 3 万元",
+    "results": [{"value": "11.3 万元", "label": "单店全年累计提现，作者自述"}, {"value": "近 3 万元", "label": "该店 7 月单月收入"}],
+    "summary": "冬青做小红书虚拟资料，最多时开了 8 家店，后来 3 家店的类目被平台收回，收入锐减。她重新梳理每天要做的事，做了一套 AI 工作台。其中一家 4 月才起步的新店只卖一个商品，到 11 月累计提现 11.3 万元，暑假期间单月收入近 3 万元。",
+    "ctaCopy": "冬青把自己从 8 家店到类目被收回、再到重建工作台的过程，以及每天怎么找选题、写笔记，写进了生财精华帖。",
+    "questions": ["店铺类目被平台收回后，收入结构该怎么重做？", "只卖一个商品，为什么也能撑起一家店？", "用 AI 做选品和选题，哪些判断必须自己来？", "把每天的工作做成一套流程，先该解决哪一步？"],
+    "quotes": ["不管黑猫白猫，抓住老鼠就是好猫。"]
+  },
+  {
+    "slug": "ai-video-7-clips-20m-views-first-10k",
+    "status": "published",
+    "title": "两周 7 条 AI 视频：3 条破 700 万播放，单月变现 1 万+",
+    "author": "亦笙",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FpKVLtZ9TceJzr5GKdIw1ry2UDtK",
+    "topics": ["content"],
+    "rank": 79,
+    "publishedAt": "2026-11-01T09:10:15.000Z",
+    "resultLabel": "7 条视频累计 2000 万播放；单月变现 1 万元+",
+    "results": [{"value": "1 万元+", "label": "单月变现，作者自述"}, {"value": "2000 万", "label": "7 条视频累计播放，标题口径"}],
+    "summary": "亦笙去年毕业，做过一年运营，因为公司经营不善离开。他从 9 月中旬开始做国内 AI 视频，选了情感故事方向，前几条几乎没有反馈。两个星期发了 7 条视频，其中 3 条破 700 万播放，一个月内变现 1 万多元。他说这对自己只是一个开始。",
+    "ctaCopy": "亦笙把选题、分镜、画面生成到接商单的完整过程，以及前几条为什么没跑起来，写进了生财精华帖。",
+    "questions": ["毕业一年想做副业，该先从哪件事开始？", "同样做 AI 视频，为什么有人一直没播放？", "一条视频爆了以后，变现机会从哪里来？", "照着爆款复刻，什么时候该开始改自己的东西？"],
+    "quotes": ["新手刚开始就是听话照做，认真模仿。"]
+  },
+  {
+    "slug": "teacher-ai-miniapp-million-impressions",
+    "status": "published",
+    "title": "小学老师用 AI 做小程序：小红书百万曝光，累计变现几千元",
+    "author": "艺文",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FrkHKvrQ2OvciEc8VURifEZNb9-1",
+    "topics": ["product", "content"],
+    "rank": 80,
+    "publishedAt": "2026-11-02T15:45:16.000Z",
+    "resultLabel": "小红书自然流累计百万曝光；小程序累计变现几千元",
+    "results": [{"value": "100 万+", "label": "小红书自然流累计曝光"}, {"value": "几千元", "label": "小程序累计变现，作者自述"}],
+    "summary": "艺文是一名小学老师，也是刚接触 AI 的开发者。她用 AI 做出给老师用的壁纸小程序，在小红书发内容带来累计百万曝光，小程序变现几千元。她没有把这段经历讲成爆款故事，而是复盘了引流、定价和一个人推进项目时的节奏问题。",
+    "ctaCopy": "艺文把小程序上线后怎么找用户、怎么定价，以及一个人推进项目时的心力难题，写进了生财精华帖。",
+    "questions": ["一个人做副业，为什么只该主推一个平台？", "同样的产品，为什么换个时间发效果差很多？", "流量来了却没准备好付费产品，会错过什么？", "自己觉得没成本的活，定价时该怎么算？"],
+    "quotes": ["流量和收入，是两件需要分别准备的事。"]
   }
 ]
