@@ -1,4 +1,6 @@
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000').replace(/\/$/, '');
+const defaultSiteUrl =
+  process.env.NODE_ENV === 'production' ? 'https://yilearnai.com' : 'http://localhost:3000';
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || defaultSiteUrl).replace(/\/$/, '');
 const socialLinks = {
   github: 'https://github.com/yestar2023-alt',
   twitter: 'https://x.com/Yestar2023Liu',
