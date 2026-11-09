@@ -9,6 +9,7 @@ import rehypeSlug from 'rehype-slug';
 import rehypePrism from 'rehype-prism-plus';
 import Breadcrumb from '@/components/Breadcrumb';
 import WeChatSubscribeCard from '@/components/WeChatSubscribeCard';
+import ShengcaiInviteCard from '@/components/ShengcaiInviteCard';
 import { siteConfig } from '@/lib/config';
 
 type Heading = {
@@ -201,6 +202,7 @@ export default async function LoopEngineerPage() {
           </div>
         </aside>
       </div>
+      <ShengcaiInviteCard className="mt-8" />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import collection from '@/data/casebooks/gpt-6.json';
 import Casebook from './casebook';
+import ShengcaiInviteCard from '@/components/ShengcaiInviteCard';
 import styles from './casebook.module.css';
 
 const title = 'GPT-6 案例集：20 个真实案例与 10 条最佳实践';
@@ -38,6 +39,7 @@ export default function GPT6CasesPage() {
       </header>
       <aside className={styles.evidenceNote}><strong>阅读说明</strong><p>原始资料已查阅。仅地球仪表盘做过部分成品交互检查，其余以作者报告为主；本集未独立复现生成或实验过程。每例保留来源与验证边界。</p></aside>
       <Casebook collection={collection} />
+      <ShengcaiInviteCard className="mt-14" />
     </div>
   );
 }
