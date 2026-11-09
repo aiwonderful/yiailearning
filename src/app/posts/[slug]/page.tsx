@@ -7,6 +7,7 @@ import { siteConfig } from '../../../lib/config';
 import Breadcrumb from '../../../components/Breadcrumb';
 import { AuthorCard } from '../../../components/AuthorSchema';
 import WeChatSubscribeCard from '../../../components/WeChatSubscribeCard';
+import ShengcaiInviteCard, { contentHasShengcaiInvite } from '../../../components/ShengcaiInviteCard';
 
 type Heading = {
   id: string;
@@ -266,6 +267,11 @@ export default async function Post({ params }: { params: { slug: string } }) {
                 </div>
               </div>
             </article>
+            {!contentHasShengcaiInvite(post.content) && (
+              <div className="mt-6">
+                <ShengcaiInviteCard />
+              </div>
+            )}
           </div>
 
           {/* 侧边栏 */}

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
 import { siteConfig } from '@/lib/config';
 import GuideClient from './GuideClient';
+import ShengcaiInviteCard from '@/components/ShengcaiInviteCard';
 
 export const metadata: Metadata = {
   title: 'Grok Bot 学习手册：从收藏到真实交付',
@@ -17,6 +18,7 @@ export default function GrokBotGuidePage() {
         { name: 'Grok Bot 学习手册', href: '/grok-bot-guide', current: true },
       ]} />
       <GuideClient />
+      <ShengcaiInviteCard className="mt-10" />
     </div>
   );
 }

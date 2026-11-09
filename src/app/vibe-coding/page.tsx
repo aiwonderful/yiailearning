@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageTitle from '@/components/PageTitle';
+import ShengcaiInviteCard from '@/components/ShengcaiInviteCard';
 
 export const metadata: Metadata = {
   title: '我的作品',
@@ -280,6 +281,8 @@ export default function VibeCodingPage() {
           <Link href="/posts" className="btn btn-primary">查看博客</Link>
         </div>
       </section>
+
+      <ShengcaiInviteCard />
     </div>
   );
 }

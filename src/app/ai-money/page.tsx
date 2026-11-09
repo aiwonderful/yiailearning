@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import AiMoneyPageView from '@/components/AiMoneyPageView';
 import ExperienceCardQR from '@/components/ExperienceCardQR';
+import ShengcaiInviteCard from '@/components/ShengcaiInviteCard';
 import CaseAuthor from '@/components/CaseAuthor';
 import {
   aiMoneyTopicOptions,
@@ -110,16 +111,7 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
         </section>
       )}
 
-      <section id="experience-card" className="scroll-mt-28 rounded-[1.75rem] bg-[#163832] px-7 py-9 text-center text-[#F8FCFA] md:px-10">
-        <p className="text-sm font-bold text-[#A9DDD1]">生财有术 · 3 天体验卡</p>
-        <div className="mt-3 flex flex-col items-center gap-6 text-center">
-          <div className="max-w-2xl">
-            <h2 className="font-serif text-3xl font-black">先免费体验 3 天，再决定要不要加入</h2>
-            <p className="mt-3 max-w-2xl leading-7 text-[#D6E9E4]">原帖全文和更多实操案例都在生财有术里，扫码即可领取体验卡。</p>
-          </div>
-          <ExperienceCardQR variant="dark" className="shrink-0" />
-        </div>
-      </section>
+      <ShengcaiInviteCard id="experience-card" />
     </div>
   );
 }
