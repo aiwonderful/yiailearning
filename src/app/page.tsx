@@ -232,6 +232,18 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <Link href="/gpt-image-2-6-cases" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] shadow-soft md:p-10">
+        <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]">
+          <span>新专题 · GPT Image 2.6</span>
+          <span>64 个案例 / 9 个分类</span>
+        </div>
+        <h2 className="mt-5 font-serif text-2xl font-black leading-relaxed md:text-3xl">先看效果图，再分清纯 2.6 和混用工作流。</h2>
+        <p className="mt-4 max-w-3xl text-base leading-8 text-[#d4d9cc]">
+          GIF 动图、表情包、人像、海报和模型对比。每条署名作者并链回原帖；混用案例按步骤写清 GPT Image 2.6 和其他工具。
+        </p>
+        <span className="mt-6 inline-block border-b border-[#d6b47b] pb-1 text-base text-[#e9bf78]">打开 GPT Image 2.6 案例合集 →</span>
+      </Link>
+
       <Link href="/fable-5-2-cases" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] shadow-soft md:p-10">
         <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]">
           <span>新专题 · Claude Fable 5.2</span>
