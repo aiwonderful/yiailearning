@@ -47,6 +47,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/loop-engineer`,
   },
+  openGraph: {
+    url: `${siteConfig.url}/loop-engineer`,
+  },
 };
 
 function normalizeMarkdown(markdown: string) {

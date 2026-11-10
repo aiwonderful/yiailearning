@@ -1,8 +1,20 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllPosts } from '../lib/posts';
 import PostCard from '../components/PostCard';
 import { siteConfig } from '../lib/config';
+
+export const metadata: Metadata = {
+  title: { absolute: siteConfig.title },
+  description: siteConfig.description,
+  alternates: { canonical: siteConfig.url },
+  openGraph: {
+    title: siteConfig.title,
+    description: siteConfig.description,
+    url: siteConfig.url,
+  },
+};
 
 const focusAreas = [
   {
@@ -268,13 +280,13 @@ export default async function HomePage() {
         <span className="mt-6 inline-block border-b border-[#d6b47b] pb-1 text-base text-[#e9bf78]">打开 Claude Fable 5.2 案例合集 →</span>
       </Link>
 
-      <section className="grid gap-10 lg:grid-cols-[0.36fr_1fr]">
+      <section id="focus-areas" className="grid gap-10 lg:grid-cols-[0.36fr_1fr]">
         <div className="lg:sticky lg:top-24 lg:self-start">
-          <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#4D6254]">Focus Areas</div>
-          <h2 className="mt-3 font-serif text-3xl font-black leading-tight text-[#20242A] md:text-4xl">
+          <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#4D6254] dark:text-[#C9D7CC]">Focus Areas</div>
+          <h2 className="mt-3 font-serif text-3xl font-black leading-tight text-text-main-light dark:text-text-main-dark md:text-4xl">
             我长期关注的三个方向
           </h2>
-          <p className="mt-5 leading-8 text-[#59616B]">
+          <p className="mt-5 leading-8 text-secondary dark:text-muted">
             这些内容面向同样想用 AI 提升学习、创作和开发效率的人。重点不是炫技，而是把真实过程讲清楚。
           </p>
         </div>
@@ -286,11 +298,11 @@ export default async function HomePage() {
                 0{index + 1}
               </span>
               <div className="relative">
-                <span className="inline-flex rounded-full bg-[#7D8F81]/12 px-3 py-1 text-xs font-bold text-[#4D6254]">
+                <span className="inline-flex rounded-full bg-[#7D8F81]/12 px-3 py-1 text-xs font-bold text-[#4D6254] dark:bg-white/10 dark:text-[#D7E4DA]">
                   {area.label}
                 </span>
                 <h3 className="mt-5 text-xl font-bold text-primary">{area.title}</h3>
-                <p className="mt-4 leading-7 text-secondary">{area.description}</p>
+                <p className="mt-4 leading-7 text-secondary dark:text-muted">{area.description}</p>
               </div>
             </article>
           ))}
@@ -379,9 +391,9 @@ export default async function HomePage() {
       <section>
         <div className="mb-8 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
           <div>
-            <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#4D6254]">Latest Notes</div>
-            <h2 className="mt-3 font-serif text-3xl font-black text-[#20242A] md:text-4xl">最近更新</h2>
-            <p className="mt-3 text-secondary">我最近公开记录的 AI 学习、工具使用和项目实践。</p>
+            <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#4D6254] dark:text-[#C9D7CC]">Latest Notes</div>
+            <h2 className="mt-3 font-serif text-3xl font-black text-text-main-light dark:text-text-main-dark md:text-4xl">最近更新</h2>
+            <p className="mt-3 text-secondary dark:text-muted">我最近公开记录的 AI 学习、工具使用和项目实践。</p>
           </div>
           <Link href="/posts" className="btn btn-secondary">
             查看全部文章

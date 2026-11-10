@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: 'AI变现榜单',
   description: '收录从零起步、经历试错后跑出结果的 AI 变现实战复盘；完整过程可领取生财有术 3 天体验卡查看。',
   alternates: { canonical: '/ai-money' },
+  openGraph: { url: '/ai-money' },
 };
 
 type AiMoneyPageProps = {

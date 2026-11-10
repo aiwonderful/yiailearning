@@ -8,6 +8,7 @@ import Breadcrumb from '../../../components/Breadcrumb';
 import { AuthorCard } from '../../../components/AuthorSchema';
 import WeChatSubscribeCard from '../../../components/WeChatSubscribeCard';
 import ShengcaiInviteCard, { contentHasShengcaiInvite } from '../../../components/ShengcaiInviteCard';
+import type { PostMeta } from '@/types';
 
 type Heading = {
   id: string;
@@ -53,13 +54,20 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       alternates: {
         canonical: url,
       },
+      robots: {
+        index: true,
+        follow: true,
+      },
     };
-  } catch (error) {
-    return {
-      title: 'Post Not Found',
-      description: 'The requested post could not be found.',
-    };
+  } catch {
+    notFound();
   }
+}
+
+function isShengcaiRelatedPost(slug: string, meta: PostMeta) {
+  const fields = [slug, meta.title, meta.category, meta.keywords, ...(meta.tags ?? [])];
+  const haystack = fields.filter((value): value is string => typeof value === 'string').join('\n');
+  return haystack.includes('生财') || slug.toLowerCase().includes('shengcai');
 }
 
 // 从HTML内容中提取目录
@@ -83,6 +91,8 @@ export async function generateStaticParams() {
   const slugs = await getPostSlugs();
   return slugs.map(slug => ({ slug: slug.replace(/\.md$/, '') }));
 }
+
+export const dynamicParams = false;
 
 export default async function Post({ params }: { params: { slug: string } }) {
   try {
@@ -267,7 +277,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
                 </div>
               </div>
             </article>
-            {!contentHasShengcaiInvite(post.content) && (
+            {isShengcaiRelatedPost(params.slug, post.meta) && !contentHasShengcaiInvite(post.content) && (
               <div className="mt-6">
                 <ShengcaiInviteCard />
               </div>

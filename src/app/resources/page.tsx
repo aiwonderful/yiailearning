@@ -1,6 +1,22 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageTitle from '../../components/PageTitle';
+import { siteConfig } from '@/lib/config';
+
+const title = '资料库';
+const description = '围绕一个课题整理资料、链接、工具、案例和自己的判断。已经写完的内容可以先从文章库看。';
+
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: { canonical: `${siteConfig.url}/resources` },
+  openGraph: {
+    title: `${title} | ${siteConfig.title}`,
+    description,
+    url: `${siteConfig.url}/resources`,
+  },
+};
 
 const resourceTypes = [
   {
@@ -20,13 +36,6 @@ const resourceTypes = [
   },
 ];
 
-const updateChecklist = [
-  '用一句话写清楚这个课题为什么值得整理',
-  '补 3-5 个关键资料或工具链接',
-  '写下自己的真实判断，不只复制资料',
-  '加一个下一步行动，让内容可以继续迭代',
-];
-
 export default function ResourcesPage() {
   return (
     <div className="space-y-14">
@@ -35,7 +44,7 @@ export default function ResourcesPage() {
           <div className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-[#4D6254]">
             Resource Library
           </div>
-          <PageTitle>资料库</PageTitle>
+          <PageTitle className="text-[#20242A]">资料库</PageTitle>
           <p className="mt-5 text-lg leading-8 text-secondary">
             这里会承接我对某个课题产生兴趣后的第一批整理：资料、链接、工具、案例和自己的判断。它不要求一开始完美，但要求可以被继续更新。
           </p>
@@ -89,10 +98,10 @@ export default function ResourcesPage() {
             </span>
             <div className="relative">
               <h2 className="text-xl font-bold text-primary">{type.title}</h2>
-              <p className="mt-4 leading-7 text-secondary">{type.description}</p>
+              <p className="mt-4 leading-7 text-secondary dark:text-muted">{type.description}</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {type.examples.map((example) => (
-                  <span key={example} className="rounded-full bg-[#7D8F81]/12 px-3 py-1 text-xs font-semibold text-[#4D6254]">
+                  <span key={example} className="rounded-full bg-[#7D8F81]/12 px-3 py-1 text-xs font-semibold text-[#4D6254] dark:bg-white/10 dark:text-[#D7E4DA]">
                     {example}
                   </span>
                 ))}
@@ -102,33 +111,19 @@ export default function ResourcesPage() {
         ))}
       </section>
 
-      <section className="grid gap-8 rounded-[1.75rem] bg-[#ECEFE8] p-7 md:p-10 lg:grid-cols-[0.8fr_1.2fr]">
-        <div>
-          <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#9C563F]">Update Checklist</div>
-          <h2 className="mt-3 font-serif text-3xl font-black text-[#20242A]">每次新增资料先过这一关</h2>
-          <p className="mt-4 leading-8 text-[#59616B]">
-            这个清单是为了降低更新压力。先发布一个清楚的小版本，再慢慢把它补厚。
-          </p>
-        </div>
-
-        <div className="space-y-3">
-          {updateChecklist.map((item, index) => (
-            <div key={item} className="grid grid-cols-[44px_1fr] items-start gap-4 rounded-xl bg-[#F8F7F2] p-4 shadow-soft">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#3F566E] font-serif font-black text-[#F8F7F2]">
-                {index + 1}
-              </span>
-              <p className="leading-7 text-[#59616B]">{item}</p>
-            </div>
-          ))}
-        </div>
+      <section className="rounded-[1.75rem] border border-subtle/70 bg-card-light p-7 shadow-soft dark:border-white/10 dark:bg-card-dark md:p-10">
+        <h2 className="font-serif text-3xl font-black text-text-main-light dark:text-text-main-dark">这些资料我会持续补全</h2>
+        <p className="mt-4 max-w-3xl leading-8 text-secondary dark:text-muted">
+          我通常会先写清楚这个课题为什么值得看，补上关键链接，再写下自己的判断，而不是只搬运资料。
+        </p>
       </section>
 
-      <section className="rounded-[1.75rem] border border-[#7D8F81]/20 bg-[#7D8F81]/8 p-7 md:p-10">
+      <section className="rounded-[1.75rem] border border-subtle/70 bg-card-light p-7 shadow-soft dark:border-white/10 dark:bg-card-dark md:p-10">
         <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
           <div>
-            <h2 className="font-serif text-3xl font-black text-[#20242A]">资料最终会进入博客文章</h2>
-            <p className="mt-4 max-w-3xl leading-8 text-[#59616B]">
-              当前站点的发布系统已经支持 Markdown。以后复制 `src/data/posts/_content-template.md`，改成新的文件名并填内容，就可以生成一篇新的资料或心得。
+            <h2 className="font-serif text-3xl font-black text-text-main-light dark:text-text-main-dark">资料会慢慢整理成文章</h2>
+            <p className="mt-4 max-w-3xl leading-8 text-secondary dark:text-muted">
+              资料库里的专题、工具笔记和项目复盘，后面会写成博客。想先看已经写完的内容，可以从文章库开始。
             </p>
           </div>
           <Link href="/posts" className="btn btn-primary">

@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.title}`
   },
   description: siteConfig.description,
-  keywords: ['AI学习', '人工智能', '机器学习', '深度学习', '编程教程', '数据科学', 'Python', 'TensorFlow', 'PyTorch'],
-  authors: [{ name: 'Yi Learning' }],
-  creator: 'Yi Learning',
-  publisher: 'Yi Learning Blog',
+  keywords: ['AI 工具', 'Vibe Coding', 'Loop Engineering', 'Agent 工作流', '个人知识库', '小亦'],
+  authors: [{ name: siteConfig.author.name }],
+  creator: siteConfig.author.name,
+  publisher: siteConfig.title,
   formatDetection: {
     email: false,
     address: false,
@@ -36,9 +36,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'zh_CN',
-    url: siteConfig.url,
-    title: siteConfig.title,
-    description: siteConfig.description,
     siteName: siteConfig.title,
     images: [{
       url: siteConfig.logo.url,
@@ -49,8 +46,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: siteConfig.title,
-    description: siteConfig.description,
     images: [siteConfig.logo.url],
     creator: siteConfig.social.twitterHandle,
   },
@@ -67,9 +62,6 @@ export const metadata: Metadata = {
   },
   verification: {
     google: siteConfig.seo.googleVerification,
-  },
-  alternates: {
-    canonical: siteConfig.url,
   },
 };
 
