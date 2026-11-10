@@ -1,0 +1,3367 @@
+{
+  "title": "Seedream 5.5 案例合集",
+  "collected_at": "2026-11-10",
+  "count": 64,
+  "pure_count": 60,
+  "mixed_count": 4,
+  "announced": "2026-11-09",
+  "official_name": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+  "official_page": "https://seed.bytedance.com/zh/seedream5_5",
+  "official_page_en": "https://seed.bytedance.com/en/seedream5_5",
+  "official_blog": "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5",
+  "official_blog_en": "https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5",
+  "official_launch_post": "https://x.com/ByteDanceSeed_/status/2119720475068920181",
+  "dreamina_page": "https://dreamina.capcut.com/seedream/seedream-5-5",
+  "official_claims": [
+    "字节跳动 Seed 于 2026 年 11 月 9 日发布的多模态图像模型，官方称未编辑区域可在多达 100 轮编辑中保持像素级稳定",
+    "原生支持 RGBA 透明 / 半透明素材直出",
+    "官方称光影、材质和皮肤更写实，密集小字更准确；官方评测中严重文字崩坏约 0.4%，轻微错误约 1.7%（官方自评，调研未独立复现）",
+    "官方对比对象包括 Seedream 5.0 Pro、GPT Image 2.5 Sunburst、Nano Banana 2.1（官方自评）",
+    "陆续登陆即梦、豆包、豆包工作，火山方舟以 Doubao-Seedream-5.5 上线；海外可见于 Dreamina、CapCut、BytePlus。官方还预告了 Pro 版本"
+  ],
+  "categories": [
+    "官方发布与演示",
+    "多轮编辑与一致性",
+    "透明素材与贴纸",
+    "人像与写实摄影",
+    "海报、排版与小字",
+    "电商、角色与设计物料",
+    "混用工作流",
+    "模型对比"
+  ],
+  "cases": [
+    {
+      "id": "official-launch-x",
+      "title": "Seedream 5.5 官方发布视频",
+      "category": "官方发布与演示",
+      "one_liner": "字节跳动 Seed 官方发布：更真实、百轮编辑更稳、原生 RGBA 透明素材。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://x.com/ByteDanceSeed_/status/2119720475068920181",
+      "published_at_utc": "2026-11-09T09:15:18.000Z",
+      "published_at_shanghai": "2026-11-09 17:15（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "官方发布帖介绍三项升级：非编辑区域像素级保持、原生 RGBA、更自然的光影材质与小字渲染。说明将登陆 Dreamina、CapCut 和 BytePlus。",
+      "notes": "官方发布演示，版权归 ByteDance Seed / 原发布方。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_thread",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/seedream5_5",
+        "https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-launch-x-01.webp",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "animated": false,
+          "original_post_url": "https://x.com/ByteDanceSeed_/status/2119720475068920181",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-100-round-portrait",
+      "title": "同一人像百轮连续编辑",
+      "category": "多轮编辑与一致性",
+      "one_liner": "官方演示：同一人物连改 100 轮，仍能改戒指、镜框等细小物件并保持光影接触。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方博客说明了百轮编辑的做法和效果，但未逐轮公开完整提示词。"
+      },
+      "method": "官方中文博客演示：围绕同一人物进行 100 轮连续编辑，每一轮都以前一轮结果为基础。经过服装、配饰与桌面物件的多轮变化后，仍能精细修改戒指、镜框等细小对象，并根据当前姿态处理接触、遮挡和光影。",
+      "notes": "效果图为官方演示视频封面帧，未转存完整视频。版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/seedream5_5",
+        "https://x.com/ByteDanceSeed_/status/2119720475068920181"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-100-round-portrait-01.webp",
+          "width": 1600,
+          "height": 900,
+          "media_type": "video_thumbnail",
+          "animated": false,
+          "original_post_url": "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-edit-furniture",
+      "title": "室内多轮替换家具与灯光",
+      "category": "多轮编辑与一致性",
+      "one_liner": "逐步更换家具、灯具与装饰，官方称能保持透视和光影协调。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方说明了多轮编辑内容和效果，但未逐轮公开完整提示词。"
+      },
+      "method": "官方产品页多轮编辑演示。 官方说明：逐步添加和替换家具、灯具与装饰，调整配色与摆放，保持空间透视和光影协调。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-edit-furniture-01.webp",
+          "width": 628,
+          "height": 840,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-edit-portrait-props",
+      "title": "人像发型服装与道具多轮改款",
+      "category": "多轮编辑与一致性",
+      "one_liner": "多轮调整发型、眼镜、服装、背景和桌面道具，探索不同造型。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方说明了多轮编辑内容和效果，但未逐轮公开完整提示词。"
+      },
+      "method": "官方产品页多轮编辑演示。 官方说明：多轮调整人物发型、眼镜、服装、背景与桌面道具，逐步呈现不同造型。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-edit-portrait-props-01.webp",
+          "width": 630,
+          "height": 840,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-edit-snake",
+      "title": "游戏蛇画面分数与布局连改",
+      "category": "多轮编辑与一致性",
+      "one_liner": "逐轮改蛇的位置、长度和分数，显示器与界面布局保持一致。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方说明了多轮编辑内容和效果，但未逐轮公开完整提示词。"
+      },
+      "method": "官方产品页多轮编辑演示。 官方说明：逐轮调整游戏画面中蛇的位置、长度与分数，保持显示器和界面布局一致。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-edit-snake-01.webp",
+          "width": 840,
+          "height": 472,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-edit-still-life",
+      "title": "静物逐轮添加水果与花枝",
+      "category": "多轮编辑与一致性",
+      "one_liner": "逐步添加水果、花器和花枝，丰富构图并保持光影协调。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方说明了多轮编辑内容和效果，但未逐轮公开完整提示词。"
+      },
+      "method": "官方产品页多轮编辑演示。 官方说明：逐步添加水果、花器与花枝，丰富静物构图，保持场景光影协调。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-edit-still-life-01.webp",
+          "width": 480,
+          "height": 764,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-edit-makeup",
+      "title": "发型妆容与头饰多轮造型",
+      "category": "多轮编辑与一致性",
+      "one_liner": "多轮调整发型、妆容与头部装饰，呈现不同造型。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方说明了多轮编辑内容和效果，但未逐轮公开完整提示词。"
+      },
+      "method": "官方产品页多轮编辑演示。 官方说明：多轮调整人物发型、妆容与头部装饰，逐步呈现不同造型。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-edit-makeup-01.webp",
+          "width": 564,
+          "height": 852,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-edit-guohua",
+      "title": "国画花器枝叶多轮丰富构图",
+      "category": "多轮编辑与一致性",
+      "one_liner": "逐步调整花器、枝叶与点缀，丰富国画构图。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方说明了多轮编辑内容和效果，但未逐轮公开完整提示词。"
+      },
+      "method": "官方产品页多轮编辑演示。 官方说明：逐步调整花器、枝叶与画面点缀，丰富国画构图。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-edit-guohua-01.webp",
+          "width": 472,
+          "height": 840,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-edit-watch",
+      "title": "表盘时间与运动数据连改",
+      "category": "多轮编辑与一致性",
+      "one_liner": "逐轮更新表盘时间、运动数据和图表，布局与外观保持一致。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方说明了多轮编辑内容和效果，但未逐轮公开完整提示词。"
+      },
+      "method": "官方产品页多轮编辑演示。 官方说明：逐轮更新表盘上的时间、运动数据与图表，保持表盘布局和外观一致。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-edit-watch-01.webp",
+          "width": 720,
+          "height": 480,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-rgba-run",
+      "title": "女孩奔跑动作的透明底分层",
+      "category": "透明素材与贴纸",
+      "one_liner": "生成一组向右奔跑的连续动作，每张都是独立透明底图层。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "生成一组女孩向右奔跑的连续动作图，每张为独立的透明底图层。",
+        "note": "官方产品页公开了这段生成说明/提示词。"
+      },
+      "method": "官方产品页精选演示，并公开了对应的生成说明。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-rgba-run-01.webp",
+          "width": 474,
+          "height": 718,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-rgba-flamingo",
+      "title": "火烈鸟提取为 RGBA 透明图层",
+      "category": "透明素材与贴纸",
+      "one_liner": "从画面中提取火烈鸟，输出为独立透明图层。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "提取画面中的火烈鸟，输出为独立的 RGBA 透明图层。",
+        "note": "官方产品页公开了这段生成说明/提示词。"
+      },
+      "method": "官方产品页精选演示，并公开了对应的生成说明。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-rgba-flamingo-01.webp",
+          "width": 476,
+          "height": 720,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-rgba-stickers",
+      "title": "海洋猫与动植物透明贴纸组",
+      "category": "透明素材与贴纸",
+      "one_liner": "一次生成两组卡通贴纸，贴纸以外区域为透明背景。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "生成两组卡通贴纸：一组由海洋元素和卡通小猫组成，另一组由动物和植物组成。两组贴纸元素以外的区域均为透明背景。",
+        "note": "官方产品页公开了这段生成说明/提示词。"
+      },
+      "method": "官方产品页精选演示，并公开了对应的生成说明。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-rgba-stickers-01.webp",
+          "width": 466,
+          "height": 840,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-rgba-yarn",
+      "title": "毛线质感 Seedream 5.5 字标",
+      "category": "透明素材与贴纸",
+      "one_liner": "按参考质感生成宝蓝与湖蓝毛线缠绕的“Seedream 5.5”字标，字外透明。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "参考图中的质感和写法，生成“Seedream 5.5”：圆润饱满的无衬线字母，以宝蓝与湖蓝毛线交替缠绕，呈现纤维、绒毛和侧向投影。输出 16:9 横幅，文字以外的区域透明。",
+        "note": "官方产品页公开了这段生成说明/提示词。"
+      },
+      "method": "官方产品页精选演示，并公开了对应的生成说明。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-rgba-yarn-01.webp",
+          "width": 800,
+          "height": 450,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-rgba-owl-macro",
+      "title": "雪鸮羽毛与脚部圆形微距透明图",
+      "category": "透明素材与贴纸",
+      "one_liner": "生成雪鸮羽毛与积雪接触的圆形微距，再放大脚部特写，圆外透明。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "生成雪鸮白色细密羽毛与积雪接触处的圆形微距特写。再放大参考图右侧较小的雪鸮脚，生成浅灰底的圆形微距特写。两张图均配 3 像素深灰细边框，圆外透明。",
+        "note": "官方产品页公开了这段生成说明/提示词。"
+      },
+      "method": "官方产品页精选演示，并公开了对应的生成说明。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-rgba-owl-macro-01.webp",
+          "width": 800,
+          "height": 450,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-photo-bar-cat",
+      "title": "酒吧里的复古闪光灯白猫",
+      "category": "人像与写实摄影",
+      "one_liner": "低机位仰拍酒吧白猫，富士 Provia 色彩与闪光灯颗粒。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "夜晚酒吧里的白猫，优雅地坐在酒瓶与玻璃杯之间。采用低机位仰拍与倾斜构图，以闪光灯、富士 Provia 胶片色彩和颗粒质感呈现斑驳光影、明亮高光与清晰细节，营造复古摄影氛围。",
+        "note": "官方产品页公开了这段生成说明/提示词。"
+      },
+      "method": "官方产品页精选演示，并公开了对应的生成说明。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-photo-bar-cat-01.webp",
+          "width": 1600,
+          "height": 1060,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-photo-father-baby",
+      "title": "窗边父亲抱婴儿的纪实摄影",
+      "category": "人像与写实摄影",
+      "one_liner": "年轻父亲靠在沙发上怀抱婴儿，暖窗光与织物质感很生活化。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "温暖的家庭纪实摄影：一位年轻父亲斜靠在深紫灰色布艺沙发上，怀抱安睡的婴儿。奶油白编织靠垫与芥末黄色毛毯呈现柔软、真实的织物质感。右侧窗户透入暖金色自然光，人物姿态松弛，保留细腻肤色、柔和阴影与胶片颗粒，记录安静亲密的午后瞬间。",
+        "note": "官方产品页公开了这段生成说明/提示词。"
+      },
+      "method": "官方产品页精选演示，并公开了对应的生成说明。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-photo-father-baby-01.webp",
+          "width": 1600,
+          "height": 900,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-photo-wind-woman",
+      "title": "强风中低头看手机的街头随拍",
+      "category": "人像与写实摄影",
+      "one_liner": "画面整体倾斜约 25 度，发丝掠过墨镜，保留仓促取景感。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "横幅城市街头随拍：一位穿酒红色上衣、浅棕色外套的长发女子低头看手机，强风吹起发丝，掠过墨镜与脸颊。整个画面顺时针倾斜约 25 度，人物、建筑、灯杆与路面保持一致的倾斜透视。保留自然衣褶、仓促取景与不对称裁切，呈现未经摆拍的日常瞬间。",
+        "note": "官方产品页公开了这段生成说明/提示词。"
+      },
+      "method": "官方产品页精选演示，并公开了对应的生成说明。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-photo-wind-woman-01.webp",
+          "width": 1600,
+          "height": 904,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-gallery-shakespeare",
+      "title": "莎士比亚文学报纸版面",
+      "category": "海报、排版与小字",
+      "one_liner": "横版文学特刊，报头 THE SHAKESPEARE CHRONICLE，小字专栏清晰可读。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "设计横版英文文学特刊，报头为“THE SHAKESPEARE CHRONICLE”，主标题为“WILLIAM SHAKESPEARE”。在暖米白旧纸上，以黑色雕版描绘莎士比亚半身像与环球剧场，让烟蓝色云层和海浪穿过版面。围绕插画错落排布七篇英文短文，用粗衬线标题区分栏目，小字号正文清晰可读。",
+        "note": "官方产品页公开了这段生成说明/提示词。"
+      },
+      "method": "官方产品页精选演示，并公开了对应的生成说明。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-gallery-shakespeare-01.webp",
+          "width": 1600,
+          "height": 1060,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-gallery-blue-morpho",
+      "title": "蓝闪蝶微观宇宙科普图",
+      "category": "海报、排版与小字",
+      "one_liner": "黑底展翅蓝闪蝶，八组中英对照微距说明，密集小字清晰。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "横版自然科普信息图“蓝闪蝶：一只蝴蝶的微观宇宙”，英文标题“BLUE MORPHO・A CLOSER LOOK”。黑底中央呈现巨大展翅蓝闪蝶，外围八组微距特写依次展示触角、结构色、翅缘、口器、复眼、翅腹面、翅脉与翅鳞。每组配中文说明、英文术语与观察提示，保留丰富清晰的小字、精细鳞片和透明层次；页脚注明局部为放大示意、非等比例。",
+        "note": "官方产品页公开了这段生成说明/提示词。"
+      },
+      "method": "官方产品页精选演示，并公开了对应的生成说明。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-gallery-blue-morpho-01.webp",
+          "width": 1600,
+          "height": 898,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "official-gallery-berry-club",
+      "title": "莓小蓝潮玩角色展示板",
+      "category": "电商、角色与设计物料",
+      "one_liner": "BERRY CLUB 展示板，含主角造型、三视图、表情和配件，中英文排版清楚。",
+      "author": {
+        "name": "ByteDance Seed",
+        "username": "ByteDanceSeed_",
+        "url": "https://x.com/ByteDanceSeed_"
+      },
+      "source_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "published_at_utc": "2026-11-09T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "设计竖幅蓝莓潮玩角色展示板，以晴空蓝与奶油白云朵分区，标题为“BERRY CLUB”，配中文“小小一颗，慢慢快乐”。展示主角“莓小蓝”和云朵邮差、雨后散步、星夜守望者、蓝莓甜点师四款造型，下方排列三视图、五种表情与六件配件。统一角色比例、哑光搪胶质感与圆润中英文排版，信息丰富且清晰有序。",
+        "note": "官方产品页公开了这段生成说明/提示词。"
+      },
+      "method": "官方产品页精选演示，并公开了对应的生成说明。",
+      "notes": "官方产品页演示，版权归 ByteDance Seed。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "official_page",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      ],
+      "featured_by_url": "https://seed.bytedance.com/zh/seedream5_5",
+      "images": [
+        {
+          "src": "/images/seedream-5-5/official-gallery-berry-club-01.webp",
+          "width": 1200,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://seed.bytedance.com/zh/seedream5_5",
+          "copyright_note": "官方演示，版权归 ByteDance Seed / 原发布方。"
+        }
+      ]
+    },
+    {
+      "id": "alisa-watch-100",
+      "title": "手表逐秒连改 100 轮对比",
+      "category": "多轮编辑与一致性",
+      "one_liner": "Alisa Qian 把同一块表每轮加一秒，连改 100 轮，展示 Seedream 5.5 的一致性差距。",
+      "author": {
+        "name": "Alisa Qian",
+        "username": "alisaqqt",
+        "url": "https://x.com/alisaqqt"
+      },
+      "source_url": "https://x.com/alisaqqt/status/2119805701300408634",
+      "published_at_utc": "2026-11-09T14:53:57.000Z",
+      "published_at_shanghai": "2026-11-09 22:53（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者说明了每轮只把表的时间加一秒，但未公开完整提示词原文。"
+      },
+      "method": "作者自称用 Seedream 5.5 做 100 次链式编辑，每次只把手表时间加一秒，并用视频展示一致性。该测试被多位作者转发引用。",
+      "notes": "效果图为原帖视频封面，未转存完整视频。版权归原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/alisa-watch-100-01.webp",
+          "width": 1200,
+          "height": 630,
+          "media_type": "video_thumbnail",
+          "animated": false,
+          "original_post_url": "https://x.com/alisaqqt/status/2119805701300408634",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "kishen-film-portraits",
+      "title": "胶片风书房与花园人像测试",
+      "category": "人像与写实摄影",
+      "one_liner": "KishenArt 用 Seedream 5.5 做两张超写实胶片人像，并在评论区公开完整提示词。",
+      "author": {
+        "name": "KishenArt",
+        "username": "KishenArt",
+        "url": "https://x.com/KishenArt"
+      },
+      "source_url": "https://x.com/KishenArt/status/2120046624919769591",
+      "published_at_utc": "2026-11-10T06:51:18.000Z",
+      "published_at_shanghai": "2026-11-10 14:51（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "P1（书房叼苹果）：\n顶级胶片摄影大师风格，电影级静帧美学，日系胶片文艺写真，超写实摄影。用午后低角度的暖阳、旧书架、散落的书本和红苹果，营造慵懒、温暖、带一点少女心事的秋日氛围，画面要像真实拍下的电影生活片段。\n\n--角色长相描述--\n25岁左右的成年亚洲女性，五官精致，带一点日系的柔和感。鹅蛋脸，脸颊饱满，下颌线柔和，眼睛是圆润的杏眼，瞳色在阳光下呈浅琥珀色，眼神放空，望向画面右上方。鼻梁秀气，鼻头小巧，嘴唇饱满微张，叼着一颗小红苹果。整体是温柔、慵懒、有点出神的文艺气质，面部比例要真实可信，不要网红整容脸或AI脸。\n\n--角色皮肤描述--\n肤质细腻透亮，是自然的水润肌。肤色白皙，在暖阳下泛着柔和的暖调，脸颊和鼻尖带一点自然血色，迎光面有柔和的光泽，背光面过渡自然。肤质增强：用100mm微距级的皮肤细节。保留真实毛孔、脸上细小的绒毛（在逆光下清晰可见）、自然肤色差异和真实的皮肤纹理，不要过度磨皮，不要蜡像感。\n\n--角色妆造描述--\n妆容：清透的伪素颜妆，底妆很薄，脸颊带一点淡淡的蜜桃色腮红，睫毛自然卷翘，嘴唇是水润的裸粉色唇膏。美甲：裸色短甲，干净自然。发型：浅栗棕色的中长发，是蓬松的空气感微卷，带齐眉的轻薄空气刘海，发丝凌乱随意，有不少碎发翘起。逆光下，发丝边缘被照成金色的透光轮廓，根根分明。\n\n--角色身材描述--\n成年女性，身材纤细匀称，肩颈线条柔和，手指修长。人物趴在桌上，身体大部分被毛衣和桌面挡住。人体结构要真实。\n\n--角色穿搭描述--\n上衣：宽松的手工粗针织毛衣，是砖橘色、焦糖棕、湖蓝和米黄的撞色拼接，袖子是砖橘色的罗纹，袖口长到盖住手背，毛线的蓬松纹理和起球细节要清晰。下装：人物趴在桌前，下装没有入镜。鞋履配饰：鞋履没有入镜，不添加首饰。\n\n--角色姿势与神态--\n身体姿势：人物趴在木桌前，上半身前倾靠在桌面上，右手手肘撑在桌上，手背托着头部右侧；左手搭在桌面摊开的书页上，手指轻轻压着纸张。头部微微向右倾斜，靠在手上。表情神态：嘴里叼着一颗小红苹果，眼睛放空，望向画面右上方的窗光，表情慵懒、出神，带一点少女心事的文艺感。\n\n--场景氛围--\n午后的旧书房，人物趴在一张原木色的木桌前，桌上铺着几张泛白的旧纸和摊开的书，右侧有一本封面是蓝绿色的厚书，左侧堆着几颗红黄相间的小苹果，前景桌面上也滚落了几颗。背景是一个深绿色的木书架，上面塞满了颜色各异的旧书，顶层放着一个彩色条纹的针织包，左侧是米白色的亚麻窗帘。光线是秋日午后低角度的暖阳，从画面右侧斜射进来，照亮人物的脸、头发和桌面，在纸张上留下明亮的光斑，背景书架落在柔和的阴影里。整体是暖金、砖橘、苹果红和墨绿组成的日系胶片色调，温暖、慵懒、文艺。\n\n--镜头参数和视角构图--\n镜头参数：佳能R5 Mark II，50mm-85mm中焦镜头，景深f/1.4-f/1.8，加四分之一黑柔光滤镜，让阳光高光柔和晕开。人物面部和嘴里的苹果对焦清晰，背景书架虚化，前景桌面上的苹果带一点散焦。视角构图：竖幅构图，机位与桌面高度相近，在人物正前方略偏左，与人物视线接近平齐。画面从头顶上方的书架取到前景的桌面，人物位于画面中上部偏右，前景是桌面上的苹果和书，中景是人物，背景是书架，形成三层空间，视觉中心落在侧脸和嘴里的苹果上。\n\n--画面美学--\n日系胶片质感的生活写真，像富士胶片拍出来的暖调色彩，带一点高光溢出和柔和的逆光眩光。50-85mm镜头负责真实的成像、虚化和空间压缩。高光柔和不过曝，暗部保留细节，带一点轻微的胶片颗粒，不要商业棚拍的平光，也不要插画式的干净线条和平涂色块。\n\n--画面增强--\ncinematic photorealistic, real photograph, not illustration, not anime, not cartoon, not 3D render, Japanese film photography, Fujifilm color, warm afternoon sunlight, side light, backlit hair, peach fuzz, soft glow, chunky knit sweater texture, film grain, real human skin texture, visible pores, individual hair strands, high frequency details, ultra realistic, RAW photo quality, micro contrast, extreme detail, no plastic skin, no wax skin, no over smoothing, no AI artifact, no distorted hands, accurate anatomy, adult woman\n\nP2（花园番石榴）：\n顶级胶片摄影大师风格，电影级静帧美学，INS风夏日花园写真，超写实摄影，带清冷又温柔的性感张力。用满眼的绿植、柔和的阴天漫射光、薄荷绿缎面裙和切开的粉红色番石榴，营造湿润、慵懒、像夏日午后一场梦的氛围。画面要像真实拍下的电影静帧，不用插画、动漫、CG或3D渲染风格。\n\n--角色长相描述--\n25岁左右的成年亚洲女性，五官精致成熟，是清冷的初恋脸。鹅蛋脸，下颌线柔和流畅，眼睛是微微下垂的杏眼，瞳色是浅棕色，眼神慵懒、略带迷离，直视镜头。鼻梁秀挺，鼻头小巧，唇形饱满，嘴唇微微张开。整体是清冷、温柔、带一点忧郁的气质，面部比例要真实可信，不要网红整容脸或AI脸。\n\n--角色皮肤描述--\n肤质丝滑细嫩，莹润饱满，是天然水光肌。肤色冷白透亮，脸颊、鼻尖、耳朵和肩头带一点自然的粉色血色，薄涂身体精油，肩头、锁骨和手臂有柔和的润泽光感，像刚被夏日湿气打湿。不要塑料感，也不要全身镜面反光。肤质增强：用100mm微距级的皮肤细节。保留真实毛孔、细小绒毛、自然肤色差异和真实的皮肤纹理，不要过度磨皮，不要蜡像感。\n\n--角色妆造描述--\n妆容：清透的伪素颜底妆，睫毛根根分明，嘴唇是水润的粉色唇釉。美甲：裸粉色的长款杏仁形美甲。发型：黑色长发，松散地挽在脑后，几缕湿润的碎发垂在额前和脸侧，发丝凌乱，带一点被湿气打湿的感觉，发丝根根分明。\n\n--角色身材描述--\n成年女性，身材纤细匀称，肩颈线条修长，锁骨清晰，手臂纤细，腰肢纤细，双腿修长匀称。人体结构要真实，不夸大比例。\n\n--角色穿搭描述--\n上衣：薄荷绿色的丝缎吊带连衣裙，一字领，领口滑落到胸部上缘，边缘有一圈白色的细蕾丝滚边，肩带和泡泡袖滑落到上臂，露出肩头。缎面带一点柔和的珠光。下装：连衣裙裙摆是宽松的及膝长度，丝缎面料自然垂坠，堆在木地板上，形成柔软的褶皱，裙摆侧面垂着一条同色的细系带。鞋履配饰：赤脚，脚部被裙摆挡住，没有入镜。不添加首饰。\n\n--角色姿势与神态--\n身体姿势：人物侧坐在木台上，双腿向画面右侧弯曲并拢，身体微微前倾，左手撑在前景的木台边缘，手指自然弯曲；右手举在胸前，拿着半个切开的粉红色番石榴，手指修长优雅。肩部放松，一侧肩带滑落，头部微微向一侧倾斜。表情神态：头部微微歪向一侧，眼睛直视镜头，眼神慵懒、迷离，带一点忧郁。嘴唇微微张开，表情温柔又带一点疏离的私密感。\n\n--场景氛围--\n夏日的私人花园，人物侧坐在一个深棕色的防腐木平台上，木板上散落着几颗完整的绿色番石榴和几块切开的粉红色番石榴。四周是茂盛的绿植，有大叶的绿色灌木、蕨类植物和淡绿色、白色的绣球花，前景右下角有几枝绿叶探进画面。背景左侧是一张铺着白色桌布的圆桌，后面是深棕色的木椅和一扇格子窗，全都虚化在绿意里。光线是柔和的阴天漫射光，没有明显的方向，整个画面光比很低，皮肤和丝缎都泛着柔和的光泽。整体是薄荷绿、深绿、木棕和粉红色组成的低饱和清透电影色调，湿润、慵懒、梦幻。\n\n--镜头参数和视角构图--\n镜头参数：佳能R5 Mark II，85mm人像镜头，景深f/1.4-f/1.8，加四分之一黑柔光滤镜，让画面柔和朦胧。人物面部和手里的番石榴对焦清晰，背景的绿植、圆桌和木椅大面积虚化成柔和的绿色光斑，前景的绿叶带一点散焦。\n视角构图：竖幅构图，机位在人物正前方偏上，带一点微微俯视的角度，与人物视线平齐或略高。画面从头顶取到前景的木台边缘，人物居中偏右，占画面的大约四分之三。前景散落的番石榴和绿叶、中景的人物、背景的绿植和家具形成三层空间，视觉中心落在眼神和手里的番石榴上。\n\n--画面美学--\n港风胶片感的写实人像，带一点柔和的低反差和轻微的绿调偏色，像王家卫电影里湿润的夏日静帧。50-85mm镜头负责真实的成像、虚化和空间压缩。高光柔和不过曝，暗部保留细节，带一点轻微的胶片颗粒，不要商业棚拍的平光，也不要插画式的干净线条和平涂色块。\n\n--画面增强--\ncinematic photorealistic, real photograph, not illustration, not anime, not cartoon, not 3D render, summer garden, lush green plants, soft overcast diffused light, low contrast, film look, mint green satin dress, guava fruit, film grain, real human skin texture, visible pores, individual hair strands, high frequency details, ultra realistic, RAW photo quality, 100MP medium format quality, micro contrast, extreme detail, no plastic skin, no wax skin, no over smoothing, no AI artifact, no distorted hands, accurate anatomy, adult woman",
+        "note": "提示词来自作者在原帖评论区的两条长回复。"
+      },
+      "method": "作者引用官方发布帖，自称用 Seedream 5.5 做写实人像测试，并在评论区分别公开 P1、P2 提示词。",
+      "notes": "版权归原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/KishenArt/status/2120047577957867826",
+        "https://x.com/KishenArt/status/2120047937673916717",
+        "https://x.com/ByteDanceSeed_/status/2119720475068920181"
+      ],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/kishen-film-portraits-01.webp",
+          "width": 1200,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/KishenArt/status/2120046624919769591",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/kishen-film-portraits-02.webp",
+          "width": 1200,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/KishenArt/status/2120046624919769591",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "oden-apple-skin",
+      "title": "苹果特写皮肤质感试做",
+      "category": "人像与写实摄影",
+      "one_liner": "日本创作者试做 Seedream 5.5，称皮肤质感表现不错。",
+      "author": {
+        "name": "ちょうどいいAIクリエイター",
+        "username": "oden_ai_ai",
+        "url": "https://x.com/oden_ai_ai"
+      },
+      "source_url": "https://x.com/oden_ai_ai/status/2120015332530393282",
+      "published_at_utc": "2026-11-10T04:46:57.000Z",
+      "published_at_shanghai": "2026-11-10 12:46（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者引用官方发布帖，称自己试做了 Seedream 5.5，并配图评价皮肤质感。原帖未说明提示词和具体工作流。",
+      "notes": "版权归原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/ByteDanceSeed_/status/2119720475068920181"
+      ],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/oden-apple-skin-01.webp",
+          "width": 1600,
+          "height": 1198,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/oden_ai_ai/status/2120015332530393282",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "ai-timemachine-nature",
+      "title": "Nature Unseen 概念的 5.5 重制",
+      "category": "人像与写实摄影",
+      "one_liner": "作者用 Seedream 5.5 给自己的 Nature Unseen 概念重新出图。",
+      "author": {
+        "name": "AI TimeMachine",
+        "username": "AI_Timemachine",
+        "url": "https://x.com/AI_Timemachine"
+      },
+      "source_url": "https://x.com/AI_Timemachine/status/2119930302508286194",
+      "published_at_utc": "2026-11-09T23:09:05.000Z",
+      "published_at_shanghai": "2026-11-10 07:09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者自称当晚测试 Seedream 5.5，并为自己的 Nature Unseen 概念重新出了几张图。原帖未公开提示词。",
+      "notes": "版权归原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/ai-timemachine-nature-01.webp",
+          "width": 1067,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/AI_Timemachine/status/2119930302508286194",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/ai-timemachine-nature-02.webp",
+          "width": 1067,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/AI_Timemachine/status/2119930302508286194",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/ai-timemachine-nature-03.webp",
+          "width": 1067,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/AI_Timemachine/status/2119930302508286194",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/ai-timemachine-nature-04.webp",
+          "width": 1067,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/AI_Timemachine/status/2119930302508286194",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "taxue-cinematic",
+      "title": "比 5.0 Pro 更有电影感的写实试图",
+      "category": "人像与写实摄影",
+      "one_liner": "踏雪寻仙在发布当天先放一张试图，称 5.5 比 5.0 Pro 更接近实拍。",
+      "author": {
+        "name": "踏雪寻仙",
+        "username": "TaXue2025",
+        "url": "https://x.com/TaXue2025"
+      },
+      "source_url": "https://x.com/TaXue2025/status/2119730457030041723",
+      "published_at_utc": "2026-11-09T09:54:58.000Z",
+      "published_at_shanghai": "2026-11-09 17:54（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者在即梦 Seedream 5.5 上线当天先放试图，称相比 Seedream 5.0 Pro，5.5 能生成更真实自然、更具电影感的写实图。原帖未公开提示词，也未逐张标明哪张是 5.0 Pro、哪张是 5.5。",
+      "notes": "版权归原作者。对比关系以作者文字为准，本调研未独立复现。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/taxue-cinematic-01.webp",
+          "width": 1067,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/TaXue2025/status/2119730457030041723",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/taxue-cinematic-02.webp",
+          "width": 880,
+          "height": 1260,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/TaXue2025/status/2119730457030041723",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "nanyuan-guohua-gif",
+      "title": "古画加花枝的 580 帧多轮 GIF",
+      "category": "多轮编辑与一致性",
+      "one_liner": "作者用多轮编辑逐步加花枝、红果和题字，称由 580 张图组成动态效果。",
+      "author": {
+        "name": "南鸢 nuyoah",
+        "username": "nanyuan0412",
+        "url": "https://x.com/nanyuan0412"
+      },
+      "source_url": "https://x.com/nanyuan0412/status/2120085502736953603",
+      "published_at_utc": "2026-11-10T09:25:47.000Z",
+      "published_at_shanghai": "2026-11-10 17:25（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者说明了多轮是在加花枝、添红果、补题字，但未公开逐轮提示词。"
+      },
+      "method": "作者自称这个 GIF 是用 Seedream 5.5 的多轮编辑一步步叠出来的，整个效果包含 580 张图片。称在连续添加花枝、红果和题字时，底部花瓶、已有花叶和宣纸纹理能做到非编辑区域像素级保持。",
+      "notes": "效果图为 GIF 预览封面，未转存完整动图文件。580 张等数字为作者自称。版权归原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/nanyuan-guohua-gif-01.webp",
+          "width": 675,
+          "height": 1200,
+          "media_type": "animated_gif_thumbnail",
+          "animated": false,
+          "original_post_url": "https://x.com/nanyuan0412/status/2120085502736953603",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "ghostly-seedance-mixed",
+      "title": "Seedream 5.5 出图再交给 Seedance 2.5",
+      "category": "混用工作流",
+      "one_liner": "先用 Seedream 5.5 出角色图，再交给 Seedance 2.5 做视频，并用 Suno 配乐。",
+      "author": {
+        "name": "Ghostly 愛",
+        "username": "GhostlyXV",
+        "url": "https://x.com/GhostlyXV"
+      },
+      "source_url": "https://x.com/GhostlyXV/status/2119866467717918756",
+      "published_at_utc": "2026-11-09T18:55:25.000Z",
+      "published_at_shanghai": "2026-11-10 02:55（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5",
+        "Seedance 2.5",
+        "Suno"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者写明工作流是 Seedream 5.5 -> Seedance 2.5，并称这是对 Ptasinski & Rj Pasin 曲目 Light 的 remix，音乐在 Suno 制作。原帖未说明哪些镜头由 5.5 出图、如何导入 Seedance。",
+      "notes": "混用工作流。效果图为视频封面，未转存完整视频。版权归原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：用 Seedream 5.5 生成角色/画面。作者称角色质量很高，但原帖未说明具体出了哪些图，也未公开提示词。",
+        "第2步：把画面交给 Seedance 2.5 做成视频。原帖未说明时长、镜头衔接和参数。",
+        "第3步：用 Suno 制作对 Light 的 remix 作为配乐。原帖未说明音乐提示词和与画面的同步方式。"
+      ],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/ghostly-seedance-mixed-01.webp",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "animated": false,
+          "original_post_url": "https://x.com/GhostlyXV/status/2119866467717918756",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "drsadek-resize-compare",
+      "title": "9:16 重绘：5.5 与 GPT Image 2.6 对比",
+      "category": "模型对比",
+      "one_liner": "同一张图分别用 Seedream 5.5 和 GPT Image 2.6 拉到 9:16，作者觉得 5.5 略好。",
+      "author": {
+        "name": "DrSadek",
+        "username": "DrSadek_",
+        "url": "https://x.com/DrSadek_"
+      },
+      "source_url": "https://x.com/DrSadek_/status/2119809560038772808",
+      "published_at_utc": "2026-11-09T15:09:17.000Z",
+      "published_at_shanghai": "2026-11-09 23:09（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5",
+        "GPT Image 2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者把第一张图分别用 Seedream 5.5（第二张）和 GPT Image 2.6（第三张）重绘为 9:16。称两者质量接近，自己觉得 Seedream 5.5 略好。",
+      "notes": "按作者说明：原图、Seedream 5.5、GPT Image 2.6。版权归原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/drsadek-resize-compare-01.webp",
+          "width": 500,
+          "height": 428,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/DrSadek_/status/2119809560038772808",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/drsadek-resize-compare-02.webp",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/DrSadek_/status/2119809560038772808",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/drsadek-resize-compare-03.webp",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/DrSadek_/status/2119809560038772808",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "deepblue-four-model",
+      "title": "同一题四模型并排：5.5 / 2.6 / 5.0 Pro / Grok",
+      "category": "模型对比",
+      "one_liner": "作者按从左到右排出 Seedream 5.5、GPT images 2.6、Seedream 5.0 Pro 和 Grok imagine 2.0。",
+      "author": {
+        "name": "DeepBlue深藍",
+        "username": "DeepBlueX0",
+        "url": "https://x.com/DeepBlueX0"
+      },
+      "source_url": "https://x.com/DeepBlueX0/status/2120000077209251934",
+      "published_at_utc": "2026-11-10T03:46:20.000Z",
+      "published_at_shanghai": "2026-11-10 11:46（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5",
+        "GPT images 2.6",
+        "Seedream 5.0 Pro",
+        "Grok imagine 2.0"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者总结 Seedream 5.5 的五项升级，并配四张对比图，标明从左到右依次为 Seedream 5.5、GPT images 2.6、Seedream 5.0 Pro、Grok imagine 2.0。原帖未公开提示词。",
+      "notes": "版权归原作者。模型归属以作者标注为准。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/ByteDanceSeed_/status/2119720475068920181"
+      ],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/deepblue-four-model-01.webp",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/DeepBlueX0/status/2120000077209251934",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/deepblue-four-model-02.webp",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/DeepBlueX0/status/2120000077209251934",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/deepblue-four-model-03.webp",
+          "width": 899,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/DeepBlueX0/status/2120000077209251934",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/deepblue-four-model-04.webp",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/DeepBlueX0/status/2120000077209251934",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "94van-portrait-blind",
+      "title": "同提示词四人像盲测",
+      "category": "模型对比",
+      "one_liner": "同一提示词盲测即梦 5.5、ChatGPT、Gemini 和 Grok 人像，作者称 5.5 脸模更多样但仍偏“高 P”。",
+      "author": {
+        "name": "𝟡𝟜 ᴾᴸᴬʸᶠᴼᴿᴳᴱ",
+        "username": "94vanAI",
+        "url": "https://x.com/94vanAI"
+      },
+      "source_url": "https://x.com/94vanAI/status/2119938579078238370",
+      "published_at_utc": "2026-11-09T23:41:58.000Z",
+      "published_at_shanghai": "2026-11-10 07:41（Asia/Shanghai）",
+      "tools": [
+        "即梦 Seedream 5.5",
+        "ChatGPT",
+        "Gemini",
+        "Grok"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者称同 Prompt，但未在帖中公开提示词原文。"
+      },
+      "method": "作者称拿到 Seedream 5.5 内测后，用同一提示词跑人像：P1 即梦、P2 ChatGPT、P3 Gemini、P4 Grok。评价包括脸模多样性提升、仍有磨皮高光、官方 App 风控更严等。这些是作者主观感受，调研未独立复现。",
+      "notes": "按作者标注 P1–P4 对应即梦 / ChatGPT / Gemini / Grok。版权归原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/94van-portrait-blind-01.webp",
+          "width": 675,
+          "height": 1200,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/94vanAI/status/2119938579078238370",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/94van-portrait-blind-02.webp",
+          "width": 675,
+          "height": 1199,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/94vanAI/status/2119938579078238370",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/94van-portrait-blind-03.webp",
+          "width": 670,
+          "height": 1200,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/94vanAI/status/2119938579078238370",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/94van-portrait-blind-04.webp",
+          "width": 675,
+          "height": 1200,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/94vanAI/status/2119938579078238370",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "94van-text-compare",
+      "title": "密集文字：5.5 对 5.0 Pro，顺带对比 GPT",
+      "category": "模型对比",
+      "one_liner": "作者实测即梦 5.5 与 5.0 Pro 的文字排布，并并列 GPT-image 2.0 与 2.6。",
+      "author": {
+        "name": "𝟡𝟜 ᴾᴸᴬʸᶠᴼᴿᴳᴱ",
+        "username": "94vanAI",
+        "url": "https://x.com/94vanAI"
+      },
+      "source_url": "https://x.com/94vanAI/status/2120007470898913320",
+      "published_at_utc": "2026-11-10T04:15:43.000Z",
+      "published_at_shanghai": "2026-11-10 12:15（Asia/Shanghai）",
+      "tools": [
+        "即梦 Seedream 5.5",
+        "Seedream 5.0 Pro",
+        "GPT-image 2.0",
+        "GPT-image 2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者引用官方“密集小字更准确”的说法，并给出实测图：即梦 5.5 对比 5.0 Pro，以及 GPT-image 2.0 对比 2.6。几乎相同的图文还有一条重复帖，本条作为主条目，不重复收录。",
+      "notes": "版权归原作者。重复发布的另一条帖不单列。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/94vanAI/status/2120007303416127861",
+        "https://x.com/94vanAI/status/2119938579078238370"
+      ],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/94van-text-compare-01.webp",
+          "width": 1600,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/94vanAI/status/2120007470898913320",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/94van-text-compare-02.webp",
+          "width": 1600,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/94vanAI/status/2120007470898913320",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "ozan-same-prompt",
+      "title": "同提示词对比 5.5、GPT 2.6 与 Banana 2.1",
+      "category": "模型对比",
+      "one_liner": "Ozan Sihay 用同一组提示词把 Seedream 5.5 放到 GPT Image 2.6 和 Nano Banana 2.1 旁边测试。",
+      "author": {
+        "name": "Ozan Sihay",
+        "username": "ozansihay",
+        "url": "https://x.com/ozansihay"
+      },
+      "source_url": "https://x.com/ozansihay/status/2119803963738357803",
+      "published_at_utc": "2026-11-09T14:47:03.000Z",
+      "published_at_shanghai": "2026-11-09 22:47（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5",
+        "GPT Image 2.6",
+        "Nano Banana 2.1"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者称用了相同提示词，但未在帖中公开原文。"
+      },
+      "method": "作者称 Seedream 5.5 发布后，用相同提示词与 GPT Image 2.6、Nano Banana 2.1 并排测试，并认为光影等方面进步明显。原帖为土耳其语，未逐张标明每张对应哪个模型。",
+      "notes": "版权归原作者。具体哪张对应哪一模型，原帖没有逐一标注。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/ozan-same-prompt-01.webp",
+          "width": 886,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/ozansihay/status/2119803963738357803",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/ozan-same-prompt-02.webp",
+          "width": 1600,
+          "height": 749,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/ozansihay/status/2119803963738357803",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/ozan-same-prompt-03.webp",
+          "width": 1600,
+          "height": 749,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/ozansihay/status/2119803963738357803",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/ozan-same-prompt-04.webp",
+          "width": 1600,
+          "height": 749,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/ozansihay/status/2119803963738357803",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "yuzi-three-model",
+      "title": "ChatGPT 2.6、5.0 Pro 与 5.5 同题对比",
+      "category": "模型对比",
+      "one_liner": "Youzi 并排展示 ChatGPT Images 2.6、豆包 Seedream 5.0 Pro 和 Seedream 5.5。",
+      "author": {
+        "name": "Youzi",
+        "username": "Yuziyyaa",
+        "url": "https://x.com/Yuziyyaa"
+      },
+      "source_url": "https://x.com/Yuziyyaa/status/2119991511433814093",
+      "published_at_utc": "2026-11-10T03:12:18.000Z",
+      "published_at_shanghai": "2026-11-10 11:12（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6",
+        "豆包 Seedream 5.0 Pro",
+        "豆包 Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者写明三张结果分别来自 ChatGPT Images 2.6、豆包 Seedream 5.0 Pro 和豆包 Seedream 5.5，并认为豆包生图已经可以追上 GPT。原帖未公开提示词，也未在配图上逐张标注模型名。",
+      "notes": "版权归原作者。顺序以作者文字为准，图上未见逐张标签。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/yuzi-three-model-01.webp",
+          "width": 1086,
+          "height": 1448,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/Yuziyyaa/status/2119991511433814093",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/yuzi-three-model-02.webp",
+          "width": 1200,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/Yuziyyaa/status/2119991511433814093",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/yuzi-three-model-03.webp",
+          "width": 1200,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/Yuziyyaa/status/2119991511433814093",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "aigmudq-tests",
+      "title": "降温计划的 Seedream 5.5 试图",
+      "category": "人像与写实摄影",
+      "one_liner": "作者连续发了多组“最新的 seedream5.5，大家觉得效果怎么样”的试图。",
+      "author": {
+        "name": "降温计划",
+        "username": "aigmudq",
+        "url": "https://x.com/aigmudq"
+      },
+      "source_url": "https://x.com/aigmudq/status/2119771043707621711",
+      "published_at_utc": "2026-11-09T12:36:14.000Z",
+      "published_at_shanghai": "2026-11-09 20:36（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者在发布当天发了多组自称 Seedream 5.5 的测试图，包括“大家觉得效果怎么样”和“测试第二弹”。原帖几乎只有模型名和配图，没有提示词和更细的做法说明。后续同主题帖作为相关链接，不单列。",
+      "notes": "版权归原作者。同一作者的后续测试帖不拆成多条。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/aigmudq/status/2119778489222279303",
+        "https://x.com/aigmudq/status/2119775220974449018"
+      ],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/aigmudq-tests-01.webp",
+          "width": 1200,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/aigmudq/status/2119771043707621711",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/aigmudq-tests-02.webp",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/aigmudq/status/2119771043707621711",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/aigmudq-tests-03.webp",
+          "width": 1200,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/aigmudq/status/2119771043707621711",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/aigmudq-tests-04.webp",
+          "width": 768,
+          "height": 1024,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/aigmudq/status/2119778489222279303",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "maxescu-goat-compare",
+      "title": "背包山羊吉祥物四模型对比",
+      "category": "模型对比",
+      "one_liner": "Alex Patrascu 用同一题对比 MiniMax H3、Seedream 5.5、Nano Banana 2.1 和 GPT Image 2.6，并标 5.5 为胜者。",
+      "author": {
+        "name": "Alex Patrascu",
+        "username": "maxescu",
+        "url": "https://x.com/maxescu"
+      },
+      "source_url": "https://x.com/maxescu/status/2120078778487505206",
+      "published_at_utc": "2026-11-10T08:59:04.000Z",
+      "published_at_shanghai": "2026-11-10 16:59（Asia/Shanghai）",
+      "tools": [
+        "MiniMax H3 Image",
+        "Seedream 5.5",
+        "Nano Banana 2.1",
+        "GPT Image 2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者逐项核对了服装、背包、文字和相机角度，但未公开完整提示词。"
+      },
+      "method": "作者做了一轮快速测试，分别记录四个模型做对和做错的细节。他标注 Seedream 5.5 为 WINNER，称它做出了带鞍囊的背包山羊、手套、金属铜与深蓝色带以及正确文字；同时也写了风帽放下、外套偏锈色、左角未弯曲等未对齐项。",
+      "notes": "版权归原作者。对比结论为作者自评。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/maxescu-goat-compare-01.webp",
+          "width": 1600,
+          "height": 1064,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://x.com/maxescu/status/2120078778487505206",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "oxen-layers",
+      "title": "在 Oxen 上把原图拆成透明图层",
+      "category": "透明素材与贴纸",
+      "one_liner": "Greg Schoeninger 展示 Seedream 5.5 Layers：把已有图片原生拆成可编辑图层。",
+      "author": {
+        "name": "Greg Schoeninger",
+        "username": "gregschoeninger",
+        "url": "https://x.com/gregschoeninger"
+      },
+      "source_url": "https://x.com/gregschoeninger/status/2119898943819849963",
+      "published_at_utc": "2026-11-09T21:04:28.000Z",
+      "published_at_shanghai": "2026-11-10 05:04（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5",
+        "Seedream 5.5 Layers",
+        "Oxen"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称 Seedream 5.5 和 Seedream 5.5 Layers 已在 Oxen 上线，可以原生把一张已有图拆成图层，并配了演示视频。原帖未说明拆层提示词和后续如何叠加。",
+      "notes": "效果图为视频封面，未转存完整视频。版权归原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/oxen-layers-01.webp",
+          "width": 1200,
+          "height": 718,
+          "media_type": "video_thumbnail",
+          "animated": false,
+          "original_post_url": "https://x.com/gregschoeninger/status/2119898943819849963",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "azhen-20-round-dress",
+      "title": "黑裙人像连编 20 轮并做布光九宫格",
+      "category": "多轮编辑与一致性",
+      "one_liner": "阿真用即梦把同一张黑裙人像连编 20 轮，并与 GPT Image 2.6 的布光结果对照。",
+      "author": {
+        "name": "阿真Irene",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491698.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491698.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "即梦 Seedream 5.5",
+        "GPT Image 2.6"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "以同一张配饰完整的黑裙人像为唯一参考，进行图生图重新布光。每次选一种灯型，生成一张 3:4 竖幅、2K 照片。……本次灯光：【从下方选一条替换此处】01 伦勃朗光……09 窄光……（全文见原文明细）",
+        "note": "完整九种灯型提示词见原文。"
+      },
+      "method": "作者称连续编辑了 20 次，每一次都用上一张结果继续改。后文把同一人像按九种灯型重布光，并展示了 GPT Image 2.6 的对照结果。",
+      "notes": "文章发布于人人都是产品经理，版权归阿真Irene。模型对比部分以作者标注为准。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/azhen-20-round-dress-01.webp",
+          "width": 640,
+          "height": 640,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/azhen-20-round-dress-02.webp",
+          "width": 1080,
+          "height": 1080,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/azhen-20-round-dress-03.webp",
+          "width": 1080,
+          "height": 1440,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "azhen-lighting-grid",
+      "title": "人像布光九宫格教学海报",
+      "category": "海报、排版与小字",
+      "one_liner": "把同一位女主按九种灯型排进中文教学海报，格下灯型名称和效果说明需准确可读。",
+      "author": {
+        "name": "阿真Irene",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491698.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491698.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "以参考人像中的女主角为人物参考，直接生成一张 3:4 竖版、2K 的中文教学海报，标题为「人像布光九宫格」。采用成熟细腻的二维编辑插画风，米白纸色背景，黑色中文衬线字体。……直接输出完整九宫格……（全文见原文）",
+        "note": "完整提示词见原文。"
+      },
+      "method": "作者在多轮人像之后，要求模型直接输出带标题和九格说明的中文教学海报，并公开了完整提示词。",
+      "notes": "文章发布于人人都是产品经理，版权归阿真Irene。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/azhen-lighting-grid-01.webp",
+          "width": 630,
+          "height": 840,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/azhen-lighting-grid-02.webp",
+          "width": 1080,
+          "height": 1440,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "azhen-room-annotate",
+      "title": "按标注把空房间布置成艺术客厅",
+      "category": "多轮编辑与一致性",
+      "one_liner": "根据参考图上的中文位置说明，把空房间生成完整的艺术收藏者客厅效果图。",
+      "author": {
+        "name": "阿真Irene",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491698.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491698.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "根据参考图的中文位置说明，将这个空房间布置成完整、高品质、真实的艺术收藏者客厅，生成一张横向 16:9 室内摄影效果图。……将所有圆形文字标注、引线和圆点彻底移除，改成标注所指的真实家具和物品。……不要添加人物、圆圈或水印。",
+        "note": "完整布置清单见原文。"
+      },
+      "method": "作者用带圆形文字标注的空间参考图，要求模型按标注落实沙发、雕塑、书桌、茶几等物件，并去掉所有标注。以此测试“指哪打哪”的精准编辑。",
+      "notes": "文章发布于人人都是产品经理，版权归阿真Irene。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/azhen-room-annotate-01.webp",
+          "width": 1080,
+          "height": 608,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/azhen-room-annotate-02.webp",
+          "width": 1080,
+          "height": 606,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "azhen-dolphin",
+      "title": "胖海豚潮玩角色三视图长页",
+      "category": "电商、角色与设计物料",
+      "one_liner": "原创胖海豚潮玩长页，要求正面看不到背罐、三视图安装点一致，并配中文说明。",
+      "author": {
+        "name": "阿真Irene",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491698.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491698.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "原创胖胖海豚潮玩角色设计展示长页，中文为主，品牌AZHEN。……主标题“带着大海，出门玩”……（全文见原文）",
+        "note": "完整提示词见原文。"
+      },
+      "method": "作者用很长的角色设定提示词测试一致性：蓄水服、后背循环滤水罐在正侧背三视图中的安装关系必须统一，并配装备说明卡。",
+      "notes": "版权归阿真Irene。品牌名 AZHEN 为作者展示用。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/azhen-dolphin-01.webp",
+          "width": 642,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "azhen-acrylic-rgba",
+      "title": "花露琥珀滴亚克力挂件透明素材",
+      "category": "透明素材与贴纸",
+      "one_liner": "直接输出带真实 Alpha 通道的亚克力挂件，窗面半透明、穿孔内部完全透明。",
+      "author": {
+        "name": "阿真Irene",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491698.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491698.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "生成一张透明背景产品素材图，画面中央是一枚梦幻亚克力挂件「花露琥珀滴」。……输出带真实Alpha通道的RGBA PNG，画布背景与穿孔内部完全透明，窗面薄片使用半透明像素……画面只有挂件。",
+        "note": "完整提示词见原文。"
+      },
+      "method": "作者说明只要在提示词里写“透明背景”，就可以直出透明 PNG，并专门测试半透明亚克力材质。",
+      "notes": "文章发布于人人都是产品经理，版权归阿真Irene。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/azhen-acrylic-rgba-01.webp",
+          "width": 1080,
+          "height": 631,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/azhen-acrylic-rgba-02.webp",
+          "width": 640,
+          "height": 802,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "azhen-elias-stickers",
+      "title": "ELIAS 应援贴纸去底与像素贴纸组",
+      "category": "透明素材与贴纸",
+      "one_liner": "把应援贴纸页去掉外部底色，并另做一套“周末杂货铺”复古像素透明贴纸。",
+      "author": {
+        "name": "阿真Irene",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491698.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491698.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "将输入图制作成真正带alpha透明通道的PNG。保持 2 行 3 列排布……只移除六枚图案外部的米白色整页背景……\n\n另一组：设计一整套「周末杂货铺」复古像素贴纸。4:3 横版，2K，导出带真实 Alpha 通道的透明 PNG……（全文见原文）",
+        "note": "两组提示词均见原文。"
+      },
+      "method": "作者先导入参考图做明星应援贴纸去底，再生成 16 枚复古像素杂货贴纸。强调人物身份和模切描边要保留。",
+      "notes": "文章发布于人人都是产品经理，版权归阿真Irene。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/azhen-elias-stickers-01.webp",
+          "width": 1080,
+          "height": 722,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/azhen-elias-stickers-02.webp",
+          "width": 640,
+          "height": 428,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/azhen-elias-stickers-03.webp",
+          "width": 1080,
+          "height": 606,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "azhen-coffee-poster-menu",
+      "title": "街角咖啡节海报与橙窗咖啡菜单",
+      "category": "海报、排版与小字",
+      "one_liner": "手绘风活动海报加中英文混排菜单，品名与价格需按指定文案准确排上。",
+      "author": {
+        "name": "阿真Irene",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491698.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491698.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "设计一张原创「街角咖啡节」平面活动海报……顶部英文字「COFFEE FESTIVAL」……下方大号中文「街角咖啡节」。\n\n第二张：设计一张原创咖啡店菜单图片，店名「橙窗咖啡」……经典咖啡美式咖啡 ¥22 拿铁 ¥28……（全文见原文）",
+        "note": "两张图的完整提示词见原文。"
+      },
+      "method": "作者用复杂中英混排、多栏价格和手绘插画来测试小字与排版，并公开了两张图的提示词。",
+      "notes": "文章发布于人人都是产品经理，版权归阿真Irene。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/azhen-coffee-poster-menu-01.webp",
+          "width": 1080,
+          "height": 1510,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/azhen-coffee-poster-menu-02.webp",
+          "width": 1080,
+          "height": 1510,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "azhen-tianji-comic",
+      "title": "十二格课文漫画《田忌赛马》",
+      "category": "海报、排版与小字",
+      "one_liner": "严格 12 格的中文课文漫画，对白、比分和课堂提问都要写进格子里。",
+      "author": {
+        "name": "阿真Irene",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491698.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491698.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "中文课文漫画《田忌赛马》，3:4竖幅。严格12格，三列四行，逐行从左往右读。古代彩色绘本。同一位蓝袍田忌、青袍孙膑、棕袍齐王贯穿全页。每格有清楚的简体中文对白气泡、旁白或记分框。……课堂提问框「如果齐王也换出场顺序，结果会怎样？」",
+        "note": "完整分格剧情见原文。"
+      },
+      "method": "作者用分格漫画测试角色一致性和密集对白文字，要求同一组角色贯穿全页，比分框和对白归属清楚。",
+      "notes": "文章发布于人人都是产品经理，版权归阿真Irene。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/azhen-tianji-comic-01.webp",
+          "width": 533,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "azhen-icons",
+      "title": "全息玻璃办公图标与露营图标套系",
+      "category": "电商、角色与设计物料",
+      "one_liner": "一次生成 5×5 共 25 枚统一风格图标，先做玻璃质感办公套，再做露营主题套。",
+      "author": {
+        "name": "阿真Irene",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491698.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491698.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "以参考图中的全息玻璃文件夹作为整套图标的唯一风格锚点，生成一张正方形高清图标合集。纯黑背景，严格 5 行×5 列，共 25 枚……\n\n第二张：野外露营主题原创 3D 图标套系……第 1 行：帐篷、折叠椅、营灯、保温壶、登山包。……（全文见原文）",
+        "note": "两套提示词见原文。"
+      },
+      "method": "作者认为模型对图标组合做了针对性训练，能一次生成很多风格统一、出错很少的图标，并公开了两套提示词。",
+      "notes": "文章发布于人人都是产品经理，版权归阿真Irene。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/azhen-icons-01.webp",
+          "width": 1080,
+          "height": 1080,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/azhen-icons-02.webp",
+          "width": 1080,
+          "height": 1080,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "azhen-palace-vs-50pro",
+      "title": "古典阳台人像：5.0 Pro 对 5.5",
+      "category": "模型对比",
+      "one_liner": "同一电影感提示词下，作者把 Seedream 5.0 Pro 和 5.5 的结果并排，称质感提升明显。",
+      "author": {
+        "name": "阿真Irene",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491698.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491698.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.0 Pro",
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "电影感写实场景，横版 16:9 构图。古典浅金色石砌宫殿阳台，一位成年女性身穿银灰蓝色十八世纪礼服，浅金盘发，站在中央石栏后，双手扶着栏杆。……（全文见原文）",
+        "note": "完整光影方案见原文。作者写明前一张是 5.0 Pro，后一张是 5.5。"
+      },
+      "method": "作者在“真实质感与自然光影”一节用同一类电影感提示词对比上一代，并公开了提示词。她写明前一张来自 Seedream 5.0 Pro，后一张来自 Seedream 5.5。",
+      "notes": "版权归阿真Irene。前后对应关系以作者文字为准。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/azhen-palace-vs-50pro-01.webp",
+          "width": 1080,
+          "height": 608,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/azhen-palace-vs-50pro-02.webp",
+          "width": 1080,
+          "height": 606,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491698.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "huashu-20-round-cafe",
+      "title": "咖啡馆窗边人像连改 20 轮再改回来",
+      "category": "多轮编辑与一致性",
+      "one_liner": "花叔用同一张咖啡馆窗边人像先改 10 处，再一处一处改回去，第 21 张里她还是她。",
+      "author": {
+        "name": "花叔",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491515.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491515.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "编辑这张参考图：只把白色衬衫改成墨绿色，其他一切（脸、发型、徽章文字、耳钉、手、拿铁、窗外）保持完全不变。",
+        "note": "这是第 2 轮的句式。文中写明 10 处改动依次是雪景、墨绿衬衫、红毛线帽、心形拉花、眼镜、笔记本、徽章字、壁灯、多肉、露齿笑，其余轮次都用同一句式。"
+      },
+      "method": "作者说自己没跑上百轮，只拿一张咖啡馆窗边人像试了 20 轮：先改 10 处，再一处一处改回去，每一轮只上传上一轮的输出。他把原图、第 10 轮和第 20 轮放大对照，并记录拉花、眼镜、徽章字、壁灯等小改动的结构相似度（SSIM）约在 0.983 到 0.995 之间。这些数字来自作者自测，调研未独立复现。他也写了窗外街景和路边的车跟原图比略有差别。",
+      "notes": "文章发布于人人都是产品经理，版权归花叔。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/huashu-20-round-cafe-01.webp",
+          "width": 1080,
+          "height": 686,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/huashu-20-round-cafe-02.webp",
+          "width": 1080,
+          "height": 532,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "huashu-multi-scene-edits",
+      "title": "老客厅、开业海报和营销图的多轮修改",
+      "category": "多轮编辑与一致性",
+      "one_liner": "同一句式下，作者又拿装修、开业海报和产品营销图各连改五六轮。",
+      "author": {
+        "name": "花叔",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491515.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491515.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者写“同样的句式”，并说明了每组依次改了什么，但没有像人像那样逐轮公开完整提示词。"
+      },
+      "method": "装修场景依次换木地板、刷墙、换沙发、换吊灯、加窗帘、加地毯和茶几，作者称六轮后门口、山水画、单人沙发和窗外的楼还在原位。开业海报表依次换底色、改标题、换主图、加角标、改日期。营销图先把保温杯换成耳机，再改成雾霾蓝、换成傍晚的光、加上促销字、把干花换成圣诞树。",
+      "notes": "文章发布于人人都是产品经理，版权归花叔。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/huashu-multi-scene-edits-01.webp",
+          "width": 1080,
+          "height": 426,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/huashu-multi-scene-edits-02.webp",
+          "width": 1080,
+          "height": 953,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/huashu-multi-scene-edits-03.webp",
+          "width": 1080,
+          "height": 406,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "huashu-voyage-spread",
+      "title": "七百多字夏威夷到大溪地航线杂志跨页",
+      "category": "海报、排版与小字",
+      "one_liner": "七个停靠点配照片、地名、日期和约百字介绍，作者称 706 字逐段核对没有错字。",
+      "author": {
+        "name": "花叔",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491515.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491515.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者说明了任务：七个停靠点，每个点配一张照片，旁边写地名、日期，再加一段一百字左右的介绍。完整提示词未整段公开。"
+      },
+      "method": "作者按自己最近从夏威夷坐船去大溪地的航程，让模型做杂志跨页。他写七段介绍加起来 706 个字，含一串年份日期和 Kauaʻi、Taputapuātea 等带特殊字母的地名，并称自己放大逐段核对一个错的都没有。这些是作者自述，调研未独立复现。",
+      "notes": "文章发布于人人都是产品经理，版权归花叔。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/huashu-voyage-spread-01.webp",
+          "width": 1080,
+          "height": 720,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "huashu-multi-ref-pack",
+      "title": "人像与咖啡豆包装的多图融合",
+      "category": "电商、角色与设计物料",
+      "one_liner": "把 20 轮人像和一包三语冲煮表咖啡豆合进同一画面，要求包装文字与原图逐字一致。",
+      "author": {
+        "name": "花叔",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491515.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491515.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "图1的女生坐在同一家咖啡馆窗边，双手把图2这包咖啡豆举在胸前，包装上的所有文字、表格和条形码和图2逐字一致",
+        "note": "作者公开了这条融合提示词，并写明图 2 是他让模型画的咖啡豆包装背面，含中英日三种文字和冲煮表。"
+      },
+      "method": "作者把咖啡馆女生和咖啡豆包装背面两张图一起传入。他称逐行对过包装上的标题、配料、日期、三语风味和冲煮表，「云南保山」「2026.11.05」「18g → 36g」「ダークチョコレート」都和原图一样，卷发、月亮耳钉、胸前徽章和手腕上的痣也还在。",
+      "notes": "文章发布于人人都是产品经理，版权归花叔。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/huashu-multi-ref-pack-01.webp",
+          "width": 1080,
+          "height": 1030,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "huashu-pose-transfer",
+      "title": "按木头人偶的动作给女生摆姿势",
+      "category": "电商、角色与设计物料",
+      "one_liner": "先生成一个比 V、叉腰、大步向前的木头人偶，再让咖啡馆女生照着摆同一动作。",
+      "author": {
+        "name": "花叔",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491515.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491515.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者说明了人偶动作和“把女生和木头人一起传上去，让她照着摆”，但未公开完整提示词原文。"
+      },
+      "method": "作者先让模型画一个木头人偶：一只手举过头顶比 V，另一只手叉腰，大步往前迈；再把女生和木头人一起上传，要求她按这个动作摆。他称动作对上了，徽章上的「HUASHU LAB」还在，手腕上那颗痣跟到了举起来的那只手上，并建议想保住的小细节要在提示词里点名写出来。",
+      "notes": "文章发布于人人都是产品经理，版权归花叔。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/huashu-pose-transfer-01.webp",
+          "width": 1080,
+          "height": 954,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "huashu-rgba-jimeng",
+      "title": "在即梦里直出透明底素材",
+      "category": "透明素材与贴纸",
+      "one_liner": "作者展示 Seedream 5.5 直接生成带透明通道的图，并说明在即梦里要勾选透明背景。",
+      "author": {
+        "name": "花叔",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491515.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491515.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者把透明底作为单独实测项，并在“在即梦里上手”一节说明：图片生成里模型选 Seedream 5.5，点开比例按钮选比例和分辨率；透明图可直出，在即梦里点开背景按钮选透明即可。原帖未公开这张透明示例的提示词。",
+      "notes": "文章发布于人人都是产品经理，版权归花叔。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/huashu-rgba-jimeng-01.webp",
+          "width": 948,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/huashu-rgba-jimeng-02.webp",
+          "width": 1080,
+          "height": 484,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "huashu-gif-stickers-mixed",
+      "title": "用 5.5 出多格精灵图，再切帧拼成 GIF 表情包",
+      "category": "混用工作流",
+      "one_liner": "花叔公开了「画多格图、切帧、拼 GIF」的做法，并用 Seedream 5.5 给自己做了一套 8 个透明表情。",
+      "author": {
+        "name": "花叔",
+        "username": null,
+        "url": "https://www.woshipm.com/ai/6491515.html"
+      },
+      "source_url": "https://www.woshipm.com/ai/6491515.html",
+      "published_at_utc": "2026-11-10T00:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "这是一张4列×2行的表情包精灵图，透明背景。请用Python帮我把它平均切成8帧，按从左到右、从上到下的顺序排好。先把每一帧多余的透明边裁掉，再按角色脚下和字幕的位置把8帧对齐，保证播放的时候不跳。然后合成一张循环播放的透明背景GIF，每帧200毫秒，尺寸480×480，再另存一份240×240的。",
+        "note": "这是切帧拼 GIF 的指令。前文还说明：先用一张照片画成 Q 版角色设定图，之后不再给照片，只拿设定图当参考，一个表情画一张精灵图，例如「下班！」；8 个表情、每个 8 帧、透明背景，底下字幕由模型直接画上。完整出图提示词未全部公开。"
+      },
+      "method": "作者拆过 ChatGPT 出的 GIF，发现逻辑是先画 4×3 多格图再切帧拼接。他用 Seedream 5.5 做了 8 个表情、每个 8 帧的透明贴纸，并写了用 Python 切帧、对齐、合成循环 GIF 的步骤，也提供了可在豆包里安装的 Skill。",
+      "notes": "文章发布于人人都是产品经理，版权归花叔。这是混用工作流：Seedream 5.5 负责出图，Python（或豆包 Skill）负责切帧和合成 GIF。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：拿一张作者自己的照片，用 Seedream 5.5 画成 Q 版角色设定图（渔夫帽和圆框眼镜要保留）。",
+        "第2步：之后不再给照片，只拿这张设定图当参考，用 Seedream 5.5 为每个表情生成一张 4 列×2 行、透明背景的精灵图，格子下方的字幕由模型直接画上。作者做了 8 个表情、每个 8 帧。原帖只举例了「下班！」这一张，未公开全部出图提示词。",
+        "第3步：用 Python 把精灵图按从左到右、从上到下切成 8 帧，裁掉多余透明边，按角色脚下和字幕位置对齐，合成每帧 200 毫秒、480×480 的循环透明 GIF，并另存 240×240。",
+        "第4步（可选）：在豆包里安装作者公开的 Skill：https://github.com/alchaincyf/huashu-selfie-sticker。作者称自己发了安装指令后大约半分钟装好。"
+      ],
+      "live_demo_url": null,
+      "repo_url": "https://github.com/alchaincyf/huashu-selfie-sticker",
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/huashu-gif-stickers-mixed-01.webp",
+          "width": 900,
+          "height": 450,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/huashu-gif-stickers-mixed-02.webp",
+          "width": 1080,
+          "height": 608,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/huashu-gif-stickers-mixed-03.webp",
+          "width": 1080,
+          "height": 608,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/huashu-gif-stickers-mixed-04.webp",
+          "width": 1080,
+          "height": 387,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.woshipm.com/ai/6491515.html",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "uisdc-street-stickers-mixed",
+      "title": "复古街头字标贴纸直出透明底，再放进 PS 换背景",
+      "category": "混用工作流",
+      "one_liner": "即梦 5.5 直接生成 6 枚深炭黑与浅粉紫字标贴纸，作者把结果拖进 Photoshop 换了几种背景测试。",
+      "author": {
+        "name": "优设网",
+        "username": null,
+        "url": "https://www.uisdc.com/hangye/jm-seedream"
+      },
+      "source_url": "https://www.uisdc.com/hangye/jm-seedream",
+      "published_at_utc": "2026-11-09T10:46:14.000Z",
+      "published_at_shanghai": "2026-11-09 18:46（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "设计6枚不同造型的独立文字贴纸，文字分别为：FEW OF US、POP UP SHOP、OFF THE GRID、NO BAD DAYS、STREET CULTURE、STAY WILD。……整体配色严格控制为深炭黑与浅粉紫双色……直接输出带Alpha透明通道的PNG，贴纸之外的区域完全透明，画幅3:4……（全文见原文）",
+        "note": "完整提示词见优设网原文。"
+      },
+      "method": "作者用 Seedream 5.5 直出带 Alpha 通道的字标贴纸，再把导出文件拖进 Photoshop，换了几种背景查看边缘。他称边缘干净、没有明显杂色和白边，不用二次处理就能用。",
+      "notes": "文章发布于优设网，版权归优设网 / 原作者。这是混用工作流：Seedream 5.5 出透明素材，Photoshop 做背景测试。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：用即梦 Seedream 5.5 按公开提示词生成 6 枚复古街头字标贴纸，要求直接输出带 Alpha 透明通道的 PNG。",
+        "第2步：把导出文件拖进 Photoshop，换几种背景检查边缘。作者称不用再修边。原帖未说明具体用了哪些背景图和图层混合方式。"
+      ],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/uisdc-street-stickers-mixed-01.webp",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-street-stickers-mixed-02.webp",
+          "width": 778,
+          "height": 900,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "uisdc-calligraphy-mixed",
+      "title": "「日出东方」草书透明字，放进 PS 做色彩叠加海报",
+      "category": "混用工作流",
+      "one_liner": "用复杂草书测试透明底去背，再在 Photoshop 里盖颜色叠加做成海报。",
+      "author": {
+        "name": "优设网",
+        "username": null,
+        "url": "https://www.uisdc.com/hangye/jm-seedream"
+      },
+      "source_url": "https://www.uisdc.com/hangye/jm-seedream",
+      "published_at_utc": "2026-11-09T10:46:14.000Z",
+      "published_at_shanghai": "2026-11-09 18:46（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "书法字体海报“日出东方”，草书字体，狂野奔放，视觉张力富有动感，超粗笔画流畅飘逸，笔画巧妙延长变形，飞白效果，笔画流畅潇洒，纯透明底，高清，8K",
+        "note": "原文公开了这条提示词。"
+      },
+      "method": "作者故意选笔画复杂、带飞白和镂空的草书，让即梦直接生成透明底，再放进 Photoshop 做颜色叠加。他称笔画转折、内部镂空和细碎边缘比较规整，放到深色背景上也没有明显灰边。",
+      "notes": "文章发布于优设网，版权归优设网 / 原作者。这是混用工作流：Seedream 5.5 出透明书法字，Photoshop 做色彩叠加。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：用即梦 Seedream 5.5 按公开提示词生成「日出东方」草书书法字，要求纯透明底。",
+        "第2步：把结果放进 Photoshop，用颜色叠加做成海报。原帖未说明具体叠加色值和图层设置。"
+      ],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/uisdc-calligraphy-mixed-01.webp",
+          "width": 1080,
+          "height": 608,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-calligraphy-mixed-02.webp",
+          "width": 1080,
+          "height": 1440,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "uisdc-cat-and-glass",
+      "title": "长毛猫透明素材，以及玻璃杯半透明的限制",
+      "category": "透明素材与贴纸",
+      "one_liner": "布偶猫的半透明飘毛去背比较干净；玻璃杯放到背景上仍露出浅灰色内壁，作者认为半透明材质还不稳。",
+      "author": {
+        "name": "优设网",
+        "username": null,
+        "url": "https://www.uisdc.com/hangye/jm-seedream"
+      },
+      "source_url": "https://www.uisdc.com/hangye/jm-seedream",
+      "published_at_utc": "2026-11-09T10:46:14.000Z",
+      "published_at_shanghai": "2026-11-09 18:46（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "生成一只真实摄影质感的白色长毛布偶猫独立素材，正面略微侧坐，蓝色眼睛，粉色鼻尖……输出带Alpha通道的透明背景PNG……\n\n生成一只高端玻璃水杯的独立产品素材，现代简约造型。直接输出Alpha通道的透明背景PNG，保留玻璃原本的透光特征和细微反射，不生成地面、台面及场景阴影",
+        "note": "两组提示词均见原文。"
+      },
+      "method": "作者先用长毛猫测试毛发去背，称耳朵和脸颊周围的细碎飘毛保留了半透明过渡，没有一圈白边。接着测试玻璃杯，称单看挺通透，但放到背景上杯壁和水体内部仍是浅灰色，并不是真正的半透明。",
+      "notes": "文章发布于优设网，发布时间 2026-11-09 18:46（Asia/Shanghai），版权归优设网 / 原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/uisdc-cat-and-glass-01.webp",
+          "width": 778,
+          "height": 900,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-cat-and-glass-02.webp",
+          "width": 900,
+          "height": 790,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "uisdc-15-round-edit",
+      "title": "同一张图连续修改 15 轮",
+      "category": "多轮编辑与一致性",
+      "one_liner": "作者拿同一张图连改 15 轮，观察未修改区域会不会跟着变，并称原图和第 15 轮画质看不出差别。",
+      "author": {
+        "name": "优设网",
+        "username": null,
+        "url": "https://www.uisdc.com/hangye/jm-seedream"
+      },
+      "source_url": "https://www.uisdc.com/hangye/jm-seedream",
+      "published_at_utc": "2026-11-09T10:46:14.000Z",
+      "published_at_shanghai": "2026-11-09 18:46（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "把图中蝴蝶发夹改成红色，把图中xx改成xx",
+        "note": "原文只公开了这种句式示例，未逐轮列出全部 15 条完整提示词。"
+      },
+      "method": "作者专门观察没有指定修改的区域会不会跟着变化。他称除了指定修改的区域，其他地方几乎不动，放大看原图和第 15 轮肉眼看不出画质差异。这些是作者主观感受，调研未独立复现。",
+      "notes": "文章发布于优设网，发布时间 2026-11-09 18:46（Asia/Shanghai），版权归优设网 / 原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/uisdc-15-round-edit-01.webp",
+          "width": 674,
+          "height": 900,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-15-round-edit-02.webp",
+          "width": 992,
+          "height": 894,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "uisdc-virtual-styling",
+      "title": "给虚拟人换 8 种发型和整套造型",
+      "category": "人像与写实摄影",
+      "one_liner": "保持五官、姿势和服装不变，只换发型一次出 8 款，再用同样方法试妆容和换装。",
+      "author": {
+        "name": "优设网",
+        "username": null,
+        "url": "https://www.uisdc.com/hangye/jm-seedream"
+      },
+      "source_url": "https://www.uisdc.com/hangye/jm-seedream",
+      "published_at_utc": "2026-11-09T10:46:14.000Z",
+      "published_at_shanghai": "2026-11-09 18:46（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者说明了约束：保持人物五官、姿势和服装不变，只更换发型；后续同样方法试妆容、换服装。完整提示词未公开。"
+      },
+      "method": "作者把多轮编辑当作「专属造型师」：先只换发型，称一次生成了 8 种不同造型，五官和整体气质基本没变；接着用同样方法试妆容、换服装，并组合出整套风格。原文里的即梦操作栏截图未作为效果图收录。",
+      "notes": "文章发布于优设网，发布时间 2026-11-09 18:46（Asia/Shanghai），版权归优设网 / 原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/uisdc-virtual-styling-01.webp",
+          "width": 640,
+          "height": 852,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-virtual-styling-02.webp",
+          "width": 1080,
+          "height": 548,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-virtual-styling-03.webp",
+          "width": 1080,
+          "height": 500,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-virtual-styling-04.webp",
+          "width": 1080,
+          "height": 479,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-virtual-styling-05.webp",
+          "width": 672,
+          "height": 900,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "uisdc-room-reno",
+      "title": "从空房间开始一轮轮加软装",
+      "category": "多轮编辑与一致性",
+      "one_liner": "从空房间逐步铺地板、改墙面，再加入沙发、茶几、灯具和软装，像在玩装修模拟。",
+      "author": {
+        "name": "优设网",
+        "username": null,
+        "url": "https://www.uisdc.com/hangye/jm-seedream"
+      },
+      "source_url": "https://www.uisdc.com/hangye/jm-seedream",
+      "published_at_utc": "2026-11-09T10:46:14.000Z",
+      "published_at_shanghai": "2026-11-09 18:46（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者说明了修改顺序：铺地板、改墙面，再加入沙发、茶几、灯具和各种软装，每一轮只改指定部分。完整提示词未公开。"
+      },
+      "method": "作者用多轮编辑预览装修效果：从空房间逐步铺地板、改墙面，再加入沙发、茶几、灯具和各种软装，强调每一轮只修改指定部分，前面完成的设计尽量保持不变。效果图是原文中的多帧演示（空房到软装完成）。",
+      "notes": "文章发布于优设网，发布时间 2026-11-09 18:46（Asia/Shanghai），版权归优设网 / 原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/uisdc-room-reno-01.webp",
+          "width": 900,
+          "height": 506,
+          "media_type": "animated_gif",
+          "animated": true,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "uisdc-exam-vs-gpt",
+      "title": "高考试卷小字：5.5 对 GPT Image 2",
+      "category": "模型对比",
+      "one_liner": "用密密麻麻的高考数学试卷测小字，先看 GPT Image 2，再看 Seedream 5.5。",
+      "author": {
+        "name": "优设网",
+        "username": null,
+        "url": "https://www.uisdc.com/hangye/jm-seedream"
+      },
+      "source_url": "https://www.uisdc.com/hangye/jm-seedream",
+      "published_at_utc": "2026-11-09T10:46:14.000Z",
+      "published_at_shanghai": "2026-11-09 18:46（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5",
+        "GPT Image 2"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者说明要有大量中文题干，以及数学公式、上下标、分式、选择题和解答题。完整试卷提示词未公开。"
+      },
+      "method": "作者先展示 GPT Image 2 的结果，称排版、题号和大部分公式较规范，但个别小字仍不准确；再展示 Seedream 5.5，称放大后不少小字仍然清晰，上下标和数学符号较完整，这张测试图里没有发现明显乱码。他也提醒：字写对了不代表题目做得对，条件、选项和答案还需另外核对。文章提到官方称小字生成准确率高达 95%，这是官方/转述数字，调研未独立复现。",
+      "notes": "文章发布于优设网，版权归优设网 / 原作者。前两张按行文顺序对应 GPT Image 2，后两张对应 Seedream 5.5。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/uisdc-exam-vs-gpt-01.webp",
+          "width": 1080,
+          "height": 608,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-exam-vs-gpt-02.webp",
+          "width": 1080,
+          "height": 464,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-exam-vs-gpt-03.webp",
+          "width": 1080,
+          "height": 608,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-exam-vs-gpt-04.webp",
+          "width": 685,
+          "height": 464,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "uisdc-newspaper-resume",
+      "title": "人间晚报排版，以及设计简历",
+      "category": "海报、排版与小字",
+      "one_liner": "一张带大标题、细文和手签的单色报纸，再加上用头像生成的设计简历。",
+      "author": {
+        "name": "优设网",
+        "username": null,
+        "url": "https://www.uisdc.com/hangye/jm-seedream"
+      },
+      "source_url": "https://www.uisdc.com/hangye/jm-seedream",
+      "published_at_utc": "2026-11-09T10:46:14.000Z",
+      "published_at_shanghai": "2026-11-09 18:46（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "单色印刷报纸，大logo“人间晚报”，大标题为画面主题“AI时代浪潮汹涌！商业格局如何变化”以上文字作为报纸超大标题。报纸细文，细文里面有适合大标题的配图（配图要真实黑白摄影）。大师级排版。报纸纸张质感。报纸褶皱，报纸折痕。右下角手签“GZ-ChenBA”\n\n这是我的头像，给我制作一个简历：凸显我的设计背景和技能优势 姓名:梁烟 电话:137XXXX1234 邮箱……核心能力:界面设计|品牌视觉|用户研究",
+        "note": "报纸提示词为原文完整句。简历提示词在原文中有省略号，这里按原文摘录，未补全被省略的字段。"
+      },
+      "method": "作者继续测试图文混排报纸，称大标题、正文、图片说明甚至底部注释放大后仍有不错清晰度；简历则用于展示更贴近实际需求的编排。简历中的电话在原文里已打码。",
+      "notes": "文章发布于优设网，发布时间 2026-11-09 18:46（Asia/Shanghai），版权归优设网 / 原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/uisdc-newspaper-resume-01.webp",
+          "width": 1080,
+          "height": 1440,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-newspaper-resume-02.webp",
+          "width": 624,
+          "height": 371,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-newspaper-resume-03.webp",
+          "width": 1080,
+          "height": 1440,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "uisdc-rattan-homepage",
+      "title": "藤编家居官网主页风格探索",
+      "category": "电商、角色与设计物料",
+      "one_liner": "用极简棕色、绿色和米色调，生成一张展示手工藤产品的官网首页提案。",
+      "author": {
+        "name": "优设网",
+        "username": null,
+        "url": "https://www.uisdc.com/hangye/jm-seedream"
+      },
+      "source_url": "https://www.uisdc.com/hangye/jm-seedream",
+      "published_at_utc": "2026-11-09T10:46:14.000Z",
+      "published_at_shanghai": "2026-11-09 18:46（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "生成一个极简主义的家居官网主页设计，展示手工制作的藤产品，具有自然纹理，朴实的调色板（棕色，绿色，米色），干净的排版和网格产品部分。包括编织家具的英雄形象，左上角的品牌标志，导航菜单，CTA按钮，关于工匠插图的部分，博客提要和页脚。输出1920x1080分辨率，风格原始，文本层分离。",
+        "note": "原文公开了这条提示词。"
+      },
+      "method": "作者把这类生成用于网页设计的前期风格探索和提案，认为可以快速尝试版式和视觉风格。",
+      "notes": "文章发布于优设网，发布时间 2026-11-09 18:46（Asia/Shanghai），版权归优设网 / 原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/uisdc-rattan-homepage-01.webp",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "uisdc-eye-macro",
+      "title": "眼睛与眉毛的超微距摄影",
+      "category": "人像与写实摄影",
+      "one_liner": "强烈侧光切过眼睛和眉骨，作者称睫毛顶端微微泛黄、皮肤绒毛都比较逼真。",
+      "author": {
+        "name": "优设网",
+        "username": null,
+        "url": "https://www.uisdc.com/hangye/jm-seedream"
+      },
+      "source_url": "https://www.uisdc.com/hangye/jm-seedream",
+      "published_at_utc": "2026-11-09T10:46:14.000Z",
+      "published_at_shanghai": "2026-11-09 18:46（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "人眼与眉毛区域的超微距摄影，强烈侧光切过眼睛和眉骨，一侧眉毛呈现清晰毛流，睫毛形成自然剪影，眼球有明亮高光，眼周细纹和皮肤毛孔真实可见，高低反差明显，浅景深，电影摄影质感，细腻胶片颗粒，高清锐利",
+        "note": "原文公开了这条提示词。"
+      },
+      "method": "作者用这张图说明 Seedream 5.5 在真实感上的变化：皮肤纹理、细小瑕疵和自然明暗不再是一味磨皮。这些是作者主观感受。",
+      "notes": "文章发布于优设网，发布时间 2026-11-09 18:46（Asia/Shanghai），版权归优设网 / 原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/uisdc-eye-macro-01.webp",
+          "width": 1080,
+          "height": 810,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-eye-macro-02.webp",
+          "width": 612,
+          "height": 734,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    },
+    {
+      "id": "uisdc-portrait-and-phone",
+      "title": "藏族圣女人像，以及旧手机里的超长微信对话",
+      "category": "人像与写实摄影",
+      "one_liner": "一张日照金山的头部肖像之后，再用磨损发黄的旧手机和超长中文微信消息做双重测试。",
+      "author": {
+        "name": "优设网",
+        "username": null,
+        "url": "https://www.uisdc.com/hangye/jm-seedream"
+      },
+      "source_url": "https://www.uisdc.com/hangye/jm-seedream",
+      "published_at_utc": "2026-11-09T10:46:14.000Z",
+      "published_at_shanghai": "2026-11-09 18:46（Asia/Shanghai）",
+      "tools": [
+        "Seedream 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "生成一张电影质感的胶片摄影 专业人像摄影 故事感 电影感朦胧梦幻美感，一个藏族圣女头部肖像，脸部干燥的皮肤，红血丝，一半脸庞被阳光照亮……背景雪山蓝天，经幡舞动 日照金山 发丝光……（全文见原文）\n\n生成手机拍摄的照片，照片中有一个手机，内容是微信聊天对话，超长超长一大段话，还有视频记录，要求手机屏幕有反光、有很多指纹油污印等、手机壳发黄陈旧的。",
+        "note": "人像提示词在原文中较长，这里按关键句摘录；手机提示词按原文抄录。"
+      },
+      "method": "作者称这张人像的皮肤质感真实，飘散发丝也有随机性。随后用「真实手机实拍 + 大段微信消息」做双重测试：机身磨损、泛黄、指纹和屏幕反光考真实感，微信头像、时间和超长中文消息考文字准确性。",
+      "notes": "文章发布于优设网，发布时间 2026-11-09 18:46（Asia/Shanghai），版权归优设网 / 原作者。",
+      "model": "Seedream 5.5 / 即梦 Seedream 5.5 / Doubao-Seedream-5.5",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/seedream-5-5/uisdc-portrait-and-phone-01.webp",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        },
+        {
+          "src": "/images/seedream-5-5/uisdc-portrait-and-phone-02.webp",
+          "width": 1080,
+          "height": 810,
+          "media_type": "photo",
+          "animated": false,
+          "original_post_url": "https://www.uisdc.com/hangye/jm-seedream",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖"
+        }
+      ]
+    }
+  ]
+}
