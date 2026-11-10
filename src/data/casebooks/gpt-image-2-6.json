@@ -1,0 +1,3095 @@
+{
+  "title": "GPT Image 2.6 案例合集",
+  "collected_at": "2026-11-10",
+  "count": 64,
+  "pure_count": 48,
+  "mixed_count": 16,
+  "official_page": "https://openai.com/index/introducing-images-2-6/",
+  "official_launch_post": "https://x.com/OpenAI/status/2118124944928432327",
+  "api_models": [
+    "gpt-image-2.6-flare",
+    "gpt-image-2.6-sunburst"
+  ],
+  "official_claims": [
+    "在 ChatGPT、Codex 和 API 上线，面向所有订阅档位",
+    "官方称出图比此前快约 50%；Flare 在低画质下最快约 6 秒",
+    "新增原生 GIF、可保存参考图、API 侧 SVG 导出、标注引导编辑和 complexity 参数",
+    "Sunburst 在中高画质下更强调细节和跨编辑一致性；Flare 更强调速度和海报/产品图布局"
+  ],
+  "categories": [
+    "官方发布与演示",
+    "GIF 动图",
+    "表情包与贴纸",
+    "人像与写真",
+    "海报与平面设计",
+    "插画与风格化视觉",
+    "图片编辑与参考图",
+    "模型对比",
+    "混用工作流"
+  ],
+  "cases": [
+    {
+      "id": "openai-reference",
+      "title": "官方参考图复用演示",
+      "category": "官方发布与演示",
+      "one_liner": "官方演示：把人物、宠物或角色参考图保存下来，之后创作不用反复上传。",
+      "author": {
+        "name": "OpenAI",
+        "username": "OpenAI",
+        "url": "https://x.com/OpenAI"
+      },
+      "source_url": "https://x.com/OpenAI/status/2118124958421532806",
+      "published_at_utc": "2026-11-04T23:35:17.000Z",
+      "published_at_shanghai": "2026-11-05 07:35（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "官方发布串中的参考图功能演示。说明可以把自己、宠物或角色的参考图保存后反复使用。",
+      "notes": "官方发布演示，版权归 OpenAI / 原发布方。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "official_thread",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": "https://openai.com/index/introducing-images-2-6/",
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/openai-reference-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/OpenAI/status/2118124958421532806"
+        }
+      ]
+    },
+    {
+      "id": "openai-gifs",
+      "title": "官方 GIF 生成演示",
+      "category": "官方发布与演示",
+      "one_liner": "官方演示：用提示词或一张图生成可循环 GIF，并可调速度、逐帧修改。",
+      "author": {
+        "name": "OpenAI",
+        "username": "OpenAI",
+        "url": "https://x.com/OpenAI"
+      },
+      "source_url": "https://x.com/OpenAI/status/2118124953832935810",
+      "published_at_utc": "2026-11-04T23:35:16.000Z",
+      "published_at_shanghai": "2026-11-05 07:35（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "官方发布串中的 GIF 功能演示。说明可以从提示词或已有图片做成循环 GIF，并调整速度、编辑单帧。",
+      "notes": "官方发布演示，版权归 OpenAI / 原发布方。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "official_thread",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": "https://openai.com/index/introducing-images-2-6/",
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/openai-gifs-01.jpg",
+          "width": 800,
+          "height": 800,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/OpenAI/status/2118124953832935810"
+        }
+      ]
+    },
+    {
+      "id": "openai-launch",
+      "title": "ChatGPT Images 2.6 官方发布",
+      "category": "官方发布与演示",
+      "one_liner": "OpenAI 官方发布视频，介绍 ChatGPT Images 2.6 的 GIF、参考图和更快出图。",
+      "author": {
+        "name": "OpenAI",
+        "username": "OpenAI",
+        "url": "https://x.com/OpenAI"
+      },
+      "source_url": "https://x.com/OpenAI/status/2118124944928432327",
+      "published_at_utc": "2026-11-04T23:35:14.000Z",
+      "published_at_shanghai": "2026-11-05 07:35（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "OpenAI 在 2026 年 11 月 4 日的官方发布帖与视频中展示。官方未在该帖公开具体提示词。",
+      "notes": "官方发布演示，版权归 OpenAI / 原发布方。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "official_thread",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": "https://openai.com/index/introducing-images-2-6/",
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/openai-launch-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/OpenAI/status/2118124944928432327"
+        }
+      ]
+    },
+    {
+      "id": "openaidevs-mascot-gif",
+      "title": "静态角色做成循环 GIF",
+      "category": "官方发布与演示",
+      "one_liner": "官方开发者账号演示：把静态角色、精灵或吉祥物做成循环挥手、回头或胜利舞 GIF。",
+      "author": {
+        "name": "OpenAI Developers",
+        "username": "OpenAIDevs",
+        "url": "https://x.com/OpenAIDevs"
+      },
+      "source_url": "https://x.com/OpenAIDevs/status/2118124755442151684",
+      "published_at_utc": "2026-11-04T23:34:29.000Z",
+      "published_at_shanghai": "2026-11-05 07:34（Asia/Shanghai）",
+      "tools": [
+        "GPT-Image-2.6",
+        "API / Codex"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "OpenAI Developers 官方演示：从已有角色或吉祥物出发，描述挥手、回头或胜利舞等动作，做成循环 GIF。",
+      "notes": "官方发布演示，版权归 OpenAI / 原发布方。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "official_thread",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": "https://x.com/OpenAIDevs/status/2118124753340756055",
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/openaidevs-mascot-gif-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/OpenAIDevs/status/2118124755442151684"
+        }
+      ]
+    },
+    {
+      "id": "norwegian-cat",
+      "title": "黑白挪威猫玩逗猫棒",
+      "category": "GIF 动图",
+      "one_liner": "一句日文提示词，做成黑白挪威猫玩逗猫棒的循环 GIF。",
+      "author": {
+        "name": "Arctanote公式",
+        "username": "Arctanote",
+        "url": "https://x.com/Arctanote"
+      },
+      "source_url": "https://x.com/Arctanote/status/2119234479726473289",
+      "published_at_utc": "2026-11-08T01:04:08.000Z",
+      "published_at_shanghai": "2026-11-08 09:04（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "次の内容で GIF を作成して: かわいいシンプルなアニメの白黒のノルゥェージャンのハチワレ猫が、ねこじゃらしで遊んでいる様子。",
+        "note": "作者写明在 ChatGPT 中将思考量设为中等，只用这一句。",
+        "source_url": "https://x.com/Arctanote/status/2119234479726473289"
+      },
+      "method": "作者在 ChatGPT 中把思考量设为中等，只用一句日文请求：可爱简洁的黑白挪威猫玩逗猫棒。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/norwegian-cat-01.jpg",
+          "width": 477,
+          "height": 356,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/Arctanote/status/2119234479726473289"
+        }
+      ]
+    },
+    {
+      "id": "pixel-witch",
+      "title": "像素风女巫施放魔法循环 GIF",
+      "category": "GIF 动图",
+      "one_liner": "上传一张角色参考图，做成像素风女巫施法循环 GIF。",
+      "author": {
+        "name": "Kiki",
+        "username": "Mayz1169",
+        "url": "https://x.com/Mayz1169"
+      },
+      "source_url": "https://x.com/Mayz1169/status/2119108577927548944",
+      "published_at_utc": "2026-11-07T16:43:50.000Z",
+      "published_at_shanghai": "2026-11-08 00:43（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称只需上传一张角色参考图即可生成此类像素施法 GIF，并在帖中给出免费 skill 链接。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/pixel-witch-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/Mayz1169/status/2119108577927548944"
+        }
+      ]
+    },
+    {
+      "id": "gif-posters",
+      "title": "动漫角色 GIF 海报合集",
+      "category": "GIF 动图",
+      "one_liner": "把 GIF 做成可循环的动态海报，首批是 P5 风格角色海报。",
+      "author": {
+        "name": "Levi 卧云",
+        "username": "Leviwoyun",
+        "url": "https://x.com/Leviwoyun"
+      },
+      "source_url": "https://x.com/Leviwoyun/status/2118991862564262140",
+      "published_at_utc": "2026-11-07T09:00:03.000Z",
+      "published_at_shanghai": "2026-11-07 17:00（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者把先前的表情包技能改成“GIF 工厂”，用来批量做动态海报，并开放仓库接受投稿。具体提示词以仓库为准，原帖未完整展开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/gif-posters-01.jpg",
+          "width": 855,
+          "height": 1200,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Leviwoyun/status/2118991862564262140"
+        },
+        {
+          "src": "/images/gpt-image-2-6/gif-posters-02.jpg",
+          "width": 810,
+          "height": 1080,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Leviwoyun/status/2118991862564262140"
+        }
+      ]
+    },
+    {
+      "id": "dancing-cat",
+      "title": "后腿跳舞的猫 GIF",
+      "category": "GIF 动图",
+      "one_liner": "一句提示词、用 Sunburst 在约 5 秒内做出后腿跳舞挥爪的猫 GIF。",
+      "author": {
+        "name": "老铁",
+        "username": "loti2057330",
+        "url": "https://x.com/loti2057330"
+      },
+      "source_url": "https://x.com/loti2057330/status/2118975767086608771",
+      "published_at_utc": "2026-11-07T07:56:06.000Z",
+      "published_at_shanghai": "2026-11-07 15:56（Asia/Shanghai）",
+      "tools": [
+        "gpt-image-2.6-sunburst"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "猫在后腿上跳舞、挥爪子，循环。",
+        "note": "作者写明模型为 gpt-image-2.6-sunburst。",
+        "source_url": "https://x.com/loti2057330/status/2118975767086608771"
+      },
+      "method": "作者使用 gpt-image-2.6-sunburst，一句提示词：“猫在后腿上跳舞、挥爪子，循环。”约 5 秒出图，成品约 439×389。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/dancing-cat-01.jpg",
+          "width": 438,
+          "height": 388,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/loti2057330/status/2118975767086608771"
+        }
+      ]
+    },
+    {
+      "id": "pixel-moveset",
+      "title": "攻击、跳舞与跳跃的循环像素 GIF",
+      "category": "GIF 动图",
+      "one_liner": "把角色参考图做成攻击、跳舞、跳跃等像素风循环动作。",
+      "author": {
+        "name": "Kiki",
+        "username": "Mayz1169",
+        "url": "https://x.com/Mayz1169"
+      },
+      "source_url": "https://x.com/Mayz1169/status/2118670168415182931",
+      "published_at_utc": "2026-11-06T11:41:45.000Z",
+      "published_at_shanghai": "2026-11-06 19:41（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者分享把角色参考图转成像素循环动作的做法，并称技能免费开源，详细链接在帖内线程。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/pixel-moveset-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Mayz1169/status/2118670168415182931"
+        }
+      ]
+    },
+    {
+      "id": "pixel-jungle",
+      "title": "16-bit 像素丛林微型世界循环 GIF",
+      "category": "GIF 动图",
+      "one_liner": "16-bit 像素风丛林微型世界循环 GIF，并公开了完整提示词。",
+      "author": {
+        "name": "DEXTUNE",
+        "username": "dextune",
+        "url": "https://x.com/dextune"
+      },
+      "source_url": "https://x.com/dextune/status/2118523179702624694",
+      "published_at_utc": "2026-11-06T01:57:40.000Z",
+      "published_at_shanghai": "2026-11-06 09:57（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "Create a seamless looping animated GIF in highly detailed 16-bit retro pixel art style, inspired by classic side-scrolling adventure games and lively miniature pixel-art worlds.\n\nScene and composition\n\nA fixed-camera, square 1:1 pixel-art jungle environment with a soft pastel lavender-blue background and layered silhouettes of distant forest trees.\n\nOn the left stands a compact beige retro-futuristic research station with mechanical panels, ladders, tiny windows, and a large rotating satellite dish mounted on its roof.\n\nOn the right stands an ancient three-level brown brick tower with small openings and decorative stone details.\n\nTwo enormous trees with rich lime-green pixelated foliage and reddish-brown trunks rise behind the structures. Small bushes, scattered rocks, and a tiny campsite occupy the ground.\n\nSeveral tiny colorful adventurer characters, birds, and little green creatures inhabit this miniature world.\n\nAnimation sequence\n\nRadar scanning: The satellite dish slowly rotates, projecting a translucent white triangular searchlight across the scene. The beam sweeps between the trees and the brick tower, gradually expanding and fading.\n\nCharacter movement: Tiny adventurers run along rooftops, jump between platforms, briefly pause, and resume moving. Their legs and arms animate with authentic retro-game sprite cycles.\n\nRope swinging: One adventurer grabs a thin suspended rope and swings between the trees and buildings in a smooth pendulum motion. The rope bends and follows the character's momentum.\n\nWildlife: Small birds flap their wings and hop between branches. Tiny green creatures walk, bounce, and react to nearby characters.\n\nEnvironmental motion: Tree leaves gently sway, dangling vines oscillate, and small foliage details move subtly. The distant forest remains stationary.\n\nContinuous activity: Different characters perform independent actions at slightly different times, making the small world feel alive without excessive motion.\n\nAnimation quality\n\nAuthentic hand-crafted pixel-art animation.\nSharp square pixels with consistent pixel density.\nSmooth sprite movement without morphing or deformation.\nFixed camera, absolutely no zooming or panning.\nBuildings, trees, and terrain retain identical shapes and positions throughout.\nNatural overlapping animation cycles.\nSubtle secondary movement and playful character interactions.\nPreserve the original pastel palette and nostalgic video-game atmosphere.\n\nLoop requirements\n\nCreate a 4×4 uniform spritesheet containing 16 sequential animation frames, with each frame occupying an identical square cell.\n\nUse approximately 200 milliseconds per frame for a 3.2-second animated GIF.\n\nAll characters remain completely within their respective frame boundaries.\n\nThe first and last frames must connect naturally to create a seamless infinite loop, without sudden resets, flickering, or visual jumps.\n\nStrict restrictions\n\nNo camera movement, no scene cuts, no transitions, no motion blur, no realistic 3D rendering, no smooth vector illustration, no UI, no text, no frame borders, no added structures, and no inconsistent character designs.\n\nThe result should resemble a beautifully animated living pixel-art game environment, not a static illustration with simple motion effects.",
+        "note": "完整英文提示词在作者回复中。",
+        "source_url": "https://x.com/dextune/status/2118523182198206781"
+      },
+      "method": "作者在 ChatGPT 图像功能中生成 16-bit 像素丛林微型世界循环 GIF，并在回复中公开完整英文提示词，要求 4×4、16 帧、每帧约 200 毫秒。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/pixel-jungle-01.jpg",
+          "width": 308,
+          "height": 308,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/dextune/status/2118523179702624694"
+        }
+      ]
+    },
+    {
+      "id": "chibi-schoolgirl",
+      "title": "绿发 Q 版女学生循环 GIF",
+      "category": "GIF 动图",
+      "one_liner": "用 2.6 做 Q 版绿发女学生循环 GIF，作者说明可当 LINE 表情。",
+      "author": {
+        "name": "みどり🐲Midori Tatsuta",
+        "username": "midori_tatsuta",
+        "url": "https://x.com/midori_tatsuta"
+      },
+      "source_url": "https://x.com/midori_tatsuta/status/2118519274482586001",
+      "published_at_utc": "2026-11-06T01:42:09.000Z",
+      "published_at_shanghai": "2026-11-06 09:42（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "①好きな人物画像を添付して上記プロンプトで画像生成\n②生成した画像をChatGPTに添付して「（好きな動き）のループGIFを作成してください」と依頼",
+        "note": "作者在回复中公开了两步做法；完整 Q 版角色提示词放在 ChatGPT 分享链接，本轮未转写该分享页。",
+        "source_url": "https://x.com/midori_tatsuta/status/2118519276848185637"
+      },
+      "method": "作者说明两步：先用自己的角色提示词从人物照片生成 Q 版图，再把生成图发给 ChatGPT，要求做指定动作的循环 GIF。完整角色提示词放在作者的 ChatGPT 分享链接里。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/chibi-schoolgirl-01.jpg",
+          "width": 1024,
+          "height": 1024,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/midori_tatsuta/status/2118519274482586001"
+        }
+      ]
+    },
+    {
+      "id": "sphere-controller",
+      "title": "操控悬浮球体的动漫女孩",
+      "category": "GIF 动图",
+      "one_liner": "以一张静帧为起点，让角色操控悬浮球体，做成戏剧感循环动画。",
+      "author": {
+        "name": "MiraMusic",
+        "username": "MiraMusic_AI",
+        "url": "https://x.com/MiraMusic_AI"
+      },
+      "source_url": "https://x.com/MiraMusic_AI/status/2118513591490163168",
+      "published_at_utc": "2026-11-06T01:19:34.000Z",
+      "published_at_shanghai": "2026-11-06 09:19（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6",
+        "Suno",
+        "ElevenLabs"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "添付画像を開始フレームとして球体をコントロールするキャラクター。\n画像生成で6秒尺。100枚で構成。\nケレン味がありアニメーション12原則を意識した動き。",
+        "note": "作者写在主帖中。",
+        "source_url": "https://x.com/MiraMusic_AI/status/2118513591490163168"
+      },
+      "method": "作者公开了简短提示词：以附件为起始帧，让角色控制球体，按约 6 秒、100 帧、强调动画十二原则来生成。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/sphere-controller-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/MiraMusic_AI/status/2118513591490163168"
+        },
+        {
+          "src": "/images/gpt-image-2-6/sphere-controller-02.jpg",
+          "width": 1280,
+          "height": 720,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/MiraMusic_AI/status/2118513591490163168"
+        }
+      ]
+    },
+    {
+      "id": "asset-turntables",
+      "title": "战士、宝剑、摩托车与猫的四组动图参考",
+      "category": "GIF 动图",
+      "one_liner": "战士、宝剑、摩托和猫四组旋转/展示向 GIF，用作 3D 或游戏资产参考。",
+      "author": {
+        "name": "Shikhar",
+        "username": "xikhar",
+        "url": "https://x.com/xikhar"
+      },
+      "source_url": "https://x.com/xikhar/status/2118407355859878352",
+      "published_at_utc": "2026-11-05T18:17:26.000Z",
+      "published_at_shanghai": "2026-11-06 02:17（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6",
+        "Tripo",
+        "Meshy",
+        "Pixal3D",
+        "Claude Code",
+        "Blender"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "create a gif of a \"3d dwarf game model carrying a huge axe on his shoulders\" spinning full 360 degrees\n\ncreate a gif of a \"3d legendary sword in a stone game asset\" spinning full 360 degrees\n\ncreate a gif of a \"AAA 3d futuristic motorbike game asset\" spinning full 360 degrees\n\ncreate a gif of a cat spinning",
+        "note": "作者在自己的回复中公开四则提示词。",
+        "source_url": "https://x.com/xikhar/status/2118409026044403849"
+      },
+      "method": "作者用简短提示词分别生成矮人持斧、石中剑、科幻摩托和猫的旋转展示 GIF，作为后续 3D 或代码资产的参考。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/asset-turntables-01.jpg",
+          "width": 358,
+          "height": 358,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/xikhar/status/2118407355859878352"
+        },
+        {
+          "src": "/images/gpt-image-2-6/asset-turntables-02.jpg",
+          "width": 358,
+          "height": 346,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/xikhar/status/2118407355859878352"
+        },
+        {
+          "src": "/images/gpt-image-2-6/asset-turntables-03.jpg",
+          "width": 358,
+          "height": 356,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/xikhar/status/2118407355859878352"
+        },
+        {
+          "src": "/images/gpt-image-2-6/asset-turntables-04.jpg",
+          "width": 476,
+          "height": 354,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/xikhar/status/2118407355859878352"
+        }
+      ]
+    },
+    {
+      "id": "texture-broll",
+      "title": "四色纹理背景循环 GIF",
+      "category": "GIF 动图",
+      "one_liner": "四条不同颜色纹理的循环背景 GIF，作者用 Codex 直接调 2.6，没再跑视频模型。",
+      "author": {
+        "name": "狗哥笔记",
+        "username": "gbroai",
+        "url": "https://x.com/gbroai"
+      },
+      "source_url": "https://x.com/gbroai/status/2118360718554894395",
+      "published_at_utc": "2026-11-05T15:12:07.000Z",
+      "published_at_shanghai": "2026-11-05 23:12（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6",
+        "Codex",
+        "Opus 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称这四条 B-roll 由 Codex 直接调用 Image 2.6 生成，全程没有再跑视频模型。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/texture-broll-01.jpg",
+          "width": 360,
+          "height": 640,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/gbroai/status/2118360718554894395"
+        },
+        {
+          "src": "/images/gpt-image-2-6/texture-broll-02.jpg",
+          "width": 360,
+          "height": 640,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/gbroai/status/2118360718554894395"
+        },
+        {
+          "src": "/images/gpt-image-2-6/texture-broll-03.jpg",
+          "width": 360,
+          "height": 640,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/gbroai/status/2118360718554894395"
+        },
+        {
+          "src": "/images/gpt-image-2-6/texture-broll-04.jpg",
+          "width": 450,
+          "height": 800,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/gbroai/status/2118360718554894395"
+        }
+      ]
+    },
+    {
+      "id": "bounce-entrance",
+      "title": "角色弹跳登场 GIF",
+      "category": "GIF 动图",
+      "one_liner": "让已有插画里的角色从画面外蹦进、弹一下再摆姿势离场。",
+      "author": {
+        "name": "ゆたい",
+        "username": "YU_TAI2414",
+        "url": "https://x.com/YU_TAI2414"
+      },
+      "source_url": "https://x.com/YU_TAI2414/status/2118343700929753503",
+      "published_at_utc": "2026-11-05T14:04:29.000Z",
+      "published_at_shanghai": "2026-11-05 22:04（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "この画像の女の子を可愛く画面外から登場するGIFを作ってみて！",
+        "note": "作者把对 ChatGPT 的口头请求写在主帖里。",
+        "source_url": "https://x.com/YU_TAI2414/status/2118343700929753503"
+      },
+      "method": "作者把已有插画交给 ChatGPT，口头要求“让图中女孩从画面外可爱登场的循环 GIF”，得到弹跳入场再离场的结果。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/bounce-entrance-01.jpg",
+          "width": 768,
+          "height": 1008,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/YU_TAI2414/status/2118343700929753503"
+        }
+      ]
+    },
+    {
+      "id": "travel-poster-gifs",
+      "title": "循环 GIF 动图中的旅行风景插画组",
+      "category": "GIF 动图",
+      "one_liner": "水粉旅行海报风格的金门大桥、罗马斗兽场和富士山循环风景 GIF。",
+      "author": {
+        "name": "DreW",
+        "username": "devteamdrew",
+        "url": "https://x.com/devteamdrew"
+      },
+      "source_url": "https://x.com/devteamdrew/status/2118308538564989025",
+      "published_at_utc": "2026-11-05T11:44:46.000Z",
+      "published_at_shanghai": "2026-11-05 19:44（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "PROMPTS (as highly requested)\n\n#1\nA living mid-century gouache travel-poster painting of the Golden Gate Bridge seen from a beach, static locked-off camera, seamless looping animation. The bridge is rust-orange with two tall towers, fine suspension cables and vertical hangers, spanning to a hazy grey-blue headland on the left and a tan-grey rocky cliff on the right. In the foreground deep cobalt and teal surf rolls in with white foam lines onto a sweeping beach of sandy beige scratchy dry-brush strokes, with dark rocks, a driftwood log and tiny figures in coral, navy and mustard. Warm cream sky with fine paper grain fills the upper half. Matte opaque gouache, ragged flaking edges, visible bristle streaks, speckled worn texture. Gentle motion only: waves wash and recede, foam shimmers, seagulls glide across the sky, tiny people wander. Soft hazy daylight, vertical 3:4, perfect loop.\n\n#2\nA living mid-century gouache travel-poster painting of the Roman Colosseum, locked-off static camera, a seamless looping animation. The ruined amphitheater sits low in the frame in sun-bleached ochre, sand and travertine with dusty rose and pale blue-grey arches, painted in dry-brush gouache with flaky, speckled edges and worn-away patches. A tall Italian stone pine in dark green and bottle-green leans in from the right, a vintage teal street lamp on the left, rose-coral flowering shrubs at the base. Open warm cream paper-textured sky fills the upper two thirds with fine paper grain. Gentle motion only: a few tiny birds drift across the sky, a cyclist rides slowly along the piazza, a small scooter, a couple in coral and mustard strolling, pine foliage barely sways. Soft warm afternoon light, long pale shadows, flat matte shapes, vertical 3:4, perfect loop.\n\n#3\nA living mid-century gouache travel-poster painting of Mount Fuji behind a five-storey Japanese pagoda, static locked-off camera, seamless looping animation. The pagoda is vermilion-orange with deep teal-slate tiled roofs, a slender spire, and a dark evergreen tree beside it. Fuji sits small and distant in dusty blue-grey with a snow-white cap and ragged dry-brush ridges, over a pale mist field. Foreground cherry trees in soft coral-pink blossom with dark trunks frame the bottom, and tiny figures stand on pale speckled ground. Warm cream paper-grain sky fills the upper half. Matte flat gouache with ragged, flaking edges, visible bristle marks and speckled holes. Subtle motion only: blossom petals drift down, branches sway faintly, tiny figures shift, a bell-like gentle shimmer on the light. Soft spring morning light, vertical 3:4, perfect loop.",
+        "note": "作者在回复中公开三则完整风景 GIF 提示词。",
+        "source_url": "https://x.com/devteamdrew/status/2118538745175503130"
+      },
+      "method": "作者用 ChatGPT Images 2.6 直接生成三张水粉旅行海报风格的循环风景 GIF，并在评论区公开三则提示词。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/travel-poster-gifs-01.jpg",
+          "width": 900,
+          "height": 1200,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/devteamdrew/status/2118308538564989025"
+        },
+        {
+          "src": "/images/gpt-image-2-6/travel-poster-gifs-02.jpg",
+          "width": 900,
+          "height": 1200,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/devteamdrew/status/2118308538564989025"
+        },
+        {
+          "src": "/images/gpt-image-2-6/travel-poster-gifs-03.jpg",
+          "width": 900,
+          "height": 1200,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/devteamdrew/status/2118308538564989025"
+        }
+      ]
+    },
+    {
+      "id": "orange-portrait-gif",
+      "title": "橙色放射背景中的眼镜男肖像循环 GIF",
+      "category": "GIF 动图",
+      "one_liner": "戴眼镜男子在橙色放射背景前的肖像循环 GIF，作者标注为 2.6 测试。",
+      "author": {
+        "name": "CuiMao",
+        "username": "CuiMao",
+        "url": "https://x.com/CuiMao"
+      },
+      "source_url": "https://x.com/CuiMao/status/2118271313764925886",
+      "published_at_utc": "2026-11-05T09:16:51.000Z",
+      "published_at_shanghai": "2026-11-05 17:16（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者只写了 “GPT image 2.6 test”，未公开提示词或参数。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/orange-portrait-gif-01.jpg",
+          "width": 308,
+          "height": 302,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/CuiMao/status/2118271313764925886"
+        }
+      ]
+    },
+    {
+      "id": "grayscale-faces",
+      "title": "超现实灰度人脸弹跳循环 GIF",
+      "category": "GIF 动图",
+      "one_liner": "超现实灰度人脸在画面里弹跳循环，是 2.6 上线后较早的 GIF 实测。",
+      "author": {
+        "name": "hiko",
+        "username": "tianmakibo",
+        "url": "https://x.com/tianmakibo"
+      },
+      "source_url": "https://x.com/tianmakibo/status/2118263296520519786",
+      "published_at_utc": "2026-11-05T08:44:59.000Z",
+      "published_at_shanghai": "2026-11-05 16:44（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者在模型上线后发帖称“image2.6上线了，可以做GIF了”，并附上实测循环图。制作步骤和提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/grayscale-faces-01.jpg",
+          "width": 356,
+          "height": 354,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/tianmakibo/status/2118263296520519786"
+        },
+        {
+          "src": "/images/gpt-image-2-6/grayscale-faces-02.jpg",
+          "width": 663,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/tianmakibo/status/2118263296520519786"
+        }
+      ]
+    },
+    {
+      "id": "heartbeat-dance",
+      "title": "动漫偶像心跳舞的低中高模式对比",
+      "category": "GIF 动图",
+      "one_liner": "同一角色做心跳舞，低、中、高模式并排对比。",
+      "author": {
+        "name": "Kiki",
+        "username": "Mayz1169",
+        "url": "https://x.com/Mayz1169"
+      },
+      "source_url": "https://x.com/Mayz1169/status/2118241781074862569",
+      "published_at_utc": "2026-11-05T07:19:30.000Z",
+      "published_at_shanghai": "2026-11-05 15:19（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6",
+        "Codex"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者让 Codex 驱使角色做心跳舞，并排出 low / medium / high 三档结果。详细提示词未在主帖写出。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/heartbeat-dance-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Mayz1169/status/2118241781074862569"
+        }
+      ]
+    },
+    {
+      "id": "horned-girls-dance",
+      "title": "华丽礼服的 Q 版角角女孩舞蹈 GIF",
+      "category": "GIF 动图",
+      "one_liner": "两只华丽礼服的 Q 版有角女孩跳舞 GIF，作者用来测直出 GIF 的一致性。",
+      "author": {
+        "name": "Gangban",
+        "username": "798145343h",
+        "url": "https://x.com/798145343h"
+      },
+      "source_url": "https://x.com/798145343h/status/2118164732989608405",
+      "published_at_utc": "2026-11-05T02:13:20.000Z",
+      "published_at_shanghai": "2026-11-05 10:13（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者测试 2.6 直出 GIF，做了 GPT 与 Claude 形象的跳舞动图，感觉比先出逐帧再合成更稳，但时长有限。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/horned-girls-dance-01.jpg",
+          "width": 400,
+          "height": 448,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/798145343h/status/2118164732989608405"
+        },
+        {
+          "src": "/images/gpt-image-2-6/horned-girls-dance-02.jpg",
+          "width": 400,
+          "height": 448,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/798145343h/status/2118164732989608405"
+        }
+      ]
+    },
+    {
+      "id": "summer-water-girl",
+      "title": "阳光花园里喷水的女性",
+      "category": "GIF 动图",
+      "one_liner": "夏日花园里女生喷水的实拍风画面，并给出可循环的 GIF。",
+      "author": {
+        "name": "Dmiao豆苗啊",
+        "username": "nima2qisi2",
+        "url": "https://x.com/nima2qisi2"
+      },
+      "source_url": "https://x.com/nima2qisi2/status/2118150226330734787",
+      "published_at_utc": "2026-11-05T01:15:41.000Z",
+      "published_at_shanghai": "2026-11-05 09:15（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "请以这个内容创建一个 GIF，内容是： # JAPANESE SUMMER｜夏日元气少女\n**10秒日系青春活力MV视频提示词**\n\n**画面规格：** 9:16 竖屏，10秒，30fps，写实摄影质感。\n\n**人物设定：**\n22岁成年东亚女性，清透冷白皮肤，短款深棕色波波头，轻薄空气刘海，五官甜美可爱，身材匀称。穿着参考图中的蓝色泳装、黄色镂空针织罩衫及牛仔短裤。人物保持统一，性格活泼俏皮，笑容自然，有青春少女的灵动感。\n\n**整体风格：**\nJapanese Youth MV / Japanese Summer Pop / Youthful Cinematic Montage。\n\n明亮通透的夏日阳光，翠绿花园，蓝色天空，橙色充气泳圈，水花飞溅。采用日本青春电影式混剪，快速切换全景、中景、近景和人物特写。画面具有轻微胶片颗粒、柔和高光、自然镜头运动。\n\n### 01｜10秒分镜设计\n\n**0—1.2秒｜开场钩子**\n低机位快速推进，女主坐在橙色充气泳圈上，双手拿着水枪，突然发现镜头，露出惊喜的笑容，水流突然朝镜头喷来。\n\n**1.2—2.4秒｜俏皮特写**\n快速硬切面部近景，女主被水花溅到，轻轻眯眼，随后露出调皮笑容，发丝随着动作轻轻晃动。阳光在脸颊形成漂亮的光斑。\n\n**2.4—3.6秒｜青春动态**\n侧面低机位，女主赤脚轻轻踢起草坪上的水花，镜头快速横向跟拍，橙色泳圈在前景掠过，形成自然遮挡转场。\n\n**3.6—4.8秒｜视觉节奏**\n俯拍镜头，女主拿着水枪在草坪上转身，水流划出弧线。镜头快速向下俯冲，再跟随水花向上抬起。\n\n**4.8—6.0秒｜少女感特写**\n正面近景，女主双手举起水枪，突然向镜头喷水，水珠在阳光下形成晶莹的高光，女主笑着躲避镜头。\n\n**6.0—7.3秒｜活力爆发**\n快速硬切至侧后方，女主从泳圈上轻巧起身，转身甩动头发，黄色针织罩衫随动作自然摆动，镜头进行半圈快速环绕。\n\n**7.3—8.7秒｜夏日氛围**\n广角镜头，女主在草坪上轻快地转圈，双手张开，阳光穿过树叶洒落，水花从前景飞过，画面充满夏日青春气息。\n\n**8.7—10秒｜记忆点结尾**\n突然切换正面近景，女主向镜头靠近，俏皮地歪头眨眼，随后拿起水枪再次喷水，水花覆盖整个镜头，最后定格在明亮的白色水花中。\n\n### 02｜音乐与剪辑\n\n原创日系青春J-POP配乐：\n- 轻快的电吉他、明亮合成器、活泼贝斯与清脆鼓点。\n- 约155—165 BPM，具有夏日偶像MV的轻盈节奏。\n- 开场直接进入音乐，不要冗长铺垫。\n- 每次鼓点配合一次硬切或动作变化。\n- 中间加入少量0.3—0.5秒高速慢动作水花特写，再迅速恢复正常速度。\n- 结尾音乐与水花覆盖镜头同步收束。\n\n### 03｜摄影与画面约束\n\n1. 混剪必须具有明显的景别变化，避免全程一个机位。\n2. 人物始终是画面视觉中心，保持同一张脸、发型和服装。\n3. 人物动作自然轻快，表情丰富，笑容甜美但不过度表演。\n4. 保留真实皮肤纹理、自然阳光与水珠物理效果。\n5. 镜头切换干净利落，利用水花、泳圈和人物动作完成匹配剪辑。\n6. 不要广告片质感，不要商业产品展示，不要字幕、文字、Logo、水印。\n7. 避免人物变脸、服装改变、手指畸形、肢体错位及水枪结构变形。\n\n**最终效果：像一支10秒的日本夏日青春偶像MV，轻松、明亮、活泼、俏皮，让人感受到夏天的快乐。**",
+        "note": "作者在自己的回复中公开完整提示词。",
+        "source_url": "https://x.com/nima2qisi2/status/2118150229811920912"
+      },
+      "method": "作者在 ChatGPT Images 2.6 中按评论区公开的日系夏日提示词生成画面和 GIF。提示词本身按 10 秒 MV 分镜来写。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/summer-water-girl-01.jpg",
+          "width": 1024,
+          "height": 1536,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/nima2qisi2/status/2118150226330734787"
+        },
+        {
+          "src": "/images/gpt-image-2-6/summer-water-girl-02.jpg",
+          "width": 310,
+          "height": 306,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/nima2qisi2/status/2118150226330734787"
+        },
+        {
+          "src": "/images/gpt-image-2-6/summer-water-girl-03.jpg",
+          "width": 312,
+          "height": 303,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/nima2qisi2/status/2118150226330734787"
+        }
+      ]
+    },
+    {
+      "id": "sombrero-newspaper",
+      "title": "戴大帽子的绿色角色阅读报纸循环 GIF",
+      "category": "GIF 动图",
+      "one_liner": "戴大帽子的绿色角色读报循环 GIF，作者标明用于测试新模型。",
+      "author": {
+        "name": "🚨 AI News | TestingCatalog",
+        "username": "testingcatalog",
+        "url": "https://x.com/testingcatalog"
+      },
+      "source_url": "https://x.com/testingcatalog/status/2118138826212385225",
+      "published_at_utc": "2026-11-05T00:30:23.000Z",
+      "published_at_shanghai": "2026-11-05 08:30（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "TestingCatalog 用新上线的 ChatGPT Images 2.6 做测试向 GIF。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/sombrero-newspaper-01.jpg",
+          "width": 414,
+          "height": 414,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/testingcatalog/status/2118138826212385225"
+        }
+      ]
+    },
+    {
+      "id": "backflip-complexity",
+      "title": "三种复杂度的站立后空翻 GIF",
+      "category": "GIF 动图",
+      "one_liner": "用 Flare 生成站立后空翻 GIF，并排对比低、中、高三种复杂度。",
+      "author": {
+        "name": "Gabriel Chua",
+        "username": "gabrielchua",
+        "url": "https://x.com/gabrielchua"
+      },
+      "source_url": "https://x.com/gabrielchua/status/2118135343354720648",
+      "published_at_utc": "2026-11-05T00:16:33.000Z",
+      "published_at_shanghai": "2026-11-05 08:16（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6",
+        "Flare"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "create a GIF of a man doing a standing backflip",
+        "note": "作者在主帖写明用 Flare，并对比 low / medium / high complexity。",
+        "source_url": "https://x.com/gabrielchua/status/2118135343354720648"
+      },
+      "method": "作者称在 GPT Image 2.6 API 上用 Flare，提示词为“create a GIF of a man doing a standing backflip”，并对比 low / medium / high complexity。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/backflip-complexity-01.jpg",
+          "width": 1200,
+          "height": 520,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/gabrielchua/status/2118135343354720648"
+        }
+      ]
+    },
+    {
+      "id": "cartman-gif",
+      "title": "卡特曼角色循环 GIF",
+      "category": "GIF 动图",
+      "one_liner": "卡特曼角色循环 GIF，作者用来展示 2.6 做 GIF 的效果。",
+      "author": {
+        "name": "Derya Unutmaz, MD",
+        "username": "DeryaTR_",
+        "url": "https://x.com/DeryaTR_"
+      },
+      "source_url": "https://x.com/DeryaTR_/status/2118135257618657778",
+      "published_at_utc": "2026-11-05T00:16:13.000Z",
+      "published_at_shanghai": "2026-11-05 08:16（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用 ChatGPT Images 2.6 生成自己喜欢的卡特曼角色循环 GIF。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/cartman-gif-01.jpg",
+          "width": 358,
+          "height": 356,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/DeryaTR_/status/2118135257618657778"
+        }
+      ]
+    },
+    {
+      "id": "orange-cat-stickers",
+      "title": "红围巾胖橘猫四宫格表情包",
+      "category": "表情包与贴纸",
+      "one_liner": "同一只红围巾胖橘猫的大笑、翻白眼、点头、假摔四张表情，模型为 Sunburst。",
+      "author": {
+        "name": "老铁",
+        "username": "loti2057330",
+        "url": "https://x.com/loti2057330"
+      },
+      "source_url": "https://x.com/loti2057330/status/2118984085175669226",
+      "published_at_utc": "2026-11-07T08:29:09.000Z",
+      "published_at_shanghai": "2026-11-07 16:29（Asia/Shanghai）",
+      "tools": [
+        "gpt-image-2.6-sunburst"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者公开了模型（gpt-image-2.6-sunburst）和参数（每张 9 帧、200 毫秒），未公开四张表情各自的提示词全文。",
+        "source_url": "https://x.com/loti2057330/status/2118984085175669226"
+      },
+      "method": "作者使用 gpt-image-2.6-sunburst，同一只红围巾胖橘猫做四张表情，每张 9 帧、间隔 200 毫秒，强调角色一致。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/orange-cat-stickers-01.jpg",
+          "width": 429,
+          "height": 394,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/loti2057330/status/2118984085175669226"
+        },
+        {
+          "src": "/images/gpt-image-2-6/orange-cat-stickers-02.jpg",
+          "width": 430,
+          "height": 394,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/loti2057330/status/2118984085175669226"
+        },
+        {
+          "src": "/images/gpt-image-2-6/orange-cat-stickers-03.jpg",
+          "width": 418,
+          "height": 418,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/loti2057330/status/2118984085175669226"
+        },
+        {
+          "src": "/images/gpt-image-2-6/orange-cat-stickers-04.jpg",
+          "width": 434,
+          "height": 385,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/loti2057330/status/2118984085175669226"
+        }
+      ]
+    },
+    {
+      "id": "catgirl-mood-stickers",
+      "title": "猫耳女孩日常情绪贴纸包",
+      "category": "表情包与贴纸",
+      "one_liner": "猫耳女孩日常情绪贴纸包，作者标明用 GPT Image 2.6 制作。",
+      "author": {
+        "name": "Kiki",
+        "username": "Mayz1169",
+        "url": "https://x.com/Mayz1169"
+      },
+      "source_url": "https://x.com/Mayz1169/status/2118355858208010412",
+      "published_at_utc": "2026-11-05T14:52:48.000Z",
+      "published_at_shanghai": "2026-11-05 22:52（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用 GPT Image 2.6 为自己的角色 Miss Malfoid 做日常情绪贴纸，贴纸细节在帖内后续说明。主帖未写完整提示词。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/catgirl-mood-stickers-01.jpg",
+          "width": 1200,
+          "height": 800,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Mayz1169/status/2118355858208010412"
+        }
+      ]
+    },
+    {
+      "id": "wechat-sticker-packs",
+      "title": "古代官员与淡定藏狐微信动态表情包",
+      "category": "表情包与贴纸",
+      "one_liner": "用 API 一次跑出《内阁打工人》和《精神稳定的藏狐》两套微信动态表情。",
+      "author": {
+        "name": "弎水",
+        "username": "vastxie",
+        "url": "https://x.com/vastxie"
+      },
+      "source_url": "https://x.com/vastxie/status/2118265895613346263",
+      "published_at_utc": "2026-11-05T08:55:19.000Z",
+      "published_at_shanghai": "2026-11-05 16:55（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6",
+        "Python"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者公开了 API 工作流和参数（gif、320x320、透明背景、edits 并发），但未公开每条表情的完整动作提示词。",
+        "source_url": "https://x.com/vastxie/status/2118265895613346263"
+      },
+      "method": "作者用赠送 API 额度走 generations + edits：先出 320×320 透明 GIF 锚点图锁人设，再并发改动作和配字，最后脚本缩到 240×240 打包。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/wechat-sticker-packs-01.jpg",
+          "width": 950,
+          "height": 1014,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/vastxie/status/2118265895613346263"
+        },
+        {
+          "src": "/images/gpt-image-2-6/wechat-sticker-packs-02.jpg",
+          "width": 950,
+          "height": 1014,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/vastxie/status/2118265895613346263"
+        }
+      ]
+    },
+    {
+      "id": "chibi-reaction-stickers",
+      "title": "中文 Q 版反应动态表情包",
+      "category": "表情包与贴纸",
+      "one_liner": "中文 Q 版反应表情包，并公开可套用的表情包提示词模板。",
+      "author": {
+        "name": "路飞 🏴‍☠️ AI 研究员🧐",
+        "username": "0xluffy_eth",
+        "url": "https://x.com/0xluffy_eth"
+      },
+      "source_url": "https://x.com/0xluffy_eth/status/2118235544459387112",
+      "published_at_utc": "2026-11-05T06:54:43.000Z",
+      "published_at_shanghai": "2026-11-05 14:54（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "请以我上传的角色图为参考，按「表情包主题」做一张可下载的动态 GIF。\n\n【角色保持一致】锁发型/配色/标志道具，Q 版比例全帧不变\n【自动设计动作】一个核心笑点，夸张一点，首尾能循环\n【自动配字】2～8 个字网感短句，顶部粗圆体+白描边\n【画面】正方形纯白底，2～3 秒循环，聊天表情包规格\n\n表情包主题：【填你的梗，比如「周一不想上班」】",
+        "note": "作者在自己的回复中公开模板。",
+        "source_url": "https://x.com/0xluffy_eth/status/2118235547454083357"
+      },
+      "method": "作者公开一套可复用的表情包提示词：锁定参考角色、自动设计循环动作和 2–8 字中文配字，正方形白底。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/chibi-reaction-stickers-01.jpg",
+          "width": 417,
+          "height": 418,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/0xluffy_eth/status/2118235544459387112"
+        },
+        {
+          "src": "/images/gpt-image-2-6/chibi-reaction-stickers-02.jpg",
+          "width": 412,
+          "height": 410,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/0xluffy_eth/status/2118235544459387112"
+        }
+      ]
+    },
+    {
+      "id": "blue-maid-stickers",
+      "title": "蓝发女仆反应表情 GIF 动图",
+      "category": "表情包与贴纸",
+      "one_liner": "以“大肥鱼”为参考的蓝发女仆反应表情 GIF，并公开提示词和参考图。",
+      "author": {
+        "name": "歸藏(guizang.ai)",
+        "username": "op7418",
+        "url": "https://x.com/op7418"
+      },
+      "source_url": "https://x.com/op7418/status/2118181775688241456",
+      "published_at_utc": "2026-11-05T03:21:03.000Z",
+      "published_at_shanghai": "2026-11-05 11:21（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6",
+        "Codex"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "提示词在这里，参考图用这两张就行，注意最后需要你填写的部分。\n\n请以我上传的大肥鱼图片为角色和画风参考，根据最后一行的「表情包主题」，直接制作一张可下载的动态 GIF 表情包。\n\n【角色保持一致】\n保留参考图中的蓝色渐变长发、呆毛、鲸鱼耳鳍、蓝色蝴蝶结、白色女仆头饰、蓝白女仆裙和大鲸鱼尾巴。\n保持原图的大头小身体 Q 版比例、圆脸和可爱画风，人物外观在所有帧中保持一致。\n\n【自动设计动作】\n理解我想表达的情绪或梗，将它设计成一个简单、有趣、一眼能看懂的短动作。\n突出一个核心笑点，用夸张表情、动作反差和轻微的压缩回弹增加喜感。头发、呆毛、耳鳍和尾巴自然跟随动作。\n根据主题添加必要的少量道具，保持画面简洁。\n主动设计首尾衔接，让动画能够自然循环播放。\n\n【自动配字】\n根据主题提炼一句简短、有网感的中文配字，优先控制在 2～8 个字。\n如果主题中用引号指定了台词，直接使用该台词。\n字幕放在顶部，使用粗圆体、深蓝字、白色描边；文字、字形和位置全程稳定，角色与道具不遮挡字幕。\n\n【画面与输出】\n正方形画面，纯白背景，固定镜头，主体居中并保留足够边距。\n动画约 2～3 秒，无限循环，动作清晰，适合聊天时作为表情包发送。\n最终交付实际会播放的多帧 GIF 文件，并提供下载。\n\n表情包主题：【在这里填一句话，描述你想表达的梗、情绪或动作】",
+        "note": "完整提示词和两张参考图在作者回复中。",
+        "source_url": "https://x.com/op7418/status/2118181972451438662"
+      },
+      "method": "作者在 ChatGPT 里用公开提示词和两张“大肥鱼”参考图批量做蓝发女仆反应表情，主题可替换。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/blue-maid-stickers-01.jpg",
+          "width": 413,
+          "height": 408,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/op7418/status/2118181775688241456"
+        },
+        {
+          "src": "/images/gpt-image-2-6/blue-maid-stickers-02.jpg",
+          "width": 306,
+          "height": 307,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/op7418/status/2118181775688241456"
+        },
+        {
+          "src": "/images/gpt-image-2-6/blue-maid-stickers-03.jpg",
+          "width": 357,
+          "height": 352,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/op7418/status/2118181775688241456"
+        },
+        {
+          "src": "/images/gpt-image-2-6/blue-maid-stickers-04.jpg",
+          "width": 308,
+          "height": 303,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/op7418/status/2118181775688241456"
+        }
+      ]
+    },
+    {
+      "id": "rice-sticker",
+      "title": "蓝发女仆吃白饭的表情 GIF",
+      "category": "表情包与贴纸",
+      "one_liner": "一句提示词让参考角色吃大白米饭，并配上“真香！”字幕。",
+      "author": {
+        "name": "Gorden Sun",
+        "username": "Gorden_Sun",
+        "url": "https://x.com/Gorden_Sun"
+      },
+      "source_url": "https://x.com/Gorden_Sun/status/2118166046175908016",
+      "published_at_utc": "2026-11-05T02:18:33.000Z",
+      "published_at_shanghai": "2026-11-05 10:18（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "使用这个角色，生成一张GIF图，内容是她吃大白米饭，图片里有文字：真香！",
+        "note": "作者写明图 1 是结果，图 2 是参考图。",
+        "source_url": "https://x.com/Gorden_Sun/status/2118166046175908016"
+      },
+      "method": "作者上传角色参考图，提示词为：“使用这个角色，生成一张GIF图，内容是她吃大白米饭，图片里有文字：真香！”",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/rice-sticker-01.jpg",
+          "width": 508,
+          "height": 508,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/Gorden_Sun/status/2118166046175908016"
+        },
+        {
+          "src": "/images/gpt-image-2-6/rice-sticker-02.jpg",
+          "width": 1448,
+          "height": 1086,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/Gorden_Sun/status/2118166046175908016"
+        }
+      ]
+    },
+    {
+      "id": "cream-puff-stickers",
+      "title": "奶油团子的日常表情 GIF 动图",
+      "category": "表情包与贴纸",
+      "one_liner": "奶油团子角色的日常表情 GIF 组合。",
+      "author": {
+        "name": "Levi 卧云",
+        "username": "Leviwoyun",
+        "url": "https://x.com/Leviwoyun"
+      },
+      "source_url": "https://x.com/Leviwoyun/status/2118157743840469222",
+      "published_at_utc": "2026-11-05T01:45:34.000Z",
+      "published_at_shanghai": "2026-11-05 09:45（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用 GPT Images 2.6 做奶油团子日常表情包。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/cream-puff-stickers-01.jpg",
+          "width": 1200,
+          "height": 882,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Leviwoyun/status/2118157743840469222"
+        }
+      ]
+    },
+    {
+      "id": "office-snapshots",
+      "title": "四张写实日本女性办公室随拍",
+      "category": "人像与写真",
+      "one_liner": "四张日本办公室场景的超写实女性照片，两组分别为精致实拍和手机随拍质感。",
+      "author": {
+        "name": "AIでもっと妄想世界🚀🌍️",
+        "username": "buusk4",
+        "url": "https://x.com/buusk4"
+      },
+      "source_url": "https://x.com/buusk4/status/2118543259257712714",
+      "published_at_utc": "2026-11-06T03:17:28.000Z",
+      "published_at_shanghai": "2026-11-06 11:17（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "1,2枚目:縦長9:16の超写実的な実写写真。\n成人日本人女性。日本の一般的なオフィス。\n\n3,4枚目:縦長9:16の超写実的な実写写真スマホ画質のスナップショット。\n成人日本人女性。日本の一般的なオフィス。",
+        "note": "作者写在主帖中。",
+        "source_url": "https://x.com/buusk4/status/2118543259257712714"
+      },
+      "method": "作者公开简短提示词：1–2 张为 9:16 超写实办公室照片，3–4 张改为手机随拍质感，主体均为成年日本女性。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/office-snapshots-01.jpg",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/buusk4/status/2118543259257712714"
+        },
+        {
+          "src": "/images/gpt-image-2-6/office-snapshots-02.jpg",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/buusk4/status/2118543259257712714"
+        },
+        {
+          "src": "/images/gpt-image-2-6/office-snapshots-03.jpg",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/buusk4/status/2118543259257712714"
+        },
+        {
+          "src": "/images/gpt-image-2-6/office-snapshots-04.jpg",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/buusk4/status/2118543259257712714"
+        }
+      ]
+    },
+    {
+      "id": "urban-fashion-portraits",
+      "title": "城市场景中的写实女性时尚肖像",
+      "category": "人像与写真",
+      "one_liner": "城市场景中的写实女性时尚肖像组图，作者强调五官稳定性。",
+      "author": {
+        "name": "虎小象",
+        "username": "hx831126",
+        "url": "https://x.com/hx831126"
+      },
+      "source_url": "https://x.com/hx831126/status/2118375194507219052",
+      "published_at_utc": "2026-11-05T16:09:38.000Z",
+      "published_at_shanghai": "2026-11-06 00:09（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用 GPT Image 2.6 生成多张城市场景写实女性肖像，强调五官稳定性。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/urban-fashion-portraits-01.jpg",
+          "width": 1600,
+          "height": 1029,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/hx831126/status/2118375194507219052"
+        },
+        {
+          "src": "/images/gpt-image-2-6/urban-fashion-portraits-02.jpg",
+          "width": 1600,
+          "height": 1089,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/hx831126/status/2118375194507219052"
+        },
+        {
+          "src": "/images/gpt-image-2-6/urban-fashion-portraits-03.jpg",
+          "width": 1600,
+          "height": 1083,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/hx831126/status/2118375194507219052"
+        },
+        {
+          "src": "/images/gpt-image-2-6/urban-fashion-portraits-04.jpg",
+          "width": 1600,
+          "height": 1059,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/hx831126/status/2118375194507219052"
+        }
+      ]
+    },
+    {
+      "id": "black-outfit-portrait",
+      "title": "黑色连体衣女性棚拍时尚人像",
+      "category": "人像与写真",
+      "one_liner": "黑色连体衣女性棚拍时尚人像，作者称生成时间不到 30 秒。",
+      "author": {
+        "name": "皇＠AI美女×SNSマーケ",
+        "username": "aisumeragi",
+        "url": "https://x.com/aisumeragi"
+      },
+      "source_url": "https://x.com/aisumeragi/status/2118188273134915596",
+      "published_at_utc": "2026-11-05T03:46:53.000Z",
+      "published_at_shanghai": "2026-11-05 11:46（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称用 ChatGPT Image 2.6 生成棚拍时尚人像，生成时间不到 30 秒。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/black-outfit-portrait-01.jpg",
+          "width": 585,
+          "height": 1200,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/aisumeragi/status/2118188273134915596"
+        }
+      ]
+    },
+    {
+      "id": "glass-mini-worlds",
+      "title": "玻璃物件里的微型世界插画海报系列",
+      "category": "海报与平面设计",
+      "one_liner": "真实玻璃器物与手绘小人结合的微型世界海报：泳池杯、香水电梯、玻璃球地铁、花瓶温室。",
+      "author": {
+        "name": "Larus Canus",
+        "username": "MrLarus",
+        "url": "https://x.com/MrLarus"
+      },
+      "source_url": "https://x.com/MrLarus/status/2119088172433109353",
+      "published_at_utc": "2026-11-07T15:22:45.000Z",
+      "published_at_shanghai": "2026-11-07 23:22（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "提示词：\n\n【透明核心物体】：{玻璃杯 / 香水瓶 / 花瓶 / 玻璃球 / 其他透明容器}\n【空间功能】：{泳池 / 电梯 / 温室 / 地铁站 / 咖啡馆 / 阅读室等}\n【手绘人物】：{人物数量、身份、动作与穿搭}\n【内部元素】：{水 / 植物 / 家具 / 交通工具等}\n【主文案】：{一句简短、有画面感的中文短句}\n【画幅比例】：{默认 9:16}\n\n创作一张「摄影级透明玻璃 × 手绘微型人物」虚实结合创意海报。\n\n将【透明核心物体】放大到建筑或生活空间的尺度，并真正改造成【空间功能】。不要只是把小人放在物体旁边，而是让人物真实进入玻璃内部，并自然地使用这个空间。\n\n透明物体必须保持明显的摄影级真实质感，包括真实玻璃厚度、边缘高光、反射、透光、折射、焦散、投影，以及不同曲面造成的局部放大、压缩和视觉偏移。\n\n最重要的是让这些真实光学效果真正作用到手绘人物和内部空间上。例如人物经过玻璃观察时，腿部、身体或随身物品出现轻微折射变形；光线穿过玻璃后在地面、人物或内部设施上形成自然焦散，使人物真正存在于透明空间中，而不是简单贴在照片表面。\n\n【手绘人物】保持明显二维绘本语言：黑灰铅笔线稿、少量彩铅或轻水彩、简洁五官、修长成年人体比例。人物动作自然生活化，可以阅读、候车、游泳、喝咖啡、乘电梯或休息，不看镜头，不摆模特姿势。\n\n人物、家具、交通工具等内部元素可以保持手绘或轻半写实，而透明玻璃、水、植物等核心材质保持更强摄影感，形成“一半像真实摄影，一半像手绘绘本”的视觉碰撞。\n\n环境保持极简，大面积使用暖奶油白、浅米色纸张或干净生活空间作为背景，只保留与主题有关的少量元素。不要构建复杂房间、城市或商业场景。\n\n构图采用「巨大透明主体 + 微型人物 + 大留白」：\n\n核心玻璃物体占据主要视觉面积，人物相对较小，通过明显尺度反差增强视觉惊喜；缩略图状态下也应该能第一眼看懂“这个透明物体被改造成了什么空间”。\n\n在留白区域加入【主文案】，使用自然、不完全规整的中文手写字体，像日记、手账或独立绘本中的题字。可加入一句很小的英文旁注，但不要堆放大量文字。\n\n整体光线使用柔和自然光，充分表现透明材质的折射、反射、焦散和透光，同时保持画面清爽、温暖、有生活感和编辑海报感。\n\n最终效果应该让观众第一眼看到一个摄影质感很强的真实透明物体，第二眼才发现里面竟然生活着一群手绘小人，并进一步注意到玻璃折射、光影和人物之间真实的物理互动。",
+        "note": "完整可替换模板提示词在作者回复中。",
+        "source_url": "https://x.com/MrLarus/status/2119088491657330799"
+      },
+      "method": "作者在评论区公开可替换物体、空间功能和文案的海报模板提示词，强调真实玻璃光学与手绘小人同框。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/glass-mini-worlds-01.jpg",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/MrLarus/status/2119088172433109353"
+        },
+        {
+          "src": "/images/gpt-image-2-6/glass-mini-worlds-02.jpg",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/MrLarus/status/2119088172433109353"
+        },
+        {
+          "src": "/images/gpt-image-2-6/glass-mini-worlds-03.jpg",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/MrLarus/status/2119088172433109353"
+        },
+        {
+          "src": "/images/gpt-image-2-6/glass-mini-worlds-04.jpg",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/MrLarus/status/2119088172433109353"
+        }
+      ]
+    },
+    {
+      "id": "floral-title-card",
+      "title": "彩色花朵环绕的宣传标题卡",
+      "category": "海报与平面设计",
+      "one_liner": "一句提示词做出彩色花朵环绕的宣传标题卡。",
+      "author": {
+        "name": "Veee",
+        "username": "vikktorrrre",
+        "url": "https://x.com/vikktorrrre"
+      },
+      "source_url": "https://x.com/vikktorrrre/status/2118128944058716210",
+      "published_at_utc": "2026-11-04T23:51:07.000Z",
+      "published_at_shanghai": "2026-11-05 07:51（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称“1 prompt and Images 2.6 made this”，未公开那句提示词的原文。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/floral-title-card-01.jpg",
+          "width": 1600,
+          "height": 900,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/vikktorrrre/status/2118128944058716210"
+        }
+      ]
+    },
+    {
+      "id": "collage-and-panda",
+      "title": "生活方式拼贴与圣诞老人熊猫节日手绘",
+      "category": "插画与风格化视觉",
+      "one_liner": "生活方式拼贴与圣诞老人熊猫节日手绘，作者感觉 2.6 对设计提示词更听得懂。",
+      "author": {
+        "name": "ミヤマ",
+        "username": "mmmiyama_D",
+        "url": "https://x.com/mmmiyama_D"
+      },
+      "source_url": "https://x.com/mmmiyama_D/status/2118462563331735755",
+      "published_at_utc": "2026-11-05T21:56:48.000Z",
+      "published_at_shanghai": "2026-11-06 05:56（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者感觉 2.6 对设计类提示词更听得懂，先发了拼贴和节日手绘效果，并说提示词稍后再公开；本轮未核到后续公开全文。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/collage-and-panda-01.jpg",
+          "width": 1122,
+          "height": 1402,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/mmmiyama_D/status/2118462563331735755"
+        },
+        {
+          "src": "/images/gpt-image-2-6/collage-and-panda-02.jpg",
+          "width": 1179,
+          "height": 1179,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/mmmiyama_D/status/2118462563331735755"
+        }
+      ]
+    },
+    {
+      "id": "repeat-edit-test",
+      "title": "阳光花园里的动漫情侣：连续编辑对比",
+      "category": "图片编辑与参考图",
+      "one_liner": "连续编辑测试：噪点改善了，但多次修改后面部和饱和度仍会漂。",
+      "author": {
+        "name": "松丸 彗吾(keigo matsumaru)",
+        "username": "k_matsumaru",
+        "url": "https://x.com/k_matsumaru"
+      },
+      "source_url": "https://x.com/k_matsumaru/status/2118186638228816322",
+      "published_at_utc": "2026-11-05T03:40:23.000Z",
+      "published_at_shanghai": "2026-11-05 11:40（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6",
+        "Flare"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者测试多次编辑后的一致性：认为噪点改善，但第二轮编辑脸和饱和度就会漂，并注明第一张由 Flare 生成。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/repeat-edit-test-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/k_matsumaru/status/2118186638228816322"
+        }
+      ]
+    },
+    {
+      "id": "sunburst-flare-quality",
+      "title": "Sunburst、Flare 与 Flare 低画质对比",
+      "category": "模型对比",
+      "one_liner": "同一构图对比 Sunburst、Flare 和 Flare 低画质三档。",
+      "author": {
+        "name": "tane@AI",
+        "username": "gin1910410",
+        "url": "https://x.com/gin1910410"
+      },
+      "source_url": "https://x.com/gin1910410/status/2119281928616783910",
+      "published_at_utc": "2026-11-08T04:12:40.000Z",
+      "published_at_shanghai": "2026-11-08 12:12（Asia/Shanghai）",
+      "tools": [
+        "gpt-image-2.6-sunburst",
+        "gpt-image-2.6-flare"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用同一构图分别跑 gpt-image-2.6-sunburst、gpt-image-2.6-flare 和 flare 低画质，三张并排。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/sunburst-flare-quality-01.jpg",
+          "width": 1024,
+          "height": 1536,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/gin1910410/status/2119281928616783910"
+        },
+        {
+          "src": "/images/gpt-image-2-6/sunburst-flare-quality-02.jpg",
+          "width": 1024,
+          "height": 1536,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/gin1910410/status/2119281928616783910"
+        },
+        {
+          "src": "/images/gpt-image-2-6/sunburst-flare-quality-03.jpg",
+          "width": 1024,
+          "height": 1536,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/gin1910410/status/2119281928616783910"
+        }
+      ]
+    },
+    {
+      "id": "prompt-guide-compare",
+      "title": "四页图解式图像创作指南",
+      "category": "模型对比",
+      "one_liner": "同一套提示词和参考，让 2.6 重做四页图像创作指南，并与 Muse 版本对照。",
+      "author": {
+        "name": "ぐふとくく",
+        "username": "gufutokuku999",
+        "url": "https://x.com/gufutokuku999"
+      },
+      "source_url": "https://x.com/gufutokuku999/status/2118946557319856526",
+      "published_at_utc": "2026-11-07T06:00:02.000Z",
+      "published_at_shanghai": "2026-11-07 14:00（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用同一提示词和同一参考 URL，分别让 Muse 和 ChatGPT Image 2.6 做四页图像创作指南。2.6 提示词本身未再展开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/prompt-guide-compare-01.jpg",
+          "width": 1060,
+          "height": 1484,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/gufutokuku999/status/2118946557319856526"
+        },
+        {
+          "src": "/images/gpt-image-2-6/prompt-guide-compare-02.jpg",
+          "width": 1060,
+          "height": 1484,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/gufutokuku999/status/2118946557319856526"
+        },
+        {
+          "src": "/images/gpt-image-2-6/prompt-guide-compare-03.jpg",
+          "width": 1060,
+          "height": 1484,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/gufutokuku999/status/2118946557319856526"
+        },
+        {
+          "src": "/images/gpt-image-2-6/prompt-guide-compare-04.jpg",
+          "width": 1060,
+          "height": 1484,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/gufutokuku999/status/2118946557319856526"
+        }
+      ]
+    },
+    {
+      "id": "elf-cat-compare",
+      "title": "三种图像模型中的精灵女英雄与猫咪肖像对比",
+      "category": "模型对比",
+      "one_liner": "精灵女英雄与猫咪肖像，对比 Seedream 5.5、Nano Banana Pro 和 GPT Image 2.6 Sunburst。",
+      "author": {
+        "name": "lyra",
+        "username": "lyraxana",
+        "url": "https://x.com/lyraxana"
+      },
+      "source_url": "https://x.com/lyraxana/status/2118884892427551046",
+      "published_at_utc": "2026-11-07T01:54:59.000Z",
+      "published_at_shanghai": "2026-11-07 09:54（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者将精灵女英雄与猫咪肖像在 Seedream 5.5、Nano Banana Pro 和 GPT Image 2.6 Sunburst 之间对比。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/elf-cat-compare-01.jpg",
+          "width": 1600,
+          "height": 1070,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/lyraxana/status/2118884892427551046"
+        },
+        {
+          "src": "/images/gpt-image-2-6/elf-cat-compare-02.jpg",
+          "width": 1600,
+          "height": 873,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/lyraxana/status/2118884892427551046"
+        },
+        {
+          "src": "/images/gpt-image-2-6/elf-cat-compare-03.jpg",
+          "width": 1600,
+          "height": 900,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/lyraxana/status/2118884892427551046"
+        }
+      ]
+    },
+    {
+      "id": "donut-lp-compare",
+      "title": "两款彩色甜甜圈店落地页设计",
+      "category": "模型对比",
+      "one_liner": "同一参考图和提示词，对比甜甜圈店落地页在 Images 2.5 与 2.6 下的效果。",
+      "author": {
+        "name": "Ryoka｜AIデザインツール開発",
+        "username": "revolvtech",
+        "url": "https://x.com/revolvtech"
+      },
+      "source_url": "https://x.com/revolvtech/status/2118713676417175785",
+      "published_at_utc": "2026-11-06T14:34:38.000Z",
+      "published_at_shanghai": "2026-11-06 22:34（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用此前 Images 2.5 做过的甜甜圈店落地页，在完全相同的参考图和提示词下重跑 2.6 并左右对比。提示词原文未贴出。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/donut-lp-compare-01.jpg",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/revolvtech/status/2118713676417175785"
+        },
+        {
+          "src": "/images/gpt-image-2-6/donut-lp-compare-02.jpg",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/revolvtech/status/2118713676417175785"
+        }
+      ]
+    },
+    {
+      "id": "fashion-face-compare",
+      "title": "同一时尚场景中的两张不同面孔",
+      "category": "模型对比",
+      "one_liner": "同一时尚场景提示词，对比 GPT Image 2.6 与 2.5 的面孔差异。",
+      "author": {
+        "name": "SOPHIA🦆",
+        "username": "SOPHIA_AIART",
+        "url": "https://x.com/SOPHIA_AIART"
+      },
+      "source_url": "https://x.com/SOPHIA_AIART/status/2118685698056483227",
+      "published_at_utc": "2026-11-06T12:43:28.000Z",
+      "published_at_shanghai": "2026-11-06 20:43（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用同一提示词对比 GPT Image 2.6 与 2.5 在时尚场景中的面孔变化。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/fashion-face-compare-01.jpg",
+          "width": 906,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/SOPHIA_AIART/status/2118685698056483227"
+        },
+        {
+          "src": "/images/gpt-image-2-6/fashion-face-compare-02.jpg",
+          "width": 906,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/SOPHIA_AIART/status/2118685698056483227"
+        }
+      ]
+    },
+    {
+      "id": "kingfisher-compare",
+      "title": "两种图像模型的翠鸟入水对比",
+      "category": "模型对比",
+      "one_liner": "同一翠鸟入水瞬间，对比 ChatGPT Image 2.6 与 Nano Banana 2.1。",
+      "author": {
+        "name": "Nova",
+        "username": "NovaXCode",
+        "url": "https://x.com/NovaXCode"
+      },
+      "source_url": "https://x.com/NovaXCode/status/2118381855166881928",
+      "published_at_utc": "2026-11-05T16:36:06.000Z",
+      "published_at_shanghai": "2026-11-06 00:36（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "prompt:\n\nAn ultra-photorealistic wildlife photograph capturing the exact split second a vibrant blue-and-orange kingfisher dives vertically into a calm lake to catch a small fish.\n\nIts long, sharp beak has just broken through the water surface, creating a tiny circular splash with delicate water droplets suspended in mid-air.\n\nThe kingfisher's wings are fully extended symmetrically, revealing hundreds of individually detailed feathers. Its reflection is visible beneath the water, slightly distorted by expanding ripples.\n\nWarm golden-hour sunlight illuminates the feathers from behind, creating beautiful translucent feather edges. Dark, creamy green and golden bokeh background.\n\nExtreme wildlife photography, shot on a professional 600mm telephoto lens, incredibly sharp subject, realistic water physics, natural anatomy, precise details, cinematic depth of field.\n\nThe exact instant of impact, not before or after. No illustration, no CGI appearance.\n\nRatio: 1:1",
+        "note": "完整翠鸟入水提示词在作者回复中。",
+        "source_url": "https://x.com/NovaXCode/status/2118383239392075848"
+      },
+      "method": "作者用同一段超写实翠鸟入水提示词，对比 ChatGPT Image 2.6 与 Nano Banana 2.1。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/kingfisher-compare-01.jpg",
+          "width": 1254,
+          "height": 1254,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/NovaXCode/status/2118381855166881928"
+        },
+        {
+          "src": "/images/gpt-image-2-6/kingfisher-compare-02.jpg",
+          "width": 1600,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/NovaXCode/status/2118381855166881928"
+        }
+      ]
+    },
+    {
+      "id": "cafe-portrait-compare",
+      "title": "两种图像模型的咖啡馆人像对比",
+      "category": "模型对比",
+      "one_liner": "咖啡馆人像，对比 Nano Banana Pro 与 ChatGPT Images 2.6。",
+      "author": {
+        "name": "Mr Ash",
+        "username": "ash_twtz",
+        "url": "https://x.com/ash_twtz"
+      },
+      "source_url": "https://x.com/ash_twtz/status/2118332926769480091",
+      "published_at_utc": "2026-11-05T13:21:41.000Z",
+      "published_at_shanghai": "2026-11-05 21:21（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者对比 Nano Banana Pro 与 ChatGPT Images 2.6 的咖啡馆人像。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/cafe-portrait-compare-01.jpg",
+          "width": 898,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/ash_twtz/status/2118332926769480091"
+        },
+        {
+          "src": "/images/gpt-image-2-6/cafe-portrait-compare-02.jpg",
+          "width": 1074,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/ash_twtz/status/2118332926769480091"
+        }
+      ]
+    },
+    {
+      "id": "sunburst-flare-banana",
+      "title": "Sunburst、Flare 与 Nano Banana 2.1 对比",
+      "category": "模型对比",
+      "one_liner": "同一主题对比 Sunburst、Flare 和 Nano Banana 2.1。",
+      "author": {
+        "name": "一地鸡毛",
+        "username": "zhang_baoqing",
+        "url": "https://x.com/zhang_baoqing"
+      },
+      "source_url": "https://x.com/zhang_baoqing/status/2118253466967843107",
+      "published_at_utc": "2026-11-05T08:05:56.000Z",
+      "published_at_shanghai": "2026-11-05 16:05（Asia/Shanghai）",
+      "tools": [
+        "gpt-image-2.6-sunburst",
+        "gpt-image-2.6-flare"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用同一主题对比 gpt-image-2.6-sunburst、gpt-image-2.6-flare 和 Nano Banana 2.1。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/sunburst-flare-banana-01.jpg",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/zhang_baoqing/status/2118253466967843107"
+        },
+        {
+          "src": "/images/gpt-image-2-6/sunburst-flare-banana-02.jpg",
+          "width": 900,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/zhang_baoqing/status/2118253466967843107"
+        },
+        {
+          "src": "/images/gpt-image-2-6/sunburst-flare-banana-03.jpg",
+          "width": 893,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/zhang_baoqing/status/2118253466967843107"
+        }
+      ]
+    },
+    {
+      "id": "salon-landing-compare",
+      "title": "护肤沙龙网页：ChatGPT 与 Gemini 对比",
+      "category": "模型对比",
+      "one_liner": "同一套护肤沙龙落地页，左边 ChatGPT Images 2.6，右边 Gemini Nano Banana 2.1。",
+      "author": {
+        "name": "ヒナキラ┃Codex × ClaudeCode【AI開発中毒】",
+        "username": "hinakira_ai",
+        "url": "https://x.com/hinakira_ai"
+      },
+      "source_url": "https://x.com/hinakira_ai/status/2118213172943577144",
+      "published_at_utc": "2026-11-05T05:25:49.000Z",
+      "published_at_shanghai": "2026-11-05 13:25（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者将同一落地页需求分别交给刚发布的 GPT Image 2.6 和上月的 Gemini Nano Banana 2.1，左右对比。提示词未公开。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/salon-landing-compare-01.jpg",
+          "width": 1218,
+          "height": 340,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/hinakira_ai/status/2118213172943577144"
+        }
+      ]
+    },
+    {
+      "id": "sora-vs-sunburst",
+      "title": "同一人像提示词：Sora 与 GPT-Image-2.6 对比",
+      "category": "模型对比",
+      "one_liner": "同一人像提示词，对比早期 Sora 与 GPT-Image-2.6 Sunburst high。",
+      "author": {
+        "name": "ρ:ɡeon",
+        "username": "pigeon__s",
+        "url": "https://x.com/pigeon__s"
+      },
+      "source_url": "https://x.com/pigeon__s/status/2118157265480122457",
+      "published_at_utc": "2026-11-05T01:43:40.000Z",
+      "published_at_shanghai": "2026-11-05 09:43（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6 / GPT-Image-2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用同一人像提示词对比早期 Sora 和 GPT-Image-2.6-Sunburst-high。完整提示词未在主帖给出。",
+      "notes": null,
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": false,
+      "workflow": [],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/sora-vs-sunburst-01.jpg",
+          "width": 1600,
+          "height": 798,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/pigeon__s/status/2118157265480122457"
+        }
+      ]
+    },
+    {
+      "id": "farm-language-game",
+      "title": "温馨语言学习农场游戏",
+      "category": "混用工作流",
+      "one_liner": "用 GPT-Image-2.6 出游戏美术，再用 Opus 5.5 做成可边玩边学语言的农场游戏。",
+      "author": {
+        "name": "Alex Nguyen",
+        "username": "alexcooldev",
+        "url": "https://x.com/alexcooldev"
+      },
+      "source_url": "https://x.com/alexcooldev/status/2118446768006541800",
+      "published_at_utc": "2026-11-05T20:54:02.000Z",
+      "published_at_shanghai": "2026-11-06 04:54（Asia/Shanghai）",
+      "tools": [
+        "GPT-Image-2.6",
+        "Claude Opus 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者自称整款温馨语言学习农场游戏由 Opus 5.5 与 GPT-Image-2.6 完成，并称 AI 生成的美术质量很高。后续帖称仅发一帖后已有约 3133 人游玩，有人升到 30 级。",
+      "notes": "同一项目后续帖（约 3133 名玩家）作为相关链接，不单列。版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：用 GPT-Image-2.6 生成游戏美术（作者称 AI-generated art 质量很高）。原帖未说明具体生成了哪些界面、角色或场景，也未公开提示词。",
+        "第2步：用 Opus 5.5 把游戏搭起来，做成可边玩边学语言的温馨农场游戏。原帖未说明代码结构、用了什么引擎，以及与 2.6 出图如何对接。"
+      ],
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/alexcooldev/status/2119154946969133308"
+      ],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/farm-language-game-01.jpg",
+          "width": 1200,
+          "height": 655,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/alexcooldev/status/2118446768006541800"
+        }
+      ]
+    },
+    {
+      "id": "gif-to-h3-video",
+      "title": "灰色走廊 GIF 交给 Minimax H3 做成 15 秒视频",
+      "category": "混用工作流",
+      "one_liner": "先用 ChatGPT Images 2.6 做出约 15 秒灰度 GIF 运动草稿，再经 Maestro 交给 Minimax H3 生成带音频的成品视频。",
+      "author": {
+        "name": "cocktail peanut",
+        "username": "cocktailpeanut",
+        "url": "https://x.com/cocktailpeanut"
+      },
+      "source_url": "https://x.com/cocktailpeanut/status/2118408795026043260",
+      "published_at_utc": "2026-11-05T18:23:09.000Z",
+      "published_at_shanghai": "2026-11-06 02:23（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT Images 2.6",
+        "Minimax H3 Singularity",
+        "Maestro"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "Generate a 5-second animated GIF consisting of 10 evenly spaced animation frames. Make it look like a crude gray Blender viewport animation, not cinematic footage. A single continuous shot inside a rectangular hallway with a tiled floor and simple gray walls. The camera slowly advances toward a doorway. A black humanoid mannequin with unusually long arms emerges from behind the doorway. The camera suddenly whips right, falls onto its side, and stops. The mannequin slowly walks toward and past the fallen camera. Maintain consistent 3D geometry, character proportions, doorway placement, and spatial relationships. No cuts, no teleportation, no scene changes, no added props. Focus on exact camera movement, depth, and timing. The animation should play once as a complete sequence, not return to its starting pose.",
+        "note": "此为作者回复中公开的 GPT Image 2.6 / ChatGPT 5 秒灰度 GIF 提示词。Minimax H3 视频提示词见同串 Step 3，已写入 workflow。",
+        "source_url": "https://x.com/cocktailpeanut/status/2118408801812643957"
+      },
+      "method": "作者在主帖写明两步：在 ChatGPT 上做 15 秒 GIF，再经 Maestro 喂给 Minimax H3。线程里拆成更细的三步，并公开了 GIF 与 H3 提示词。左侧是 GIF，右侧是成片。",
+      "notes": "混用工作流，版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：在 ChatGPT（GPT Image 2.6）上先生成一段 5 秒、10 帧、看起来像粗糙灰色 Blender 视口的动画 GIF。提示词已公开，见 prompt 字段。",
+        "第2步：继续让 ChatGPT 尽量延长这段 GIF。作者说模型有时会截断，并从上一份 GIF 的最后一帧另开一段；之后再让 ChatGPT 用内部工具把多段合成一条约 15 秒的 GIF。",
+        "第3步：在 Maestro 里把这条 15 秒 GIF 作为参考视频交给 Minimax H3（作者用的是 Minimax H3 Singularity 4 step、480p）生成带音频的成片。作者注明也可用任何支持参考视频的 AI 视频工具。H3 提示词（原帖公开）：Transform the reference video into Doom 2 style video game recording. a mancubus monster from the video game doom emerges from a doorway and slowly approaches the camera.  The Mancubus is a grotesque, morbidly obese demon with a tusked face whose forearms are completely replaced by massive cybernetic rocket launchers. The camera suddenly jerks to the right, falls to the floor, and lands sideways. The creature approaches, crouches down, reaches toward the lens, and picks up the gun and takes it away, and walks back behind the door, disappearing.. The viewpoint turns smoothly to left, revealing an impossibly enormous pool of lava stretching endlessly into darkness, repetitive pillars, and hell scape, with grotesque hell sound. Everything should feel unsettlingly real, with authentic analog tape noise, imperfect autofocus, natural handheld movement, eerie fluorescent humming, echoing footsteps, and distant water sounds. Preserve the exact camera movements, character actions, spatial relationships, and sequence of events from the reference video in one continuous, uninterrupted shot, with no cuts, dialogue, music, or jump scares."
+      ],
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/cocktailpeanut/status/2118408801812643957",
+        "https://x.com/cocktailpeanut/status/2118408804660625502",
+        "https://x.com/cocktailpeanut/status/2118408807789277628",
+        "https://pinokio.co/posts/01m6pecrkj7adffgtq71ghpzg7",
+        "https://pinokio.co/apps/github-com-blizaine-maestro"
+      ],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/gif-to-h3-video-01.jpg",
+          "width": 960,
+          "height": 480,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/cocktailpeanut/status/2118408795026043260"
+        },
+        {
+          "src": "/images/gpt-image-2-6/gif-to-h3-video-02.jpg",
+          "width": 356,
+          "height": 358,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/cocktailpeanut/status/2118408801812643957"
+        }
+      ]
+    },
+    {
+      "id": "autumn-ny-heroine",
+      "title": "秋日纽约街头行走的女英雄动画",
+      "category": "混用工作流",
+      "one_liner": "用 GPT Image 2.6 做角色与场景参考图，再在 WaveSpeed 上用 Seedance 2.5 按分镜提示词生成约 12 秒视频。",
+      "author": {
+        "name": "Zara",
+        "username": "ZaraIrahh",
+        "url": "https://x.com/ZaraIrahh"
+      },
+      "source_url": "https://x.com/ZaraIrahh/status/2118655272050663653",
+      "published_at_utc": "2026-11-06T10:42:34.000Z",
+      "published_at_shanghai": "2026-11-06 18:42（Asia/Shanghai）",
+      "tools": [
+        "GPT Image 2.6",
+        "Seedance 2.5",
+        "WaveSpeed"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "AUDIO RULE: Natural sound only. No music, no score, no voiceover, no dialogue. Ambient New York city sound and foley only.\n\nCHARACTER LOCK: <<<image_1>>> , exactly as shown in the character sheet in every shot: same face, hair, build, wardrobe, posture and proportions. She carries one folded broadsheet newspaper, the same one in every shot. She never stops, never breaks stride, never looks at the camera, and keeps an unhurried, composed expression. Location: <<<image_2>>> , late-autumn daylight, consistent weather and color grade across all shots.\n\nSHOT 1 (0:00–0:03)\nCamera: Low, locked-off medium shot at table height on a busy sidewalk. Slight tracking left to right as she enters frame.\nAction: <<<image_1>>>  walks past a sidewalk café where a diner's wobbling table sloshes his coffee. Without slowing, she flicks the folded newspaper low and slides it under the short table leg. The table settles and the coffee goes still. The diner looks down, then up, confused and pleased. She is already out of frame.\nSound: Footsteps on pavement, the rattle of a wobbling table, the cup settling, traffic hum, distant chatter.\n\nHARD CUT\n\nSHOT 2 (0:03–0:06)\nCamera: Handheld tracking shot from the front, medium close-up, backing away as she walks toward us.\nAction: A tourist juggling bags knocks his takeaway cup off the rim of a trash bin. As it falls, <<<image_1>>> , still mid-stride, taps the newspaper out in one fluid motion and bats the lid back onto the cup. He catches it and stares at her back as she passes.\nSound: Quick cup tumble, the soft slap of paper on plastic, her steady footsteps, a surprised breath from the man.\n\nHARD CUT\n\nSHOT 3 (0:06–0:09)\nCamera: Wide side-on profile tracking shot, matching her pace, with a crosswalk and yellow taxis behind her.\nAction: A man on a bench is lost in his phone while a pigeon edges toward his sandwich. Without turning her head, <<<image_1>>>  snaps the newspaper once as she passes. The pigeon flaps off and the sandwich is saved. The man looks up, bewildered, with no idea who helped.\nSound: A sharp crack of newsprint, wing flutter, honking taxis, a street vendor's cart rattling.\n\nHARD CUT\n\nSHOT 4 (0:09–0:12)\nCamera: Slow wide shot from behind, centered on her small figure as she walks away down the long avenue.\nAction: <<<image_1>>>  tucks the newspaper under her arm and keeps walking at the same unhurried pace. Behind her, the people she helped each carry on with their day, lighter and smiling. She never looks back and disappears into the crowd and morning light.\nSound: Footsteps fading into the city ambience, distant traffic, a faint laugh, the soft rustle of newsprint under her arm.\n\nAVOID: music, dialogue, text overlays, slow motion, camera looks, character design drift, changes to her outfit or the newspaper between shots.",
+        "note": "公开的是 Seedance 2.5 视频提示词，其中 <<<image_1>>>、<<<image_2>>> 为 GPT Image 2.6 出的角色设定与地点参考。2.6 静帧提示词原帖未公开。",
+        "source_url": "https://x.com/ZaraIrahh/status/2118655272050663653"
+      },
+      "method": "作者写明用 GPT Image 2.6 + Seedance 2.5（在 WaveSpeed 上）创作。正文公开了带角色锁定、地点锁定和四个镜头的视频提示词。",
+      "notes": "混用工作流，版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：用 GPT Image 2.6 生成角色设定图（提示词中的 <<<image_1>>>）和地点参考图（<<<image_2>>>，秋日纽约街头）。原帖未公开这两张静帧的提示词，也未单独放出静帧文件。",
+        "第2步：在 WaveSpeed 上用 Seedance 2.5，以这两张图做角色锁定和场景锁定，按公开的四镜视频提示词生成约 12 秒、只有环境声的成片。"
+      ],
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/wavespeed_ai/status/2118532954024775990"
+      ],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/autumn-ny-heroine-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ZaraIrahh/status/2118655272050663653"
+        }
+      ]
+    },
+    {
+      "id": "watercolor-flipbook",
+      "title": "东京街景水彩翻页动画",
+      "category": "混用工作流",
+      "one_liner": "以日本旅行照片为素材，用 Claude Opus 5.5 和 GPT Images 2.6 做成水彩翻页动画书。",
+      "author": {
+        "name": "Ann Nguyen",
+        "username": "ann_nnng",
+        "url": "https://x.com/ann_nnng"
+      },
+      "source_url": "https://x.com/ann_nnng/status/2118332327902470228",
+      "published_at_utc": "2026-11-05T13:19:18.000Z",
+      "published_at_shanghai": "2026-11-05 21:19（Asia/Shanghai）",
+      "tools": [
+        "GPT Images 2.6",
+        "Claude Opus 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者写明用自己的日本旅行照片，以 Claude Opus 5.5 和 GPT Images 2.6 做成水彩翻页动画，并给出可交互作品链接。",
+      "notes": "混用工作流，版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：以作者自己的日本旅行照片作为素材。",
+        "第2步：用 GPT Images 2.6 与 Claude Opus 5.5 做成水彩风格的动画翻页书。原帖未说明二者如何分工（例如哪一步出水彩图、哪一步用代码做翻页），也未公开提示词。作者回复给出可交互作品：https://www.bubbbly.com/japan-sketchbook 。该页介绍文字写有“用代码一笔笔重绘并装订成螺旋日历”，但原帖本身未把这句话对应到某一个模型。"
+      ],
+      "live_demo_url": "https://www.bubbbly.com/japan-sketchbook",
+      "related_urls": [
+        "https://x.com/ann_nnng/status/2118332434043527223"
+      ],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/watercolor-flipbook-01.jpg",
+          "width": 1200,
+          "height": 961,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ann_nnng/status/2118332327902470228"
+        }
+      ]
+    },
+    {
+      "id": "paper-collage-animation",
+      "title": "纸张拼贴太阳与飞鸟动画",
+      "category": "混用工作流",
+      "one_liner": "经 fal 用 GPT Image 2.6 生成绘画和纸张纹理，再用 Claude Opus 5.5 写代码完成全部运动。",
+      "author": {
+        "name": "Kevin Ngo",
+        "username": "kevin_t_ngo",
+        "url": "https://x.com/kevin_t_ngo"
+      },
+      "source_url": "https://x.com/kevin_t_ngo/status/2119436039488156158",
+      "published_at_utc": "2026-11-08T14:25:03.000Z",
+      "published_at_shanghai": "2026-11-08 22:25（Asia/Shanghai）",
+      "tools": [
+        "GPT Image 2.6",
+        "fal",
+        "Claude Opus 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者分三行写明：动画由 Claude Opus 5.5 完成；绘画和纸张纹理经 fal 用 GPT Image 2.6 生成；全部运动用代码写成。",
+      "notes": "混用工作流，版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：经 fal 调用 GPT Image 2.6，生成绘画和纸张纹理。原帖未公开提示词，也未单独展示静帧素材。",
+        "第2步：用 Claude Opus 5.5 写代码，完成全部运动/动画。原帖未说明所用语言、库或具体动画实现。"
+      ],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/paper-collage-animation-01.jpg",
+          "width": 1080,
+          "height": 1080,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/kevin_t_ngo/status/2119436039488156158"
+        }
+      ]
+    },
+    {
+      "id": "midnight-cooks-arcade",
+      "title": "《真夜中の料理人》90 年代街机格斗游戏",
+      "category": "混用工作流",
+      "one_liner": "用 GPT Image 2.6 生成全部精灵、立绘、场景和特效，再用 Claude Opus 5.5 做成街机格斗游戏。",
+      "author": {
+        "name": "Skye Vale",
+        "username": "skyevale_",
+        "url": "https://x.com/skyevale_"
+      },
+      "source_url": "https://x.com/skyevale_/status/2119799396712022213",
+      "published_at_utc": "2026-11-09T14:28:54.000Z",
+      "published_at_shanghai": "2026-11-09 22:28（Asia/Shanghai）",
+      "tools": [
+        "GPT Image 2.6 / ChatGPT Images 2.6",
+        "Claude Opus 5.5",
+        "NolviaAI"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者写明：因 ChatGPT Images 2.6 能做 GIF，把自己的动画系列做成 90 年代街机格斗游戏；所有精灵、立绘、场景和特效来自 GPT Image 2.6；游戏由 Claude Opus 5.5 搭建；可在 NolviaAI 试玩。",
+      "notes": "混用工作流，版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：用 GPT Image 2.6 生成游戏里的每一个精灵、立绘、场景和特效（作者特别提到 2.6 现已能做 GIF）。原帖未公开提示词，也未说明资源规格。",
+        "第2步：用 Claude Opus 5.5 把这些素材做成 90 年代街机格斗游戏《MIDNIGHT COOKS · 真夜中の料理人》。原帖未说明引擎或代码细节。",
+        "第3步：作者写明可在 @NolviaAI 试玩，但原帖未给出完整网址。"
+      ],
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/NolviaAI"
+      ],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/midnight-cooks-arcade-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/skyevale_/status/2119799396712022213"
+        }
+      ]
+    },
+    {
+      "id": "biscuit-corgi-minigame",
+      "title": "柯基 Biscuit 躲避扫地机器人小游戏",
+      "category": "混用工作流",
+      "one_liner": "在 Picsart 上用 GPT Image 2.6 Flare 生成柯基 Biscuit 的每一帧，再做成躲避扫地机器人和洗澡的小游戏。",
+      "author": {
+        "name": "Picsart",
+        "username": "Picsart",
+        "url": "https://x.com/Picsart"
+      },
+      "source_url": "https://x.com/Picsart/status/2118229989632192887",
+      "published_at_utc": "2026-11-05T06:32:38.000Z",
+      "published_at_shanghai": "2026-11-05 14:32（Asia/Shanghai）",
+      "tools": [
+        "GPT Image 2.6 Flare",
+        "Picsart"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "Picsart 官方帖写明：做了一款柯基 Biscuit 躲避扫地机器人和洗澡时间的小游戏；Biscuit 的每一帧都在 Picsart 上用 GPT Image 2.6 Flare 生成。",
+      "notes": "混用工作流，版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：在 Picsart 上用 GPT Image 2.6 Flare 生成柯基 Biscuit 的每一帧。原帖未公开提示词，也未说明帧数。",
+        "第2步：做成躲避扫地机器人与洗澡时间的小游戏。原帖未说明小游戏如何封装、用了什么引擎或工具。"
+      ],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/biscuit-corgi-minigame-01.jpg",
+          "width": 1200,
+          "height": 900,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Picsart/status/2118229989632192887"
+        }
+      ]
+    },
+    {
+      "id": "tusk-codex-pet",
+      "title": "JoJo Tusk Act 1 的 Codex pet",
+      "category": "混用工作流",
+      "one_liner": "在 Krea 里用 GPT-Image-2.6 生成 Tusk Act 1 形象，再用 Claude Opus 5.5 做成可提交到 Codex pets 仓库的项目。",
+      "author": {
+        "name": "meem",
+        "username": "s_shinobi11",
+        "url": "https://x.com/s_shinobi11"
+      },
+      "source_url": "https://x.com/s_shinobi11/status/2119141346837422221",
+      "published_at_utc": "2026-11-07T18:54:03.000Z",
+      "published_at_shanghai": "2026-11-08 02:54（Asia/Shanghai）",
+      "tools": [
+        "GPT-Image-2.6",
+        "Krea",
+        "Claude Opus 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者写明在测试 GPT-Image-2.6 时，生成了 JoJo《Steel Ball Run》Tusk Act 1 的 Codex pet，并用 Claude Opus 5.5 + GPT-Image-2.6（在 Krea 内）完成，还向 Codex pets 仓库提了 PR。",
+      "notes": "混用工作流，版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：在 Krea 里用 GPT-Image-2.6 生成 JoJo《Steel Ball Run》中 Tusk Act 1 的 Codex pet 形象。原帖未公开提示词。",
+        "第2步：用 Claude Opus 5.5 做成可贡献到 Codex pets 仓库的项目，并提交了 PR。原帖未说明代码与出图如何对接，也未给出 PR 链接。"
+      ],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/tusk-codex-pet-01.jpg",
+          "width": 1200,
+          "height": 684,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/s_shinobi11/status/2119141346837422221"
+        }
+      ]
+    },
+    {
+      "id": "elle-music-video",
+      "title": "歌词、出图、视频、配乐到剪辑的混用预告片",
+      "category": "混用工作流",
+      "one_liner": "ChatGPT 写词，GPT Image 2.6 出图，MiniMax H3 Max 与 Seedance 2.5 做视频，Suno 配乐，Opus 5.5 剪辑。",
+      "author": {
+        "name": "乃々のえる",
+        "username": "elle_elle_e",
+        "url": "https://x.com/elle_elle_e"
+      },
+      "source_url": "https://x.com/elle_elle_e/status/2119396374810894442",
+      "published_at_utc": "2026-11-08T11:47:26.000Z",
+      "published_at_shanghai": "2026-11-08 19:47（Asia/Shanghai）",
+      "tools": [
+        "ChatGPT",
+        "GPT Image 2.6",
+        "MiniMax H3 Max",
+        "Seedance 2.5",
+        "TapNow",
+        "Suno v5.5",
+        "Claude Opus 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者逐项列出工具：歌词 ChatGPT，图像 GPT Image 2.6，视频 MiniMax H3 Max 与 Seedance 2.5（经 TapNow），音乐 Suno v5.5，编辑 Claude Opus 5.5。并说仍在尝试适合自己的方法。",
+      "notes": "混用工作流，版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：用 ChatGPT 写歌词。",
+        "第2步：用 GPT Image 2.6 出图。原帖未公开提示词，也未单独展示静帧。",
+        "第3步：用 MiniMax H3 Max 与 Seedance 2.5（经 @TapNow_AI）生成视频。原帖未说明两款视频模型如何分工，以及 2.6 的图如何作为参考。",
+        "第4步：用 Suno v5.5 生成音乐。",
+        "第5步：用 Claude Opus 5.5 做编辑/剪辑。原帖未说明具体剪辑步骤。"
+      ],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/elle-music-video-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/elle_elle_e/status/2119396374810894442"
+        }
+      ]
+    },
+    {
+      "id": "tanzil-opus-combo",
+      "title": "Opus 5.5 与 GPT Image 2.6 组合演示",
+      "category": "混用工作流",
+      "one_liner": "作者放出成片视频，并写明使用 Opus 5.5 + GPT Image 2.6，但未说明二者如何分工。",
+      "author": {
+        "name": "Tanzil Chowdhury",
+        "username": "iamtanzil_",
+        "url": "https://x.com/iamtanzil_"
+      },
+      "source_url": "https://x.com/iamtanzil_/status/2119025354396590337",
+      "published_at_utc": "2026-11-07T11:13:08.000Z",
+      "published_at_shanghai": "2026-11-07 19:13（Asia/Shanghai）",
+      "tools": [
+        "Claude Opus 5.5",
+        "GPT Image 2.6"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "原帖正文只有「Opus 5.5 + GPT Image 2.6」，并附视频。引用了 OpenAI 发布帖。",
+      "notes": "混用工作流，但步骤交代较简略，已按原帖如实记录。版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "原帖仅写明使用 Opus 5.5 + GPT Image 2.6，并附效果视频。未说明第几步用哪个工具、出图还是写代码，也未公开提示词。"
+      ],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/tanzil-opus-combo-01.jpg",
+          "width": 1200,
+          "height": 900,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/iamtanzil_/status/2119025354396590337"
+        }
+      ]
+    },
+    {
+      "id": "wedding-album-video",
+      "title": "婚纱照相册做成短视频",
+      "category": "混用工作流",
+      "one_liner": "作者称先测 GPT Image 2.6 的画面，再用 Claude、Grok 和 Sumi Studio MCP 把婚纱照相册做成短视频。",
+      "author": {
+        "name": "T 1 to 9",
+        "username": "NguynTu135869",
+        "url": "https://x.com/NguynTu135869"
+      },
+      "source_url": "https://x.com/NguynTu135869/status/2118598264266354693",
+      "published_at_utc": "2026-11-06T06:56:02.000Z",
+      "published_at_shanghai": "2026-11-06 14:56（Asia/Shanghai）",
+      "tools": [
+        "GPT Image 2.6",
+        "Claude",
+        "Grok",
+        "Sumi Studio MCP"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "中英双语原帖：随着 GPT Image 2.6 发布，先测试了它的画面表现，又用婚纱照相册做成视频；借助 Claude + Grok 和 Sumi Studio，为一对新人的婚纱照制作了一支短视频。",
+      "notes": "混用工作流。2.6 与成片素材的关系原帖写得较简略，已按原文如实记录。版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：用 GPT Image 2.6 测试画面表现。原帖未说明是否用 2.6 生成或编辑了婚纱照本身，也未公开提示词。",
+        "第2步：用 Claude、Grok 和 Sumi Studio MCP，把婚纱照相册做成短视频。原帖未说明这三个工具各自做了哪一段。"
+      ],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/wedding-album-video-01.jpg",
+          "width": 675,
+          "height": 1200,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/NguynTu135869/status/2118598264266354693"
+        }
+      ]
+    },
+    {
+      "id": "vox-codex-page-redesign",
+      "title": "Codex 里先用 Images 2.6 重想页面再交给 Sol/Astra 实现",
+      "category": "混用工作流",
+      "one_liner": "在 Codex 内先用 Images 2.6 重新构想页面视觉，再用 Sol 或 Astra 把设计实现出来。",
+      "author": {
+        "name": "Vox",
+        "username": "Voxyz_ai",
+        "url": "https://x.com/Voxyz_ai"
+      },
+      "source_url": "https://x.com/Voxyz_ai/status/2118327475294097710",
+      "published_at_utc": "2026-11-05T13:00:01.000Z",
+      "published_at_shanghai": "2026-11-05 21:00（Asia/Shanghai）",
+      "tools": [
+        "Codex",
+        "ChatGPT Images 2.6",
+        "Sol",
+        "Astra",
+        "Claude Code / Opus 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "Use imagegen to reimagine this page, then implement it.",
+        "note": "作者公开的是给 Codex / Sol / Astra 的工作流指令，不是一张具体页面的完整出图提示词。",
+        "source_url": "https://x.com/Voxyz_ai/status/2118327475294097710"
+      },
+      "method": "作者建议在已内置 Images 2.6 的 Codex 里先出视觉，再让 Sol 或 Astra 实现。也提到若只用 Claude Code，可让 Opus 5.5 通过 codex exec 或直接调 API 出图。配图为方法示例截图。",
+      "notes": "混用工作流，版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：在已内置 Images 2.6 的 Codex 中，用 imagegen 先重新构想页面视觉（作者示例指令：Use imagegen to reimagine this page, then implement it.）。",
+        "第2步：再用 Sol 或 Astra 把这些视觉实现成页面。作者称不少 3D 游戏场景、角色和动画帖也是同一思路。",
+        "可选路径：若只用 Claude Code，可让 Opus 5.5 通过 codex exec 调用 Codex 出图，或直接调用 API。原帖未说明配图截图对应哪一个具体页面项目。"
+      ],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/vox-codex-page-redesign-01.jpg",
+          "width": 1200,
+          "height": 533,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/Voxyz_ai/status/2118327475294097710"
+        }
+      ]
+    },
+    {
+      "id": "night-shift-kling",
+      "title": "最后一晚夜班短片（2.6 + Kling 4.0）",
+      "category": "混用工作流",
+      "one_liner": "在 Pollo AI 里用 GPT Image 2.6 和 Kling 4.0 做成「最后一晚夜班」短片。",
+      "author": {
+        "name": "Talinka",
+        "username": "talinkacreator",
+        "url": "https://x.com/talinkacreator"
+      },
+      "source_url": "https://x.com/talinkacreator/status/2118791921661358472",
+      "published_at_utc": "2026-11-06T19:45:34.000Z",
+      "published_at_shanghai": "2026-11-07 03:45（Asia/Shanghai）",
+      "tools": [
+        "GPT Image 2.6",
+        "Kling 4.0",
+        "Pollo AI"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者写明在 Pollo AI 中使用 GPT Image 2.6 和 Kling 4.0 创作。主题是她的最后一晚夜班、新技术让人有时间去生活。",
+      "notes": "混用工作流，版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "作者写明在 Pollo AI 中使用 GPT Image 2.6 和 Kling 4.0 创作该短片。原帖未说明先用 2.6 出哪些图、再如何交给 Kling 做视频，也未公开提示词。"
+      ],
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/itsPolloAI"
+      ],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/night-shift-kling-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/talinkacreator/status/2118791921661358472"
+        }
+      ]
+    },
+    {
+      "id": "scapigliata-lunch",
+      "title": "名画走出画框去吃午餐（2.6 + Kling 4.0 Flash）",
+      "category": "混用工作流",
+      "one_liner": "在 Pollo AI 里用 GPT Image 2.6 和 Kling 4.0 Flash，让达芬奇《La Scapigliata》走出画框去吃意大利香肠。",
+      "author": {
+        "name": "Talinka",
+        "username": "talinkacreator",
+        "url": "https://x.com/talinkacreator"
+      },
+      "source_url": "https://x.com/talinkacreator/status/2119964474438513048",
+      "published_at_utc": "2026-11-10T01:24:52.000Z",
+      "published_at_shanghai": "2026-11-10 09:24（Asia/Shanghai）",
+      "tools": [
+        "GPT Image 2.6",
+        "Kling 4.0 Flash",
+        "Pollo AI"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者写明在 Pollo AI 中用 GPT Image 2.6 和 Kling 4.0 Flash 创作，并同时放出视频与静帧。",
+      "notes": "混用工作流，版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "作者写明在 Pollo AI 中用 GPT Image 2.6 和 Kling 4.0 Flash 创作。原帖未说明 2.6 负责哪些静帧或编辑、Kling 如何做图生视频，也未公开提示词。"
+      ],
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/itsPolloAI"
+      ],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/scapigliata-lunch-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/talinkacreator/status/2119964474438513048"
+        },
+        {
+          "src": "/images/gpt-image-2-6/scapigliata-lunch-02.jpg",
+          "width": 1280,
+          "height": 724,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/talinkacreator/status/2119964474438513048"
+        },
+        {
+          "src": "/images/gpt-image-2-6/scapigliata-lunch-03.jpg",
+          "width": 1600,
+          "height": 900,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/talinkacreator/status/2119964474438513048"
+        }
+      ]
+    },
+    {
+      "id": "bubblegum-kling",
+      "title": "吹泡泡 GIF 再交给 Kling 4.0 做第十帧视频",
+      "category": "混用工作流",
+      "one_liner": "先用 GPT Image 2.6 Sunburst 做 9 帧循环 GIF，再用 2.6 锐化首帧，交给 Kling 4.0 做 10 秒有声视频。",
+      "author": {
+        "name": "Morphed",
+        "username": "morphedai",
+        "url": "https://x.com/morphedai"
+      },
+      "source_url": "https://x.com/morphedai/status/2118424648438432011",
+      "published_at_utc": "2026-11-05T19:26:09.000Z",
+      "published_at_shanghai": "2026-11-06 03:26（Asia/Shanghai）",
+      "tools": [
+        "GPT Image 2.6 Sunburst",
+        "Kling 4.0",
+        "Kling 4.0 Flash",
+        "Morphed"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "A seamless looping animated GIF. Young Scandinavian woman, 22, platinum blonde bob, freckles, hot pink oversized puffer jacket, on a flat saturated cobalt blue studio wall and floor. Medium shot. She blows a huge bubblegum bubble, it pops on her face, it resets, forever, her eyes bored and looking straight at the camera. Bold, bright, crisp photographic look, hard studio light, no text, no logos.",
+        "note": "此为作者回复中公开的 GPT Image 2.6 Sunburst GIF 提示词（9 帧、24 credits）。Kling 4.0 视频提示词见同串，已写入 workflow。",
+        "source_url": "https://x.com/morphedai/status/2118424987833094244"
+      },
+      "method": "Morphed 官方演示：GIF 只有 9 帧，她还想要第十帧。线程写明用 2.6 Sunburst 出 GIF，再把首帧用 2.6 编辑锐化后交给 Kling 4.0 做 10 秒 1080p 有声视频，并对比了 Flash 与 4.0。",
+      "notes": "混用工作流，版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "第1步：在 Morphed 上用 GPT Image 2.6 Sunburst 生成 9 帧循环 GIF（作者称 24 credits、一条提示词）。GIF 提示词已公开，见 prompt 字段。",
+        "第2步：取该 GIF 的第一帧，再用 GPT Image 2.6 做一次编辑锐化，作为后续视频的起始帧。原帖未公开这次编辑的提示词。",
+        "第3步：用 Kling 4.0 做 image-to-video（1080p、10 秒、含声音、460 credits）。作者称同一帧、同一提示词也跑过 Kling 4.0 Flash（92 秒、190 credits、720p）作对比。Kling 提示词（原帖公开）：[STYLE + CAMERA + ATMOSPHERE] Bright, saturated commercial film look, crisp detail, hard studio light. One continuous camera move, single unbroken take, no cuts. Audio: wet rubbery stretching creak of bubblegum, a rising squeak as it swells, wind rushing in, a distant sunny city, her muffled laugh. No music. [TIMELINE SECOND BY SECOND] 0-2s: [Close, centered] She holds the small pink bubble at her lips, eyes on the camera, and raises one eyebrow. 2-5s: [Slow pull back] She keeps blowing. The bubble swells past her face, bigger than her head, bigger than her jacket, glossy and stretched thin. It does not pop. 5-7s: [Continuous crane up] The giant bubble lifts her off the floor. The cobalt blue wall behind her tears open like paper and bright daylight pours in. 7-10s: [Continuous crane up, wide] She floats out through the tear, both hands on the giant pink bubble, over sunny colourful rooftops, legs kicking, laughing. [QUALITY] Photorealistic, coherent physics on hair, jacket and gum, stable character identity, no text, no logos."
+      ],
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/morphedai/status/2118424987833094244",
+        "https://x.com/morphedai/status/2118425107333001536",
+        "https://morphed.app/models/gpt-image-2.6-sunburst-gif",
+        "https://morphed.app/models/kling-4"
+      ],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/bubblegum-kling-01.jpg",
+          "width": 1080,
+          "height": 1080,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/morphedai/status/2118424648438432011"
+        },
+        {
+          "src": "/images/gpt-image-2-6/bubblegum-kling-02.jpg",
+          "width": 512,
+          "height": 512,
+          "media_type": "gif_preview",
+          "original_post_url": "https://x.com/morphedai/status/2118424987833094244"
+        }
+      ]
+    },
+    {
+      "id": "hum-music-video",
+      "title": "音乐视频 Hum 的多模型工具栈",
+      "category": "混用工作流",
+      "one_liner": "制作音乐视频 Hum 时同时用到 Codex、GPT Terra 6.1、GPT Image 2.6、Veo 3.1 Fast、Tesseract，以及 Suno 与 Grok Bot 做音乐。",
+      "author": {
+        "name": "Auny 🧡",
+        "username": "AunySillyMe",
+        "url": "https://x.com/AunySillyMe"
+      },
+      "source_url": "https://x.com/AunySillyMe/status/2119082697402532162",
+      "published_at_utc": "2026-11-07T15:01:00.000Z",
+      "published_at_shanghai": "2026-11-07 23:01（Asia/Shanghai）",
+      "tools": [
+        "Codex",
+        "GPT Terra 6.1",
+        "GPT Image 2.6",
+        "Google Flow Veo 3.1 Fast",
+        "Tesseract (GPT plugin)",
+        "Suno",
+        "Grok Bot"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者在「让 AI 更好地做音乐视频」系列第 4 部分列出完整工具栈，并放出专辑 Flatline 中 Hum 的成片。",
+      "notes": "混用工作流，步骤仅为工具清单，已按原帖如实记录。版权归原作者。",
+      "model": "GPT Image 2.6 / ChatGPT Images 2.6",
+      "model_attribution": "author_claimed",
+      "mixed": true,
+      "workflow": [
+        "原帖列出制作音乐视频 Hum（专辑 Flatline）的工具栈：Codex、GPT Terra 6.1、GPT Image 2.6、Google Flow Veo 3.1 Fast、Tesseract（GPT 插件），以及 Suno 与 Grok Bot 做音乐。原帖未说明各工具的先后步骤，也未说明 2.6 出的图如何交给 Veo，未公开提示词。"
+      ],
+      "live_demo_url": null,
+      "related_urls": [],
+      "featured_by_url": null,
+      "images": [
+        {
+          "src": "/images/gpt-image-2-6/hum-music-video-01.jpg",
+          "width": 675,
+          "height": 1200,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/AunySillyMe/status/2119082697402532162"
+        }
+      ]
+    }
+  ]
+}
