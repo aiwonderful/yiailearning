@@ -62,6 +62,10 @@ export async function getPostBySlug(slug: string) {
     const { data, content } = matter(fileContents);
     const postMeta = normalizePostMeta(data as PostMeta, content);
 
+    if (!isPublishedPost(postMeta)) {
+      throw new PostError(`Post not found: ${slug}`, 'not_found', { slug });
+    }
+
     const processedContentRemark = await remark()
       .use(html)
       .use(toc, { heading: '目录', maxDepth: 2 })

@@ -73,5 +73,5 @@ export const siteConfig = {
   },
 
   // Copyright text
-  copyright: `© ${new Date().getFullYear()} Yi Learning Blog. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} 小亦的 AI 学习实验室`,
 };

@@ -1,7 +1,23 @@
+import type { Metadata } from 'next';
 import { getAllPosts } from '../../lib/posts';
 import SearchablePosts from './SearchablePosts';
 import PageTitle from '../../components/PageTitle';
 import React, { Suspense } from 'react';
+import { siteConfig } from '@/lib/config';
+
+const title = '博客文章';
+const description = '这里集中放所有已经整理好的文章，方便继续补充、筛选和回看。';
+
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: { canonical: `${siteConfig.url}/posts` },
+  openGraph: {
+    title: `${title} | ${siteConfig.title}`,
+    description,
+    url: `${siteConfig.url}/posts`,
+  },
+};
 
 export default async function BlogIndexPage() {
   const posts = await getAllPosts();

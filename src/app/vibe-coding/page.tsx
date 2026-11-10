@@ -2,10 +2,20 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageTitle from '@/components/PageTitle';
 import ShengcaiInviteCard from '@/components/ShengcaiInviteCard';
+import { siteConfig } from '@/lib/config';
+
+const title = '我的作品';
+const description = '小亦用 AI 辅助开发并持续迭代的真实网站、微信小程序与开源项目。';
 
 export const metadata: Metadata = {
-  title: '我的作品',
-  description: '小亦用 AI 辅助开发并持续迭代的真实网站、微信小程序与开源项目。',
+  title,
+  description,
+  alternates: { canonical: `${siteConfig.url}/vibe-coding` },
+  openGraph: {
+    title: `${title} | ${siteConfig.title}`,
+    description,
+    url: `${siteConfig.url}/vibe-coding`,
+  },
 };
 
 const websites = [
@@ -84,7 +94,7 @@ export default function VibeCodingPage() {
           <div className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-[#9C563F]">
             Built By Xiaoyi
           </div>
-          <PageTitle>我的作品</PageTitle>
+          <PageTitle className="text-[#20242A]">我的作品</PageTitle>
           <p className="-mt-4 text-lg leading-8 text-secondary">
             这里放我用 AI 辅助开发、部署并持续迭代的真实项目。它们不是概念展示，而是已经上线、上架或公开可访问的作品。
           </p>
@@ -199,8 +209,8 @@ export default function VibeCodingPage() {
 
       <section>
         <div className="mb-7 max-w-2xl">
-          <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#4D6254]">More Websites</div>
-          <h2 className="mt-3 font-serif text-3xl font-black text-[#20242A]">其他已上线的网站</h2>
+          <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#4D6254] dark:text-[#C9D7CC]">More Websites</div>
+          <h2 className="mt-3 font-serif text-3xl font-black text-text-main-light dark:text-text-main-dark">其他已上线的网站</h2>
         </div>
         <div className="grid gap-5 md:grid-cols-2">
           {otherSites.map((site, index) => (
@@ -211,10 +221,10 @@ export default function VibeCodingPage() {
                   <h3 className="text-xl font-bold text-primary">{site.title}</h3>
                   <p className="mt-2 break-all text-sm font-semibold text-[#9C563F]">{site.domain}</p>
                 </div>
-                <p className="mt-4 leading-7 text-secondary">{site.description}</p>
+                <p className="mt-4 leading-7 text-secondary dark:text-muted">{site.description}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {site.tags.map((tag) => (
-                    <span key={tag} className="rounded-full bg-[#7D8F81]/12 px-3 py-1 text-xs font-semibold text-[#4D6254]">
+                    <span key={tag} className="rounded-full bg-[#7D8F81]/12 px-3 py-1 text-xs font-semibold text-[#4D6254] dark:bg-white/10 dark:text-[#D7E4DA]">
                       {tag}
                     </span>
                   ))}
@@ -270,11 +280,11 @@ export default function VibeCodingPage() {
         </div>
       </section>
 
-      <section className="rounded-[1.75rem] border border-[#7D8F81]/20 bg-[#7D8F81]/8 p-7 md:p-10">
+      <section className="rounded-[1.75rem] border border-subtle/70 bg-card-light p-7 shadow-soft dark:border-white/10 dark:bg-card-dark md:p-10">
         <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
           <div>
-            <h2 className="font-serif text-3xl font-black text-[#20242A]">开发过程也会写进这里</h2>
-            <p className="mt-4 max-w-3xl leading-8 text-[#59616B]">
+            <h2 className="font-serif text-3xl font-black text-text-main-light dark:text-text-main-dark">开发过程也会写进这里</h2>
+            <p className="mt-4 max-w-3xl leading-8 text-secondary dark:text-muted">
               除了成品，我也会记录用 Codex、AI 工具和部署服务把一个想法变成网站的过程、卡点和复盘。
             </p>
           </div>

@@ -1,6 +1,21 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { siteConfig } from '@/lib/config';
 import WeChatSubscribeCard from '@/components/WeChatSubscribeCard';
+
+const title = '关于';
+const description = siteConfig.author.description;
+
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: { canonical: `${siteConfig.url}/about` },
+  openGraph: {
+    title: `${title} | ${siteConfig.title}`,
+    description,
+    url: `${siteConfig.url}/about`,
+  },
+};
 
 export default function AboutPage() {
   const sections = [

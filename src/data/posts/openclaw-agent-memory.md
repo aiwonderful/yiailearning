@@ -8,14 +8,8 @@ tags:
   - 翻译
 slug: openclaw-agent-memory
 draft: false
-summary: >-
-  原文作者：Shubham Saboo 原文链接：https://x.com/saboo shubham
-  /status/2033026472856952849 大多数 AI Agent 在 Session 结束的那一刻就会忘记一切。 我在一台 Mac Mini
-  上运行 6 个 A...
-excerpt: >-
-  原文作者：Shubham Saboo 原文链接：https://x.com/saboo shubham
-  /status/2033026472856952849 大多数 AI Agent 在 Session 结束的那一刻就会忘记一切。 我在一台 Mac Mini
-  上运行 6 个 A...
+summary: '大多数 AI Agent 在 Session 结束的那一刻就会忘记一切。记忆不在 Agent 里，而在它周围的文件里。'
+excerpt: '大多数 AI Agent 在 Session 结束的那一刻就会忘记一切。记忆不在 Agent 里，而在它周围的文件里。'
 ---
 原文作者：Shubham Saboo
 原文链接：https://x.com/saboo_shubham_/status/2033026472856952849

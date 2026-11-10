@@ -19,6 +19,7 @@ export function generateMetadata({ params }: CasePageProps): Metadata {
     title: item.title,
     description: item.summary,
     alternates: { canonical: `/ai-money/${item.slug}` },
+    openGraph: { url: `/ai-money/${item.slug}` },
   };
 }
 
