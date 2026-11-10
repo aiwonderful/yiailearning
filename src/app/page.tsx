@@ -232,6 +232,18 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <Link href="/fable-5-2-cases" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] shadow-soft md:p-10">
+        <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]">
+          <span>新专题 · Claude Fable 5.2</span>
+          <span>54 个案例 / 7 个分类</span>
+        </div>
+        <h2 className="mt-5 font-serif text-2xl font-black leading-relaxed md:text-3xl">先看效果图，再打开那个案例。</h2>
+        <p className="mt-4 max-w-3xl text-base leading-8 text-[#d4d9cc]">
+          官方科研、三维与 Blender、可玩原型、动态设计和落地页。每条署名作者并链回原帖，工具和公开提示词按原帖标注。
+        </p>
+        <span className="mt-6 inline-block border-b border-[#d6b47b] pb-1 text-base text-[#e9bf78]">打开 Claude Fable 5.2 案例合集 →</span>
+      </Link>
+
       <section className="grid gap-10 lg:grid-cols-[0.36fr_1fr]">
         <div className="lg:sticky lg:top-24 lg:self-start">
           <div className="text-sm font-semibold uppercase tracking-[0.18em] text-[#4D6254]">Focus Areas</div>
