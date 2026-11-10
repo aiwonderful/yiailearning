@@ -1,0 +1,2094 @@
+{
+  "title": "Claude Fable 5.2 案例合集",
+  "collected_at": "2026-11-10",
+  "count": 54,
+  "official_page": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+  "official_launch_post": "https://x.com/claudeai/status/2119867114450268322",
+  "categories": [
+    "官方科研与工程",
+    "Three.js / 3D / Blender",
+    "游戏与可玩交互",
+    "动态设计与代码动画",
+    "设计与界面",
+    "解释与教学",
+    "应用与系统"
+  ],
+  "cases": [
+    {
+      "id": "official-os",
+      "title": "从空文件夹做出可在笔记本启动的操作系统",
+      "category": "官方科研与工程",
+      "one_liner": "一名 Anthropic 工程师让 Fable 5.2 从空文件夹起步，调度超过 1000 个子代理连续工作 8 天，写出可在笔记本电脑启动的原型操作系统。",
+      "author": {
+        "name": "Anthropic 官方博客",
+        "username": null,
+        "url": "https://www.anthropic.com/"
+      },
+      "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "published_at_utc": "2026-11-09T18:57:59.000Z",
+      "published_at_shanghai": "2026-11-10 02:57（Asia/Shanghai）",
+      "tools": [
+        "多智能体编程（官方未公开具体栈）"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。官方只写任务是设计一套原型操作系统，从空文件夹开始。"
+      },
+      "method": "官方博客称，一名工程师把任务交给 Fable 5.2：从空文件夹设计原型操作系统。模型调度 1000 多个子代理昼夜连续写代码、测试和审阅，共 8 天，最终得到可在笔记本启动的系统，包含内核、磁盘/键盘/网络驱动、持久文件存储、窗口、登录界面、安装程序，以及内置的 Claude 功能。该演示没有出现在 @claudeai 的 X 发布串里，效果图来自官网文章海报。制作提示词未公开。",
+      "notes": "官网海报是笔记本屏幕的中景，桌面比较干净，完整过程要看官网上的视频。官方 X 账号本轮未单独发这条演示。",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "official_blog",
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/claudeai/status/2119867114450268322"
+      ],
+      "images": [
+        {
+          "src": "/images/fable-5-2/official-os-01.jpg",
+          "width": 1440,
+          "height": 810,
+          "media_type": "official_poster",
+          "original_post_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        }
+      ]
+    },
+    {
+      "id": "official-devices",
+      "title": "一段提示词设计出三台可工作的电子设备",
+      "category": "官方科研与工程",
+      "one_liner": "只用一段提示词，Fable 5.2 设计了家用语音助手底座、USB 会议扬声器和手持电子宠物，电路板、3D 打印外壳和软件全部齐套，三台都能工作。",
+      "author": {
+        "name": "Anthropic / Claude 官方",
+        "username": "claudeai",
+        "url": "https://x.com/claudeai"
+      },
+      "source_url": "https://x.com/claudeai/status/2119899459761131615",
+      "published_at_utc": "2026-11-09T21:06:31.000Z",
+      "published_at_shanghai": "2026-11-10 05:06（Asia/Shanghai）",
+      "tools": [
+        "电路设计 / CAD / 嵌入式软件",
+        "与 Diode 合作制板"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。官方只说明是 one-paragraph prompt，要求设计并做出三台带电路板、3D 打印外壳和软件的电子设备。"
+      },
+      "method": "官方发布串和博客称，Fable 5.2 自己写规格、从美国经销商选元件、布四层电路板、为外壳做 3D 打印建模并编写软件。每块板不到一天就能交付制造。Diode 制板后，由 Claude 指导工程师测试和组装。官方称三台设备都无需改电路即可工作。X 上第一条是语音助手底座的视频，下一条是三台实物合影。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "official_thread",
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/claudeai/status/2119899461983822264",
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+      ],
+      "images": [
+        {
+          "src": "/images/fable-5-2/official-devices-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/claudeai/status/2119899459761131615"
+        },
+        {
+          "src": "/images/fable-5-2/official-devices-02.jpg",
+          "width": 1600,
+          "height": 1067,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/claudeai/status/2119899461983822264"
+        }
+      ]
+    },
+    {
+      "id": "official-robotics",
+      "title": "控制实体机器人：解魔方、拧瓶盖、画机器人",
+      "category": "官方科研与工程",
+      "one_liner": "官方视频展示 Fable 5.2 控制实体机器人完成解魔方、拧瓶盖和画出一个机器人，并在 RoboDojo 双臂仿真评测上超过多数专用系统。",
+      "author": {
+        "name": "Anthropic / Claude 官方",
+        "username": "claudeai",
+        "url": "https://x.com/claudeai"
+      },
+      "source_url": "https://x.com/claudeai/status/2119867132452221045",
+      "published_at_utc": "2026-11-09T18:58:04.000Z",
+      "published_at_shanghai": "2026-11-10 02:58（Asia/Shanghai）",
+      "tools": [
+        "实体机器人控制",
+        "RoboDojo 仿真评测"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。官方未公布具体控制指令。"
+      },
+      "method": "官方称 Fable 5.2 在从未专门训练过的机器人任务上也有明显进步。发布视频展示解魔方、拧瓶盖和画一个机器人。在公开的 RoboDojo 仿真双臂评测上，官方给出 64.9% 的成绩，高于同条件下的其他前沿模型和多数专门做机器人控制的系统。这些数字来自 Anthropic 自己的评测，第三方尚未复现。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "official_thread",
+      "live_demo_url": null,
+      "related_urls": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+      ],
+      "images": [
+        {
+          "src": "/images/fable-5-2/official-robotics-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/claudeai/status/2119867132452221045"
+        }
+      ]
+    },
+    {
+      "id": "official-fermat",
+      "title": "1000 个代理用 30 小时完成费马大定理形式化",
+      "category": "官方科研与工程",
+      "one_liner": "1000 个 Fable 5.2 代理用 30 小时把费马大定理的证明改写成计算机可逐步检查的 Lean 代码；同样设置下 Opus 5.5 在 18 小时只完成约 26%。",
+      "author": {
+        "name": "Anthropic / Claude 官方",
+        "username": "claudeai",
+        "url": "https://x.com/claudeai"
+      },
+      "source_url": "https://x.com/claudeai/status/2119867129751056485",
+      "published_at_utc": "2026-11-09T18:58:03.000Z",
+      "published_at_shanghai": "2026-11-10 02:58（Asia/Shanghai）",
+      "tools": [
+        "Lean 形式化",
+        "约 1000 个代理"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。官方称代理只拿到一份用于计分的中间定理清单，没有数学参考资料，人工干预很少。"
+      },
+      "method": "官方对比了此前用未发布研究版 Claude 花 11 天、并借助专用工具和研究员指导的一次形式化。这次 Fable 5.2 用了约三分之一的 action token，写出的证明短了约七倍。同设置下 Opus 5.5 在 18 小时完成约 26%，到 30 小时几乎没有再前进。效果图是完成度随时间变化的曲线，不是证明过程的可视化演示。",
+      "notes": "这是科研结果图，视觉冲击力不如产品和 3D 演示。页面上应标明数字来自 Anthropic 自己的发布，第三方尚未复现。",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "official_thread",
+      "live_demo_url": null,
+      "related_urls": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+      ],
+      "images": [
+        {
+          "src": "/images/fable-5-2/official-fermat-01.jpg",
+          "width": 1600,
+          "height": 1600,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/claudeai/status/2119867129751056485"
+        }
+      ]
+    },
+    {
+      "id": "official-physics",
+      "title": "解开两个与黑洞有关的理论物理未决问题",
+      "category": "官方科研与工程",
+      "one_liner": "官方称 Fable 5.2 完成了搁置 23 年的一项计算，并求出一种沿用 15 年的“模自举”方法的精确极限，两项结果都已写成预印本。",
+      "author": {
+        "name": "Anthropic / Claude 官方",
+        "username": "claudeai",
+        "url": "https://x.com/claudeai"
+      },
+      "source_url": "https://x.com/claudeai/status/2119899484373369278",
+      "published_at_utc": "2026-11-09T21:06:37.000Z",
+      "published_at_shanghai": "2026-11-10 05:06（Asia/Shanghai）",
+      "tools": [
+        "理论物理计算（官方未说明具体工具）"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "官方发布串称第一项是：1983 年物理学家证明在某些较大理论宇宙升温时，黑洞会突然形成；2003 年有人写下了检验这件事在极小宇宙是否成立的计算，但一直太繁琐没做完。Fable 5.2 完成了这项计算，并发现转变同样是突然的。第二项是求出一种已使用 15 年、用来排除候选量子引力理论的“模自举”最简版本的精确极限。官方说两项结果都写成了预印本。效果图是论文式插图，不是产品演示。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "official_thread",
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/claudeai/status/2119899488995131439",
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+      ],
+      "images": [
+        {
+          "src": "/images/fable-5-2/official-physics-01.jpg",
+          "width": 1600,
+          "height": 900,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/claudeai/status/2119899484373369278"
+        },
+        {
+          "src": "/images/fable-5-2/official-physics-02.jpg",
+          "width": 1600,
+          "height": 900,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/claudeai/status/2119899488995131439"
+        }
+      ]
+    },
+    {
+      "id": "riley-blender-room",
+      "title": "一句话在 Blender 里搭出整间房间并完成 4K 渲染",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "Riley Brown 直播时只给一句提示词，Fable 5.2 用代码在 Blender 里搭出整间房间，自己完成 13 个镜头、动画、调色和音效，10 张 GPU 花 52 分钟渲完 4K，渲染费用 5.75 美元。",
+      "author": {
+        "name": "Riley Brown",
+        "username": "rileybrown",
+        "url": "https://x.com/rileybrown"
+      },
+      "source_url": "https://x.com/rileybrown/status/2119902109709537708",
+      "published_at_utc": "2026-11-09T21:17:03.000Z",
+      "published_at_shanghai": "2026-11-10 05:17（Asia/Shanghai）",
+      "tools": [
+        "Blender",
+        "RunPod（10 GPU）",
+        "ElevenLabs"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者写了“I gave Claude one prompt”，并说下面还有更多信息，但本轮在其后续回复里没有找到完整提示词原文。"
+      },
+      "method": "作者称这是 live on stream 的 one shot：模型写代码搭建整间房间，包括桌子、MacBook、灯光和 Clawd；笔记本屏幕是它做的网页，看起来像 Claude 应用，在三维场景里播放。随后模型自己做了 13 个机位、每个按键动画、Clawd 跳动，以及从黄金时刻到夜晚再到日出的光线变化。它在 RunPod 租了 10 张 GPU，52 分钟渲完 4K，渲染费用 5.75 美元，并完成调色、标题和 ElevenLabs 音效。作者后来又发过一条“用 Fable 剪了一条关于这条视频的视频”。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/rileybrown/status/2119973951027724385"
+      ],
+      "images": [
+        {
+          "src": "/images/fable-5-2/riley-blender-room-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/rileybrown/status/2119902109709537708"
+        }
+      ]
+    },
+    {
+      "id": "rpnickson-studio",
+      "title": "上传工作室照片，用类似提示词一句话重建场景",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "Roberto Nickson 上传了几张自己工作室的照片，用和 Riley 类似的提示词，大约 2 小时被 Fable 5.2 一次做出来。",
+      "author": {
+        "name": "Roberto Nickson",
+        "username": "rpnickson",
+        "url": "https://x.com/rpnickson"
+      },
+      "source_url": "https://x.com/rpnickson/status/2119969928304357507",
+      "published_at_utc": "2026-11-10T01:46:32.000Z",
+      "published_at_shanghai": "2026-11-10 09:46（Asia/Shanghai）",
+      "tools": [
+        "Blender（作者未在该帖写明具体栈，但是对 Riley 房间流程的仿作）"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。作者只说 ran a similar prompt as Riley，并上传了工作室照片作参考。"
+      },
+      "method": "作者引用了 Riley Brown 的房间演示，称自己上传几张工作室照片后跑了类似提示词，大约 2 小时一次完成。Riley 在回复里追问过渲染器和灯光细节，但原帖本身没有公开完整提示词。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/rileybrown/status/2119902109709537708"
+      ],
+      "images": [
+        {
+          "src": "/images/fable-5-2/rpnickson-studio-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/rpnickson/status/2119969928304357507"
+        }
+      ]
+    },
+    {
+      "id": "iceberg-effort",
+      "title": "同一座冰山：Fable 5.2 从 High 到 Ultra 的效果对比",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "同一模型和同一提示词，只改思考强度：High 花 24 美元忘了极光，Ultra 花 642 美元让冰发光并潜到水下。",
+      "author": {
+        "name": "Rhino",
+        "username": "0xRhinoX",
+        "url": "https://x.com/0xRhinoX"
+      },
+      "source_url": "https://x.com/0xRhinoX/status/2119915121698840587",
+      "published_at_utc": "2026-11-09T22:08:45.000Z",
+      "published_at_shanghai": "2026-11-10 06:08（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体渲染栈"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。作者只说明 same prompt，对比的是不同 effort。"
+      },
+      "method": "作者列出四档花费和时间：High 24.31 美元 / 1 小时 05 分，Extra High 43.79 美元 / 3 小时 09 分，Max 87.99 美元 / 3 小时 28 分，Ultra 642.42 美元 / 10 小时 21 分。他写 High 忘了极光，Ultra 让冰发光并潜到水下，并问 26 倍价格是否有 26 倍效果。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/iceberg-effort-01.jpg",
+          "width": 1200,
+          "height": 1067,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/0xRhinoX/status/2119915121698840587"
+        }
+      ]
+    },
+    {
+      "id": "rocket-launch-compare",
+      "title": "火箭发射场景：Fable 5.2 与 Opus 5.5 对比",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "同一火箭发射场景，作者测得 Fable 5.2 花 23.45 美元、32 分钟，细节和真实感更强，但比 Opus 5.5 更贵也稍慢。",
+      "author": {
+        "name": "Bhavy",
+        "username": "Bhavani_00007",
+        "url": "https://x.com/Bhavani_00007"
+      },
+      "source_url": "https://x.com/Bhavani_00007/status/2119902204320780676",
+      "published_at_utc": "2026-11-09T21:17:26.000Z",
+      "published_at_shanghai": "2026-11-10 05:17（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用同一火箭发射场景对比两个模型：Fable 5.2 为 23.45 美元、32 分钟，Opus 5.5 为 10.35 美元、24 分钟。他认为 Fable 的细节和真实感很好，但效率或价格没有达到他预期的 Fable 5.1 水平。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/rocket-launch-compare-01.jpg",
+          "width": 1200,
+          "height": 1200,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Bhavani_00007/status/2119902204320780676"
+        }
+      ]
+    },
+    {
+      "id": "stonehenge",
+      "title": "可交互的巨石阵三维场景",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "一句提示词做出可在浏览器里打开的巨石阵：地衣、风吹草、夏至太阳轨迹和 144 个访客，高思考强度花费约 21 美元。",
+      "author": {
+        "name": "Melt The Manual",
+        "username": "MeltTheManual",
+        "url": "https://x.com/MeltTheManual"
+      },
+      "source_url": "https://x.com/MeltTheManual/status/2119926820963532984",
+      "published_at_utc": "2026-11-09T22:55:15.000Z",
+      "published_at_shanghai": "2026-11-10 06:55（Asia/Shanghai）",
+      "tools": [
+        "Three.js",
+        "单文件 HTML"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。作者称是 one prompt、high effort。"
+      },
+      "method": "作者称 Fable 5.2 高思考强度用一句提示词做成交互场景，以单个 HTML 加 three.js 在浏览器运行。场景包括带地衣的砂岩和三石塔、蓝砂岩、踵石、风吹动的实例化草地、实时阴影、沿夏至路径移动的太阳、144 个低面数三维访客，以及“建成时”的完整纪念碑视图。总花费约 21 美元，约 2030 万 token。在线地址：https://meltthemanual.github.io/stonehenge-solstice/",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": "https://meltthemanual.github.io/stonehenge-solstice/",
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/stonehenge-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/MeltTheManual/status/2119926820963532984"
+        }
+      ]
+    },
+    {
+      "id": "honeybee-macro",
+      "title": "蜜蜂停在松果菊上的微距三维镜头",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "一句提示词、一个 HTML 文件、不用现成三维素材：Fable 5.2 做出黄金时刻微距感的蜜蜂停在松果菊上，作者认为比 GPT-6 Astra 更像“寓言”，但更贵。",
+      "author": {
+        "name": "Martin Szerment",
+        "username": "MartinSzerment",
+        "url": "https://x.com/MartinSzerment"
+      },
+      "source_url": "https://x.com/MartinSzerment/status/2119925209881030718",
+      "published_at_utc": "2026-11-09T22:48:50.000Z",
+      "published_at_shanghai": "2026-11-10 06:48（Asia/Shanghai）",
+      "tools": [
+        "单文件 HTML",
+        "OpenRouter"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。作者概括为：一只蜜蜂停在松果菊上，拍成黄金时刻的微距镜头。"
+      },
+      "method": "作者做了 Fable 5.2 与 GPT-6 Astra 的对比。Fable 用 1.92 美元、8 分钟做出低角度金光、奶油虚化、带花粉的条纹蜜蜂；Astra 用 0.64 美元、4 分钟，更保守，没有黄金时刻和微距感。作者还提到上线当天在 OpenRouter 上 Fable 的推理是强制的，前两次把 5 万和 4.5 万 token 额度全部花在思考上，没有得到页面；把上限提到 7 万后才完成。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/honeybee-macro-01.jpg",
+          "width": 1200,
+          "height": 651,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/MartinSzerment/status/2119925209881030718"
+        }
+      ]
+    },
+    {
+      "id": "jet-engine",
+      "title": "可拆解的三维喷气发动机",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "一句提示词，Fable 5.2 用 three.js 做出带 3000 多片叶片的喷气发动机，支持爆炸视图、剖视、X 光和气流，整个文件不到 1 MB。",
+      "author": {
+        "name": "Renoise",
+        "username": "renoiseai",
+        "url": "https://x.com/renoiseai"
+      },
+      "source_url": "https://x.com/renoiseai/status/2119963726329823358",
+      "published_at_utc": "2026-11-10T01:21:54.000Z",
+      "published_at_shanghai": "2026-11-10 09:21（Asia/Shanghai）",
+      "tools": [
+        "Three.js",
+        "单文件 HTML",
+        "Renoise MCP"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。作者称是 one message。"
+      },
+      "method": "作者称模型从一条消息做出：37 个零件组、3000 多片叶片和导向叶片，以及 12 个引导步骤，包括爆炸视图、剖视、X 光和气流。结果是一个 0.73 MB 的 HTML 文件，没有图片或模型文件。配乐由 Renoise MCP 生成。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/jet-engine-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/renoiseai/status/2119963726329823358"
+        }
+      ]
+    },
+    {
+      "id": "tokyo-ramen",
+      "title": "东京深夜拉面摊：按 T 键雨会慢慢变成雪",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "Night Tokyo 系列第 4 集换到 Fable 5.2，中等强度、一次完成，花费 7.11 美元、20 分钟，按 T 键雨会慢慢转成雪。",
+      "author": {
+        "name": "sprinntt",
+        "username": "sprinntt",
+        "url": "https://x.com/sprinntt"
+      },
+      "source_url": "https://x.com/sprinntt/status/2119906202330988961",
+      "published_at_utc": "2026-11-09T21:33:19.000Z",
+      "published_at_shanghai": "2026-11-10 05:33（Asia/Shanghai）",
+      "tools": [
+        "Claude Code",
+        "medium effort"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。作者称这是系列里的 new prompt，由 Fable 5.2 先跑。"
+      },
+      "method": "作者把 Night Tokyo 04：拉面摊交给刚发布的 Fable 5.2，在 Claude Code 中等强度下一次完成，花费 7.11 美元、20 分钟，并写明按 T 键雨会慢慢变成雪。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/tokyo-ramen-01.jpg",
+          "width": 1199,
+          "height": 674,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/sprinntt/status/2119906202330988961"
+        }
+      ]
+    },
+    {
+      "id": "indiranagar",
+      "title": "用地图数据搭出 1 平方公里的印度纳加尔",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "作者用自己的地图数据和一句提示词，让 Fable 5.2 搭出班加罗尔 India Nagar 约 1 平方公里的三维街区，并提供了在线页面。",
+      "author": {
+        "name": "anshu4321",
+        "username": "anshu4321",
+        "url": "https://x.com/anshu4321"
+      },
+      "source_url": "https://x.com/anshu4321/status/2119938067758772403",
+      "published_at_utc": "2026-11-09T23:39:56.000Z",
+      "published_at_shanghai": "2026-11-10 07:39（Asia/Shanghai）",
+      "tools": [
+        "地图数据",
+        "Web 三维（作者未写明具体库）"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。作者称 built it from our map data and one prompt。"
+      },
+      "method": "作者称 Fable 5.2 依据他们的地图数据和一句提示词，搭建了约 1 平方公里的印度纳加尔（Indiranagar）。在线地址为 https://indiranagar-live.vercel.app 。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": "https://indiranagar-live.vercel.app",
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/indiranagar-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/anshu4321/status/2119938067758772403"
+        }
+      ]
+    },
+    {
+      "id": "rocket-company-film",
+      "title": "十秒虚构火箭公司三维发布片",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "作者只给一段话，要求做一部 10 秒的虚构火箭公司三维发布片，Fable 5.2 一次写完，用了 4 分 42 秒，作者说自己一行都没改。",
+      "author": {
+        "name": "ReyBrando1",
+        "username": "ReyBrando1",
+        "url": "https://x.com/ReyBrando1"
+      },
+      "source_url": "https://x.com/ReyBrando1/status/2119901536138715459",
+      "published_at_utc": "2026-11-09T21:14:46.000Z",
+      "published_at_shanghai": "2026-11-10 05:14（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "a 10-second 3D launch film for a made-up rocket company",
+        "note": "这是作者在帖子里概括的需求，不是逐字完整提示词。"
+      },
+      "method": "作者看到官方“一段提示词做出三台设备”后，自己也只给一段话。他说模型一次写完整部 10 秒片子，用时 4 分 42 秒，自己没有改任何一行。这是他 Fable 5.2 测试系列的第一支。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/rocket-company-film-01.jpg",
+          "width": 960,
+          "height": 1200,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ReyBrando1/status/2119901536138715459"
+        }
+      ]
+    },
+    {
+      "id": "white-house",
+      "title": "历史上的白宫与今天的白宫三维对比",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "Mirage 称 Fable 5.2 结合他们的 Tesseract 3D，做出了历史上准确的白宫，并做了“当时与现在”的对比。",
+      "author": {
+        "name": "Mirage",
+        "username": "trymirage",
+        "url": "https://x.com/trymirage"
+      },
+      "source_url": "https://x.com/trymirage/status/2119889897200972028",
+      "published_at_utc": "2026-11-09T20:28:31.000Z",
+      "published_at_shanghai": "2026-11-10 04:28（Asia/Shanghai）",
+      "tools": [
+        "Tesseract 3D"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "产品账号 Mirage 称 Fable 5.2 做出了历史上准确的白宫，并对比了当时和现在，制作中使用了他们的 Tesseract 3D。这不是纯文本模型一次生成，页面上需要写明还用了该公司的三维工具。之后有新闻账号转发了另一条白宫三维视频，本条只收这家自称制作者的原帖。",
+      "notes": "新闻号 @exploraX_、@ConflictTR 也发过白宫三维视频，但没有说明是自己做的，本条不以它们为原帖。",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/white-house-01.jpg",
+          "width": 1055,
+          "height": 1200,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/trymirage/status/2119889897200972028"
+        }
+      ]
+    },
+    {
+      "id": "ufo-area51",
+      "title": "一句话做 Area 51 遇见飞碟的三维短片",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "一句英文提示词，Fable 5.2 用 Three.js 和 Remotion 写出 30 秒、4K、5 个镜头的 Area 51 飞碟短片，模型和音效都是代码生成。",
+      "author": {
+        "name": "Dante",
+        "username": "danteeonsol",
+        "url": "https://x.com/danteeonsol"
+      },
+      "source_url": "https://x.com/danteeonsol/status/2119887623070077213",
+      "published_at_utc": "2026-11-09T20:19:29.000Z",
+      "published_at_shanghai": "2026-11-10 04:19（Asia/Shanghai）",
+      "tools": [
+        "Three.js",
+        "Remotion"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "make me a 30 second video of a UFO visiting Area 51 and greeting humans, ultra detailed, cinematic lighting",
+        "note": "作者称这是 one sentence。"
+      },
+      "method": "作者把上面这句提示词交给 Fable 5.2 做基准测试。他说整支片子用 Three.js 和 Remotion 写成，没有导入模型、贴图或素材音效，每个像素和每段声音都来自代码，规格是 4K、30 fps、5 个镜头。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/ufo-area51-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/danteeonsol/status/2119887623070077213"
+        }
+      ]
+    },
+    {
+      "id": "seine-fireplace",
+      "title": "塞纳河、壁炉和窗边雪景：同一套三维提示词对比",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "作者用自己给每个新模型都跑的同一套三维提示词一次生成，觉得 Fable 5.2 的塞纳河、壁炉和窗边雪景最丰富，但埃菲尔铁塔上闪过和 Opus 5.5 一样的黑块。",
+      "author": {
+        "name": "domsilvestre",
+        "username": "domsilvestre",
+        "url": "https://x.com/domsilvestre"
+      },
+      "source_url": "https://x.com/domsilvestre/status/2119931704227815793",
+      "published_at_utc": "2026-11-09T23:14:39.000Z",
+      "published_at_shanghai": "2026-11-10 07:14（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。作者称是给每个新模型都用的同一套 3D prompts，one shot，不修。"
+      },
+      "method": "作者一次跑了三个场景，Fable 5.2 花费 17 美元，Opus 5.5 花费 13.83 美元。他觉得 Fable 的场景更丰富，但也指出铁塔上的闪烁黑块和 Opus 5.5 一样。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/seine-fireplace-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/domsilvestre/status/2119931704227815793"
+        }
+      ]
+    },
+    {
+      "id": "blender-videodraft",
+      "title": "Fable 5.2 加 VideoDraft 和 ElevenLabs 的 Blender 工作流",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "作者称这是一次 one-shot，用 Fable 5.2 配合 VideoDraft 和 ElevenLabs v4，把三维 Blender 流程又推进一步。",
+      "author": {
+        "name": "Charan Kilari",
+        "username": "charan_kilari",
+        "url": "https://x.com/charan_kilari"
+      },
+      "source_url": "https://x.com/charan_kilari/status/2119884295179538680",
+      "published_at_utc": "2026-11-09T20:06:16.000Z",
+      "published_at_shanghai": "2026-11-10 04:06（Asia/Shanghai）",
+      "tools": [
+        "Blender",
+        "VideoDraft",
+        "ElevenLabs v4"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者明确写了 Fable 5.2 + VideoDraft + ElevenLabs v4，并称是 one-shot。因为还用了另外两套工具，上架时不能写成“纯 Fable 一次生成”。原帖没有描述具体题材，效果图以视频封面为准。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/blender-videodraft-01.jpg",
+          "width": 675,
+          "height": 1200,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/charan_kilari/status/2119884295179538680"
+        }
+      ]
+    },
+    {
+      "id": "blender-flower-bot",
+      "title": "Blender 里一次做出像素风机械花角色",
+      "category": "Three.js / 3D / Blender",
+      "one_liner": "作者在 Blender 里用 Fable 5.2 接近一次生成，做出带耳机的像素风机械花角色，并打了 Roblox 相关标签。",
+      "author": {
+        "name": "Hiyouwhatsapp",
+        "username": "hiyouwhatsapp",
+        "url": "https://x.com/hiyouwhatsapp"
+      },
+      "source_url": "https://x.com/hiyouwhatsapp/status/2119927163264573642",
+      "published_at_utc": "2026-11-09T22:56:36.000Z",
+      "published_at_shanghai": "2026-11-10 06:56（Asia/Shanghai）",
+      "tools": [
+        "Blender"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。作者只写了 Near one-shot and somehow surprisingly fast。"
+      },
+      "method": "原帖正文很短，只说明是在 Blender 里用 Fable 5.2，接近一次完成，并且速度出乎意料。视频封面是左右对比的像素风机械花角色。作者加了 #ROBLOX 和 #RobloxDev 标签，但没有说明是否已导入 Roblox。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/blender-oneshot-01.jpg",
+          "width": 960,
+          "height": 540,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/hiyouwhatsapp/status/2119927163264573642"
+        }
+      ]
+    },
+    {
+      "id": "miami-crime-game",
+      "title": "迈阿密风格开放世界犯罪游戏原型",
+      "category": "游戏与可玩交互",
+      "one_liner": "作者给了一段很长的游戏设计提示词，称 Fable 5.2 用 2 小时 14 分钟做出可玩的 80 年代迈阿密风格犯罪原型，枪声和引擎声都是代码生成的。",
+      "author": {
+        "name": "ericmaskfr",
+        "username": "ericmaskfr",
+        "url": "https://x.com/ericmaskfr"
+      },
+      "source_url": "https://x.com/ericmaskfr/status/2119910195325481026",
+      "published_at_utc": "2026-11-09T21:49:11.000Z",
+      "published_at_shanghai": "2026-11-10 05:49（Asia/Shanghai）",
+      "tools": [
+        "作者称音效用 Python 生成，未写明游戏引擎"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "you're a senior game dev. build a third-person open-world crime game in a sunny 80s miami-style city. make the loop tight: walk, fight, steal a car, get chased, earn money, spend it. every system feeds the next: crimes bring heat, heat brings cops, missions pay, money unlocks the garage. cars need weight: gears, skids, real crashes. the city has to feel alive with traffic, people and day into night. no audio files, generate every sound in code. after each system, play it yourself, screenshot it and fix what looks wrong. don't stop until a stranger could play for 10 minutes without hitting a bug",
+        "note": "提示词由作者公开发在原帖中。"
+      },
+      "method": "作者在标题里拿尚未发行的《GTA 6》作对比，但提示词要求的是 80 年代迈阿密风格的第三人称犯罪原型，不是官方游戏。他列举了步行战斗、五星通缉、改车、计时赛和快递任务等系统，并称全部声音用代码生成、没有音频文件，耗时 2 小时 14 分钟。上架时必须写明这是作者自己的同人风格原型，不要暗示可以复制 Rockstar 的作品，也不要沿用“已经做出 GTA 6”这种说法。",
+      "notes": "涉及《GTA》商标和形象，页面只做案例说明并链回作者，不要提供可下载的整包游戏或暗示可商用。",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/miami-crime-game-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ericmaskfr/status/2119910195325481026"
+        }
+      ]
+    },
+    {
+      "id": "port-mirage",
+      "title": "Port Mirage：被拒绝做 GTA 6 之后自己做的版本",
+      "category": "游戏与可玩交互",
+      "one_liner": "作者的提示词是“Build GTA 6 with no mistakes.”，Fable 5.2 先声明游戏属于 Rockstar，然后做了自己的版本，作者把它叫做 Port Mirage。",
+      "author": {
+        "name": "Awa K. Penn",
+        "username": "TawohAwa",
+        "url": "https://x.com/TawohAwa"
+      },
+      "source_url": "https://x.com/TawohAwa/status/2119942652921790675",
+      "published_at_utc": "2026-11-09T23:58:09.000Z",
+      "published_at_shanghai": "2026-11-10 07:58（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "Build GTA 6 with no mistakes.",
+        "note": "作者称这是 one prompt。"
+      },
+      "method": "作者说模型先告诉他游戏属于 Rockstar，随后做出自己的版本 Port Mirage，并发布了约 2 分 39 秒的实机视频。上架时不要写成“做出了 GTA 6”。",
+      "notes": "同样涉及《GTA》知识产权，只做案例说明并链回作者。",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/port-mirage-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/TawohAwa/status/2119942652921790675"
+        }
+      ]
+    },
+    {
+      "id": "sumie-game",
+      "title": "水墨风剑客与白猫动作游戏演示",
+      "category": "游戏与可玩交互",
+      "one_liner": "作者称 Fable 5.2 做出了这款水墨风动作游戏演示，动画、模型和世界都是代码生成的。",
+      "author": {
+        "name": "Farida",
+        "username": "FaridaNever",
+        "url": "https://x.com/FaridaNever"
+      },
+      "source_url": "https://x.com/FaridaNever/status/2119910055990505730",
+      "published_at_utc": "2026-11-09T21:48:38.000Z",
+      "published_at_shanghai": "2026-11-10 05:48（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "原帖很短，作者称 Claude Fable 5.2 刚刚做出这个游戏演示，并且“code literally came up with these animations models and the world itself”。没有公开提示词或在线试玩地址。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/sumie-game-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/FaridaNever/status/2119910055990505730"
+        }
+      ]
+    },
+    {
+      "id": "pocket-chess",
+      "title": "十分钟在手机上做出可对战的国际象棋",
+      "category": "游戏与可玩交互",
+      "one_liner": "作者在回复里说，不到 10 分钟，Fable 5.2 就在他手机上做出了一款可以对电脑下的国际象棋。",
+      "author": {
+        "name": "Gene",
+        "username": "geneohms",
+        "url": "https://x.com/geneohms"
+      },
+      "source_url": "https://x.com/geneohms/status/2119910054413685102",
+      "published_at_utc": "2026-11-09T21:48:37.000Z",
+      "published_at_shanghai": "2026-11-10 05:48（Asia/Shanghai）",
+      "tools": [
+        "手机端（作者未说明具体栈）"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "这是一条回复 @bcherny 的帖子。作者称不到 10 分钟，Fable 5.2 就在手机上做出了可与电脑对战的象棋，并附上竖屏实机视频。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/pocket-chess-01.jpg",
+          "width": 554,
+          "height": 1200,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/geneohms/status/2119910054413685102"
+        }
+      ]
+    },
+    {
+      "id": "clockmaker-mansion",
+      "title": "《钟表匠的宅邸》Roblox 恐怖游戏预告片",
+      "category": "游戏与可玩交互",
+      "one_liner": "作者称全程通过 MCP，让 Fable 5.2 在 Roblox 里做了一款恐怖游戏，并且连预告片也一起做了。",
+      "author": {
+        "name": "mihawkxxx",
+        "username": "mihawkxxxxx",
+        "url": "https://x.com/mihawkxxxxx"
+      },
+      "source_url": "https://x.com/mihawkxxxxx/status/2119909865296699749",
+      "published_at_utc": "2026-11-09T21:47:52.000Z",
+      "published_at_shanghai": "2026-11-10 05:47（Asia/Shanghai）",
+      "tools": [
+        "Roblox",
+        "MCP"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者强调 all through MCP, using nothing but MCP，并称 Fable 5.2 对室内和细节很上心。视频是预告片风格，官方封面和不少镜头都偏暗，已另外从原视频截了一帧稍亮的画面。",
+      "notes": "恐怖预告片本身偏暗，上架卡片更适合用第二张从原视频截出的画面。",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/clockmaker-mansion-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/mihawkxxxxx/status/2119909865296699749"
+        },
+        {
+          "src": "/images/fable-5-2/clockmaker-mansion-02.jpg",
+          "width": 1280,
+          "height": 720,
+          "media_type": "video_frame",
+          "original_post_url": "https://x.com/mihawkxxxxx/status/2119909865296699749"
+        }
+      ]
+    },
+    {
+      "id": "toy-room-game",
+      "title": "玩具房第三人称探索小游戏",
+      "category": "游戏与可玩交互",
+      "one_liner": "作者本想做《玩具总动员》主题的 Three.js 第三人称游戏，Fable 5.2 拒绝直接使用该宇宙的角色，但按电影气质重做了房间、光线和灰尘。",
+      "author": {
+        "name": "Sotiris Kaniras",
+        "username": "itssotsot",
+        "url": "https://x.com/itssotsot"
+      },
+      "source_url": "https://x.com/itssotsot/status/2119909017216491720",
+      "published_at_utc": "2026-11-09T21:44:30.000Z",
+      "published_at_shanghai": "2026-11-10 05:44（Asia/Shanghai）",
+      "tools": [
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "I want you to create a three.js third-person game where I am Woody from Toy Story inside the house, and I can walk and jump through furniture and objects and find the other characters. Make sure to capture the aesthetic and style of the movie.",
+        "note": "作者公开了这句提示词，并说明模型拒绝直接使用该电影宇宙的角色。"
+      },
+      "method": "作者称一开始 Fable 拒绝创作《玩具总动员》宇宙的内容，于是只复现了风格，包括光线、灰尘粒子和房间本身。上架时必须注明涉及迪士尼/皮克斯知识产权，只做案例说明，不要提供可下载的整包游戏或暗示可商用。",
+      "notes": "《玩具总动员》角色和设定受版权保护。",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/toy-room-game-01.jpg",
+          "width": 1199,
+          "height": 609,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/itssotsot/status/2119909017216491720"
+        }
+      ]
+    },
+    {
+      "id": "dino-rambo",
+      "title": "把 Chrome 小恐龙改成 Rambo 风的对比测试",
+      "category": "游戏与可玩交互",
+      "one_liner": "作者把自己的老 T-Rex 测试加进 Fable 5.2，视频里把它改成了 Rambo 风格，同时列出了和其他模型的耗时与花费。",
+      "author": {
+        "name": "noclipepe",
+        "username": "noclipepe",
+        "url": "https://x.com/noclipepe"
+      },
+      "source_url": "https://x.com/noclipepe/status/2119927838321328577",
+      "published_at_utc": "2026-11-09T22:59:17.000Z",
+      "published_at_shanghai": "2026-11-10 06:59（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。作者称这是自己的 old T-Rex test。"
+      },
+      "method": "作者给出耗时和花费：Fable 5.2 为 45 分 30 秒、14.77 美元，Opus 5.5 为 38 分 55 秒、8.53 美元，Gemini 4 Carbon 和 GPT-6 Astra 更快也更便宜。他认为 Fable 的效果明显更好，并说分数在视频结尾。Chrome 小恐龙是 Google 的知名小品，页面只需做案例说明。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/dino-rambo-01.jpg",
+          "width": 960,
+          "height": 1200,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/noclipepe/status/2119927838321328577"
+        }
+      ]
+    },
+    {
+      "id": "orbit-hop",
+      "title": "Orbit Hop：让模型自己试玩并修好的 WebGL 小游戏",
+      "category": "游戏与可玩交互",
+      "one_liner": "一句提示词写出 1804 行带自有着色器的小游戏，Fable 5.2 在测试浏览器里自己玩、自己修，然后上线；手机上点 Play 后倾斜就能玩。",
+      "author": {
+        "name": "ServerForAgent",
+        "username": "ServerForAgent",
+        "url": "https://x.com/ServerForAgent"
+      },
+      "source_url": "https://x.com/ServerForAgent/status/2119942557971128669",
+      "published_at_utc": "2026-11-09T23:57:47.000Z",
+      "published_at_shanghai": "2026-11-10 07:57（Asia/Shanghai）",
+      "tools": [
+        "WebGL 着色器"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。作者称是 one prompt。"
+      },
+      "method": "作者称模型写出 1804 行、带自己的 WebGL 着色器，在测试浏览器里试玩并修复看到的问题后部署上线。手机上点 Play 后倾斜设备即可游玩。在线地址：https://orbit-hop-2-367.apps.server4agent.com 。这是产品账号发的案例，页面上可注明发布者是 ServerForAgent。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": "https://orbit-hop-2-367.apps.server4agent.com",
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/orbit-hop-01.jpg",
+          "width": 862,
+          "height": 1400,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/ServerForAgent/status/2119942557971128669"
+        }
+      ]
+    },
+    {
+      "id": "neon-driving",
+      "title": "雨夜霓虹城里的 Three.js 驾驶游戏",
+      "category": "游戏与可玩交互",
+      "one_liner": "作者称 Fable 5.2 用大约 2 小时做出可在本地浏览器玩的驾驶游戏，有漂移、雨夜霓虹城，车子在 Blender 里建模。",
+      "author": {
+        "name": "marginsystems",
+        "username": "marginsystems",
+        "url": "https://x.com/marginsystems"
+      },
+      "source_url": "https://x.com/marginsystems/status/2119980191720395079",
+      "published_at_utc": "2026-11-10T02:27:19.000Z",
+      "published_at_shanghai": "2026-11-10 10:27（Asia/Shanghai）",
+      "tools": [
+        "Three.js",
+        "Blender",
+        "Claude Code",
+        "Mergestorm"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称这是在 Claude Code 里用 Mergestorm 做的一次会话，大约 2 小时，可在本地浏览器运行，包含漂移和雨夜霓虹城市，车辆在 Blender 中建模。上架时需写明还使用了 Mergestorm。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/neon-driving-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/marginsystems/status/2119980191720395079"
+        }
+      ]
+    },
+    {
+      "id": "basketball-game",
+      "title": "带基本规则的 Three.js 三维篮球游戏",
+      "category": "游戏与可玩交互",
+      "one_liner": "作者公开了一段很长的提示词，要求用 Three.js 做一款有运球、投篮、扣篮、抢断、犯规和跳球的三维篮球，并说这是 Fable 5.2 一次生成的。",
+      "author": {
+        "name": "Josh",
+        "username": "joshvlc",
+        "url": "https://x.com/joshvlc"
+      },
+      "source_url": "https://x.com/joshvlc/status/2119894656221958575",
+      "published_at_utc": "2026-11-09T20:47:26.000Z",
+      "published_at_shanghai": "2026-11-10 04:47（Asia/Shanghai）",
+      "tools": [
+        "Three.js",
+        "必要时用本机 Blender"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "Can you make a 3D basketball game using THREE.js? It should have a player in two different colored uniforms for the two teams and should follow the basic rules of basketball. It should have basic funcionality:\n- dribble (happens automatically when player runs)\n- shoot (hold for jump shot); dunk automatically near rim; jump/block if you don't have the ball\n- steal\n- pass to teammate\n- 1 player: the teammates should be CPU and play normally (they should get open for you) and the player always controls the person with the ball (if someone on their team has it); the other team should be CPU controlled\n- fouls + penalty shots\n- the game should start on a tip (hit shoot button to tip)\nNote: include sound effects and crowd cheering! You can use Blender (installed on this machine) if needed for the graphics!",
+        "note": "提示词由作者公开发在原帖回复中，原文拼写为 funcionality。"
+      },
+      "method": "作者主帖只写“Claude Fable 5.2, one shot (prompt below)”，完整提示词在一条回复里。视频是左右分屏或实机画面，封面能看出球场和球员。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/joshvlc/status/2119894940595695756"
+      ],
+      "images": [
+        {
+          "src": "/images/fable-5-2/basketball-game-01.jpg",
+          "width": 1200,
+          "height": 450,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/joshvlc/status/2119894656221958575"
+        }
+      ]
+    },
+    {
+      "id": "game-machines",
+      "title": "四台用来测特效、机械和物理的游戏概念机",
+      "category": "游戏与可玩交互",
+      "one_liner": "作者说要给电子游戏机一块试验场，于是用 Fable 5.2、Three.js 和 Blender 做了 4 台概念机，分别测试特效、机械和物理。",
+      "author": {
+        "name": "techartist_",
+        "username": "techartist_",
+        "url": "https://x.com/techartist_"
+      },
+      "source_url": "https://x.com/techartist_/status/2119946891106394518",
+      "published_at_utc": "2026-11-10T00:15:00.000Z",
+      "published_at_shanghai": "2026-11-10 08:15（Asia/Shanghai）",
+      "tools": [
+        "Three.js",
+        "Blender"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "原帖说明了目的和工具，没有逐步制作说明或提示词。视频约 20 秒。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/game-machines-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/techartist_/status/2119946891106394518"
+        }
+      ]
+    },
+    {
+      "id": "higgsfield-game",
+      "title": "4 小时做出带三幕 Boss 战的动作冒险（含 Higgsfield MCP）",
+      "category": "游戏与可玩交互",
+      "one_liner": "Higgsfield 称只用一句提示词加上他们的 MCP，Fable 5.2 用 4 小时做出开放世界动作冒险、三幕 Boss 战和过场动画，并可在浏览器游玩。",
+      "author": {
+        "name": "Higgsfield AI",
+        "username": "higgsfield_ai",
+        "url": "https://x.com/higgsfield_ai"
+      },
+      "source_url": "https://x.com/higgsfield_ai/status/2119926932343324795",
+      "published_at_utc": "2026-11-09T22:55:41.000Z",
+      "published_at_shanghai": "2026-11-10 06:55（Asia/Shanghai）",
+      "tools": [
+        "Higgsfield MCP"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未在该帖公开完整提示词。作者称 one prompt and Higgsfield MCP。"
+      },
+      "method": "这是工具厂商的发布帖，明确写了 Fable 5.2 和 Higgsfield MCP 一起用，不能写成纯模型一次生成。作者称 4 小时做出复杂三维动作冒险、开放世界、三幕 Boss 战和过场，并可在浏览器玩。原帖说“Here's how it was made”，细节在视频或引用帖里，本条不转述未核到的步骤。",
+      "notes": "厂商宣传案例，上架时需标明还使用了 Higgsfield MCP。",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/higgsfield/status/2119884452054937656"
+      ],
+      "images": [
+        {
+          "src": "/images/fable-5-2/higgsfield-game-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/higgsfield_ai/status/2119926932343324795"
+        }
+      ]
+    },
+    {
+      "id": "clawd-release",
+      "title": "Clawd 创作并发布 Fable 5.2 的动画短片",
+      "category": "动态设计与代码动画",
+      "one_liner": "作者把已有动画底子交给 Fable 5.2 高思考强度，提示词是让 Clawd 创作并发布 Claude Fable 5.2，做成动画短片。",
+      "author": {
+        "name": "NotinReality",
+        "username": "other__reality",
+        "url": "https://x.com/other__reality"
+      },
+      "source_url": "https://x.com/other__reality/status/2119885430627913784",
+      "published_at_utc": "2026-11-09T20:10:46.000Z",
+      "published_at_shanghai": "2026-11-10 04:10（Asia/Shanghai）",
+      "tools": [
+        "已有 animation base（作者未说明具体栈）"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "Create an animated video of clawd creating and releasing Claude Fable 5.2",
+        "note": "作者写明是在 using the existing animation base 的前提下，用 high reasoning 完成。"
+      },
+      "method": "作者认为 Fable 5.2 在视觉设计和完成度上又进了一步。官方视频封面几乎是纯深紫色，上架卡片更适合用从原视频截出的水彩风格画面。",
+      "notes": "第一张是官方封面，几乎全黑；第二张从原视频第 8 秒截出，能看清画面。",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/clawd-release-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/other__reality/status/2119885430627913784"
+        },
+        {
+          "src": "/images/fable-5-2/clawd-release-02.jpg",
+          "width": 1280,
+          "height": 720,
+          "media_type": "video_frame",
+          "original_post_url": "https://x.com/other__reality/status/2119885430627913784"
+        }
+      ]
+    },
+    {
+      "id": "riley-history-writing",
+      "title": "书写的历史：Fable 5.2 一句话做的影像",
+      "category": "动态设计与代码动画",
+      "one_liner": "Riley Brown 称用一句提示词让 Fable 5.2 做了《书写的历史》，并在回复里放了文件和剪辑工具链接。",
+      "author": {
+        "name": "Riley Brown",
+        "username": "rileybrown",
+        "url": "https://x.com/rileybrown"
+      },
+      "source_url": "https://x.com/rileybrown/status/2119946022767980985",
+      "published_at_utc": "2026-11-10T00:11:33.000Z",
+      "published_at_shanghai": "2026-11-10 08:11（Asia/Shanghai）",
+      "tools": [
+        "作者的 v2 视频剪辑工具"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者写了 Full prompt and files below，但回复里只给了文件/工具链接 https://v2.video/riley/the-history-of-writing/v1 ，本轮未在推文正文中找到完整提示词原文。"
+      },
+      "method": "主帖是约 96 秒的视频，作者称 one prompt。完整提示词需要打开他回复里的文件链接才能核对，本条不转述未在原帖正文核到的提示词。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/rileybrown/status/2119946308823707707",
+        "https://v2.video/riley/the-history-of-writing/v1"
+      ],
+      "images": [
+        {
+          "src": "/images/fable-5-2/riley-history-writing-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/rileybrown/status/2119946022767980985"
+        }
+      ]
+    },
+    {
+      "id": "riley-meta-edit",
+      "title": "用 Fable 5.2 剪一条关于 Fable 作品的视频",
+      "category": "动态设计与代码动画",
+      "one_liner": "Riley 后来又发了一条：用 Fable 5.2 剪辑了一支介绍他那条 Blender 房间视频的片子。",
+      "author": {
+        "name": "Riley Brown",
+        "username": "rileybrown",
+        "url": "https://x.com/rileybrown"
+      },
+      "source_url": "https://x.com/rileybrown/status/2119973951027724385",
+      "published_at_utc": "2026-11-10T02:02:31.000Z",
+      "published_at_shanghai": "2026-11-10 10:02（Asia/Shanghai）",
+      "tools": [
+        "Fable 5.2 视频剪辑"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "这是对 Blender 房间演示的元剪辑，作者原话是“Here's a video edited by Fable 5.2 about a video I edited with Fable 5.2.” 引用了房间那条原帖。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/rileybrown/status/2119902109709537708"
+      ],
+      "images": [
+        {
+          "src": "/images/fable-5-2/riley-meta-edit-01.jpg",
+          "width": 675,
+          "height": 1200,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/rileybrown/status/2119973951027724385"
+        }
+      ]
+    },
+    {
+      "id": "website-animations",
+      "title": "一次生成的网站动画合集",
+      "category": "动态设计与代码动画",
+      "one_liner": "Florent Ademaj 发了一段视频，称这些网站动画都是 Fable 5.2 一次做出来的。",
+      "author": {
+        "name": "Florent Ademaj",
+        "username": "MaybeFlorent",
+        "url": "https://x.com/MaybeFlorent"
+      },
+      "source_url": "https://x.com/MaybeFlorent/status/2119899685011792255",
+      "published_at_utc": "2026-11-09T21:07:25.000Z",
+      "published_at_shanghai": "2026-11-10 05:07（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。作者只写了 made these WEBSITE ANIMATIONS in one shot。"
+      },
+      "method": "原帖没有逐条说明每个页面的题材或提示词，效果以约 42 秒的视频为准。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/website-animations-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/MaybeFlorent/status/2119899685011792255"
+        }
+      ]
+    },
+    {
+      "id": "overplanner-compare",
+      "title": "同一句提示词：总在计划却迟迟开始的年轻人",
+      "category": "动态设计与代码动画",
+      "one_liner": "作者把同一句提示词分别交给 Opus 5.5 和 Fable 5.2，各做一次、不修改：左边是 Opus，右边是 Fable，主题是一个过度计划、迟迟动手、最后终于开始的年轻人。",
+      "author": {
+        "name": "Renewed",
+        "username": "TomRON93443575",
+        "url": "https://x.com/TomRON93443575"
+      },
+      "source_url": "https://x.com/TomRON93443575/status/2119884686499688770",
+      "published_at_utc": "2026-11-09T20:07:49.000Z",
+      "published_at_shanghai": "2026-11-10 04:07（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "animate a young man who overplans, never starts, and finally does.",
+        "note": "作者称 exact same prompt，one shot each，no edits。这是帖子里的概括。"
+      },
+      "method": "左右分屏对比。作者没有在帖子里宣布胜负，只问 Which one understood him?",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/overplanner-compare-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/TomRON93443575/status/2119884686499688770"
+        }
+      ]
+    },
+    {
+      "id": "thoughts-video",
+      "title": "把对 Fable 5.2 博客的口述感想做成视频",
+      "category": "动态设计与代码动画",
+      "one_liner": "作者一边读官方博客一边口述感想，把录音交给 Fable 5.2，让它把这些想法做成视频。",
+      "author": {
+        "name": "Akash Mohan",
+        "username": "buriedstupidity",
+        "url": "https://x.com/buriedstupidity"
+      },
+      "source_url": "https://x.com/buriedstupidity/status/2119900194540322870",
+      "published_at_utc": "2026-11-09T21:09:26.000Z",
+      "published_at_shanghai": "2026-11-10 05:09（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。作者的做法是：读官方博客时口述感想，再要求模型把这些想法做成视频。"
+      },
+      "method": "视频约 90 秒，是作者的第一印象，不是产品功能演示。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/thoughts-video-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/buriedstupidity/status/2119900194540322870"
+        }
+      ]
+    },
+    {
+      "id": "kintsugi",
+      "title": "一个 458 行 HTML 文件做出的金缮动画",
+      "category": "动态设计与代码动画",
+      "one_liner": "作者只要求做出一段让人不敢相信来自单个代码文件的 24 秒影片，Fable 5.2 自己选了金缮主题，458 行 HTML 里包含画面和配乐，花费 3.42 美元。",
+      "author": {
+        "name": "wukoayos",
+        "username": "wukoayos",
+        "url": "https://x.com/wukoayos"
+      },
+      "source_url": "https://x.com/wukoayos/status/2119913604921397298",
+      "published_at_utc": "2026-11-09T22:02:44.000Z",
+      "published_at_shanghai": "2026-11-10 06:02（Asia/Shanghai）",
+      "tools": [
+        "单文件 HTML"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开逐字提示词。作者概括说：提示词要求做 24 秒、让人不敢相信来自单个代码文件的影片，没有指定题材，是模型自己选了金缮。"
+      },
+      "method": "作者强调没有图片、三维模型、视频模型，也没有自己改。第一次用 max effort 花了 5.13 美元只做规划、一行代码都没写；这是三个题材里最好的一次，85,000 个输出 token，15 分钟，3.42 美元。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/kintsugi-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/wukoayos/status/2119913604921397298"
+        }
+      ]
+    },
+    {
+      "id": "cat-movie",
+      "title": "不听指挥的猫：六句提示词做的一分多钟短片",
+      "category": "动态设计与代码动画",
+      "one_liner": "作者用 Renoise MCP，在一次对话里给了六句一行提示词，Fable 5.2 做出 62 秒短片，讲一只不听指挥的猫，镜头、配乐和日语配音都在 Claude 里生成。",
+      "author": {
+        "name": "Renoise",
+        "username": "renoiseai",
+        "url": "https://x.com/renoiseai"
+      },
+      "source_url": "https://x.com/renoiseai/status/2119959294716326280",
+      "published_at_utc": "2026-11-10T01:04:17.000Z",
+      "published_at_shanghai": "2026-11-10 09:04（Asia/Shanghai）",
+      "tools": [
+        "Renoise MCP"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开那六句提示词的原文。作者只说 Six one-line prompts。"
+      },
+      "method": "作者称一次对话、六句一行提示词，做成 62 秒影片。需要写明使用了 Renoise MCP，不是纯网页动画。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/cat-movie-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/renoiseai/status/2119959294716326280"
+        }
+      ]
+    },
+    {
+      "id": "founder-film",
+      "title": "一句长提示词做的创始人宣传片（@Uare_ai）",
+      "category": "动态设计与代码动画",
+      "one_liner": "Yev Marusenko 用一篇很长的“创始人影片”提示词，让 Fable 5.2 为 @Uare_ai 做了一支发布向短片，并在回复里公开了完整提示词。",
+      "author": {
+        "name": "Yev Marusenko",
+        "username": "DoctorYev",
+        "url": "https://x.com/DoctorYev"
+      },
+      "source_url": "https://x.com/DoctorYev/status/2119895951108423801",
+      "published_at_utc": "2026-11-09T20:52:35.000Z",
+      "published_at_shanghai": "2026-11-10 04:52（Asia/Shanghai）",
+      "tools": [
+        "作者提示词里要求用 Remotion 或 HTML/GSAP 等代码工作流，并可能调用配音和素材工具"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "You are making a 50 to 70 second founder film for [BRAND], to post on [PLATFORM, e.g. X]. It mixes a real interview with the founder, a narrator, archive b-roll and designed motion graphics. Work through the phases in order. Do the work yourself, show me checkpoints where marked, and don't stop to ask about mechanics you can decide.",
+        "note": "完整提示词很长，公开发在回复 https://x.com/DoctorYev/status/2119895956166717919 ，此处只摘录开头。作者后来还说自己用 Opus 5.5 做过类似一条，这条是用 Fable 5.2 重做，并承认 Opus 那条其实更好。"
+      },
+      "method": "主帖请人按 1 到 10 打分，并写明 example featuring @Uare_ai。完整提示词覆盖素材整理、脚本、剪辑、动画和声音。上架时不要假装这是无提示词的魔法一键生成，应链到那条回复。作者自己也说 Opus 5.5 的版本其实更好。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [
+        "https://x.com/DoctorYev/status/2119895956166717919"
+      ],
+      "images": [
+        {
+          "src": "/images/fable-5-2/founder-film-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/DoctorYev/status/2119895951108423801"
+        }
+      ]
+    },
+    {
+      "id": "kontur-landing",
+      "title": "KONTUR：从蓝图到交房的三维滚动落地页",
+      "category": "设计与界面",
+      "one_liner": "Magda 用 Fable 5.2 测试做出承包商品牌 KONTUR 的网页，主标题是“Your project, from blueprint to keys.”，带可滚动的三维小区。",
+      "author": {
+        "name": "Magda",
+        "username": "Webilyco",
+        "url": "https://x.com/Webilyco"
+      },
+      "source_url": "https://x.com/Webilyco/status/2119909604431626667",
+      "published_at_utc": "2026-11-09T21:46:50.000Z",
+      "published_at_shanghai": "2026-11-10 05:46（Asia/Shanghai）",
+      "tools": [
+        "Web 三维落地页（作者未写明具体库）"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。原帖只说在测试 Fable 5.2，没有写出项目名；项目名 KONTUR 来自视频画面本身。"
+      },
+      "method": "原帖正文没有介绍项目细节，但从作者发布的视频画面可以清楚看到这是一家总承包商品牌落地页，导航包括 Process、What we build 等，右下角有 Scroll to walk the site。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/kontur-landing-01.jpg",
+          "width": 1200,
+          "height": 622,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Webilyco/status/2119909604431626667"
+        }
+      ]
+    },
+    {
+      "id": "command-center",
+      "title": "带三维知识图谱的智能体指挥中心面板",
+      "category": "设计与界面",
+      "one_liner": "作者把智能体系统的数据快照交给 Fable 5.2，一句提示词、大约 10 分钟、不到 2 美元，做出带三维知识图谱和 15 个面板的新指挥中心，移动端布局也有，控制台零报错。",
+      "author": {
+        "name": "Sebastian Matysik",
+        "username": "s_matysik",
+        "url": "https://x.com/s_matysik"
+      },
+      "source_url": "https://x.com/s_matysik/status/2119909371484213380",
+      "published_at_utc": "2026-11-09T21:45:54.000Z",
+      "published_at_shanghai": "2026-11-10 05:45（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体前端栈"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。作者称 one prompt，输入是系统数据快照。"
+      },
+      "method": "这是作者一条讨论串里的单独测试。他还提到第一个视频里的评测页也是模型做的，但本条只收录这条带指挥中心视频的原帖。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/command-center-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/s_matysik/status/2119909371484213380"
+        }
+      ]
+    },
+    {
+      "id": "landing-zry",
+      "title": "作者眼中“见过最好的”落地页一次生成",
+      "category": "设计与界面",
+      "one_liner": "Zach 发视频称 Fable 5.2 刚刚做出他见过最好的落地页，但没有公开提示词或项目名。",
+      "author": {
+        "name": "Zach",
+        "username": "ZryMiller",
+        "url": "https://x.com/ZryMiller"
+      },
+      "source_url": "https://x.com/ZryMiller/status/2119892074464190684",
+      "published_at_utc": "2026-11-09T20:37:10.000Z",
+      "published_at_shanghai": "2026-11-10 04:37（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "原帖只有一句评价和约 28 秒视频。上架时不要把“最好”写成客观结论，这是作者个人看法。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/landing-zry-01.jpg",
+          "width": 1200,
+          "height": 591,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ZryMiller/status/2119892074464190684"
+        }
+      ]
+    },
+    {
+      "id": "landing-compilation",
+      "title": "一组 Fable 5.2 一次生成的落地页合集",
+      "category": "设计与界面",
+      "one_liner": "Dara A. 把多条 Fable 5.2 一次生成的落地页剪在一起，称这些是他见过最好的 one shot。",
+      "author": {
+        "name": "Dara A.",
+        "username": "daradoescode",
+        "url": "https://x.com/daradoescode"
+      },
+      "source_url": "https://x.com/daradoescode/status/2119919529807466594",
+      "published_at_utc": "2026-11-09T22:26:16.000Z",
+      "published_at_shanghai": "2026-11-10 06:26（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。这是合集，不是单一页面的制作说明。"
+      },
+      "method": "视频约 24 秒，是多条落地页一次生成结果的剪辑。原帖没有逐条标明每个页面的作者提示词，上架时应写成合集，而不是单个项目教程。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/landing-compilation-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/daradoescode/status/2119919529807466594"
+        }
+      ]
+    },
+    {
+      "id": "ocean-landing",
+      "title": "向下滚进海洋的落地页",
+      "category": "设计与界面",
+      "one_liner": "作者用 Fable 5.2 的 low 档做出一个向下滚动就能走进海洋的落地页。",
+      "author": {
+        "name": "Pratzyy",
+        "username": "pratyushrungta",
+        "url": "https://x.com/pratyushrungta"
+      },
+      "source_url": "https://x.com/pratyushrungta/status/2119903348354945416",
+      "published_at_utc": "2026-11-09T21:21:58.000Z",
+      "published_at_shanghai": "2026-11-10 05:21（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。作者只概括为 scroll-down-into-the-ocean landing page，并注明用的是 fable 5.2 low。"
+      },
+      "method": "原帖很短，重点是 low 档也能做出这种滚动进海里的页面效果。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/ocean-landing-01.jpg",
+          "width": 1199,
+          "height": 752,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/pratyushrungta/status/2119903348354945416"
+        }
+      ]
+    },
+    {
+      "id": "jwt-alternatives",
+      "title": "同一站点的 20 种落地页替代设计",
+      "category": "设计与界面",
+      "one_liner": "网站所有者只给了三条规则，让 Fable 5.2 为自己的 JWT 站点做出 20 种不重复的替代设计，并提供了预览页。",
+      "author": {
+        "name": "Enrique Chavez",
+        "username": "Tmeister",
+        "url": "https://x.com/Tmeister"
+      },
+      "source_url": "https://x.com/Tmeister/status/2119983842841018482",
+      "published_at_utc": "2026-11-10T02:41:50.000Z",
+      "published_at_shanghai": "2026-11-10 10:41（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体前端栈"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "I own this site: https://jwtauth.pro/\n\nI want you to create 20 alternative designs. Rules:\n\nno repetitive designs\nfull creative mode",
+        "note": "提示词由作者公开发在原帖中。"
+      },
+      "method": "作者认为其中一些看起来不错，并给出预览地址 https://jwt-designs-preview.noone-697.workers.dev/ 。原站是 https://jwtauth.pro/ 。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": "https://jwt-designs-preview.noone-697.workers.dev/",
+      "related_urls": [
+        "https://jwtauth.pro/"
+      ],
+      "images": [
+        {
+          "src": "/images/fable-5-2/jwt-alternatives-01.jpg",
+          "width": 1200,
+          "height": 630,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/Tmeister/status/2119983842841018482"
+        }
+      ]
+    },
+    {
+      "id": "productized-landing",
+      "title": "为 Fable 5.2 本身做的独特风格落地页",
+      "category": "设计与界面",
+      "one_liner": "Michael Diestelberg 在 OpenRouter 额度两次用尽之后，仍然完成了一张他认为风格很独特的 Fable 5.2 落地页。",
+      "author": {
+        "name": "Michael Diestelberg",
+        "username": "mdiestelberg",
+        "url": "https://x.com/mdiestelberg"
+      },
+      "source_url": "https://x.com/mdiestelberg/status/2119916542339285319",
+      "published_at_utc": "2026-11-09T22:14:24.000Z",
+      "published_at_shanghai": "2026-11-10 06:14（Asia/Shanghai）",
+      "tools": [
+        "OpenRouter"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。作者称这是 vibe check 的结果。"
+      },
+      "method": "在线地址为 https://productized.tech/models/claude-fable-5-2 。作者强调他没在其他模型上见过这种风格。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": "https://productized.tech/models/claude-fable-5-2",
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/productized-landing-01.jpg",
+          "width": 1600,
+          "height": 1590,
+          "media_type": "photo",
+          "original_post_url": "https://x.com/mdiestelberg/status/2119916542339285319"
+        }
+      ]
+    },
+    {
+      "id": "fermat-explainer",
+      "title": "用交互讲解片解释费马大定理形式化",
+      "category": "解释与教学",
+      "one_liner": "作者对照官方那次 30 小时形式化，说一个 Fable 5.2 用 65 分钟做出交互讲解，还写脚本检查自己的数学，并导演、录下了这支视频。",
+      "author": {
+        "name": "Kerem",
+        "username": "mkeremturhan",
+        "url": "https://x.com/mkeremturhan"
+      },
+      "source_url": "https://x.com/mkeremturhan/status/2119911863144026261",
+      "published_at_utc": "2026-11-09T21:55:48.000Z",
+      "published_at_shanghai": "2026-11-10 05:55（Asia/Shanghai）",
+      "tools": [
+        "交互讲解（作者未说明具体栈）"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开完整提示词。作者称是 one prompt。"
+      },
+      "method": "作者把三个时间尺度放在一起：358 年从边注到证明，30 小时由 1000 个代理完成形式化，65 分钟由一个 Fable 5.2 向普通人讲解。这是讲解片，不是官方形式化实验本身。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/fermat-explainer-01.jpg",
+          "width": 960,
+          "height": 1200,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/mkeremturhan/status/2119911863144026261"
+        }
+      ]
+    },
+    {
+      "id": "explainer-akshat",
+      "title": "为 Anthropic 11 月发布做的手绘风讲解",
+      "category": "解释与教学",
+      "one_liner": "Akshat Bahety 用 Fable 5.2 做了一支讲解视频，封面是星空下打开的书，标题写着 New from Anthropic · November 2026；配音由模型通过 Fal 生成。",
+      "author": {
+        "name": "Akshat Bahety",
+        "username": "akshatbahety",
+        "url": "https://x.com/akshatbahety"
+      },
+      "source_url": "https://x.com/akshatbahety/status/2119882437740421456",
+      "published_at_utc": "2026-11-09T19:58:53.000Z",
+      "published_at_shanghai": "2026-11-10 03:58（Asia/Shanghai）",
+      "tools": [
+        "Fal（音频和配音）"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。作者只写 Used Fable 5.2 to make this explainer。"
+      },
+      "method": "原帖没有逐句说明讲解内容，从封面可以看到这是围绕 Anthropic 2026 年 11 月发布的讲解。作者写明 audio and voice generated via Fal by Fable，上架时需注明还用了 Fal。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/explainer-akshat-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/akshatbahety/status/2119882437740421456"
+        }
+      ]
+    },
+    {
+      "id": "convex-explainer",
+      "title": "Convex 的动态图形讲解片",
+      "category": "解释与教学",
+      "one_liner": "Micky 称 Fable 5.2 很擅长动态图形，并为 Convex 做了这支讲解片，视频约 4 分钟。",
+      "author": {
+        "name": "Micky",
+        "username": "Rasmic",
+        "url": "https://x.com/Rasmic"
+      },
+      "source_url": "https://x.com/Rasmic/status/2119919466163093768",
+      "published_at_utc": "2026-11-09T22:26:01.000Z",
+      "published_at_shanghai": "2026-11-10 06:26（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "原帖很短，重点是 motion graphics 和 Convex 讲解。Convex 是已有产品品牌，页面只需做案例说明并链回作者。官方视频封面偏暗，上架时如不够清楚，可再从原视频截一帧。",
+      "notes": "视频封面偏暗。",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/convex-explainer-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Rasmic/status/2119919466163093768"
+        }
+      ]
+    },
+    {
+      "id": "quantum-explainer",
+      "title": "用量子世界作比喻讲解 Fable 5.2 的能力",
+      "category": "解释与教学",
+      "one_liner": "Misbah Syed 让 Fable 5.2 用量子世界里的例子讲解它自己的能力，并认为从此可以让它用任一领域的例子去解释任一主题。",
+      "author": {
+        "name": "Misbah Syed",
+        "username": "MisbahSy",
+        "url": "https://x.com/MisbahSy"
+      },
+      "source_url": "https://x.com/MisbahSy/status/2119952604012949828",
+      "published_at_utc": "2026-11-10T00:37:42.000Z",
+      "published_at_shanghai": "2026-11-10 08:37（Asia/Shanghai）",
+      "tools": [
+        "作者未说明具体栈"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开逐字提示词。作者概括为：explain it's capabilities based on the quantum world。"
+      },
+      "method": "原帖把结论写得很满（Explainer videos are solved），上架时只把它当作作者观点，不要写成事实。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/quantum-explainer-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/MisbahSy/status/2119952604012949828"
+        }
+      ]
+    },
+    {
+      "id": "unix-like-os",
+      "title": "用 Fable 5.2 做编排，从零做出类 Unix 系统",
+      "category": "应用与系统",
+      "one_liner": "Chris 称自己用 Claude Managed Agents 的动态工作流，让 Fable 5.2 担任编排者，从零做出一套类 Unix 操作系统，并录了讲解视频。",
+      "author": {
+        "name": "Chris",
+        "username": "cjav_dev",
+        "url": "https://x.com/cjav_dev"
+      },
+      "source_url": "https://x.com/cjav_dev/status/2119874384748036227",
+      "published_at_utc": "2026-11-09T19:26:53.000Z",
+      "published_at_shanghai": "2026-11-10 03:26（Asia/Shanghai）",
+      "tools": [
+        "Claude Managed Agents",
+        "动态工作流"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未在该帖公开完整提示词。做法说明主要在约 2 分 36 秒的视频里。"
+      },
+      "method": "这不是官方那个 8 天、1000 个代理的笔记本操作系统演示，而是作者自己的编排实验。上架时不要和官方 OS 演示混成同一条。",
+      "notes": "",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/unix-like-os-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/cjav_dev/status/2119874384748036227"
+        }
+      ]
+    },
+    {
+      "id": "browser-os-compare",
+      "title": "同一个空文件夹：15 分钟在浏览器里启动操作系统",
+      "category": "应用与系统",
+      "one_liner": "作者给 Fable 5.2 和 Opus 5.5 同一个空文件夹、同一句提示词和 15 分钟时限，要求做出能在浏览器启动的操作系统；两个都能进桌面，Fable 多了一个应用，但用了约两倍 token，还慢了约一分钟。",
+      "author": {
+        "name": "itsarcvale",
+        "username": "itsarcvale",
+        "url": "https://x.com/itsarcvale"
+      },
+      "source_url": "https://x.com/itsarcvale/status/2119920638282404012",
+      "published_at_utc": "2026-11-09T22:30:41.000Z",
+      "published_at_shanghai": "2026-11-10 06:30（Asia/Shanghai）",
+      "tools": [
+        "浏览器内操作系统（作者未说明具体栈）"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "build an operating system that boots in the browser",
+        "note": "作者写明 same prompt, one agent each, 15-minute limit。"
+      },
+      "method": "作者记录：Opus 5.5 在 3 分 01 秒启动，307 行、9 个应用、3.9 万输出 token；Fable 5.2 在 4 分 02 秒启动，364 行、10 个应用、8 万输出 token。两者都能进入带终端、文件、画图和贪吃蛇的桌面。作者强调这是单次运行，不是评测，并问 Fable 究竟是新物种，还是只是更费预算的 Opus。",
+      "notes": "这是 15 分钟的浏览器原型，不要和官方 8 天笔记本操作系统演示混为一谈。",
+      "model": "Claude Fable 5.2",
+      "model_attribution": "author_claimed",
+      "live_demo_url": null,
+      "related_urls": [],
+      "images": [
+        {
+          "src": "/images/fable-5-2/browser-os-compare-01.jpg",
+          "width": 960,
+          "height": 1200,
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/itsarcvale/status/2119920638282404012"
+        }
+      ]
+    }
+  ]
+}

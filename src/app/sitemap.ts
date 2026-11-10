@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { getAllPosts } from '../lib/posts';
 import { siteConfig } from '../lib/config';
+import { fableCases } from '../lib/fable-cases';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await getAllPosts();
@@ -16,6 +17,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     {
       url: `${siteConfig.url}/gpt-6-cases`,
       lastModified: new Date('2026-09-11'),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${siteConfig.url}/fable-5-2-cases`,
+      lastModified: new Date('2026-11-10'),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
@@ -69,5 +76,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
-  return [...staticUrls, ...postUrls];
+  const fableCaseUrls = fableCases.map((item) => ({
+    url: `${siteConfig.url}/fable-5-2-cases/${item.id}`,
+    lastModified: new Date(item.published_at_utc),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  return [...staticUrls, ...fableCaseUrls, ...postUrls];
 } 
