@@ -66,10 +66,19 @@ export default function ShengcaiInviteCard({ id = 'shengcai-invite', className =
           </p>
         </figure>
 
-        <figure className="flex h-full flex-col rounded-2xl border border-[#B7DED6] bg-white p-4 text-[#163832] dark:border-white/15">
-          <figcaption className="text-sm font-bold text-[#067C6A]">觉得适合，再看看这张 400 元优惠券</figcaption>
-          <p className="mt-2 text-sm leading-6 text-[#356158]">
-            准备加入的朋友，可以先把下面这张券保存好，体验结束后更容易找到。
+        <figure className="flex h-full flex-col rounded-2xl border-2 border-[#E85D3F] bg-white p-4 text-[#163832] shadow-[0_10px_30px_rgba(232,93,63,0.16)] dark:border-[#F08A6F] dark:bg-[#1D2925] dark:text-[#F8FCFA]">
+          <div className="rounded-xl border border-[#F1B29F] bg-[#FFF0E8] px-4 py-3 text-[#8F2816] dark:border-[#7D493C] dark:bg-[#462A22] dark:text-[#FFD8CB]">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+              <strong className="text-lg font-black">今天 23:59 截止</strong>
+              <span className="rounded-full bg-[#E85D3F] px-3 py-1 text-xs font-bold text-white">仅剩最后几个小时</span>
+            </div>
+            <p className="mt-2 text-sm font-semibold leading-6">
+              400 元优惠券今天（11 月 11 日）失效。已经决定加入，就现在保存并扫码确认，别等过期。
+            </p>
+          </div>
+          <figcaption className="mt-4 text-base font-black text-[#A73920] dark:text-[#FFB39F]">400 元优惠券｜今天最后一天</figcaption>
+          <p className="mt-2 text-sm leading-6 text-[#356158] dark:text-[#D6E9E4]">
+            先用微信扫码查看优惠；前 500 名加入可用，剩余名额以扫码后的领取和支付页面为准。
           </p>
           <div className="mx-auto mt-3 w-full max-w-[16rem] overflow-hidden rounded-xl">
             <Image
@@ -81,11 +90,11 @@ export default function ShengcaiInviteCard({ id = 'shengcai-invite', className =
               className="h-auto w-full"
             />
           </div>
-          <p className="mt-3 text-sm leading-6 text-[#59616B]">
-            海报标注：<strong className="font-bold text-[#163832]">生财有术 400 元优惠券，可用时间为 2026 年 11 月 1 日 00:00 至 11 月 11 日 23:59，前 500 名加入可用。</strong>剩余名额及能否使用，以扫码后的领取和支付页面为准。
+          <p className="mt-3 text-sm font-semibold leading-6 text-[#8F2816] dark:text-[#FFD8CB]">
+            海报标注：<strong className="font-bold text-[#163832] dark:text-[#FFE6DE]">生财有术 400 元优惠券，可用时间为 2026 年 11 月 1 日 00:00 至 11 月 11 日 23:59，前 500 名加入可用。</strong>剩余名额及能否使用，以扫码后的领取和支付页面为准。
           </p>
-          <p className="mt-2 text-xs leading-5 text-[#59616B]">
-            先保存优惠券图片，确定加入时扫码查看并领取优惠。这张券 11 月 11 日 23:59 到期。
+          <p className="mt-2 text-xs font-bold leading-5 text-[#A73920] dark:text-[#FFB39F]">
+            有效期结束前最后几个小时，保存图片并立即扫码领取。
           </p>
         </figure>
       </div>
