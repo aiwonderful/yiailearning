@@ -1,0 +1,3032 @@
+{
+  "title": "Gemini 4 Carbon 带效果图案例合集（调研稿）（网页压缩版）",
+  "collected_at": "2026-11-11 13:15（Asia/Shanghai）",
+  "collected_at_shanghai": "2026-11-11 13:15（Asia/Shanghai）",
+  "model_scope": "仅收录明确写明由 Gemini 4 Carbon（含 Gemini 4 Carbon High / Medium / Low，或作者写 Gemini Carbon 但上下文明确是这次发布的 Carbon）完成的案例。不收录只写 Gemini、Gemini 4 或未标明版本的内容，也不收录仅有 Argon 或其他旧版本结果的条目。本轮同时收录纯 Carbon 作品，以及以 Carbon 为主再交给其他模型、引擎或工具的混用工作流。",
+  "launch": {
+    "official_name": "Gemini 4 Carbon",
+    "announced": "2026-10-28",
+    "generally_available": "2026-11-10",
+    "official_blog_intro": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "official_blog_available": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "official_blog_developers": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/",
+    "official_launch_post_sundar": "https://x.com/sundarpichai/status/2115489219804352921",
+    "official_launch_post_logan": "https://x.com/OfficialLoganK/status/2115489284404940898",
+    "official_available_post_logan": "https://x.com/OfficialLoganK/status/2120186016254624039",
+    "official_pelican_post": "https://x.com/sundarpichai/status/2120198811297694192",
+    "claims": [
+      "Google DeepMind 于 2026 年 10 月 28 日宣布、11 月 10 日向付费开发者和 Google AI Ultra 用户开放的前沿模型，官方称主打网络安全、长程智能体工作流、复杂多步编程和科学推理。",
+      "官方称在 CursorBench 4.0、Perplexity WANDR 和 Zapier AutomationBench 上排第一，并且完成每项任务的成本不到下一档外部模型的一半（官方发布，调研未独立复现）。",
+      "引入价与 Gemini 4 Argon 相同：每百万 token 输入 2 美元、输出 10 美元；官方写明优惠期于 2026-11-30 结束后改为输入 4 美元、输出 20 美元。",
+      "官方同时预览了 Google Antigravity 的 /swarm：一条提示词变成一组协同智能体。官方建议把 Carbon 放在架构、协调和审核等需要更深推理的角色上。",
+      "可通过 Google AI Studio 的付费 API、Gemini for business，以及 Ultra 订阅下的 Antigravity、Gemini 应用和搜索 AI 模式使用。"
+    ]
+  },
+  "count": 57,
+  "method_note": "来源包括 Google 官方博客与官方 X 帖、Google 转发的社区作品原帖，以及 X 检索和 Simon Willison 博客。每条都回到原帖或原文核对模型名和媒体。效果图从原帖照片、视频封面或官方 YouTube 封面下载，未转存完整视频。模型归属以作者自称或官方标注为准，调研未独立复现。混用工作流带 mixed: true 与中文分步 workflow；步骤只写原帖已说明的内容，写不清的标「原帖未说明」。纯 Carbon 条目 mixed 为 false。",
+  "exclusions": [
+    "只写 Gemini、Gemini 4 或 Carbon，但没有明确写 Gemini 4 Carbon 的帖子，不收。",
+    "明确是 Gemini 4 Argon 或其他 Gemini 版本、且没有 Carbon 结果的，不收。例如 The Model Atlas 上的 LOKAS（作者写明用 Gemini 4 Argon），以及 @0xKenny1st 更早那条只对比 Argon / Astra / Opus / Grok、不含 Carbon 的气缸动画。",
+    "新闻转述、跑分截图合集、价格解读、功能介绍，如果本身不是作者用 Carbon 做出来的作品，不收。例如大量官博摘要账号、Arena 榜单截图、StatsWire 的模型档位泄露截图。",
+    "不确定是不是 Carbon 做的，或更像视频生成模型直接出片、又没有写明指导关系的，不收。例如只写“一张静图加提示词生成 50 秒万圣节视频”的帖子。",
+    "二手剪辑合集如果没有指向可核对的原作者原帖，不收。例如把别人作品剪成精选合集、但未附原帖的视频。",
+    "同一作品只保留原作者或官方首发的一条。Google 官方转发的社区作品，收录原作者帖，官方转发只作为 featured_by_url。官方鹈鹕游戏以 Sundar / 官方博客为首发，社区转发不另建条。",
+    "没有效果图、视频封面或截图的，不收。",
+    "账号简介含成人内容、作品对象又是“女孩”角色等存在风险的条目，本轮先不收。"
+  ],
+  "copyright": "图片、视频和演示版权归原作者或 Google / Google DeepMind。合集只做效果预览：视频只保留封面或截图，不转存完整视频。每条都保留作者署名和原帖 / 原文链接。不要把借助 Blender、Unity、FreeCAD、Omni、Nano Banana、Lyria 等工具的作品说成纯模型一次成型。官方跑分、价格和能力描述均注明出自官方发布，调研未独立复现。作者自测的耗时、费用和胜负同样标注为作者自述。",
+  "cases": [
+    {
+      "id": "official-sundar-announce",
+      "title": "Sundar Pichai 宣布 Gemini 4 Carbon",
+      "category": "官方发布与演示",
+      "one_liner": "谷歌 CEO 宣布下一档前沿模型，附 Artificial Analysis Intelligence Index v5.0 成绩图。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "official_thread",
+      "author": {
+        "name": "Sundar Pichai",
+        "username": "sundarpichai",
+        "url": "https://x.com/sundarpichai"
+      },
+      "posted_by": {
+        "name": "Sundar Pichai",
+        "username": "sundarpichai",
+        "url": "https://x.com/sundarpichai"
+      },
+      "source_url": "https://x.com/sundarpichai/status/2115489219804352921",
+      "published_at_utc": "2026-10-28T17:01:48.000Z",
+      "published_at_shanghai": "2026-10-29 01:01（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方发布帖，不是提示词案例。"
+      },
+      "method": "官方发布帖介绍 Gemini 4 Carbon：Artificial Analysis Intelligence Index v5.0 得分 59、暂列第一；网络安全评测 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%。当时先向部分网络安全防守方开放，并计划通过 Fairwind 计划扩大。跑分与价格均为官方发布，调研未独立复现。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/official-sundar-announce-01.webp",
+          "source_media_url": "https://pbs.twimg.com/media/HVu5GHmbUAAppsK.jpg?name=orig",
+          "media_type": "photo",
+          "original_post_url": "https://x.com/sundarpichai/status/2115489219804352921",
+          "copyright_note": "官方演示或发布图，版权归 Google / Google DeepMind / 原发布方。",
+          "src": "/images/gemini-4-carbon/official-sundar-announce-01.webp",
+          "width": 1600,
+          "height": 1346
+        }
+      ],
+      "likes": 34066,
+      "featured_by_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+      ],
+      "notes": "官方发布图，版权归 Google / 原发布方。成绩出自官方发布。",
+      "mixed": false
+    },
+    {
+      "id": "official-logan-announce",
+      "title": "Logan Kilpatrick 发布 Gemini 4 Carbon 并附官方跑分表",
+      "category": "官方发布与演示",
+      "one_liner": "Gemini API 负责人称 Carbon 相对两周前的 Argon 是一次明显跃升，并放出官方对比表。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "official_thread",
+      "author": {
+        "name": "Logan Kilpatrick",
+        "username": "OfficialLoganK",
+        "url": "https://x.com/OfficialLoganK"
+      },
+      "posted_by": {
+        "name": "Logan Kilpatrick",
+        "username": "OfficialLoganK",
+        "url": "https://x.com/OfficialLoganK"
+      },
+      "source_url": "https://x.com/OfficialLoganK/status/2115489284404940898",
+      "published_at_utc": "2026-10-28T17:02:03.000Z",
+      "published_at_shanghai": "2026-10-29 01:02（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方发布帖，不是提示词案例。"
+      },
+      "method": "官方发布帖称 Carbon 在网络安全和长程任务上达到当时最优，Artificial Analysis V5 排第一，并改善了编程可用性与对齐。附图为官方跑分对照表。成绩出自官方发布，调研未独立复现。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/official-logan-announce-01.webp",
+          "source_media_url": "https://pbs.twimg.com/media/HVu4Jx_bQAA3BbT.jpg?name=orig",
+          "media_type": "photo",
+          "original_post_url": "https://x.com/OfficialLoganK/status/2115489284404940898",
+          "copyright_note": "官方演示或发布图，版权归 Google / Google DeepMind / 原发布方。",
+          "src": "/images/gemini-4-carbon/official-logan-announce-01.webp",
+          "width": 1600,
+          "height": 1346
+        }
+      ],
+      "likes": 15897,
+      "featured_by_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "https://x.com/OfficialLoganK/status/2120186016254624039"
+      ],
+      "notes": "官方跑分表，版权归 Google / 原发布方。2026-11-10 同一作者宣布 API 与 Ultra 订阅可用。",
+      "mixed": false
+    },
+    {
+      "id": "official-deepmind-announce",
+      "title": "Google DeepMind 官方宣布 Gemini 4 Carbon",
+      "category": "官方发布与演示",
+      "one_liner": "DeepMind 官方账号宣布下一档前沿模型，主打网络安全与长程能力。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "official_thread",
+      "author": {
+        "name": "Google DeepMind",
+        "username": "GoogleDeepMind",
+        "url": "https://x.com/GoogleDeepMind"
+      },
+      "posted_by": {
+        "name": "Google DeepMind",
+        "username": "GoogleDeepMind",
+        "url": "https://x.com/GoogleDeepMind"
+      },
+      "source_url": "https://x.com/GoogleDeepMind/status/2115489356437651654",
+      "published_at_utc": "2026-10-28T17:02:21.000Z",
+      "published_at_shanghai": "2026-10-29 01:02（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方发布帖，不是提示词案例。"
+      },
+      "method": "Google DeepMind 官方发布帖，配官方视觉图，称 Carbon 在网络安全和长程能力上达到当时最优。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/official-deepmind-announce-01.webp",
+          "source_media_url": "https://pbs.twimg.com/media/HVu5JfhXkAAHYVr.jpg?name=orig",
+          "media_type": "photo",
+          "original_post_url": "https://x.com/GoogleDeepMind/status/2115489356437651654",
+          "copyright_note": "官方演示或发布图，版权归 Google / Google DeepMind / 原发布方。",
+          "src": "/images/gemini-4-carbon/official-deepmind-announce-01.webp",
+          "width": 1600,
+          "height": 1346
+        }
+      ],
+      "likes": 14529,
+      "featured_by_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+      ],
+      "notes": "官方发布图，版权归 Google DeepMind / 原发布方。",
+      "mixed": false
+    },
+    {
+      "id": "official-pelican-campus",
+      "title": "鹈鹕骑 GBike 游览谷歌山景城园区",
+      "category": "官方发布与演示",
+      "one_liner": "官方用 Antigravity 的 /swarm，让构建与审查子代理在 Blender 和 Three.js 之间来回迭代，做出可玩的 3D 园区游戏。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "official_thread",
+      "author": {
+        "name": "Sundar Pichai",
+        "username": "sundarpichai",
+        "url": "https://x.com/sundarpichai"
+      },
+      "posted_by": {
+        "name": "Sundar Pichai",
+        "username": "sundarpichai",
+        "url": "https://x.com/sundarpichai"
+      },
+      "source_url": "https://x.com/sundarpichai/status/2120198811297694192",
+      "published_at_utc": "2026-11-10T16:56:02.000Z",
+      "published_at_shanghai": "2026-11-11 00:56（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity /swarm",
+        "Blender",
+        "Three.js",
+        "Gemini Omni",
+        "Nano Banana",
+        "Lyria",
+        "Web Audio"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "官方称这是对长程编程和 Antigravity 新功能 /swarm 的测试：构建与审查子代理在 Blender 和 Three.js 之间循环，检查自己的渲染结果，做出鹈鹕骑车游览山景城园区的可玩 3D 游戏。官方博客补充：子代理根据 Omni 和 Nano Banana 参考图在 Blender 里建模，用 Three.js 与 WebGL 着色器做浏览器游戏，并用程序化 Web Audio 音效搭配 Lyria 配乐。效果图为视频封面，未转存完整视频。提示词未公开。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/official-pelican-campus-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120196803442384898/img/fGUA5ihLCjyKp_av.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/sundarpichai/status/2120198811297694192",
+          "copyright_note": "官方演示或发布图，版权归 Google / Google DeepMind / 原发布方。",
+          "src": "/images/gemini-4-carbon/official-pelican-campus-01.webp",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/images/gemini-4-carbon/official-pelican-campus-02.webp",
+          "source_media_url": "https://i.ytimg.com/vi/dNbkThtNzS8/maxresdefault.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+          "copyright_note": "官方演示或发布图，版权归 Google / Google DeepMind / 原发布方。",
+          "src": "/images/gemini-4-carbon/official-pelican-campus-02.webp",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "likes": 3960,
+      "featured_by_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "live_demo_url": "https://aistudio.google.com/apps/bundled/pelican-campus-quest",
+      "repo_url": null,
+      "related_urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+        "https://www.youtube.com/watch?v=dNbkThtNzS8"
+      ],
+      "notes": "官方案例。可玩演示在 AI Studio，可能需要 Google 账号。效果图为视频封面，未转存完整视频。混用了参考图模型和音频模型。",
+      "mixed": true,
+      "workflow": [
+        "第1步：子代理根据 Omni 和 Nano Banana 生成的参考图，在 Blender 中建立 3D 资产。原帖未公开参考图提示词和建模参数。",
+        "第2步：用 Three.js 和 WebGL 着色器做成可在浏览器里玩的园区游戏。官方称构建与审查子代理会检查自己的渲染结果并迭代。原帖未说明循环轮数。",
+        "第3步：用程序化 Web Audio 做音效，并用 Lyria 配乐。原帖未说明音乐提示词。"
+      ]
+    },
+    {
+      "id": "official-eiffel-exhibit",
+      "title": "一句话做成埃菲尔铁塔建造过程 3D 展",
+      "category": "官方发布与演示",
+      "one_liner": "多个 Carbon 智能体把历史照片和工程图，做成可互动的 Three.js 1887–1889 建造展。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "official_blog",
+      "author": {
+        "name": "Google DeepMind",
+        "username": "GoogleDeepMind",
+        "url": "https://blog.google/"
+      },
+      "posted_by": {
+        "name": "Koray Kavukcuoglu / Google",
+        "username": null,
+        "url": "https://blog.google/authors/koray-kavukcuoglu/"
+      },
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "published_at_utc": "2026-11-10T16:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（官方博客发布日，具体时刻未标明）（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity /swarm",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方写“from a single prompt”，但未公开提示词原文。"
+      },
+      "method": "官方博客：使用 Antigravity 的 /swarm，一组 Gemini 4 Carbon 智能体把历史照片和工程图，做成埃菲尔铁塔 1887–1889 年建造过程的互动 Three.js 三维展。官方称由一条提示词启动，但未公开提示词，也未说明智能体数量、分工和迭代轮数。效果图取自官方演示视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/official-eiffel-exhibit-01.webp",
+          "source_media_url": "https://i.ytimg.com/vi/rOVEmjfPmYk/maxresdefault.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+          "copyright_note": "官方演示或发布图，版权归 Google / Google DeepMind / 原发布方。",
+          "src": "/images/gemini-4-carbon/official-eiffel-exhibit-01.webp",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "likes": null,
+      "featured_by_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://www.youtube.com/watch?v=rOVEmjfPmYk"
+      ],
+      "notes": "官方案例。效果图为 YouTube 封面。",
+      "mixed": false
+    },
+    {
+      "id": "official-platform37",
+      "title": "用规划 PDF 重建谷歌 Platform 37 办公楼",
+      "category": "官方发布与演示",
+      "one_liner": "7 份市政规划 PDF、206 张工程图，过夜 10 轮循环，建成约 90.6 万三角形的可互动三维重建。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "official_blog",
+      "author": {
+        "name": "Google DeepMind",
+        "username": "GoogleDeepMind",
+        "url": "https://blog.google/"
+      },
+      "posted_by": {
+        "name": "Koray Kavukcuoglu / Google",
+        "username": null,
+        "url": "https://blog.google/authors/koray-kavukcuoglu/"
+      },
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "published_at_utc": "2026-11-10T16:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（官方博客发布日，具体时刻未标明）（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity /swarm",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方写“a single prompt”，但未公开提示词原文。"
+      },
+      "method": "官方博客：输入是 7 份公开的市政规划 PDF（从中抽出 206 张工程图），一条提示词启动后，多代理 Carbon 团队用 /swarm 经过 10 轮过夜循环，做成约 90.6 万三角形的 Google Platform 37 办公楼互动 Three.js 重建。提示词未公开。效果图取自官方演示视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/official-platform37-01.webp",
+          "source_media_url": "https://i.ytimg.com/vi/1G2j2eA8sew/maxresdefault.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+          "copyright_note": "官方演示或发布图，版权归 Google / Google DeepMind / 原发布方。",
+          "src": "/images/gemini-4-carbon/official-platform37-01.webp",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "likes": null,
+      "featured_by_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://www.youtube.com/watch?v=1G2j2eA8sew"
+      ],
+      "notes": "官方案例。三角形数量和循环轮数出自官方发布。",
+      "mixed": false
+    },
+    {
+      "id": "official-textile-visualizer",
+      "title": "按论文做出多尺度纺织品可视化器",
+      "category": "官方发布与演示",
+      "one_liner": "根据学术论文做出虚拟纤维有限元框架，含 3D 纱线网格、110 纤维极坐标追踪和动态应力-应变曲线。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "official_blog",
+      "author": {
+        "name": "Google DeepMind",
+        "username": "GoogleDeepMind",
+        "url": "https://blog.google/"
+      },
+      "posted_by": {
+        "name": "Koray Kavukcuoglu / Google",
+        "username": null,
+        "url": "https://blog.google/authors/koray-kavukcuoglu/"
+      },
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "published_at_utc": "2026-11-10T16:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（官方博客发布日，具体时刻未标明）（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方写“minimal prompting”，但未公开提示词原文。"
+      },
+      "method": "官方博客：在 Google Antigravity 里，Carbon 根据一篇学术论文做出互动多尺度纺织品可视化器，包含虚拟纤维有限元框架、可互动的 3D 纱线网格、110 纤维极坐标追踪，以及动态应力-应变曲线。官方称提示很少，但未公开原文。效果图取自官方演示视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/official-textile-visualizer-01.webp",
+          "source_media_url": "https://i.ytimg.com/vi/VDIMa4u9skQ/maxresdefault.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+          "copyright_note": "官方演示或发布图，版权归 Google / Google DeepMind / 原发布方。",
+          "src": "/images/gemini-4-carbon/official-textile-visualizer-01.webp",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "likes": null,
+      "featured_by_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://www.youtube.com/watch?v=VDIMa4u9skQ"
+      ],
+      "notes": "官方案例。",
+      "mixed": false
+    },
+    {
+      "id": "official-merchandise-store",
+      "title": "两句提示词重做谷歌周边商店",
+      "category": "官方发布与演示",
+      "one_liner": "Carbon 提出五种艺术方向，并用 Nano Banana 2.1 生成全新商品图，重做了 Google Merchandise Store。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "official_blog",
+      "author": {
+        "name": "Google DeepMind",
+        "username": "GoogleDeepMind",
+        "url": "https://blog.google/"
+      },
+      "posted_by": {
+        "name": "Koray Kavukcuoglu / Google",
+        "username": null,
+        "url": "https://blog.google/authors/koray-kavukcuoglu/"
+      },
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "published_at_utc": "2026-11-10T16:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（官方博客发布日，具体时刻未标明）（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity",
+        "Nano Banana 2.1"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "官方写“two prompts”，但未公开提示词原文。"
+      },
+      "method": "官方博客：在 Antigravity 里，Carbon 用两句提示词重想了 Google Merchandise Store，提出五种艺术方向，并用 Nano Banana 2.1 生成全新商品图。官方提供了可玩的 AI Studio 演示，以及 Gemini 前端设计技能仓库。提示词未公开。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/official-merchandise-store-01.webp",
+          "source_media_url": "https://i.ytimg.com/vi/Y8FA5LhXLdo/maxresdefault.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+          "copyright_note": "官方演示或发布图，版权归 Google / Google DeepMind / 原发布方。",
+          "src": "/images/gemini-4-carbon/official-merchandise-store-01.webp",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "likes": null,
+      "featured_by_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "live_demo_url": "https://aistudio.google.com/apps/bundled/gemini-supply",
+      "repo_url": "https://github.com/google-gemini/demolab",
+      "related_urls": [
+        "https://www.youtube.com/watch?v=Y8FA5LhXLdo"
+      ],
+      "notes": "官方案例，混用了 Nano Banana 2.1 出商品图。",
+      "mixed": true,
+      "workflow": [
+        "第1步：在 Google Antigravity 中用两句提示词让 Carbon 重做谷歌周边商店，并提出五种艺术方向。原帖未公开这两句提示词。",
+        "第2步：用 Nano Banana 2.1 生成全新商品图。原帖未说明每张图的提示词和选取方式。"
+      ]
+    },
+    {
+      "id": "official-atlantis",
+      "title": "从 Omni 视频参考做出水下亚特兰蒂斯场景",
+      "category": "官方发布与演示",
+      "one_liner": "先用 Gemini Omni 做视频参考，再在 Blender 里建模、做体积焦散和水体，最后转到 Three.js 实时渲染。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "official_blog",
+      "author": {
+        "name": "Google DeepMind",
+        "username": "GoogleDeepMind",
+        "url": "https://blog.google/"
+      },
+      "posted_by": {
+        "name": "Koray Kavukcuoglu / Google",
+        "username": null,
+        "url": "https://blog.google/authors/koray-kavukcuoglu/"
+      },
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "published_at_utc": "2026-11-10T16:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（官方博客发布日，具体时刻未标明）（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity",
+        "Gemini Omni",
+        "Blender",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "官方博客：从 Gemini Omni 在 Antigravity 里生成的视频参考出发，流水线先在 Blender 中建立程序化遗迹、体积焦散光照和水体模拟，再把完整环境转到 Three.js，做浏览器里的实时多镜头水下亚特兰蒂斯场景。提示词未公开。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/official-atlantis-01.webp",
+          "source_media_url": "https://i.ytimg.com/vi/Cxf3AVX8_7I/maxresdefault.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+          "copyright_note": "官方演示或发布图，版权归 Google / Google DeepMind / 原发布方。",
+          "src": "/images/gemini-4-carbon/official-atlantis-01.webp",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "likes": null,
+      "featured_by_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://www.youtube.com/watch?v=Cxf3AVX8_7I"
+      ],
+      "notes": "官方案例，混用了 Gemini Omni 视频参考。",
+      "mixed": true,
+      "workflow": [
+        "第1步：在 Google Antigravity 中用 Gemini Omni 生成视频参考。原帖未公开提示词。",
+        "第2步：在 Blender 中建立程序化遗迹、体积焦散光照和水体模拟。原帖未说明具体参数。",
+        "第3步：把完整环境转到 Three.js，做浏览器实时多镜头渲染。"
+      ]
+    },
+    {
+      "id": "official-fortepiano",
+      "title": "按 CAD 和 X 光片重建可演奏古钢琴",
+      "category": "官方发布与演示",
+      "one_liner": "重建约 1780 年 Stein-Schule 古钢琴的 61 键擒纵物理，并放到多伦多 Koerner Hall 的座位级空间声学里。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "official_blog",
+      "author": {
+        "name": "Google DeepMind",
+        "username": "GoogleDeepMind",
+        "url": "https://blog.google/"
+      },
+      "posted_by": {
+        "name": "Koray Kavukcuoglu / Google",
+        "username": null,
+        "url": "https://blog.google/authors/koray-kavukcuoglu/"
+      },
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "published_at_utc": "2026-11-10T16:00:00.000Z",
+      "published_at_shanghai": "2026-11-10（官方博客发布日，具体时刻未标明）（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "官方博客：用 Antigravity 里的多代理循环，Carbon 根据 CAD 图纸和 X 光片，重建约 1780 年 Stein-Schule 古钢琴，带 61 键擒纵物理，并放到多伦多皇家音乐学院 Koerner Hall 的 3D 模型中，带座位级空间声学。官方提供了 AI Studio 可玩演示。提示词未公开。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/official-fortepiano-01.webp",
+          "source_media_url": "https://i.ytimg.com/vi/Vn-gsW5Dyf8/maxresdefault.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+          "copyright_note": "官方演示或发布图，版权归 Google / Google DeepMind / 原发布方。",
+          "src": "/images/gemini-4-carbon/official-fortepiano-01.webp",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "likes": null,
+      "featured_by_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "live_demo_url": "https://aistudio.google.com/apps/bundled/koerner-hall",
+      "repo_url": null,
+      "related_urls": [
+        "https://www.youtube.com/watch?v=Vn-gsW5Dyf8"
+      ],
+      "notes": "官方案例。可玩演示在 AI Studio，可能需要 Google 账号。",
+      "mixed": false
+    },
+    {
+      "id": "glitter-cuda-meadow",
+      "title": "用 CUDA 和 C++ 写出 5.2 万株草地",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "不用游戏引擎或 3D 库，从零写出 52,000 株草和野花，风声也用同一阵风在 C++ 里合成。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Glitter Gal",
+        "username": "GlitterPixely",
+        "url": "https://x.com/GlitterPixely"
+      },
+      "posted_by": {
+        "name": "Glitter Gal",
+        "username": "GlitterPixely",
+        "url": "https://x.com/GlitterPixely"
+      },
+      "source_url": "https://x.com/GlitterPixely/status/2120264316092022895",
+      "published_at_utc": "2026-11-10T21:16:20.000Z",
+      "published_at_shanghai": "2026-11-11 05:16（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "CUDA",
+        "C++"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者写明用 Gemini 4 Carbon，在没有游戏引擎或 3D 库的情况下，用 CUDA 和 C++ 从零做了一片草地：约 5.2 万株草和野花，风声音效也在 C++ 里合成，并跟画面上的同一阵风对齐。提示词未公开。该条后被 Google 官方转发介绍。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/glitter-cuda-meadow-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120261179431895040/img/vjrsnJvm0YSM4N3z.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/GlitterPixely/status/2120264316092022895",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/glitter-cuda-meadow-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 128,
+      "featured_by_url": "https://x.com/Google/status/2120324708826550328",
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/Google/status/2120324708826550328"
+      ],
+      "notes": "Google 官方社区作品串也介绍了这条。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "kim-orrery",
+      "title": "ORRERY：一个控件带动齿轮和折叠花瓣",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "作者拿到早期权限后用 Antigravity 做的第一件作品：正转反转都由同一套控制带动。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "posted_by": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "source_url": "https://x.com/kimmonismus/status/2120186125591646250",
+      "published_at_utc": "2026-11-10T16:05:38.000Z",
+      "published_at_shanghai": "2026-11-11 00:05（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称在 Antigravity 里提前用上 Gemini 4 Carbon，一共给了 13 个编程任务。第一件是 ORRERY：一个控件同时带动齿轮和折叠花瓣，反转也能跟上。作者后来回复说这些任务都不是一次完成，这一件做了一次后续修改来改善构图。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/kim-orrery-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120186089386512384/img/5wDLyG_o0qIq7oI4.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/kimmonismus/status/2120186125591646250",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/kim-orrery-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 661,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "作者 13 个编程任务串的第 1 件。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "kim-tideforge",
+      "title": "TIDEFORGE：实时模拟 104 万粒子",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "用 WebGPU 计算 1,048,576 个粒子的运动，切换流场模式时还是同一套实时模拟。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "posted_by": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "source_url": "https://x.com/kimmonismus/status/2120186202271945137",
+      "published_at_utc": "2026-11-10T16:05:56.000Z",
+      "published_at_shanghai": "2026-11-11 00:05（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity",
+        "WebGPU"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者只写了要求一百万粒子，未公开完整提示词。"
+      },
+      "method": "作者请 Carbon 做一百万粒子。实际跑起来是 1,048,576 个，运动由 WebGPU compute 计算，切换流场模式时改的是同一套实时模拟。作者写明整站代码都来自 Carbon，并且这一件没有追加提示词。后被 Google 官方转发介绍。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/kim-tideforge-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120186138803752961/img/GIh1i9u8guaBrIsZ.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/kimmonismus/status/2120186202271945137",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/kim-tideforge-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 76,
+      "featured_by_url": "https://x.com/Google/status/2120324710307131464",
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/Google/status/2120324710307131464"
+      ],
+      "notes": "作者称这是该串里少数没有追加提示词的任务。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "kim-ardent",
+      "title": "ARDENT：带引导游览的作品集网站",
+      "category": "网站、应用与数据工具",
+      "one_liner": "不只是开场动画，后面还有可浏览的项目页和引导游览。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "posted_by": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "source_url": "https://x.com/kimmonismus/status/2120186258031075506",
+      "published_at_utc": "2026-11-10T16:06:09.000Z",
+      "published_at_shanghai": "2026-11-11 00:06（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者要求做成完整网站，开场动画后面要有实际内容。成品有可浏览的项目页和作品集引导游览。一次后续修改用于改善雕塑和字体。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/kim-ardent-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120186215484071936/img/cuX2ZlzuBO2YPdqP.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/kimmonismus/status/2120186258031075506",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/kim-ardent-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 45,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "kim-flux-runner",
+      "title": "FLUX RUNNER：带物理的弹珠跑酷",
+      "category": "游戏与可玩原型",
+      "one_liner": "弹珠有真实物理和移动障碍，实测 16.3 秒到达终点，12 个棱镜收集了 10 个。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "posted_by": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "source_url": "https://x.com/kimmonismus/status/2120186315652407348",
+      "published_at_utc": "2026-11-10T16:06:23.000Z",
+      "published_at_shanghai": "2026-11-11 00:06（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者让 Carbon 做游戏 FLUX RUNNER。弹珠有物理和移动障碍。作者称一次实测 16.3 秒到达终点，12 个棱镜收集了 10 个，中途没有掉落重置。后来追加了一次提示，用来修光照和启动卡顿。提示词未公开。这些成绩是作者自测，调研未独立复现。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/kim-flux-runner-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120186271419285504/img/zJeII2aGty1EZUcQ.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/kimmonismus/status/2120186315652407348",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/kim-flux-runner-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 39,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "通关数据出自作者自述。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "kim-vela",
+      "title": "VELA：可拆解的虚构灯光仪器",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "产品发布向测试：十个部件可分开、改表面再装回去，完整导览约 20 秒。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "posted_by": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "source_url": "https://x.com/kimmonismus/status/2120186354877522431",
+      "published_at_utc": "2026-11-10T16:06:32.000Z",
+      "published_at_shanghai": "2026-11-11 00:06（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者把它当作产品发布测试：先虚构一件灯光仪器，再把它拆开。十个部件可以分开、更换表面再重新组装。作者称完整 20 秒导览在测试中跑完，后来又追加一次修改构图和字体。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/kim-vela-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120186329015480320/img/YoC3JIHFrgMNa2mM.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/kimmonismus/status/2120186354877522431",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/kim-vela-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 40,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "kim-paper-weather",
+      "title": "PAPER WEATHER：立体弹出书里的城市",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "第一版太素，作者加码做成立体弹出书：城市从书页里展开，外层是能翻的杂志和印刷车间。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "posted_by": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "source_url": "https://x.com/kimmonismus/status/2120186389971243141",
+      "published_at_utc": "2026-11-10T16:06:41.000Z",
+      "published_at_shanghai": "2026-11-11 00:06（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称第一版 PAPER WEATHER 需求太保守，后来改成真正的 3D 弹出书：城市从书页展开，并放在可翻页的杂志和印刷车间里。一共追加了三次：修 bug、重做成 3D，以及翻页和构图。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/kim-paper-weather-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120186368144084992/img/X7IminTs5KSB_qUS.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/kimmonismus/status/2120186389971243141",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/kim-paper-weather-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 26,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "kim-aftertype",
+      "title": "AFTERTYPE：带图层和导出的海报编辑器",
+      "category": "网站、应用与数据工具",
+      "one_liner": "软件向测试：图层、撤销，以及 SVG/PNG 导出；作者发现撤销和导出文字问题后，一次追加就修好了。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "posted_by": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "source_url": "https://x.com/kimmonismus/status/2120186426314903886",
+      "published_at_utc": "2026-11-10T16:06:49.000Z",
+      "published_at_shanghai": "2026-11-11 00:06（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者把它当作软件测试：做带图层、撤销和 SVG/PNG 导出的海报编辑器。第一次审的时候发现撤销步骤被拆开、导出文件里文字会偏移，一次追加后两处都修好，编辑结果和下载文件对齐。作者在后续帖里还写：Carbon 在他审之前会自己测试和修复，AFTERTYPE 的第一轮撤销修复就发生在初次生成过程中；但他也不主张只看测试通过，因为后来仍发现过撤销、导出文字和下载提示的问题。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/kim-aftertype-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120186403137159168/img/iqsozeQ0GVJK1JiV.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/kimmonismus/status/2120186426314903886",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/kim-aftertype-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 27,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/kimmonismus/status/2120186476759781486",
+        "https://x.com/kimmonismus/status/2120186488512274698"
+      ],
+      "notes": "作者同时记录了模型自修复和仍需人工验收。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "kim-sable-site",
+      "title": "SABLE SITE：战术射击关卡",
+      "category": "游戏与可玩原型",
+      "one_liner": "两个炸弹点、四个 AI 防守和原创 3D 武器，作者后来又让它修了机器人寻路和回合逻辑。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "posted_by": {
+        "name": "Chubby♨️",
+        "username": "kimmonismus",
+        "url": "https://x.com/kimmonismus"
+      },
+      "source_url": "https://x.com/kimmonismus/status/2120186464860553651",
+      "published_at_utc": "2026-11-10T16:06:59.000Z",
+      "published_at_shanghai": "2026-11-11 00:06（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者让 Carbon 做战术射击游戏 SABLE SITE：两个炸弹点、四个 AI 防守和原创 3D 武器。模型先建关卡和资产，作者再追加要求去修机器人寻路和回合逻辑。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/kim-sable-site-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120186439959027712/img/__QZUJU6Sy5g_FXy.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/kimmonismus/status/2120186464860553651",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/kim-sable-site-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 25,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "buggeddev-optics-lab",
+      "title": "巴黎光学实验室 Analyse Spectrale",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "只给一张参考图，做出 92 件铜与玻璃仪器、可调实验和自己设计的界面。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "The Bugged Dev",
+        "username": "thebuggeddev",
+        "url": "https://x.com/thebuggeddev"
+      },
+      "posted_by": {
+        "name": "The Bugged Dev",
+        "username": "thebuggeddev",
+        "url": "https://x.com/thebuggeddev"
+      },
+      "source_url": "https://x.com/thebuggeddev/status/2120201759305998343",
+      "published_at_utc": "2026-11-10T17:07:45.000Z",
+      "published_at_shanghai": "2026-11-11 01:07（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称只用一张参考图，让 Gemini 4 Carbon 做出 19 世纪风格的巴黎物理实验室 Analyse Spectrale（Mod. M1-2-15）：92 件铜、红铜和硼硅玻璃零件，现场 Beer-Lambert Rankine 涡旋、轴向爆炸视图，以及带 60 FPS SVG 功率指示和示意图板的界面。作者写明界面是模型自己设计的，没有另给设计参考。提示词未公开。后被 Google 官方转发。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/buggeddev-optics-lab-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120199466670002177/img/Yg-ayJRbvuN3Ovqe.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/thebuggeddev/status/2120201759305998343",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/buggeddev-optics-lab-01.webp",
+          "width": 1200,
+          "height": 781
+        }
+      ],
+      "likes": 237,
+      "featured_by_url": "https://x.com/Google/status/2120324721816539520",
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/Google/status/2120324721816539520"
+      ],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "giyu-public-data-apps",
+      "title": "把零散公开数据做成 14 个可互动工具",
+      "category": "网站、应用与数据工具",
+      "one_liner": "早期测试中，用已有公开数据应用做架构参考，让 Carbon 寻找高价值行业并做成 14 个带 3D 可视化的平台。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "giyu_codes",
+        "username": "giyu_codes",
+        "url": "https://x.com/giyu_codes"
+      },
+      "posted_by": {
+        "name": "giyu_codes",
+        "username": "giyu_codes",
+        "url": "https://x.com/giyu_codes"
+      },
+      "source_url": "https://x.com/giyu_codes/status/2120201582319190381",
+      "published_at_utc": "2026-11-10T17:07:03.000Z",
+      "published_at_shanghai": "2026-11-11 01:07（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "WebGL"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者称提示词写在帖子下面，但同时提醒用了 4 个已有应用做参考，本轮未完整摘录原文，故记为未公开提示词。"
+      },
+      "method": "作者称拿到 Google 早期测试权限。他用自己已有的公开数据应用做架构指导，让 Carbon 寻找有公开数据、服务不足的高价值行业，并做成完整垂直平台，重点测多源数据对齐和 3D WebGL 物理。总览视频介绍了全部 14 个应用，作者称每个都成功做成可托管应用。因为用了已有应用做参考，不能把它理解成从零一句生成。本条只收总览，不把 14 个应用拆成 14 条。效果图为视频封面。后被 Google 官方转发。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/giyu-public-data-apps-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120200888363139072/img/8gSxqp1ENpdzIJXf.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/giyu_codes/status/2120201582319190381",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/giyu-public-data-apps-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 80,
+      "featured_by_url": "https://x.com/Google/status/2120324719086088676",
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/Google/status/2120324719086088676"
+      ],
+      "notes": "混用了作者已有的 4 个应用作为架构参考。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：作者提供自己已有的 4 个公开数据应用，作为架构参考。原帖未说明这 4 个应用的具体名称和如何导入。",
+        "第2步：请 Carbon 寻找有公开数据、服务不足的高价值行业，并做成完整垂直平台，同时测试多源数据对齐和 3D WebGL 物理。",
+        "第3步：14 个应用分别做成可托管应用，并发布总览演示。作者称提示词写在帖子下面，本轮未完整摘录。"
+      ]
+    },
+    {
+      "id": "andrew-stained-jenga",
+      "title": "彩绘玻璃版 Jenga",
+      "category": "游戏与可玩原型",
+      "one_liner": "每块积木都是易碎彩绘玻璃，敲击会发声，倒塌时碎成玻璃片；可在浏览器里玩。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "⟁ndrew V",
+        "username": "AI_Andrew",
+        "url": "https://x.com/AI_Andrew"
+      },
+      "posted_by": {
+        "name": "⟁ndrew V",
+        "username": "AI_Andrew",
+        "url": "https://x.com/AI_Andrew"
+      },
+      "source_url": "https://x.com/AI_Andrew/status/2120243379388760176",
+      "published_at_utc": "2026-11-10T19:53:08.000Z",
+      "published_at_shanghai": "2026-11-11 03:53（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "WebGPU"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用 Gemini 4 Carbon 做了彩绘玻璃 Jenga（页面标题为 Vitrail — Stained Glass Jenga）。Google 官方转述：每块积木都是易碎彩绘玻璃，要模拟光线、敲击发声，以及倒塌时碎成玻璃片。作者提供了可玩链接 https://vitrail.andrewvoirol.com ，并写可按声音点积木，也可进沙盒砸碎。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/andrew-stained-jenga-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120243273394425857/img/vj1f9FnKjw-gRELw.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/AI_Andrew/status/2120243379388760176",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/andrew-stained-jenga-01.webp",
+          "width": 1200,
+          "height": 697
+        }
+      ],
+      "likes": 16,
+      "featured_by_url": "https://x.com/Google/status/2120324716238086357",
+      "live_demo_url": "https://vitrail.andrewvoirol.com",
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/Google/status/2120324716238086357"
+      ],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "ash-adiyogi",
+      "title": "Adiyogi Divya Darshanam 三维场景",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "作者早期测试串的第一件：靠近他心里的圣地场景，演示视频也是 Carbon 在 Antigravity 里录的。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "posted_by": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "source_url": "https://x.com/ai_for_success/status/2120187064184664162",
+      "published_at_utc": "2026-11-10T16:09:21.000Z",
+      "published_at_shanghai": "2026-11-11 00:09（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity",
+        "FreeCAD",
+        "build123d",
+        "Blender",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称提前用 Gemini Carbon 做编程和 3D，并展示 7 件作品。第一件是 Adiyogi Divya Darshanam。作者在回复里补充：这件用了不少工具和工作流，包括通过 MCP 做图生 3D、FreeCAD、build123d、Blender、Three.js 等。演示视频也由 Carbon 在 Antigravity 里录制。可玩演示集中在 https://ashutoshai.com/showcase 。提示词和各步骤细节未完整公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/ash-adiyogi-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120183833756889088/img/t8k-TOsnkUOdQ_NT.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ai_for_success/status/2120187064184664162",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/ash-adiyogi-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 450,
+      "featured_by_url": null,
+      "live_demo_url": "https://ashutoshai.com/showcase",
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/ai_for_success/status/2120225628695978174"
+      ],
+      "notes": "混用工作流。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：作者称使用图生 3D（经 MCP）。原帖未说明用了哪张图、哪个 MCP，也未公开提示词。",
+        "第2步：结合 FreeCAD、build123d、Blender、Three.js 等工具完成场景。原帖未说明各工具分别承担哪一步。",
+        "第3步：演示视频由 Carbon 在 Antigravity 里录制。"
+      ]
+    },
+    {
+      "id": "ash-aquascape",
+      "title": "亚马逊风种植水族箱",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "用 Three.js 做出神仙鱼、群游灯鱼、虾、水下焦散和摇摆水草。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "posted_by": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "source_url": "https://x.com/ai_for_success/status/2120187066453799391",
+      "published_at_utc": "2026-11-10T16:09:22.000Z",
+      "published_at_shanghai": "2026-11-11 00:09（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者 7 件作品串的第 2 件：用 Three.js 做种植水族箱，里面有神仙鱼、群游灯鱼、虾、水下焦散和摇摆水草。原帖未说明是否还用了其他工具。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/ash-aquascape-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120183943538642944/img/xLQ7_Lkgl25AsyLH.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ai_for_success/status/2120187066453799391",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/ash-aquascape-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 14,
+      "featured_by_url": null,
+      "live_demo_url": "https://ashutoshai.com/showcase",
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "ash-v8-engine",
+      "title": "1600 马力双涡轮 V8 发动机",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "可揭开罩盖、拉转速、看活塞点火，排气歧管会烧红，并带实时 V8 声音。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "posted_by": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "source_url": "https://x.com/ai_for_success/status/2120187068634837203",
+      "published_at_utc": "2026-11-10T16:09:22.000Z",
+      "published_at_shanghai": "2026-11-11 00:09（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity",
+        "FreeCAD",
+        "Blender"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者 7 件作品串的第 3 件：一台可实时运行的 1600 马力双涡轮 V8，能揭开罩盖、拉转速、看活塞点火，排气歧管烧红，并带实时 V8 声音。作者稍后自述是在 Antigravity 里用 FreeCAD + Blender 做成，大约花 6–7 小时，包括录演示视频。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/ash-v8-engine-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120184011637325825/img/qTx_61ucZA3FmM-m.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ai_for_success/status/2120187068634837203",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/ash-v8-engine-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 10,
+      "featured_by_url": null,
+      "live_demo_url": "https://ashutoshai.com/showcase",
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/ai_for_success/status/2120317619588972867"
+      ],
+      "notes": "混用 FreeCAD 与 Blender。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：在 Google Antigravity 中使用 Gemini 4 Carbon，结合 FreeCAD 建模。原帖未说明哪些零件在 FreeCAD 完成，也未公开提示词。",
+        "第2步：结合 Blender 完成展示和动画。原帖未说明导入和渲染参数。",
+        "第3步：作者称连演示视频一起大约花了 6–7 小时。"
+      ]
+    },
+    {
+      "id": "ash-unity-game",
+      "title": "第一次用 Unity 做的两关等距 3D 游戏",
+      "category": "游戏与可玩原型",
+      "one_liner": "作者写明这是自己第一次用 Unity，做成了两关等距 3D 游戏。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "posted_by": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "source_url": "https://x.com/ai_for_success/status/2120187070799032417",
+      "published_at_utc": "2026-11-10T16:09:23.000Z",
+      "published_at_shanghai": "2026-11-11 00:09（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity",
+        "Unity"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者 7 件作品串的第 4 件：第一次尝试 Unity，做成两关等距 3D 游戏。提示词和关卡设计细节未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/ash-unity-game-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120184165534724096/img/lOiJouOPTw5Vfxw2.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ai_for_success/status/2120187070799032417",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/ash-unity-game-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 8,
+      "featured_by_url": null,
+      "live_demo_url": "https://ashutoshai.com/showcase",
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "混用 Unity。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：在 Antigravity 中使用 Gemini 4 Carbon。原帖未公开提示词。",
+        "第2步：在 Unity 中做成两关等距 3D 游戏。原帖未说明资源、关卡和交互是如何导入 Unity 的。"
+      ]
+    },
+    {
+      "id": "ash-pelican-pier",
+      "title": "体素鹈鹕骑巡航车走栈道",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "一只体素鹈鹕骑复古巡航自行车，沿着没完的日照栈道往前，作者称全部用代码完成。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "posted_by": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "source_url": "https://x.com/ai_for_success/status/2120187073013633390",
+      "published_at_utc": "2026-11-10T16:09:24.000Z",
+      "published_at_shanghai": "2026-11-11 00:09（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者 7 件作品串的第 5 件：体素鹈鹕骑复古巡航自行车，沿着没有尽头的日照栈道前进，作者写明 100% 用代码完成。提示词未公开。效果图为视频封面。这是社区作品，与官方山景城园区鹈鹕游戏不是同一条。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/ash-pelican-pier-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120184356102922240/img/6lJtFbUJoOYWM-29.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ai_for_success/status/2120187073013633390",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/ash-pelican-pier-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 8,
+      "featured_by_url": null,
+      "live_demo_url": "https://ashutoshai.com/showcase",
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "与官方 pelican campus 游戏区分。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "ash-grass-meadow",
+      "title": "乡间草地：150 万根草的 WebGPU 场景",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "作者称之为现在摸草的方式：150 万根草在 WebGPU 里运行。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "posted_by": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "source_url": "https://x.com/ai_for_success/status/2120187075295342849",
+      "published_at_utc": "2026-11-10T16:09:24.000Z",
+      "published_at_shanghai": "2026-11-11 00:09（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity",
+        "WebGPU"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者 7 件作品串的第 6 件：乡间草地，约 150 万根草在 WebGPU 中运行。提示词未公开。效果图为视频封面。这与 GlitterPixely 的 CUDA 草地是不同作者的作品。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/ash-grass-meadow-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120184554225033216/img/F013pPTH3K3W287C.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ai_for_success/status/2120187075295342849",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/ash-grass-meadow-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 9,
+      "featured_by_url": null,
+      "live_demo_url": "https://ashutoshai.com/showcase",
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "与 GlitterPixely CUDA 草地区分。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "sunset-inline4-engine",
+      "title": "透明直列四缸发动机",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "单个 index.html，不用外部模型或打包器，60 FPS 玻璃材质，带精确的 1-3-4-2 凸轮相位。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "posted_by": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "source_url": "https://x.com/sunset_evm/status/2120224376503353347",
+      "published_at_utc": "2026-11-10T18:37:37.000Z",
+      "published_at_shanghai": "2026-11-11 02:37（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Three.js r160",
+        "WebGL2"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用 Gemini 4 Carbon 做一个 60 FPS 的透明直列四缸发动机，全部放在单个 index.html 里，没有外部 3D 模型、贴图或打包器。技术栈是 Vanilla ES Modules、Three.js r160、WebGL2 物理玻璃、程序化 CAD 几何、自定义 GLSL 火焰着色器，以及精确的 1-3-4-2 凸轮相位。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/sunset-inline4-engine-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120224298585509888/img/BKZNAeD8MnYshIge.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/sunset_evm/status/2120224376503353347",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/sunset-inline4-engine-01.webp",
+          "width": 1200,
+          "height": 750
+        }
+      ],
+      "likes": 0,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "sunset-robot-cell",
+      "title": "六轴工业抓取单元",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "自动六轴工业机械臂抓取单元，同样是单个自包含的 index.html，没有外部模型和贴图。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "posted_by": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "source_url": "https://x.com/sunset_evm/status/2120253592430846334",
+      "published_at_utc": "2026-11-10T20:33:43.000Z",
+      "published_at_shanghai": "2026-11-11 04:33（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用 Gemini 4 Carbon 做自动六轴工业抓取单元，放在单个自包含的 index.html 里，没有外部 3D 模型和下载贴图，纯代码加 Three.js。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/sunset-robot-cell-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120253529222717440/img/hDALDymS9X_Xc5ld.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/sunset_evm/status/2120253592430846334",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/sunset-robot-cell-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 4,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "sunset-rubiks-cube",
+      "title": "可玩的 Three.js 魔方",
+      "category": "游戏与可玩原型",
+      "one_liner": "作者把它当作 3D 模型测试：拖面旋转、拖背景环绕，转 100 多次不跑轴。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "posted_by": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "source_url": "https://x.com/sunset_evm/status/2120265663188996587",
+      "published_at_utc": "2026-11-10T21:21:41.000Z",
+      "published_at_shanghai": "2026-11-11 05:21（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者把“做一个可玩的 Three.js 魔方”当作模型 3D 测试，并称多数模型转两下就会搞乱轴向。他写 Gemini 4 Carbon 做出了带倒角的 PBR 方块，可拖动面旋转、拖动背景环绕，转 100 多次没有跑轴，并带打乱、撤销等功能。这些观察是作者自述，调研未独立复现。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/sunset-rubiks-cube-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120265352395235328/img/4mrapOUHJ-zRsv-X.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/sunset_evm/status/2120265663188996587",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/sunset-rubiks-cube-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 3,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "sunset-noneuclidean",
+      "title": "零样本做出非欧渲染",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "作者称一句提示词、零样本，Carbon 就在 Three.js 里做出了非欧几里得渲染。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "posted_by": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "source_url": "https://x.com/sunset_evm/status/2120266451554853125",
+      "published_at_utc": "2026-11-10T21:24:49.000Z",
+      "published_at_shanghai": "2026-11-11 05:24（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者称是单次零样本提示词，但未公开原文。"
+      },
+      "method": "作者称在单次零样本提示下，Gemini 4 Carbon 在 Three.js 里完成了非欧几里得渲染。提示词原文未公开，原帖也未说明具体几何模型和交互。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/sunset-noneuclidean-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120266376673693696/img/6a6ofBtW36OHka6h.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/sunset_evm/status/2120266451554853125",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/sunset-noneuclidean-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 0,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "sunset-drone-show",
+      "title": "五千架无人机灯光秀",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "公开提示词：在夜间滨水上空做 5000 架无人机灯光秀，单个 HTML，不用外部资源。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "posted_by": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "source_url": "https://x.com/sunset_evm/status/2120275728339964015",
+      "published_at_utc": "2026-11-10T22:01:41.000Z",
+      "published_at_shanghai": "2026-11-11 06:01（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity /swarm",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "Build a 5,000-drone light show over a night waterfront. One HTML file. No external assets.",
+        "note": null
+      },
+      "method": "作者在 /swarm 模式下给 Gemini 4 Carbon 一句提示词，要求在夜间滨水上空做 5000 架无人机灯光秀，单个 HTML 文件，不用外部资源。作者称回来的结果包括：5000 个发光无人机放在一个 InstancedMesh 里、能跑到 60 FPS，还有霓虹光晕、城市天际线和反光水面。效果图为视频封面。帧率和实现细节是作者自述。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/sunset-drone-show-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120275648862171136/img/K2_Q1BQKX6hFu1Xa.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/sunset_evm/status/2120275728339964015",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/sunset-drone-show-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 6,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "提示词已公开。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "sunset-marble-run",
+      "title": "会奏乐的无尽弹珠塔",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "弹珠沿玻璃管滚下，带动小水车，再敲霓虹木琴阶梯发出音符，然后被电梯送回去循环。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "posted_by": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "source_url": "https://x.com/sunset_evm/status/2120280429680812198",
+      "published_at_utc": "2026-11-10T22:20:21.000Z",
+      "published_at_shanghai": "2026-11-11 06:20（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity /swarm",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者写“asked ... for a marble run”，未公开完整提示词。"
+      },
+      "method": "作者在 /swarm 模式下请 Gemini 4 Carbon 做弹珠轨道，模型用单个 Three.js 文件做出无尽高塔：弹珠沿玻璃管滚下、带动小水车，再敲霓虹木琴阶梯，每一步都会发声，然后被电梯送回顶部循环。提示词未完整公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/sunset-marble-run-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120280347925438464/img/aVHeIcFDT2_ueayh.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/sunset_evm/status/2120280429680812198",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/sunset-marble-run-01.webp",
+          "width": 1200,
+          "height": 750
+        }
+      ],
+      "likes": 7,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "sunset-floating-island",
+      "title": "带 24 小时昼夜循环的低面飘岛",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "实时阴影、旋转风车、闪闪瀑布，夜里窗户、灯笼和萤火虫会自己亮起来，没有外部模型。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "posted_by": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "source_url": "https://x.com/sunset_evm/status/2120285278871158902",
+      "published_at_utc": "2026-11-10T22:39:38.000Z",
+      "published_at_shanghai": "2026-11-11 06:39（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称 Gemini 4 Carbon 用 Three.js 做了一个带完整 24 小时循环的低面飘岛：实时阴影、旋转风车、闪亮瀑布，到了夜里窗户、灯笼和萤火虫会自己亮起来，没有使用外部模型。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/sunset-floating-island-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120285183773474817/img/919EQSuPj8c2aCAp.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/sunset_evm/status/2120285278871158902",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/sunset-floating-island-01.webp",
+          "width": 1200,
+          "height": 750
+        }
+      ],
+      "likes": 4,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "sunset-clockwork-heart",
+      "title": "Three.js 生体机械发条心脏",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "在 /swarm 和 Antigravity 里做成带声音的发条心脏。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "posted_by": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "source_url": "https://x.com/sunset_evm/status/2120308090180714970",
+      "published_at_utc": "2026-11-11T00:10:16.000Z",
+      "published_at_shanghai": "2026-11-11 08:10（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity /swarm",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称 Gemini 4 Carbon 在 /swarm 和 Antigravity 里，用 Three.js 做了一个生体机械发条心脏，并提醒打开声音。提示词和实现细节未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/sunset-clockwork-heart-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120307969430523904/img/DDQJkWFHdfu4nJfa.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/sunset_evm/status/2120308090180714970",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/sunset-clockwork-heart-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 1,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "sunset-black-hole",
+      "title": "浏览器里的可环绕黑洞",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "单个 HTML，没有贴图和音频文件；可以环绕、冲向光子球，靠近时风琴低音会变慢变沉。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "posted_by": {
+        "name": "artem",
+        "username": "sunset_evm",
+        "url": "https://x.com/sunset_evm"
+      },
+      "source_url": "https://x.com/sunset_evm/status/2120316360978817134",
+      "published_at_utc": "2026-11-11T00:43:08.000Z",
+      "published_at_shanghai": "2026-11-11 08:43（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者写“asked Gemini 4 Carbon for a black hole”，未公开完整提示词。"
+      },
+      "method": "作者请 Gemini 4 Carbon 做黑洞，称得到了可以在浏览器标签页里环绕的结果：可以冲向光子球，HUD 上有时间膨胀读数，靠近时风琴低音会变深变慢。作者写明是单个 HTML 文件，没有贴图，也没有外部音频资源。提示词未完整公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/sunset-black-hole-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120316136562515969/img/-fHbc_Qhk_Zfveeg.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/sunset_evm/status/2120316360978817134",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/sunset-black-hole-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 0,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "delroy-mario-3d",
+      "title": "一次生成可玩的 3D 马里奥箱庭",
+      "category": "游戏与可玩原型",
+      "one_liner": "不挂外部工具，一次生成约 2599 行单文件 HTML：多关节骨骼、四关、移动平台和 Web Audio 音效。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "码农暖爸",
+        "username": "Delroy715",
+        "url": "https://x.com/Delroy715"
+      },
+      "posted_by": {
+        "name": "码农暖爸",
+        "username": "Delroy715",
+        "url": "https://x.com/Delroy715"
+      },
+      "source_url": "https://x.com/Delroy715/status/2120140252849611036",
+      "published_at_utc": "2026-11-10T13:03:21.000Z",
+      "published_at_shanghai": "2026-11-10 21:03（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Vertex AI"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称通过 Vertex AI 调用刚上线的 Gemini 4 Carbon，不挂外部工具，单次一次生成完整可玩的 3D《马里奥箱庭冒险》，含多关节骨骼动画、四大连续关卡、移动平台物理、顶砖块出蘑菇，以及 Web Audio 合成的 BGM 和 10 种音效。作者自述最终约 2599 行 / 99.6 KB 单 HTML，输出约 3.8 万 token，端到端约 9 分 18 秒，账单约 0.45 美元。这些数字是作者自测，调研未独立复现。提示词未公开。效果图为视频封面。作者稍后还有 Vite + TypeScript + Three.js 版，与本条属同一作者的后续加码测试，本条保留这次一次生成的单文件版本。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/delroy-mario-3d-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120138594992148480/img/1h43phSxO2L240w3.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Delroy715/status/2120140252849611036",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/delroy-mario-3d-01.webp",
+          "width": 1200,
+          "height": 743
+        }
+      ],
+      "likes": 10,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/Delroy715/status/2120343862061486359"
+      ],
+      "notes": "行数、耗时和费用出自作者自述。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "bijan-racing-game",
+      "title": "Carbon 做的竞速游戏",
+      "category": "游戏与可玩原型",
+      "one_liner": "作者只写“Gemini 4 Carbon 做了这款竞速游戏”，并放出可玩过程录像。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "BijanBowen",
+        "username": "bijanbowen",
+        "url": "https://x.com/bijanbowen"
+      },
+      "posted_by": {
+        "name": "BijanBowen",
+        "username": "bijanbowen",
+        "url": "https://x.com/bijanbowen"
+      },
+      "source_url": "https://x.com/bijanbowen/status/2120308742168387852",
+      "published_at_utc": "2026-11-11T00:12:52.000Z",
+      "published_at_shanghai": "2026-11-11 08:12（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者写明这款竞速游戏是 Gemini 4 Carbon 做的，并配上游戏过程录像。原帖没有说明引擎、提示词和制作步骤。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/bijan-racing-game-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120308112859017216/img/WlUaZzu-0xr7sZ4y.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/bijanbowen/status/2120308742168387852",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/bijan-racing-game-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 151,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "statswire-nyc-cruiser",
+      "title": "单文件 Three.js 纽约巡航车游览",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "单个 HTML，用 Three.js 做互动 3D 纽约巡航游览，没有外部 3D 模型或音频资源。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Stats Wire",
+        "username": "StatsWire",
+        "url": "https://x.com/StatsWire"
+      },
+      "posted_by": {
+        "name": "Stats Wire",
+        "username": "StatsWire",
+        "url": "https://x.com/StatsWire"
+      },
+      "source_url": "https://x.com/StatsWire/status/2120344850071540152",
+      "published_at_utc": "2026-11-11T02:36:21.000Z",
+      "published_at_shanghai": "2026-11-11 10:36（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称 Gemini 4 Carbon 用单个 .html 文件和 Three.js，做出互动 3D 纽约巡航车游览，没有外部 3D 模型或音频资源。作者注明视频灵感来自 @Saboo_Shubham_，因此这是受启发后的新做，不是转载原片。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/statswire-nyc-cruiser-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120344530276773888/img/lpKZ9vqrAIE-tdgi.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/StatsWire/status/2120344850071540152",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/statswire-nyc-cruiser-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 9,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "灵感来源已注明。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "kgninja-hellgate93",
+      "title": "HELLGATE 93：单 HTML 的类 DOOM 射击",
+      "category": "游戏与可玩原型",
+      "one_liner": "一个提示词做出带光线投射、12 只恶魔、程序纹理和合成音效的完整 FPS，游戏自己起名叫 HELLGATE 93。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "KGNINJA",
+        "username": "FuwaCocoOwnerKG",
+        "url": "https://x.com/FuwaCocoOwnerKG"
+      },
+      "posted_by": {
+        "name": "KGNINJA",
+        "username": "FuwaCocoOwnerKG",
+        "url": "https://x.com/FuwaCocoOwnerKG"
+      },
+      "source_url": "https://x.com/FuwaCocoOwnerKG/status/2120363509460713959",
+      "published_at_utc": "2026-11-11T03:50:29.000Z",
+      "published_at_shanghai": "2026-11-11 11:50（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者（及其代理账号自称 Muse）写明：在自己的虚拟机上用 Google Antigravity 跑 Gemini 4 Carbon，一个提示词就在单个 HTML 文件里做出完整的类 DOOM 第一人称射击：光线投射引擎、12 只恶魔、程序纹理和合成音效，没有外部资源。它自己起名叫 HELLGATE 93。帖内是实际游玩截图。提示词未公开。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/kgninja-hellgate93-01.webp",
+          "source_media_url": "https://pbs.twimg.com/media/HW0LX1FawAABPB7.jpg?name=orig",
+          "media_type": "photo",
+          "original_post_url": "https://x.com/FuwaCocoOwnerKG/status/2120363509460713959",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/kgninja-hellgate93-01.webp",
+          "width": 750,
+          "height": 1334
+        }
+      ],
+      "likes": 0,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/FuwaCocoOwnerKG/status/2120360366148624403"
+      ],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "kof97-video-to-frontend",
+      "title": "根据视频演示复刻前端页面",
+      "category": "网站、应用与数据工具",
+      "one_liner": "作者实测用 Carbon 按一段视频 demo 逆向复刻前端，认为代码还原度高，但更依赖详细提示或清晰参考。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Nathan AI Lab",
+        "username": "KOF97AI",
+        "url": "https://x.com/KOF97AI"
+      },
+      "posted_by": {
+        "name": "Nathan AI Lab",
+        "username": "KOF97AI",
+        "url": "https://x.com/KOF97AI"
+      },
+      "source_url": "https://x.com/KOF97AI/status/2120365237593690483",
+      "published_at_utc": "2026-11-11T03:57:21.000Z",
+      "published_at_shanghai": "2026-11-11 11:57（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者实测用 Gemini 4 Carbon 根据一段视频演示逆向复刻前端网页，认为代码还原度超出预期，多模态理解和长代码结构比之前的 Gemini 更好；同时也写审美和动效仍略逊于某些 Claude 型号，并且不适合一两句模糊描述，更依赖详尽提示或清晰的视频与设计稿。原帖未公开提示词，也未说明参考视频来源。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/kof97-video-to-frontend-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120365193285029888/img/OkoposIM_JQCGFcg.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/KOF97AI/status/2120365237593690483",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/kof97-video-to-frontend-01.webp",
+          "width": 1200,
+          "height": 763
+        }
+      ],
+      "likes": 2,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "作者比较结论是个人判断。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "gaoyipeng-death-star",
+      "title": "用代码做星球大战死星俯冲镜头",
+      "category": "混用工作流",
+      "one_liner": "Carbon 写出电影感 3D 场景，配乐和人声则分别由 Lyria 和 TTS 模型生成。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Yipeng Gao",
+        "username": "GaoYipeng",
+        "url": "https://x.com/GaoYipeng"
+      },
+      "posted_by": {
+        "name": "Yipeng Gao",
+        "username": "GaoYipeng",
+        "url": "https://x.com/GaoYipeng"
+      },
+      "source_url": "https://x.com/GaoYipeng/status/2120374852670677285",
+      "published_at_utc": "2026-11-11T04:35:34.000Z",
+      "published_at_shanghai": "2026-11-11 12:35（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Lyria",
+        "TTS"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者认为 Gemini 4 Carbon 在用代码做电影镜头上，已经可以和 Fable 5.2 竞争，并展示了死星通道俯冲这类电影感 3D 场景。作者写明音乐和人声由 Lyria 和 TTS 模型生成，因此不是纯 Carbon 一次成片。原帖未公开提示词，也未说明场景代码的引擎。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/gaoyipeng-death-star-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120372416052699136/img/lzU65DXOrMkakeXM.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/GaoYipeng/status/2120374852670677285",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/gaoyipeng-death-star-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 3,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "混用工作流。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：用 Gemini 4 Carbon 写出电影感 3D 场景（死星俯冲）。原帖未说明引擎、镜头分镜和提示词。",
+        "第2步：用 Lyria 生成配乐。原帖未公开音乐提示词。",
+        "第3步：用 TTS 模型生成人声。原帖未说明音色和台词文本。"
+      ]
+    },
+    {
+      "id": "edwin-sailboat",
+      "title": "Gemini 应用里 9 分钟做出帆船演示",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "在手机端 Gemini 应用里完成，材质、水花和光照都有，还自带可调参数。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Hope C 陈刀仔",
+        "username": "EdwinCh43136084",
+        "url": "https://x.com/EdwinCh43136084"
+      },
+      "posted_by": {
+        "name": "Hope C 陈刀仔",
+        "username": "EdwinCh43136084",
+        "url": "https://x.com/EdwinCh43136084"
+      },
+      "source_url": "https://x.com/EdwinCh43136084/status/2120197984650752208",
+      "published_at_utc": "2026-11-10T16:52:45.000Z",
+      "published_at_shanghai": "2026-11-11 00:52（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Gemini app"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者在 Gemini 应用的手机端做帆船测试，称 9 分钟完成，材质、水花和光照都比较到位，而且自己加了不少可调参数。提示词未公开。效果图为视频封面。9 分钟是作者自述。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/edwin-sailboat-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120197741322420224/img/QszXTwRgx2cePonF.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/EdwinCh43136084/status/2120197984650752208",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/edwin-sailboat-01.webp",
+          "width": 540,
+          "height": 1200
+        }
+      ],
+      "likes": 5,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "xueyu-svg-collie",
+      "title": "边牧骑斑马再叠独轮车的 SVG 动画",
+      "category": "SVG 与创意编程",
+      "one_liner": "公开提示词：生成 SVG 动画，边牧骑斑马骑自行车，下面再加一个独轮车，用 H5 展示。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "雪瑜",
+        "username": "xueyu1125",
+        "url": "https://x.com/xueyu1125"
+      },
+      "posted_by": {
+        "name": "雪瑜",
+        "username": "xueyu1125",
+        "url": "https://x.com/xueyu1125"
+      },
+      "source_url": "https://x.com/xueyu1125/status/2120195435717669344",
+      "published_at_utc": "2026-11-10T16:42:37.000Z",
+      "published_at_shanghai": "2026-11-11 00:42（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon High",
+        "Google Antigravity"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "生成一个SVG动画：边牧骑斑马骑自行车加下面一个独轮车，用H5给我展示下",
+        "note": null
+      },
+      "method": "作者在 Antigravity 里用 Gemini 4 Carbon High 做一次生成实测，并公开了中文提示词，要求做边牧骑斑马骑自行车、下面再加独轮车的 SVG 动画，用 H5 展示。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/xueyu-svg-collie-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120195182746570752/img/Lvi8qo7K4FPXCmxx.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/xueyu1125/status/2120195435717669344",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/xueyu-svg-collie-01.webp",
+          "width": 1200,
+          "height": 960
+        }
+      ],
+      "likes": 12,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "提示词已公开。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "ai-funss-zebra",
+      "title": "Three.js 奔跑的斑马",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "作者称动作和关节都很到位，观感接近 Opus 5.5。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "AI Fun",
+        "username": "ai_funss",
+        "url": "https://x.com/ai_funss"
+      },
+      "posted_by": {
+        "name": "AI Fun",
+        "username": "ai_funss",
+        "url": "https://x.com/ai_funss"
+      },
+      "source_url": "https://x.com/ai_funss/status/2120186337458585713",
+      "published_at_utc": "2026-11-10T16:06:28.000Z",
+      "published_at_shanghai": "2026-11-11 00:06（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称 Gemini 4 Carbon 用 Three.js 做了奔跑的斑马，动作和关节都很到位，并认为效果接近 Opus 5.5。这是作者个人判断。提示词未公开。效果图为视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/ai-funss-zebra-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120185378628153344/img/xDCBrhF_l1FwvZAX.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ai_funss/status/2120186337458585713",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/ai-funss-zebra-01.webp",
+          "width": 1200,
+          "height": 552
+        }
+      ],
+      "likes": 7,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "elzane-hydrosilylation",
+      "title": "光触发硅氢加成科普动画",
+      "category": "混用工作流",
+      "one_liner": "作者用 Carbon 做了一段浅显的化学机制科普，并加了音效；原帖未说明是纯代码动画还是另接了视频模型。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "CE",
+        "username": "elzane26",
+        "url": "https://x.com/elzane26"
+      },
+      "posted_by": {
+        "name": "CE",
+        "username": "elzane26",
+        "url": "https://x.com/elzane26"
+      },
+      "source_url": "https://x.com/elzane26/status/2120192631028457720",
+      "published_at_utc": "2026-11-10T16:31:29.000Z",
+      "published_at_shanghai": "2026-11-11 00:31（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称 Gemini 4 Carbon 很适合做科普视频，并展示了光触发硅氢加成机制的科普，认为讲得浅显，还加了音效。原帖没有说明这是代码动画、幻灯，还是另接了视频生成模型，因此步骤里对未说明的部分如实标注。提示词未公开。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/elzane-hydrosilylation-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120192034577469440/img/XyLsnEHJAchL0eYf.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/elzane26/status/2120192631028457720",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/elzane-hydrosilylation-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 0,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/elzane26/status/2120195080778846467"
+      ],
+      "notes": "制作链路未完全说明。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：作者用 Gemini 4 Carbon 做光触发硅氢加成的科普内容。原帖未公开提示词，也未说明是代码动画还是其他形式。",
+        "第2步：加入音效。原帖未说明音效来源和制作方式。"
+      ]
+    },
+    {
+      "id": "xo-omni-jet-engine",
+      "title": "用 Carbon 指导 Omni 做喷气发动机教学视频",
+      "category": "混用工作流",
+      "one_liner": "作者明确写：由 Gemini 4 Carbon 指导 Omni Flash 1.2，生成约 2 分钟讲解喷气发动机如何把燃料变成动力的教学视频。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "XO",
+        "username": "XO6174",
+        "url": "https://x.com/XO6174"
+      },
+      "posted_by": {
+        "name": "XO",
+        "username": "XO6174",
+        "url": "https://x.com/XO6174"
+      },
+      "source_url": "https://x.com/XO6174/status/2118984547744522621",
+      "published_at_utc": "2026-11-07T08:30:59.000Z",
+      "published_at_shanghai": "2026-11-07 16:30（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Gemini Omni Flash 1.2"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者写明工作流是：使用 Gemini 4 Carbon 指导 Omni Flash 1.2，生成约 2 分钟的教育视频，详细解释喷气发动机如何把燃料转化为运动。Carbon 负责什么、Omni 的提示词是什么，原帖都未展开。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/xo-omni-jet-engine-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2118744801554350080/img/GeyQDT2EtwI6GIl0.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/XO6174/status/2118984547744522621",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/xo-omni-jet-engine-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 0,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "混用工作流。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：用 Gemini 4 Carbon 指导教学内容或分镜。原帖未说明指导方式和提示词。",
+        "第2步：用 Omni Flash 1.2 生成约 2 分钟教学视频。原帖未公开视频提示词和剪辑步骤。"
+      ]
+    },
+    {
+      "id": "delroy-pelican-svg-compare",
+      "title": "鹈鹕骑车 SVG：Carbon 对 Argon 一次生成对比",
+      "category": "同题对比实测",
+      "one_liner": "同一句提示词“创建经典的鹈鹕骑车 SVG 动画”，两个模型都只出第一版，不再改。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "码农暖爸",
+        "username": "Delroy715",
+        "url": "https://x.com/Delroy715"
+      },
+      "posted_by": {
+        "name": "码农暖爸",
+        "username": "Delroy715",
+        "url": "https://x.com/Delroy715"
+      },
+      "source_url": "https://x.com/Delroy715/status/2120114670493384958",
+      "published_at_utc": "2026-11-10T11:21:41.000Z",
+      "published_at_shanghai": "2026-11-10 19:21（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Gemini 4 Argon",
+        "Vertex AI"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "创建经典的鹈鹕骑车 SVG 动画",
+        "note": null
+      },
+      "method": "作者通过 Vertex AI，用同一句提示词分别让 Gemini 4 Carbon 和 Gemini 4 Argon 一次生成，不做复杂提示，也不做二次修改，只看第一版鹈鹕骑车 SVG 动画。效果图为对比视频封面。这是作者自己的对比实测，不是官方跑分。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/delroy-pelican-svg-compare-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120113068688707584/img/oJDgXyHI5boV1_yB.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Delroy715/status/2120114670493384958",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/delroy-pelican-svg-compare-01.webp",
+          "width": 1200,
+          "height": 709
+        }
+      ],
+      "likes": 5,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "同题对比。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "heath-snowglobe-compare",
+      "title": "雪景球同题：Carbon High 对 Opus 5.5 XHigh",
+      "category": "同题对比实测",
+      "one_liner": "同一提示词做雪景球，作者认为 Carbon 在氛围光、玻璃拟态界面和成本上都更好。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Choik Pizza",
+        "username": "HeathIsidr64707",
+        "url": "https://x.com/HeathIsidr64707"
+      },
+      "posted_by": {
+        "name": "Choik Pizza",
+        "username": "HeathIsidr64707",
+        "url": "https://x.com/HeathIsidr64707"
+      },
+      "source_url": "https://x.com/HeathIsidr64707/status/2119346079594619095",
+      "published_at_utc": "2026-11-08T08:27:35.000Z",
+      "published_at_shanghai": "2026-11-08 16:27（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon (High)",
+        "Claude Opus 5.5 (XHigh)"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者只写课题是 oneshot 雪景球，未公开完整提示词。"
+      },
+      "method": "作者用同一提示词一次生成雪景球，对比 Gemini 4 Carbon (H) 和 Claude Opus 5.5 (XHigh)。作者认为 Carbon 做出了更完整的微型圣所、全球大气光照预设和玻璃拟态界面，而且更快、费用不到一半。作者给出的耗时和费用是：Opus 25 分 12 秒 / 6.92 美元，Carbon 21 分 08 秒 / 3.21 美元。这些数字和胜负判断都是作者自测，调研未独立复现。提示词未公开。效果图为对比视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/heath-snowglobe-compare-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2119343990340567040/img/YtuhgfrKUuM-2n_2.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/HeathIsidr64707/status/2119346079594619095",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/heath-snowglobe-compare-01.webp",
+          "width": 675,
+          "height": 1200
+        }
+      ],
+      "likes": 14,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "耗时和费用出自作者自述。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "haleemah-oneshot-compare",
+      "title": "同一提示词一次生成：Opus 5.5 对 Carbon",
+      "category": "同题对比实测",
+      "one_liner": "作者用同一提示词分别一次生成，并把它当作 Carbon 并非只会刷榜的证据。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Haleemah",
+        "username": "Haleeeemahh",
+        "url": "https://x.com/Haleeeemahh"
+      },
+      "posted_by": {
+        "name": "Haleemah",
+        "username": "Haleeeemahh",
+        "url": "https://x.com/Haleeeemahh"
+      },
+      "source_url": "https://x.com/Haleeeemahh/status/2116813166009106935",
+      "published_at_utc": "2026-11-01T08:42:41.000Z",
+      "published_at_shanghai": "2026-11-01 16:42（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Claude Opus 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者写明是 Opus 5.5 对 Gemini 4 Carbon，同一提示词，两边都是一次生成，并配上对比视频。原帖没有公开提示词，也没有逐项拆解两边差异。效果图为对比视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/haleemah-oneshot-compare-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2116812685681532928/img/VhAP8kk5SIiNux-Z.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Haleeeemahh/status/2116813166009106935",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/haleemah-oneshot-compare-01.webp",
+          "width": 675,
+          "height": 1200
+        }
+      ],
+      "likes": 135,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "dromexa-smash-compare",
+      "title": "砸碎老式显像管：Carbon 对 Fable 5.5",
+      "category": "同题对比实测",
+      "one_liner": "同一提示词：一台可以用锤子砸碎的老式显像管电视。作者按碎片飞出的效果打分，认为这轮是 Fable 更好。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Dromexa",
+        "username": "dromexa",
+        "url": "https://x.com/dromexa"
+      },
+      "posted_by": {
+        "name": "Dromexa",
+        "username": "dromexa",
+        "url": "https://x.com/dromexa"
+      },
+      "source_url": "https://x.com/dromexa/status/2119861870588989676",
+      "published_at_utc": "2026-11-09T18:37:09.000Z",
+      "published_at_shanghai": "2026-11-10 02:37（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Claude Fable 5.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者概括为“an old CRT TV you can smash with a hammer”，未公开完整提示词。"
+      },
+      "method": "作者用同一提示词做“可以用锤子砸碎的老式显像管电视”，对比 Gemini 4 Carbon 和 Claude Fable 5.5。作者给出的费用和耗时是：Carbon 3.1 美元、18 分钟；Fable 22.9 美元、57 分钟。评分标准是碎片怎么飞，作者认为这轮 Fable 更好。这些数字和判断都是作者自测。效果图为对比视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/dromexa-smash-compare-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2119861827689467904/img/o1nga42gUq1qkUqG.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/dromexa/status/2119861870588989676",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/dromexa-smash-compare-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 14,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "这是对比案例，并不表示 Carbon 胜出。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "kenny-radial-engine-compare",
+      "title": "九缸星型航空发动机四面对比",
+      "category": "同题对比实测",
+      "one_liner": "同一提示词做动画九缸星型发动机，对比 Carbon、Argon、Opus 5.5 和 GPT-6.1 Sol。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Kenny1st",
+        "username": "0xKenny1st",
+        "url": "https://x.com/0xKenny1st"
+      },
+      "posted_by": {
+        "name": "Kenny1st",
+        "username": "0xKenny1st",
+        "url": "https://x.com/0xKenny1st"
+      },
+      "source_url": "https://x.com/0xKenny1st/status/2119533338784313413",
+      "published_at_utc": "2026-11-08T20:51:41.000Z",
+      "published_at_shanghai": "2026-11-09 04:51（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Gemini 4 Argon",
+        "Claude Opus 5.5",
+        "GPT-6.1 Sol"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者概括为 animated 9-cylinder radial aircraft engine，未公开完整提示词。"
+      },
+      "method": "作者用同一提示词做动画九缸星型航空发动机，对比四个模型：左上 Gemini 4 Carbon，右上 Gemini 4 Argon，左下 Claude Opus 5.5，右下 GPT-6.1 Sol。作者认为四个模型都做对了活塞机械，差别在火焰、进气管、排气和细节。提示词未公开。效果图为对比视频封面。注意作者更早还有一条不包含 Carbon 的气缸对比，那条不收。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/kenny-radial-engine-compare-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2119533300804915200/img/y9w4FDuszSPLS2Iz.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/0xKenny1st/status/2119533338784313413",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/kenny-radial-engine-compare-01.webp",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "likes": 28,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "qqteng-rocket-compare",
+      "title": "同一火箭场景：Carbon High 对 Fable、Opus 和 Astra",
+      "category": "同题对比实测",
+      "one_liner": "同一提示词做火箭场景，作者称 Carbon High 花了 35 分钟，观感已经摸到 Opus 5.5，但 token 和费用低得多。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Joker",
+        "username": "QQTeng",
+        "url": "https://x.com/QQTeng"
+      },
+      "posted_by": {
+        "name": "Joker",
+        "username": "QQTeng",
+        "url": "https://x.com/QQTeng"
+      },
+      "source_url": "https://x.com/QQTeng/status/2120272759465156771",
+      "published_at_utc": "2026-11-10T21:49:53.000Z",
+      "published_at_shanghai": "2026-11-11 05:49（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon High",
+        "Claude Fable 5.2",
+        "Claude Opus 5.5",
+        "GPT-6 Astra"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用同一火箭场景提示词，对比 Fable 5.2、Opus 5.5、GPT-6 Astra 和 Gemini 4 Carbon High。作者称 Carbon High 最终花了 35 分钟，观感已经摸到 Opus 5.5，而且 token 消耗和成本低得多。耗时和判断是作者自测，提示词未公开。效果图为对比视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/qqteng-rocket-compare-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120272693874614272/img/nLVbhFPxWFAAjSX7.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/QQTeng/status/2120272759465156771",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/qqteng-rocket-compare-01.webp",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "likes": 11,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "streetal-fable-prompt-compare",
+      "title": "同一提示词复刻城堡场景：Carbon 对 Fable 5.2",
+      "category": "同题对比实测",
+      "one_liner": "作者先用 Fable 5.2 做了零资源的城堡树林场景，再用同一提示词让 Carbon 做，并认为不如 Fable。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "streetal",
+        "username": "3lhftf",
+        "url": "https://x.com/3lhftf"
+      },
+      "posted_by": {
+        "name": "streetal",
+        "username": "3lhftf",
+        "url": "https://x.com/3lhftf"
+      },
+      "source_url": "https://x.com/3lhftf/status/2120378053566341385",
+      "published_at_utc": "2026-11-11T04:48:17.000Z",
+      "published_at_shanghai": "2026-11-11 12:48（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Claude Fable 5.2",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者写用的是与 Fable 5.2 那条相同的提示词，但未在 Carbon 帖里重贴原文。"
+      },
+      "method": "作者先在另一条帖子里用 Claude Fable 5.2 和 Three.js 做了零外部资源的城堡场景（自称约 1000 行 GLSL，6.6 万棵树、42 万根草等）。后来用同一提示词让 Gemini 4 Carbon 再做一遍，并认为结果不如 Fable 5.2。本条收的是 Carbon 这一侧的结果和对比判断。Fable 原帖本身不是 Carbon 案例。效果图为 Carbon 结果视频封面。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/streetal-fable-prompt-compare-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120377754856443904/img/SRG_peFU-G5YA2g1.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/3lhftf/status/2120378053566341385",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/streetal-fable-prompt-compare-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 1,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/3lhftf/status/2120063764007657717"
+      ],
+      "notes": "这是对比案例，作者认为 Carbon 不如 Fable。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "simon-carbon-pelicans",
+      "title": "Simon Willison 的三档思考鹈鹕 SVG",
+      "category": "SVG 与创意编程",
+      "one_liner": "用 llm-gemini 插件分别以 low、medium、high 思考档生成鹈鹕，并公开了 high 档结果图。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Simon Willison",
+        "username": "simonw",
+        "url": "https://simonwillison.net/"
+      },
+      "posted_by": {
+        "name": "Simon Willison",
+        "username": "simonw",
+        "url": "https://simonwillison.net/"
+      },
+      "source_url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+      "published_at_utc": "2026-11-10T20:09:00.000Z",
+      "published_at_shanghai": "2026-11-11 04:09（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "llm-gemini"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者做的是一贯的鹈鹕 SVG 测试，页面未单独写出这三只鹈鹕的完整提示词原文。"
+      },
+      "method": "Simon Willison 在 2026-11-10 的 llm-gemini 0.36 发布说明里测试了当天开放的 Gemini 4 Carbon。他分别用 low、medium、high 三档思考力度生成鹈鹕 SVG（默认是 medium），并展示了 high 档的结果。文中同时公布了价格：上线导入价每百万 token 输入 2 美元、输出 10 美元，12 月 1 日起计划涨到 4/20 美元。这些价格转述自官方。效果图来自作者博客，未编造提示词。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/simon-carbon-pelicans-01.webp",
+          "source_media_url": "https://static.simonwillison.net/static/2026/carbon-pelican.webp",
+          "media_type": "photo",
+          "original_post_url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原文",
+          "src": "/images/gemini-4-carbon/simon-carbon-pelicans-01.webp",
+          "width": 1600,
+          "height": 1200
+        }
+      ],
+      "likes": null,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": "https://github.com/simonw/llm-gemini",
+      "related_urls": [
+        "https://news.ycombinator.com/item?id=50442303"
+      ],
+      "notes": "博客发布时间按原文 10 Nov 2026, 8:09 pm 理解；原文未标明时区，这里按常见的作者本地时间近似换算，若有出入以原文为准。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "simon-yonkers-mech",
+      "title": "Yonkers 机甲踩过纽约三区",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "公开提示词：让 Yonkers 以酷炫动作站起变成巨型机甲，踩过曼哈顿、皇后区和布鲁克林，并使用 OpenStreetMap 数据。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Simon Willison",
+        "username": "simonw",
+        "url": "https://simonwillison.net/"
+      },
+      "posted_by": {
+        "name": "Simon Willison",
+        "username": "simonw",
+        "url": "https://simonwillison.net/"
+      },
+      "source_url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+      "published_at_utc": "2026-11-10T20:09:00.000Z",
+      "published_at_shanghai": "2026-11-11 04:09（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity",
+        "Three.js",
+        "OpenStreetMap"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data",
+        "note": null
+      },
+      "method": "作者在 Google Antigravity 里用原先测过 Claude Fable 5.2 的提示词测试 Carbon：做一个 Three.js 动画，让 Yonkers 以酷炫动作站起变成巨型机甲，踩过曼哈顿、皇后区和布鲁克林，并使用 OpenStreetMap 数据。作者后来又追加一句，要求做成没有外部依赖的独立 HTML，再自行录屏。Hacker News 讨论里他也放了结果链接。效果图取自作者提供的静帧，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/simon-yonkers-mech-01.webp",
+          "source_media_url": "https://static.simonwillison.net/static/2026/yonkers-carbon.jpg",
+          "media_type": "photo",
+          "original_post_url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原文",
+          "src": "/images/gemini-4-carbon/simon-yonkers-mech-01.webp",
+          "width": 1028,
+          "height": 720
+        }
+      ],
+      "likes": null,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://static.simonwillison.net/static/2026/yonkers-carbon.mp4",
+        "https://news.ycombinator.com/item?id=50442303"
+      ],
+      "notes": "混用了 OpenStreetMap 数据；提示词已公开。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：在 Google Antigravity 中用公开提示词让 Gemini 4 Carbon 生成 Three.js 动画，并要求使用 OpenStreetMap 地图数据。",
+        "第2步：作者追加提示，要求做成没有外部依赖的独立 HTML 文件。",
+        "第3步：作者自行把结果录成视频发布。录屏工具和剪辑步骤原文未说明。"
+      ]
+    }
+  ]
+}
