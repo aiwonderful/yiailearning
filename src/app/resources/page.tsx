@@ -51,6 +51,13 @@ export default function ResourcesPage() {
         </div>
       </section>
 
+      <Link href="/gemini-4-carbon-cases" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] md:p-10">
+        <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]"><span>新专题 · Gemini 4 Carbon</span><span>57 个案例 / 7 个分类</span></div>
+        <h2 className="mt-5 text-2xl font-semibold leading-relaxed md:text-3xl">先看效果图，再分清纯 Carbon 和混用工作流。</h2>
+        <p className="mt-4 max-w-3xl text-base leading-8 text-[#d4d9cc]">3D 场景、物理仿真、游戏原型和同题对比。3D 和仿真类案例占比较高。每条署名作者并链回原帖；混用案例按步骤写清 Gemini 4 Carbon 和其他工具。</p>
+        <span className="mt-6 inline-block border-b border-[#d6b47b] pb-1 text-base text-[#e9bf78]">打开 Gemini 4 Carbon 案例合集 →</span>
+      </Link>
+
       <Link href="/seedream-5-5-cases" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] md:p-10">
         <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]"><span>新专题 · Seedream 5.5</span><span>64 个案例 / 8 个分类</span></div>
         <h2 className="mt-5 text-2xl font-semibold leading-relaxed md:text-3xl">先看效果图，再分清纯 5.5 和混用工作流。</h2>
