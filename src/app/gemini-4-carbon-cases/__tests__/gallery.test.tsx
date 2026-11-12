@@ -38,24 +38,24 @@ function articlesWith(text: string) {
   return screen.getAllByRole('article').filter((article) => within(article).queryByText(text));
 }
 
-it('publishes all 57 cases with local attributed previews', () => {
-  expect(geminiCases).toHaveLength(57);
-  expect(new Set(geminiCases.map((item) => item.id)).size).toBe(57);
-  expect(geminiImageCount).toBe(58);
-  expect(geminiSceneCount).toBe(23);
-  expect(geminiMixedCount).toBe(11);
+it('publishes all 78 cases with local attributed previews', () => {
+  expect(geminiCases).toHaveLength(78);
+  expect(new Set(geminiCases.map((item) => item.id)).size).toBe(78);
+  expect(geminiImageCount).toBe(79);
+  expect(geminiSceneCount).toBe(30);
+  expect(geminiMixedCount).toBe(21);
   expect(geminiCollection.launch.announced).toBe('2026-10-28');
   expect(geminiCollection.launch.generally_available).toBe('2026-11-10');
   expect(geminiCollection.launch.official_blog_intro).toBe(GEMINI_OFFICIAL.blogIntro);
   expect(geminiCollection.launch.official_blog_available).toBe(GEMINI_OFFICIAL.blogAvailable);
   expect(categories.map((category) => [category.name, category.count])).toEqual([
     ['官方发布与演示', 10],
-    ['3D 场景与物理仿真', 23],
-    ['游戏与可玩原型', 8],
-    ['网站、应用与数据工具', 4],
+    ['3D 场景与物理仿真', 30],
+    ['游戏与可玩原型', 11],
+    ['网站、应用与数据工具', 6],
     ['SVG 与创意编程', 2],
-    ['同题对比实测', 7],
-    ['混用工作流', 3],
+    ['同题对比实测', 10],
+    ['混用工作流', 9],
   ]);
   const imageFiles = new Set<string>();
   for (const item of geminiCases) {
@@ -78,9 +78,9 @@ it('publishes all 57 cases with local attributed previews', () => {
       imageFiles.add(file);
     }
   }
-  expect(imageFiles.size).toBe(58);
+  expect(imageFiles.size).toBe(79);
   const onDisk = fs.readdirSync(path.join(process.cwd(), 'public/images/gemini-4-carbon'));
-  expect(onDisk).toHaveLength(58);
+  expect(onDisk).toHaveLength(79);
   expect(generateStaticParams()).toEqual(geminiCases.map((item) => ({ id: item.id })));
 });
 
@@ -100,12 +100,13 @@ it('renders the collection, official figures, and filters by kind and category',
   expect(screen.getByRole('link', { name: 'Gemini 4 Carbon 介绍' })).toHaveAttribute('href', GEMINI_OFFICIAL.blogIntro);
   expect(screen.getByRole('link', { name: 'Gemini 4 Carbon 现已开放' })).toHaveAttribute('href', GEMINI_OFFICIAL.blogAvailable);
   expect(screen.queryByRole('region', { name: '生财有术 3 天体验卡' })).not.toBeInTheDocument();
-  expect(screen.getAllByRole('article')).toHaveLength(57);
-  expect(articlesWith('纯 Carbon')).toHaveLength(46);
-  expect(articlesWith('混用工作流')).toHaveLength(11);
+  expect(screen.getAllByRole('article')).toHaveLength(78);
+  expect(articlesWith('纯 Carbon')).toHaveLength(57);
+  expect(articlesWith('混用工作流')).toHaveLength(21);
+  expect(articlesWith('新增')).toHaveLength(21);
   expect(articlesWith('Google 官方发布')).toHaveLength(10);
-  expect(screen.getAllByRole('link', { name: /作者 / })).toHaveLength(57);
-  expect(screen.getAllByRole('link', { name: /原帖/ })).toHaveLength(57);
+  expect(screen.getAllByRole('link', { name: /作者 / })).toHaveLength(78);
+  expect(screen.getAllByRole('link', { name: /原帖/ })).toHaveLength(78);
 
   const published = geminiCases.find((item) => item.id === 'sunset-drone-show');
   if (!published?.prompt.text) throw new Error('missing published prompt');
@@ -114,13 +115,13 @@ it('renders the collection, official figures, and filters by kind and category',
   const kindGroup = screen.getByRole('group', { name: '生成方式' });
   fireEvent.click(within(kindGroup).getByRole('button', { name: /混用工作流/ }));
   expect(within(kindGroup).getByRole('button', { name: /混用工作流/ })).toHaveAttribute('aria-pressed', 'true');
-  expect(screen.getAllByRole('article')).toHaveLength(11);
-  expect(screen.getByText('11 / 57 例')).toBeInTheDocument();
+  expect(screen.getAllByRole('article')).toHaveLength(21);
+  expect(screen.getByText('21 / 78 例')).toBeInTheDocument();
 
   const categoryGroup = screen.getByRole('group', { name: '分类' });
   fireEvent.click(within(categoryGroup).getByRole('button', { name: /3D 场景与物理仿真/ }));
   expect(screen.getAllByRole('article')).toHaveLength(3);
-  expect(screen.getByText('3 / 57 例')).toBeInTheDocument();
+  expect(screen.getByText('3 / 78 例')).toBeInTheDocument();
 
   fireEvent.click(within(kindGroup).getByRole('button', { name: /纯 Carbon/ }));
   fireEvent.click(within(categoryGroup).getByRole('button', { name: /混用工作流/ }));
@@ -129,7 +130,7 @@ it('renders the collection, official figures, and filters by kind and category',
 
   fireEvent.click(within(kindGroup).getByRole('button', { name: /全部案例/ }));
   fireEvent.click(within(categoryGroup).getByRole('button', { name: /^全部/ }));
-  expect(screen.getAllByRole('article')).toHaveLength(57);
+  expect(screen.getAllByRole('article')).toHaveLength(78);
 });
 
 it('shows an official case with an unpublished prompt and a local preview', () => {
@@ -245,7 +246,11 @@ it('formats workflow prompts, notes, and link labels', () => {
   expect(relatedLinkLabel(GEMINI_OFFICIAL.availableLogan)).toBe('正式开放帖');
   expect(relatedLinkLabel(GEMINI_OFFICIAL.pelican)).toBe('官方鹈鹕演示帖');
   expect(relatedLinkLabel('https://x.com/sundarpichai')).toBe('X');
-  expect(cards).toHaveLength(57);
+  expect(cards).toHaveLength(78);
+  expect(cards.filter((card) => card.isNew)).toHaveLength(21);
+  expect(cards.find((card) => card.id === 'fofr-sql-raytracer')?.isNew).toBe(true);
+  expect(cards.find((card) => card.id === 'ammaar-windows-ios')?.isNew).toBe(true);
+  expect(cards[0].isNew).toBe(false);
 });
 
 it('renders the gallery from prepared cards', () => {

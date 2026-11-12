@@ -247,7 +247,7 @@ export default async function HomePage() {
       <Link href="/gemini-4-carbon-cases" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] shadow-soft md:p-10">
         <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]">
           <span>新专题 · Gemini 4 Carbon</span>
-          <span>57 个案例 / 7 个分类</span>
+          <span>78 个案例 / 7 个分类</span>
         </div>
         <h2 className="mt-5 font-serif text-2xl font-black leading-relaxed md:text-3xl">先看效果图，再分清纯 Carbon 和混用工作流。</h2>
         <p className="mt-4 max-w-3xl text-base leading-8 text-[#d4d9cc]">

@@ -94,6 +94,7 @@ export default function Gallery({ cards, categories }: { cards: GeminiGalleryCar
                 <h3><Link href={`/gemini-4-carbon-cases/${card.id}`}>{card.title}</Link></h3>
                 <p className={styles.oneLiner}>{card.oneLiner}</p>
                 <p className={styles.badgeRow}>
+                  {card.isNew ? <span className={`${styles.badge} ${styles.badgeNew}`}>新增</span> : null}
                   <span className={`${styles.badge} ${card.mixed ? styles.badgeMixed : styles.badgePure}`}>{kindLabel(card.mixed)}</span>
                 </p>
               </div>

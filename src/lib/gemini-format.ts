@@ -72,6 +72,7 @@ export type GeminiGalleryCard = {
   tools: string[];
   official: boolean;
   mixed: boolean;
+  isNew: boolean;
   imageCount: number;
   image: { src: string; width: number; height: number; mediaType: string };
 };
