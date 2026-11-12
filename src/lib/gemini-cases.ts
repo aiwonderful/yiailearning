@@ -58,8 +58,8 @@ function assertCollection(data: RawCollection) {
   if (!data.model_scope.trim() || !data.method_note.includes('原帖未说明') || !data.copyright.includes('官方')) {
     throw new Error('Gemini collection is missing its scope, method note, or copyright');
   }
-  if (data.count !== 57 || data.cases.length !== 57) {
-    throw new Error(`Expected 57 Gemini cases, found ${data.cases.length}`);
+  if (data.count !== 78 || data.cases.length !== 78) {
+    throw new Error(`Expected 78 Gemini cases, found ${data.cases.length}`);
   }
   const ids = new Set<string>();
   const categories: readonly string[] = GEMINI_CATEGORIES;
@@ -131,6 +131,30 @@ export const geminiCases: GeminiCase[] = data.cases.map((item) => ({
     copyright_note: image.copyright_note,
   })),
 }));
+const GEMINI_CASES_ADDED_2026_11_12 = new Set([
+  'fofr-sql-raytracer',
+  'fofr-spreadsheet-raytrace',
+  'fofr-cuda-vfx',
+  'fofr-rube-goldberg',
+  'leslie-coventry-cathedral',
+  'statswire-v12-racer',
+  'noah-tourbillon',
+  'akokoi-motor-generator',
+  'stefan-seahorse-compare',
+  'fini-strait-command',
+  'amit-neon-car-compare',
+  'kasmi-horse',
+  'vipin-taj-mahal',
+  'ammaar-windows-ios',
+  'fofr-speed-sketch',
+  'jianzhang-timber-joinery',
+  'emily-piano-concert',
+  'ash-analytics',
+  'bebechien-nethack',
+  'vipin-turbofan',
+  'simonas-snake-compare',
+]);
+
 export const geminiImageCount = geminiCases.reduce((sum, item) => sum + item.images.length, 0);
 export const geminiMixedCount = geminiCases.filter((item) => item.mixed).length;
 export const geminiSceneCount = geminiCases.filter((item) => item.category === '3D 场景与物理仿真').length;
@@ -152,6 +176,7 @@ export function getGeminiGalleryCards(): GeminiGalleryCard[] {
     tools: item.tools,
     official: isOfficialAttribution(item.model_attribution),
     mixed: item.mixed,
+    isNew: GEMINI_CASES_ADDED_2026_11_12.has(item.id),
     imageCount: item.images.length,
     image: {
       src: item.images[0].src,

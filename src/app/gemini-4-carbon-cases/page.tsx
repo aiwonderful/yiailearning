@@ -14,8 +14,8 @@ import {
 import Gallery from './gallery';
 import styles from './cases.module.css';
 
-const title = 'Gemini 4 Carbon 案例合集：57 个带效果图的 3D、仿真、游戏与混用工作流';
-const description = '按分类浏览 57 个 Gemini 4 Carbon 案例的效果图：官方发布、3D 场景与物理仿真、游戏原型、网站与数据工具、SVG、同题对比和混用工作流。3D 和仿真类案例占比较高。每条署名作者并链回原帖。价格和跑分为官方数据。';
+const title = 'Gemini 4 Carbon 案例合集：78 个带效果图的 3D、仿真、游戏与混用工作流';
+const description = '按分类浏览 78 个 Gemini 4 Carbon 案例的效果图：官方发布、3D 场景与物理仿真、游戏原型、网站与数据工具、SVG、同题对比和混用工作流。3D 和仿真类案例占比较高。每条署名作者并链回原帖。价格和跑分为官方数据。';
 const pageUrl = `${siteConfig.url}/gemini-4-carbon-cases`;
 const launch = geminiCollection.launch;
 

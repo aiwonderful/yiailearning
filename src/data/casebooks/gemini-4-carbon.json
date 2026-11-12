@@ -1,7 +1,7 @@
 {
   "title": "Gemini 4 Carbon 带效果图案例合集（调研稿）（网页压缩版）",
-  "collected_at": "2026-11-11 13:15（Asia/Shanghai）",
-  "collected_at_shanghai": "2026-11-11 13:15（Asia/Shanghai）",
+  "collected_at": "2026-11-12 15:57（Asia/Shanghai）",
+  "collected_at_shanghai": "2026-11-12 15:57（Asia/Shanghai）",
   "model_scope": "仅收录明确写明由 Gemini 4 Carbon（含 Gemini 4 Carbon High / Medium / Low，或作者写 Gemini Carbon 但上下文明确是这次发布的 Carbon）完成的案例。不收录只写 Gemini、Gemini 4 或未标明版本的内容，也不收录仅有 Argon 或其他旧版本结果的条目。本轮同时收录纯 Carbon 作品，以及以 Carbon 为主再交给其他模型、引擎或工具的混用工作流。",
   "launch": {
     "official_name": "Gemini 4 Carbon",
@@ -22,7 +22,7 @@
       "可通过 Google AI Studio 的付费 API、Gemini for business，以及 Ultra 订阅下的 Antigravity、Gemini 应用和搜索 AI 模式使用。"
     ]
   },
-  "count": 57,
+  "count": 78,
   "method_note": "来源包括 Google 官方博客与官方 X 帖、Google 转发的社区作品原帖，以及 X 检索和 Simon Willison 博客。每条都回到原帖或原文核对模型名和媒体。效果图从原帖照片、视频封面或官方 YouTube 封面下载，未转存完整视频。模型归属以作者自称或官方标注为准，调研未独立复现。混用工作流带 mixed: true 与中文分步 workflow；步骤只写原帖已说明的内容，写不清的标「原帖未说明」。纯 Carbon 条目 mixed 为 false。",
   "exclusions": [
     "只写 Gemini、Gemini 4 或 Carbon，但没有明确写 Gemini 4 Carbon 的帖子，不收。",
@@ -3027,6 +3027,1150 @@
         "第2步：作者追加提示，要求做成没有外部依赖的独立 HTML 文件。",
         "第3步：作者自行把结果录成视频发布。录屏工具和剪辑步骤原文未说明。"
       ]
+    },
+    {
+      "id": "fofr-sql-raytracer",
+      "title": "纯 SQL 写出的 3D 光线追踪引擎",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "作者称 Carbon 完全用 SQL（数据库查询语言）写成了一套 3D 光线追踪引擎。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "fofr",
+        "username": "fofrAI",
+        "url": "https://x.com/fofrAI"
+      },
+      "posted_by": {
+        "name": "fofr",
+        "username": "fofrAI",
+        "url": "https://x.com/fofrAI"
+      },
+      "source_url": "https://x.com/fofrAI/status/2120528611782660585",
+      "published_at_utc": "2026-11-11T14:46:33.000Z",
+      "published_at_shanghai": "2026-11-11 22:46（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "SQL"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者展示了一套由 Carbon 完成的 3D 光线追踪引擎，并强调它完全用 SQL（数据库查询语言）写成。提示词未公开。效果图为视频封面，未转存完整视频。模型归属以作者自称和其在同一时期发布的 Gemini 4 Carbon 作品上下文为准。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/fofr-sql-raytracer-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120528588591988736/img/JQR2rFwwScthNjDh.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/fofrAI/status/2120528611782660585",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/fofr-sql-raytracer-01.webp",
+          "width": 960,
+          "height": 600
+        }
+      ],
+      "likes": 269,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。效果图为视频封面，未转存完整视频。",
+      "mixed": false
+    },
+    {
+      "id": "fofr-spreadsheet-raytrace",
+      "title": "只用电子表格和 Lyria 做的光线追踪短片",
+      "category": "混用工作流",
+      "one_liner": "公开提示词要求 Carbon 只准用电子表格和 Lyria 3.5，给自己做一段短 3D 光线追踪演示视频。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "fofr",
+        "username": "fofrAI",
+        "url": "https://x.com/fofrAI"
+      },
+      "posted_by": {
+        "name": "fofr",
+        "username": "fofrAI",
+        "url": "https://x.com/fofrAI"
+      },
+      "source_url": "https://x.com/fofrAI/status/2120193160949191022",
+      "published_at_utc": "2026-11-10T16:33:35.000Z",
+      "published_at_shanghai": "2026-11-11 00:33（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "spreadsheet",
+        "Lyria 3.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "Hey Carbon, can you make yourself a short 3D ray tracing demo video, but you're only allowed to use a spreadsheet and Lyria 3.5.",
+        "note": null
+      },
+      "method": "作者在帖子里直接给出提示词：让 Carbon 给自己做一段短 3D 光线追踪演示视频，但只准使用电子表格和 Lyria 3.5。电子表格如何承担渲染计算、音乐提示词和剪辑步骤原帖未说明。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/fofr-spreadsheet-raytrace-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120192742680596480/img/rG7LLA3gQPYNdl6L.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/fofrAI/status/2120193160949191022",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/fofr-spreadsheet-raytrace-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 193,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/GoogleAIStudio/status/2120187576489222302"
+      ],
+      "notes": "混用了电子表格和 Lyria 3.5；提示词已公开。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：用公开提示词要求 Carbon 只使用电子表格和 Lyria 3.5，制作一段短 3D 光线追踪演示视频。",
+        "第2步：电子表格如何承担光线追踪计算、Lyria 3.5 的音乐提示词，以及成片剪辑步骤，原帖未说明。"
+      ]
+    },
+    {
+      "id": "fofr-cuda-vfx",
+      "title": "自制 CUDA 特效引擎渲染的水下鱼群",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "作者称 Carbon 先从零写了一个自定义 CUDA C++ 特效引擎，再渲染出这组水下鱼群 3D 场景。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "fofr",
+        "username": "fofrAI",
+        "url": "https://x.com/fofrAI"
+      },
+      "posted_by": {
+        "name": "fofr",
+        "username": "fofrAI",
+        "url": "https://x.com/fofrAI"
+      },
+      "source_url": "https://x.com/fofrAI/status/2120188535152222407",
+      "published_at_utc": "2026-11-10T16:15:12.000Z",
+      "published_at_shanghai": "2026-11-11 00:15（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "CUDA",
+        "C++"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "在 Gemini 4 Carbon 开放当天，作者发布了一组 3D 场景，称 Carbon 为他编写了自定义的 CUDA C++ 特效引擎，并用它渲染出这组水下鱼群。提示词未公开。效果图为视频封面，未转存完整视频。该条与稍后发布的 MuJoCo 鲁布·戈德堡装置是不同视频、不同作品。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/fofr-cuda-vfx-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120186628467511296/img/S2-y1UYhSaQ1b3ap.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/fofrAI/status/2120188535152222407",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/fofr-cuda-vfx-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 760,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/sundarpichai/status/2120185896469496180"
+      ],
+      "notes": "版权归原作者。效果图为视频封面，未转存完整视频。不要把它和同一作者稍后发布的 MuJoCo 鲁布·戈德堡装置当成同一条。",
+      "mixed": false
+    },
+    {
+      "id": "fofr-rube-goldberg",
+      "title": "路径追踪器加 MuJoCo 的 60 秒鲁布·戈德堡装置",
+      "category": "混用工作流",
+      "one_liner": "作者称 Carbon 从零写 CUDA/C++ 路径追踪器，接入 MuJoCo 刚体物理，做出 60 秒无关键帧装置，并同步 Lyria 3.5 配乐。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "fofr",
+        "username": "fofrAI",
+        "url": "https://x.com/fofrAI"
+      },
+      "posted_by": {
+        "name": "fofr",
+        "username": "fofrAI",
+        "url": "https://x.com/fofrAI"
+      },
+      "source_url": "https://x.com/fofrAI/status/2120199468460933170",
+      "published_at_utc": "2026-11-10T16:58:39.000Z",
+      "published_at_shanghai": "2026-11-11 00:58（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "CUDA",
+        "C++",
+        "MuJoCo",
+        "Lyria 3.5"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者列出这条 60 秒演示的技术栈：Carbon 从零编写自定义 CUDA/C++ 路径追踪器；接入 MuJoCo 刚体物理；设计并调参一座 60 秒鲁布·戈德堡装置（作者称在 MuJoCo 中进行了 12 万次重力与接触步进，且没有使用关键帧）；还搭建了 3D 工作室，并把连续镜头与自定义 Lyria 3.5 曲目同步。步进次数、耗时和配乐方式均为作者自述，提示词未公开。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/fofr-rube-goldberg-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120197246897557505/img/RfzKeJlPa7JCxWhY.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/fofrAI/status/2120199468460933170",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/fofr-rube-goldberg-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 760,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/fofrAI/status/2120218590494507352",
+        "https://x.com/fofrAI/status/2120255543180702110"
+      ],
+      "notes": "混用了 MuJoCo 和 Lyria 3.5。版权归原作者。作者后来还发过后续机位测试，不另建条。",
+      "mixed": true,
+      "workflow": [
+        "第1步：Carbon 从零编写自定义 CUDA/C++ 路径追踪器。原帖未公开提示词和代码仓库。",
+        "第2步：接入 MuJoCo 刚体物理，设计并调参一座 60 秒鲁布·戈德堡装置。作者称在 MuJoCo 中进行了 12 万次重力与接触步进，且没有使用关键帧。",
+        "第3步：搭建 3D 工作室，并把连续镜头与自定义 Lyria 3.5 曲目同步。音乐提示词和同步方法原帖未说明。"
+      ]
+    },
+    {
+      "id": "leslie-coventry-cathedral",
+      "title": "按历史平面图重建被毁的考文垂大教堂",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "作者称 Gemini 4 Carbon 扫描历史平面图和照片，从零重建被毁的考文垂大教堂，并生成电影感漫游视频。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Leslie Nooteboom",
+        "username": "LeslieNooteboom",
+        "url": "https://x.com/LeslieNooteboom"
+      },
+      "posted_by": {
+        "name": "Leslie Nooteboom",
+        "username": "LeslieNooteboom",
+        "url": "https://x.com/LeslieNooteboom"
+      },
+      "source_url": "https://x.com/LeslieNooteboom/status/2120204269173563872",
+      "published_at_utc": "2026-11-10T17:17:43.000Z",
+      "published_at_shanghai": "2026-11-11 01:17（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者（Google DeepMind Gemini 原型负责人，帖中为个人发布）称 Gemini 4 Carbon 扫描历史平面图和照片，从零重建被炸毁的考文垂大教堂，并生成电影感漫游视频。所用图纸、照片来源和提示词均未公开。效果图为视频封面，未转存完整视频。fofr 后来转发并评价 Carbon 很擅长根据规划文件做出准确的 3D 模型，本条收录原作者帖。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/leslie-coventry-cathedral-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120201896275169280/img/ZqrDbv-2InAutmJx.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/LeslieNooteboom/status/2120204269173563872",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/leslie-coventry-cathedral-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 51,
+      "featured_by_url": "https://x.com/fofrAI/status/2120468582220058757",
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/fofrAI/status/2120468582220058757"
+      ],
+      "notes": "版权归原作者。这是规划文件转 3D 的社区原帖，不是官方 Platform 37 办公楼那条。",
+      "mixed": false
+    },
+    {
+      "id": "statswire-v12-racer",
+      "title": "单文件 Three.js 的 V12 海边赛车",
+      "category": "游戏与可玩原型",
+      "one_liner": "作者称 Gemini 4 Carbon 用单个 HTML 文件和 Three.js，做出可玩的 V12 超跑海边竞速游戏。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Stats Wire",
+        "username": "StatsWire",
+        "url": "https://x.com/StatsWire"
+      },
+      "posted_by": {
+        "name": "Stats Wire",
+        "username": "StatsWire",
+        "url": "https://x.com/StatsWire"
+      },
+      "source_url": "https://x.com/StatsWire/status/2120212182482682232",
+      "published_at_utc": "2026-11-10T17:49:10.000Z",
+      "published_at_shanghai": "2026-11-11 01:49（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称 Gemini 4 Carbon 用单个 HTML 文件和 Three.js，做出可玩的 3D V12 超跑海边竞速游戏。作者还描述了 9250 转 V12 声浪、双离合换挡、海边隧道混响、烟雾飘移和 340 公里/小时高架超越，并称以 60fps 运行。这些听感和速度数据均为作者自述，提示词未公开。效果图为视频封面，未转存完整视频。该条与同一作者稍后发布的纽约巡航车游览不是同一作品。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/statswire-v12-racer-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120211983207116801/img/C3moLVbu4nboGCL0.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/StatsWire/status/2120212182482682232",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/statswire-v12-racer-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 60,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。不要与已收录的纽约巡航车游览当成同一条。",
+      "mixed": false
+    },
+    {
+      "id": "noah-tourbillon",
+      "title": "纯 WebGL2 写出的 12.8 万面陀飞轮腕表",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "作者称用 Gemini 4 Carbon High 加 /swarm，不靠 Three.js，只用 WebGL2 和 WebAudio 写成 427KB 单文件复杂功能陀飞轮。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "차유나",
+        "username": "noahvisualsx",
+        "url": "https://x.com/noahvisualsx"
+      },
+      "posted_by": {
+        "name": "차유나",
+        "username": "noahvisualsx",
+        "url": "https://x.com/noahvisualsx"
+      },
+      "source_url": "https://x.com/noahvisualsx/status/2120319133254557926",
+      "published_at_utc": "2026-11-11T00:54:09.000Z",
+      "published_at_shanghai": "2026-11-11 08:54（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon High",
+        "Google Antigravity /swarm",
+        "WebGL2",
+        "WebAudio"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称测试了当天开放的 Gemini 4 Carbon High 与 /swarm 多代理组合：不使用 Three.js 等外部 3D 库，只用纯 WebGL2 和 WebAudio 代码，写成 127,982 多边形的 3D 复杂功能陀飞轮，并打成 427KB 的单个 HTML 文件。作者还提到约第 6 秒在空中按 8 层分解，约第 18 秒超级夜光亮起并响起 D5/F#5 三问报时。多边形数量、体积和这些时间点均为作者自述，提示词未公开。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/noah-tourbillon-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120318666655031296/img/-pvXEbba4yOaaqYc.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/noahvisualsx/status/2120319133254557926",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/noah-tourbillon-01.webp",
+          "width": 960,
+          "height": 1200
+        }
+      ],
+      "likes": 10,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。多边形数和文件大小为作者自述。",
+      "mixed": false
+    },
+    {
+      "id": "akokoi-motor-generator",
+      "title": "纯 Three.js 电动机与发电机拆解演示",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "作者称用 Gemini 4 Carbon High 跑了约 3 小时，不用 Blender，纯靠 Three.js 做出电动机与发电机演示。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "WY",
+        "username": "akokoi1",
+        "url": "https://x.com/akokoi1"
+      },
+      "posted_by": {
+        "name": "WY",
+        "username": "akokoi1",
+        "url": "https://x.com/akokoi1"
+      },
+      "source_url": "https://x.com/akokoi1/status/2120403057364369472",
+      "published_at_utc": "2026-11-11T06:27:38.000Z",
+      "published_at_shanghai": "2026-11-11 14:27（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon High",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称使用 Gemini 4 Carbon 的 High 档，跑了约 3 小时，做出电动机与发电机演示；没有使用 Blender，纯靠 Three.js。作者认为质感不输 Opus 5.5，并写道最终效果取决于提示词，但并未公开提示词原文。耗时和比较均为作者自测。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/akokoi-motor-generator-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120398696269717504/img/_Wz-2yPDXUk5--Xv.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/akokoi1/status/2120403057364369472",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/akokoi-motor-generator-01.webp",
+          "width": 1199,
+          "height": 741
+        }
+      ],
+      "likes": 32,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "版权归原作者。耗时和与 Opus 5.5 的比较均为作者自测。",
+      "mixed": false
+    },
+    {
+      "id": "stefan-seahorse-compare",
+      "title": "同一叶海马提示词：Carbon High 对 Argon",
+      "category": "同题对比实测",
+      "one_liner": "同一提示词在 Antigravity High 档对比 Carbon 与 Argon，再用 Blender 的 Higgsfield 插件绑定并做动画。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Stefan 3D AI",
+        "username": "Stefan_3D_AI",
+        "url": "https://x.com/Stefan_3D_AI"
+      },
+      "posted_by": {
+        "name": "Stefan 3D AI",
+        "username": "Stefan_3D_AI",
+        "url": "https://x.com/Stefan_3D_AI"
+      },
+      "source_url": "https://x.com/Stefan_3D_AI/status/2120408024678629622",
+      "published_at_utc": "2026-11-11T06:47:23.000Z",
+      "published_at_shanghai": "2026-11-11 14:47（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon High",
+        "Gemini 4 Argon",
+        "Google Antigravity",
+        "Blender",
+        "Higgsfield plugin"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者用同一测试对比几周前让他失望的 Argon 和这次的 Carbon，两次都在 Antigravity 里用 High 档。作者称 Carbon 用了 81 分钟、约 18.6 万输出 token、按 API 计价约 4.5 美元；Argon 用了 14 分钟、约 1.1 万输出 token、约 1.8 美元。视频封面可见蓝色叶状海马，并注明 same prompt, rigged and animated in Blender；作者在正文写作用了 Blender 的 Higgsfield 插件。提示词未公开。耗时、token 和费用为作者自测。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/stefan-seahorse-compare-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120407950082834432/img/ym7SGmXxS9axpEwl.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/Stefan_3D_AI/status/2120408024678629622",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/stefan-seahorse-compare-01.webp",
+          "width": 720,
+          "height": 720
+        }
+      ],
+      "likes": 301,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "混用了 Blender 与 Higgsfield 插件。耗时和费用为作者自测。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：在 Google Antigravity 中用 High 档，分别用 Gemini 4 Carbon 和 Gemini 4 Argon 跑同一提示词。原帖未公开提示词原文。",
+        "第2步：用 Blender 的 Higgsfield 插件做绑定和动画。绑定参数和动画流程原帖未说明。"
+      ]
+    },
+    {
+      "id": "fini-strait-command",
+      "title": "一句话做出 3D 全息海战棋",
+      "category": "游戏与可玩原型",
+      "one_liner": "作者称用 Gemini 4 Carbon 一句话做出一盘 3D 全息海战棋，并提供了可直接打开的在线演示。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Fini.Yang",
+        "username": "FiniYang",
+        "url": "https://x.com/FiniYang"
+      },
+      "posted_by": {
+        "name": "Fini.Yang",
+        "username": "FiniYang",
+        "url": "https://x.com/FiniYang"
+      },
+      "source_url": "https://x.com/FiniYang/status/2120414470308770162",
+      "published_at_utc": "2026-11-11T07:12:59.000Z",
+      "published_at_shanghai": "2026-11-11 15:12（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "作者写“一句话搓出”，但未公开提示词原文。"
+      },
+      "method": "作者称这是 Gemini 4 Carbon 测评，一句话做出一盘 3D 全息海战棋，并把它放进自己的游戏墙，同时给出可打开的在线演示。帖子标签包含 Three.js。提示词原文未公开。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/fini-strait-command-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120367728821481472/img/DNg1XD49CgPIsbjR.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/FiniYang/status/2120414470308770162",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/fini-strait-command-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 24,
+      "featured_by_url": null,
+      "live_demo_url": "https://finiking.github.io/dsh-games/strait-command/",
+      "repo_url": null,
+      "related_urls": [
+        "https://finiking.github.io/dsh-games/strait-command/"
+      ],
+      "notes": "版权归原作者。在线演示能否长期访问以原站点为准。",
+      "mixed": false
+    },
+    {
+      "id": "amit-neon-car-compare",
+      "title": "同一霓虹跑车提示词：Carbon 对 Sol、Fable 和 Opus",
+      "category": "同题对比实测",
+      "one_liner": "同一提示词、同样 32k 输出上限，只准用 canvas 做夜间霓虹公路跑车；作者称 Carbon 场景最丰富，Fable 和 Opus 超限后是空白页。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Amit Shrivastava",
+        "username": "amitmuflis",
+        "url": "https://x.com/amitmuflis"
+      },
+      "posted_by": {
+        "name": "Amit Shrivastava",
+        "username": "amitmuflis",
+        "url": "https://x.com/amitmuflis"
+      },
+      "source_url": "https://x.com/amitmuflis/status/2120420428078555403",
+      "published_at_utc": "2026-11-11T07:36:40.000Z",
+      "published_at_shanghai": "2026-11-11 15:36（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "GPT-5.6 Sol",
+        "Claude Fable 5.2",
+        "Claude Opus 5.5"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "Build a single self-contained HTML file with an animated 3D-looking sports car driving on a neon road at night, using only canvas/JS, no libraries. The animation should start automatically and fill the browser window. Reply with only the complete HTML file in one code block.",
+        "note": null
+      },
+      "method": "作者用同一提示词对比四个模型，要求单个 HTML、夜间霓虹公路上的跑车、只用 canvas/JS、不许用外部库，并统一 32k 输出上限。作者称：Gemini 4 Carbon 场景最丰富，用了 107 秒；GPT-5.6 Sol 最干净，用了 39 秒，大约 0.05 美元；Claude Fable 5.2 和 Opus 5.5 思考就用掉 2.1 万以上 token，触达上限后是空白页。提示词在原帖回复中公开。耗时、费用和观感判断均为作者自测。效果图为对比视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/amit-neon-car-compare-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120420315205713920/img/WPz1VV6cpczG5eDn.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/amitmuflis/status/2120420428078555403",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/amit-neon-car-compare-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 0,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://x.com/amitmuflis/status/2120420513076175157"
+      ],
+      "notes": "提示词已在原帖回复中公开。耗时和费用为作者自测。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "kasmi-horse",
+      "title": "经典「不要出错」提示词做出的互动 3D 马",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "作者用公开的经典提示词「Create a realistic interactive 3D horse with three.js. Make no mistakes.」测试 Carbon，称 38 分钟后得到结果。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Youness KASMI",
+        "username": "kasmiyouness1",
+        "url": "https://x.com/kasmiyouness1"
+      },
+      "posted_by": {
+        "name": "Youness KASMI",
+        "username": "kasmiyouness1",
+        "url": "https://x.com/kasmiyouness1"
+      },
+      "source_url": "https://x.com/kasmiyouness1/status/2120479016725418016",
+      "published_at_utc": "2026-11-11T11:29:28.000Z",
+      "published_at_shanghai": "2026-11-11 19:29（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Three.js"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "Create a realistic interactive 3D horse with three.js. Make no mistakes.",
+        "note": null
+      },
+      "method": "作者用社区里常用来压测 3D 能力的公开提示词，测试 Gemini 4 Carbon：用 Three.js 做一匹逼真、可互动的 3D 马，并要求不要出错。作者称 38 分钟后得到帖中结果。耗时为作者自测。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/kasmi-horse-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120478843081232384/img/vY0LnWmdtEvwe21j.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/kasmiyouness1/status/2120479016725418016",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/kasmi-horse-01.webp",
+          "width": 1200,
+          "height": 562
+        }
+      ],
+      "likes": 97,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "提示词已公开。耗时为作者自测。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "vipin-taj-mahal",
+      "title": "在浏览器里重建泰姬陵建筑群",
+      "category": "混用工作流",
+      "one_liner": "作者称在 Antigravity 里用 Gemini 4 Carbon、Three.js 和 Blender，做出可实时浏览的泰姬陵建筑群 3D 重建。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Vipin",
+        "username": "vipinxtwt",
+        "url": "https://x.com/vipinxtwt"
+      },
+      "posted_by": {
+        "name": "Vipin",
+        "username": "vipinxtwt",
+        "url": "https://x.com/vipinxtwt"
+      },
+      "source_url": "https://x.com/vipinxtwt/status/2120560937426198637",
+      "published_at_utc": "2026-11-11T16:55:00.000Z",
+      "published_at_shanghai": "2026-11-12 00:55（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity",
+        "Three.js",
+        "Blender"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称在 Antigravity 中使用 Gemini 4 Carbon、Three.js 和 Blender，在浏览器里做出可实时浏览的泰姬陵建筑群 3D 重建。提示词未公开，Three.js 与 Blender 如何分工原帖也未说明。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/vipin-taj-mahal-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120531521601998848/img/18ePhXvjL8QEXo0r.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/vipinxtwt/status/2120560937426198637",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/vipin-taj-mahal-01.webp",
+          "width": 1200,
+          "height": 1114
+        }
+      ],
+      "likes": 4,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "混用了 Blender。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：在 Google Antigravity 中用 Gemini 4 Carbon 重建泰姬陵建筑群。原帖未公开提示词。",
+        "第2步：使用 Three.js 与 Blender。两者如何分工、资产如何从 Blender 转到浏览器，原帖未说明。"
+      ]
+    },
+    {
+      "id": "ammaar-windows-ios",
+      "title": "在折叠屏 iPhone Duo 上本地跑起 Windows 11",
+      "category": "混用工作流",
+      "one_liner": "作者称用 Gemini 4 Carbon 在 iPhone Duo 上本地跑通 Windows 11 ARM，展开后能当口袋电脑，还能在手机上运行 Antigravity。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Ammaar Reshi",
+        "username": "ammaar",
+        "url": "https://x.com/ammaar"
+      },
+      "posted_by": {
+        "name": "Ammaar Reshi",
+        "username": "ammaar",
+        "url": "https://x.com/ammaar"
+      },
+      "source_url": "https://x.com/ammaar/status/2120605420066595029",
+      "published_at_utc": "2026-11-11T19:51:45.000Z",
+      "published_at_shanghai": "2026-11-12 03:51（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity /swarm",
+        "Windows 11 ARM",
+        "iPhone Duo"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称使用 Gemini 4 Carbon，让 Windows 11 在自己的 iPhone Duo 上运行：展开屏幕后成为口袋电脑，并且能在手机上运行 Antigravity 编程智能体。作者强调这是在本地运行的实际桌面 ARM 系统，带触摸控制，不是模拟器截图。随后立即回复公开了 GitHub 仓库 WindowsiOS。在同一串帖的回复里，作者又称智能体用 /swarm 工作了约 2 小时，安装体积是「随便装了个 12GB」。提示词未公开。效果图为视频封面，未转存完整视频。实现细节以作者仓库为准，调研未独立复现。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/ammaar-windows-ios-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120604342247927808/img/9HwQ65Uprvpt-fIT.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ammaar/status/2120605420066595029",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/ammaar-windows-ios-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 2387,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": "https://github.com/ammaarreshi/WindowsiOS",
+      "related_urls": [
+        "https://x.com/ammaar/status/2120605645535580536",
+        "https://github.com/ammaarreshi/WindowsiOS",
+        "https://x.com/ammaar/status/2120658428322312362"
+      ],
+      "notes": "混用了 /swarm、Windows 11 ARM 与 iOS 设备。仓库和耗时、安装体积均为作者自述。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：作者称用 Gemini 4 Carbon，经 /swarm 让智能体工作约 2 小时。原帖未公开提示词，也未说明人工修改了多少。",
+        "第2步：在 iPhone Duo 上本地运行完整的 Windows 11 ARM 桌面系统，并带触摸控制；展开后可作为口袋电脑，其中还能运行 Antigravity 编程智能体。",
+        "第3步：作者随后公开 GitHub 仓库 WindowsiOS，供他人查看和改作。实现细节以仓库为准。"
+      ]
+    },
+    {
+      "id": "fofr-speed-sketch",
+      "title": "用 Decisions API 做的速写竞猜应用",
+      "category": "网站、应用与数据工具",
+      "one_liner": "作者和 Carbon 在 AI Studio 里做了个速写竞猜应用：决策模型用视觉能力，从候选列表里猜你快速画出的是什么。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "fofr",
+        "username": "fofrAI",
+        "url": "https://x.com/fofrAI"
+      },
+      "posted_by": {
+        "name": "fofr",
+        "username": "fofrAI",
+        "url": "https://x.com/fofrAI"
+      },
+      "source_url": "https://x.com/fofrAI/status/2120645921222611428",
+      "published_at_utc": "2026-11-11T22:32:41.000Z",
+      "published_at_shanghai": "2026-11-12 06:32（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Gemini Decisions API",
+        "Google AI Studio"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称自己和 Carbon 用新的 Decisions API 在 AI Studio 里做了一个应用：你尽快画一样东西，决策模型用视觉能力从候选列表里猜测是什么。作者说它能从自己很糟的速写里猜得很准，并给出了 AI Studio 可玩演示。应用如何把 Carbon 与决策模型衔接，原帖未展开。提示词未公开。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/fofr-speed-sketch-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120644489748373504/img/nwlb4sixcpSX9e_Q.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/fofrAI/status/2120645921222611428",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/fofr-speed-sketch-01.webp",
+          "width": 1200,
+          "height": 812
+        }
+      ],
+      "likes": 60,
+      "featured_by_url": null,
+      "live_demo_url": "https://aistudio.google.com/apps/bundled/speed-sketch",
+      "repo_url": null,
+      "related_urls": [
+        "https://aistudio.google.com/apps/bundled/speed-sketch",
+        "https://x.com/GoogleAIStudio/status/2120589299037147177"
+      ],
+      "notes": "混用了 Decisions API。可玩演示在 AI Studio，可能需要 Google 账号。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：在 Google AI Studio 中用 Gemini 4 Carbon 搭建速写竞猜应用。原帖未公开应用提示词。",
+        "第2步：接入新的 Decisions API，让决策模型根据视觉输入，从候选列表里猜测用户快速画出的内容。模型如何打分、候选列表如何生成，原帖未说明。"
+      ]
+    },
+    {
+      "id": "jianzhang-timber-joinery",
+      "title": "单文件写出宋代木作榫卯爆炸分解",
+      "category": "3D 场景与物理仿真",
+      "one_liner": "作者称在 Antigravity 里用 Gemini 4 Carbon，把 181 个程序化木石构件写成单个 HTML，并做 12 层榫卯爆炸分解。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "jianzhang",
+        "username": "jianzhang1987",
+        "url": "https://x.com/jianzhang1987"
+      },
+      "posted_by": {
+        "name": "jianzhang",
+        "username": "jianzhang1987",
+        "url": "https://x.com/jianzhang1987"
+      },
+      "source_url": "https://x.com/jianzhang1987/status/2120699259335110707",
+      "published_at_utc": "2026-11-12T02:04:38.000Z",
+      "published_at_shanghai": "2026-11-12 10:04（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称在 Antigravity 中使用 Gemini 4 Carbon，用单个 HTML 做成公元 1103 年宋代木作榫卯演示：181 个程序化木石构件，并写明依据《营造法式》、误差 ±0.00mm，而且没有使用现成 3D 或音频资源。演示会按 12 层榫卯爆炸分解，再融化成青绿山水长卷。构件数量和公差均为作者自述，提示词未公开。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/jianzhang-timber-joinery-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120698997996191744/img/7VER3qaK4Lg9Vd5C.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/jianzhang1987/status/2120699259335110707",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/jianzhang-timber-joinery-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 0,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "构件数和公差为作者自述。版权归原作者。",
+      "mixed": false
+    },
+    {
+      "id": "emily-piano-concert",
+      "title": "用 Three.js 和 Blender 做的钢琴音乐会短片",
+      "category": "混用工作流",
+      "one_liner": "作者公开了一段很长的提示词，要求 Carbon High 在 Antigravity 里做 3 分钟、可实时的李斯特钢琴音乐会电影。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Emily",
+        "username": "IamEmily2050",
+        "url": "https://x.com/IamEmily2050"
+      },
+      "posted_by": {
+        "name": "Emily",
+        "username": "IamEmily2050",
+        "url": "https://x.com/IamEmily2050"
+      },
+      "source_url": "https://x.com/IamEmily2050/status/2120716006884786498",
+      "published_at_utc": "2026-11-12T03:11:11.000Z",
+      "published_at_shanghai": "2026-11-12 11:11（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon High",
+        "Google Antigravity",
+        "Three.js 0.187.0",
+        "WebGPU",
+        "Blender 5.2+"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "Build a deterministic, real time capable 3 minute (180.000s, 10,800 frames at 60fps) solo piano concert film titled \"PERF-01 // SYMPHONY NO. 7 IN A MAJOR, OP. 92 (II. ALLEGRETTO)\" (Franz Liszt solo piano concert transcription S.464/7 of Beethoven's Allegretto) using Three.js 0.187.0 (native WebGPURenderer + three/tsl), headless Blender 5.2+ (Cycles GPU 4K OIDN baking + anatomical sculpting), AI texture lookdev, and multi-velocity grand piano synthesis.",
+        "note": "提示词以原帖正文为准；若原帖还有未显示完的后续要求，这里只收录已公开的这一段。"
+      },
+      "method": "作者标明使用 Gemini 4 Carbon High 和 Antigravity，并在帖中公开提示词：做一个确定、可实时的 3 分钟（180 秒，60fps 下 10800 帧）钢琴独奏音乐会短片，曲目为李斯特改编的贝多芬《第七交响曲》第二乐章。提示词还要求使用 Three.js 0.187.0（原生 WebGPURenderer 与 TSL）、无头 Blender 5.2+（Cycles GPU 4K OIDN 烘焙与解剖雕刻）、AI 纹理 lookdev，以及多力度钢琴合成。各工具如何衔接的更多细节原帖未说明。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/emily-piano-concert-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120715299012087808/img/zCNEHRPblbc2_e4g.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/IamEmily2050/status/2120716006884786498",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/emily-piano-concert-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 37,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "混用了 Three.js/WebGPU、Blender 和钢琴合成。提示词已在原帖公开。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：在 Google Antigravity 中用 Gemini 4 Carbon High，按公开提示词制作 3 分钟钢琴音乐会短片。",
+        "第2步：提示词要求同时使用 Three.js 0.187.0（WebGPURenderer + TSL）、无头 Blender 5.2+（Cycles GPU 4K OIDN 烘焙与解剖雕刻）、AI 纹理 lookdev，以及多力度钢琴合成。各工具如何衔接的更多细节原帖未说明。"
+      ]
+    },
+    {
+      "id": "ash-analytics",
+      "title": "两天搭出无 Cookie 的站点分析后台",
+      "category": "网站、应用与数据工具",
+      "one_liner": "作者称在早期测试里把个人网站和 newsletter 的大量待办交给 Carbon，约两天完成迁云、无 Cookie 分析和看板等约 95% 的栈。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "posted_by": {
+        "name": "AshutoshShrivastava",
+        "username": "ai_for_success",
+        "url": "https://x.com/ai_for_success"
+      },
+      "source_url": "https://x.com/ai_for_success/status/2120719251447431652",
+      "published_at_utc": "2026-11-12T03:24:05.000Z",
+      "published_at_shanghai": "2026-11-12 11:24（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Cloudflare Workers",
+        "OpenNext",
+        "Supabase",
+        "Postgres"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称 Gemini 4 Carbon 为自己的多个平台从零做出了定制分析系统，并且每天都在用。在早期测试中，他把个人网站和 newsletter 的大量待办交给 Carbon，称约两天完成了大约 95% 的栈：把作品集、AI Compass newsletter 和 3D 模型展示站迁到同一域名，使用 Cloudflare Workers 与 OpenNext；做了按日轮换加密哈希的无 Cookie 追踪；加入 SIVT 过滤以区分机器人和真实读者；做了分析看板；用 Supabase/Postgres 做自定义 schema、按日分区和高性能 RPC；还做了动态 Google News/归档站点地图、11 个互动 3D 演示的图片站点地图、WebSub、canonical 和 Open Graph 等技术 SEO。作者称仍有一些边界情况要清理，但 95–96% 已接近可上线。完成度和耗时均为作者自述，提示词未公开。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/ash-analytics-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120715635269513217/img/MA8PpCFoz6t-nDd9.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/ai_for_success/status/2120719251447431652",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/ash-analytics-01.webp",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "likes": 56,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "完成度、耗时和「每天都在用」均为作者自述。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：作者在早期测试中把个人网站和 newsletter 的大量待办交给 Gemini 4 Carbon。原帖未公开提示词和对话过程。",
+        "第2步：作者称约两天内完成从 Vercel 迁到 Cloudflare Workers/OpenNext，并做出无 Cookie 分析、机器人检测、分析看板、Supabase/Postgres 后端和技术 SEO。人工清理了哪些边界情况，原帖未逐项说明。"
+      ]
+    },
+    {
+      "id": "bebechien-nethack",
+      "title": "把 NetHack 重做成 3D 动作 RPG",
+      "category": "游戏与可玩原型",
+      "one_liner": "作者公开了 /swarm 提示词：克隆 NetHack 源码，移植到现代 Web 与 WASM，并做成 3D 动作 RPG，同时用 Blender MCP 生成资产。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "bebechien",
+        "username": "bebechien",
+        "url": "https://dev.to/bebechien"
+      },
+      "posted_by": {
+        "name": "bebechien",
+        "username": "bebechien",
+        "url": "https://dev.to/bebechien"
+      },
+      "source_url": "https://dev.to/bebechien/nethack-remake-with-gemini-4-carbon-4pjf",
+      "published_at_utc": "2026-11-12T04:10:49.000Z",
+      "published_at_shanghai": "2026-11-12 12:10（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Google Antigravity /swarm",
+        "Blender",
+        "Blender MCP",
+        "Web",
+        "WASM"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "/swarm Clone https://github.com/NetHack/NetHack and port it into modern web technology and wasm. Remake it into a 3D Action RPG. Use Blender MCP to generate high quality 3d assets.",
+        "note": null
+      },
+      "method": "作者在 DEV Community 发文（同步发布于个人博客和 Velog），介绍用 Gemini 4 Carbon 测试：把 1987 年的经典文字/ASCII 肉鸽 NetHack 重做成现代 3D 动作 RPG。准备步骤包括安装 Antigravity 并选用 Carbon，以及安装 Blender 并连接 Blender MCP。作者公开了实际使用的一次性提示词，调用 /swarm 克隆 NetHack 源码、移植到现代 Web 与 WASM，并重做成 3D 动作 RPG，同时用 Blender MCP 生成高质量 3D 资产。文章附有宣传片和实际游玩录屏；效果图取自作者公开的宣传片预览封面，未转存完整视频。NetHack 原项目有独立许可证，作者也提醒使用前需核对许可条款。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/bebechien-nethack-01.webp",
+          "source_media_url": "https://i.ytimg.com/vi/4KfezQB4aW0/maxresdefault.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://dev.to/bebechien/nethack-remake-with-gemini-4-carbon-4pjf",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原文",
+          "src": "/images/gemini-4-carbon/bebechien-nethack-01.webp",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "likes": null,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [
+        "https://www.youtube.com/watch?v=4KfezQB4aW0",
+        "https://velog.io/@bebechien/Gemini-4-Carbon%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%82%98%EB%8A%94-NetHack-%EB%A6%AC%EB%A9%94%EC%9D%B4%ED%81%AC",
+        "https://github.com/NetHack/NetHack"
+      ],
+      "notes": "混用了 /swarm 和 Blender MCP。提示词已在原文公开。效果图为作者宣传片预览封面。版权归原作者；NetHack 原项目许可证需单独遵守。",
+      "mixed": true,
+      "workflow": [
+        "第1步：安装 Antigravity 并选用 Gemini 4 Carbon；安装 Blender，添加 MCP 插件并连接到 Antigravity。",
+        "第2步：使用公开的 /swarm 提示词，克隆 NetHack 源码并移植为现代 Web/WASM 上的 3D 动作 RPG，同时用 Blender MCP 生成 3D 资产。",
+        "第3步：作者在文章中放了宣传片和实际游玩录屏。剪辑步骤原文未说明。"
+      ]
+    },
+    {
+      "id": "vipin-turbofan",
+      "title": "涡扇发动机实时 3D 数字孪生",
+      "category": "混用工作流",
+      "one_liner": "作者称用 Gemini 4 Carbon、Three.js 和 Blender，做出涡扇发动机的实时 3D 数字孪生。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Vipin",
+        "username": "vipinxtwt",
+        "url": "https://x.com/vipinxtwt"
+      },
+      "posted_by": {
+        "name": "Vipin",
+        "username": "vipinxtwt",
+        "url": "https://x.com/vipinxtwt"
+      },
+      "source_url": "https://x.com/vipinxtwt/status/2120762739102724161",
+      "published_at_utc": "2026-11-12T06:16:53.000Z",
+      "published_at_shanghai": "2026-11-12 14:16（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon",
+        "Three.js",
+        "Blender"
+      ],
+      "prompt": {
+        "status": "unpublished",
+        "text": null,
+        "note": "未公开提示词。"
+      },
+      "method": "作者称使用 Gemini 4 Carbon、Three.js 和 Blender，做出涡扇发动机的实时 3D 数字孪生。提示词未公开，Three.js 与 Blender 如何分工原帖也未说明。该条与同一作者前一天发布的泰姬陵重建是不同作品。效果图为视频封面，未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/vipin-turbofan-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120761880549675008/img/Oj251ccy-3nCHp-c.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/vipinxtwt/status/2120762739102724161",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/vipin-turbofan-01.webp",
+          "width": 1200,
+          "height": 681
+        }
+      ],
+      "likes": 2,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "混用了 Blender。版权归原作者。",
+      "mixed": true,
+      "workflow": [
+        "第1步：用 Gemini 4 Carbon 制作涡扇发动机的实时 3D 数字孪生。原帖未公开提示词。",
+        "第2步：使用 Three.js 与 Blender。两者如何分工，原帖未说明。"
+      ]
+    },
+    {
+      "id": "simonas-snake-compare",
+      "title": "同一 2.5D 贪吃蛇：Carbon 对 Fable 5.2",
+      "category": "同题对比实测",
+      "one_liner": "同一提示词做视觉漂亮的单文件 2.5D 贪吃蛇，并要求先做计划以节省用量；作者称 Carbon 更好玩，Fable 更快。",
+      "model": "Gemini 4 Carbon",
+      "model_attribution": "author_claimed",
+      "author": {
+        "name": "Simonas",
+        "username": "SimonasLTU1",
+        "url": "https://x.com/SimonasLTU1"
+      },
+      "posted_by": {
+        "name": "Simonas",
+        "username": "SimonasLTU1",
+        "url": "https://x.com/SimonasLTU1"
+      },
+      "source_url": "https://x.com/SimonasLTU1/status/2120785034718097534",
+      "published_at_utc": "2026-11-12T07:45:29.000Z",
+      "published_at_shanghai": "2026-11-12 15:45（Asia/Shanghai）",
+      "tools": [
+        "Gemini 4 Carbon High",
+        "Claude Fable 5.2"
+      ],
+      "prompt": {
+        "status": "published",
+        "text": "build a visually impressive 2.5D Snake game in one HTML file, but plan first so it burns as little of the usage limit as possible.",
+        "note": null
+      },
+      "method": "作者用同一提示词对比 Claude Fable 5.2 和 Gemini 4 Carbon：做一个视觉上令人印象深刻的 2.5D 贪吃蛇，写成单个 HTML 文件，但要先做计划，尽量少消耗用量配额。两次都跑 High 档。作者的观感是 Carbon 的游戏更好看更好玩，Fable 更快。作者自测数据：Fable 5.2（100 美元方案）用了 22 分钟，占 5 小时额度的 8%，周额度约 1%、Fable 周额度约 2%；Carbon（Google AI Ultra，200 美元方案）用了 34 分钟，占 5 小时额度的 1%，周额度约 0–1%。两种玩法都在对比视频里。耗时、配额和判断均为作者自测。效果图从原对比视频中截取更清晰的预览帧（官方封面是淡入黑场），未转存完整视频。",
+      "images": [
+        {
+          "path": "/images/gemini-4-carbon/simonas-snake-compare-01.webp",
+          "source_media_url": "https://pbs.twimg.com/amplify_video_thumb/2120784939104784384/img/Hxdgyfdb3AOf0HmU.jpg",
+          "media_type": "video_thumbnail",
+          "original_post_url": "https://x.com/SimonasLTU1/status/2120785034718097534",
+          "copyright_note": "他人作品，仅作效果预览，上架须署名并链回原帖",
+          "src": "/images/gemini-4-carbon/simonas-snake-compare-01.webp",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "likes": 0,
+      "featured_by_url": null,
+      "live_demo_url": null,
+      "repo_url": null,
+      "related_urls": [],
+      "notes": "提示词已在原帖公开。耗时和配额占用为作者自测。版权归原作者。 效果图从原对比视频中截取预览帧，因官方封面是淡入黑场。",
+      "mixed": false
     }
   ]
 }
