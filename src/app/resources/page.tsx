@@ -51,6 +51,13 @@ export default function ResourcesPage() {
         </div>
       </section>
 
+      <Link href="/scroll-world-landing-page-tutorial" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] md:p-10">
+        <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]"><span>新实测教程 · Scroll-World</span><span>HeyGen Video 1 / 滚动倒放</span></div>
+        <h2 className="mt-5 text-2xl font-semibold leading-relaxed md:text-3xl">用一条 30 秒镜头，做向下滚就倒放的落地页。</h2>
+        <p className="mt-4 max-w-3xl text-base leading-8 text-[#d4d9cc]">拆解 Meng To 公开的四步、提示词，以及 ffmpeg 每 4 帧一个关键帧。只引用他已经发出的原文，费用只转述 HeyGen 官方页面。</p>
+        <span className="mt-6 inline-block border-b border-[#d6b47b] pb-1 text-base text-[#e9bf78]">阅读 Scroll-World 实测教程 →</span>
+      </Link>
+
       <Link href="/gemini-4-carbon-cases" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] md:p-10">
         <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]"><span>新专题 · Gemini 4 Carbon</span><span>78 个案例 / 7 个分类</span></div>
         <h2 className="mt-5 text-2xl font-semibold leading-relaxed md:text-3xl">先看效果图，再分清纯 Carbon 和混用工作流。</h2>

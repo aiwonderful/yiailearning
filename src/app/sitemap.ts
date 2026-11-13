@@ -48,6 +48,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     },
     {
+      url: `${siteConfig.url}/scroll-world-landing-page-tutorial`,
+      lastModified: new Date('2026-11-13'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
       url: siteConfig.url,
       lastModified: new Date(),
       changeFrequency: 'daily' as const,
