@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LensBoard — See which posts actually grow your audience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --color-primary: #2563EB;
+      --color-on-primary: #FFFFFF;
+      --color-secondary: #3B82F6;
+      --color-on-secondary: #000000;
+      --color-accent: #EA580C;
+      --color-on-accent: #000000;
+      --color-background: #F8FAFC;
+      --color-foreground: #1E293B;
+      --color-card: #FFFFFF;
+      --color-card-foreground: #1E293B;
+      --color-muted: #E9EFF8;
+      --color-muted-foreground: #475569;
+      --color-border: #E2E8F0;
+      --color-destructive: #DC2626;
+      --color-on-destructive: #FFFFFF;
+      --color-ring: #2563EB;
+      --features-bg: #FAFAFA;
+      --blur-amount: 16px;
+      --font-heading: Calistoga, Georgia, serif;
+      --font-body: Inter, system-ui, sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, monospace;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body);
+      background: var(--color-background);
+      color: var(--color-foreground);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; cursor: pointer; }
+    button, .btn { cursor: pointer; }
+    :focus-visible {
+      outline: 2px solid var(--color-ring);
+      outline-offset: 2px;
+    }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    header.nav {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(248, 250, 252, 0.62);
+      backdrop-filter: blur(var(--blur-amount));
+      -webkit-backdrop-filter: blur(var(--blur-amount));
+      border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+      box-shadow: 0 8px 30px rgba(37, 99, 235, 0.06);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 72px; gap: 24px;
+    }
+    .brand {
+      font-family: var(--font-heading);
+      font-weight: 400; font-size: 22px; letter-spacing: -0.02em;
+      color: var(--color-foreground);
+    }
+    .nav-links {
+      display: flex; gap: 28px;
+      color: var(--color-muted-foreground);
+      font-size: 14px; font-weight: 500;
+    }
+    .nav-links a {
+      transition: color 200ms ease;
+    }
+    .nav-links a:hover { color: var(--color-primary); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      border-radius: 12px; padding: 10px 18px; font-weight: 600; font-size: 14px;
+      border: 0; transition: background-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+    }
+    .btn-primary {
+      background: var(--color-accent);
+      color: var(--color-on-accent);
+      box-shadow: 0 8px 20px rgba(234, 88, 12, 0.22);
+    }
+    .btn-primary:hover { background: #c24a0a; box-shadow: 0 10px 24px rgba(234, 88, 12, 0.28); }
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.55);
+      color: var(--color-foreground);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(var(--blur-amount));
+      -webkit-backdrop-filter: blur(var(--blur-amount));
+    }
+    .btn-ghost:hover { background: rgba(255, 255, 255, 0.9); }
+    .hero {
+      position: relative; padding: 96px 0 72px; overflow: hidden; text-align: center;
+    }
+    .hero-bg {
+      position: absolute; inset: -20% -10% 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse at 18% 20%, rgba(37, 99, 235, 0.28), transparent 55%),
+        radial-gradient(ellipse at 82% 10%, rgba(234, 88, 12, 0.18), transparent 50%),
+        radial-gradient(ellipse at 50% 85%, rgba(59, 130, 246, 0.16), transparent 55%);
+    }
+    .hero .wrap { position: relative; z-index: 1; }
+    .eyebrow {
+      display: inline-flex; margin-bottom: 18px; padding: 6px 12px; border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      color: var(--color-primary);
+      background: rgba(255, 255, 255, 0.42);
+      backdrop-filter: blur(var(--blur-amount));
+      -webkit-backdrop-filter: blur(var(--blur-amount));
+      font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    h1, h2, .section-title {
+      font-family: var(--font-heading);
+      font-weight: 400;
+      color: var(--color-foreground);
+    }
+    h1 {
+      margin: 0 auto 18px; max-width: 18ch;
+      font-size: clamp(36px, 5vw, 64px); line-height: 1.08; letter-spacing: -0.03em;
+    }
+    .sub { margin: 0 auto 32px; max-width: 620px; color: var(--color-muted-foreground); font-size: 18px; }
+    .hero-actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    section { padding: 72px 0; }
+    .features { background: var(--features-bg); }
+    .section-title { text-align: center; margin: 0 0 40px; font-size: 32px; letter-spacing: -0.02em; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(var(--blur-amount));
+      -webkit-backdrop-filter: blur(var(--blur-amount));
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      padding: 28px;
+      color: var(--color-card-foreground);
+      box-shadow: 0 12px 40px rgba(30, 41, 59, 0.08);
+    }
+    .icon {
+      width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; margin-bottom: 16px;
+      background: rgba(37, 99, 235, 0.1);
+      color: var(--color-primary);
+    }
+    .card h3 { margin: 0 0 10px; font-family: var(--font-heading); font-size: 22px; font-weight: 400; }
+    .card p { margin: 0; color: var(--color-muted-foreground); font-size: 15px; }
+    .pricing { position: relative; overflow: hidden; }
+    .pricing::before {
+      content: ""; position: absolute; inset: auto auto -30% 10%; width: 420px; height: 420px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.12), transparent 70%);
+      pointer-events: none;
+    }
+    .price-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 800px; margin: 0 auto; position: relative; }
+    .price {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(var(--blur-amount));
+      -webkit-backdrop-filter: blur(var(--blur-amount));
+      border: 1px solid var(--color-border);
+      border-radius: 20px; padding: 32px;
+    }
+    .price.featured {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 1px var(--color-primary), 0 16px 40px rgba(37, 99, 235, 0.12);
+      background: rgba(255, 255, 255, 0.88);
+    }
+    .plan { color: var(--color-muted-foreground); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 8px; }
+    .amount { font-family: var(--font-mono); font-size: 40px; font-weight: 500; letter-spacing: -0.04em; margin: 0 0 8px; }
+    .amount span { font-size: 16px; font-weight: 500; color: var(--color-muted-foreground); }
+    .price p { margin: 0 0 24px; color: var(--color-muted-foreground); }
+    .footer-cta { text-align: center; padding: 88px 0 96px; position: relative; overflow: hidden; }
+    .footer-cta::before {
+      content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(234, 88, 12, 0.12), transparent 55%),
+        radial-gradient(ellipse at 80% 80%, rgba(37, 99, 235, 0.12), transparent 50%);
+    }
+    .footer-cta .wrap { position: relative; z-index: 1; }
+    .footer-cta h2 { margin: 0 0 12px; font-size: clamp(28px, 4vw, 44px); letter-spacing: -0.03em; }
+    .footer-cta p { margin: 0 auto 28px; max-width: 520px; color: var(--color-muted-foreground); }
+    footer.site { border-top: 1px solid var(--color-border); padding: 24px 0 40px; color: var(--color-muted-foreground); font-size: 13px; text-align: center; background: var(--color-card); }
+    @media (max-width: 800px) {
+      .nav-links { display: none; }
+      .cards, .price-row { grid-template-columns: 1fr; }
+      .hero { padding: 72px 0 48px; }
+      section { padding: 56px 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">LensBoard</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#docs">Docs</a>
+      </nav>
+      <a class="btn btn-primary" href="#signup">Get started</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="eyebrow">Creator analytics</div>
+        <h1>See which posts actually grow your audience</h1>
+        <p class="sub">LensBoard turns your publishing stats into a clear weekly plan, so you stop guessing what to post next.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#signup">Start free</a>
+          <a class="btn btn-ghost" href="#features">See features</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="wrap">
+        <h2 class="section-title">Features</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15l3-3 3 2 5-6"/></svg>
+            </div>
+            <h3>Weekly insight report</h3>
+            <p>A short weekly brief that ranks what worked, what stalled, and what to try next.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 7h10v10H7z"/><path d="M11 3h10v10"/></svg>
+            </div>
+            <h3>Hook and title comparison</h3>
+            <p>Compare hooks and titles side by side so you can see which openings actually earn the click.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 4.2L2.8 17a2 2 0 0 0 1.7 3h15a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0z"/></svg>
+            </div>
+            <h3>Audience shift alerts</h3>
+            <p>Get notified when new readers show up from a different topic, platform, or region.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="wrap">
+        <h2 class="section-title">Pricing</h2>
+        <div class="price-row">
+          <article class="price">
+            <p class="plan">Free</p>
+            <p class="amount">$0</p>
+            <p>Enough to see your weekly plan and try the core reports.</p>
+            <a class="btn btn-ghost" href="#signup">Start free</a>
+          </article>
+          <article class="price featured">
+            <p class="plan">Pro</p>
+            <p class="amount">$19<span>/mo</span></p>
+            <p>Full comparisons, alerts, and a deeper weekly plan for active creators.</p>
+            <a class="btn btn-primary" href="#signup">Get started</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-cta" id="signup">
+      <div class="wrap">
+        <h2>See which posts actually grow your audience</h2>
+        <p>LensBoard turns your publishing stats into a clear weekly plan, so you stop guessing what to post next.</p>
+        <a class="btn btn-primary" href="#signup">Start free</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site" id="docs">
+    <div class="wrap">LensBoard · Docs · Features · Pricing</div>
+  </footer>
+</body>
+</html>
