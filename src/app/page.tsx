@@ -244,6 +244,18 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <Link href="/ui-ux-pro-max-skill-tutorial" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] shadow-soft md:p-10">
+        <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]">
+          <span>新实测教程 · UI UX Pro Max</span>
+          <span>同一份 brief / 2.15.0</span>
+        </div>
+        <h2 className="mt-5 font-serif text-2xl font-black leading-relaxed md:text-3xl">同一份 brief，写成两张营销页。</h2>
+        <p className="mt-4 max-w-3xl text-base leading-8 text-[#d4d9cc]">
+          官方 CLI 2.15.0 的设计系统把深色紫调收成浅底、Calistoga 和橙色黑字按钮。版式没有变。数字核对于 2026-11-16。
+        </p>
+        <span className="mt-6 inline-block border-b border-[#d6b47b] pb-1 text-base text-[#e9bf78]">阅读 UI UX Pro Max 实测教程 →</span>
+      </Link>
+
       <Link href="/scroll-world-landing-page-tutorial" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] shadow-soft md:p-10">
         <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]">
           <span>新实测教程 · Scroll-World</span>
