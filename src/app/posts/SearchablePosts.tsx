@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation';
+import React, { useEffect, useState } from 'react';
 import PostCard from '../../components/PostCard';
 import EmptyState from '../../components/EmptyState';
 
@@ -15,17 +14,20 @@ type Post = {
   };
 };
 
-export default function SearchablePosts({ initialPosts }: { initialPosts: Post[] }) {
+export default function SearchablePosts({
+  initialPosts,
+  initialTag = '',
+}: {
+  initialPosts: Post[];
+  initialTag?: string;
+}) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedTag, setSelectedTag] = useState('');
-  const searchParams = useSearchParams();
+  const [selectedTag, setSelectedTag] = useState(initialTag);
   const normalizedQuery = searchQuery.trim().toLowerCase();
-  
+
   useEffect(() => {
-    // Get tag from URL if available
-    const tagFromUrl = searchParams.get('tag');
-    setSelectedTag(tagFromUrl || '');
-  }, [searchParams]);
+    setSelectedTag(initialTag);
+  }, [initialTag]);
   
   // Extract all unique tags from posts
   const allTags = Array.from(

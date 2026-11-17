@@ -162,6 +162,9 @@ export default async function HomePage() {
                 学习 Loop Engineering
                 <span aria-hidden="true">→</span>
               </Link>
+              <Link href="/roadmap" className="btn btn-secondary px-6 py-3 text-base">
+                完整的 AI 学习路线图 →
+              </Link>
               <Link href="/resources" className="btn btn-secondary px-6 py-3 text-base">
                 查看资料库
               </Link>

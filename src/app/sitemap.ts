@@ -107,6 +107,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
+    {
+      url: `${siteConfig.url}/roadmap`,
+      lastModified: new Date('2026-11-17'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
   ];
 
   const fableCaseUrls = fableCases.map((item) => ({

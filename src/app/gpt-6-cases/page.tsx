@@ -25,7 +25,7 @@ export default function GPT6CasesPage() {
         <div className={styles.heroGrid}>
           <div>
             <p className={styles.eyebrow}>GPT-6 ASTRA · 实践观察</p>
-            <h1>从一次演示，<br />到你的下一次<span>实践。</span></h1>
+            <h1>GPT-6 案例集：20 个真实案例与 10 条最佳实践</h1>
             <p className={styles.intro}>20 个案例，看看 GPT-6 如何进入真实的创作与工作流程。保留输入、方法、成果与局限，把值得借鉴的做法带走。</p>
             <nav className={styles.heroLinks} aria-label="专题目录"><a href="#cases">阅读案例 <span aria-hidden="true">↓</span></a><a href="#practices">10 条最佳实践</a><a href="#workflow">复用这套流程</a></nav>
           </div>

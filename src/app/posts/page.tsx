@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { getAllPosts } from '../../lib/posts';
 import SearchablePosts from './SearchablePosts';
 import PageTitle from '../../components/PageTitle';
-import React, { Suspense } from 'react';
+import React from 'react';
 import { siteConfig } from '@/lib/config';
 
 const title = '博客文章';
@@ -19,9 +20,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function BlogIndexPage() {
+type BlogIndexPageProps = {
+  searchParams?: { tag?: string };
+};
+
+export default async function BlogIndexPage({ searchParams }: BlogIndexPageProps) {
   const posts = await getAllPosts();
   const latestDate = posts[0]?.meta.date;
+  const initialTag = typeof searchParams?.tag === 'string' ? searchParams.tag : '';
   
   return (
     <div className="max-w-5xl mx-auto space-y-10">
@@ -31,9 +37,16 @@ export default async function BlogIndexPage() {
         </div>
         <PageTitle>博客文章</PageTitle>
         <div className="mt-4 grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
-          <p className="max-w-3xl text-secondary leading-8">
-            这里集中放所有已经整理好的文章。核心目标不是把页面做复杂，而是让内容更容易被继续补充、筛选和回看。
-          </p>
+          <div>
+            <p className="max-w-3xl text-secondary leading-8">
+              这里集中放所有已经整理好的文章。核心目标不是把页面做复杂，而是让内容更容易被继续补充、筛选和回看。
+            </p>
+            <p className="mt-4">
+              <Link href="/roadmap" className="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">
+                完整的 AI 学习路线图 →
+              </Link>
+            </p>
+          </div>
           <div className="grid grid-cols-2 gap-3 text-sm">
             <div className="rounded-2xl border border-subtle/70 bg-background-light/80 px-4 py-3 dark:border-white/10 dark:bg-card-dark/65">
               <div className="text-secondary">文章总数</div>
@@ -54,9 +67,7 @@ export default async function BlogIndexPage() {
         </div>
       </section>
 
-      <Suspense fallback={<div className="py-10 text-center text-secondary dark:text-muted">加载中...</div>}>
-        <SearchablePosts initialPosts={posts} />
-      </Suspense>
+      <SearchablePosts initialPosts={posts} initialTag={initialTag} />
     </div>
   );
 } 

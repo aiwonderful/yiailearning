@@ -52,7 +52,7 @@ export const siteConfig = {
     { name: '我的作品', href: '/vibe-coding' },
     { name: '资料库', href: '/resources' },
     { name: '关于', href: '/about' },
-    // { name: '学习路线', href: '/roadmap' }, // 暂时隐藏，待完善后恢复
+    { name: '学习路线', href: '/roadmap' },
     { name: '博客', href: '/posts' },
   ],
 
