@@ -45,7 +45,7 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
               AI变现榜单：AI 副业怎么做出结果
             </h1>
             <p className="mx-auto mt-3 max-w-2xl text-base leading-7 text-[#356158]">
-              这些是已经发布的 AI 变现和 AI 副业复盘：作者怎么开始、卡在哪里、做出了什么成绩。下面先按站内现有的六个标签查看，再看完整名单。
+              这些是已经发布的 AI 变现和 AI 副业复盘：作者怎么开始、卡在哪里、做出了什么成绩。可以按主题查看，也可以看完整名单。
             </p>
             <a href="#experience-card" className="mt-4 inline-flex min-h-11 items-center rounded-full bg-[#067C6A] px-5 py-2 text-sm font-bold text-white hover:bg-[#056B5C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#067C6A]">免费领 3 天体验卡，阅读完整复盘 ↓</a>
           </div>
@@ -53,11 +53,11 @@ export default function AiMoneyPage({ searchParams }: AiMoneyPageProps) {
       </section>
 
       <section aria-labelledby="ai-money-topics" className="rounded-3xl border border-[#DCE4DD] bg-[#FFFDF8] p-5 md:p-7">
-        <h2 id="ai-money-topics" className="font-serif text-2xl font-black text-[#20242A]">按现有标签查看</h2>
+        <h2 id="ai-money-topics" className="font-serif text-2xl font-black text-[#20242A]">按主题浏览</h2>
         <p className="mt-3 max-w-3xl leading-7 text-[#53665C]">
-          目前是 {cases.length} 篇不重复案例。一篇可以同时带多个标签，所以各组数字加起来会大于 {cases.length}。这里不另做内容、工具、服务三组，避免把多标签再数成新的案例。
+          共 {cases.length} 篇案例，支持按标签查看；部分案例属于多个标签。
         </p>
-        <nav aria-label="案例标签" className="mt-4 flex flex-wrap gap-2">
+        <nav aria-label="按主题浏览" className="mt-4 flex flex-wrap gap-2">
           {topicOptions.map((topic) => (
             <a key={topic.value} href={`#topic-${topic.value}`} className="rounded-full bg-[#EAF2EF] px-4 py-2 text-sm font-semibold text-[#356158]">
               {topic.label}

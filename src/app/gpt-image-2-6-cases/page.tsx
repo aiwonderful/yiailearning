@@ -16,7 +16,7 @@ import styles from './cases.module.css';
 const title = 'GPT Image 2.6 案例合集：64 个带效果图的 GIF、表情包与混用工作流';
 const description = '按分类浏览 64 个 GPT Image 2.6 案例的效果图：官方发布与演示、GIF 动图、表情包与贴纸、人像写真、海报平面、模型对比，以及混用其他工具的工作流。每条署名作者并链回原帖，区分纯 GPT Image 2.6 和混用工作流。';
 const pageUrl = `${siteConfig.url}/gpt-image-2-6-cases`;
-// 2026-11-10：casebook collected_at，且与首次加入该页的提交 0ff5e47 同一天。不是各案例原帖日期。
+// 本站首次生产发布：提交 0ff5e47（2026-11-10 17:54 +08）对应的 Vercel Production 于 2026-11-10 09:55:36Z 完成，换算为上海时间 2026-11-10 17:55。
 const published = '2026-11-10';
 
 export const metadata: Metadata = {

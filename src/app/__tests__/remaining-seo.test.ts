@@ -20,7 +20,9 @@ describe('remaining SEO copy', () => {
     expect(sitemap).toContain('/roadmap');
     expect(posts).not.toContain('useSearchParams');
     expect(money).not.toContain('?topic=');
-    expect(money).toContain('篇不重复案例');
+    expect(money).toContain('共 {cases.length} 篇案例，支持按标签查看；部分案例属于多个标签。');
+    expect(money).toContain('按主题浏览');
+    expect(money).not.toContain('不另做内容');
     expect(fable).toContain('datePublished');
     expect(fable).toContain('2026-11-10');
     expect(image).toContain('datePublished');

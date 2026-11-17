@@ -10,7 +10,7 @@ import styles from './cases.module.css';
 const title = 'Claude Fable 5.2 案例合集：54 个带效果图的真实案例';
 const description = '按分类浏览 54 个 Claude Fable 5.2 案例：官方科研与工程、Three.js / 3D / Blender、游戏原型、动态设计和界面。每条有效果图、作者署名、原帖链接，以及公开的做法和提示词。';
 const pageUrl = `${siteConfig.url}/fable-5-2-cases`;
-// 2026-11-10：casebook collected_at，且与首次加入该页的提交 8f90e3a 同一天。不是各案例原帖日期。
+// 本站首次生产发布：提交 8f90e3a（2026-11-10 15:51 +08）对应的 Vercel Production 于 2026-11-10 07:52:43Z 完成，换算为上海时间 2026-11-10 15:52。
 const published = '2026-11-10';
 
 export const metadata: Metadata = {
