@@ -4,8 +4,8 @@ import PageTitle from '@/components/PageTitle';
 import ShengcaiInviteCard from '@/components/ShengcaiInviteCard';
 import { siteConfig } from '@/lib/config';
 
-const title = '我的作品';
-const description = '小亦用 AI 辅助开发并持续迭代的真实网站、微信小程序与开源项目。';
+const title = '我的作品：AI 网站与小程序';
+const description = '小亦用 AI 做出并持续更新的作品：Seedance 2.0 视频站、两个已上架微信小程序，以及 Blade of Glorp 和 Maelstrom Rod。';
 
 export const metadata: Metadata = {
   title,
@@ -94,7 +94,7 @@ export default function VibeCodingPage() {
           <div className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-[#9C563F]">
             Built By Xiaoyi
           </div>
-          <PageTitle className="text-[#20242A]">我的作品</PageTitle>
+          <PageTitle className="text-[#20242A]">我的作品：用 AI 做出的网站和小程序</PageTitle>
           <p className="-mt-4 text-lg leading-8 text-secondary">
             这里放我用 AI 辅助开发、部署并持续迭代的真实项目。它们不是概念展示，而是已经上线、上架或公开可访问的作品。
           </p>

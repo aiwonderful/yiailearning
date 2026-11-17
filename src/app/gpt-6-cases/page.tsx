@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import collection from '@/data/casebooks/gpt-6.json';
 import Casebook from './casebook';
+import FurtherReading from '@/components/FurtherReading';
 import ShengcaiInviteCard from '@/components/ShengcaiInviteCard';
 import styles from './casebook.module.css';
 
@@ -39,6 +40,13 @@ export default function GPT6CasesPage() {
       </header>
       <aside className={styles.evidenceNote}><strong>阅读说明</strong><p>原始资料已查阅。仅地球仪表盘做过部分成品交互检查，其余以作者报告为主；本集未独立复现生成或实验过程。每例保留来源与验证边界。</p></aside>
       <Casebook collection={collection} />
+      <FurtherReading links={[
+        { href: '/loop-engineer', title: 'Loop Engineering', note: '案例里的长任务，可以收成可验证的循环。' },
+        { href: '/roadmap', title: '学习路线图', note: '从工具地图走到读案例复现，顺序在这里。' },
+        { href: '/vibe-coding', title: '我的作品', note: '网页和视频类做法，可以对照已经上线的作品。' },
+        { href: '/posts/website-deployment-guide', title: '网站怎样部署上线', note: '做出页面之后，部署步骤在这篇。' },
+        { href: '/resources', title: '资料库', note: '其他模型的案例合集和教程放在同一处。' },
+      ]} />
       <ShengcaiInviteCard className="mt-14" />
     </div>
   );

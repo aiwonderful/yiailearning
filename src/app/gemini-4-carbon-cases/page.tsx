@@ -11,6 +11,7 @@ import {
   getGeminiCategoryCounts,
   getGeminiGalleryCards,
 } from '@/lib/gemini-cases';
+import FurtherReading from '@/components/FurtherReading';
 import Gallery from './gallery';
 import styles from './cases.module.css';
 
@@ -108,6 +109,13 @@ export default function GeminiCasesPage() {
         </div>
       </aside>
       <Gallery cards={getGeminiGalleryCards()} categories={getGeminiCategoryCounts()} />
+      <FurtherReading links={[
+        { href: '/roadmap', title: '学习路线图', note: '阶段三做页面，阶段五每周复现一个案例。' },
+        { href: '/loop-engineer', title: 'Loop Engineering', note: '游戏和仿真类案例适合拆成可检查的循环。' },
+        { href: '/vibe-coding', title: '我的作品', note: '看已经部署上线的网站，而不只是原型图。' },
+        { href: '/posts/website-deployment-guide', title: '网站怎样部署上线', note: '原型能打开之后，域名和部署可以照这篇做。' },
+        { href: '/resources', title: '资料库', note: 'Fable、Seedream、GPT Image 的合集也在这里。' },
+      ]} />
     </div>
   );
 }
