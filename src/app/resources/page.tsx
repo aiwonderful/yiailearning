@@ -48,6 +48,11 @@ export default function ResourcesPage() {
           <p className="mt-5 text-lg leading-8 text-secondary">
             这里会承接我对某个课题产生兴趣后的第一批整理：资料、链接、工具、案例和自己的判断。它不要求一开始完美，但要求可以被继续更新。
           </p>
+          <p className="mt-5">
+            <Link href="/roadmap" className="font-semibold text-[#20242A] underline decoration-[#20242A]/30 underline-offset-4">
+              完整的 AI 学习路线图 →
+            </Link>
+          </p>
         </div>
       </section>
 

@@ -130,6 +130,9 @@ export default async function LoopEngineerPage() {
                 <a href="#30-天学习路线" className="btn btn-secondary">
                   30 天路线
                 </a>
+                <Link href="/roadmap" className="btn btn-secondary">
+                  完整的 AI 学习路线图 →
+                </Link>
               </div>
             </header>
 

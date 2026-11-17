@@ -98,6 +98,11 @@ export default function VibeCodingPage() {
           <p className="-mt-4 text-lg leading-8 text-secondary">
             这里放我用 AI 辅助开发、部署并持续迭代的真实项目。它们不是概念展示，而是已经上线、上架或公开可访问的作品。
           </p>
+          <p className="mt-5">
+            <Link href="/roadmap" className="font-semibold text-[#20242A] underline decoration-[#20242A]/30 underline-offset-4">
+              完整的 AI 学习路线图 →
+            </Link>
+          </p>
         </div>
       </section>
 
