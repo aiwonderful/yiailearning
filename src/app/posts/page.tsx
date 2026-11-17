@@ -6,8 +6,8 @@ import PageTitle from '../../components/PageTitle';
 import React from 'react';
 import { siteConfig } from '@/lib/config';
 
-const title = '博客文章';
-const description = '这里集中放所有已经整理好的文章，方便继续补充、筛选和回看。';
+const title = 'AI 学习文章';
+const description = '已经整理好的文章，包括初学工具、网站部署、Codex Sites 和时间管理，可按标题和标签筛选。';
 
 export const metadata: Metadata = {
   title,
@@ -35,7 +35,7 @@ export default async function BlogIndexPage({ searchParams }: BlogIndexPageProps
         <div className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-subtle dark:text-muted">
           Content Library
         </div>
-        <PageTitle>博客文章</PageTitle>
+        <PageTitle>AI 学习文章</PageTitle>
         <div className="mt-4 grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
           <div>
             <p className="max-w-3xl text-secondary leading-8">

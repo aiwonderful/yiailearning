@@ -5,13 +5,16 @@ import { getAllPosts } from '../lib/posts';
 import PostCard from '../components/PostCard';
 import { siteConfig } from '../lib/config';
 
+const homeTitle = '小亦的 AI 学习实验室：AI 工具与学习路线';
+const homeDescription = '小亦记录 AI 工具、Vibe Coding、Loop Engineering，以及从认识工具到做出作品的学习路线。';
+
 export const metadata: Metadata = {
-  title: { absolute: siteConfig.title },
-  description: siteConfig.description,
+  title: { absolute: homeTitle },
+  description: homeDescription,
   alternates: { canonical: siteConfig.url },
   openGraph: {
-    title: siteConfig.title,
-    description: siteConfig.description,
+    title: homeTitle,
+    description: homeDescription,
     url: siteConfig.url,
   },
 };
@@ -150,7 +153,7 @@ export default async function HomePage() {
 
             <div className="space-y-5">
               <h1 className="max-w-4xl text-balance font-serif text-4xl font-black leading-tight text-[#20242A] md:text-6xl">
-                我是小亦，记录 AI 工具、Agent 工作流和个人知识管理的真实实践。
+                我是小亦，记录 AI 工具、Agent 工作流和学习路线。
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-[#59616B]">
                 这里是我的公开学习实验室：不追逐宏大叙事，只记录我如何使用 AI、理解新工具、搭建工作流，并把学习过程变成可复用的经验。

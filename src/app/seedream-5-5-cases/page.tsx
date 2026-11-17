@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import FurtherReading from '@/components/FurtherReading';
 import ShengcaiInviteCard from '@/components/ShengcaiInviteCard';
 import { siteConfig } from '@/lib/config';
 import {
@@ -102,6 +103,12 @@ export default function SeedreamCasesPage() {
         </div>
       </aside>
       <Gallery cards={getSeedreamGalleryCards()} categories={getSeedreamCategoryCounts()} />
+      <FurtherReading links={[
+        { href: '/resources', title: '资料库', note: 'GPT Image、Gemini 的图像合集也在同一处。' },
+        { href: '/roadmap', title: '学习路线图', note: '阶段一先认识图像工具，阶段五再每周复现一个案例。' },
+        { href: '/posts/ai-tools-for-beginners', title: '初学者工具清单', note: '还在选平台时，先看这篇里的现成工具。' },
+        { href: '/vibe-coding', title: '我的作品', note: '作品页记录的是已经上线的站和小程序。' },
+      ]} />
       <ShengcaiInviteCard className="mt-14" />
     </div>
   );

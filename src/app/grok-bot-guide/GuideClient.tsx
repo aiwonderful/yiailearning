@@ -133,7 +133,7 @@ export default function GuideClient() {
         <div className={styles.content}>
           <header className={styles.hero}>
             <div className={styles.eyebrow}>DEEP STUDY GUIDE · 修订 2026.10.19</div>
-            <h1>从一个收藏，<br />走到一次真实交付。</h1>
+            <h1>Grok Bot 怎么用：创建、配置，再写清指令</h1>
             <div className={styles.intro} dangerouslySetInnerHTML={introMarkup} />
           </header>
 

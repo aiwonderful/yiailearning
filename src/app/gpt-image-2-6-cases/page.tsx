@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import FurtherReading from '@/components/FurtherReading';
 import ShengcaiInviteCard from '@/components/ShengcaiInviteCard';
 import { siteConfig } from '@/lib/config';
 import {
@@ -15,6 +16,8 @@ import styles from './cases.module.css';
 const title = 'GPT Image 2.6 案例合集：64 个带效果图的 GIF、表情包与混用工作流';
 const description = '按分类浏览 64 个 GPT Image 2.6 案例的效果图：官方发布与演示、GIF 动图、表情包与贴纸、人像写真、海报平面、模型对比，以及混用其他工具的工作流。每条署名作者并链回原帖，区分纯 GPT Image 2.6 和混用工作流。';
 const pageUrl = `${siteConfig.url}/gpt-image-2-6-cases`;
+// 2026-11-10：casebook collected_at，且与首次加入该页的提交 0ff5e47 同一天。不是各案例原帖日期。
+const published = '2026-11-10';
 
 export const metadata: Metadata = {
   title,
@@ -74,6 +77,7 @@ export default function GptImageCasesPage() {
         <div className={styles.heroFoot}>
           <span>小亦 · 整理</span>
           <span>资料核验截至 {gptImageCollection.collected_at.replace(/-/g, '.')}</span>
+          <time dateTime={published}>本页发布 {published}</time>
         </div>
       </header>
       <aside className={styles.evidenceNote}>
@@ -88,6 +92,19 @@ export default function GptImageCasesPage() {
         </p>
       </aside>
       <Gallery cards={getGptImageGalleryCards()} categories={getGptImageCategoryCounts()} />
+      <FurtherReading links={[
+        { href: '/roadmap', title: '学习路线图', note: '阶段一先分清图像工具和写代码，再决定往哪边练。' },
+        { href: '/resources', title: '资料库', note: 'Seedream、Gemini 等图像合集也放在这里。' },
+        { href: '/posts/ai-tools-for-beginners', title: '初学者工具清单', note: '还没选平台时，可以先看这篇里的现成工具。' },
+        { href: '/vibe-coding', title: '我的作品', note: '作品页里的视频站是另一类生成，不是这组静图。' },
+      ]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: title,
+        url: pageUrl,
+        datePublished: published,
+      }) }} />
       <ShengcaiInviteCard className="mt-14" />
     </div>
   );

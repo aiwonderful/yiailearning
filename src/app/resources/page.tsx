@@ -4,8 +4,8 @@ import Link from 'next/link';
 import PageTitle from '../../components/PageTitle';
 import { siteConfig } from '@/lib/config';
 
-const title = '资料库';
-const description = '围绕一个课题整理资料、链接、工具、案例和自己的判断。已经写完的内容可以先从文章库看。';
+const title = 'AI 资料库：案例、教程与手册';
+const description = '案例合集、实测教程、Grok Bot 手册和 Loop Engineering 指南放在一起，方便按课题接着写成文章。';
 
 export const metadata: Metadata = {
   title,
@@ -44,7 +44,7 @@ export default function ResourcesPage() {
           <div className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-[#4D6254]">
             Resource Library
           </div>
-          <PageTitle className="text-[#20242A]">资料库</PageTitle>
+          <PageTitle className="text-[#20242A]">AI 资料库</PageTitle>
           <p className="mt-5 text-lg leading-8 text-secondary">
             这里会承接我对某个课题产生兴趣后的第一批整理：资料、链接、工具、案例和自己的判断。它不要求一开始完美，但要求可以被继续更新。
           </p>

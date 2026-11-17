@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import FurtherReading from '@/components/FurtherReading';
 import ShengcaiInviteCard from '@/components/ShengcaiInviteCard';
 import { siteConfig } from '@/lib/config';
 import { fableCases, fableCollection, fableImageCount, getCategoryCounts, getGalleryCards } from '@/lib/fable-cases';
@@ -9,6 +10,8 @@ import styles from './cases.module.css';
 const title = 'Claude Fable 5.2 案例合集：54 个带效果图的真实案例';
 const description = '按分类浏览 54 个 Claude Fable 5.2 案例：官方科研与工程、Three.js / 3D / Blender、游戏原型、动态设计和界面。每条有效果图、作者署名、原帖链接，以及公开的做法和提示词。';
 const pageUrl = `${siteConfig.url}/fable-5-2-cases`;
+// 2026-11-10：casebook collected_at，且与首次加入该页的提交 8f90e3a 同一天。不是各案例原帖日期。
+const published = '2026-11-10';
 
 export const metadata: Metadata = {
   title,
@@ -68,6 +71,7 @@ export default function FableCasesPage() {
         <div className={styles.heroFoot}>
           <span>小亦 · 整理</span>
           <span>资料核验截至 {fableCollection.collected_at.replace(/-/g, '.')}</span>
+          <time dateTime={published}>本页发布 {published}</time>
         </div>
       </header>
       <aside className={styles.evidenceNote}>
@@ -79,6 +83,20 @@ export default function FableCasesPage() {
         </p>
       </aside>
       <Gallery cards={getGalleryCards()} categories={getCategoryCounts()} />
+      <FurtherReading links={[
+        { href: '/roadmap', title: '学习路线图', note: '阶段五就是读案例、每周复现一个。' },
+        { href: '/loop-engineer', title: 'Loop Engineering', note: '把一次生成改成可检查、可再跑的循环。' },
+        { href: '/vibe-coding', title: '我的作品', note: '看已经上线的页面和小程序，而不只是效果图。' },
+        { href: '/posts/website-deployment-guide', title: '网站怎样部署上线', note: '页面做出来之后，域名和部署可以照这篇走。' },
+        { href: '/resources', title: '资料库', note: '同一处还能看到其他模型的案例合集和教程。' },
+      ]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: title,
+        url: pageUrl,
+        datePublished: published,
+      }) }} />
       <ShengcaiInviteCard className="mt-14" />
     </div>
   );
