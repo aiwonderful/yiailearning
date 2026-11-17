@@ -11,7 +11,6 @@ import {
   roadmapH1,
   roadmapInlineText,
   roadmapIntro,
-  roadmapSourceGap,
   roadmapStages,
   roadmapTitle,
   type RoadmapInline,
@@ -78,11 +77,7 @@ export default function RoadmapPage() {
               {roadmapStages.map((stage, index) => (
                 <li key={stage.id} className="flex gap-3 text-base leading-7 text-secondary">
                   <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">{index + 1}</span>
-                  {stage.blocks.length || stage.goal ? (
-                    <a href={`#${stage.id}`} className="hover:text-primary">{stage.summary}</a>
-                  ) : (
-                    <span>{stage.summary}</span>
-                  )}
+                  <a href={`#${stage.id}`} className="hover:text-primary">{stage.summary}</a>
                 </li>
               ))}
             </ol>
@@ -91,17 +86,10 @@ export default function RoadmapPage() {
           {roadmapStages.map((stage) => (
             <section key={stage.id} id={stage.id} aria-labelledby={`${stage.id}-title`} className="scroll-mt-28">
               <h2 id={`${stage.id}-title`} className="text-2xl font-bold text-primary">{stage.heading}</h2>
-              {stage.goal ? (
-                <p className="mt-4 leading-8 text-secondary">
-                  <strong className="font-semibold text-primary">一句话目标：</strong>
-                  {stage.goal}
-                </p>
-              ) : null}
-              {stage.id === 'stage-3' ? (
-                <p className="mt-5 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 text-sm leading-7 text-amber-900 dark:border-amber-800 dark:bg-amber-900/20 dark:text-amber-100">
-                  {roadmapSourceGap}
-                </p>
-              ) : null}
+              <p className="mt-4 leading-8 text-secondary">
+                <strong className="font-semibold text-primary">一句话目标：</strong>
+                {stage.goal}
+              </p>
               {stage.blocks.map((block) => (
                 <div key={block.heading} className="mt-6">
                   <h3 className="text-lg font-semibold text-primary">{block.heading}</h3>

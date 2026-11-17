@@ -50,8 +50,18 @@ describe('roadmap page', () => {
 
     expect(screen.getByText(/七到十一周/)).toBeInTheDocument();
     expect(screen.getByText(/按「每天一小时」的节奏/)).toBeInTheDocument();
+    expect(screen.getAllByText('学什么')).toHaveLength(6);
+    expect(screen.getAllByText('动手做什么')).toHaveLength(6);
+    expect(screen.getAllByText('一句话目标：')).toHaveLength(6);
+    expect(screen.getAllByText('怎么算学会：')).toHaveLength(6);
+    expect(screen.getAllByText('常见卡点：')).toHaveLength(6);
+    expect(screen.getByText(/每周记一次：收录了几个页面、有几个词有曝光。先看这两项/)).toBeInTheDocument();
     expect(screen.getByText(/自己按「内容类 \/ 工具类 \/ 服务类」各挑一个/)).toBeInTheDocument();
-    expect(screen.getByText(/榜单页没有按这三类分栏/)).toBeInTheDocument();
+    expect(html).not.toContain('只看这三项');
+    expect(html).not.toContain('榜单页没有');
+    expect(html).not.toContain('缺失');
+    expect(html).not.toContain('待补');
+    expect(html).not.toContain('被截断');
     expect(html).not.toContain('noindex');
   });
 
@@ -63,12 +73,35 @@ describe('roadmap page', () => {
       '/posts/ai-tools-for-beginners',
       '/resources',
       '/loop-engineer',
+      '/scroll-world-landing-page-tutorial',
+      '/ui-ux-pro-max-skill-tutorial',
+      '/vibe-coding',
+      '/posts/website-deployment-guide',
+      '/gpt-6-cases',
+      '/fable-5-2-cases',
+      '/gpt-image-2-6-cases',
+      '/seedream-5-5-cases',
+      '/gemini-4-carbon-cases',
       '/ai-money',
       '/about',
     ]));
 
     expect(fs.existsSync(path.join(root, 'src/data/posts/ai-tools-for-beginners.md'))).toBe(true);
-    ['resources', 'loop-engineer', 'ai-money', 'about'].forEach((segment) => {
+    expect(fs.existsSync(path.join(root, 'src/data/posts/website-deployment-guide.md'))).toBe(true);
+    [
+      'resources',
+      'loop-engineer',
+      'vibe-coding',
+      'ai-money',
+      'about',
+      'scroll-world-landing-page-tutorial',
+      'ui-ux-pro-max-skill-tutorial',
+      'gpt-6-cases',
+      'fable-5-2-cases',
+      'gpt-image-2-6-cases',
+      'seedream-5-5-cases',
+      'gemini-4-carbon-cases',
+    ].forEach((segment) => {
       expect(fs.existsSync(path.join(root, 'src/app', segment, 'page.tsx'))).toBe(true);
     });
   });
