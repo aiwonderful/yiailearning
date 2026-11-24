@@ -98,6 +98,11 @@ export const roadmapStages: RoadmapStage[] = [
             text('完整跑一遍，把一个真实需求拆成循环，跑三轮以上，把每一轮的指令和结果记下来。'),
           ],
           [text('把流程记成一个可复用的清单，下次同类任务直接用。')],
+          [
+            text('如果用 Antigravity 跑会持续好几分钟的任务，先读'),
+            link('/antigravity-model-upgrade-checklist', 'Antigravity 模型升级与进度清单'),
+            text('：Hydrogen 向所有档位开放，付费 Pro 才能在 Antigravity 里用 Carbon，长任务看进度清单（Progress checklist）。材料核对于 2026-11-24，文中写明这次没有第一手复测。'),
+          ],
         ],
       },
     ],
