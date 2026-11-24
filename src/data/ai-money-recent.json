@@ -2638,5 +2638,33 @@
       "大促结束后，她为什么还要继续打磨内容？"
     ],
     "quotes": []
+  },
+  {
+    "slug": "huang-enterprise-ai-million-scale-delivery",
+    "status": "published",
+    "title": "写了十多年软件，黄啊码转做企业 AI 并交付多个百万级项目",
+    "author": "黄啊码",
+    "authorAvatar": "https://search01.shengcaiyoushu.com/upload/avatar/FiNMKDdjmQ0hn4ddiqHoqu_r6lMz",
+    "topics": [
+      "service"
+    ],
+    "rank": 90,
+    "publishedAt": "2026-11-20T07:00:16.000Z",
+    "resultLabel": "交付过多个百万级 AI 项目，作者自述",
+    "results": [
+      {
+        "value": "多个百万级",
+        "label": "已交付 AI 项目规模，作者自述"
+      }
+    ],
+    "summary": "黄啊码做了十多年软件开发，后来把重心转到企业 AI 落地与培训。走进企业以后，他遇到的问题从能不能把功能做出来，变成需求值不值得接、做到哪里才算交付。他在一年多的实践里服务过国企和上市公司，自述交付了多个百万级 AI 项目，也开始复盘哪些工作值得重复做。",
+    "ctaCopy": "原帖记录了他从软件开发走到企业交付现场后，在判断需求、谈交付范围和复用经验时遇到的难题。",
+    "questions": [
+      "开发经验怎样带到企业业务现场？",
+      "哪些需求看起来能做，却不值得接？",
+      "怎样在成交前说清交付范围？",
+      "做完多个项目后，哪些经验可以复用？"
+    ],
+    "quotes": []
   }
 ]
