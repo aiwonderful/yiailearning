@@ -48,6 +48,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     },
     {
+      url: `${siteConfig.url}/antigravity-model-upgrade-checklist`,
+      lastModified: new Date('2026-11-24'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
       url: `${siteConfig.url}/ui-ux-pro-max-skill-tutorial`,
       lastModified: new Date('2026-11-16'),
       changeFrequency: 'monthly' as const,

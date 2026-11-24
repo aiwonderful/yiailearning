@@ -56,6 +56,13 @@ export default function ResourcesPage() {
         </div>
       </section>
 
+      <Link href="/antigravity-model-upgrade-checklist" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] md:p-10">
+        <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]"><span>新实测教程 · Antigravity</span><span>Hydrogen / 付费 Pro Carbon / 进度清单</span></div>
+        <h2 className="mt-5 text-2xl font-semibold leading-relaxed md:text-3xl">Hydrogen 全员可用，付费 Pro 在 Antigravity 里解锁 Carbon。</h2>
+        <p className="mt-4 max-w-3xl text-base leading-8 text-[#d4d9cc]">按 2026-11-24 的官方原帖和文档整理模型档位、额度重置，以及进度清单（Progress checklist）。这次没有登录账号复测，截图都标明出处。</p>
+        <span className="mt-6 inline-block border-b border-[#d6b47b] pb-1 text-base text-[#e9bf78]">阅读 Antigravity 模型升级教程 →</span>
+      </Link>
+
       <Link href="/ui-ux-pro-max-skill-tutorial" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] md:p-10">
         <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]"><span>新实测教程 · UI UX Pro Max</span><span>同一份 brief / 2.15.0</span></div>
         <h2 className="mt-5 text-2xl font-semibold leading-relaxed md:text-3xl">同一份 brief，写成两张营销页。</h2>
