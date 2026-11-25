@@ -56,6 +56,13 @@ export default function ResourcesPage() {
         </div>
       </section>
 
+      <Link href="/claude-install-as-app" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] md:p-10">
+        <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]"><span>新指南 · Claude Install as app</span><span>beta / 6.28899.0 / Mac 与 Windows</span></div>
+        <h2 className="mt-5 text-2xl font-semibold leading-relaxed md:text-3xl">把网页小工具装成带图标和窗口的桌面应用。</h2>
+        <p className="mt-4 max-w-3xl text-base leading-8 text-[#d4d9cc]">按官方帮助中心、介绍文和演示视频整理安装、三档权限和卸载。本站这次没有在 Mac 或 Windows 上真机复测。材料核对于 2026-11-25。</p>
+        <span className="mt-6 inline-block border-b border-[#d6b47b] pb-1 text-base text-[#e9bf78]">阅读 Install as app 上手指南 →</span>
+      </Link>
+
       <Link href="/ui-ux-pro-max-skill-tutorial" className="group block rounded-[1.75rem] border border-[#4b5546] bg-[#202920] p-7 text-[#f8f6ec] md:p-10">
         <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-[#d6b47b]"><span>新实测教程 · UI UX Pro Max</span><span>同一份 brief / 2.15.0</span></div>
         <h2 className="mt-5 text-2xl font-semibold leading-relaxed md:text-3xl">同一份 brief，写成两张营销页。</h2>
